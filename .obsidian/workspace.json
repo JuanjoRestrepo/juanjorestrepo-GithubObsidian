@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ca2a4039f7b8e577",
+        "id": "b412097f32f2e67d",
         "type": "tabs",
         "children": [
           {
-            "id": "7da1ff8dc2607c28",
+            "id": "6195e64dbe3bef6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -218,11 +218,10 @@
       "markdown-importer:Abrir el importador de Markdown": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7da1ff8dc2607c28",
+  "active": "6195e64dbe3bef6b",
   "lastOpenFiles": [
     "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
