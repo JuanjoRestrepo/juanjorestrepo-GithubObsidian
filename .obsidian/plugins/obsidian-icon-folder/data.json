@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "TiTemplate",
-      "SiSiemens",
-      "SiCodeproject",
-      "SiAlwaysdata",
-      "SiTensorflow"
+      "SiApacheairflow",
+      "SiDatadog",
+      "CoData",
+      "SiPython",
+      "SiPandas"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -183,5 +183,6 @@
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "FasHammer",
   "Keys/dbt key.md": "SiDbt",
   "Self Study/C & C++": "SiCplusplus",
-  "Self Study/AWS": "FabAws"
+  "Self Study/AWS": "FabAws",
+  "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow"
 }

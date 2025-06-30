@@ -11,10 +11,14 @@
             "id": "fc4e85b9fa3e5ec4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "EDR"
             }
           }
         ]
@@ -206,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 312.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,6 +229,7 @@
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "README.md",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png",
@@ -264,7 +270,6 @@
     "Keys/dbt key.md",
     "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
-    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Files/Pasted image 20250619232243.png",
     "Files/Pasted image 20250619232821.png",
     "Qubika/Qversity 2025/Proyecto Final",

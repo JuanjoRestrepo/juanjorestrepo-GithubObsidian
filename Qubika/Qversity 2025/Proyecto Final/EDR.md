@@ -698,3 +698,131 @@ SILVER_CUSTOMERS ||--o{ GOLD_REVENUE_STATS_BY_PLAN_AND_OPERATOR : "drives"
 
 SILVER_CUSTOMERS ||--o{ GOLD_TOP_CUSTOMER_SEGMENTS : "drives"
 ```
+
+
+
+# DIAGRAM FROM CHAT GPT
+
+
+```text
+
+
+
+BRONZE LAYER
+────────────
+┌───────────────────────┐
+│  bronze.customers_raw │
+│-----------------------│
+│ raw_id (PK)           │
+│ json_column           │
+└───────────────────────┘
+
+          │
+          ▼
+
+SILVER LAYER
+────────────
+┌──────────────────────┐
+│  silver_customers    │
+│----------------------│
+│ raw_id (PK)          │
+│ customer_id          │
+│ name, email, age     │
+│ plan_type, country   │
+│ operator, credit     │
+│ registration_date    │
+│ monthly_bill_usd     │
+└───────┬──────────────┘
+        │
+        │ (1:N)
+        │
+┌───────▼────────┐       ┌──────────────────────┐
+│ silver_payments│       │   silver_service     │
+│----------------│       │----------------------│
+│ raw_id (FK)    │       │ raw_id (FK)          │
+│ payment_date   │       │ service_name         │
+│ amount         │       │ service_type         │
+│ status         │       │ ...                  │
+└────────────────┘       └──────────────────────┘
+
+          │
+          ▼
+
+GOLD LAYER (Analytical Models)
+──────────────────────────────
+
+Modelos demográficos y de distribución:
+───────────────────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_customer_distribution_by_city         │◄─ from silver_customers.city
+│ gold_customer_distribution_by_country      │◄─ from silver_customers.country
+│ gold_customer_distribution_by_operator     │◄─ from silver_customers.operator
+│ gold_customer_status_distribution          │◄─ from silver_customers.status
+└────────────────────────────────────────────┘
+
+Modelos por edad:
+─────────────────
+┌────────────────────────────────────────────┐
+│ gold_age_distribution_by_plan              │◄─ from silver_customers.plan_type + age
+│ gold_age_distribution_by_country_operator  │◄─ from silver_customers.country + operator + age
+└────────────────────────────────────────────┘
+
+Modelos de ingresos:
+────────────────────
+┌────────────────────────────────────────────┐
+│ gold_arpu_by_plan_type                     │◄─ from silver_customers.plan_type + monthly_bill_usd
+│ gold_revenue_distribution_by_geo           │◄─ from silver_customers.country, region, monthly_bill_usd
+│ gold_revenue_stats_by_plan_and_operator    │◄─ from silver_customers.plan_type + operator + monthly_bill_usd
+└────────────────────────────────────────────┘
+
+Modelos de dispositivos:
+────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_device_brand_popularity               │◄─ from silver_customers.device_brand
+│ gold_device_brand_by_plan                  │◄─ from silver_customers.plan_type + device_brand
+│ gold_device_brand_by_country_operator      │◄─ from silver_customers.country + operator + device_brand
+└────────────────────────────────────────────┘
+
+Modelos de score crediticio:
+────────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_credit_score_segments                 │◄─ from silver_customers.credit_score_segment
+│ gold_credit_vs_payment_behavior            │◄─ join silver_customers + silver_payments by raw_id
+└────────────────────────────────────────────┘
+
+Modelos de pagos:
+─────────────────
+┌────────────────────────────────────────────┐
+│ gold_payment_issues                        │◄─ from silver_payments.status
+│ gold_pending_payments                      │◄─ from silver_payments.status = 'PENDING'
+└────────────────────────────────────────────┘
+
+Modelos de adquisición y crecimiento:
+─────────────────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_new_customer_trends_by_operator       │◄─ from silver_customers.registration_date + operator
+│ gold_acquisition_trends_by_operator        │◄─ same as above + % del total mensual
+└────────────────────────────────────────────┘
+
+Modelos de participación por operador:
+──────────────────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_operator_distribution                 │◄─ from silver_customers.operator
+│ gold_operator_summary                      │◄─ aggregate over operator: revenue, active %, payment issues %
+└────────────────────────────────────────────┘
+
+Modelos de servicios:
+─────────────────────
+┌────────────────────────────────────────────┐
+│ gold_service_popularity                    │◄─ from silver_service.service_name
+│ gold_service_combinations                  │◄─ from silver_service grouped by raw_id
+│ gold_high_revenue_service_combinations     │◄─ join silver_service + silver_customers → ARPU por combinación
+└────────────────────────────────────────────┘
+
+Modelos de segmentos de alto valor:
+───────────────────────────────────
+┌────────────────────────────────────────────┐
+│ gold_top_customer_segments                 │◄─ from silver_customers.credit_score_segment + plan_type + ARPU
+└────────────────────────────────────────────┘
+
+```
