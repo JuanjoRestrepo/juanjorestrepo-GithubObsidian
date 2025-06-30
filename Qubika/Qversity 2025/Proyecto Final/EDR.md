@@ -826,3 +826,28 @@ Modelos de segmentos de alto valor:
 └────────────────────────────────────────────┘
 
 ```
+
+
+
+
+## Bronze Layer
+
+| Table                   | Description              |
+|------------------------|--------------------------|
+| bronze.customers_raw   | Raw data from JSON file  |
+
+## Silver Layer
+
+| Table               | Description                                   |
+|--------------------|-----------------------------------------------|
+| silver_customers    | Main cleaned customer data                    |
+| silver_payments     | Payment records, FK to `silver_customers`     |
+| silver_service      | Contracted services, FK to `silver_customers` |
+
+## Gold Layer (Sample)
+
+| Model Name                               | Derived From                          | Purpose                                |
+|-----------------------------------------|---------------------------------------|----------------------------------------|
+| gold_arpu_by_plan_type                  | silver_customers                      | ARPU by plan                           |
+| gold_service_combinations              | silver_service                        | Most frequent service bundles          |
+| gold_credit_vs_payment_behavior        | silver_customers + silver_payments    | Credit score impact on payment issues  |
