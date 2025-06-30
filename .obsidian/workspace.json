@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "04ef6aac742c6134",
+        "id": "3cac878e628616f8",
         "type": "tabs",
         "children": [
           {
-            "id": "859b84298a2ec345",
+            "id": "dfdf6e83045b327e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -222,8 +222,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "859b84298a2ec345",
+  "active": "dfdf6e83045b327e",
   "lastOpenFiles": [
+    "README.md",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png",
     "Files/2018-04-18_17-58-37-244ad8bef9eeef440bc1bfed65c59e3f.jpg",
@@ -266,7 +267,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Files/Pasted image 20250619232243.png",
     "Files/Pasted image 20250619232821.png",
-    "Files/Pasted image 20250618215832.png",
     "Qubika/Qversity 2025/Proyecto Final",
     "Qubika/Qversity 2025/9. Airflow",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines"

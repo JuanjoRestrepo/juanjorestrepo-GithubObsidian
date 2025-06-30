@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiIbm",
-      "SiCoursera",
-      "SiCplusplus",
       "TiTemplate",
-      "SiQase"
+      "SiSiemens",
+      "SiCodeproject",
+      "SiAlwaysdata",
+      "SiTensorflow"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -182,5 +182,6 @@
   "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)": "SiDatadog",
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "FasHammer",
   "Keys/dbt key.md": "SiDbt",
-  "Self Study/C & C++": "SiCplusplus"
+  "Self Study/C & C++": "SiCplusplus",
+  "Self Study/AWS": "FabAws"
 }
