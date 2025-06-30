@@ -6,10 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "IbGithub",
-      "TiBrandCpp",
-      "SiDbt",
-      "FasHammer"
+      "SiIbm",
+      "SiCoursera",
+      "SiCplusplus",
+      "TiTemplate",
+      "SiQase"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -150,7 +151,7 @@
   "Master Data Science/Semestre 2/Deep Learning/Información Básica": "📁",
   "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md": "🧠",
   "Self Study/SQL": "TiBrandMysql",
-  "Qubika": "SiPaloaltosoftware",
+  "Qubika": "SiQase",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2": "📁",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": "CoData",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md": "SiInstructure",
@@ -181,5 +182,5 @@
   "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)": "SiDatadog",
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "FasHammer",
   "Keys/dbt key.md": "SiDbt",
-  "Self Study/C & C++": "TiBrandCpp"
+  "Self Study/C & C++": "SiCplusplus"
 }
