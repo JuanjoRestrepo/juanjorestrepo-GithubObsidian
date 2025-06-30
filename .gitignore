@@ -1,0 +1,12 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de conflicto o temporales
+*.conflict*
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json 2.json
+
+# Opcionalmente, puedes ignorar solo basura o backups
+.trash/
+

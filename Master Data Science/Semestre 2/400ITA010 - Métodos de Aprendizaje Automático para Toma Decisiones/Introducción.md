@@ -1,0 +1,153 @@
+# Resumen General de Aprendizaje de Máquina
+
+![[Pasted image 20250125182504.png]]
+
+## Alan Turing
+
+- **Enigma**
+- **Máquina de Turing**
+
+![[Pasted image 20250125182614.png]]  
+![[Pasted image 20250125183247.png]]
+
+---
+
+## ¿Qué es el Aprendizaje de Máquina?
+
+![[Pasted image 20250125182919.png]]
+
+---
+
+## Tipos de Aprendizaje - Parte I
+
+![[Pasted image 20250125183239.png]]
+
+### Aprendizaje Supervisado
+
+1. Se cuenta con una **base de datos etiquetada**.
+2. Para desarrollar una aplicación es necesario tener acceso tanto a los datos como a las etiquetas, es decir, se requiere la intervención de expertos para confirmar que las salidas sean correctas.
+3. La calidad de los datos y de las etiquetas (proporcionadas por expertos) es fundamental.
+
+### Aprendizaje No Supervisado
+
+1. Se utiliza cuando no se disponen de etiquetas o salidas deseadas.
+2. Es muy empleado en robótica, similar a entrenar a una mascota: se premia una acción cuando se ejecuta correctamente.
+
+![[Pasted image 20250125184146.png]]
+
+---
+
+## Aprendizaje Supervisado:
+
+### Clasificación
+
+![[Pasted image 20250125184356.png]]
+
+- **Definición:** Se predice una _categoría_.
+- **Ejemplos:**
+    - Predicción de valores numéricos codificados (e.g., 0 y 1).
+    - Clasificación de animales en categorías numéricas (por ejemplo, 1: caballo, 2: gato, 3: perro, …).
+    - Detección de correos spam, donde se analiza el texto y se etiqueta como _spam_ o _no spam_.
+
+### Regresión
+
+![[Pasted image 20250125184701.png]]
+
+- **Definición:** Se predice un _valor real_.
+- **Ejemplos:**
+    - Predecir la temperatura de una ciudad.
+    - Predecir el valor del dólar al día siguiente.
+    - Estimar el precio de inmuebles basándose en características específicas.
+
+---
+
+## Aprendizaje No Supervisado:
+
+### Agrupamiento (Clustering)
+
+![[Pasted image 20250125185008.png]]
+
+- **Concepto:**  
+    No se cuenta con etiquetas; se agrupan los datos basándose en la similitud.
+- **Ejemplo:**  
+    En una imagen, no hay indicación de qué objeto representa (por ejemplo, si es un balón de béisbol, baloncesto o fútbol), y se deben formar grupos según características visuales.
+
+### Reducción de Dimensión / Clustering
+
+![[Pasted image 20250125191516.png]]
+
+- **Objetivo:**  
+    Agrupar objetos no etiquetados en subconjuntos (clusters) para facilitar el análisis.
+- **Aspectos Clave:**
+    - Determinar el número de agrupaciones a realizar.
+    - Establecer las formas de los grupos y definir un centro a partir del cual se inicia el agrupamiento.
+    - Fijar un margen de error para definir los clusters.
+
+### Detección de Anomalías
+
+![[Pasted image 20250125191444.png]]
+
+---
+
+## Aprendizaje por Refuerzo
+
+![[Pasted image 20250125192823.png]]
+
+---
+
+## Aprendizaje Semi-Supervisado
+
+![[Pasted image 20250125193100.png]]
+
+- **Definición:**  
+    Combina una parte de datos con _etiquetas_ y otra parte sin etiquetas.
+
+---
+
+## Bases de Datos Estructuradas y No Estructuradas
+
+![[Pasted image 20250125195903.png]]  
+![[Pasted image 20250125200502.png]]  
+![[Pasted image 20250125200516.png]]  
+![[Pasted image 20250125201213.png]]
+
+---
+
+## Metodología CRISP-DM
+
+![[Pasted image 20250125185914.png]]
+
+**Cross Industry Standard Process for Data Mining (CRISP-DM):**
+
+- **Propósito:**  
+    Es el proceso más utilizado en Data Science para alinear los resultados analíticos con las necesidades del negocio.
+- **Descripción:**  
+    Define las actividades comunes que los expertos en analítica y ciencia de datos realizan, y se mantiene vigente en la era del Big Data.
+
+### 1. Comprensión del Negocio
+
+- Conocer los objetivos y necesidades de la empresa.
+- Definir los objetivos del proyecto y determinar los requerimientos en función del crecimiento y la complejidad de los datos.
+
+### 2. Comprensión de los Datos
+
+- Recolección y análisis inicial de la Big Data empresarial.
+- Evaluación de la calidad y validez de los datos, y formulación de hipótesis preliminares.
+
+### 3. Preparación de los Datos
+
+- Realizar actividades de selección, limpieza, transformación e integración de datos.
+- Crear diccionarios de datos y generar nuevos campos o variables que puedan enriquecer el análisis.
+
+### 4. Evaluación
+
+- Validar los modelos construidos para asegurar que cumplen con los objetivos del proyecto.
+- Realizar una evaluación exhaustiva de los resultados y determinar el logro de los objetivos.
+
+### 5. Revisión y Mejora
+
+- Revisar los procesos implementados y proponer mejoras para optimizar la solución.
+
+### 6. Implementación
+
+- Desplegar el modelo en un entorno de producción, considerando que la creación del modelo es un proceso continuo y dinámico que puede requerir ajustes futuros.

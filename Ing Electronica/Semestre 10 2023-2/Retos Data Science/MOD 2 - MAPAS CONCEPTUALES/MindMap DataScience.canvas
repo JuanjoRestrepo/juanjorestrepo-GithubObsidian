@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"bc87ad577007274f","type":"text","text":"**Ciencia de Datos en Diversos Sectores**","x":-320,"y":-160,"width":250,"height":90},
+		{"id":"697844a33ca7e855","type":"text","text":"**Sector de la Gubernamental**","x":-480,"y":65,"width":200,"height":110},
+		{"id":"ee86591bf5780dab","type":"text","text":"**Sector Productivo**","x":-860,"y":65,"width":180,"height":110},
+		{"id":"61c95b32f97a710c","type":"text","text":"**Sector de la Académico**","x":380,"y":65,"width":180,"height":110},
+		{"id":"5522b279b1a82878","type":"text","text":"**Sector de la Salud**","x":-70,"y":65,"width":180,"height":110},
+		{"id":"adce0708515166fd","type":"text","text":"Proyecto 1: Optimización de la Experiencia de Compra en Línea","x":110,"y":380,"width":180,"height":220},
+		{"id":"cd429bd39cc61c55","type":"text","text":"Proyecto 2: Predicción del Rendimiento Académico","x":400,"y":400,"width":180,"height":220},
+		{"id":"67909aa6f810d6a3","type":"text","text":"Proyecto 3: Análisis de Tendencias en IA en Educación","x":720,"y":400,"width":180,"height":220},
+		{"id":"985046516f68df82","type":"text","text":"Okay y cómo transformo el primer, segundo y tercer reporte en un mapa conceptual donde estén los 3 incluidos teniendo en cuenta la rúbrica?\n\nRúbrica:\n\nMapa Conceptual Sobre los Proyectos en Ciencia de Datos\nEl objetivo de esta guía es dar pautas para la construcción de un mapa conceptual que permita integrar lo aprendido durante el análisis de los proyectos presentados por los expertos, la revisión de la propuesta teórica del autor estudiado y la propia reflexión sobre proyectos en ciencia de datos.\nLa propuesta es analizar tanto los aspectos estructurales de los proyectos como los procesos de planeación y ejecución de los mismos, para ir integrando los conceptos que surgen al pensar en cada uno de estos aspectos. Para facilitar la integración de los conceptos en el mapa, será importante tener a mano diversos insumos que hemos ido construyendo durante el curso:\n\n- Las fichas de los proyectos\n- Los reportes de las búsquedas de información sobre la aplicación de la ciencia de datos en los diferentes sectores\n- El escrito que resultó al desarrollar la Guía de Trabajo 8.\n\nActividades a realizar:\n1. Ordenar la información de lo más general a lo más específico. El concepto general y más importante se sitúa arriba y en el centro.\n2. Incluir, en los nodos, las palabras clave que representan los conceptos. No presentar\ninformación extensa (frases largas o párrafos).\n3. Conectar los nodos a través de líneas o flechas e incluir palabras de enlace.\n4. Establecer relaciones entre los conceptos.\n5. Leer el mapa: al unir dos nodos a través de una palabra de enlace, debe resultar una proposición lógica.\n6. Revisar y modificar la estructura cuando sea necesario.\n","x":-680,"y":360,"width":250,"height":400},
+		{"id":"5543f6828cdfbd1e","type":"text","text":"Proyecto 2: Restauración de la Comunicación Cerebro-Espinal","x":-70,"y":700,"width":180,"height":220},
+		{"id":"547e09ebaf836c07","type":"text","text":"Proyecto 1: Análisis de Dinámicas del COVID-19","x":-285,"y":700,"width":180,"height":220}
+	],
+	"edges":[
+		{"id":"d158cc304fe13f89","fromNode":"bc87ad577007274f","fromSide":"bottom","toNode":"697844a33ca7e855","toSide":"top"},
+		{"id":"2f2ef9c2446d797c","fromNode":"bc87ad577007274f","fromSide":"bottom","toNode":"5522b279b1a82878","toSide":"top"},
+		{"id":"b5eaa3225a600b00","fromNode":"bc87ad577007274f","fromSide":"bottom","toNode":"61c95b32f97a710c","toSide":"top"},
+		{"id":"3e93da5574859811","fromNode":"bc87ad577007274f","fromSide":"bottom","toNode":"ee86591bf5780dab","toSide":"top"},
+		{"id":"9921f8714abbdee1","fromNode":"61c95b32f97a710c","fromSide":"bottom","toNode":"adce0708515166fd","toSide":"top"},
+		{"id":"8b7810437351aa76","fromNode":"61c95b32f97a710c","fromSide":"bottom","toNode":"cd429bd39cc61c55","toSide":"top"},
+		{"id":"458f86761f0a7ed0","fromNode":"61c95b32f97a710c","fromSide":"bottom","toNode":"67909aa6f810d6a3","toSide":"top"}
+	]
+}

@@ -1,0 +1,127 @@
+A continuación observaremos la primera parte de la descripción de un proyecto realizado en el Sector Académico; presentado por el experto Julio Xavier Hallo Larrea
+
+A medida que vemos el video es importante tomar notas de los aspectos que más nos llamen la atención o parezcan interesantes.
+
+# Parte 1: Contexto
+
+¿Cómo están? Mucho gusto mi nombre es Julio Hallo yo soy ingeniero industrial de la pontificia universidad javeriana Cali, tengo una maestría en ingeniería también y el problema, el trabajo del campus a doblar hoy hizo parte de mi tesis de maestría del programa de maestría en ingeniería industrial.
+
+## ¿Cuál es el problema que quiere resolver el proyecto presentado?
+
+El problema básico que ataca este trabajo de investigación tiene que ver con una experiencia de usuario que se llama la "Experiencia Multiproducto y la Experiencia Multioferta". Nosotros cuando hacemos compras en línea revisamos todos los productos que arroja un resultado de búsqueda o a través de la navegación de ciertas categorías. Cuando nosotros llegamos al resultado y vemos los productos vamos a ver que tenemos una extensión enorme de productos y lo que queremos trabajar específicamente es ese problema de tener dos productos que realmente es un el mismo producto que tienen simplemente diferencias en sus condiciones comerciales, puede ser el que es vendido por otro seller o puede ser que tiene una garantía diferente o inclusive un precio diferente. Pero eso genera una experiencia de usuario y de compra completamente inaceptable. 
+
+Nosotros hemos medido que la conversión en una compra online disminuye entre el  30 y el 40 por ciento cuando tenemos una experiencia multiproducto. ¿Qué quiere decir multiproducto? Que vemos el mismo producto n veces en una pantalla de resultados de búsqueda. Lo que queremos atacar con este trabajo de investigación es cómo a través de los procesos de Machine Learning podemos nosotros entrenar un modelo que nos identifique que dos productos son realmente el mismo para poderlos fusionar y presentarlos como una oferta única para la toma de decisión y aumentar la conversión. De igual forma se plantearon preguntas de investigación a los usuarios involucrados:
+
+- ¿Con qué frecuencia compras en línea?
+	- ¿Cómo es tu experiencia
+	- ¿Comparas los productos?
+	- ¿Has escuchado hablar de los mercados?
+
+## ¿Cuál es la razón o las razones, por las cuales se necesita resolver el problema usando la ciencia de datos?
+
+Entonces la pregunta que sigue es ¿Por qué deberíamos utilizar ciencia de datos para resolver este problema sí a simple vista podemos ver que son tres productos iguales? 
+
+Pues realmente el volumen de datos versus la velocidad en la que podemos reaccionar, simplemente no hace capaz a ningún ser humano para que tome la decisión correcta en el momento correcto. Estamos hablando que un E-Commerce en promedio por ejemplo en Colombia tiene más de 3 millones de productos de exhibido en su E-Commerce y por lo menos tenemos una relación de 10 de quizás sus ofertas, entonces estamos hablando de 30 millones de registros que todos los días se están actualizando que tienen precios diferentes que podemos modificar sus descripciones y **nosotros necesitamos acortar ese tiempo famoso, time to market, donde estamos presentando sus productos de manera correcta, única y con la calidad que se espera para tomar una decisión de compra.**
+
+**Es ahí donde la ciencia de datos toma fuerza ya que nos permite escalar con unos límites  de tolerancia de exactitud de precisión**  y tomar decisiones casi que en tiempo real para poder mejorar esa experiencia de compra y todo el proceso de negocio.
+
+## ¿Se anticiparon algunos retos para la planeación y desarrollo del proyecto? ¿Cuáles? ¿Por qué?
+
+Cuando nos enfrentamos a este problema anticipamos el siguiente reto:
+
+Tenemos claro que para poder construir un modelo de Machine Learning, tenemos que tener un **Corpus de Datos lo suficientemente robusto en términos de cantidad de registros, de calidad, de estandarización** al cual vamos a tener que tener acceso para poder hacer todos los análisis de calidad, hacer y crear todos esos conjuntos de entrenamiento, de validación de pruebas, que además nos lleven a la resolución de este problema. Ese fue de antemano el problema más grande, definitivamente la ciencia de datos y en este caso específico, el Machine Learning, requiere de un alto volumen de datos, específicamente en este trabajo que estuvimos realizando donde vamos a hablar un poco de aprendizaje supervisado, porque **necesitábamos poder enseñarle al modelo Cuáles son los las salidas correctas y Cuáles son las incorrectas para que comienza a tomar las decisiones después con un volumen de datos significativo** ese fue el reto que anticipamos desde el inicio y la planeación del proyecto de investigación.
+
+# Parte 2: Experiencia
+
+Este proceso de investigación se dividió en varias de etapas:
+
+- La primera parte fue la identificación y sistema sistematización del problema, que es fundamental para poder enfocar los esfuerzos y saber cuáles van a hacer esa alternativa de solución que queremos buscar.
+- Una vez sistematizado el problema e identificado cuáles son esos objetivos  específicos que no ayudan a responder la pregunta principal que es: **¿Cuáles son los modelos de Machine learning que nos van a permitir identificar productos duplicados a través de un E-Commerce, de un marketplace**, procedimos a buscar los datos. Ese fue el primer proceso donde encontramos un Corpus que se ajustaba a nuestras necesidades, además teníamos los permisos de utilización ya que era público y también había sido parte de investigaciones similares que nos permitían inclusive revisar un benchmark en los resultados obtenidos. 
+- Una vez se analizó y se escogió el corpus comenzamos con todo el proceso de calidad y depuración, ¿Qué significa eso? Pues los datos hay que analizarlos, porque si a un proceso de inteligencia artificial, en este caso de Machine Learning le entregamos basura, pues no para de retornar basura procesada, por ello es sumamente importante hacer un análisis descriptivo de los datos, saber ese corpus qué densidad, qué features nos está presentando en cada una de sus columnas si fuera por es un corpus tabular, saber por cada registro qué nos está entregando, cuál es su densidad, cómo se comporta, esto es un string, es un número, tenemos nulos, no tenemos nulos y qué vamos a hacer con esa limpieza y cómo tomando decisión para después de haber hecho todo ese análisis descriptivo de los datos, comenzar a construir los conjuntos de entrenamiento, validación y prueba. 
+- De ahí en adelante, lo que hicimos fue comenzar a proponer los modelos y vamos a construirlo, como lo vamos a ver más adelante el resultado en investigación nos trajo 5 modelos que fueron los de mejor performance al momento de establecer unos indicadores de rendimiento, entonces la construcción del modelo tiene en sí la definición de cuáles son esos indicadores de rendimiento que nos van a dictar la pauta y setear esos marcos donde tenemos que sobrepasar o llegar para poder escoger esta como una posible solución. 
+
+La construcción del modelo tiene dos partes importantes:
+
+- La primera definir el modelo
+- La segunda entrenarlo y entrenar esos parámetros, descubrir cuáles son esos  parámetros específicos que nos van a llevar a tener un un modelo aceptable, es  muy importante saber que cuando estamos haciendo esto esta etapa la conocemos como la estimación de los híper-parámetros, no podemos utilizar los mismos datos que vamos a utilizar más adelante, tenemos tener un subconjunto  muy específico de validación de entrenamiento para no ensuciar la data y sobre entrenar los modelos.
+- Una vez llegamos a un punto donde hemos evacuado todas las posibles alternativas Y hemos cumplido con esos marcos de de calidad y de eficiencia de los modelos, continuamos con realmente es el entrenamiento donde ahora sí traemos todo el conjunto de datos de entrenamiento y sometemos los diferentes modelos diferentes, soluciones al entrenamiento y a la validación, probablemente tengamos que hacer un par de iteraciones, porque claro que las muestras en volumen y también en tipología pueden ser diferentes los mejores consejos que podemos aplicar es que tratar que la tipología de las muestras sean consistentes, por ejemplo, si ustedes tienen como era en este caso la clasificación binaria de duplicado o no duplicado, que el conjunto de entrenamiento, el conjunto de validación, el conjunto de prueba tenga el mismo balance de ejemplares que te muestren lo uno y lo otro, porque en el momento en que tú entrenas con una un balance y validas con balance completamente diferente, pues estás siendo inconsistente en tu hipótesis. 
+
+Entonces es un proceso de integrar, ajustar y revisar, y es quizá el momento donde personalmente tenemos quizás un momento de frustración. Es importante que durante este proceso de interacción tengamos resiliencia, seamos constantes y perseveramos, vamos muchos momentos de frustración donde uno dice, ya estoy haciendo esto, estoy aplicando la técnica, estoy modificando los híper-parámetros, hemos hecho cinco experimentos diferentes e inclusive la capacidad computacional ya no da y tenemos que aumentar capacidad computacional, pero eso nos permite tomar decisiones diferentes e inclusive ajustar los experimentos, entonces tomen en cuenta que es un proceso iterativo, pero también tengan en cuenta y lo vamos a ver cuando hablemos de resultados y de aplicación en la industria que tiene que haber un momento donde hay que tomar una decisión y cortar, y tomar una decisión acerca del rendimiento y la eficiencia de los resultados en ciencia de datos, ¿Por qué? porque en algún momento que implementarlo y eso es lo más importante.
+
+Entonces una vez finalizados el entrenamiento, la validación comenzamos toda una etapa de análisis de los resultados y de comparación. Como podemos ver este trabajo de investigación tuvo dos fases importantes, durante el proceso de desarrollo, dos entregables dos conjuntos de entregables:
+
+- **El primero es un conjunto de preparación y de transformación de los datos:** es muy importante para los modelos de inteligencia de artificial los modelos de Machine Learning preprocesar los datos y con la técnica que se utilicen puede ser inclusive resultados diferentes y como lo fue resultado este modelo desde los procesos de preparación y de transformación de los datos nos ayudó a identificar para qué el caso específico, caso de negocio específico cada uno de los modelos de es más apto, entonces también es muy importante entender que no todos los modelos solucionan todos los problemas y desde una macro solución se pueden identificar ramas diferentes como aquí se ven cinco procesos o 5 resultados dependiendo de qué tipo de datos tengo y qué tipo de procesamiento voy a utilizar, y luego qué modelo específico estoy utilizando y qué resultados benefician versus cualquiera de los otros casos de negocio. Entonces teníamos resultados donde teníamos una el resultado de performance medido en el score del f1 mucho más alto, pero penaliza vamos algunas de las clases como los 'falsos positivos' y eso es muy importante que tenga en cuenta que no sólo matemáticamente, queremos llegar a un resultado si tenemos que poder traducir eso a nivel de negocio qué significa tener un 'falso positivo' y les voy a adelantar un poco. Un 'falso positivo' bajo este caso de estudio significaba que estábamos vinculando como un mismo producto dos productos diferentes y eso es más crítico y más costoso en el negocio que tener un 'falso positivo' donde estamos diciendo pues no son los mismos productos y los muestras dos veces, ¿Por qué? Porque si tú íntegras el mismo producto y son dos cosas completamente diferentes, por ejemplo está hablando de un iPhone de 250 GB de memoria y un iPhone de 128 GB de memoria y tú lo vendes como uno solo  cuando le llega al cliente pues te va a hacer una reclamación y tienes que incurrir a todos los costos de unas garantías en todo un problema de cancelación y logística inversa en este caso específico.
+
+Entonces es muy importante tener en cuenta que no es sólo el resultado de eficiencia o de eficacia del modelo sino que hay que analizar los diferentes casos de negocio que están enmarcados dentro de este gran problema para tomar decisiones de negocio basado en los resultados matemáticos de los resultados que nos dé cada uno de los modelos.
+
+## ¿Qué dificultades o retos encontraron durante la ejecución del proyecto?
+
+Todo proceso de investigación y también todo un proceso de negocio y la  
+industria tiene dificultades y retos.
+
+Vamos a iniciar por las dificultades en la consecución de un Corpus específico. Tenemos dificultades porque la mayoría de los datos, por ejemplo no están en idioma español. La relación de datos que teníamos en idioma inglés versus lo que tenemos en español portugués u otros idiomas en este corpus de más de 16 millones de registros que utilizamos para el proyecto investigación, nos genera un  
+desafío. Vamos a trabajar entonces solo con información en español mientras nos  
+decía que nuestro corpus era muy pequeño o vamos a utilizar información  
+estandarizada en inglés y además en inglés norteamericano para poder hacer  
+el procesamiento de los textos y poderlo volver un vector por ejemplo, esas decisiones que esa fue la primera dificultad y está muy claro. 
+
+La mayoría de la investigación y de información y la educación está en  inglés yo los invito a que nos quitemos de ese sesgo y abramos el espectro y busquemos información en todo el mundo esa fue la primera dificultad y así la atacamos.
+
+
+La segunda dificultad que atacamos fue la construcción de los modelos, pero aquí es muy importante la guía experta y aquí tengo que hacer una mención a mi directora, la ingeniera Gloria Inés, porque ella supo guiar la investigación y supo guiar bajo su conocimiento experto en la materia hacia dónde tenemos que enfocar la solución del problema y cuáles son los caminos que hay que recorrer, eso también pasa en la industria, entonces cuando uno ve un bosque tratemos de enfocarnos en el árbol pero sin perder el bosque eso nos lleva a cada uno de esa identificación de los modelos que tenemos que hacer una investigación bibliográfica exhaustiva hay que leer y otra vez hay que leer y hay que leer inglés, entonces tenemos que  utilizar todos los recursos que tengamos a la mano en eso también quiero agradecer laniversidad Javeriana porque todo el equipo de biblioteca y de referencia están siempre a la mano impresos para encontrar el paper más actualizado más difícil en cualquier momento.
+
+una vez entendiendo eso el siguiente desafío que atacamos es cómo Condensamos eso y lo aplicamos en el modelo entonces hay que hacer ejercicios hay que hacer experimentos y tienen que ser muy cortos tienes que ver un MVP muy corto, para ver si estás yendo por el camino correcto, el ensayo y el error se parte del método científico, pero hay que saber cuándo hay que recalibrar y volver a arrancar y cuáles van a ser esos pasos que te están diciendo que realmente son las métricas que está haciendo en el camino correcto entonces, eso es y por último un desafío muy grande que aquí, yo creo que después de la pandemia esto ha sido mucho más sencillo de de resolver, es la capacidad computacional para que ustedes tengan una idea cuando arrancamos este proceso ya de entrenamiento que se necesitan máquinas nuestra mejor solución fue utilizar pues herramientas de infraestructura en la nube, donde muy fácilmente podíamos hacernos unos ajustes a las capacidades de esta infraestructura para mejorar la capacidad computacional, lo que  nos dimos cuenta es que había que hacer una pequeña inversión adicional para tener 16x la capacidad de la capacidad computacional, entonces no escatimen esfuerzos ni recursos pues siempre con un beneficio costo en buscar la mejor capacidad computacional, porque cuando ustedes vean que el  
+proceso está tomando mucho tiempo si tienen algo mal en el algoritmo tienen  
+algo mal en el código que deberíamos buscar un experto también para que te  
+ayude, porque no, los procesos lo importante no es saberlo todo sino saber  
+quién lo sabe para que lo puedas vincular al proyecto y tomar los ajustes  
+específicos una vez nosotros hicimos desajustes los tiempos computacionales  
+se redujeron casi  10 veces y ese fue el último gran desafío que logramos cumplir y solucionar con el proceso de investigación, de la mano la resiliencia hay que dejarlo corriendo por la noche, a veces levantarse a las 3 de la mañana para ver si sigue corriendo levantarse a las 6 para ver si terminó y a las 10 de la mañana guardar los resultados, entonces eso es muy importante.
+
+## ¿Cuáles fueron los resultados obtenidos en este proyecto?
+
+Una vez finalizado el proceso de investigación, el resultado fue magnífico. Contamos con  cinco modelos diferentes a través de dos procesos de preprocesamiento de datos, los cuales de manera general atienden la misma  
+pregunta qué productos están duplicados y como los puedo relacionar en un mismo producto a través de un dato maestro, pero con cinco casos de negocio específicos que atiende cada uno de estos modelos. 
+
+1. MLP/DL SM (F1 SCORE: 0.818)
+2. LSTM/DL SM (F1 SCORE: 0.785)
+3. LSTM/W2V_501 (F1 SCORE: 0.816)
+4. MLP/W2V_501 (F1 SCORE: 0.808)
+5. Bi LST/W2V_501 (F1 SCORE: 0.808)
+
+Entonces tenemos un modelo de Decision Tree, donde le estamos dando prelación al rendimiento total basados en nuestra métrica reina que era el f1 score, sin tener en cuenta el resultado de las clases, si tenemos falsos positivos o falsos negativos, pero cada uno de esos modelos tenía quizás un costo en rendimiento donde podríamos ver un menor f1 score pero favorecíamos a una de las clases, por ejemplo las negativas, como los reducir los falsos negativos o reducir los falsos positivos.
+
+Eso fue fundamental a nivel de resumen porque estos cinco modelos dentro de esta macro solución atienden cinco casos de negocio específicos que están derivados de qué datos tengo yo para poderlos meter el modelo para obtener un resultado eso es muy importante. Nosotros en la vida real nunca tenemos todos los datos ni tenemos el estado ideal, entonces nuestras soluciones, nuestras alternativas de solución tienen que enmarcarse debajo de esa realidad y es ahí donde nuestro modelo además de proponer dos modelos de preprocesamiento, uno más formal, si lo podemos decir más ortodoxo basado en una en un procesamiento de palabras que convertía a través de word su pequeño vector de 250 caracteres o de 250 posiciones perdón y teníamos algo más sencillo que fue una propuesta que tiene que ver con la distancia de latency time, de qué tan diferente es una cadena caracteres de otra y poder comparar y hacer eso como parte de un preprocesamiento, cuando realizamos el preprocesamiento pues tenemos otro resultado y otro tipo de vector que genera unos resultados como lo vemos en la solución pues diferentes atendiendo el mismo problema pero con la particularidad particularidad de cada uno de esos casos de negocio. Entonces tenemos dos modelos de preprocesamiento de datos y cinco modelos de identificación de posibles duplicados utilizando técnicas de de Machine Learning. 
+
+Los cinco modelos de Machine Learning están basados en la metodología de aprendizaje profundo terrible y los podemos separar en dos grandes grupos:
+
+- El primero que era una red neuronal multicapa una MLP (Multilayer Perceptron)  versátil donde teníamos ley de capas densas interconectadas y lo que hicimos fue iterar en la arquitectura, saber cuántas capas tenían, cuántos nodos por cada una de las capas deberíamos tener, cuál debería ser en la el la capa resultado, el output y luego después de establecer cuál era la arquitectura de la red, comenzamos a jugar con los hiperparámetros dentro de cada nodo, cuáles son las funciones de activación, cómo manejamos lo el nivel de aprendizaje y con eso sacamos dos de los tres modelos basados en aprendizaje profundo, una red neuronal multicapa de conexiones densas con arquitecturas diferentes cada una y fuimos ajustando cada uno de sus hiperparámetros dentro de cada uno de los nodos.
+
+- El siguiente conjunto los otros tres modelos se basan en el LSTM de Long Short   Term Memory sets donde hicimos toda una arquitectura basada en el reconocimiento del lenguaje, básicamente y vimos cómo la arquitectura del LSTM se pues es muy favorable para esta identificación, ahí creamos unos vectores, mucho más grandes mucho más potentes, pero además nos ayudaban a solucionar la escasez de datos de algunos de esos casos de negocio.
+
+Entonces cuando utilizamos esta arquitectura esta metodología utilizamos el LSTM normal utilizamos el LSTM bidireccional que en uno de los casos de negocio fue la de mayor rendimiento y la que disminuía los falsos negativos, aquí también trabajamos con la arquitectura la arquitectura son un poco diferentes o en términos de cantidad de capas y demás pero si tienen mucho más nodos y unos hiper parámetros diferentes, aquí lo emplean la importancia es poder establecer cuáles son los híper parámetros que más contribuyen o afectan dependiendo las arquitecturas y de las metodologías de trabajo, el aprendizaje profundo es excelente siempre y cuando nosotros tengamos claro un modelo estricto para ir haciendo unos ajustes de tus híper parámetros de todos el experimento, de esa combinación, inclusive existen metodologías donde dentro de unos conjuntos uno pone un rango de estimación de los híper parámetros y simplemente dejas al modelo iterar y vas viendo cuáles son resultados qué combinación de hiper parámetros van generando los mejores conjuntos de solución y esos son los que son escogidos.  Entonces es muy importante tener en cuenta esa alternativa de arquitecturas y realmente de metodologías de aprendizaje supervisado que utilizamos.
+
+## ¿Cuáles fueron los impactos del proyecto en cuanto a aspectos técnicos, éticos, económicos o ambientales?
+
+Este modelo de investigación estas soluciones propuestas fueron llevados a  
+la industria a través del patrocinio de la empresa del trabajo, tomamos de estos  modelos y los comenzamos a probar directamente con nuestros clientes para  que tengan una idea uno de los primeros resultados es poder reducir e  
+implementar un modelo multioferta basado en un único producto y tengo  
+todas las ofertas tipo Amazon, cuando voy a hacer la compra en vez de realizar  
+una una experiencia de usuario no tengo todos los productos duplicados en una  misma pantalla y tengo que centrar y seleccionar cada uno y realmente no sé  si estoy comprando comparando el mismo producto.
+
+La primera implementación nos de una reducción casi de 3x el número de productos exhibidos para que usted tengan una idea la conversión online  
+baja del 45% al 15% si un usuario hace más de tres clics o más de 3 scrolls  
+antes de hacer la conversión que la medimos es adicionando el producto al carrito de compra ese fue el primer impacto aumentamos la conversión en 3x.
+
+El segundo impacto que lo podemos ver tiene que ver con una nueva implementación que estamos haciendo de este proceso donde estamos viendo como nosotros igualamos los productos y los comparamos entre sí para ver si cuáles tiene el precio correcto y cuando estamos por arriba y cuando estamos por debajo entonces conocen la en la industria como un price scanning un Price Scraping a través del internet para poder uno presentar cuáles son las diferentes ofertas, pero no puedes comparar peras con manzanas, esta implementación está en curso, pero busca mejorar 1.5 puntos de margen, para que tengan una idea numéricamente o en plata a nivel de p&g queremos mejorar entre 700 mil y 900 mil dólares anuales simplemente por saber que es el mismo producto y cuál es el precio competitivo para así podérselo ofrecer  a nuestros clientes a través de la plataforma es muy importante siempre  poder traer de cuál es tu resultado, cuál va a ser el Output de tu modelo y eso en plata, en tiempo, en costos qué impacto tiene. Entonces siempre muy importante saber que cuando lo llevamos a la  industria tenemos que poder transmitir al negocio cuál van a ser los beneficios los ahorros o las ganancias que van a buscar.
+
+Nosotros como ingenieros como egresados de la javeriana tenemos que tener  
+siempre la ética como uno de nuestros pilares dice 'estrella polar' que  
+debemos seguir en este proyecto de investigación teníamos unos temas éticos  
+muy importantes que atacar bueno e ingenieros javerianos estudiantes de  
+maestría los invito a que no claudiquen la ciencia de datos, inteligencia  
+artificial, el machine learning, la solución de estos problemas complejos a  
+través de esta disciplina es algo maravilloso. Yo los invito a que si tienen dudas  
+preguntas inquietudes a través de la universidad, de los profesores de el  
+departamento de posgrado de ingeniería con el mayor de los gustos podemos  
+acordar o agendar uno de espacios donde si quieren revisar más en profundidad detalles del trabajo o detalles de la experiencia que hemos tenido y cómo la estamos implementando hoy en día en la industria la solución aquí planteado espero pues puede estar a su disposición como siempre lo decimos aquí en la javeriana, javeriano ayuda javeriano, entonces cuenten conmigo cuando lo necesiten y les deseó los mayores éxitos en esta aventura que arranquen que por favor culminen.

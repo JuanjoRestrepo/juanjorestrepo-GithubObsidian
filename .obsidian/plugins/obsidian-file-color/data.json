@@ -1,0 +1,86 @@
+{
+  "cascadeColors": false,
+  "colorBackground": true,
+  "palette": [
+    {
+      "id": "6O6BKQlVT21FSzpW8kA4M",
+      "name": "Urgent",
+      "value": "#ff0000"
+    },
+    {
+      "id": "yyvLUPQXuXScM3nyrz25h",
+      "name": "DataBases",
+      "value": "#4249ff"
+    },
+    {
+      "id": "1x0SZh4JsB3RUb2DcqZ0-",
+      "name": "DataScience",
+      "value": "#ff8800"
+    },
+    {
+      "id": "D4jbyCKYYqH4CTnGuXNJ-",
+      "name": "",
+      "value": "#ff00f7"
+    },
+    {
+      "id": "NpWj-bVnPfrxzs39Ccnjz",
+      "name": "Keys",
+      "value": "#fbff00"
+    },
+    {
+      "id": "Dzd3nY-Sy93IFnLkoY1_Z",
+      "name": "NodeJs",
+      "value": "#1be600"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Ing Electronica",
+      "color": "yyvLUPQXuXScM3nyrz25h"
+    },
+    {
+      "path": "Master Data Science",
+      "color": "1x0SZh4JsB3RUb2DcqZ0-"
+    },
+    {
+      "path": "Keys/Department of State Enterprise Exchange Student Alumni Account",
+      "color": "yyvLUPQXuXScM3nyrz25h"
+    },
+    {
+      "path": "Ing Electronica/Semestre 8 2022-2",
+      "color": "6O6BKQlVT21FSzpW8kA4M"
+    },
+    {
+      "path": "Ing Electronica/Semestre 9 2023-1",
+      "color": "1x0SZh4JsB3RUb2DcqZ0-"
+    },
+    {
+      "path": "Ing Electronica/Semestre 10 2023-2",
+      "color": "NpWj-bVnPfrxzs39Ccnjz"
+    },
+    {
+      "path": "Self Study/NodeJs",
+      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
+    },
+    {
+      "path": "Self Study/Microsoft/CSharp",
+      "color": "D4jbyCKYYqH4CTnGuXNJ-"
+    },
+    {
+      "path": "Self Study/NodeJs/Clase 1",
+      "color": "NpWj-bVnPfrxzs39Ccnjz"
+    },
+    {
+      "path": "Self Study/NodeJs/Clase 3",
+      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
+    },
+    {
+      "path": "Self Study/IBM",
+      "color": "yyvLUPQXuXScM3nyrz25h"
+    },
+    {
+      "path": "Keys",
+      "color": "NpWj-bVnPfrxzs39Ccnjz"
+    }
+  ]
+}

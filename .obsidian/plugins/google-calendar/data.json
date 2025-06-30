@@ -1,0 +1,93 @@
+{
+  "googleClientId": "597288637714-t3tk8h87k2ihip6sj70shtvoeaba327g.apps.googleusercontent.com",
+  "googleClientSecret": "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",
+  "googleRefreshToken": "",
+  "useCustomClient": true,
+  "googleOAuthServer": "https://obsidian-google-calendar.vercel.app",
+  "refreshInterval": 10,
+  "useNotification": true,
+  "showNotice": true,
+  "autoCreateEventNotes": true,
+  "autoCreateEventNotesMarker": "obsidian",
+  "ignorePatternList": [],
+  "autoCreateEventKeepOpen": false,
+  "importStartOffset": 1,
+  "importEndOffset": 1,
+  "optionalNotePrefix": "",
+  "eventNoteNameFormat": "{{prefix}}{{event-title}}",
+  "defaultCalendar": "restrepojuanjo@gmail.com",
+  "calendarBlackList": [],
+  "insertTemplates": [],
+  "useDefaultTemplate": false,
+  "defaultTemplate": "",
+  "defaultFolder": "Zettelkasten",
+  "activateDailyNoteAddon": true,
+  "dailyNoteDotColor": "#6aa1d8",
+  "useWeeklyNotes": false,
+  "debugMode": false,
+  "timelineHourFormat": 0,
+  "atAnnotationEnabled": true,
+  "usDateFormat": true,
+  "viewSettings": {
+    "day": {
+      "type": "day",
+      "exclude": [],
+      "include": [],
+      "hourRange": [
+        0,
+        24
+      ],
+      "offset": 0,
+      "timespan": 1,
+      "showAllDay": true,
+      "navigation": true
+    },
+    "week": {
+      "type": "week",
+      "exclude": [],
+      "include": [],
+      "hourRange": [
+        0,
+        24
+      ],
+      "offset": 0,
+      "timespan": 7,
+      "showAllDay": true,
+      "navigation": true
+    },
+    "schedule": {
+      "type": "schedule",
+      "exclude": [],
+      "include": [],
+      "hourRange": [
+        0,
+        24
+      ],
+      "offset": 0,
+      "timespan": 7,
+      "showAllDay": true,
+      "navigation": true
+    },
+    "month": {
+      "type": "month",
+      "exclude": [],
+      "include": [],
+      "offset": 0
+    },
+    "year": {
+      "type": "year",
+      "exclude": [],
+      "include": [],
+      "offset": 0,
+      "size": 15
+    },
+    "web": {
+      "type": "web",
+      "theme": "auto",
+      "view": "day",
+      "offset": 0
+    }
+  },
+  "timelineHeight": 700,
+  "timelineWidth": 300
+}

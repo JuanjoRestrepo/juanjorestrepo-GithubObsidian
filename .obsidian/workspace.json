@@ -1,0 +1,273 @@
+{
+  "main": {
+    "id": "cb3c71e073665165",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca2a4039f7b8e577",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7da1ff8dc2607c28",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38802f54a5ed2362",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bfa947161009e9c",
+        "type": "tabs",
+        "dimension": 73.73868046571798,
+        "children": [
+          {
+            "id": "46cd114c9707ddaf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "04746bf9311ea587",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "066836",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "404491b42cf81395",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4ec017a478863232",
+        "type": "tabs",
+        "dimension": 26.261319534282016,
+        "children": [
+          {
+            "id": "f27588b64f52208d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 344.5
+  },
+  "right": {
+    "id": "cf20e551102d8f87",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2cd41cccf37bca7",
+        "type": "tabs",
+        "dimension": 60.2996254681648,
+        "children": [
+          {
+            "id": "96383a0ea3b0acd8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Plan de Trabajo semillero iÓMICAS"
+            }
+          },
+          {
+            "id": "ca1f1ce200899188",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Plan de Trabajo semillero iÓMICAS"
+            }
+          },
+          {
+            "id": "eee4f969d6b6a66b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "2caa545dd45a4bfd",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "8d223a2a932966cc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Plan de Trabajo semillero iÓMICAS"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "ed82d83676065a4b",
+        "type": "tabs",
+        "dimension": 39.70037453183521,
+        "children": [
+          {
+            "id": "cc09e55ece66f5e2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "google-calendar-view-month",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-days",
+              "title": "GCal Month View"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 312.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "obsidian42-brat:BRAT": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7da1ff8dc2607c28",
+  "lastOpenFiles": [
+    "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
+    "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
+    "Keys/Obsidian Github Access Token/Obsidian Github 2024.md",
+    "Keys/Obsidian Github Access Token/GithubObsidianAccessToken2023.png",
+    "Self Study/C & C++/Makefiles y build.bat.md",
+    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
+    "Self Study/C & C++",
+    "Files/Pasted image 20250628213406.png",
+    "Files/Pasted image 20250628213356.png",
+    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
+    "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
+    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
+    "Master Data Science/Omicas/DEV/Coding/2. Database/PostgreSQL.md",
+    "Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB.md",
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
+    "Master Data Science/Omicas/DEV/Coding/2. Database",
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
+    "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo",
+    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
+    "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
+    "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
+    "Master Data Science/Omicas/DEV/Coding/API KEY TEST.md",
+    "Master Data Science/Omicas/DEV/Coding",
+    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
+    "Master Data Science/Omicas/DEV",
+    "Master Data Science/Omicas/Tecnicas/Notas Visitas (1)/Notas Visita 1 Omicas.md",
+    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
+    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR) 2.md",
+    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
+    "Master Data Science/Omicas/Omicas 2025 Grupos Investigacion.md",
+    "Keys/dbt key.md",
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+    "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
+    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
+    "Files/Pasted image 20250619232243.png",
+    "Files/Pasted image 20250619232821.png",
+    "Files/Pasted image 20250618215832.png",
+    "Files/Pasted image 20250618215839.png",
+    "Files/Pasted image 20250617194313.png",
+    "Files/Pasted image 20250617194238.png",
+    "Files/Pasted image 20250617194347.png",
+    "Qubika/Qversity 2025/Proyecto Final",
+    "Qubika/Qversity 2025/9. Airflow",
+    "Qubika/Qversity 2025/6. Construyendo Data Pipelines"
+  ]
+}
