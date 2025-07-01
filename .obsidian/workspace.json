@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
+                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Claves primarias y foraneas (PK y FK)"
+              "title": "SQL DALTO"
             }
           }
         ]
@@ -229,6 +229,10 @@
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/6. Diagrama ER de Northwind.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/IMG_DB_Dalto/AtributosCompuestos2.png",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
@@ -267,11 +271,7 @@
     "Master Data Science/Omicas/DEV/Coding",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/DEV",
-    "Master Data Science/Omicas/Tecnicas/Notas Visitas (1)/Notas Visita 1 Omicas.md",
-    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
-    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR) 2.md",
     "Files/Pasted image 20250619232243.png",
-    "Files/Pasted image 20250619232821.png",
     "Qubika/Qversity 2025/Proyecto Final",
     "Qubika/Qversity 2025/9. Airflow",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines"
