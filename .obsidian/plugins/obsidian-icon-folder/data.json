@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiQualcomm",
       "SiSqlite",
       "SiPostgresql",
       "FabJava",
-      "SiApacheairflow",
-      "SiDatadog"
+      "SiApacheairflow"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
