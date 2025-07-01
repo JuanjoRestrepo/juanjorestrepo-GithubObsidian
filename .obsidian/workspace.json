@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDR"
+              "title": "5. Claves primarias y foraneas (PK y FK)"
             }
           }
         ]
@@ -229,6 +229,11 @@
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
+    "Self Study/SQL/5. Foreign Key y Relaciones.md",
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "README.md",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png",
@@ -265,11 +270,6 @@
     "Master Data Science/Omicas/Tecnicas/Notas Visitas (1)/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
     "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR) 2.md",
-    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
-    "Master Data Science/Omicas/Omicas 2025 Grupos Investigacion.md",
-    "Keys/dbt key.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
-    "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
     "Files/Pasted image 20250619232243.png",
     "Files/Pasted image 20250619232821.png",
     "Qubika/Qversity 2025/Proyecto Final",

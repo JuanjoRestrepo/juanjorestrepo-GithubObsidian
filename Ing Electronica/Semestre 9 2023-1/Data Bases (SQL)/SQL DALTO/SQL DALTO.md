@@ -9,7 +9,7 @@ _________________________________________________________
 [[2. Diagrama ER (Con Notación CHEN)]]
 [[3. Clave o Key]]
 [[4. Tablas, Campos y Registros]]
-[[5. Claves primarias y foraneas]]
+[[5. Claves primarias y foraneas (PK y FK)]]
 [[6. Diagrama ER de Northwind]]
 
 ## Imágenes
