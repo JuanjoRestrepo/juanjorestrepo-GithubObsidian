@@ -210,6 +210,8 @@ def load_to_postgres():
 
 - I cleaned and normalized the data—parsing nested fields, flattening arrays, and enforcing relational integrity. 
 
+
+
 ## Gold layer
 
 - In the Gold layer, I used dbt to model business-ready tables and KPIs aligned with 21 predefined business questions.
