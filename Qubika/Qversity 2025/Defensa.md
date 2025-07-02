@@ -23,6 +23,7 @@ Fuente: Databricks
 # 🧠 PASO 2 — Estructura de presentación por bloques
 
 
+## 1. 🏗️ **Project Architecture**
 
 ![[Pasted image 20250702163041.png]]
 
@@ -39,6 +40,23 @@ All processes were containerized and managed using Docker and Docker Compose.
 
 ![[Pasted image 20250702172036.png]]
 
+![[Pasted image 20250702172111.png]]
+
+![[Pasted image 20250702172130.png]]
+
+![[Pasted image 20250702172145.png]]
+
+
+## 2. ⚙️ **Data Pipeline & Processing**
+
+***“How did the data flow from raw to insight?”***
+
+- The raw dataset was a JSON file stored in a public S3 bucket.
+- In the Bronze layer, we ingested the raw data directly into PostgreSQL using a Python script and Airflow DAG.
+- In the Silver layer, we parsed nested JSON fields, removed arrays, standardized field types, and normalized the data into 3NF.
+- In the Gold layer, we created star-schema models with dbt to generate analytical tables that answer 21 specific business questions.
+
+https://www.mermaidchart.com/app/projects/280dc706-7d77-41e9-b310-0a3a4def1f27/diagrams/a0e5d552-2c01-4784-8431-0fe642caca2e/version/v0.1/edit
 
 
 # 📊 PASO 3 — Selección de 3 a 5 Insights clave (defensa de resultados)
