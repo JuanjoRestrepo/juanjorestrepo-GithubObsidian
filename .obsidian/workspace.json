@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Qubika/Qversity 2025/Defensa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDR"
+              "title": "Defensa"
             }
           }
         ]
@@ -229,6 +229,11 @@
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Pasted image 20250702163117.png",
+    "Pasted image 20250702163048.png",
+    "Pasted image 20250702163041.png",
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+    "Qubika/Qversity 2025/Defensa.md",
     "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
@@ -240,7 +245,6 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "README.md",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png",
@@ -255,7 +259,6 @@
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
     "Self Study/C & C++",
     "Files/Pasted image 20250628213406.png",
-    "Files/Pasted image 20250628213356.png",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
     "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
@@ -266,12 +269,9 @@
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo",
-    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
-    "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
     "Master Data Science/Omicas/DEV/Coding",
     "Master Data Science/Omicas/DEV",
-    "Files/Pasted image 20250619232243.png",
     "Qubika/Qversity 2025/Proyecto Final",
     "Qubika/Qversity 2025/9. Airflow",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines"
