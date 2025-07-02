@@ -32,6 +32,13 @@ We implemented a full ELT architecture based on the Medallion design pattern: Br
 - **dbt for SQL-based modeling**
 - **PostgreSQL as our data warehouse.**
 
+All processes were containerized and managed using Docker and Docker Compose.
+
+
+![[Pasted image 20250702172019.png]]
+
+![[Pasted image 20250702172036.png]]
+
 
 
 # 📊 PASO 3 — Selección de 3 a 5 Insights clave (defensa de resultados)

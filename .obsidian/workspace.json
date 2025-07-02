@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Requerimientos Proyecto"
             }
+          },
+          {
+            "id": "89e0abad03ae6499",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Qubika/Qversity 2025/Defensa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Defensa"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -227,8 +243,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fc4e85b9fa3e5ec4",
+  "active": "89e0abad03ae6499",
   "lastOpenFiles": [
+    "Pasted image 20250702172036.png",
+    "Pasted image 20250702172019.png",
+    "Pasted image 20250702171956.png",
+    "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
     "Qubika/Qversity 2025/Proyecto Final/Intro.md",
     "Qubika/Qversity 2025/Proyecto Final/EDR.md",
@@ -237,7 +257,6 @@
     "Pasted image 20250702163117.png",
     "Pasted image 20250702163048.png",
     "Pasted image 20250702163041.png",
-    "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
@@ -252,11 +271,9 @@
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png",
     "Files/2018-04-18_17-58-37-244ad8bef9eeef440bc1bfed65c59e3f.jpg",
     "Files/2018-04-18_17-56-47-1d3a6e31a0cdc5664db1ffbfde64e4e4.png",
-    "Files/2018-04-18_17-49-59-afc0a00e1db7c0b7d6960eff7783c751.png",
     "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2024.md",
-    "Keys/Obsidian Github Access Token/GithubObsidianAccessToken2023.png",
     "Self Study/C & C++/Makefiles y build.bat.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
     "Self Study/C & C++",
@@ -267,7 +284,6 @@
     "Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database",
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
     "Master Data Science/Omicas/DEV/Coding",
