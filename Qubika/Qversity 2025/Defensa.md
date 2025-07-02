@@ -208,7 +208,16 @@ def load_to_postgres():
 ---
 ## Silver layer
 
-- I cleaned and normalized the data—parsing nested fields, flattening arrays, and enforcing relational integrity. 
+**Goal:** Transform raw JSON into clean, normalized, and queryable relational tables.
+
+- In the Silver layer, I transformed the unstructured JSON data from the Bronze layer into structured tables following **Third Normal Form (3NF)**.  
+
+I created three core models using dbt:
+- `silver_customers`
+- `silver_services`
+- `silver_payments`
+
+Each model parses and cleans specific fields. I also enforced data validation, normalized relationships, and deduplicated records to ensure data quality
 
 
 
