@@ -59,6 +59,28 @@ All processes were containerized and managed using Docker and Docker Compose.
 https://www.mermaidchart.com/app/projects/280dc706-7d77-41e9-b310-0a3a4def1f27/diagrams/a0e5d552-2c01-4784-8431-0fe642caca2e/version/v0.1/edit
 
 
+
+
+
+## ***Explanation🥉 Bronze Layer***
+
+**Objective**: Ingest raw JSON into PostgreSQL.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 # 📊 PASO 3 — Selección de 3 a 5 Insights clave (defensa de resultados)
 
 
