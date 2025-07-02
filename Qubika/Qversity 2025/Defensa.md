@@ -5,10 +5,23 @@ I designed and implemented a complete ELT data pipeline using Apache Airflow, db
 
 ![[Pasted image 20250702163048.png]]
 Fuente: Databricks
-## Bronze Layer
+## **Bronze Layer**
 
 - The source was a complex JSON dataset containing mobile customer data.
 - I extracted it from a public S3 bucket and ingested it into PostgreSQL using orchestrated DAGs in Airflow.
+
+
+## ***Explanation🥉 Bronze Layer***
+
+**Objective**: Ingest raw JSON into PostgreSQL.
+
+1. Initial Prototype (`bronze_ingest.py`)
+
+
+
+
+
+
 
 ## Silver layer
 
@@ -58,13 +71,6 @@ All processes were containerized and managed using Docker and Docker Compose.
 
 https://www.mermaidchart.com/app/projects/280dc706-7d77-41e9-b310-0a3a4def1f27/diagrams/a0e5d552-2c01-4784-8431-0fe642caca2e/version/v0.1/edit
 
-
-
-
-
-## ***Explanation🥉 Bronze Layer***
-
-**Objective**: Ingest raw JSON into PostgreSQL.
 
 
 
