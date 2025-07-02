@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Defensa.md",
+                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defensa"
+              "title": "EDR"
             }
           }
         ]
@@ -45,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -91,7 +91,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -202,8 +202,8 @@
               "type": "google-calendar-view-month",
               "state": {},
               "pinned": true,
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "calendar-days",
+              "title": "GCal Month View"
             }
           }
         ]
@@ -215,25 +215,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
+      "obsidian-git:Open Git source control": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Defensa.md",
     "Pasted image 20250702163117.png",
     "Pasted image 20250702163048.png",
     "Pasted image 20250702163041.png",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
-    "Qubika/Qversity 2025/Defensa.md",
     "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
@@ -245,6 +244,7 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "README.md",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png",
     "Files/2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png",
@@ -258,7 +258,6 @@
     "Self Study/C & C++/Makefiles y build.bat.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
     "Self Study/C & C++",
-    "Files/Pasted image 20250628213406.png",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
     "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
@@ -269,6 +268,7 @@
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo",
+    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
     "Master Data Science/Omicas/DEV/Coding",
     "Master Data Science/Omicas/DEV",
