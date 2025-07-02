@@ -63,6 +63,71 @@ This proved the concept but suffered from per‑record inserts (slower) and reli
 - Drops & recreates the target table each run to ensure idempotency.
 
 
+`complete_pipeline.py`
+
+This DAG orchestrates all layers, but here we focus strictly on the Bronze ingestion steps.
+
+```python
+# dags/complete_pipeline.py
+
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
+from airflow.utils.dates import days_ago
+from datetime import timedelta
+import requests
+import json
+import os
+import logging
+import psycopg2
+from psycopg2.extras import execute_values
+
+# -----------------------------------------------
+
+# CONFIGURACIÓN GENERAL
+
+# -----------------------------------------------
+
+URL = 'https://qversity-raw-public-data.s3.amazonaws.com/mobile_customers_messy_dataset.json'
+
+RAW_JSON_PATH = '/opt/airflow/data/raw/raw_data.json'
+
+
+DB_CONN_INFO = {
+    'host': os.getenv('DB_HOST', 'postgres'),
+    
+    'port': os.getenv('DB_PORT', 5432),
+    'dbname': os.getenv('POSTGRES_DB', 'qversity'),
+    'user': os.getenv('POSTGRES_USER', 'qversity-admin'),
+    'password': os.getenv('POSTGRES_PASSWORD', 'qversity-admin'),
+
+}
+
+  
+
+default_args = {
+
+    'owner': 'qversity',
+
+    'start_date': days_ago(1),
+
+    'depends_on_past': False,
+
+    'email_on_failure': False,
+
+    'email_on_retry': False,
+
+    'retries': 1,
+
+    'retry_delay': timedelta(minutes=2),
+
+}
+
+```
+
+
+
+
 ## Silver layer
 
 - I cleaned and normalized the data—parsing nested fields, flattening arrays, and enforcing relational integrity. 
