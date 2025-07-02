@@ -64,15 +64,35 @@ https://www.mermaidchart.com/app/projects/280dc706-7d77-41e9-b310-0a3a4def1f27/d
 
 No necesitas explicar los 21 insights: **elige los más impactantes y dominados**, por ejemplo:
 
-|Insight #|Tema|Por qué elegirlo|
-|---|---|---|
-|1|% fallos de pago|Riesgo financiero → decisiones inmediatas|
-|5|Combinaciones más frecuentes|Segmentación de producto y marketing|
-|6|Combinaciones más rentables|Maximización de ingresos|
-|11|Resumen general de uso y ARPU|Muestra síntesis de análisis cruzado|
-|7|Salud por operador (si tienes los datos)|Muestra contexto geográfico|
+We derived 21 business insights. I will present a few that show the business value of this pipeline.
 
-# 🎤 PASO 4 — Posibles preguntas del jurado (Q&A)
+| Insight # | Tema                                     | Por qué elegirlo                          |
+| --------- | ---------------------------------------- | ----------------------------------------- |
+| 1         | % fallos de pago                         | Riesgo financiero → decisiones inmediatas |
+| 5         | Combinaciones más frecuentes             | Segmentación de producto y marketing      |
+| 6         | Combinaciones más rentables              | Maximización de ingresos                  |
+| 11        | Resumen general de uso y ARPU            | Muestra síntesis de análisis cruzado      |
+| 7         | Salud por operador (si tienes los datos) | Muestra contexto geográfico               |
+
+
+1. % fallos de pago
+![[Pasted image 20250702173313.png]]
+
+we identified that 75% of customers have at least one failed payment, which represents a serious operational risk
+
+
+# 4. 💡 **Business Impact & Recommendations**
+
+_“What can the company do with these insights?”_
+
+Based on these findings, we recommend:
+
+1. Designing segmented service bundles (basic vs. premium).
+2. Prioritizing collections and reminders for customer segments with failed or pending payments.
+3. Creating campaigns targeted to the most valuable service combinations
+
+
+# 🎤 PASO 5 — Posibles preguntas del jurado (Q&A)
 
 Te anticipo las 5–7 preguntas más comunes y te doy respuestas modelo:
 
