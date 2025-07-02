@@ -123,6 +123,8 @@ default_args = {
 - **`DB_CONN_INFO`** reads connection parameters from environment variables (`.env`) , ensuring portability across environments.
 - **`default_args`** include owner, start date, retry policy, and notification settings for robust execution.”
 
+
+
 #### 2. Task 1 – Download JSON
 
 ```python
@@ -195,8 +197,6 @@ def load_to_postgres():
 - **Use `psycopg2.extras.execute_values`** to perform a **single bulk INSERT** of all records. This is far more efficient than row‑by‑row inserts.
 - **Commit the transaction**, close cursor and connection to free resources.
 - **Log the total number of rows** inserted for monitoring.”
-
-
 
 
 ---
