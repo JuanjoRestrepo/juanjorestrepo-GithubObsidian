@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Defensa.md",
+                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL FOR DATA SCIENCE COURSERA/Semana 1/2. Data Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defensa"
+              "title": "2. Data Models"
             }
           }
         ],
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "066836",
+                "query": "SQL DALTO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -90,7 +90,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -113,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -245,6 +245,7 @@
   },
   "active": "89e0abad03ae6499",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Defensa.md",
     "Pasted image 20250702172145.png",
     "Pasted image 20250702172130.png",
     "Pasted image 20250702172119.png",
@@ -257,7 +258,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Intro.md",
     "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
-    "Qubika/Qversity 2025/Defensa.md",
     "Pasted image 20250702163117.png",
     "Pasted image 20250702163048.png",
     "Pasted image 20250702163041.png",
@@ -265,7 +265,6 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/6. Diagrama ER de Northwind.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/IMG_DB_Dalto/AtributosCompuestos2.png",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
