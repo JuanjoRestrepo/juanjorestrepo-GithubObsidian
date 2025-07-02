@@ -122,6 +122,15 @@ default_args = {
 - **`RAW_JSON_PATH`** is the local path inside our Airflow container where we write the JSON file.
 - **`DB_CONN_INFO`** reads connection parameters from environment variables (`.env`) , ensuring portability across environments.
 - **`default_args`** include owner, start date, retry policy, and notification settings for robust execution.”
+	- In Python, `**` before a dictionary unpacks its key–value pairs into **named function arguments**. It’s equivalent to: 
+			conn = psycopg2.connect(
+			    host=DB_CONN_INFO['host'],
+			    port=DB_CONN_INFO['port'],
+			    dbname=DB_CONN_INFO['dbname'],
+			    user=DB_CONN_INFO['user'],
+			password=DB_CONN_INFO['password'],
+			)
+
 
 
 
