@@ -16,11 +16,51 @@ Fuente: Databricks
 **Objective**: Ingest raw JSON into PostgreSQL.
 
 1. Initial Prototype (`bronze_ingest.py`)
+**What it does:**
+- Creates the `bronze.customers_raw` table if missing.
+- Fetches the entire JSON payload via HTTP.
+- Inserts each record one by one into Postgres using the default Airflow Postgres hook.
+
+```python
+with DAG(
+    dag_id='bronze_ingest_dag',
+    start_date=days_ago(1),
+    schedule_interval=None,
+    catchup=False,
+) as dag:
+
+    create_table = PostgresOperator(
+        task_id='create_table',
+        postgres_conn_id='postgres_default',
+        sql="""
+            CREATE SCHEMA IF NOT EXISTS bronze;
+            CREATE TABLE IF NOT EXISTS bronze.customers_raw (
+                id SERIAL PRIMARY KEY,
+                raw_json JSONB NOT NULL,
+                ingestion_timestamp TIMESTAMP NOT NULL DEFAULT now()
+            );
+        """
+    )
+
+    load_data = PythonOperator(
+        task_id='load_data_via_http',
+        python_callable=load_via_http  # fetch & insert one record at a time
+    )
+
+    create_table >> load_data
+```
+
+This proved the concept but suffered from per‑record inserts (slower) and relied on `postgres_default` connection.
 
 
+2. Production‑Ready DAG (`bronze_etl_dag.py`)
 
+**Enhancements:**
 
-
+- Bulk inserts via `psycopg2.extras.execute_values` for performance.
+- Explicit DB connection parameters via environment variables.
+- Writes JSON as newline‑delimited (NDJSON) file first for traceability.
+- Drops & recreates the target table each run to ensure idempotency.
 
 
 ## Silver layer
