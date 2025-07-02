@@ -131,9 +131,6 @@ default_args = {
 			password=DB_CONN_INFO['password'],
 			)
 
-
-
-
 #### 2. Task 1 – Download JSON
 
 ```python
