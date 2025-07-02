@@ -213,7 +213,32 @@ def load_to_postgres():
 - In the Silver layer, I transformed the unstructured JSON data from the Bronze layer into structured tables following **Third Normal Form (3NF)**.  
 
 I created three core models using dbt:
-- `silver_customers`
+
+
+##### - `silver_customers`
+
+This is the central model in Silver. It parses customer profiles and attributes from the JSON structure. I implemented:"
+
+- ✅ Field extraction from nested JSON (`->>` operators).
+- ✅ **Custom cleaning rules** for:
+    - First and last names (`initcap`, `regexp_replace`, `fallbacks`)
+    - Email validation using regex
+    - Phone number normalization (only valid 10-digit numbers)
+    - Normalized cities (`Bogotá`, `Cali`, `Lima`, etc.)
+    - Standardized countries (COLOMBIA, MEXICO, PERU, etc.)
+    - Plan types: `PREPAGO`, `POSPAGO`, `CONTROL`
+    - Operators: `CLARO`, `TIGO`, `WOM`, `MOVISTAR`
+    
+- ✅ Validation and segmentation of `credit_score`
+- ✅ Date parsing in multiple formats (ISO and DD/MM/YYYY)
+- ✅ Type casting for numerical fields (bill, data usage, coordinates)
+- ✅ Final **deduplication** using `row_number()` over `customer_id`, keeping the most recent record.
+
+
+This model ensures that all personal, geographic, and financial attributes are validated and consistent.
+
+
+
 - `silver_services`
 - `silver_payments`
 
