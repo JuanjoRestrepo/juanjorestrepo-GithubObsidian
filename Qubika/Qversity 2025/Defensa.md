@@ -147,6 +147,59 @@ In the **`download_json`** function, we:
 - **Log the number of records** for observability.”
 
 
+#### 3. Task 2 – Load to PostgreSQL
+
+```python
+def load_to_postgres():
+    conn = psycopg2.connect(**DB_CONN_INFO)
+    cur = conn.cursor()
+
+    cur.execute("""
+    CREATE SCHEMA IF NOT EXISTS bronze;
+    DROP TABLE IF EXISTS bronze.customers_raw;
+    CREATE TABLE bronze.customers_raw (
+        id SERIAL PRIMARY KEY,
+        raw_json JSONB,
+        ingestion_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    """)
+
+    with open(RAW_JSON_PATH, 'r', encoding='utf-8') as f:
+        records = [(json.dumps(json.loads(line)),) for line in f]
+    execute_values(
+        cur,
+        "INSERT INTO bronze.customers_raw (raw_json) VALUES %s",
+        records
+    )
+
+    conn.commit()
+    cur.close()
+    conn.close()
+    logging.info("✅ Loaded %d records into bronze.customers_raw", len(records))
+
+```
+
+“In the **`load_to_postgres`** function, we:
+
+- **Open a connection** to PostgreSQL via `psycopg2.connect` using our `DB_CONN_INFO`.
+- **Obtain a cursor** to execute SQL statements.
+- **Ensure idempotency** by dropping and recreating the target table:
+	- `CREATE SCHEMA IF NOT EXISTS bronze;`
+	- `DROP TABLE IF EXISTS bronze.customers_raw;`
+	- `CREATE TABLE bronze.customers_raw (...)` defines three columns:
+	    - `id SERIAL PRIMARY KEY` for a unique surrogate key,
+	    - `raw_json JSONB` to store the original JSON record,
+	    - `ingestion_timestamp` to track when it was loaded.
+
+- **Read the JSON file line by line**, parse each line back into JSON (to ensure valid JSON), then wrap it in a one‑element tuple for bulk insertion.
+- **Use `psycopg2.extras.execute_values`** to perform a **single bulk INSERT** of all records. This is far more efficient than row‑by‑row inserts.
+- **Commit the transaction**, close cursor and connection to free resources.
+- **Log the total number of rows** inserted for monitoring.”
+
+
+
+
+---
 ## Silver layer
 
 - I cleaned and normalized the data—parsing nested fields, flattening arrays, and enforcing relational integrity. 
