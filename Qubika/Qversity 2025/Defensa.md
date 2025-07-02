@@ -97,6 +97,7 @@ DB_CONN_INFO = {
     'host': os.getenv('DB_HOST', 'postgres'),
     
     'port': os.getenv('DB_PORT', 5432),
+    
     'dbname': os.getenv('POSTGRES_DB', 'qversity'),
     'user': os.getenv('POSTGRES_USER', 'qversity-admin'),
     'password': os.getenv('POSTGRES_PASSWORD', 'qversity-admin'),
@@ -104,28 +105,46 @@ DB_CONN_INFO = {
 }
 
   
-
 default_args = {
-
     'owner': 'qversity',
-
     'start_date': days_ago(1),
-
     'depends_on_past': False,
-
     'email_on_failure': False,
-
     'email_on_retry': False,
-
     'retries': 1,
-
     'retry_delay': timedelta(minutes=2),
-
 }
+```
+
+#### 1. Configuration and Setup
+
+- **`URL`** points to the public S3 JSON dataset.
+- **`RAW_JSON_PATH`** is the local path inside our Airflow container where we write the JSON file.
+- **`DB_CONN_INFO`** reads connection parameters from environment variables (`.env`) , ensuring portability across environments.
+- **`default_args`** include owner, start date, retry policy, and notification settings for robust execution.”
+
+#### 2. Task 1 – Download JSON
+
+```python
+def download_json():
+	os.makedirs(os.path.dirname(RAW_JSON_PATH), exist_ok=True)
+    response = requests.get(URL, timeout=60)
+    response.raise_for_status()
+    data = response.json()
+    with open(RAW_JSON_PATH, 'w', encoding='utf-8') as f:
+        for rec in data:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    logging.info("✅ JSON downloaded with %d records", len(data))
 
 ```
 
-
+In the **`download_json`** function, we:
+- **Ensure the target directory exists** (`os.makedirs` with `exist_ok=True`).
+- **Fetch the entire JSON** from S3 using `requests.get(...)` with a 60‑second timeout.
+- **Validate the response** by calling `raise_for_status()` to fail fast on HTTP errors.
+- **Parse the JSON into a Python list**, then open our local file in write mode.
+- **Write each record as one line of JSON** (NDJSON format), which simplifies downstream streaming and bulk loading.
+- **Log the number of records** for observability.”
 
 
 ## Silver layer
