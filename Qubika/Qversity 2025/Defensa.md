@@ -238,11 +238,46 @@ This is the central model in Silver. It parses customer profiles and attributes 
 This model ensures that all personal, geographic, and financial attributes are validated and consistent.
 
 
+##### - `silver_services`
 
-- `silver_services`
-- `silver_payments`
+**This model flattens the array of contracted services for each customer.**
 
-Each model parses and cleans specific fields. I also enforced data validation, normalized relationships, and deduplicated records to ensure data quality
+- ✅ Extracts the `contracted_services` JSON array
+- ✅ Uses `jsonb_array_elements()` to explode each service
+- ✅ Normalizes names with `replace()`, `upper()`, `trim()`
+- ✅ Maps common variants to a controlled list: `VOICE`, `SMS`, `DATA`, `ROAMING`, `INTERNATIONAL`
+
+ "The output is one row per service per customer, linked via `raw_id`."
+
+
+##### - `silver_payments`
+
+**This model explodes the `payment_history` array per customer into separate payment records.**
+
+- ✅ Validates structure: only arrays are processed
+- ✅ Extracts:
+    - `payment_date`
+    - `amount` (validated using regex)
+    - `amount_validity` (tagged as VALID or INVALID)
+    - `status` (e.g., PAID, FAILED)
+
+It generates a payment timeline per customer, enabling all Gold models related to revenue and payment behavior.
+
+
+### 🧩 Relationships & ERD
+
+"All models are connected via `raw_id` (from the Bronze source).  
+The Silver layer feeds into more than 20 Gold models.  
+For example:"
+
+- `silver_customers` → demographics, operators, plans, geography
+    
+- `silver_services` → combinations, popularity, ARPU
+    
+- `silver_payments` → payment issues, revenue metrics
+    
+
+> **"This modular design lets us reuse clean, validated data in multiple business contexts."**
 
 
 
