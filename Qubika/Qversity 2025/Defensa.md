@@ -279,61 +279,10 @@ This modular design lets us reuse clean, validated data in multiple business con
 
 ##### Análisis detallado – `silver_customers.sql`
 
-```sql
-with raw as (...)         -- Etapa 1: traer el JSON
-parsed as (...)           -- Etapa 2: extraer campos del JSON
-cleaned as (...)          -- Etapa 3: limpiar y transformar
-dedup as (...)            -- Etapa 4: eliminar duplicados
-select ... from dedup     -- Etapa 5: exportar resultados limpios
 
-```
 
-🧱 **Etapa 1: CTE `raw`**
-**Objetivo:** Tomar el JSON completo desde Bronze. Lo renombramos como `raw_json` y guardamos el `id` (que será `raw_id`) y la fecha de carga original.
-```sql
-select
-  id,
-  raw_json,
-  ingestion_timestamp as raw_ingestion_ts
-from {{ source('bronze', 'customers_raw') }}
 
-```
 
-🧱 **Etapa 2: CTE `parsed`**
-```sql
--- Esto extrae un campo tipo string desde el objeto JSONB.
-(raw_json ->> 'first_name') as first_name_raw
-...
-
----También conviertes tipos:
-nullif(raw_json ->> 'age','')::numeric as age_raw
-
-```
-
-- `nullif(...,'')`: evita errores si viene un string vacío.
-- `::numeric`: convierte a tipo numérico
-
-🧹 **Etapa 3: CTE `cleaned`**
-```sql
-case
-  when lower(...) in ('mig','miguel') then 'Miguel'
-  else initcap(regexp_replace(...))
-end as first_name
-
-```
-Reglas especiales para corregir nombres comunes mal escritos
-#### ✅ Corrección de apellidos
-- Mismo procedimiento: limpias tildes, errores de OCR, nombres truncados.
-#### ✅ Validación de email
-```sql
-when email_raw ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
-```
-- Expresión regular que acepta solo emails bien formados.
-#### ✅ Validación de teléfono
-```sql
-regexp_replace(phone_number_raw, '[^0-9]','') ~ '^[0-9]{10}$'
-```
-- Limpiar cualquier símbolo y aceptas solo 10 dígitos.
 
 ## Gold layer
 
