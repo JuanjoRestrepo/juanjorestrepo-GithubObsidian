@@ -347,15 +347,16 @@ This modular design lets us reuse clean, validated data in multiple business con
 ![[Pasted image 20250702202217.png]]
 
 
-
-
-
-
 ## Gold layer
 
 
 - In the Gold layer, I used dbt to model business-ready tables and KPIs aligned with 21 predefined business questions.
 - These insights covered customer behavior, service preferences, revenue patterns, and risk indicators like payment failures.
+
+
+
+
+
 
 
 # 🧠 PASO 2 — Estructura de presentación por bloques
