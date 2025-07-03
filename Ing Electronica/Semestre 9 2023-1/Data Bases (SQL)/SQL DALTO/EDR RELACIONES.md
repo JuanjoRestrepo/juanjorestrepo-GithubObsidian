@@ -92,11 +92,11 @@ La **capa Gold** se construye sobre Silver y **no almacena relaciones explícita
 
 ### 🎯 Ejemplos de Gold 1:1 (derivan de `silver_customers` por clave única)
 
-|Tabla|Clave Primaria|Relación|Justificación|
-|---|---|---|---|
-|`gold_arpu_by_plan_type`|`plan_type`|1:1|Agrega por tipo de plan — cada `plan_type` genera un único ARPU|
-|`gold_operator_distribution`|`operator`|1:1|Cada operador tiene su propio conteo|
-|`gold_credit_score_segments`|`credit_score_segment`|1:1|Cada segmento de score aparece una vez|
+| Tabla                        | Clave Primaria         | Relación | Justificación                                                   |
+| ---------------------------- | ---------------------- | -------- | --------------------------------------------------------------- |
+| `gold_arpu_by_plan_type`     | `plan_type`            | 1:1      | Agrega por tipo de plan — cada `plan_type` genera un único ARPU |
+| `gold_operator_distribution` | `operator`             | 1:1      | Cada operador tiene su propio conteo                            |
+| `gold_credit_score_segments` | `credit_score_segment` | 1:1      | Cada segmento de score aparece una vez                          |
 
 ---
 
