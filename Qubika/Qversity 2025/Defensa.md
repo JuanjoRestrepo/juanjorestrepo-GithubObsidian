@@ -266,18 +266,16 @@ It generates a payment timeline per customer, enabling all Gold models related t
 
 ### 🧩 Relationships & ERD
 
-"All models are connected via `raw_id` (from the Bronze source).  
+All models are connected via `raw_id` (from the Bronze source).  
 The Silver layer feeds into more than 20 Gold models.  
-For example:"
+
+For example:
 
 - `silver_customers` → demographics, operators, plans, geography
-    
 - `silver_services` → combinations, popularity, ARPU
-    
 - `silver_payments` → payment issues, revenue metrics
-    
 
-> **"This modular design lets us reuse clean, validated data in multiple business contexts."**
+This modular design lets us reuse clean, validated data in multiple business contexts.
 
 
 
