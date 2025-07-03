@@ -303,7 +303,14 @@ This modular design lets us reuse clean, validated data in multiple business con
 
 ![[Pasted image 20250702195616.png]]
 
+![[Pasted image 20250702201509.png]]
 
+
+![[Pasted image 20250702201525.png]]
+
+![[Pasted image 20250702201559.png]]
+
+![[Pasted image 20250702201609.png]]
 
 
 ## Gold layer
