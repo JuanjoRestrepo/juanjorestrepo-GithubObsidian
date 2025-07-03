@@ -35,10 +35,9 @@
 
 - **Por qué `raw_id` es PK**: referencia exacta al registro en Bronze.
     
-- **Por qué no se usa `customer_id` como PK**: hay duplicados (clientes con múltiples cargas), por eso haces `ROW_NUMBER()` en deduplicación.
+- **Por qué no se usa `customer_id` como PK**: hay duplicados (clientes con múltiples cargas), por eso haces `ROW_NUMBER()` en deduplicación para 
     
 - **Relación con `bronze.customers_raw`**:
-    
     - **1:N** → un registro de Bronze puede derivar en múltiples registros Silver (diferentes `ingestion_ts`) con el mismo `customer_id`.
         
 - **Campos**: todos los atributos atómicos de un cliente: nombre, email, score, ubicación, plan, etc.
@@ -56,7 +55,6 @@
 - **Por qué esta tabla existe**: en `raw_json` los pagos vienen en un array (`payment_history`). Lo explotas con `jsonb_array_elements`.
     
 - **Relación con `silver_customers`**:
-    
     - **1:N** → un cliente (por su `raw_id`) puede tener múltiples pagos.
         
 - **PK compuesta**: `raw_id + payment_date` garantiza unicidad por pago por cliente.
