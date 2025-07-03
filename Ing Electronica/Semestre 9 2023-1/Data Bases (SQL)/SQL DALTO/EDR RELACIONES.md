@@ -151,49 +151,25 @@ La **capa Gold** se construye sobre Silver y **no almacena relaciones explícita
 
 - **What is the average revenue per user (ARPU) by plan type?**
     
-    sql
-    
-    CopyEdit
-    
     `SELECT   plan_type,   ROUND(AVG(monthly_bill_usd), 2) AS arpu FROM silver.silver_customers WHERE monthly_bill_usd IS NOT NULL GROUP BY plan_type ORDER BY arpu DESC;`
     
 - **What is the revenue distribution by geographic location?**
     
-    sql
-    
-    CopyEdit
-    
     `SELECT   country,   city,   SUM(monthly_bill_usd)   AS revenue,   COUNT(DISTINCT customer_id) AS unique_customers FROM silver.silver_customers WHERE monthly_bill_usd IS NOT NULL GROUP BY country, city ORDER BY revenue DESC;`
     
 - **Which customer segments generate the highest revenue?**
-    
-    sql
-    
-    CopyEdit
-    
+
     `WITH revenue_base AS (   SELECT     customer_id,     SUM(monthly_bill_usd) AS total_spent   FROM silver.silver_customers   GROUP BY customer_id ), segmented AS (   SELECT     customer_id,     total_spent,     NTILE(5) OVER (ORDER BY total_spent DESC) AS quintile   FROM revenue_base ) SELECT   quintile,   COUNT(*)               AS num_customers,   ROUND(AVG(total_spent),2) AS avg_spent,   MIN(total_spent)       AS min_spent,   MAX(total_spent)       AS max_spent FROM segmented GROUP BY quintile ORDER BY quintile;`
     
 - **What is the distribution of customers by location (city)?**
-    
-    sql
-    
-    CopyEdit
     
     `SELECT   city,   COUNT(DISTINCT customer_id) AS customer_count FROM silver.silver_customers WHERE city IS NOT NULL GROUP BY city ORDER BY customer_count DESC;`
     
 - **What is the age distribution of customers by plan type?**
     
-    sql
-    
-    CopyEdit
-    
     `WITH age_buckets AS (   SELECT     plan_type,     CASE       WHEN age BETWEEN 0  AND 17 THEN '0–17'       WHEN age BETWEEN 18 AND 25 THEN '18–25'       WHEN age BETWEEN 26 AND 35 THEN '26–35'       WHEN age BETWEEN 36 AND 45 THEN '36–45'       WHEN age BETWEEN 46 AND 60 THEN '46–60'       WHEN age > 60            THEN '60+'       ELSE 'UNKNOWN'     END AS age_bucket   FROM silver.silver_customers   WHERE age IS NOT NULL ) SELECT   plan_type,   age_bucket,   COUNT(*) AS cnt FROM age_buckets GROUP BY plan_type, age_bucket ORDER BY plan_type, age_bucket;`
     
 - **What is the age distribution by country and operator?**
-    
-    sql
-    
-    CopyEdit
     
     `WITH age_buckets AS (   SELECT     country,     operator,     CASE        WHEN age < 30            THEN '<30'       WHEN age BETWEEN 30 AND 50 THEN '30–50'       WHEN age > 50             THEN '>50'       ELSE 'UNKNOWN'     END AS age_bucket   FROM silver.silver_customers   WHERE age IS NOT NULL ) SELECT   country,   operator,   age_bucket,   COUNT(*) AS customer_count FROM age_buckets GROUP BY country, operator, age_bucket ORDER BY country, operator, age_bucket;`
     
