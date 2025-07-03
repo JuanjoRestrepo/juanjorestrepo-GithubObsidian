@@ -284,6 +284,8 @@ This modular design lets us reuse clean, validated data in multiple business con
 ![[Pasted image 20250702195151.png]]
 
 ![[Pasted image 20250702195208.png]]
+![[Pasted image 20250702202426.png]]
+
 
 
 
@@ -313,6 +315,8 @@ This modular design lets us reuse clean, validated data in multiple business con
 ![[Pasted image 20250702201609.png]]
 
 
+![[Pasted image 20250702202551.png]]
+
 
 ##### 🧩 Análisis detallado — `silver_services.sql`
 
@@ -340,6 +344,8 @@ This modular design lets us reuse clean, validated data in multiple business con
 ![[Pasted image 20250702202200.png]]
 ![[Pasted image 20250702202204.png]]
 ![[Pasted image 20250702202210.png]]
+![[Pasted image 20250702202217.png]]
+
 
 
 

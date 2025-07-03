@@ -126,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -257,6 +258,9 @@
   },
   "active": "d46d72f84d110d7f",
   "lastOpenFiles": [
+    "Pasted image 20250702202551.png",
+    "Pasted image 20250702202426.png",
+    "Pasted image 20250702202217.png",
     "Pasted image 20250702202210.png",
     "Pasted image 20250702202204.png",
     "Pasted image 20250702202200.png",
@@ -265,9 +269,6 @@
     "Pasted image 20250702202014.png",
     "Pasted image 20250702201912.png",
     "Pasted image 20250702201900.png",
-    "Pasted image 20250702201846.png",
-    "Pasted image 20250702201813.png",
-    "Pasted image 20250702201803.png",
     "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/EDR RELACIONES.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/1. Qué es SQL.md",
