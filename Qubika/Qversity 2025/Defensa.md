@@ -301,10 +301,40 @@ from {{ source('bronze', 'customers_raw') }}
 
 🧱 **Etapa 2: CTE `parsed`**
 ```sql
+-- Esto extrae un campo tipo string desde el objeto JSONB.
 (raw_json ->> 'first_name') as first_name_raw
 ...
+
+---También conviertes tipos:
+nullif(raw_json ->> 'age','')::numeric as age_raw
+
 ```
-Esto extrae un campo tipo string desde el objeto JSONB.
+
+- `nullif(...,'')`: evita errores si viene un string vacío.
+- `::numeric`: convierte a tipo numérico
+
+🧹 **Etapa 3: CTE `cleaned`**
+```sql
+case
+  when lower(...) in ('mig','miguel') then 'Miguel'
+  else initcap(regexp_replace(...))
+end as first_name
+
+```
+Reglas especiales para corregir nombres comunes mal escritos
+#### ✅ Corrección de apellidos
+- Mismo procedimiento: limpias tildes, errores de OCR, nombres truncados.
+#### ✅ Validación de email
+```sql
+when email_raw ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+```
+- Expresión regular que acepta solo emails bien formados.
+#### ✅ Validación de teléfono
+```sql
+regexp_replace(phone_number_raw, '[^0-9]','') ~ '^[0-9]{10}$'
+```
+- Limpiar cualquier símbolo y aceptas solo 10 dígitos.
+
 ## Gold layer
 
 
