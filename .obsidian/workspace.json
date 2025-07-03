@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDR"
+              "title": "2. EDR RELACIONES"
             }
           },
           {
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dbt run",
+                "query": "unicidad",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 340.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -243,17 +243,18 @@
   },
   "active": "d46d72f84d110d7f",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+    "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
+    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
+    "Qubika/Qversity 2025/Proyecto Final/1. Defensa.md",
+    "Qubika/Qversity 2025/Docker.md",
+    "Qubika/Qversity 2025/Proyecto Final/Commands.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
     "Qubika/Qversity 2025/Proyecto Final/Intro.md",
     "Qubika/Qversity 2025/Proyecto Final/Modelos Gold.md",
     "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Qubika/Qversity 2025/Proyecto Final/Silver.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
-    "Qubika/Qversity 2025/Defensa.md",
-    "Qubika/Qversity 2025/Proyecto Final/Commands.md",
     "Qubika/Entrevista Qubika No 1.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/EDR RELACIONES.md",
-    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Pasted image 20250702202551.png",
     "Pasted image 20250702202426.png",
     "Pasted image 20250702202217.png",
@@ -278,7 +279,6 @@
     "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2024.md",
-    "Self Study/C & C++/Makefiles y build.bat.md",
     "Self Study/C & C++",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
     "Master Data Science/Omicas/DEV/Coding/2. Database",
