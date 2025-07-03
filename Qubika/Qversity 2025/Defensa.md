@@ -313,6 +313,38 @@ This modular design lets us reuse clean, validated data in multiple business con
 ![[Pasted image 20250702201609.png]]
 
 
+
+##### 🧩 Análisis detallado — `silver_services.sql`
+
+![[Pasted image 20250702201745.png]]
+
+![[Pasted image 20250702201753.png]]
+![[Pasted image 20250702201803.png]]
+
+
+![[Pasted image 20250702201813.png]]
+![[Pasted image 20250702201846.png]]
+![[Pasted image 20250702201900.png]]
+
+![[Pasted image 20250702201912.png]]
+
+
+##### 🧾 Análisis detallado — `silver_payments.sql`
+
+
+![[Pasted image 20250702202014.png]]
+![[Pasted image 20250702202020.png]]
+
+![[Pasted image 20250702202029.png]]
+
+![[Pasted image 20250702202200.png]]
+![[Pasted image 20250702202204.png]]
+![[Pasted image 20250702202210.png]]
+
+
+
+
+
 ## Gold layer
 
 
