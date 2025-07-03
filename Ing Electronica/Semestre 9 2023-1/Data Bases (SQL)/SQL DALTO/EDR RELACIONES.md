@@ -35,7 +35,7 @@
 
 - **Por qué `raw_id` es PK**: referencia exacta al registro en Bronze.
     
-- **Por qué no se usa `customer_id` como PK**: hay duplicados (clientes con múltiples cargas), por eso haces `ROW_NUMBER()` en deduplicación para 
+- **Por qué no se usa `customer_id` como PK**: hay duplicados (clientes con múltiples cargas), por eso se hace `ROW_NUMBER()` en deduplicación para conservar únicamente el registro más reciente por cada `customer_id`, basado en el campo `ingestion_ts`, que indica la fecha y hora en la que se ingirió cada versión del cliente desde la capa Bronze.
     
 - **Relación con `bronze.customers_raw`**:
     - **1:N** → un registro de Bronze puede derivar en múltiples registros Silver (diferentes `ingestion_ts`) con el mismo `customer_id`.
