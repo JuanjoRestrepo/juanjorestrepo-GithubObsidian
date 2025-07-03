@@ -279,7 +279,29 @@ This modular design lets us reuse clean, validated data in multiple business con
 
 ##### Análisis detallado – `silver_customers.sql`
 
+![[Pasted image 20250702195142.png]]
 
+![[Pasted image 20250702195151.png]]
+
+![[Pasted image 20250702195208.png]]
+
+
+
+
+![[Pasted image 20250702195242.png]]
+![[Pasted image 20250702195249.png]]
+![[Pasted image 20250702195415.png]]
+
+![[Pasted image 20250702195423.png]]
+
+![[Pasted image 20250702195523.png]]
+
+![[Pasted image 20250702195531.png]]
+
+
+![[Pasted image 20250702195553.png]]
+
+![[Pasted image 20250702195616.png]]
 
 
 
