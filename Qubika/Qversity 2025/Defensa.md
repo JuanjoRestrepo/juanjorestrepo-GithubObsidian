@@ -277,9 +277,36 @@ For example:
 
 This modular design lets us reuse clean, validated data in multiple business contexts.
 
+##### Análisis detallado – `silver_customers.sql`
 
+```sql
+with raw as (...)         -- Etapa 1: traer el JSON
+parsed as (...)           -- Etapa 2: extraer campos del JSON
+cleaned as (...)          -- Etapa 3: limpiar y transformar
+dedup as (...)            -- Etapa 4: eliminar duplicados
+select ... from dedup     -- Etapa 5: exportar resultados limpios
 
+```
+
+🧱 **Etapa 1: CTE `raw`**
+**Objetivo:** Tomar el JSON completo desde Bronze. Lo renombramos como `raw_json` y guardamos el `id` (que será `raw_id`) y la fecha de carga original.
+```sql
+select
+  id,
+  raw_json,
+  ingestion_timestamp as raw_ingestion_ts
+from {{ source('bronze', 'customers_raw') }}
+
+```
+
+🧱 **Etapa 2: CTE `parsed`**
+```sql
+(raw_json ->> 'first_name') as first_name_raw
+...
+```
+Esto extrae un campo tipo string desde el objeto JSONB.
 ## Gold layer
+
 
 - In the Gold layer, I used dbt to model business-ready tables and KPIs aligned with 21 predefined business questions.
 - These insights covered customer behavior, service preferences, revenue patterns, and risk indicators like payment failures.
