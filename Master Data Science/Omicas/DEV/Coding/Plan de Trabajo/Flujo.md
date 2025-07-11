@@ -47,3 +47,5 @@
 5. El informe generado se guarda en **Nextcloud** y vincula los IDs de datos y scripts usados.
     
 6. (Opcional) Una versión final del informe y dataset se publica en **DSpace** con DOI para uso científico.
+
+
