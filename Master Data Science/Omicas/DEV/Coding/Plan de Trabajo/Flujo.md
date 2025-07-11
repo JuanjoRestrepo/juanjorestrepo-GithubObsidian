@@ -24,13 +24,13 @@
 
 ### ✅ **3. Propuesta de arquitectura de almacenamiento híbrida para iÓmicas**
 
-|Componente|Herramienta propuesta|Ubicación sugerida|Finalidad específica|
-|---|---|---|---|
-|📁 **Gestión documental estructurada**|**Nextcloud** o **Alfresco**|Servidor de la Javeriana / Omicas|Para almacenar documentos con estructura de carpetas y metadatos|
-|🧠 **Repositorio de código y modelos**|**GitLab + Git LFS**|Servidor privado o GitLab institucional|Versionado de scripts, notebooks y modelos entrenados|
-|📊 **Base de datos de datos crudos**|**InfluxDB** (ya usado) o **PostgreSQL + Timescale**|Infraestructura de laboratorio o nube universitaria|Almacenamiento estructurado de datos de sensores y equipos|
-|🧪 **Repositorio académico interoperable**|**DSpace** o **EPrints**|(opcional, si la universidad lo permite)|Publicación formal de resultados y datos con DOI, acceso abierto|
-|📈 **Análisis y dashboards**|Superset / Power BI (opcional)|Local o nube|Visualización de tendencias derivadas de los modelos ML|
+| Componente                                 | Herramienta propuesta                                | Ubicación sugerida                                  | Finalidad específica                                             |
+| ------------------------------------------ | ---------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------- |
+| 📁 **Gestión documental estructurada**     | **Nextcloud** o **Alfresco**                         | Servidor de la Javeriana / Omicas                   | Para almacenar documentos con estructura de carpetas y metadatos |
+| 🧠 **Repositorio de código y modelos**     | **GitLab + Git LFS**                                 | Servidor privado o GitLab institucional             | Versionado de scripts, notebooks y modelos entrenados            |
+| 📊 **Base de datos de datos crudos**       | **InfluxDB** (ya usado) o **PostgreSQL + Timescale** | Infraestructura de laboratorio o nube universitaria | Almacenamiento estructurado de datos de sensores y equipos       |
+| 🧪 **Repositorio académico interoperable** | **DSpace** o **EPrints**                             | (opcional, si la universidad lo permite)            | Publicación formal de resultados y datos con DOI, acceso abierto |
+| 📈 **Análisis y dashboards**               | Superset / Power BI (opcional)                       | Local o nube                                        | Visualización de tendencias derivadas de los modelos ML          |
 
 
 

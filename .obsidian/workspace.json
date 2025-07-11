@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo.md",
+                "file": "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flujo"
+              "title": "Estructura de Carpetas"
             }
           }
         ]
@@ -229,8 +229,8 @@
   },
   "active": "f19c9fd74fdeaa7b",
   "lastOpenFiles": [
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo.md",
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/PostgreSQL.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB.md",
