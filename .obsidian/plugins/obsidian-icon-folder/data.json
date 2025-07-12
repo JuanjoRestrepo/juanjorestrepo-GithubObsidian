@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiVmware",
+      "SiOpenai",
       "SiQualcomm",
       "SiSqlite",
-      "SiPostgresql",
-      "FabJava",
-      "SiApacheairflow"
+      "SiPostgresql"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -185,5 +185,6 @@
   "Self Study/C & C++": "SiCplusplus",
   "Self Study/AWS": "FabAws",
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
-  "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql"
+  "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
+  "Keys/Open AI API Key 2025.md": "SiOpenai"
 }
