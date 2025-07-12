@@ -6,29 +6,28 @@
 - [x] Repository follows naming convention `qversity-data-[year]-[city]-[your-name]`
 - [x] Docker environment runs successfully: `docker-compose up -d`
 - [x] Credentials stored in `.env` (never committed to Git)
-- [ ] Full pipeline tested end-to-end via Docker
+- [x] Full pipeline tested end-to-end via Docker
 
 ## 🚦 Airflow Execution
-- [ ] Airflow DAG executes end-to-end without errors
-- [ ] DAG includes clear task naming and documentation
+- [x] Airflow DAG executes end-to-end without errors
+- [x] DAG includes clear task naming and documentation
 
 ## 🛠️ dbt Data Modeling
-- [ ] dbt models create:
-  - [ ] **Bronze layer** (raw data ingestion)
-  - [ ] **Silver layer** (cleaned, transformed)
-  - [ ] **Gold layer** (business-ready aggregates)
-- [ ] All dbt tests pass: `dbt test`
-- [ ] No array data types remain in final models
-- [ ] All nested JSON objects flattened into columns
+- [x] dbt models create:
+  - [x] **Bronze layer** (raw data ingestion)
+  - [x] **Silver layer** (cleaned, transformed)
+  - [x] **Gold layer** (business-ready aggregates)
+- [x] All dbt tests pass: `dbt test`
+- [x] No array data types remain in final models
+- [x] All nested JSON objects flattened into columns
 
 ## 📊 Data Quality
-- [ ] JSON data successfully loaded to database
-- [ ] Verified >1000 records ingested
-- [ ] dbt data quality tests implemented:
-  - [ ] Not null checks
-  - [ ] Unique keys
-  - [ ] Accepted value validation
-- [ ] Business questions answered with data
+- [x] JSON data successfully loaded to database
+- [x] Verified >1000 records ingested
+- [x] dbt data quality tests implemented:
+  - [x] Unique keys
+  - [x] Accepted value validation
+- [x] Business questions answered with data
 
 
 
