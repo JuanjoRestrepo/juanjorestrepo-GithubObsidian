@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDR"
-            }
-          },
-          {
-            "id": "0c8bbdd4fd298a33",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "2.DiseñoOrientadoObjetos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,8 +227,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0c8bbdd4fd298a33",
+  "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/C & C++/Makefiles y build.bat.md",
+    "Self Study/POO - LUISA RINCON 2025",
+    "Pasted image 20250702202551.png",
+    "Pasted image 20250710210715.png",
+    "Pasted image 20250702163041.png",
+    "Pasted image 20250702163048.png",
+    "Pasted image 20250702163117.png",
+    "Pasted image 20250702172019.png",
+    "Pasted image 20250702172145.png",
+    "Pasted image 20250702172111.png",
     "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "conflict-files-obsidian-git.md",
     "Self Study/NodeJs/SSH KEY.md",
@@ -251,16 +248,8 @@
     "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
     "Qubika/Qversity 2025/Proyecto Final/1. Defensa.md",
     "Qubika/Qversity 2025/Mejor manera de ordenar Dockerfile.md",
-    "Pasted image 20250710210715.png",
     "Pasted image 20250710210242.png",
-    "Pasted image 20250702202551.png",
     "Pasted image 20250702202426.png",
-    "Pasted image 20250702202217.png",
-    "Pasted image 20250702202210.png",
-    "Pasted image 20250702202204.png",
-    "Pasted image 20250702202200.png",
-    "Pasted image 20250702202029.png",
-    "Pasted image 20250702202020.png",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo.md",
@@ -278,9 +267,6 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
     "README.md",
-    "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
-    "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
-    "Keys/Obsidian Github Access Token/Obsidian Github 2024.md",
     "Self Study/C & C++",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
     "Master Data Science/Omicas/DEV/Coding/2. Database",
@@ -288,7 +274,6 @@
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
     "Master Data Science/Omicas/DEV/Coding",
     "Master Data Science/Omicas/DEV",
-    "Qubika/Qversity 2025/Proyecto Final",
-    "Qubika/Qversity 2025/9. Airflow"
+    "Qubika/Qversity 2025/Proyecto Final"
   ]
 }
