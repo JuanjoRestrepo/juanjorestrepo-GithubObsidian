@@ -11,27 +11,32 @@
             "id": "fc4e85b9fa3e5ec4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf"
+                "file": "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards"
+              "icon": "lucide-file",
+              "title": "Notas libro"
             }
           },
           {
             "id": "d8d6e6868c136279",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf"
+                "file": "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards"
+              "icon": "lucide-file",
+              "title": "3.CodificacionCPP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -237,12 +242,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fc4e85b9fa3e5ec4",
+  "active": "d8d6e6868c136279",
   "lastOpenFiles": [
-    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
-    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
-    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
+    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
     "Self Study/C & C++/Makefiles y build.bat.md",
     "Self Study/POO - LUISA RINCON 2025",
