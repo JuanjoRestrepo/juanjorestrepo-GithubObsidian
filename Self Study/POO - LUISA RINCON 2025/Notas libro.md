@@ -40,8 +40,12 @@ For calls to objects and functions residing inside the std namespace, add the�
 # _Passing Arguments_
 There are different ways of passing arguments to a function. Here, we will describe the three most used
 
-[[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=101|Paso por Valor y Paso por Referencia]]
+[[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=102&selection=44,0,46,16|Paso por Valor y Paso por Referencia]]
 
 
 ---
+
+# _Pointers_
+
+[[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=51&selection=4,0,4,8|Pointers -  página 51]]
 
