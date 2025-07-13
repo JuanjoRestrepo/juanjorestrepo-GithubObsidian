@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
+                "file": "Self Study/SQL/1. MySQL User Credentials.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Repositorios Github"
+              "title": "1. MySQL User Credentials"
             }
           }
         ]
@@ -229,8 +229,13 @@
   },
   "active": "fc4e85b9fa3e5ec4",
   "lastOpenFiles": [
-    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
+    "Self Study/SQL/5. Foreign Key y Relaciones.md",
+    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
+    "Self Study/SQL/3. Insertar Datos en una Tabla.md",
+    "Self Study/SQL/2. Crear DB y Tablas.md",
+    "Self Study/SQL/1. MySQL User Credentials.md",
     "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
+    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
@@ -263,11 +268,6 @@
     "Qubika/Qversity 2025/Defensa.md",
     "Qubika/Qversity 2025/Proyecto Final/Requerimientos Proyecto.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/6. Diagrama ER de Northwind.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
     "Self Study/C & C++",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
     "Master Data Science/Omicas/DEV/Coding/2. Database",
