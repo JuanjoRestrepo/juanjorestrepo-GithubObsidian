@@ -35,3 +35,12 @@ int main()
 
 For calls to objects and functions residing inside the std namespace, add the `std::` prefix where needed.
 
+---
+
+# _Passing Arguments_
+There are different ways of passing arguments to a function. Here, we will describe the three most used
+
+[[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=101|Paso por Valor y Paso por Referencia]]
+
+
+
