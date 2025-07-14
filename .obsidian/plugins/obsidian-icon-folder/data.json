@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiVmware",
-      "SiOpenai",
-      "SiQualcomm",
-      "SiSqlite",
-      "SiPostgresql"
+      "SiExcalidraw",
+      "SiInstructure",
+      "TiTool",
+      "SiGooglecloudstorage",
+      "TiDatabaseLeak"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
