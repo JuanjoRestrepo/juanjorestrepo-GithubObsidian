@@ -1,3 +1,10 @@
+---
+tags:
+  - POO
+  - OOP
+  - CPP
+fecha: 2025-07-12
+---
 
 Profe Luisa: https://github.com/lufe089/POO
 

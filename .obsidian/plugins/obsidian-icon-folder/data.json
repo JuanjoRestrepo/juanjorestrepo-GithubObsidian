@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiTodoist",
       "SiGnubash",
       "SiMongodb",
       "TiStatusChange",
-      "TiHttpPut",
-      "TiApi"
+      "TiHttpPut"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -50,7 +50,10 @@
   "Files": "LiFiles",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones": "SiTensorflow",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II": "SiCodeproject",
-  "Self Study/Coursera": "SiCoursera",
+  "Self Study/Coursera": {
+    "iconName": "SiCoursera",
+    "iconColor": "#110094"
+  },
   "Self Study/Coursera/Databases and SQL for Data Science with Python": "SiPostgresql",
   "Self Study/Coursera/Java": "FabJava",
   "Keys/Facebook Account Keys.md": "SiFacebook",
@@ -74,7 +77,10 @@
   "Templates/TODO List.md": "SiTodoist",
   "Job Search/Job Templates.md": "TiTemplate",
   "Self Study/MyPortfolio2025": "TiFileCv",
-  "Self Study/NodeJs": "TiBrandNodejs",
+  "Self Study/NodeJs": {
+    "iconName": "TiBrandNodejs",
+    "iconColor": "#0dbd00"
+  },
   "Self Study/Microsoft/CSharp": "SiCsharp",
   "Self Study/Microsoft/GitHub": "SiGithub",
   "Excalidraw": "SiExcalidraw",
@@ -185,7 +191,10 @@
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": "SiOpenai",
-  "Self Study/POO - LUISA RINCON 2025": "SiCplusplus",
+  "Self Study/POO - LUISA RINCON 2025": {
+    "iconName": "SiCplusplus",
+    "iconColor": "#0051a8"
+  },
   "Self Study/POO - LUISA RINCON 2025/0. github classroom.md": "TiCircleNumber0",
   "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md": "TiCircleNumber2",
   "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md": "TiCircleNumber3",
