@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0c8a7fc0bd91860f",
+        "id": "9632c4d6e36c17a0",
         "type": "tabs",
         "children": [
           {
-            "id": "a3276a087099218e",
+            "id": "d98bd451cf73dd06",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250710210242.png"
+                "file": "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250710210242"
+              "icon": "lucide-file",
+              "title": "0. github classroom"
             }
           }
         ]
@@ -52,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "unicidad",
+                "query": "Pasted image 20250710210242",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,21 +227,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3276a087099218e",
+  "active": "d98bd451cf73dd06",
   "lastOpenFiles": [
-    "Pasted image 20250710210715.png",
-    "Pasted image 20250702202014.png",
-    "Pasted image 20250702202200.png",
-    "Pasted image 20250702202210.png",
+    "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
+    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
+    "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
+    "Qubika/Qversity 2025/Qversity - Mejor manera de ordenar Dockerfile.md",
+    "Files/FILES1.pdf",
+    "Files/Introduction-to-RPA-Testing.pdf",
+    "Files/JCL1Challenge.pdf",
+    "Files/Pasted image 20250710210242.png",
+    "Files/Pasted image 20250702202551.png",
+    "Files/Pasted image 20250702202426.png",
+    "Files/Pasted image 20250702202217.png",
+    "Files/Pasted image 20250702202210.png",
+    "Files/Pasted image 20250702202204.png",
+    "Files/Pasted image 20250702202200.png",
+    "Files/Pasted image 20250702202029.png",
+    "Files/Pasted image 20250702202020.png",
+    "Files/Pasted image 20250702202014.png",
+    "Self Study/Untitled.md",
+    "Self Study/Docker",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
     "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/PerficientDataEngineer.png",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/MachineLearningVsAI.jpg",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/Learning_List_DataScience.png",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/DecisionTreeExplanation.jpg",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216682.jpg",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216378.jpg",
-    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216297.jpg",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
     "Transactions/Información de datos financieros.md",
@@ -253,7 +263,6 @@
     "conflict-files-obsidian-git.md",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
-    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025",
     "Qubika/DataCamp Qversity Certificate.pdf",
@@ -262,16 +271,9 @@
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
-    "Qubika/Qversity 2025/Mejor manera de ordenar Dockerfile.md",
     "Qubika/Qversity 2025/Docker.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/PostgreSQL.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB.md",
-    "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
-    "Self Study/NodeJs/SSH KEY.md",
-    "Keys/Open AI API Key 2025.md",
-    "Self Study/POO - LUISA RINCON 2025/C & C++",
-    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
-    "Master Data Science/Omicas/DEV/Coding/2. Database",
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo"
+    "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md"
   ]
 }
