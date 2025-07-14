@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/TODO List.md",
-                "mode": "source",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO List"
+              "title": "4.PrimeraCod"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Pasted image 20250710210242",
+                "query": "[\"date\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Plan de Trabajo semillero iÓMICAS"
+              "title": "Backlinks for 4.PrimeraCod"
             }
           },
           {
@@ -134,12 +134,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Plan de Trabajo semillero iÓMICAS"
+              "title": "Outgoing links from 4.PrimeraCod"
             }
           },
           {
@@ -154,7 +154,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
@@ -168,7 +168,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas las propiedades"
+              "title": "All properties"
             }
           },
           {
@@ -177,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Omicas/Plan de Trabajo semillero iÓMICAS.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Plan de Trabajo semillero iÓMICAS"
+              "title": "Outline of 4.PrimeraCod"
             }
           }
         ],
@@ -202,8 +202,8 @@
               "type": "google-calendar-view-month",
               "state": {},
               "pinned": true,
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "calendar-days",
+              "title": "GCal Month View"
             }
           }
         ]
@@ -229,6 +229,10 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
+    "Templates/TODO List.md",
     "Templates/Plantilla reunión.md",
     "Templates/Nueva nota.md",
     "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md",
@@ -239,9 +243,6 @@
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/🧠 Principio de Manifold Learning.md",
-    "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
-    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
     "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
     "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
@@ -273,7 +274,6 @@
     "Self Study/POO - LUISA RINCON 2025",
     "Qubika/DataCamp Qversity Certificate.pdf",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf",
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Campos de Metadatos.md",
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo.md"
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Campos de Metadatos.md"
   ]
 }
