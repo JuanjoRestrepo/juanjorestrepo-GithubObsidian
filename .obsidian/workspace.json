@@ -11,14 +11,12 @@
             "id": "a3276a087099218e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20250710210242.png"
               },
-              "icon": "lucide-file",
-              "title": "Repositorios Github"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250710210242"
             }
           }
         ]
@@ -229,12 +227,30 @@
   },
   "active": "a3276a087099218e",
   "lastOpenFiles": [
+    "Pasted image 20250710210715.png",
+    "Pasted image 20250702202014.png",
+    "Pasted image 20250702202200.png",
+    "Pasted image 20250702202210.png",
+    "Self Study/SQL/5. Foreign Key y Relaciones.md",
+    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/PerficientDataEngineer.png",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/MachineLearningVsAI.jpg",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/Learning_List_DataScience.png",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/DecisionTreeExplanation.jpg",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216682.jpg",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216378.jpg",
+    "Master Data Science/Data Engineering Path 2023/Data_Science_Assets/1694704216297.jpg",
+    "Transactions/transactions 1.ledger",
+    "Transactions/transactions.ledger",
+    "Transactions/Información de datos financieros.md",
+    "Transactions/Transactions.md",
+    "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
+    "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Master Data Science/Cursor on Website.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "conflict-files-obsidian-git.md",
-    "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
@@ -247,32 +263,15 @@
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Plan de Trabajo.md",
     "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas.md",
     "Qubika/Qversity 2025/Mejor manera de ordenar Dockerfile.md",
-    "Pasted image 20250710210715.png",
-    "Pasted image 20250710210242.png",
     "Qubika/Qversity 2025/Docker.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/PostgreSQL.md",
     "Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Self Study/NodeJs/SSH KEY.md",
-    "Pasted image 20250702172019.png",
-    "Pasted image 20250702172130.png",
-    "Pasted image 20250702195142.png",
-    "Pasted image 20250702163041.png",
     "Keys/Open AI API Key 2025.md",
-    "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
-    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
-    "Qubika/Qversity 2025/Proyecto Final/1. Defensa.md",
-    "Qubika/Qversity 2025/Proyecto Final/Commands.md",
-    "Pasted image 20250702202551.png",
-    "Pasted image 20250702202426.png",
-    "Pasted image 20250702202217.png",
-    "Pasted image 20250702202210.png",
-    "Self Study/C & C++",
+    "Self Study/POO - LUISA RINCON 2025/C & C++",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch",
     "Master Data Science/Omicas/DEV/Coding/2. Database",
-    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo",
-    "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida",
-    "Master Data Science/Omicas/DEV/Coding"
+    "Master Data Science/Omicas/DEV/Coding/Plan de Trabajo"
   ]
 }
