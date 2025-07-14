@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiRecycle",
       "SiTodoist",
       "SiGnubash",
       "SiMongodb",
-      "TiStatusChange",
-      "TiHttpPut"
+      "TiStatusChange"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -229,5 +229,6 @@
     "iconName": "SiDocker",
     "iconColor": "#00d5ff"
   },
-  "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash"
+  "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash",
+  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle"
 }
