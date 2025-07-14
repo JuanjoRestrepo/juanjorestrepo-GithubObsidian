@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiGnubash",
       "SiMongodb",
       "TiStatusChange",
       "TiHttpPut",
-      "TiApi",
-      "SiDocker"
+      "TiApi"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -195,5 +195,6 @@
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "FiGithub",
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
   "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
-  "Self Study/Docker": "SiDocker"
+  "Self Study/Docker": "SiDocker",
+  "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash"
 }
