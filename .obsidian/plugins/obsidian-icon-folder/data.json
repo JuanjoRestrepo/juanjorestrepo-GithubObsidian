@@ -44,10 +44,16 @@
   "Master Data Science/Semestre 2": "🥈",
   "Keys/Department of State Enterprise Exchange Student Alumni Account": "🇺🇸",
   "Keys/Obsidian Github Access Token": "🔷",
-  "Self Study/IBM": "SiIbm",
+  "Self Study/IBM": {
+    "iconName": "SiIbm",
+    "iconColor": "#ffffff"
+  },
   "Self Study/Microsoft": "SiMicrosoft",
   "Job Search/Cover Letter Template": "🔤",
-  "Files": "LiFiles",
+  "Files": {
+    "iconName": "LiFiles",
+    "iconColor": "#00eeff"
+  },
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones": "SiTensorflow",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II": "SiCodeproject",
   "Self Study/Coursera": {
@@ -81,7 +87,10 @@
     "iconName": "TiBrandNodejs",
     "iconColor": "#0dbd00"
   },
-  "Self Study/Microsoft/CSharp": "SiCsharp",
+  "Self Study/Microsoft/CSharp": {
+    "iconName": "SiCsharp",
+    "iconColor": "#9900ff"
+  },
   "Self Study/Microsoft/GitHub": "SiGithub",
   "Excalidraw": "SiExcalidraw",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 2 Técnicas no supervisadas": "TiCircleNumber2",
@@ -147,7 +156,10 @@
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/2. Análisis Componentes Principales.md": "TiCircleNumber2",
   "Ing Electronica/Semestre 9 2023-1/Accenture Intern Challenge 2023 - 2/Intern Challenge Day": "SiAccenture",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL FOR DATA SCIENCE COURSERA": "Si365datascience",
-  "Master Data Science/Omicas": "TiPlant2",
+  "Master Data Science/Omicas": {
+    "iconName": "TiPlant2",
+    "iconColor": "#00ffaa"
+  },
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Plan de Trabajo 2025 Tesis.md": "✍",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1": "📂",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/1. Unidad 1 Componentes fundamentales de las redes neuronales.md": "TiCircleNumber1",
@@ -155,8 +167,14 @@
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Época y Tam Batch.md": "TiArrowsMaximize",
   "Master Data Science/Semestre 2/Deep Learning/Información Básica": "📁",
   "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md": "🧠",
-  "Self Study/SQL": "TiBrandMysql",
-  "Qubika": "SiQase",
+  "Self Study/SQL": {
+    "iconName": "TiBrandMysql",
+    "iconColor": "#ffbb00"
+  },
+  "Qubika": {
+    "iconName": "SiQase",
+    "iconColor": "#ffffff"
+  },
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2": "📁",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": "CoData",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md": "SiInstructure",
@@ -187,7 +205,10 @@
   "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)": "SiDatadog",
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "FasHammer",
   "Keys/dbt key.md": "SiDbt",
-  "Self Study/AWS": "FabAws",
+  "Self Study/AWS": {
+    "iconName": "FabAws",
+    "iconColor": "#f69813"
+  },
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": "SiOpenai",
@@ -204,6 +225,9 @@
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "FiGithub",
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
   "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
-  "Self Study/Docker": "SiDocker",
+  "Self Study/Docker": {
+    "iconName": "SiDocker",
+    "iconColor": "#00d5ff"
+  },
   "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash"
 }
