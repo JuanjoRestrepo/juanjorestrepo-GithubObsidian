@@ -1,11 +1,11 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
-  "collapse-color-groups": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#Semestre8",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "query": "tag",
+      "query": "tag:#CPP tag:#POO  ",
       "color": {
         "a": 1,
         "rgb": 983173
@@ -88,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.06388657814656262,
+  "scale": 0.3460375326760514,
   "close": false
 }

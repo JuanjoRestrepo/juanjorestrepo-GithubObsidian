@@ -1,3 +1,10 @@
+---
+tags:
+  - DeepLearning
+  - Maestria
+  - Master
+  - DataScience
+---
 
 ## 📌 Concepto Clave
 El **Aprendizaje de Variedades** es una técnica de reducción de dimensionalidad no lineal que asume que los datos de alta dimensión residen en una variedad (_manifold_) de menor dimensión incrustada en el espacio original. El objetivo es descubrir y mapear esta estructura subyacente para facilitar la visualización y el análisis. [Scikit-learn](https://scikit-learn.org/stable/modules/manifold.html?utm_source=chatgpt.com)​

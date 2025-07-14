@@ -1,3 +1,8 @@
+---
+tags:
+  - CPP
+fecha: 2025-06-29
+---
 
 
 ## 🧰 Makefile vs. build script (`build.sh`)

@@ -1,3 +1,9 @@
+---
+tags:
+  - POO
+  - OOP
+  - CPP
+---
 
 
 # _Do not use using namespace std;_
