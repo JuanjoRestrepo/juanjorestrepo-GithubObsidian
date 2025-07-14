@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber0",
       "SiCplusplus",
-      "SiAccenture",
-      "SiGithubcopilot",
-      "SiVmware",
-      "SiOpenai"
+      "TiPentagonNumber4",
+      "TiPentagonNumber3",
+      "TiPentagonNumber2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -187,5 +187,6 @@
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": "SiOpenai",
-  "Self Study/POO - LUISA RINCON 2025": "SiCplusplus"
+  "Self Study/POO - LUISA RINCON 2025": "SiCplusplus",
+  "Self Study/POO - LUISA RINCON 2025/0. github classroom.md": "TiCircleNumber0"
 }
