@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiArrowsJoin",
       "SiDocker",
       "TiCode",
       "LiRecycle",
-      "SiTodoist",
-      "SiGnubash"
+      "SiTodoist"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -48,7 +48,10 @@
     "iconName": "SiIbm",
     "iconColor": "#ffffff"
   },
-  "Self Study/Microsoft": "SiMicrosoft",
+  "Self Study/Microsoft": {
+    "iconName": "SiMicrosoft",
+    "iconColor": "#6694ff"
+  },
   "Job Search/Cover Letter Template": "🔤",
   "Files": {
     "iconName": "LiFiles",
@@ -101,7 +104,10 @@
     "iconColor": "#9900ff"
   },
   "Self Study/Microsoft/GitHub": "SiGithub",
-  "Excalidraw": "SiExcalidraw",
+  "Excalidraw": {
+    "iconName": "SiExcalidraw",
+    "iconColor": "#ae00ff"
+  },
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 2 Técnicas no supervisadas": "TiCircleNumber2",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2": "📁",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1": "📁",
@@ -262,5 +268,6 @@
   "Qubika/Qversity 2025/Docker - Qversity.md": {
     "iconName": "SiDocker",
     "iconColor": "#05b4ff"
-  }
+  },
+  "Qubika/Qversity 2025/4. Unir Datos con Pandas": "TiArrowsJoin"
 }

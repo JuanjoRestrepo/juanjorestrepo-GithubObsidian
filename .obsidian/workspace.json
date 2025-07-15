@@ -11,12 +11,14 @@
             "id": "882ef2e836de089d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "VM vs Containers.png"
+                "file": "Self Study/Docker/1.Imagenes y Contenedores.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "VM vs Containers"
+              "icon": "lucide-file",
+              "title": "1.Imagenes y Contenedores"
             }
           }
         ]
@@ -227,17 +229,19 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Self Study/Docker/0.Introduccion.md",
-    "Screenshot 2025-07-15 at 5.46.38 PM.png",
+    "Images y Containers.png",
     "Screenshot 2025-07-15 at 5.45.27 PM.png",
-    "Screenshot 2025-07-15 at 5.44.19 PM.png",
-    "VM vs Containers.png",
-    "Windows Containers.png",
-    "Ejemplo Fedora.png",
-    "OS Linux y Kernel.png",
-    "VirtualMachine Primera Solucion.png",
-    "AntesDocker.png",
-    "MatrizDelInfierno.png",
+    "Self Study/Docker/1.Imagenes y Contenedores.md",
+    "Files/Windows Containers.png",
+    "Files/VM vs Containers.png",
+    "Files/VirtualMachine Primera Solucion.png",
+    "Files/OS Linux y Kernel.png",
+    "Files/MatrizDelInfierno.png",
+    "Files/Ejemplo Fedora.png",
+    "Files/Docker1.png",
+    "Files/AntesDocker.png",
+    "Files/Screenshot 2025-07-15 at 5.46.38 PM.png",
+    "Self Study/Docker/0.Introduccion.md",
     "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
     "Qubika/Qversity 2025/Docker - Qversity.md",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
@@ -268,7 +272,6 @@
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
     "Transactions/Información de datos financieros.md",
-    "Transactions/Transactions.md",
     "Self Study/POO - LUISA RINCON 2025",
     "Qubika/DataCamp Qversity Certificate.pdf",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf"
