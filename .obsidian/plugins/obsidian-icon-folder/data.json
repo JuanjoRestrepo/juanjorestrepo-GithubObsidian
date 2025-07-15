@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiDocker",
       "TiCode",
       "LiRecycle",
       "SiTodoist",
-      "SiGnubash",
-      "SiMongodb"
+      "SiGnubash"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -74,9 +74,18 @@
   "Keys/Obsidian Templates GitHub Token.md": "SiObsidian",
   "Templates": "TiTemplate",
   "Tags": "LiTags",
-  "Job Search/IBM": "SiIbm",
-  "Job Search/Kiwibot": "LiBot",
-  "Job Search/Siemens": "SiSiemens",
+  "Job Search/IBM": {
+    "iconName": "SiIbm",
+    "iconColor": "#ffffff"
+  },
+  "Job Search/Kiwibot": {
+    "iconName": "LiBot",
+    "iconColor": "#006eff"
+  },
+  "Job Search/Siemens": {
+    "iconName": "SiSiemens",
+    "iconColor": "#38e8ff"
+  },
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)": "SiSqlite",
   "Ing Electronica/Semestre 9 2023-1/IA": "OcCopilot16",
   "Ing Electronica/Semestre 8 2022-2/CPI": "🎛",
@@ -176,7 +185,10 @@
     "iconColor": "#ffffff"
   },
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2": "📁",
-  "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": "CoData",
+  "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": {
+    "iconName": "CoData",
+    "iconColor": "#ffae00"
+  },
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md": "SiInstructure",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos": "TiDatabaseLeak",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Capitulo 1 - 1. Que es la Ingenieria de Datos.md": "LiFileQuestion",
@@ -188,8 +200,14 @@
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Preguntas Capitulo 1 - 4. The Data Pipeline.md": "TiFileDatabase",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos": "SiGooglecloudstorage",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 3 - Métodos y Herramientas de procesamiento": "TiTool",
-  "Qubika/Qversity 2025": "SiQualcomm",
-  "Qubika/Qversity 2025/2. Introduccion a Python para desarroladores": "SiPython",
+  "Qubika/Qversity 2025": {
+    "iconName": "SiQualcomm",
+    "iconColor": "#ffffff"
+  },
+  "Qubika/Qversity 2025/2. Introduccion a Python para desarroladores": {
+    "iconName": "SiPython",
+    "iconColor": "#ffee33"
+  },
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Resumen Capitulo 1.md": "✏",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos/Preguntas Capitulo 2 - 3. Data Warehouses y Data Lakes.md": "CoFileDocument",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos/Capitulo 2 - 3. Data Warehouses y Data Lakes.md": "FasWarehouse",
@@ -209,7 +227,10 @@
     "iconName": "FabAws",
     "iconColor": "#f69813"
   },
-  "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
+  "Qubika/Qversity 2025/9. Airflow": {
+    "iconName": "SiApacheairflow",
+    "iconColor": "#ff1b0a"
+  },
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": "SiOpenai",
   "Self Study/POO - LUISA RINCON 2025": {
@@ -237,5 +258,9 @@
   "Master Data Science/Omicas/DEV/Coding": {
     "iconName": "TiCode",
     "iconColor": "#f4d434"
+  },
+  "Qubika/Qversity 2025/Docker.md": {
+    "iconName": "SiDocker",
+    "iconColor": "#05b4ff"
   }
 }
