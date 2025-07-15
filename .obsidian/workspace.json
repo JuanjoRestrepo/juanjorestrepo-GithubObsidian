@@ -227,11 +227,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "882ef2e836de089d",
   "lastOpenFiles": [
+    "Que es una Docker Image.png",
+    "Self Study/Docker/1.Imagenes y Contenedores.md",
     "Images y Containers.png",
     "Screenshot 2025-07-15 at 5.45.27 PM.png",
-    "Self Study/Docker/1.Imagenes y Contenedores.md",
     "Files/Windows Containers.png",
     "Files/VM vs Containers.png",
     "Files/VirtualMachine Primera Solucion.png",
@@ -239,8 +240,6 @@
     "Files/MatrizDelInfierno.png",
     "Files/Ejemplo Fedora.png",
     "Files/Docker1.png",
-    "Files/AntesDocker.png",
-    "Files/Screenshot 2025-07-15 at 5.46.38 PM.png",
     "Self Study/Docker/0.Introduccion.md",
     "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
     "Qubika/Qversity 2025/Docker - Qversity.md",
