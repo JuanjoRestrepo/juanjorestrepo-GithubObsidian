@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCode",
       "LiRecycle",
       "SiTodoist",
       "SiGnubash",
-      "SiMongodb",
-      "TiStatusChange"
+      "SiMongodb"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -224,11 +224,18 @@
   "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf": "📘",
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "FiGithub",
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
-  "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
+  "Master Data Science/Data Engineering Path 2023": {
+    "iconName": "SiAkiflow",
+    "iconColor": "#ff4d4d"
+  },
   "Self Study/Docker": {
     "iconName": "SiDocker",
     "iconColor": "#00d5ff"
   },
   "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash",
-  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle"
+  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle",
+  "Master Data Science/Omicas/DEV/Coding": {
+    "iconName": "TiCode",
+    "iconColor": "#f4d434"
+  }
 }
