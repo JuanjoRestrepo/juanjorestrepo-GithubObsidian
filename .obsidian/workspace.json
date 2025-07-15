@@ -11,14 +11,12 @@
             "id": "882ef2e836de089d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Self Study/Docker/0.Introduccion.md",
-                "mode": "source",
-                "source": false
+                "file": "VM vs Containers.png"
               },
-              "icon": "lucide-file",
-              "title": "0.Introduccion"
+              "icon": "lucide-image",
+              "title": "VM vs Containers"
             }
           }
         ]
@@ -227,18 +225,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "882ef2e836de089d",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Self Study/Docker/0.Introduccion.md",
+    "Screenshot 2025-07-15 at 5.46.38 PM.png",
+    "Screenshot 2025-07-15 at 5.45.27 PM.png",
     "Screenshot 2025-07-15 at 5.44.19 PM.png",
-    "Screenshot 2025-07-15 at 5.19.48 PM.png",
+    "VM vs Containers.png",
     "Windows Containers.png",
     "Ejemplo Fedora.png",
-    "Self Study/Docker/0.Introduccion.md",
     "OS Linux y Kernel.png",
     "VirtualMachine Primera Solucion.png",
     "AntesDocker.png",
     "MatrizDelInfierno.png",
-    "Docker1.png",
     "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
     "Qubika/Qversity 2025/Docker - Qversity.md",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
@@ -262,8 +261,6 @@
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
     "Files/JCL1Challenge.pdf",
-    "Files/Pasted image 20250710210242.png",
-    "Files/Pasted image 20250702202551.png",
     "Self Study/Untitled.md",
     "Self Study/Docker",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
