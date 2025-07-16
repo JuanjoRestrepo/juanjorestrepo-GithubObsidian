@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiNetwork",
+      "TiBrandDocker",
+      "LiContainer",
       "TiArrowsJoin",
-      "SiDocker",
-      "TiCode",
-      "LiRecycle",
-      "SiTodoist"
+      "SiDocker"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -269,5 +269,17 @@
     "iconName": "SiDocker",
     "iconColor": "#05b4ff"
   },
-  "Qubika/Qversity 2025/4. Unir Datos con Pandas": "TiArrowsJoin"
+  "Qubika/Qversity 2025/4. Unir Datos con Pandas": "TiArrowsJoin",
+  "Self Study/Docker/1. Imágenes y Contenedores.md": {
+    "iconName": "LiContainer",
+    "iconColor": "#00ccff"
+  },
+  "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md": {
+    "iconName": "TiBrandDocker",
+    "iconColor": "#00fffb"
+  },
+  "Self Study/Docker/2.Ports y Volumenes.md": {
+    "iconName": "TiNetwork",
+    "iconColor": "#1e00ff"
+  }
 }
