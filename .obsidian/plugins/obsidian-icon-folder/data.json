@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber0",
       "TiNetwork",
       "TiBrandDocker",
       "LiContainer",
-      "TiArrowsJoin",
-      "SiDocker"
+      "TiArrowsJoin"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -281,5 +281,6 @@
   "Self Study/Docker/2.Ports y Volumenes.md": {
     "iconName": "TiNetwork",
     "iconColor": "#1e00ff"
-  }
+  },
+  "Self Study/Docker/0.Introduccion.md": "TiCircleNumber0"
 }
