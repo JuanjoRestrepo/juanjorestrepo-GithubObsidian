@@ -20,9 +20,15 @@
               "icon": "lucide-file",
               "title": "2.DiseñoOrientadoObjetos"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "29b8afa4e2bdcaac",
+        "type": "tabs",
+        "children": [
           {
-            "id": "060cdda9a2cb2cf0",
+            "id": "47401671f7542211",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +41,7 @@
               "title": "Solución Ejercicios Practica Clases"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -240,10 +246,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "060cdda9a2cb2cf0",
+  "active": "47401671f7542211",
   "lastOpenFiles": [
-    "Solución Ejercicios Practica Clases.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Solución Ejercicios Practica Clases.md",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
