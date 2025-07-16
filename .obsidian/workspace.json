@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/Docker/1.Imagenes y Contenedores.md",
+                "file": "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.Imagenes y Contenedores"
+              "title": "1.1.Mejor manera de ordenar Dockerfile"
             }
           }
         ]
@@ -229,21 +229,21 @@
   },
   "active": "882ef2e836de089d",
   "lastOpenFiles": [
-    "Self Study/Docker/Mejor manera de ordenar Dockerfile.md",
-    "Self Study/Docker/1.Imagenes y Contenedores.md",
+    "POO y Docker.png",
+    "Docker Registry.png",
+    "Salida FastAPI Ubuntu Docker.png",
+    "Dockerfile Eficiente por Capas.png",
+    "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
+    "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/NodeJs/Clase 2/2. Status Codes.md",
-    "Screenshot 2025-07-15 at 8.09.50 PM.png",
     "Self Study/Docker/0.Introduccion.md",
     "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
-    "Screenshot 2025-07-15 at 6.48.22 PM.png",
-    "Screenshot 2025-07-15 at 6.42.14 PM.png",
     "Que es una Docker Image.png",
     "Images y Containers.png",
     "Screenshot 2025-07-15 at 5.45.27 PM.png",
     "Files/Windows Containers.png",
     "Files/VM vs Containers.png",
     "Files/VirtualMachine Primera Solucion.png",
-    "Files/OS Linux y Kernel.png",
     "Qubika/Qversity 2025/Docker - Qversity.md",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
@@ -269,7 +269,6 @@
     "Self Study/Untitled.md",
     "Self Study/Docker",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
     "Self Study/POO - LUISA RINCON 2025",
