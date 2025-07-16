@@ -1,4 +1,6 @@
 
+> Cada instrucción, genera una nueva capa. Es un conjunto de capas independientes
+
 
 ![[Pasted image 20250710210242.png]]
 
