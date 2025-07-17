@@ -181,6 +181,26 @@ Enunciado: [[2.DiseñoOrientadoObjetos#2. Caso Hotel]]
 2. `Huésped`
 3. `Reserva`
 
+Clase `Habitación`
+- **Atributos**
+    - `int numero`     // número único de habitación
+    - `string tipo`   // “Individual”, “Doble”, “Suite”
+    - `float tarifaNoche` // precio por noche
+        
+- **Métodos sugeridos**
+    - `string getDetalles()`   // “Hab. 101 (Suite) – $150.00”
+    - `bool estaDisponible(Date inicio, Date fin)` // comprueba ocupación
+
+ Clase `Huésped`
+- **Atributos**
+    - `string nombre`
+    - `string idHuesped` // cédula o pasaporte
+    - `Date fechaRegistro`
+        
+- **Métodos sugeridos**
+    - `string getInfo()`  // muestra nombre e ID
+    - `bool puedeReservar()` // verifica estado de cuenta
+
 
 
 ## 3. Clínica veterinaria (mascotas)
