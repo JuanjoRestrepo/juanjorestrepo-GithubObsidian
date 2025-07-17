@@ -31,12 +31,14 @@
             "id": "47401671f7542211",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md"
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Ejercicios Diagramas ER"
+              "icon": "lucide-file",
+              "title": "Solución Ejercicios Practica Clases"
             }
           }
         ]
@@ -116,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -133,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +146,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Ejercicios Diagramas ER"
+              "title": "Enlaces entrantes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -152,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Ejercicios Diagramas ER"
+              "title": "Enlaces salientes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -195,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Ejercicios Diagramas ER"
+              "title": "Esquema de Solución Ejercicios Practica Clases"
             }
           }
         ]
@@ -246,15 +249,25 @@
   },
   "active": "47401671f7542211",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+    "Qubika/Qversity 2025/Proyecto Final/Commands.md",
+    "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
+    "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+    "Self Study/SQL/5. Foreign Key y Relaciones.md",
+    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
+    "Self Study/SQL/3. Insertar Datos en una Tabla.md",
+    "Self Study/SQL/2. Crear DB y Tablas.md",
+    "Self Study/SQL/1. MySQL User Credentials.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
+    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/6. Diagrama ER de Northwind.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/1. Qué es SQL.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
-    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
@@ -272,16 +285,6 @@
     "Docker Registry.png",
     "Salida FastAPI Ubuntu Docker.png",
     "Dockerfile Eficiente por Capas.png",
-    "Self Study/NodeJs/Clase 2/2. Status Codes.md",
-    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
-    "Qubika/Qversity 2025/Docker - Qversity.md",
-    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
-    "Templates/TODO List.md",
-    "Templates/Plantilla reunión.md",
-    "Templates/Nueva nota.md",
-    "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md",
-    "Self Study/AWS/3. Test AWS.md",
-    "Excalidraw/AWS.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",

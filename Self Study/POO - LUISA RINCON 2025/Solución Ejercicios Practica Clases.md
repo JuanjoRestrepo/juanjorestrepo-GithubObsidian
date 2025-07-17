@@ -65,3 +65,9 @@ classDiagram
     Prestamo "1" -- "1" Usuario : involucra
 
 ```
+
+### Simbolos Relaciones BBDD & EDR
+
+[[2. EDR RELACIONES]]
+
+![[Pasted image 20250702173124.png]]
