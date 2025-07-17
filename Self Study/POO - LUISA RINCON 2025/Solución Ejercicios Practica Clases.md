@@ -126,14 +126,14 @@ Clase `Prestamo`
     - `Date fechaPrestamo`
     - `Date fechaDevolucion` // `null` si aún no se devolvió
     - `string estado`   // (“Activo”, “Devuelto”, “Retrasado”)
-        
 - **Relaciones (atributos referenciales)**
     - `Libro libro`
     - `Lector lector`
-        
 - **Métodos sugeridos**
     - `void registrarDevolucion(Date fecha)`
     - `int calcularDiasRetraso()`
+
+#### Relaciones y Cardinalidades
 
 | Origen   | Tipo de Relación       | Destino  | Cardinalidad              | Descripción                                                                            |
 | -------- | ---------------------- | -------- | ------------------------- | -------------------------------------------------------------------------------------- |
@@ -186,7 +186,6 @@ Clase `Habitación`
     - `int numero`     // número único de habitación
     - `string tipo`   // “Individual”, “Doble”, “Suite”
     - `float tarifaNoche` // precio por noche
-        
 - **Métodos sugeridos**
     - `string getDetalles()`   // “Hab. 101 (Suite) – $150.00”
     - `bool estaDisponible(Date inicio, Date fin)` // comprueba ocupación
@@ -196,11 +195,64 @@ Clase `Habitación`
     - `string nombre`
     - `string idHuesped` // cédula o pasaporte
     - `Date fechaRegistro`
-        
 - **Métodos sugeridos**
     - `string getInfo()`  // muestra nombre e ID
     - `bool puedeReservar()` // verifica estado de cuenta
 
+ Clase `Reserva`
+- **Atributos**
+    - `int idReserva`
+    - `Date fechaInicio`
+    - `Date fechaFin`
+    - `string estado` // “Activa”, “Completada”, “Cancelada”
+- **Relaciones**
+    - `Habitación habitación`
+    - `Huésped huesped`
+- **Métodos sugeridos**
+    - `void cancelar()`
+    - `int calcularNoches()`
+
+#### Relaciones y Cardinalidades
+
+| Origen     | Relación    | Destino    | Cardinalidad                 | Descripción                                                       |
+| ---------- | ----------- | ---------- | ---------------------------- | ----------------------------------------------------------------- |
+| Huésped    | realiza     | Reserva    | 1 Huésped ↔ 0..* Reservas    | Un huésped puede tener muchas reservas.                           |
+| Habitación | reservadaEn | Reserva    | 1 Habitación ↔ 0..* Reservas | Una habitación puede reservarse varias veces en fechas distintas. |
+| Reserva    | asocia      | Huésped    | * Reserva ↔ 1 Huésped        | Cada reserva corresponde a un único huésped.                      |
+| Reserva    | asocia      | Habitación | * Reserva ↔ 1 Habitación     | Cada reserva es para una sola habitación.                         |
+|            |             |            |                              |                                                                   |
+
+
+#### Diagrama UML en Mermaid
+
+```mermaid
+classDiagram
+    class Habitacion {
+        +int numero
+        +string tipo
+        +float tarifaNoche
+        +string getDetalles()
+        +bool estaDisponible(Date inicio, Date fin)
+    }
+    class Huesped {
+        +string nombre
+        +string idHuesped
+        +Date fechaRegistro
+        +string getInfo()
+        +bool puedeReservar()
+    }
+    class Reserva {
+        +int idReserva
+        +Date fechaInicio
+        +Date fechaFin
+        +string estado
+        +void cancelar()
+        +int calcularNoches()
+    }
+
+    Huesped    "1" -- "0..*" Reserva    : realiza
+    Habitacion "1" -- "0..*" Reserva    : reservadaEn
+```
 
 
 ## 3. Clínica veterinaria (mascotas)
