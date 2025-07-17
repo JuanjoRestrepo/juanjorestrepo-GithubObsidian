@@ -3,6 +3,7 @@ tags:
   - POO
   - OOP
   - CPP
+fecha: 2025-07-15
 ---
 
 
@@ -54,4 +55,6 @@ There are different ways of passing arguments to a function. Here, we will descr
 # _Pointers_
 
 [[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=51&selection=4,0,4,8|Pointers -  página 51]]
+
+
 

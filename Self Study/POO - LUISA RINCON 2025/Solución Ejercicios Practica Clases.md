@@ -1,3 +1,10 @@
+---
+tags:
+  - POO
+  - OOP
+  - CPP
+fecha: 2025-07-17
+---
 
 # Ejercicio 1: Biblioteca
 A continuación, resolveremos el ejercicio de gestión de biblioteca identificando clases, atributos, métodos y relaciones, y finalmente representándolo en un diagrama UML.
