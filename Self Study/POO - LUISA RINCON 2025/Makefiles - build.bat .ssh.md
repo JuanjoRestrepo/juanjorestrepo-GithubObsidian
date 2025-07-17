@@ -10,7 +10,7 @@ fecha: 2025-06-29
 
 - **Makefile**    
     - Es un **sistema de construcción declarativo**: defines **qué** se debe hacer y **cómo** (reglas, dependencias), y `make` decide cuándo es necesario ejecutar cada paso        
-    - Ventajas:
+    - *Ventajas*:
         - Solo recompila lo necesario (eficiencia).
         - Facilita gestionar múltiples archivos y reglas complejas.
             
@@ -36,7 +36,7 @@ fecha: 2025-06-29
 
 - Es un **generador de sistemas de construcción**: escribe tus reglas en `CMakeLists.txt`, y CMake crea Makefiles ó proyectos para Ninja, Xcode, Visual Studio, etc. [earthly.dev+3stackoverflow.com+3es.wikipedia.org+3](https://stackoverflow.com/questions/25789644/what-is-the-difference-between-using-a-makefile-and-cmake-to-compile-the-code?utm_source=chatgpt.com).
     
-- Ventajas:
+- *Ventajas*:
     - **Multiplataforma**: mismo archivo fuente, múltiples plataformas sin duplicación.
     - Maneja dependencias complejas, pruebas, empaquetado y out-of-source builds [es.wikipedia.org](https://es.wikipedia.org/wiki/CMake?utm_source=chatgpt.com).
     - Moderno y ampliamente adoptado: usado por proyectos como LLVM, KDE, OpenCV [incredibuild.com](https://www.incredibuild.com/blog/cmake-vs-make?utm_source=chatgpt.com).
