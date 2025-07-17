@@ -115,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +125,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de 4.0PrimeraCod"
             }
           },
           {
@@ -133,11 +134,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de 4.0PrimeraCod"
             }
           },
           {
@@ -175,12 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de 4.0PrimeraCod"
             }
           }
         ]
@@ -223,7 +226,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f27588b64f52208d",
+  "active": "5ae3b3c5c86d4613",
   "lastOpenFiles": [
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
