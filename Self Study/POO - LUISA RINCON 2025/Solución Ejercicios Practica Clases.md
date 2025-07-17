@@ -66,7 +66,7 @@ classDiagram
 
 ```
 
-### Simbolos Relaciones BBDD & EDR
+### Símbolos Relaciones BBDD & EDR
 
 [[2. EDR RELACIONES]]
 

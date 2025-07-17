@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDR"
+              "title": "Solución Ejercicios Practica Clases"
             }
           }
         ]
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de EDR"
+              "title": "Enlaces entrantes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -155,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de EDR"
+              "title": "Enlaces salientes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -198,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Qubika/Qversity 2025/Proyecto Final/EDR.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de EDR"
+              "title": "Esquema de Solución Ejercicios Practica Clases"
             }
           }
         ]
@@ -249,13 +249,12 @@
   },
   "active": "47401671f7542211",
   "lastOpenFiles": [
+    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
-    "EDR Symbols.png",
     "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
     "Qubika/Qversity 2025/Proyecto Final/Commands.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
     "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
     "Self Study/SQL/3. Insertar Datos en una Tabla.md",
@@ -264,6 +263,7 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/Ejercicios Diagramas ER.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/6. Diagrama ER de Northwind.md",
+    "EDR Symbols.png",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/5. Claves primarias y foraneas (PK y FK).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/4. Tablas, Campos y Registros.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/3. Clave o Key.md",
