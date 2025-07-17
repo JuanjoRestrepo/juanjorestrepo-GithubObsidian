@@ -89,3 +89,38 @@ Desarrollar un **Sistema de Gestión de Pedidos** para un restaurante que permit
 ![[Pasted image 20250702173124.png]]
 
 ![[EDR Symbols.png]]
+
+---
+
+# Tarea
+
+## 1. Biblioteca
+
+**Clases principales**
+1. `Libro`
+2. `Lector`
+3. `Prestamo`
+
+### 1.1. Clase `Libro`
+
+- **Atributos**
+    - `string titulo`    // título único
+    - `string ISBN`    // identifica la obra
+    - `int añoPublicacion`
+- **Métodos sugeridos**
+    
+    - `string getDetalles()`   // devuelve “Título (ISBN) – Año”
+        
+    - `bool estáDisponible()`   // indica si puede prestarse (a implementar según estado)
+
+
+
+## 2. Hotel
+    
+## 3. Clínica veterinaria (mascotas)
+    
+## 4. Tienda de música
+    
+## 5. Escuela de música
+    
+## 6. Galería de arte
