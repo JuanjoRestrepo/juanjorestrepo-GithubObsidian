@@ -232,7 +232,7 @@ classDiagram
         +string tipo
         +float tarifaNoche
         +string getDetalles()
-        +bool estaDisponible(Date inicio, Date fin)
+        +bool estaDisponible(Date fechaInicio, Date fechaFin)
     }
     class Huesped {
         +string nombre
