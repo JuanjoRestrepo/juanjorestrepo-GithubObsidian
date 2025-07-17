@@ -255,10 +255,16 @@ classDiagram
 ```
 
 
-## 3. Clínica veterinaria (mascotas)
+## 3. Clínica veterinaria (Tienda Mascotas)
+Enunciado: [[2.DiseñoOrientadoObjetos#3. Caso Tienda de Mascotas]]
 
+**Clases principales**
 
-
+1. **Mascota**
+    
+2. **Dueño**
+    
+3. **Cita**
 
 ## 4. Tienda de música
     
