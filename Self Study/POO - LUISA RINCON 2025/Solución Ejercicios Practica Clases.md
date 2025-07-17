@@ -101,18 +101,24 @@ Desarrollar un **Sistema de Gestión de Pedidos** para un restaurante que permit
 2. `Lector`
 3. `Prestamo`
 
-### 1.1. Clase `Libro`
-
+Clase `Libro`
 - **Atributos**
     - `string titulo`    // título único
     - `string ISBN`    // identifica la obra
     - `int añoPublicacion`
 - **Métodos sugeridos**
-    
     - `string getDetalles()`   // devuelve “Título (ISBN) – Año”
-        
     - `bool estáDisponible()`   // indica si puede prestarse (a implementar según estado)
 
+
+ Clase `Lector`
+- **Atributos**
+    - `string nombre`
+    - `int numeroSocio`   // clave única
+    - `Date fechaRegistro`
+- **Métodos sugeridos**
+    - `string getInfo()`  // nombre + número de socio
+    - `bool puedePedir()` // por ejemplo, si no supera límite de préstamos
 
 
 ## 2. Hotel
