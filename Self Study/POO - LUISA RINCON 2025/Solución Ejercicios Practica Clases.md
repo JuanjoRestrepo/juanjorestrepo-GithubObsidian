@@ -287,11 +287,9 @@ Clase `Duenio`
     - `Date fecha`
     - `Time hora`
     - `string estado` // “Agendada”, “Completada”, “Cancelada”
-        
 - **Relaciones**
     - `Mascota mascota`
     - `Dueno dueno`
-        
 - **Métodos sugeridos**
     - `void cancelar()`
     - `void completar()`
@@ -338,9 +336,9 @@ classDiagram
 ```
 
 ## 4. Tienda de música
+Enunciado: [[2.DiseñoOrientadoObjetos#4. Caso Tienda de Música]]
 
 **Clases principales**
-
 1. `Album`
 2. `Cliente`
 3. `Compra`
@@ -351,60 +349,139 @@ Clase `Album`
     - `string codigo`  // identificador exclusivo
     - `Date fechaLanzamiento`
 - **Métodos sugeridos**
-    
     - `string getDetalles()` // “Título (Código) – Lanzado 2020-05-01”
-        
     - `float getPrecio()`   // retorna precio (podrías agregar atributo `precio`)
-        
 
 > 🔧 _Nota:_ añadimos `float precio` como atributo para poder registrar el monto de la compra.
 
+Clase `Cliente`
+- **Atributos**
+    - `string nombre`
+    - `string idCliente` // identificación única
+    - `Date fechaRegistro`
+- **Métodos sugeridos**
+    - `string getInfo()`  // nombre + ID
+    - `bool puedeComprar()` // p.ej. verifica saldo o estado de cuenta
+
+Clase `Compra`
+- **Atributos**
+    - `int idCompra`
+    - `Date fechaCompra`
+    - `string estado`  // “Activa”, “Devuelta”
+- **Relaciones**
+    - `Album album`
+    - `Cliente cliente`
+- **Métodos sugeridos**
+    - `void registrarDevolucion(Date fecha)`
+    - `float calcularTotal()` // normalmente retorna `album.getPrecio()`
+
+##### Relaciones y Cardinalidades
+|Origen|Relación|Destino|Cardinalidad|Descripción|
+|---|---|---|---|---|
+|Cliente|realiza|Compra|1 Cliente ↔ 0..* Compras|Un cliente puede hacer varias compras.|
+|Album|incluidoEn|Compra|1 Álbum ↔ 0..* Compras|Un álbum puede venderse múltiples veces.|
+|Compra|asocia|Cliente|* Compra ↔ 1 Cliente|Cada compra corresponde a un único cliente.|
+|Compra|asocia|Album|* Compra ↔ 1 Álbum|Cada compra es de un solo álbum.|
+
+##### Diagrama UML en Mermaid
+
+```mermaid
+classDiagram
+    class Album {
+        +string titulo
+        +string codigo
+        +Date fechaLanzamiento
+        +float precio
+        +string getDetalles()
+        +float getPrecio()
+    }
+    class Cliente {
+        +string nombre
+        +string idCliente
+        +Date fechaRegistro
+        +string getInfo()
+        +bool puedeComprar()
+    }
+    class Compra {
+        +int idCompra
+        +Date fechaCompra
+        +string estado
+        +void registrarDevolucion(Date fecha)
+        +float calcularTotal()
+    }
+
+    Cliente "1" -- "0..*" Compra : realiza
+    Album   "1" -- "0..*" Compra : incluidoEn
+```
+
+
+## 5. Escuela de música
+
+
+**Clases principales**
+1. `Curso`
+2. `Estudiante`
+3. `Inscripción`
+
+### 1.1. Clase `Curso`
+
+- **Atributos**
+    - `string nombre`   // nombre único del curso        
+    - `string codigo`   // identificador exclusivo
+        
+    - `int duracionSemanas` // duración en semanas
+        
+- **Métodos sugeridos**
+    
+    - `string getDetalles()` // “Guitarra Básica (GIT101) – 8 semanas”
+        
+    - `bool estáActivo()`   // true si aún no ha terminado
+        
+
 ---
 
-### 1.2. Clase `Cliente`
+### 1.2. Clase `Estudiante`
 
 - **Atributos**
     
     - `string nombre`
         
-    - `string idCliente` // identificación única
+    - `string idEstudiante` // número único de inscripción
         
-    - `Date fechaRegistro`
+    - `Date fechaInscripcion`
         
 - **Métodos sugeridos**
     
-    - `string getInfo()`  // nombre + ID
+    - `string getInfo()`  // “Ana Pérez (ID: 2025001)”
         
-    - `bool puedeComprar()` // p.ej. verifica saldo o estado de cuenta
+    - `bool puedeInscribirse()` // verifica si cumple prerequisitos
         
 
 ---
 
-### 1.3. Clase `Compra`
+### 1.3. Clase `Inscripcion`
 
 - **Atributos**
     
-    - `int idCompra`
+    - `int idInscripcion`
         
-    - `Date fechaCompra`
+    - `Date fechaInscripcion`
         
-    - `string estado`  // “Activa”, “Devuelta”
+    - `string estado`  // “Activa”, “Completada”
         
 - **Relaciones**
     
-    - `Album album`
+    - `Curso curso`
         
-    - `Cliente cliente`
+    - `Estudiante estudiante`
         
 - **Métodos sugeridos**
     
-    - `void registrarDevolucion(Date fecha)`
+    - `void completar()`
         
-    - `float calcularTotal()` // normalmente retorna `album.getPrecio()`
-        
+    - `bool estáCompletada()`
 
----
 
-## 5. Escuela de música
-    
+
+
 ## 6. Galería de arte
