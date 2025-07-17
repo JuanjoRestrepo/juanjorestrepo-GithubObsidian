@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber4",
       "Si365datascience",
       "FasDatabase",
       "TiCircleNumber0",
-      "TiNetwork",
-      "TiBrandDocker"
+      "TiNetwork"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -246,7 +246,6 @@
   "Self Study/POO - LUISA RINCON 2025/0. github classroom.md": "TiCircleNumber0",
   "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md": "TiCircleNumber2",
   "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md": "TiCircleNumber3",
-  "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md": "TiCircleNumber4",
   "Self Study/POO - LUISA RINCON 2025/Notas libro.md": "FasNoteSticky",
   "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf": "📘",
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "FiGithub",
@@ -282,5 +281,7 @@
     "iconName": "TiNetwork",
     "iconColor": "#1e00ff"
   },
-  "Self Study/Docker/0.Introduccion.md": "TiCircleNumber0"
+  "Self Study/Docker/0.Introduccion.md": "TiCircleNumber0",
+  "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md": "TiCircleNumber4",
+  "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md": "TiCircleNumber4"
 }
