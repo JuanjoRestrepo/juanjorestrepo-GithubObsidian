@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 2.DiseñoOrientadoObjetos"
+              "title": "Enlaces entrantes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -155,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 2.DiseñoOrientadoObjetos"
+              "title": "Enlaces salientes de Solución Ejercicios Practica Clases"
             }
           },
           {
@@ -198,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 2.DiseñoOrientadoObjetos"
+              "title": "Esquema de Solución Ejercicios Practica Clases"
             }
           }
         ]
@@ -247,12 +247,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c5cafc2282daf34",
+  "active": "47401671f7542211",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/Docker/2.Ports y Volumenes.md",
