@@ -95,6 +95,7 @@ Desarrollar un **Sistema de Gestión de Pedidos** para un restaurante que permit
 # Tarea
 
 ## 1. Biblioteca
+Enunciado: [[2.DiseñoOrientadoObjetos#1. Caso Biblioteca]]
 
 **Clases principales**
 1. `Libro`
@@ -110,7 +111,6 @@ Clase `Libro`
     - `string getDetalles()`   // devuelve “Título (ISBN) – Año”
     - `bool estáDisponible()`   // indica si puede prestarse (a implementar según estado)
 
-
  Clase `Lector`
 - **Atributos**
     - `string nombre`
@@ -119,6 +119,21 @@ Clase `Libro`
 - **Métodos sugeridos**
     - `string getInfo()`  // nombre + número de socio
     - `bool puedePedir()` // por ejemplo, si no supera límite de préstamos
+
+Clase `Prestamo`
+- **Atributos**
+    - `int idPrestamo`  // identificador único
+    - `Date fechaPrestamo`
+    - `Date fechaDevolucion` // `null` si aún no se devolvió
+    - `string estado`   // (“Activo”, “Devuelto”, “Retrasado”)
+        
+- **Relaciones (atributos referenciales)**
+    - `Libro libro`
+    - `Lector lector`
+        
+- **Métodos sugeridos**
+    - `void registrarDevolucion(Date fecha)`
+    - `int calcularDiasRetraso()`
 
 
 ## 2. Hotel
