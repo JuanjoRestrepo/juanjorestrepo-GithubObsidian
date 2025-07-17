@@ -109,7 +109,7 @@ Clase `Libro`
     - `int añoPublicacion`
 - **Métodos sugeridos**
     - `string getDetalles()`   // devuelve “Título (ISBN) – Año”
-    - `bool estáDisponible()`   // indica si puede prestarse (a implementar según estado)
+    - `bool estaDisponible()`   // indica si puede prestarse (a implementar según estado)
 
  Clase `Lector`
 - **Atributos**
@@ -135,9 +135,55 @@ Clase `Prestamo`
     - `void registrarDevolucion(Date fecha)`
     - `int calcularDiasRetraso()`
 
+| Origen   | Tipo de Relación       | Destino  | Cardinalidad              | Descripción                                                                            |
+| -------- | ---------------------- | -------- | ------------------------- | -------------------------------------------------------------------------------------- |
+| Lector   | 1 — _realiza_ — *      | Préstamo | 1 Lector ↔ 0..* Préstamos | Un lector puede tener varios préstamos a lo largo del tiempo.                          |
+| Libro    | 1 — _esPrestadoEn_ — * | Préstamo | 1 Libro ↔ 0..* Préstamos  | Un libro puede prestarse múltiples veces (no simultáneamente en este modelo sencillo). |
+| Préstamo | _asocia_               | Lector   | * Préstamo ↔ 1 Lector     | Cada préstamo corresponde a un único lector.                                           |
+| Préstamo | _asocia_               | Libro    | * Préstamo ↔ 1 Libro      | Cada préstamo corresponde a un único libro.                                            |
+
+#### Diagrama de Clases – Sistema de Biblioteca
+
+```mermaid
+classDiagram
+    class Libro {
+        +string titulo
+        +string ISBN
+        +int añoPublicacion
+        +string getDetalles()
+        +bool estaDisponible()
+    }
+    class Lector {
+        +string nombre
+        +int numeroSocio
+        +Date fechaRegistro
+        +string getInfo()
+        +bool puedePedir()
+    }
+    class Prestamo {
+        +int idPrestamo
+        +Date fechaPrestamo
+        +Date fechaDevolucion
+        +string estado
+        +void registrarDevolucion(Date fecha)
+        +int calcularDiasRetraso()
+    }
+
+    %% Relaciones con cardinalidad
+    Lector "1" -- "0..*" Prestamo : realiza
+    Libro  "1" -- "0..*" Prestamo : prestadoEn
+```
 
 ## 2. Hotel
-    
+
+
+
+
+**Clases principales**
+
+1. `Habitación`
+2. `Huésped`
+3. `Reserva`
 ## 3. Clínica veterinaria (mascotas)
     
 ## 4. Tienda de música
