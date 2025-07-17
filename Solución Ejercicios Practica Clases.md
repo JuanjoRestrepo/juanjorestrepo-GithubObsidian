@@ -20,4 +20,10 @@ Cada clase debe contener atributos que representen sus características esencial
 ## Paso 3: Definir Metodos
 
 Los métodos representan acciones que las clases pueden realizar:
-- Libro:
+- **Libro:** obtenerInformacion(), actualizarEstado()
+- **Usuario:** pedirPrestado(), devolverLibro()
+- **Prestamo:** registrarPrestamo(libro, usuario)
+
+## Paso 4: Definir Relaciones:
+
+- Un U
