@@ -75,4 +75,13 @@ classDiagram
 
 ![[EDR Symbols.png]]
 
-# Ejercicio 2: Hotel
+---
+# Ejercicio 2: Pedidos Restaurante
+
+Desarrollar un **Sistema de Gestión de Pedidos** para un restaurante que permita registrar clientes, generar y controlar el estado de sus pedidos, y detallar los platos incluidos en cada pedido con su precio. El sistema debe facilitar:
+
+1. **Registrar Clientes** con su nombre y teléfono.
+2. **Crear Pedidos**, asignarles un número único y un estado (p. ej. “Pendiente”, “En preparación”, “Servido”).
+3. **Asociar cada Pedido** a un Cliente existente.
+4. **Detallar los Platos** de cada Pedido, indicando nombre y precio de cada uno.
+5. **Visualizar el Total** del pedido (sumando precios de platos) y actualizar el estado conforme avanza su preparación.
