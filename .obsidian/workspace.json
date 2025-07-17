@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solución Ejercicios Practica Clases"
+              "title": "2.DiseñoOrientadoObjetos"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dalto",
+                "query": "biblioteca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -116,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +125,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Solución Ejercicios Practica Clases"
+              "title": "Enlaces entrantes de 2.DiseñoOrientadoObjetos"
             }
           },
           {
@@ -135,12 +134,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Solución Ejercicios Practica Clases"
+              "title": "Enlaces salientes de 2.DiseñoOrientadoObjetos"
             }
           },
           {
@@ -178,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Solución Ejercicios Practica Clases"
+              "title": "Esquema de 2.DiseñoOrientadoObjetos"
             }
           }
         ]
@@ -227,10 +226,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47401671f7542211",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Qubika/Qversity 2025/Proyecto Final/EDR.md",
     "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
     "Qubika/Qversity 2025/Proyecto Final/Commands.md",
@@ -251,9 +252,7 @@
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/2. Diagrama ER (Con Notación CHEN).md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/1. Qué es SQL.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
-    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
-    "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Self Study/Docker/2.Ports y Volumenes.md",
     "Files/Salida FastAPI Ubuntu Docker.png",
     "Files/Que es una Docker Image.png",
