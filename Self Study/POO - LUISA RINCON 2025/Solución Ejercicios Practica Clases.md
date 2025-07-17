@@ -175,17 +175,19 @@ classDiagram
 ```
 
 ## 2. Hotel
-
-
-
-
+Enunciado: [[2.DiseñoOrientadoObjetos#2. Caso Hotel]]
 **Clases principales**
-
 1. `Habitación`
 2. `Huésped`
 3. `Reserva`
+
+
+
 ## 3. Clínica veterinaria (mascotas)
-    
+
+
+
+
 ## 4. Tienda de música
     
 ## 5. Escuela de música
