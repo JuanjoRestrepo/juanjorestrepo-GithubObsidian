@@ -67,14 +67,6 @@ classDiagram
 
 ```
 
-### Símbolos Relaciones BBDD & EDR
-
-[[2. EDR RELACIONES]]
-
-![[Pasted image 20250702173124.png]]
-
-![[EDR Symbols.png]]
-
 ---
 # Ejercicio 2: Pedidos Restaurante
 
@@ -85,3 +77,15 @@ Desarrollar un **Sistema de Gestión de Pedidos** para un restaurante que permit
 3. **Asociar cada Pedido** a un Cliente existente.
 4. **Detallar los Platos** de cada Pedido, indicando nombre y precio de cada uno.
 5. **Visualizar el Total** del pedido (sumando precios de platos) y actualizar el estado conforme avanza su preparación.
+
+---
+# Ejercicio 3: 
+
+
+### Símbolos Relaciones BBDD & EDR
+
+[[2. EDR RELACIONES]]
+
+![[Pasted image 20250702173124.png]]
+
+![[EDR Symbols.png]]
