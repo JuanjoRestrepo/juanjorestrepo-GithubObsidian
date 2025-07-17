@@ -26,4 +26,41 @@ Los métodos representan acciones que las clases pueden realizar:
 
 ## Paso 4: Definir Relaciones:
 
-- Un U
+- Un **Usuario** puede pedir prestados varios **Libros**
+- Un **Libro** solo puede estar en posesión de un único **Usuario**
+- Un **Prestamo** conecta un **Usuario** con un **Libro** y almacena la información sobre la fecha de préstamo y devolución
+
+## Paso 5: Diagrama UML
+
+📌 **Diagrama UML del sistema:**
+
+classDiagram
+    class Libro {
+        - string titulo
+        - string autor
+        - string genero
+        - int id
+        - string estado
+        + obtenerInformacion()
+        + actualizarEstado()
+    }
+    
+    class Usuario {
+        - int id
+        - string nombre
+        + pedirPrestado()
+        + devolverLibro()
+    }
+    
+    class Prestamo {
+        - date fechaInicio
+        - date fechaDevolucion
+        - string estado
+        + registrarPrestamo(libro, usuario)
+    }
+    
+    Usuario "1" -- "*" Prestamo : realiza
+    Prestamo "1" -- "1" Libro : incluye
+    Prestamo "1" -- "1" Usuario : involucra
+
+

@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "mode": "source",
                 "source": false
               },
@@ -118,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -136,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -198,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Solución Ejercicios Practica Clases.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -247,10 +246,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47401671f7542211",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
-    "Solución Ejercicios Practica Clases.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
