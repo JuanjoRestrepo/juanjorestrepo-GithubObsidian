@@ -56,7 +56,7 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 [[Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf#page=51&selection=4,0,4,8|Pointers -  página 51]]
 
-
+---
 # _Símbolos Modificadores de Acceso UML_
-[[2.DiseñoOrientadoObjetos#^uml-modifier-symbols]]
+[[2.DiseñoOrientadoObjetos#^uml-modifier-symbols|Ver símbolos UML]]
 
