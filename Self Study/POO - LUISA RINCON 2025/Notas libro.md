@@ -58,3 +58,6 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 
 
+# _Símbolos Modificadores de Acceso UML_
+[[2.DiseñoOrientadoObjetos# ]]
+
