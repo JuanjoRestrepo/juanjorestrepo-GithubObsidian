@@ -1,4 +1,5 @@
 
+# Ejercicio 1: Biblioteca
 A continuación, resolveremos el ejercicio de gestión de biblioteca identificando clases, atributos, métodos y relaciones, y finalmente representándolo en un diagrama UML.
 
 ## Paso 1: Identificación de Clases que forman parte del sistema.
@@ -73,3 +74,5 @@ classDiagram
 ![[Pasted image 20250702173124.png]]
 
 ![[EDR Symbols.png]]
+
+# Ejercicio 2: Hotel
