@@ -494,3 +494,87 @@ classDiagram
 
 ## 6. Galería de arte
 [[2.DiseñoOrientadoObjetos#6. Caso Galería de Arte]]
+
+**Clases principales**
+1. `ObraArte`
+2. `Artista`
+3. `Exposicion`
+
+Clase `ObraArte`
+- **Atributos**
+    - `string titulo`
+    - `string codigo`   // identificador exclusivo
+    - `Date fechaCreacion`
+- **Métodos sugeridos**
+    - `string getDetalles()`  // “Mona Lisa (ML-1503) – Creada 1503”
+    - `string getAutor()`  // retorna nombre del artista asociado (opcional)
+
+
+Clase `Artista`
+- **Atributos**
+    - `string nombre`
+    - `string idArtista`  // identificación único
+    - `Date fechaRegistro`
+- **Métodos sugeridos**
+    - `string getInfo()`  // “Leonardo da Vinci (ID: A001)”
+    - `int contarObras()`  // devuelve número de obras registradas
+
+Clase `Exposicion`
+- **Atributos**
+    - `int idExposicion`
+    - `Date fechaInicio`
+    - `Date fechaFin`
+    - `string estado`  // “Activa”, “Finalizada”
+- **Relaciones**
+    - `ObraArte obra`
+    - `Artista artista`
+- **Métodos sugeridos**
+    - `void finalizar()`
+    - `bool estaActiva()`
+
+
+##### Relaciones y Cardinalidades
+
+|Origen|Relación|Destino|Cardinalidad|Descripción|
+|---|---|---|---|---|
+|Artista|crea|ObraArte|1 Artista ↔ 0..* ObraArte|Un artista puede tener varias obras.|
+|ObraArte|exhibidaEn|Exposicion|1 ObraArte ↔ 0..* Exposicion|Una obra puede exhibirse en múltiples exposiciones a lo largo del tiempo.|
+|Artista|participaEn|Exposicion|1 Artista ↔ 0..* Exposicion|Un artista puede presentar varias exposiciones.|
+|Exposicion|asocia|ObraArte|* Exposicion ↔ 1 ObraArte|Cada exposición corresponde a una sola obra en este modelo sencillo.|
+|Exposicion|asocia|Artista|* Exposicion ↔ 1 Artista|Cada exposición está vinculada a un único artista creador.|
+
+
+##### Diagrama UML en Mermaid
+
+```mermaid
+classDiagram
+    class ObraArte {
+        +string titulo
+        +string codigo
+        +Date fechaCreacion
+        +string getDetalles()
+        +string getAutor()
+    }
+    class Artista {
+        +string nombre
+        +string idArtista
+        +Date fechaRegistro
+        +string getInfo()
+        +int contarObras()
+    }
+    class Exposicion {
+        +int idExposicion
+        +Date fechaInicio
+        +Date fechaFin
+        +string estado
+        +void finalizar()
+        +bool estaActiva()
+    }
+
+    Artista    "1" -- "0..*" ObraArte   : crea
+    ObraArte   "1" -- "0..*" Exposicion : exhibidaEn
+    Artista    "1" -- "0..*" Exposicion : participaEn
+```
+
+
+
