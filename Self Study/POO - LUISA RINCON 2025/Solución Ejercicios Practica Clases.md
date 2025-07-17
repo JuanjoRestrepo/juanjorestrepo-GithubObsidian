@@ -71,3 +71,5 @@ classDiagram
 [[2. EDR RELACIONES]]
 
 ![[Pasted image 20250702173124.png]]
+
+![[EDR Symbols.png]]
