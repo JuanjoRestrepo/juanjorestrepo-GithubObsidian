@@ -34,6 +34,7 @@ Los métodos representan acciones que las clases pueden realizar:
 
 📌 **Diagrama UML del sistema:**
 
+```mermaid
 classDiagram
     class Libro {
         - string titulo
@@ -63,4 +64,4 @@ classDiagram
     Prestamo "1" -- "1" Libro : incluye
     Prestamo "1" -- "1" Usuario : involucra
 
-
+```
