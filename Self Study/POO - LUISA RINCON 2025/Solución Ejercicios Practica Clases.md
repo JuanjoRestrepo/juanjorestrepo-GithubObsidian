@@ -337,12 +337,74 @@ classDiagram
     Mascota  "1" -- "0..*" Cita    : asiste a
 ```
 
-
-
-
-
 ## 4. Tienda de música
+
+**Clases principales**
+
+1. `Album`
+2. `Cliente`
+3. `Compra`
+
+Clase `Album`
+- **Atributos**
+    - `string titulo`   // título único
+    - `string codigo`  // identificador exclusivo
+    - `Date fechaLanzamiento`
+- **Métodos sugeridos**
     
+    - `string getDetalles()` // “Título (Código) – Lanzado 2020-05-01”
+        
+    - `float getPrecio()`   // retorna precio (podrías agregar atributo `precio`)
+        
+
+> 🔧 _Nota:_ añadimos `float precio` como atributo para poder registrar el monto de la compra.
+
+---
+
+### 1.2. Clase `Cliente`
+
+- **Atributos**
+    
+    - `string nombre`
+        
+    - `string idCliente` // identificación única
+        
+    - `Date fechaRegistro`
+        
+- **Métodos sugeridos**
+    
+    - `string getInfo()`  // nombre + ID
+        
+    - `bool puedeComprar()` // p.ej. verifica saldo o estado de cuenta
+        
+
+---
+
+### 1.3. Clase `Compra`
+
+- **Atributos**
+    
+    - `int idCompra`
+        
+    - `Date fechaCompra`
+        
+    - `string estado`  // “Activa”, “Devuelta”
+        
+- **Relaciones**
+    
+    - `Album album`
+        
+    - `Cliente cliente`
+        
+- **Métodos sugeridos**
+    
+    - `void registrarDevolucion(Date fecha)`
+        
+    - `float calcularTotal()` // normalmente retorna `album.getPrecio()`
+        
+
+---
+
 ## 5. Escuela de música
     
 ## 6. Galería de arte
