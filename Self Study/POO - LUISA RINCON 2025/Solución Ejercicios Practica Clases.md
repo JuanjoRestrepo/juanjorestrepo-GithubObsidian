@@ -259,12 +259,87 @@ classDiagram
 Enunciado: [[2.DiseñoOrientadoObjetos#3. Caso Tienda de Mascotas]]
 
 **Clases principales**
+1. `Mascota`
+2. `Dueño`
+3. `Cita`
 
-1. **Mascota**
-    
-2. **Dueño**
-    
-3. **Cita**
+Clase `Mascota`
+- **Atributos**
+    - `string nombre`        
+    - `string especie`  // “Perro”, “Gato”, etc.
+    - `Date fechaNacimiento`
+- **Métodos sugeridos**
+    - `int edad()`    // calcula años a partir de `fechaNacimiento`
+    - `string getInfo()` // “Rex (Perro), nacido 2020-05-01”
+
+Clase `Duenio`
+- **Atributos**
+    - `string nombre`
+    - `string idDueno` // cédula o identificación única
+    - `Date fechaRegistro`
+- **Métodos sugeridos**
+    - `string getInfo()` // “Ana Pérez (ID: 12345)”
+    - `bool puedeAgendar()` // verifica restricciones de citas
+
+1.3. Clase `Cita`
+- **Atributos**
+    - `int idCita`
+    - `Date fecha`
+    - `Time hora`
+    - `string estado` // “Agendada”, “Completada”, “Cancelada”
+        
+- **Relaciones**
+    - `Mascota mascota`
+    - `Dueno dueno`
+        
+- **Métodos sugeridos**
+    - `void cancelar()`
+    - `void completar()`
+
+##### Relaciones y Cardinalidades
+|Origen|Relación|Destino|Cardinalidad|Descripción|
+|---|---|---|---|---|
+|Dueño|tiene|Mascota|1 Dueno ↔ 0..* Mascotas|Un dueño puede registrar varias mascotas.|
+|Dueño|agenda|Cita|1 Dueno ↔ 0..* Citas|Un dueño puede llevar sus mascotas a múltiples citas.|
+|Mascota|asiste a|Cita|1 Mascota ↔ 0..* Citas|Cada mascota puede tener varias citas a lo largo del tiempo.|
+|Cita|pertenece a|Dueno|* Cita ↔ 1 Dueno|Cada cita corresponde a un único dueño.|
+|Cita|para|Mascota|* Cita ↔ 1 Mascota|Cada cita es para una sola mascota en fecha y hora específicas.|
+
+##### Diagrama UML en Mermaid
+
+```mermaid
+classDiagram
+    class Mascota {
+        +string nombre
+        +string especie
+        +Date fechaNacimiento
+        +int edad()
+        +string getInfo()
+    }
+    class Dueno {
+        +string nombre
+        +string idDueno
+        +Date fechaRegistro
+        +string getInfo()
+        +bool puedeAgendar()
+    }
+    class Cita {
+        +int idCita
+        +Date fecha
+        +Time hora
+        +string estado
+        +void cancelar()
+        +void completar()
+    }
+
+    Dueno    "1" -- "0..*" Mascota : tiene
+    Dueno    "1" -- "0..*" Cita    : agenda
+    Mascota  "1" -- "0..*" Cita    : asiste a
+```
+
+
+
+
 
 ## 4. Tienda de música
     
