@@ -416,72 +416,81 @@ classDiagram
 
 
 ## 5. Escuela de música
-
+Enunciado: [[2.DiseñoOrientadoObjetos#5. Caso Escuela de Música]]
 
 **Clases principales**
 1. `Curso`
 2. `Estudiante`
 3. `Inscripción`
 
-### 1.1. Clase `Curso`
-
+Clase `Curso`
 - **Atributos**
     - `string nombre`   // nombre único del curso        
     - `string codigo`   // identificador exclusivo
-        
     - `int duracionSemanas` // duración en semanas
-        
 - **Métodos sugeridos**
-    
-    - `string getDetalles()` // “Guitarra Básica (GIT101) – 8 semanas”
-        
+    - `string getDetalles()` // “Guitarra Básica (GIT101) – 8 semanas”    
     - `bool estáActivo()`   // true si aún no ha terminado
-        
 
----
-
-### 1.2. Clase `Estudiante`
-
+Clase `Estudiante`
 - **Atributos**
-    
     - `string nombre`
-        
     - `string idEstudiante` // número único de inscripción
-        
     - `Date fechaInscripcion`
-        
 - **Métodos sugeridos**
-    
     - `string getInfo()`  // “Ana Pérez (ID: 2025001)”
-        
     - `bool puedeInscribirse()` // verifica si cumple prerequisitos
-        
-
----
-
-### 1.3. Clase `Inscripcion`
-
+    
+Clase `Inscripcion`
 - **Atributos**
-    
     - `int idInscripcion`
-        
     - `Date fechaInscripcion`
-        
     - `string estado`  // “Activa”, “Completada”
-        
 - **Relaciones**
-    
     - `Curso curso`
-        
     - `Estudiante estudiante`
-        
 - **Métodos sugeridos**
-    
     - `void completar()`
-        
     - `bool estáCompletada()`
 
+##### Relaciones y Cardinalidades
+|Origen|Relación|Destino|Cardinalidad|Descripción|
+|---|---|---|---|---|
+|Estudiante|realiza|Inscripcion|1 Estudiante ↔ 0..* Inscripciones|Un estudiante puede inscribirse en varios cursos.|
+|Curso|tiene|Inscripcion|1 Curso ↔ 0..* Inscripciones|Un curso puede tener múltiples inscripciones de diferentes estudiantes.|
+|Inscripcion|asocia|Estudiante|* Inscripcion ↔ 1 Estudiante|Cada inscripción pertenece a un solo estudiante.|
+|Inscripcion|asocia|Curso|* Inscripcion ↔ 1 Curso|Cada inscripción corresponde a un solo curso.|
 
+##### Diagrama UML en Mermaid
+
+```mermaid
+classDiagram
+    class Curso {
+        +string nombre
+        +string codigo
+        +int duracionSemanas
+        +string getDetalles()
+        +bool estaActivo()
+    }
+    class Estudiante {
+        +string nombre
+        +string idEstudiante
+        +Date fechaInscripcion
+        +string getInfo()
+        +bool puedeInscribirse()
+    }
+    class Inscripcion {
+        +int idInscripcion
+        +Date fechaInscripcion
+        +string estado
+        +void completar()
+        +bool estaCompletada()
+    }
+
+    Estudiante   "1" -- "0..*" Inscripcion : realiza
+    Curso        "1" -- "0..*" Inscripcion : tiene
+```
 
 
 ## 6. Galería de arte
+[[2.DiseñoOrientadoObjetos#6. Caso Galería de Arte]]
