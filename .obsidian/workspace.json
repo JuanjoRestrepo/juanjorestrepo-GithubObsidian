@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.0PrimeraCod"
+              "title": "5.EjerciciosDiseño"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 271.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -229,10 +229,11 @@
   },
   "active": "882ef2e836de089d",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
-    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Pasted image 20250718141123.png",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
