@@ -60,3 +60,11 @@ There are different ways of passing arguments to a function. Here, we will descr
 # _Símbolos Modificadores de Acceso UML_
 [[2.DiseñoOrientadoObjetos#^uml-modifier-symbols|Ver símbolos UML]]
 
+# _Símbolos Relaciones BBDD & EDR_
+
+[[2. EDR RELACIONES]]
+
+![[Pasted image 20250702173124.png]]
+
+![[EDR Symbols.png]]
+
