@@ -77,3 +77,10 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 ![[EDR Symbols.png]]
 
+
+# _Mermaid Docs_
+[Mermaid Sintaxis and Symbols](https://mermaid.js.org/syntax/classDiagram.html)
+
+
+
+
