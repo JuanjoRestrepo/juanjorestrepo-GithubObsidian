@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiEpicgames",
+      "SiCplusplus",
       "SiPlaystation",
       "SiObsidian",
-      "SiNotion",
-      "SiDbt",
-      "SiGoogle"
+      "SiNotion"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -63,15 +63,20 @@
   "Self Study/Coursera/Databases and SQL for Data Science with Python": "SiPostgresql",
   "Self Study/Coursera/Java": "FabJava",
   "Keys/Facebook Account Keys.md": "SiFacebook",
-  "Keys/Firefox Account Keys.md": "SiFirefox",
+  "Keys/Firefox Account Keys.md": {
+    "iconName": "SiFirefox",
+    "iconColor": "#ff5900"
+  },
   "Keys/Google Account Keys.md": "SiGoogle",
   "Keys/Info Cuenta Libreta Militar.md": "🪖",
   "Keys/Info Cuenta SURA 2024.md": "⚕",
-  "Keys/Play Station Account 2024 Backup Codes and Pass.md": "SiPlaystation",
   "Keys/VMware Workstation Pro 17 full license keys 2023.md": "SiVmware",
   "GitHub Porfolio ReadMe Profiles": "IbGithub",
   "Transactions": "💰",
-  "Keys/Obsidian Templates GitHub Token.md": "SiObsidian",
+  "Keys/Obsidian Templates GitHub Token.md": {
+    "iconName": "SiObsidian",
+    "iconColor": "#9238ff"
+  },
   "Templates": "TiTemplate",
   "Tags": "LiTags",
   "Job Search/IBM": "SiIbm",
@@ -211,7 +216,10 @@
   },
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
-  "Keys/Open AI API Key 2025.md": "SiOpenai",
+  "Keys/Open AI API Key 2025.md": {
+    "iconName": "SiOpenai",
+    "iconColor": "#adff8a"
+  },
   "Self Study/POO - LUISA RINCON 2025": {
     "iconName": "SiCplusplus",
     "iconColor": "#0051a8"
@@ -229,5 +237,11 @@
     "iconColor": "#00d5ff"
   },
   "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash",
-  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle"
+  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle",
+  "Keys/CPP POO 2025 SSH Key.md": "SiCplusplus",
+  "Keys/Play Station Account 2024 Backup Codes and Pass.md": {
+    "iconName": "SiPlaystation",
+    "iconColor": "#0007d1"
+  },
+  "Keys/Epic Games.md": "SiEpicgames"
 }
