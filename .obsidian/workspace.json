@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Repositorios Github"
+              "title": "4.0PrimeraCod"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e16939255afc1283",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71581118a3b38c0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notas libro"
             }
           }
         ]
@@ -98,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 305.5,
+    "collapsed": true
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -230,9 +251,16 @@
   "active": "882ef2e836de089d",
   "lastOpenFiles": [
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
-    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+    "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+    "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
+    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
+    "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
+    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
     "Keys/Facebook Account Keys.md",
     "Keys/Epic Games.md",
     "Keys/CPP POO 2025 SSH Key.md",
@@ -240,8 +268,6 @@
     "Keys/Obsidian Github Access Token/Ros Ubuntu Github Token 2024.md",
     "Keys/Obsidian Github Access Token/Obsidian Github 2023.md",
     "Keys/Obsidian Github Access Token/GithubObsidianAccessToken2023.png",
-    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
-    "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
     "Self Study/Docker/2.Ports y Volumenes.md",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
@@ -257,15 +283,9 @@
     "Files/Que es una Docker Image.png",
     "Files/POO y Docker.png",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
-    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Templates/TODO List.md",
     "Templates/Plantilla reunión.md",
     "Templates/Nueva nota.md",
-    "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md",
-    "Self Study/AWS/3. Test AWS.md",
-    "Excalidraw/AWS.md",
-    "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
-    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
     "Files/JCL1Challenge.pdf",
