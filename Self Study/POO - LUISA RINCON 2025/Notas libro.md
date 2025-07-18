@@ -62,6 +62,12 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 # _Símbolos Relaciones BBDD & EDR_
 
+
+#### Class Diagram Symbols
+
+![[Pasted image 20250718141123.png]]
+
+
 [[2. EDR RELACIONES]]
 
 ![[Pasted image 20250702173124.png]]
