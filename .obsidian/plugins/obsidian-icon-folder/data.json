@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiPytest",
-      "SiPostgresql",
-      "TiCircleNumber4",
-      "Si365datascience",
-      "FasDatabase"
+      "SiPlaystation",
+      "SiObsidian",
+      "SiNotion",
+      "SiDbt",
+      "SiGoogle"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -48,10 +48,7 @@
     "iconName": "SiIbm",
     "iconColor": "#ffffff"
   },
-  "Self Study/Microsoft": {
-    "iconName": "SiMicrosoft",
-    "iconColor": "#6694ff"
-  },
+  "Self Study/Microsoft": "SiMicrosoft",
   "Job Search/Cover Letter Template": "🔤",
   "Files": {
     "iconName": "LiFiles",
@@ -66,8 +63,8 @@
   "Self Study/Coursera/Databases and SQL for Data Science with Python": "SiPostgresql",
   "Self Study/Coursera/Java": "FabJava",
   "Keys/Facebook Account Keys.md": "SiFacebook",
-  "Keys/Firefox Account Keys.md": "SiFirefoxbrowser",
-  "Keys/Google Account Keys.md": "FabGoogle",
+  "Keys/Firefox Account Keys.md": "SiFirefox",
+  "Keys/Google Account Keys.md": "SiGoogle",
   "Keys/Info Cuenta Libreta Militar.md": "🪖",
   "Keys/Info Cuenta SURA 2024.md": "⚕",
   "Keys/Play Station Account 2024 Backup Codes and Pass.md": "SiPlaystation",
@@ -77,18 +74,9 @@
   "Keys/Obsidian Templates GitHub Token.md": "SiObsidian",
   "Templates": "TiTemplate",
   "Tags": "LiTags",
-  "Job Search/IBM": {
-    "iconName": "SiIbm",
-    "iconColor": "#ffffff"
-  },
-  "Job Search/Kiwibot": {
-    "iconName": "LiBot",
-    "iconColor": "#006eff"
-  },
-  "Job Search/Siemens": {
-    "iconName": "SiSiemens",
-    "iconColor": "#38e8ff"
-  },
+  "Job Search/IBM": "SiIbm",
+  "Job Search/Kiwibot": "LiBot",
+  "Job Search/Siemens": "SiSiemens",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)": "SiSqlite",
   "Ing Electronica/Semestre 9 2023-1/IA": "OcCopilot16",
   "Ing Electronica/Semestre 8 2022-2/CPI": "🎛",
@@ -104,10 +92,7 @@
     "iconColor": "#9900ff"
   },
   "Self Study/Microsoft/GitHub": "SiGithub",
-  "Excalidraw": {
-    "iconName": "SiExcalidraw",
-    "iconColor": "#ae00ff"
-  },
+  "Excalidraw": "SiExcalidraw",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 2 Técnicas no supervisadas": "TiCircleNumber2",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2": "📁",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1": "📁",
@@ -191,10 +176,7 @@
     "iconColor": "#ffffff"
   },
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2": "📁",
-  "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": {
-    "iconName": "CoData",
-    "iconColor": "#ffae00"
-  },
+  "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": "CoData",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md": "SiInstructure",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos": "TiDatabaseLeak",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Capitulo 1 - 1. Que es la Ingenieria de Datos.md": "LiFileQuestion",
@@ -206,14 +188,8 @@
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Preguntas Capitulo 1 - 4. The Data Pipeline.md": "TiFileDatabase",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos": "SiGooglecloudstorage",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 3 - Métodos y Herramientas de procesamiento": "TiTool",
-  "Qubika/Qversity 2025": {
-    "iconName": "SiQualcomm",
-    "iconColor": "#ffffff"
-  },
-  "Qubika/Qversity 2025/2. Introduccion a Python para desarroladores": {
-    "iconName": "SiPython",
-    "iconColor": "#ffee33"
-  },
+  "Qubika/Qversity 2025": "SiQualcomm",
+  "Qubika/Qversity 2025/2. Introduccion a Python para desarroladores": "SiPython",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 1 - Que es la Ingenieria de Datos/Resumen Capitulo 1.md": "✏",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos/Preguntas Capitulo 2 - 3. Data Warehouses y Data Lakes.md": "CoFileDocument",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Capitulo 2 - Almacenamiento de Datos/Capitulo 2 - 3. Data Warehouses y Data Lakes.md": "FasWarehouse",
@@ -233,10 +209,7 @@
     "iconName": "FabAws",
     "iconColor": "#f69813"
   },
-  "Qubika/Qversity 2025/9. Airflow": {
-    "iconName": "SiApacheairflow",
-    "iconColor": "#ff1b0a"
-  },
+  "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": "SiOpenai",
   "Self Study/POO - LUISA RINCON 2025": {
@@ -250,46 +223,11 @@
   "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf": "📘",
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "FiGithub",
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
-  "Master Data Science/Data Engineering Path 2023": {
-    "iconName": "SiAkiflow",
-    "iconColor": "#ff4d4d"
-  },
+  "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
   "Self Study/Docker": {
     "iconName": "SiDocker",
     "iconColor": "#00d5ff"
   },
   "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "SiGnubash",
-  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle",
-  "Master Data Science/Omicas/DEV/Coding": {
-    "iconName": "TiCode",
-    "iconColor": "#f4d434"
-  },
-  "Qubika/Qversity 2025/Docker - Qversity.md": {
-    "iconName": "SiDocker",
-    "iconColor": "#05b4ff"
-  },
-  "Qubika/Qversity 2025/4. Unir Datos con Pandas": "TiArrowsJoin",
-  "Self Study/Docker/1. Imágenes y Contenedores.md": {
-    "iconName": "LiContainer",
-    "iconColor": "#00ccff"
-  },
-  "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md": {
-    "iconName": "TiBrandDocker",
-    "iconColor": "#00fffb"
-  },
-  "Self Study/Docker/2.Ports y Volumenes.md": {
-    "iconName": "TiNetwork",
-    "iconColor": "#1e00ff"
-  },
-  "Self Study/Docker/0.Introduccion.md": "TiCircleNumber0",
-  "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md": "TiCircleNumber4",
-  "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md": "TiCircleNumber4",
-  "Qubika/Qversity 2025/SQL": {
-    "iconName": "SiPostgresql",
-    "iconColor": "#ffd500"
-  },
-  "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines": {
-    "iconName": "SiPytest",
-    "iconColor": "#95ff14"
-  }
+  "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiRecycle"
 }

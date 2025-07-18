@@ -31,16 +31,6 @@
       "id": "Dzd3nY-Sy93IFnLkoY1_Z",
       "name": "NodeJs",
       "value": "#1be600"
-    },
-    {
-      "id": "E7KBRe_4zg_2GERalIQxM",
-      "name": "Docker",
-      "value": "#00ccff"
-    },
-    {
-      "id": "R1TOcpVUlMMeq2XiS9HxI",
-      "name": "Qubika",
-      "value": "#ffffff"
     }
   ],
   "fileColors": [
@@ -83,14 +73,6 @@
     {
       "path": "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO",
       "color": "yyvLUPQXuXScM3nyrz25h"
-    },
-    {
-      "path": "Qubika",
-      "color": "R1TOcpVUlMMeq2XiS9HxI"
-    },
-    {
-      "path": "Self Study/Docker",
-      "color": "E7KBRe_4zg_2GERalIQxM"
     }
   ]
 }
