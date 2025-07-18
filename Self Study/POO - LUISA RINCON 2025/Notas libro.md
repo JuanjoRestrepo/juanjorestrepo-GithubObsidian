@@ -67,6 +67,9 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 ![[Pasted image 20250718141123.png]]
 
+`Profesor o-- Curso` : Agregacion 
+`Curso --> Salon ` : Asociacion
+
 
 [[2. EDR RELACIONES]]
 
