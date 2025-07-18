@@ -22,4 +22,14 @@
 ### Métodos
 - `void agregarItem(Producto* p, int cantidad)`
 - `void procesar()` // descuenta stock y calcula `total`
-- `double getTotal() const`
+- `double getTotal()`
+
+# 3. Inventario (para agrupar productos)
+### Atributos
+- `string idVenta`
+- `vector <pair<Producto*,int>> items`  // puntero al producto + cantidad vendida
+- `double total`
+### Métodos
+- `void agregarItem(Producto* p, int cantidad)`
+- `void procesar()` // descuenta stock y calcula `total`
+- `double getTotal()`
