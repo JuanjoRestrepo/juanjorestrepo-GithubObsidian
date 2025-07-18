@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.EjerciciosDiseño"
+              "title": "Solución Ejercicio Diseño"
             }
           }
         ]
@@ -229,8 +229,9 @@
   },
   "active": "882ef2e836de089d",
   "lastOpenFiles": [
-    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
+    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
@@ -265,7 +266,6 @@
     "Files/Que es una Docker Image.png",
     "Self Study/POO - LUISA RINCON 2025/4.PrimeraCod.md",
     "Templates/TODO List.md",
-    "Templates/Plantilla reunión.md",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
     "Files/JCL1Challenge.pdf",
