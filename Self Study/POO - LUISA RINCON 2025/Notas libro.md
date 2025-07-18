@@ -62,9 +62,25 @@ There are different ways of passing arguments to a function. Here, we will descr
 
 # _Símbolos Relaciones BBDD & EDR_
 
+
+#### Class Diagram Symbols
+
+![[Pasted image 20250718141123.png]]
+
+`Profesor o-- Curso` : Agregacion 
+`Curso --> Salon ` : Asociacion
+
+
 [[2. EDR RELACIONES]]
 
 ![[Pasted image 20250702173124.png]]
 
 ![[EDR Symbols.png]]
+
+
+# _Mermaid Docs_
+[Mermaid Sintaxis and Symbols](https://mermaid.js.org/syntax/classDiagram.html)
+
+
+
 
