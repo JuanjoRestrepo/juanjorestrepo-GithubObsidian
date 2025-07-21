@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4f5566d7515f364f",
+        "id": "ae6e6ab9bd5fc0ac",
         "type": "tabs",
         "children": [
           {
-            "id": "eb08c7a3bf5afa77",
+            "id": "02dbda0d643eee3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "5.EjerciciosDiseño"
+              "title": "New tab"
             }
           }
         ]
@@ -98,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259.5
+    "width": 339.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -226,10 +222,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb08c7a3bf5afa77",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
+    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
     "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
@@ -255,7 +253,6 @@
     "Self Study/SQL/3. Insertar Datos en una Tabla.md",
     "Self Study/SQL/2. Crear DB y Tablas.md",
     "Self Study/SQL/1. MySQL User Credentials.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO/SQL DALTO.md",
     "EDR Symbols.png",
     "Files/Salida FastAPI Ubuntu Docker.png",
     "Files/Que es una Docker Image.png",
@@ -271,8 +268,6 @@
     "Self Study/Docker",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
-    "Self Study/POO - LUISA RINCON 2025",
-    "Qubika/DataCamp Qversity Certificate.pdf",
-    "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf"
+    "Self Study/POO - LUISA RINCON 2025"
   ]
 }
