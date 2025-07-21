@@ -226,12 +226,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da8a1878882ed6ad",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Port Mapping 1.png",
-    "docker commands 1.png",
-    "Tabla Comandos Docker.png",
+    "Port Mapping 2.png",
+    "Files/Port Mapping 1.png",
+    "Files/Tabla Comandos Docker.png",
     "Self Study/Docker/2.Ports y Volúmenes.md",
+    "Files/docker commands 1.png",
     "Files/EstructuraImagenDocker.png",
     "Files/EDR Symbols.png",
     "Files/UML Symbols.png",
