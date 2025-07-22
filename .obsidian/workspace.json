@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
+                "file": "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.EjerciciosDiseño"
+              "title": "Plan de Trabajo semillero iÓMICAS"
             }
           }
         ]
@@ -228,6 +228,12 @@
   },
   "active": "eb08c7a3bf5afa77",
   "lastOpenFiles": [
+    "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
+    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
+    "Master Data Science/Omicas/Tecnicas/3. Espectrofotometría UV-Vis.md",
+    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
+    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
     "Self Study/Docker/2.Ports y Volúmenes.md",
     "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
@@ -240,7 +246,6 @@
     "Files/EstructuraImagenDocker.png",
     "Files/EDR Symbols.png",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
-    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
@@ -261,10 +266,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Commands.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
-    "Self Study/SQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
-    "Self Study/SQL/3. Insertar Datos en una Tabla.md",
-    "Self Study/SQL/2. Crear DB y Tablas.md",
     "EDR Symbols.png",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
@@ -272,7 +273,6 @@
     "Self Study/Docker",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
-    "Self Study/POO - LUISA RINCON 2025",
-    "Qubika/DataCamp Qversity Certificate.pdf"
+    "Self Study/POO - LUISA RINCON 2025"
   ]
 }
