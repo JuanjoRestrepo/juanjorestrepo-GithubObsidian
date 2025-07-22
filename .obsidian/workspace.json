@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2705f3e026aa8154",
+        "id": "4f5566d7515f364f",
         "type": "tabs",
         "children": [
           {
-            "id": "da8a1878882ed6ad",
+            "id": "eb08c7a3bf5afa77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "5.EjerciciosDiseño"
             }
           }
         ]
@@ -45,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UML Symbols",
+                "query": "biblioteca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +62,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -91,14 +91,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 339.5
+    "width": 259.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -214,44 +214,42 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da8a1878882ed6ad",
+  "active": "eb08c7a3bf5afa77",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
+    "Self Study/Docker/2.Ports y Volúmenes.md",
+    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
+    "Files/docker commands 1.png",
+    "Files/UML Symbols.png",
+    "Files/Tabla Comandos Docker.png",
     "Files/Port Mapping Correcto.png",
     "Files/Port Mapping 2.png",
-    "Self Study/Docker/2.Ports y Volúmenes.md",
-    "Pasted image 20250721165505.png",
     "Files/Port Mapping 1.png",
-    "Files/Tabla Comandos Docker.png",
-    "Files/docker commands 1.png",
     "Files/EstructuraImagenDocker.png",
     "Files/EDR Symbols.png",
-    "Files/UML Symbols.png",
-    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
-    "Self Study/Docker/Untitled.md",
-    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
-    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "conflict-files-obsidian-git.md",
+    "Pasted image 20250718141123.png",
     "Keys/CPP POO 2025 SSH Key.md",
     "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
@@ -266,13 +264,15 @@
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
     "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
     "Self Study/SQL/3. Insertar Datos en una Tabla.md",
-    "Files/Salida FastAPI Ubuntu Docker.png",
+    "Self Study/SQL/2. Crear DB y Tablas.md",
+    "EDR Symbols.png",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
     "Files/JCL1Challenge.pdf",
     "Self Study/Docker",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
-    "Self Study/POO - LUISA RINCON 2025"
+    "Self Study/POO - LUISA RINCON 2025",
+    "Qubika/DataCamp Qversity Certificate.pdf"
   ]
 }
