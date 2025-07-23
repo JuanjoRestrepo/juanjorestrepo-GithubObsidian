@@ -40,7 +40,8 @@
       "offset": 0,
       "timespan": 1,
       "showAllDay": true,
-      "navigation": true
+      "navigation": true,
+      "date": "2025-07-28T00:00:00-05:00"
     },
     "week": {
       "type": "week",

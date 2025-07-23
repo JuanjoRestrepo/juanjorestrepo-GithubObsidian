@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2705f3e026aa8154",
+        "id": "12e331b46c2495af",
         "type": "tabs",
         "children": [
           {
-            "id": "da8a1878882ed6ad",
+            "id": "88243d5ffb62a4de",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self Study/Docker/2.Ports y Volúmenes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2.Ports y Volúmenes"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -115,7 +111,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 4.0PrimeraCod"
+              "title": "Enlaces entrantes"
             }
           },
           {
@@ -185,8 +180,19 @@
               "icon": "lucide-list",
               "title": "Esquema de 4.0PrimeraCod"
             }
+          },
+          {
+            "id": "d88dce0c3141efd4",
+            "type": "leaf",
+            "state": {
+              "type": "google-calendar-view-day",
+              "state": {},
+              "icon": "layout-template",
+              "title": "GCal Timeline View"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       },
       {
         "id": "ed82d83676065a4b",
@@ -209,8 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5,
-    "collapsed": true
+    "width": 270.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,10 +231,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da8a1878882ed6ad",
+  "active": "cc09e55ece66f5e2",
   "lastOpenFiles": [
-    "Keys/Google Account Keys.md",
+    "2025-07-28.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
+    "Keys/Google Account Keys.md",
     "conflict-files-obsidian-git.md",
     "README.md",
     "Untitled.canvas",
@@ -266,7 +272,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
     "Files/Salida FastAPI Ubuntu Docker.png",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
