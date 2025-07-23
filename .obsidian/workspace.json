@@ -11,10 +11,14 @@
             "id": "41299991492e7434",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Plan de Trabajo semillero iÓMICAS"
             }
           }
         ]
@@ -223,6 +227,7 @@
   },
   "active": "41299991492e7434",
   "lastOpenFiles": [
+    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Keys/Google Account Keys.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
     "conflict-files-obsidian-git.md",
@@ -261,7 +266,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
     "Self Study/SQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/4. Volver a correr una DB - Hacer Drop.md",
     "Files/Salida FastAPI Ubuntu Docker.png",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",

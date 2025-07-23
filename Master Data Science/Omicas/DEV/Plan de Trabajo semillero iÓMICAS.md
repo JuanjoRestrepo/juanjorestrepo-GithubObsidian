@@ -19,7 +19,7 @@ Ese conocimiento no esta documentado, esta en el aire, hay muchos ensayos que se
 
 Hay datos almacenados, y hay que convertilos en informacion, para luego tratarlos, usando ML para armar una base de datos, con todo ese conocimiento durante los meses, 
 
-ensamblalo en una estructura documental y armar modelos para hacer servicios a la comunidades.
+ensamblarlo en una estructura documental y armar modelos para hacer servicios a la comunidades.
 
 
 
