@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "12e331b46c2495af",
+        "id": "6f3f554ebe60e4b0",
         "type": "tabs",
         "children": [
           {
-            "id": "88243d5ffb62a4de",
+            "id": "621942016a101a8b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Makefiles - build.bat .ssh"
             }
           }
         ]
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339.5
+    "width": 275.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -111,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +125,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de Makefiles - build.bat .ssh"
             }
           },
           {
@@ -215,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 270.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,8 +237,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cc09e55ece66f5e2",
+  "active": "621942016a101a8b",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "2025-07-28.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
     "Keys/Google Account Keys.md",
@@ -251,7 +259,6 @@
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/Docker/Untitled.md",
     "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
-    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
@@ -262,7 +269,6 @@
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
-    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
@@ -271,7 +277,6 @@
     "Qubika/Qversity 2025/Proyecto Final/Commands.md",
     "Qubika/Qversity 2025/Proyecto Final/Documentacion.md",
     "Qubika/Qversity 2025/Proyecto Final/Informe final.md",
-    "Self Study/SQL/5. Foreign Key y Relaciones.md",
     "Files/Salida FastAPI Ubuntu Docker.png",
     "Files/FILES1.pdf",
     "Files/Introduction-to-RPA-Testing.pdf",
