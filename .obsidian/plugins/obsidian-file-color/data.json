@@ -41,6 +41,11 @@
       "id": "R1TOcpVUlMMeq2XiS9HxI",
       "name": "Qubika",
       "value": "#ffffff"
+    },
+    {
+      "id": "cwvsG0zCyx0SzvggV5OYB",
+      "name": "Linux",
+      "value": "#00ffd5"
     }
   ],
   "fileColors": [
@@ -91,6 +96,10 @@
     {
       "path": "Self Study/Docker",
       "color": "E7KBRe_4zg_2GERalIQxM"
+    },
+    {
+      "path": "Ing Electronica/Semestre 7 2022-1",
+      "color": "cwvsG0zCyx0SzvggV5OYB"
     }
   ]
 }
