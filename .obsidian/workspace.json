@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6f3f554ebe60e4b0",
+        "id": "82188217c87e7e37",
         "type": "tabs",
         "children": [
           {
-            "id": "621942016a101a8b",
+            "id": "d391f5bd0546daa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
+                "file": "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Makefiles - build.bat .ssh"
+              "title": "LinuxTuts"
             }
           }
         ]
@@ -45,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -91,14 +91,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 339.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -115,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Makefiles - build.bat .ssh"
+              "title": "Backlinks"
             }
           },
           {
@@ -185,19 +184,8 @@
               "icon": "lucide-list",
               "title": "Esquema de 4.0PrimeraCod"
             }
-          },
-          {
-            "id": "d88dce0c3141efd4",
-            "type": "leaf",
-            "state": {
-              "type": "google-calendar-view-day",
-              "state": {},
-              "icon": "layout-template",
-              "title": "GCal Timeline View"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       },
       {
         "id": "ed82d83676065a4b",
@@ -225,30 +213,42 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "621942016a101a8b",
+  "active": "d391f5bd0546daa7",
   "lastOpenFiles": [
+    "Self Study/Docker/0.Introduccion.md",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut04.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/07-Sockets.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/06-Processes.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut03.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut02.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut01.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut00.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/Untitled.md",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales",
+    "Ing Electronica/Semestre 7 2022-1",
+    "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
+    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
+    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver",
+    "Master Data Science/Cursor on Website.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
-    "Master Data Science/TESIS 2025/Resumen pre-entrega final.md",
-    "Master Data Science/TESIS 2025/Anteproyecto",
-    "Master Data Science/TESIS 2025",
-    "Master Data Science/Notas Situación Tesis.md",
-    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
-    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
-    "2025-07-28.md",
-    "Self Study/Docker/2.Ports y Volúmenes.md",
+    "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
+    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
+    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Keys/Google Account Keys.md",
+    "Self Study/Docker/2.Ports y Volúmenes.md",
     "conflict-files-obsidian-git.md",
     "README.md",
     "Untitled.canvas",
@@ -263,8 +263,7 @@
     "Files/UML Symbols.png",
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/Docker/Untitled.md",
-    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
@@ -274,17 +273,6 @@
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
-    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
-    "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
-    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
-    "Qubika/Qversity 2025/Proyecto Final/EDR.md",
-    "Qubika/Qversity 2025/Proyecto Final/2. EDR RELACIONES.md",
-    "Qubika/Qversity 2025/Proyecto Final/Commands.md",
-    "Files/Salida FastAPI Ubuntu Docker.png",
-    "Files/FILES1.pdf",
-    "Files/Introduction-to-RPA-Testing.pdf",
-    "Files/JCL1Challenge.pdf",
-    "Self Study/Docker",
-    "Transactions/transactions 1.ledger"
+    "Files/Salida FastAPI Ubuntu Docker.png"
   ]
 }
