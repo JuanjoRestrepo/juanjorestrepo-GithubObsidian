@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📗",
+      "📙",
       "TiCircleNumber5",
       "TiCircleNumber4",
-      "SiEpicgames",
-      "SiCplusplus",
-      "SiPlaystation"
+      "SiEpicgames"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -246,5 +246,7 @@
   "Keys/Epic Games.md": "SiEpicgames",
   "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md": "TiCircleNumber4",
   "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md": "TiCircleNumber4",
-  "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md": "TiCircleNumber5"
+  "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md": "TiCircleNumber5",
+  "Master Data Science/TESIS 2025": "📙",
+  "Master Data Science/TESIS 2025/Anteproyecto": "📗"
 }
