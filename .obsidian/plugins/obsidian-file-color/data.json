@@ -41,11 +41,6 @@
       "id": "R1TOcpVUlMMeq2XiS9HxI",
       "name": "Qubika",
       "value": "#ffffff"
-    },
-    {
-      "id": "yAEagb1_1V-qnWTgouoGO",
-      "name": "Semestre 7",
-      "value": "#39fecd"
     }
   ],
   "fileColors": [
@@ -96,10 +91,6 @@
     {
       "path": "Self Study/Docker",
       "color": "E7KBRe_4zg_2GERalIQxM"
-    },
-    {
-      "path": "Ing Electronica/Semestre 7 2022-1",
-      "color": "yAEagb1_1V-qnWTgouoGO"
     }
   ]
 }
