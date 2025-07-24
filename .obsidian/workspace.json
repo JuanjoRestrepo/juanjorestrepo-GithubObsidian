@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed06bea1879b4ef4",
+        "id": "82188217c87e7e37",
         "type": "tabs",
         "children": [
           {
-            "id": "4d1fbe15bc0b559a",
+            "id": "d391f5bd0546daa7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -221,7 +221,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d1fbe15bc0b559a",
+  "active": "d391f5bd0546daa7",
   "lastOpenFiles": [
     "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
