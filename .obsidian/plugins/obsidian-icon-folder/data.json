@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiLinux",
       "LiListTodo",
       "📗",
       "📙",
-      "TiCircleNumber5",
-      "TiCircleNumber4"
+      "TiCircleNumber5"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -249,5 +249,6 @@
   "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md": "TiCircleNumber5",
   "Master Data Science/TESIS 2025": "📙",
   "Master Data Science/TESIS 2025/Anteproyecto": "📗",
-  "Master Data Science/TESIS 2025/Situacion Actual - A Resolver": "LiListTodo"
+  "Master Data Science/TESIS 2025/Situacion Actual - A Resolver": "LiListTodo",
+  "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales": "SiLinux"
 }
