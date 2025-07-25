@@ -11,10 +11,14 @@
             "id": "6832cbebf42f3869",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/1.Introducción.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "1.Introducción"
             }
           }
         ]
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 483.5
+    "width": 432.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -221,10 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "6832cbebf42f3869",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Reflexion 1 - Que es el Machine Learning.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/1.Introducción.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexion 1 - Que es el Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexión 1 - Que es el Machine Learning.jpg",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexión 1 - Que es el Machine Learning.pdf",
     "Reflexión 1 - Que es el Machine Learning.pdf",

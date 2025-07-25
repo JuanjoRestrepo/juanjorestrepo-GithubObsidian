@@ -100,11 +100,7 @@
   "Excalidraw": "SiExcalidraw",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 2 Técnicas no supervisadas": "TiCircleNumber2",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2": "📁",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1": "📁",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 1 Técnicas supervisadas": "TiCircleNumber1",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Unidad 1 Conceptos basicos": "TiCircleNumber1",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Unidad 2 Preparacion de los datos": "TiCircleNumber2",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Unidad 3 Evaluación del aprendizaje": "TiCircleNumber3",
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones": "SiAlwaysdata",
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados": "📁",
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Cronograma y Contacto Profesora Modelos Estadísticos.md": "📅",
@@ -250,5 +246,9 @@
   "Master Data Science/TESIS 2025": "📙",
   "Master Data Science/TESIS 2025/Anteproyecto": "📗",
   "Master Data Science/TESIS 2025/Situacion Actual - A Resolver": "LiListTodo",
-  "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales": "SiLinux"
+  "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales": "SiLinux",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático": "📁",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos": "TiCircleNumber1",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos": "TiCircleNumber2",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del aprendizaje": "TiCircleNumber3"
 }
