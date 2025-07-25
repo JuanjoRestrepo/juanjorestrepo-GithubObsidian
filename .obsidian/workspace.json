@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LinuxTuts"
+              "title": "Contexto"
             }
           }
         ]
@@ -227,8 +227,10 @@
   },
   "active": "d391f5bd0546daa7",
   "lastOpenFiles": [
-    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/Untitled.md",
+    "Sin título.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
+    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/Untitled.md",
     "Self Study/Docker/0.Introduccion.md",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut04.pdf",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/07-Sockets.pdf",
@@ -243,7 +245,6 @@
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver",
     "Master Data Science/Cursor on Website.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
@@ -272,7 +273,6 @@
     "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
-    "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md",
     "Files/Salida FastAPI Ubuntu Docker.png"
   ]
 }
