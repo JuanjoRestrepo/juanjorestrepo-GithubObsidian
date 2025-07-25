@@ -78,11 +78,11 @@
   "backlinkHoverColor": "",
   "colors": {
     "Yellow": "#ffd000",
-    "Red": "#ea5252",
     "Note": "#086ddd",
-    "Important": "#bb61e5"
+    "Purple": "#bb61e5",
+    "Important": "#ea5252"
   },
-  "defaultColor": "",
+  "defaultColor": "Important",
   "defaultColorPaletteItemIndex": 0,
   "syncColorPaletteItem": true,
   "syncDefaultColorPaletteItem": false,
