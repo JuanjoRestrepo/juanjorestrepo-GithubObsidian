@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "82188217c87e7e37",
+        "id": "62c8240f34e0f243",
         "type": "tabs",
         "children": [
           {
-            "id": "d391f5bd0546daa7",
+            "id": "6832cbebf42f3869",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexión 1 - Que es el Machine Learning.jpg"
-              },
-              "icon": "lucide-image",
-              "title": "Reflexión 1 - Que es el Machine Learning"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -223,10 +221,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d391f5bd0546daa7",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexion 1 - Que es el Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexión 1 - Que es el Machine Learning.jpg",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Reflexión 1 - Que es el Machine Learning.pdf",
+    "Reflexión 1 - Que es el Machine Learning.pdf",
+    "Reflexión 1 - Que es el Machine Learning.jpg",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas",
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Sin título.md",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/Untitled.md",
@@ -239,10 +243,8 @@
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut01.pdf",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTut00.pdf",
     "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales",
-    "Ing Electronica/Semestre 7 2022-1",
     "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
-    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver",
     "Master Data Science/Cursor on Website.md",
     "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
@@ -260,7 +262,6 @@
     "Files/docker commands 1.png",
     "Files/EstructuraImagenDocker.png",
     "Files/EDR Symbols.png",
-    "Files/UML Symbols.png",
     "Self Study/POO - LUISA RINCON 2025/Notas libro.md",
     "Self Study/Docker/Untitled.md",
     "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
@@ -269,7 +270,6 @@
     "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Keys/CPP POO 2025 SSH Key.md",
-    "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md"
+    "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md"
   ]
 }
