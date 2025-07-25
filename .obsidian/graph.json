@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:#Semestre8",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "query": "tag:#AWS  ",
+      "query": "tag:#MachineLearning  ",
       "color": {
         "a": 1,
         "rgb": 16749824
@@ -88,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08669530886494702,
-  "close": true
+  "scale": 0.3164202193553123,
+  "close": false
 }

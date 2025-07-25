@@ -1,5 +1,11 @@
 ---
 color: "#eb3b5a"
+tags:
+  - MachineLearning
+  - AprendizajeAutomatico
+  - Master
+  - Maestria
+  - Semestre2
 ---
 
 
