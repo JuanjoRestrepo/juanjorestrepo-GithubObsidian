@@ -77,12 +77,12 @@
   "highlightOnHoverBacklinkPane": true,
   "backlinkHoverColor": "",
   "colors": {
-    "Note": "#086ddd",
     "Purple": "#bb61e5",
-    "Important": "#ea5252",
-    "Green": "#04f000"
+    "Green": "#04f000",
+    "Key Concepts": "#ea5252",
+    "Notes": "#086ddd"
   },
-  "defaultColor": "Important",
+  "defaultColor": "Key Concepts",
   "defaultColorPaletteItemIndex": 0,
   "syncColorPaletteItem": true,
   "syncDefaultColorPaletteItem": false,

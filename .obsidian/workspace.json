@@ -27,14 +27,16 @@
             "id": "2919303903dec66a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
-                "mode": "source",
-                "source": false
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
+                "page": 2,
+                "left": -13,
+                "top": 613,
+                "zoom": 1.1127450980392157
               },
-              "icon": "lucide-file",
-              "title": "0.Conceptos básicos"
+              "icon": "lucide-file-text",
+              "title": "1_Machine Learning Refined_Ch1"
             }
           }
         ],
@@ -132,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 0.Conceptos básicos"
+              "title": "Enlaces entrantes de 1_Machine Learning Refined_Ch1"
             }
           },
           {
@@ -249,9 +251,10 @@
   "active": "2919303903dec66a",
   "lastOpenFiles": [
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Drawing 2025-07-24 22.51.05.excalidraw.md",
     "1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Sin título.canvas",
@@ -265,7 +268,6 @@
     "Screenshot 2025-07-24 at 9.29.50 PM.png",
     "Screenshot 2025-07-24 at 9.28.06 PM.png",
     "Screenshot 2025-07-24 at 9.24.39 PM.png",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Reflexion 1 - Que es el Machine Learning.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
