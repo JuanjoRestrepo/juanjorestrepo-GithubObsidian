@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "b942ddda966018e7",
+    "id": "cb3c71e073665165",
     "type": "split",
     "children": [
       {
-        "id": "ebd1addd99e54fe3",
+        "id": "c8e6edebd80f336e",
         "type": "tabs",
         "children": [
           {
-            "id": "ea8a28b85f3bcbdb",
+            "id": "c923dcf27c4bc4a6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "67630de4eaeb14a4",
+    "id": "38802f54a5ed2362",
     "type": "split",
     "children": [
       {
-        "id": "19f85c9d6e718fb7",
+        "id": "7bfa947161009e9c",
         "type": "tabs",
+        "dimension": 74.1267787839586,
         "children": [
           {
-            "id": "9452dc4621f79c46",
+            "id": "46cd114c9707ddaf",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +45,7 @@
             }
           },
           {
-            "id": "908dc50c9c4795e3",
+            "id": "04746bf9311ea587",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,67 +62,71 @@
             }
           },
           {
-            "id": "cd98cd6901d8f0bf",
+            "id": "404491b42cf81395",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Marcadores"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4ec017a478863232",
+        "type": "tabs",
+        "dimension": 25.873221216041397,
+        "children": [
+          {
+            "id": "f27588b64f52208d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 348.5
   },
   "right": {
-    "id": "d2e5a9e432036da0",
+    "id": "cf20e551102d8f87",
     "type": "split",
     "children": [
       {
-        "id": "c440b4dd7b11e4ad",
+        "id": "d2cd41cccf37bca7",
         "type": "tabs",
+        "dimension": 60.2996254681648,
         "children": [
           {
-            "id": "8b2737be306bd3df",
+            "id": "8d223a2a932966cc",
             "type": "leaf",
             "state": {
-              "type": "backlink",
+              "type": "outline",
               "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
+                "file": "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+                "followCursor": false,
                 "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "searchQuery": ""
               },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
+              "icon": "lucide-list",
+              "title": "Outline of 3.CodificacionCPP"
             }
           },
           {
-            "id": "13acadafa1b4cf3b",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "75b2ad934d673400",
+            "id": "eee4f969d6b6a66b",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -131,7 +136,40 @@
             }
           },
           {
-            "id": "ad361de6d71cab0f",
+            "id": "96383a0ea3b0acd8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 4.0PrimeraCod"
+            }
+          },
+          {
+            "id": "ca1f1ce200899188",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 4.0PrimeraCod"
+            }
+          },
+          {
+            "id": "2caa545dd45a4bfd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -143,29 +181,38 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "ed82d83676065a4b",
+        "type": "tabs",
+        "dimension": 39.70037453183521,
+        "children": [
           {
-            "id": "c13328bdbbbd179a",
+            "id": "cc09e55ece66f5e2",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
+              "type": "google-calendar-view-month",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-days",
+              "title": "GCal Month View"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 329.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -175,12 +222,57 @@
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ea8a28b85f3bcbdb",
-  "lastOpenFiles": []
+  "active": "46cd114c9707ddaf",
+  "lastOpenFiles": [
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Tecnócratas.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Semiconductores 2025.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Intel Loihi 3.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Robótica Médica.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Inteligencia Artificial 2025.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Energía y Sostenibilidad.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/SQL Basics.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/Basic SQL.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Semana 1.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Types of SQL Statements.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Semana 2.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Intro to Relational Databases and Table.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python/Databases and SQL for Data Science with Python.md",
+    "Self Study/Coursera/Databases and SQL for Data Science with Python",
+    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values/1. Explore Data.md",
+    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values/1. Explore Data and Create Models to Predict Numeric Values.md",
+    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values",
+    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/Crear modelos de aprendizaje automático en Microsoft Azure.md",
+    "Self Study/Coursera/SQL CHEAT SHEET.pdf",
+    "Self Study/Coursera/Principales Amenazas y Oportunidades en Ciberseguridad - 2024.md",
+    "Self Study/Coursera/Coursera.md",
+    "Self Study/Coursera/Design Thinking Methology.md",
+    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure",
+    "Self Study/AWS/3. Test AWS.md",
+    "Self Study/AWS/2. EC2.md",
+    "Self Study/AWS/1. Qué es el Cloud.md",
+    "Self Study/Coursera",
+    "Self Study/AWS",
+    "Files/mathTest.svg",
+    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.39.59 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.31.21 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.28.06 PM.png",
+    "Untitled.canvas"
+  ]
 }
