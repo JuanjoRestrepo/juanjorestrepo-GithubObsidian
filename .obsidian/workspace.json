@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 486.5
+    "width": 348.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -228,9 +228,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "4ca45ca702146cfe",
   "lastOpenFiles": [
     "CASBOT 01.md",
+    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Templates/Math template.md",
     "Files/mathTest.svg",
     "Files/Manejo de Excepciones.pdf",
@@ -275,7 +276,6 @@
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Keys/Google Account Keys.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
-    "conflict-files-obsidian-git.md",
     "Untitled.canvas"
   ]
 }
