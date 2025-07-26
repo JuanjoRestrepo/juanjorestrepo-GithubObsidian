@@ -3,25 +3,19 @@
 /* Aplica blending general según tema */
 
 .theme-dark img {
-    display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: screen;
-    filter: opacity(1);
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+  filter: opacity(1);
 }
 
 .theme-light img {
-    display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: multiply;
-    filter: opacity(0.95);
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  filter: opacity(0.95);
 }
 
 /* Inversión de colores dinámica según sufijo en alt text */
