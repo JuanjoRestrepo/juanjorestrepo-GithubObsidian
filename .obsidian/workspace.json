@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bc9ecdb6898ce023",
+        "id": "fcb9a5a688933660",
         "type": "tabs",
         "children": [
           {
-            "id": "4ca45ca702146cfe",
+            "id": "472da5201bdb8863",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+                "file": "Self Study/NodeJs/Clase 2/3. Headers y  Buffers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.CodificacionCPP"
+              "title": "3. Headers y  Buffers"
             }
           }
         ]
@@ -209,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 329.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,8 +229,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "472da5201bdb8863",
   "lastOpenFiles": [
+    "Self Study/NodeJs/SSH KEY.md",
+    "Self Study/AWS/2. EC2.md",
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Untitled",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "CASBOT 01.md",
     "Templates/Math template.md",
@@ -254,7 +259,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2. Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
@@ -273,9 +277,6 @@
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
-    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
-    "Keys/Google Account Keys.md",
-    "Self Study/Docker/2.Ports y Volúmenes.md",
     "Untitled.canvas"
   ]
 }
