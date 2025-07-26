@@ -25,18 +25,15 @@
             "id": "01e54276b904bae1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Templates/Nueva nota.md",
-                "mode": "source",
-                "source": false
+                "file": "Files/Pasted image 20230929135957.png"
               },
-              "icon": "lucide-file",
-              "title": "Nueva nota"
+              "icon": "lucide-image",
+              "title": "Pasted image 20230929135957"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Nueva nota.md",
+                "file": "Self Study/NodeJs/Clase 4/2. MVC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Nueva nota"
+              "title": "Enlaces entrantes de 2. MVC"
             }
           },
           {
@@ -207,10 +204,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Templates/Nueva nota.md"
+                "file": "Self Study/NodeJs/Clase 4/2. MVC.md"
               },
               "icon": "lucide-info",
-              "title": "Propiedades de los archivos para Nueva nota"
+              "title": "Propiedades de los archivos para 2. MVC"
             }
           }
         ],
@@ -257,18 +254,21 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "01e54276b904bae1",
+  "active": "2919303903dec66a",
   "lastOpenFiles": [
+    "Files/Pasted image 20230929135957.png",
+    "Files/Pasted image 20230928213935.png",
+    "Files/Pasted image 20230928201326.png",
+    "Templates/Math template.md",
+    "Templates/Nueva nota.md",
     "Templates/Plantilla reunión.md",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
-    "Templates/Nueva nota.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md",
     "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
-    "Templates/Math template.md",
     "Keys/Open AI API Key 2025.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
@@ -296,8 +296,6 @@
     "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
     "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
     "Files/Screenshot 2025-07-24 at 9.31.21 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.28.06 PM.png",
     "Files/Reflexión 1 - Que es el Machine Learning.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
@@ -305,7 +303,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Cronograma/Cronograma Aprendizaje Automático.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Drawing 2025-07-24 22.51.05.excalidraw.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Sin título.canvas",
-    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas",
     "Untitled.canvas"
