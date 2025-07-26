@@ -80,9 +80,9 @@
     "Purple": "#bb61e5",
     "Green": "#04f000",
     "Key Concepts": "#ea5252",
-    "Notes": "#086ddd"
+    "Blue": "#086ddd"
   },
-  "defaultColor": "Key Concepts",
+  "defaultColor": "Blue",
   "defaultColorPaletteItemIndex": 0,
   "syncColorPaletteItem": true,
   "syncDefaultColorPaletteItem": false,

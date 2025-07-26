@@ -5,12 +5,12 @@
     {
       "id": "6O6BKQlVT21FSzpW8kA4M",
       "name": "Urgent",
-      "value": "#ff0000"
+      "value": "#ff1a1a"
     },
     {
       "id": "yyvLUPQXuXScM3nyrz25h",
       "name": "DataBases",
-      "value": "#4249ff"
+      "value": "#7a7fff"
     },
     {
       "id": "1x0SZh4JsB3RUb2DcqZ0-",
@@ -20,7 +20,7 @@
     {
       "id": "D4jbyCKYYqH4CTnGuXNJ-",
       "name": "",
-      "value": "#ff00f7"
+      "value": "#e100ff"
     },
     {
       "id": "NpWj-bVnPfrxzs39Ccnjz",
@@ -35,7 +35,7 @@
     {
       "id": "E7KBRe_4zg_2GERalIQxM",
       "name": "Docker",
-      "value": "#00ccff"
+      "value": "#00afdb"
     },
     {
       "id": "R1TOcpVUlMMeq2XiS9HxI",
@@ -45,7 +45,7 @@
     {
       "id": "yAEagb1_1V-qnWTgouoGO",
       "name": "Semestre 7",
-      "value": "#39fecd"
+      "value": "#00ffbf"
     }
   ],
   "fileColors": [
