@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
+                "file": "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1.Mejor manera de ordenar Dockerfile"
+              "title": "ReadMe Profile Generator"
             }
           }
         ]
@@ -242,10 +242,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "6277d6bc68b2c2bf",
+  "active": "f27588b64f52208d",
   "lastOpenFiles": [
+    "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
+    "GitHub Porfolio ReadMe Profiles/GitHub Porfolio ReadMe Profiles.md",
+    "Self Study/Docker/2.Ports y Volúmenes.md",
+    "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
     "Self Study/Docker/1. Imágenes y Contenedores.md",
     "Self Study/Docker/0.Introduccion.md",
+    "Self Study/NodeJs/Clase 2/2. Status Codes.md",
     "Qubika/Entrevista Qubika No 1.md",
     "Qubika/DataCamp Qversity Certificate.pdf",
     "Qubika/Qversity 2025/Qversity - Mejor manera de ordenar Dockerfile.md",
@@ -266,11 +271,6 @@
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/6. Transformar Datos No Tabulares.md",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/5. Extracting Non-tabular Data.md",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/4. Monitoring Pipeline.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/3. Persistencia de Datos en un ETL Pipeline.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/2. Transforming Data in a Pipeling.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/1. Extracting Data from Structured Sources.md",
-    "Qubika/Qversity 2025/4. Unir Datos con Pandas/2. One to many relationships.md",
-    "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)/2. Building ETL and ELT Pipelines.md",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/transactions.ledger",

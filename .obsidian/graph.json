@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:#Semestre8",
@@ -18,7 +18,7 @@
       "query": "tag:#Semestre9 path:\"Ing Electronica/Semestre 9 2023-1\"  ",
       "color": {
         "a": 1,
-        "rgb": 11007
+        "rgb": 8060810
       }
     },
     {
@@ -88,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.10378140006914668,
-  "close": true
+  "scale": 0.08725745724481597,
+  "close": false
 }
