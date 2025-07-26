@@ -11,14 +11,12 @@
             "id": "7986c29cfe5eefe4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
-                "mode": "source",
-                "source": false
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias"
+              "icon": "lucide-file-text",
+              "title": "The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining"
             }
           }
         ]
@@ -214,9 +212,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -232,19 +227,19 @@
   },
   "active": "7986c29cfe5eefe4",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining..pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
     "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Probability and Statistics for Computer Science.pdf",
     "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining..pdf",
     "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
     "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
-    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material",
-    "Master Data Science/TESIS 2025/CANCELACION/Carta_Renuncia_Proyecto_Aplicado_Juan_Jose_Restrepo_Rosero.pdf",
-    "Self Study/F1/Material/Bayesian_Analysis_of_Formula_One_Race_Results_Dise.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4.Evaluación.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
