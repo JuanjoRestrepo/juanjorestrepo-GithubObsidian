@@ -74,14 +74,6 @@
       "color": "NpWj-bVnPfrxzs39Ccnjz"
     },
     {
-      "path": "Self Study/NodeJs/Clase 1",
-      "color": "NpWj-bVnPfrxzs39Ccnjz"
-    },
-    {
-      "path": "Self Study/NodeJs/Clase 3",
-      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
-    },
-    {
       "path": "Keys",
       "color": "NpWj-bVnPfrxzs39Ccnjz"
     },
@@ -94,20 +86,8 @@
       "color": "R1TOcpVUlMMeq2XiS9HxI"
     },
     {
-      "path": "Self Study/Docker",
-      "color": "E7KBRe_4zg_2GERalIQxM"
-    },
-    {
       "path": "Ing Electronica/Semestre 7 2022-1",
       "color": "yAEagb1_1V-qnWTgouoGO"
-    },
-    {
-      "path": "Self Study/POO - LUISA RINCON 2025",
-      "color": "yyvLUPQXuXScM3nyrz25h"
-    },
-    {
-      "path": "Self Study/NodeJs",
-      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
     },
     {
       "path": "Master Data Science/TESIS 2025",
@@ -120,6 +100,30 @@
     {
       "path": "Templates",
       "color": "R1TOcpVUlMMeq2XiS9HxI"
+    },
+    {
+      "path": "Self Study",
+      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
+    },
+    {
+      "path": "Self Study/POO - LUISA RINCON 2025",
+      "color": "E7KBRe_4zg_2GERalIQxM"
+    },
+    {
+      "path": "Self Study/SQL",
+      "color": "1x0SZh4JsB3RUb2DcqZ0-"
+    },
+    {
+      "path": "Self Study/NodeJs",
+      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
+    },
+    {
+      "path": "Self Study/Docker",
+      "color": "E7KBRe_4zg_2GERalIQxM"
+    },
+    {
+      "path": "Self Study/Harvard CS50",
+      "color": "6O6BKQlVT21FSzpW8kA4M"
     }
   ]
 }
