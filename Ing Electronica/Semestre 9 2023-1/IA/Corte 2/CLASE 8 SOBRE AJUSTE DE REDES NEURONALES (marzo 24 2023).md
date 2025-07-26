@@ -17,9 +17,10 @@ Primero debemos definir qué es un ajuste adecuado.
 
 El caso mostrado en la figura representa una  solución adecuada para un problema de regresión. De esto se puede ver que la regresión (***El modelo***) no pasa por todos los puntos; sin embargo, **tiene la capacidad de capturar la estructura de los datos** 
 
-***El ajuste adecuado se caracteriza por obtener métricas de desempe ̃no adecuadas para el conjunto de entrenamiento y prueba.*** 
+***El ajuste adecuado se caracteriza por obtener métricas de desempeño adecuadas para el conjunto de entrenamiento y prueba.*** 
 
 ### **Sobre-ajuste:** 
+^sobreajuste
 - Hace referencia cuando el entrenamiento es muy bueno pero falla en el test.  
 - Es el fenómeno donde el modelo intenta capturar toda la información de los datos de entrenamiento
 - Los datos pueden presentar ruido, **en sobre-ajuste, el modelo identifica patrones ruidosos que pueden afectar su rendimiento en los conjuntos de validación.**  
@@ -41,7 +42,6 @@ Existen estrategias que disminuyen el impacto del sobre-ajuste. Entre estas se r
 - Esto es útil porque puede pasar de 100 a 10000 datos. 
 
 **TRANSFERENCIA DE APRENDIZAJE:**
-
 
 ### **Sub-ajuste:**
 
