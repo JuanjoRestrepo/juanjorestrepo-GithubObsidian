@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "63a7d0670d32c668",
+        "id": "37ec250d1b216059",
         "type": "tabs",
         "children": [
           {
-            "id": "c86b60c91c41faf2",
+            "id": "80b229376addfe75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
+                "file": "Self Study/⬛🟥🟨 B1/DENN, WEIL, DA Y DESHALB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Certificaciones"
+              "title": "DENN, WEIL, DA Y DESHALB"
             }
           }
         ]
@@ -226,11 +226,16 @@
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "80b229376addfe75",
   "lastOpenFiles": [
+    "Self Study/⬛🟥🟨 B1/Erste Klasse.md",
+    "Self Study/⬛🟥🟨 B1/Dativ vs Akkusativ.md",
+    "Self Study/⬛🟥🟨 B1/B1.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/1. Unidad 1 Componentes fundamentales de las redes neuronales.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/🧠 Principio de Manifold Learning.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Actividad 2.md",
@@ -238,7 +243,6 @@
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Parámetros vs Hiperparametros.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Notas Script 1 M1U1.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
     "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md",
     "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
@@ -254,10 +258,7 @@
     "Self Study/IBM/IBM Badges/IBM Garage Essentials/IBM Garage Culture and Methodology.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Types of SQL Statements.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials/Co-Create, Execute and Operate.md",
-    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Intro to Relational Databases and Table.md",
-    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Semana 1.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
-    "Self Study/Coursera/Java/Semana 2/Memory Models.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1",
