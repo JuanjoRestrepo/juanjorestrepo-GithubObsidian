@@ -4,6 +4,7 @@
   "theme": "obsidian",
   "cssTheme": "Obsidianite",
   "enabledCssSnippets": [
-    "dashboard"
+    "dashboard",
+    "adaptative_images"
   ]
 }
