@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
+                "file": "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 8 SOBRE AJUSTE DE REDES NEURONALES (marzo 24 2023).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.Experiencia"
+              "title": "CLASE 8 SOBRE AJUSTE DE REDES NEURONALES (marzo 24 2023)"
             }
           }
         ]
@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -232,11 +233,11 @@
   },
   "active": "c80669be31dcf9a9",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos- Evaluacion del Aprendizaje.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
     "Templates/Math template.md",
     "Files/Error De Bayes.png",
     "Keys/Google Account Keys.md",
@@ -277,7 +278,6 @@
     "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
     "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
     "Files/Screenshot 2025-07-24 at 9.31.21 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
     "Untitled.canvas"
   ]
 }

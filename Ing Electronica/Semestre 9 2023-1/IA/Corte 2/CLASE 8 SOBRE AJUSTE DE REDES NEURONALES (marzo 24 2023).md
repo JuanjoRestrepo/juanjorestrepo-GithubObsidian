@@ -21,7 +21,7 @@ El caso mostrado en la figura representa una  solución adecuada para un problem
 
 ### **Sobre-ajuste:** 
 - Hace referencia cuando el entrenamiento es muy bueno pero falla en el test.  
-- Es el fenómeno donde el modelo intenta capturar toda la informaci  ́on de los datos de entrenamiento
+- Es el fenómeno donde el modelo intenta capturar toda la información de los datos de entrenamiento
 - Los datos pueden presentar ruido, **en sobre-ajuste, el modelo identifica patrones ruidosos que pueden afectar su rendimiento en los conjuntos de validación.**  
 - El sobre-ajuste se caracteriza por un **rendimiento alto en la etapa de entrenamiento** (Costo bajo, Accuracy alto) y **un rendimiento bajo en el conjunto de validación** (Costo alto, Accuracy  bajo).  
 ![[Sobreajuste.png]]
