@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ReadMe Profile Generator"
+              "title": "4.0PrimeraCod"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 1",
+                "query": "tag:#-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -148,7 +149,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -192,14 +193,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Templates/Math template.md"
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md"
               },
               "icon": "lucide-info",
-              "title": "Propiedades de los archivos para Math template"
+              "title": "Propiedades de los archivos para 4.0PrimeraCod"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "ed82d83676065a4b",
@@ -222,8 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5,
-    "collapsed": true
+    "width": 270.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,8 +242,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f27588b64f52208d",
+  "active": "04746bf9311ea587",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
     "GitHub Porfolio ReadMe Profiles/GitHub Porfolio ReadMe Profiles.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
@@ -269,8 +271,6 @@
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/8. Carga de datos en una base de datos SQL con pandas.md",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/7. Transformación Avanzada de Datos con Pandas.md",
     "Qubika/Qversity 2025/6. Construyendo Data Pipelines/6. Transformar Datos No Tabulares.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/5. Extracting Non-tabular Data.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/4. Monitoring Pipeline.md",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/transactions.ledger",

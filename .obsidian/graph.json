@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "path:\"Ing Electronica/Semestre 10 2023-2\"  ",
+      "query": "path:\"Ing Electronica\"  ",
       "color": {
         "a": 1,
         "rgb": 16747181
@@ -46,28 +46,14 @@
       "query": "tag:#Ernesto  ",
       "color": {
         "a": 1,
-        "rgb": 5424639
-      }
-    },
-    {
-      "query": "tag:#Deutsch  ",
-      "color": {
-        "a": 1,
-        "rgb": 16777215
-      }
-    },
-    {
-      "query": "tag:#MachineLearning tag:#AprendizajeAutomatico tag:#Master tag:#Maestria  ",
-      "color": {
-        "a": 1,
-        "rgb": 16749824
+        "rgb": 38624
       }
     },
     {
       "query": "tag:#Qversity  ",
       "color": {
         "a": 1,
-        "rgb": 14328831
+        "rgb": 16777215
       }
     },
     {
@@ -75,6 +61,13 @@
       "color": {
         "a": 1,
         "rgb": 983173
+      }
+    },
+    {
+      "query": "path:\"Master Data Science/TESIS 2025\" tag:",
+      "color": {
+        "a": 1,
+        "rgb": 16752640
       }
     }
   ],
@@ -88,6 +81,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08725745724481597,
+  "scale": 0.13477392897974363,
   "close": false
 }

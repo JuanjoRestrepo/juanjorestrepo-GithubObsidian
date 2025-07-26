@@ -1,3 +1,9 @@
+---
+tags:
+  - Master
+  - Tesis
+date: 2025-07-28
+---
 
 # Director
 
