@@ -79,4 +79,4 @@ Take note of it and use this extensive collection of data to improve your protot
                                                                                    _**Good Luck for Your Next Endeavor!**_
 
 
-![[2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 2.png|300]]
+![[2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png|300]]

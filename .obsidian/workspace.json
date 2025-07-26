@@ -11,14 +11,12 @@
             "id": "2919303903dec66a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Templates/Math template.md",
-                "mode": "source",
-                "source": false
+                "file": "Files/Pasted image 20250401192847.png"
               },
-              "icon": "lucide-file",
-              "title": "Math template"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250401192847"
             }
           }
         ]
@@ -54,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "USsA",
+                "query": "2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8 1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 523.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -244,13 +242,21 @@
   },
   "active": "2919303903dec66a",
   "lastOpenFiles": [
-    "Files/Pasted image 20230929135957.png",
+    "Files/Pasted image 20250125191516.png",
+    "Files/Pasted image 20250125184356.png",
+    "Files/Pasted image 20241001192902.png",
+    "Files/Pasted image 20240925145803.png",
+    "Files/Pasted image 20230927165400.png",
+    "Files/Pasted image 20230926203504.png",
+    "Files/Pasted image 20230926101528.png",
+    "Files/Pasted image 20230815142741.png",
+    "Files/Pasted image 20230809153025.png",
+    "Files/2018-04-18_17-49-59-afc0a00e1db7c0b7d6960eff7783c751.png",
+    "Files/2018-04-18_17-58-37-244ad8bef9eeef440bc1bfed65c59e3f.jpg",
+    "Self Study/Coursera/Design Thinking Methology.md",
     "Templates/Math template.md",
-    "mathTest.svg",
-    "testMath.svg",
+    "README.md",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
-    "Files/Pasted image 20230928213935.png",
-    "Files/Pasted image 20230928201326.png",
     "Templates/Nueva nota.md",
     "Templates/Plantilla reunión.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
@@ -278,17 +284,10 @@
     "Sin título.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science 1.pdf",
-    "Reflexión 1 - Que es el Machine Learning.jpg",
-    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.39.59 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
     "Files/Reflexión 1 - Que es el Machine Learning.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Info General Curso/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Cronograma/Cronograma Aprendizaje Automático.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Drawing 2025-07-24 22.51.05.excalidraw.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas",
