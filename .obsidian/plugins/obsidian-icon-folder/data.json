@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasUserGraduate",
-      "FasPencil",
-      "SiGoogleoptimize",
-      "TiCircleNumber2",
-      "TiCircleNumber1"
+      "TiCircleNumber1",
+      "TiCircleNumber0",
+      "RaCancel",
+      "TiWorldWww",
+      "FasUserGraduate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -249,5 +249,12 @@
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Actividad 2.md": "FasPencil",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md": "FasUserGraduate",
   "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md": "TiCircleNumber1",
-  "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md": "TiCircleNumber2"
+  "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md": "TiCircleNumber2",
+  "Master Data Science/Cursor on Website.md": "TiWorldWww",
+  "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md": {
+    "iconName": "RaCancel",
+    "iconColor": "#fe1616"
+  },
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md": "TiCircleNumber0",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md": "TiCircleNumber1"
 }

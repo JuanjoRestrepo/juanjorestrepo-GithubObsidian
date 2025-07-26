@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Math template.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Math template"
+              "title": "0.Introducción"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 573.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -230,8 +230,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "fa19e49ef4f9e831",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
+    "Templates/Math template.md",
     "Templates/Nueva nota.md",
     "Templates/Plantilla reunión.md",
     "Job Search/Job Templates.md",
@@ -256,9 +259,6 @@
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/⬛🟥🟨 B1/DENN, WEIL, DA Y DESHALB.md",
-    "Self Study/⬛🟥🟨 B1/Erste Klasse.md",
-    "Self Study/⬛🟥🟨 B1/Dativ vs Akkusativ.md",
-    "Self Study/⬛🟥🟨 B1/B1.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",

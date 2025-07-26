@@ -25,6 +25,15 @@
         "pattern": "Master Data Science",
         "patternType": "STRICT"
       }
+    ],
+    "frontMatter": [
+      {
+        "name": "",
+        "active": true,
+        "path": "",
+        "pattern": "",
+        "patternType": "STRICT"
+      }
     ]
   },
   "hideFilters": {
@@ -44,6 +53,15 @@
         "type": "FILES_AND_DIRECTORIES",
         "pattern": "",
         "patternType": "WILDCARD"
+      }
+    ],
+    "frontMatter": [
+      {
+        "name": "",
+        "active": true,
+        "path": "",
+        "pattern": "",
+        "patternType": "STRICT"
       }
     ]
   }
