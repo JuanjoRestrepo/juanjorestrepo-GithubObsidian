@@ -11,10 +11,14 @@
             "id": "4ca45ca702146cfe",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "4.0PrimeraCod"
             }
           }
         ]
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mathTest",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 639.5
+    "width": 486.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -106,11 +110,42 @@
         "dimension": 60.2996254681648,
         "children": [
           {
+            "id": "8d223a2a932966cc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 4.0PrimeraCod"
+            }
+          },
+          {
+            "id": "eee4f969d6b6a66b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
             "id": "96383a0ea3b0acd8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +155,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 4.0PrimeraCod"
             }
           },
           {
@@ -134,22 +169,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 4.0PrimeraCod"
-            }
-          },
-          {
-            "id": "eee4f969d6b6a66b",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Outgoing links from 4.0PrimeraCod"
             }
           },
           {
@@ -163,22 +183,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas las propiedades"
-            }
-          },
-          {
-            "id": "8d223a2a932966cc",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Esquema de 4.0PrimeraCod"
+              "title": "All properties"
             }
           }
         ]
@@ -204,7 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 329.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,7 +228,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ca45ca702146cfe",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
     "CASBOT 01.md",
     "Templates/Math template.md",
