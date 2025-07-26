@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
+                "file": "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning"
+              "title": "Certificaciones"
             }
           }
         ]
@@ -229,8 +229,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c86b60c91c41faf2",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/1. Unidad 1 Componentes fundamentales de las redes neuronales.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/🧠 Principio de Manifold Learning.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Actividad 2.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Optimizadores-Early Stopping.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Parámetros vs Hiperparametros.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Notas Script 1 M1U1.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
+    "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md",
+    "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Qubika/Entrevista Qubika No 1.md",
     "Qubika/Qversity 2025/Docker - Qversity.md",
     "Self Study/Microsoft/Microsoft.md",
@@ -247,17 +258,6 @@
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Semana 1.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/Coursera/Java/Semana 2/Memory Models.md",
-    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values/1. Explore Data and Create Models to Predict Numeric Values.md",
-    "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values/1. Explore Data.md",
-    "Self Study/Coursera/Java/Semana 2/Semana 2.md",
-    "Self Study/Microsoft/GitHub/Introduction to Git.md",
-    "Self Study/Microsoft/GitHub/Introduction to GitHub.md",
-    "Self Study/Microsoft/GitHub/GitHub.md",
-    "Self Study/Microsoft/GitHub/Collaborate with Git.md",
-    "Self Study/Microsoft/GitHub/Basic Git commands.md",
-    "Self Study/Microsoft/GitHub/Code with GitHub Codespaces.md",
-    "Self Study/Microsoft/GitHub/Branching and Merging.md",
-    "Self Study/Microsoft/CSharp/Introduction to Csharp.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1",
