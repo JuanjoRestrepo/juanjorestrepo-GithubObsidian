@@ -46,6 +46,11 @@
       "id": "yAEagb1_1V-qnWTgouoGO",
       "name": "Semestre 7",
       "value": "#00ffbf"
+    },
+    {
+      "id": "pdlmhhB73-h6g2_YsOOTg",
+      "name": "",
+      "value": "#3cff4b"
     }
   ],
   "fileColors": [
@@ -424,6 +429,18 @@
     {
       "path": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
       "color": "R1TOcpVUlMMeq2XiS9HxI"
+    },
+    {
+      "path": "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II",
+      "color": "pdlmhhB73-h6g2_YsOOTg"
+    },
+    {
+      "path": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje",
+      "color": "1x0SZh4JsB3RUb2DcqZ0-"
+    },
+    {
+      "path": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material",
+      "color": "6O6BKQlVT21FSzpW8kA4M"
     }
   ]
 }

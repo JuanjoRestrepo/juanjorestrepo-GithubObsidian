@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasFilePdf",
+      "TiCircleNumber3",
       "TiCircleNumber1",
       "TiCircleNumber0",
-      "RaCancel",
-      "TiWorldWww",
-      "FasUserGraduate"
+      "RaCancel"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -256,5 +256,7 @@
     "iconColor": "#fe1616"
   },
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md": "TiCircleNumber0",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md": "TiCircleNumber1"
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md": "TiCircleNumber1",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje": "TiCircleNumber3",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material": "FasFilePdf"
 }

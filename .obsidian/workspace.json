@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0.Conceptos básicos"
+              "title": "0. Conceptos básicos"
             }
           }
         ]
@@ -232,8 +232,12 @@
   },
   "active": "fa19e49ef4f9e831",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md",
     "Templates/Math template.md",
@@ -257,8 +261,6 @@
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
-    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
-    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
@@ -266,8 +268,6 @@
     "Self Study/Coursera/Crear modelos de aprendizaje automático en Microsoft Azure/1. Explore Data and Create Models to Predict Numeric Values",
     "Self Study/Coursera/Java/Semana 2",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
-    "Self Study/⬛🟥🟨 B1/context.mdb",
-    "Self Study/Microsoft/GitHub",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
