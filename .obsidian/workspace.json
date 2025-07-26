@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Math template.md",
+                "file": "Templates/Nueva nota.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Math template"
+              "title": "Nueva nota"
             }
           }
         ]
@@ -244,6 +244,8 @@
   },
   "active": "dedc950682904762",
   "lastOpenFiles": [
+    "Templates/Math template.md",
+    "Untitled.canvas",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
     "mathTest.svg",
     "Files/mathTest.svg",
@@ -264,7 +266,6 @@
     "Files/Pasted image 20250125191516.png",
     "Files/Pasted image 20250125184356.png",
     "Self Study/Coursera/Design Thinking Methology.md",
-    "Templates/Math template.md",
     "README.md",
     "Templates/Nueva nota.md",
     "Templates/Plantilla reunión.md",
@@ -291,7 +292,6 @@
     "Files/Reflexión 1 - Que es el Machine Learning.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas",
-    "Untitled.canvas"
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas"
   ]
 }
