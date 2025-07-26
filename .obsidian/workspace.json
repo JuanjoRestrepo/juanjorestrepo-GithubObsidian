@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "Math template"
             }
-          },
-          {
-            "id": "01e54276b904bae1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Pasted image 20230929135957.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20230929135957"
-            }
           }
         ]
       }
@@ -256,11 +244,11 @@
   },
   "active": "2919303903dec66a",
   "lastOpenFiles": [
-    "mathTest.svg",
+    "Files/Pasted image 20230929135957.png",
     "Templates/Math template.md",
+    "mathTest.svg",
     "testMath.svg",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
-    "Files/Pasted image 20230929135957.png",
     "Files/Pasted image 20230928213935.png",
     "Files/Pasted image 20230928201326.png",
     "Templates/Nueva nota.md",

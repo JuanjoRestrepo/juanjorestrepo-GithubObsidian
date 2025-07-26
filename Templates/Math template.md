@@ -12,4 +12,3 @@
 
 ![[mathTest.svg#invert_B]]
 
-![[mathTest.svg#invert_B]]
