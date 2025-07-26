@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PrimeraCod",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
