@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/⬛🟥🟨 B1/DENN, WEIL, DA Y DESHALB.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DENN, WEIL, DA Y DESHALB"
+              "title": "Garbage Collector"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 546.5
+    "width": 350.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -232,6 +232,8 @@
   },
   "active": "80b229376addfe75",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
+    "Self Study/⬛🟥🟨 B1/DENN, WEIL, DA Y DESHALB.md",
     "Self Study/⬛🟥🟨 B1/Erste Klasse.md",
     "Self Study/⬛🟥🟨 B1/Dativ vs Akkusativ.md",
     "Self Study/⬛🟥🟨 B1/B1.md",
@@ -256,8 +258,6 @@
     "Self Study/IBM/IBM Badges/IBM Garage Essentials/IBM Garage Essentials.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Semana 2.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials/IBM Garage Culture and Methodology.md",
-    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Types of SQL Statements.md",
-    "Self Study/IBM/IBM Badges/IBM Garage Essentials/Co-Create, Execute and Operate.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
