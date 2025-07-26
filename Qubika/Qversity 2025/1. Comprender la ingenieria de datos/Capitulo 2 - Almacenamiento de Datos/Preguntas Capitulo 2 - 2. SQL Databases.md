@@ -1,3 +1,7 @@
+---
+tags:
+  - Qversity
+---
 
 
 ¿Qué lenguaje es el estándar del sector para crear, actualizar, mantener y consultar bases de datos?

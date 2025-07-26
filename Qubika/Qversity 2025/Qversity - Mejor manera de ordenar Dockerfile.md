@@ -1,3 +1,7 @@
+---
+tags:
+  - Qversity
+---
 
 
 ![[Pasted image 20250710210242.png]]

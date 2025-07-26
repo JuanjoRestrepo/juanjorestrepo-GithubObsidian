@@ -1,3 +1,7 @@
+---
+tags:
+  - Qversity
+---
 
 ## Computación Paralela
 - Es un término muy común que se utiliza en Ingeniería de Datos

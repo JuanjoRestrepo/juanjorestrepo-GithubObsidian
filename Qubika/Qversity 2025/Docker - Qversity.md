@@ -1,3 +1,7 @@
+---
+tags:
+  - Qversity
+---
 
 ![[Screenshot 2025-06-06 at 12.39.19 PM.png]]
 

@@ -1,7 +1,6 @@
 ---
 tags:
-  - "#MachineLearning"
-  - "#IA"
+  - Qversity
 date: 2025-04-22
 ---
 
