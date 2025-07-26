@@ -11,10 +11,14 @@
             "id": "c86b60c91c41faf2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning"
             }
           }
         ]
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 546.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -225,8 +229,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "c86b60c91c41faf2",
   "lastOpenFiles": [
+    "Qubika/Entrevista Qubika No 1.md",
+    "Qubika/Qversity 2025/Docker - Qversity.md",
+    "Self Study/Microsoft/Microsoft.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/Basic SQL.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/SQL Basics.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials/What is IBM Garage.md",
@@ -251,9 +258,6 @@
     "Self Study/Microsoft/GitHub/Code with GitHub Codespaces.md",
     "Self Study/Microsoft/GitHub/Branching and Merging.md",
     "Self Study/Microsoft/CSharp/Introduction to Csharp.md",
-    "Self Study/Microsoft/CSharp/Exercise - Write your first CSharp code.md",
-    "Self Study/Microsoft/CSharp/CSharp.md",
-    "Self Study/NodeJs/Clase 4/2. MVC.md",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1",
