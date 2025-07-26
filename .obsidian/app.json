@@ -1,4 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Files"
+  "attachmentFolderPath": "Files",
+  "showLineNumber": true,
+  "readableLineLength": true
 }

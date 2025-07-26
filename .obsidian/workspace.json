@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "cb3c71e073665165",
+    "id": "b942ddda966018e7",
     "type": "split",
     "children": [
       {
-        "id": "fcb9a5a688933660",
+        "id": "ebd1addd99e54fe3",
         "type": "tabs",
         "children": [
           {
-            "id": "472da5201bdb8863",
+            "id": "ea8a28b85f3bcbdb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self Study/NodeJs/Clase 2/3. Headers y  Buffers.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "3. Headers y  Buffers"
+              "title": "New tab"
             }
           }
         ]
@@ -27,16 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "38802f54a5ed2362",
+    "id": "67630de4eaeb14a4",
     "type": "split",
     "children": [
       {
-        "id": "7bfa947161009e9c",
+        "id": "19f85c9d6e718fb7",
         "type": "tabs",
-        "dimension": 74.1267787839586,
         "children": [
           {
-            "id": "46cd114c9707ddaf",
+            "id": "9452dc4621f79c46",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,7 +44,7 @@
             }
           },
           {
-            "id": "04746bf9311ea587",
+            "id": "908dc50c9c4795e3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -66,86 +61,35 @@
             }
           },
           {
-            "id": "404491b42cf81395",
+            "id": "cd98cd6901d8f0bf",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Marcadores"
-            }
-          }
-        ]
-      },
-      {
-        "id": "4ec017a478863232",
-        "type": "tabs",
-        "dimension": 25.873221216041397,
-        "children": [
-          {
-            "id": "f27588b64f52208d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true,
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 300
   },
   "right": {
-    "id": "cf20e551102d8f87",
+    "id": "d2e5a9e432036da0",
     "type": "split",
     "children": [
       {
-        "id": "d2cd41cccf37bca7",
+        "id": "c440b4dd7b11e4ad",
         "type": "tabs",
-        "dimension": 60.2996254681648,
         "children": [
           {
-            "id": "8d223a2a932966cc",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 3.CodificacionCPP"
-            }
-          },
-          {
-            "id": "eee4f969d6b6a66b",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "96383a0ea3b0acd8",
+            "id": "8b2737be306bd3df",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,25 +99,39 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4.0PrimeraCod"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "ca1f1ce200899188",
+            "id": "13acadafa1b4cf3b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 4.0PrimeraCod"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "2caa545dd45a4bfd",
+            "id": "75b2ad934d673400",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ad361de6d71cab0f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -185,38 +143,29 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          }
-        ]
-      },
-      {
-        "id": "ed82d83676065a4b",
-        "type": "tabs",
-        "dimension": 39.70037453183521,
-        "children": [
+          },
           {
-            "id": "cc09e55ece66f5e2",
+            "id": "c13328bdbbbd179a",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "google-calendar-view-month",
-              "state": {},
-              "pinned": true,
-              "icon": "calendar-days",
-              "title": "GCal Month View"
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 329.5,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -226,57 +175,12 @@
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "472da5201bdb8863",
-  "lastOpenFiles": [
-    "Self Study/NodeJs/SSH KEY.md",
-    "Self Study/AWS/2. EC2.md",
-    "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
-    "Untitled",
-    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
-    "CASBOT 01.md",
-    "Templates/Math template.md",
-    "Files/mathTest.svg",
-    "Files/Manejo de Excepciones.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/LinuxTuts.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining..pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4. Evaluación.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/3.Accion.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2. Reflexión.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
-    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.39.59 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.31.21 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.28.06 PM.png",
-    "Self Study/Docker/0.Introduccion.md",
-    "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales/Untitled.md",
-    "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
-    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
-    "Master Data Science/Cursor on Website.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
-    "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
-    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
-    "Untitled.canvas"
-  ]
+  "active": "ea8a28b85f3bcbdb",
+  "lastOpenFiles": []
 }
