@@ -4,23 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0ccbd1947ccb9880",
+        "id": "f49221e4c2e5f508",
         "type": "tabs",
         "children": [
           {
-            "id": "fa19e49ef4f9e831",
+            "id": "7986c29cfe5eefe4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Self Study/F1/Material/Bayesian_Analysis_of_Formula_One_Race_Results_Dise.pdf",
-                "page": 1,
-                "left": -11,
-                "top": 846,
-                "zoom": 1.380872066066833
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Bayesian_Analysis_of_Formula_One_Race_Results_Dise"
+              "icon": "lucide-file",
+              "title": "2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias"
             }
           }
         ]
@@ -100,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 317.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -232,22 +230,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "7986c29cfe5eefe4",
   "lastOpenFiles": [
-    "Master Data Science/Directorio Posgrados FIC Neojaverianos 2024 -2.pdf",
-    "Job Search/Recomendaciones/Certificado Salud y Pension.pdf",
-    "Job Search/Recomendaciones/Carta Recomendacion Personal 1.docx",
-    "Job Search/Recomendaciones/Carta Recomendacion Familiar 1.docx",
-    "Job Search/Recomendaciones/Referencia Familiar - Juan Jose Restrepo Rosero.pdf",
-    "Job Search/Recomendaciones/Carta Recomendacion Personal 2.docx",
-    "Job Search/Recomendaciones/Referencia Personal - Juan Jose Restrepo Rosero.pdf",
-    "Job Search/Recomendaciones/Referencia Personal 2 - Juan Jose Restrepo Rosero.pdf",
-    "Job Search/Recomendaciones/Carta Recomendacion Familiar 2.docx",
-    "Job Search/Recomendaciones/Referencia Familiar 2 - Juan Jose Restrepo Rosero.pdf",
-    "Self Study/⬛🟥🟨 B1/Material/nwn-b1-kapiteltest-loesungen_compress.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
+    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Probability and Statistics for Computer Science.pdf",
+    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining..pdf",
+    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
+    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
+    "MASTER~1/SEMEST~2/400ITA~1/MDULO1~1/UNIDAD~2/Material",
+    "Master Data Science/TESIS 2025/CANCELACION/Carta_Renuncia_Proyecto_Aplicado_Juan_Jose_Restrepo_Rosero.pdf",
+    "Self Study/F1/Material/Bayesian_Analysis_of_Formula_One_Race_Results_Dise.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4.Evaluación.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
