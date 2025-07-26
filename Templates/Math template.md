@@ -1,0 +1,9 @@
+
+### Idea
+
+
+### Formally
+
+#math 
+
+
