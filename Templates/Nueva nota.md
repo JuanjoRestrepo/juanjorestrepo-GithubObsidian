@@ -50,8 +50,11 @@ df = pd.DataFrame({
 df.plot(x='X', y='Y', title='Seno de X')
 ```
 
+---
 
+### 📊 Visualización y resultados
 
+Aquí puedes insertar capturas, gráficos o resultados generados:
 
 Describe brevemente lo que muestra la imagen y cualquier conclusión relevante.
 
