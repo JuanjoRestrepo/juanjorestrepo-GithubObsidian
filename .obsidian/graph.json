@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#Semestre8",
@@ -64,7 +64,7 @@
       }
     },
     {
-      "query": "path:\"Master Data Science/TESIS 2025\" tag:",
+      "query": "path:\"Master Data Science/TESIS 2025\" tag:#Tesis  ",
       "color": {
         "a": 1,
         "rgb": 16752640
@@ -81,6 +81,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.13477392897974363,
-  "close": false
+  "scale": 0.09709119844863101,
+  "close": true
 }

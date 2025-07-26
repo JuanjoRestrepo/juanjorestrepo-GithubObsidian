@@ -1,6 +1,8 @@
 ---
 tags:
   - Tesis
+  - Master
+date: 2025-07-28
 ---
 
 

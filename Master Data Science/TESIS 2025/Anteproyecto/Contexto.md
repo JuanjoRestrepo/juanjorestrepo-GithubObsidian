@@ -1,7 +1,8 @@
 ---
 tags:
-  - Master
   - Tesis
+  - Master
+  - Maestria
 date: 2025-07-28
 ---
 

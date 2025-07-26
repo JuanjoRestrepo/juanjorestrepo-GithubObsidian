@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "file": "Master Data Science/Cursor on Website.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.0PrimeraCod"
+              "title": "Cursor on Website"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#-",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4ec017a478863232",
@@ -99,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 286.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -192,15 +191,13 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "Propiedades de los archivos para 4.0PrimeraCod"
+              "title": "Propiedades del archivo"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       },
       {
         "id": "ed82d83676065a4b",
@@ -242,10 +239,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "04746bf9311ea587",
+  "active": "aa755bde4f10f779",
   "lastOpenFiles": [
-    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
+    "Master Data Science/Cursor on Website.md",
+    "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
+    "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
     "GitHub Porfolio ReadMe Profiles/GitHub Porfolio ReadMe Profiles.md",
     "Self Study/Docker/2.Ports y Volúmenes.md",
@@ -268,9 +268,6 @@
     "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines/1. Probar Manualmente Pipelines.md",
     "Qubika/Qversity 2025/9. Airflow/2. Airflow DAGS.md",
     "Qubika/Qversity 2025/9. Airflow/1. Introducción a Airflow.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/8. Carga de datos en una base de datos SQL con pandas.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/7. Transformación Avanzada de Datos con Pandas.md",
-    "Qubika/Qversity 2025/6. Construyendo Data Pipelines/6. Transformar Datos No Tabulares.md",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/transactions.ledger",
