@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "37ec250d1b216059",
+        "id": "0ccbd1947ccb9880",
         "type": "tabs",
         "children": [
           {
-            "id": "80b229376addfe75",
+            "id": "fa19e49ef4f9e831",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Garbage Collector"
+              "title": "New tab"
             }
           }
         ]
@@ -230,8 +226,14 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "80b229376addfe75",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
+    "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
+    "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md",
+    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
     "Self Study/⬛🟥🟨 B1/DENN, WEIL, DA Y DESHALB.md",
     "Self Study/⬛🟥🟨 B1/Erste Klasse.md",
@@ -252,12 +254,6 @@
     "Qubika/Qversity 2025/Docker - Qversity.md",
     "Self Study/Microsoft/Microsoft.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/Basic SQL.md",
-    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL/SQL Basics.md",
-    "Self Study/IBM/IBM Badges/IBM Garage Essentials/What is IBM Garage.md",
-    "Self Study/IBM/IBM Badges/IBM Garage Essentials/Introduction.md",
-    "Self Study/IBM/IBM Badges/IBM Garage Essentials/IBM Garage Essentials.md",
-    "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2/Semana 2.md",
-    "Self Study/IBM/IBM Badges/IBM Garage Essentials/IBM Garage Culture and Methodology.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
