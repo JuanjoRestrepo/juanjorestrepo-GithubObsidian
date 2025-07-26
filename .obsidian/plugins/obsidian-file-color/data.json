@@ -43,9 +43,9 @@
       "value": "#ffffff"
     },
     {
-      "id": "cwvsG0zCyx0SzvggV5OYB",
-      "name": "Linux",
-      "value": "#00ffd5"
+      "id": "yAEagb1_1V-qnWTgouoGO",
+      "name": "Semestre 7",
+      "value": "#39fecd"
     }
   ],
   "fileColors": [
@@ -99,23 +99,7 @@
     },
     {
       "path": "Ing Electronica/Semestre 7 2022-1",
-      "color": "cwvsG0zCyx0SzvggV5OYB"
-    },
-    {
-      "path": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático",
-      "color": "1x0SZh4JsB3RUb2DcqZ0-"
-    },
-    {
-      "path": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos",
-      "color": "E7KBRe_4zg_2GERalIQxM"
-    },
-    {
-      "path": "Self Study/POO - LUISA RINCON 2025",
-      "color": "yyvLUPQXuXScM3nyrz25h"
-    },
-    {
-      "path": "Self Study/NodeJs",
-      "color": "Dzd3nY-Sy93IFnLkoY1_Z"
+      "color": "yAEagb1_1V-qnWTgouoGO"
     }
   ]
 }
