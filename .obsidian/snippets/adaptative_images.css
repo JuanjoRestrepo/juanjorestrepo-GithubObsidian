@@ -1,52 +1,37 @@
-/* General and default image blending */
+/* === Adaptive Images CSS Snippet === */
+/* Ajustado para leer ‘alt’ en lugar de 'src' para compatibilidad completa */
+/* Aplica blending general según tema */
 
 .theme-dark img {
-    display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: screen;
-    filter: opacity(1);
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+  filter: opacity(1);
 }
 
 .theme-light img {
-    display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: multiply;
-    filter: opacity(0.95);
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  filter: opacity(0.95);
 }
 
-/*Emblemed images blending tweaks */
+/* Inversión de colores dinámica según sufijo en alt text */
 
-.theme-dark .popover.hover-popover .markdown-preview-view img {
-    mix-blend-mode: screen;
-    /*filter: opacity(1);*/
-}
-
-.theme-light .popover.hover-popover .markdown-preview-view img {
-    mix-blend-mode: multiply;
-    /*filter: opacity(0.95);*/
-}
-
-/* Image dynamic colors inversion */
-
-.theme-dark span[src$="invert_B"] img{
+.theme-dark img[alt$="invert_B"] {
   filter: invert(1) hue-rotate(180deg);
 }
 
-.theme-light span[src$="#invert_W"] img{
+.theme-light img[alt$="invert_W"] {
   filter: invert(1) hue-rotate(180deg);
 }
-.theme-dark span[src$="invert_B_C"] img{
+
+.theme-dark img[alt$="invert_B_C"] {
   filter: invert(1) hue-rotate(180deg) contrast(1.5);
 }
 
-.theme-light span[src$="#invert_W_C"] img{
+.theme-light img[alt$="invert_W_C"] {
   filter: invert(1) hue-rotate(180deg) contrast(1.45);
 }
