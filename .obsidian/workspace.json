@@ -11,14 +11,12 @@
             "id": "6277d6bc68b2c2bf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
-                "mode": "source",
-                "source": false
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md"
               },
-              "icon": "lucide-file",
-              "title": "Contexto"
+              "icon": "excalidraw-icon",
+              "title": "Reflexion 1 - Que es el Machine Learning"
             }
           }
         ]
@@ -115,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Contexto"
+              "title": "Enlaces entrantes de Reflexion 1 - Que es el Machine Learning"
             }
           },
           {
@@ -134,12 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Contexto"
+              "title": "Enlaces salientes de Reflexion 1 - Que es el Machine Learning"
             }
           },
           {
@@ -177,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Contexto"
+              "title": "Esquema de Reflexion 1 - Que es el Machine Learning"
             }
           },
           {
@@ -192,10 +190,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md"
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md"
               },
               "icon": "lucide-info",
-              "title": "Propiedades de los archivos para Contexto"
+              "title": "Propiedades de los archivos para Reflexion 1 - Que es el Machine Learning"
             }
           }
         ],
@@ -243,11 +241,17 @@
   },
   "active": "6277d6bc68b2c2bf",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4. Evaluación.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/3.Accion.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2. Reflexión.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 2 Técnicas no supervisadas/Tecnicas no supervisadas.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 2/Unidad 1 Técnicas supervisadas/Tecnicas supervisadas.md",
     "Master Data Science/Cursor on Website.md",
     "Master Data Science/TESIS 2025/CANCELADO Resumen pre-entrega final.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
@@ -264,12 +268,6 @@
     "Qubika/Qversity 2025/SQL/SQL Intermedio.md",
     "Qubika/Qversity 2025/Proyecto Final/1. Defensa.md",
     "Qubika/Qversity 2025/Experiences/4. You Science.md",
-    "Qubika/Qversity 2025/Experiences/3. Fanduel.md",
-    "Qubika/Qversity 2025/Experiences/2. Avant.md",
-    "Qubika/Qversity 2025/Experiences/1. Coastal Community Bank.md",
-    "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines/3. Running a Data Pipeline in Production.md",
-    "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines/2. Unit-testing a data pipeline.md",
-    "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines/1. Probar Manualmente Pipelines.md",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/Data Engineering Intro Qubika 2025.pdf",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/transactions.ledger",
