@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "62c8240f34e0f243",
+        "id": "acebe21c13b6684c",
         "type": "tabs",
         "children": [
           {
-            "id": "2919303903dec66a",
+            "id": "dedc950682904762",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Files/Pasted image 20250401192847.png"
+                "file": "Templates/Math template.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250401192847"
+              "icon": "lucide-file",
+              "title": "Math template"
             }
           }
         ]
@@ -31,7 +33,7 @@
       {
         "id": "7bfa947161009e9c",
         "type": "tabs",
-        "dimension": 64.1160949868074,
+        "dimension": 69.52506596306068,
         "children": [
           {
             "id": "46cd114c9707ddaf",
@@ -78,7 +80,7 @@
       {
         "id": "4ec017a478863232",
         "type": "tabs",
-        "dimension": 35.88390501319261,
+        "dimension": 30.474934036939317,
         "children": [
           {
             "id": "f27588b64f52208d",
@@ -96,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523.5
+    "width": 347.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -240,23 +242,30 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2919303903dec66a",
+  "active": "dedc950682904762",
   "lastOpenFiles": [
+    "Self Study/NodeJs/Clase 4/2. MVC.md",
+    "mathTest.svg",
+    "Files/mathTest.svg",
+    "Self Study/NodeJs/Clase 4/3. Intro a MongoDB Atlas.md",
+    "Self Study/NodeJs/Clase 4/1. Pasando de commonJS a ESModules.md",
+    "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
+    "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
+    "Self Study/NodeJs/Clase 2/2. Status Codes.md",
+    "Self Study/NodeJs/Clase 2/3. Headers y  Buffers.md",
+    "Self Study/NodeJs/Clase 1/2. Callbacks.md",
+    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
+    "Files/Pasted image 20250405135149.png",
+    "Files/Pasted image 20250404194636.png",
+    "Files/Pasted image 20250402200800.png",
+    "Files/Pasted image 20250402200422.png",
+    "Files/Pasted image 20250401195626.png",
+    "Files/Profe Hernan Biomedica.png",
     "Files/Pasted image 20250125191516.png",
     "Files/Pasted image 20250125184356.png",
-    "Files/Pasted image 20241001192902.png",
-    "Files/Pasted image 20240925145803.png",
-    "Files/Pasted image 20230927165400.png",
-    "Files/Pasted image 20230926203504.png",
-    "Files/Pasted image 20230926101528.png",
-    "Files/Pasted image 20230815142741.png",
-    "Files/Pasted image 20230809153025.png",
-    "Files/2018-04-18_17-49-59-afc0a00e1db7c0b7d6960eff7783c751.png",
-    "Files/2018-04-18_17-58-37-244ad8bef9eeef440bc1bfed65c59e3f.jpg",
     "Self Study/Coursera/Design Thinking Methology.md",
     "Templates/Math template.md",
     "README.md",
-    "Self Study/NodeJs/Clase 4/2. MVC.md",
     "Templates/Nueva nota.md",
     "Templates/Plantilla reunión.md",
     "Self Study/POO - LUISA RINCON 2025/3.CodificacionCPP.md",
@@ -274,20 +283,12 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Reflexion 1 - Que es el Machine Learning.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4. Evaluación.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/3.Accion.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2. Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "1_Machine Learning Refined_Ch1.pdf",
-    "Sin título.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019 1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science 1.pdf",
     "Files/Reflexión 1 - Que es el Machine Learning.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Info General Curso/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título.canvas",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Modulo 1/Sin título 1.canvas",
