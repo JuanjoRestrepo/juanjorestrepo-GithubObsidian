@@ -11,10 +11,14 @@
             "id": "fa19e49ef4f9e831",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Templates/Math template.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Math template"
             }
           }
         ]
@@ -226,8 +230,23 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "f27588b64f52208d",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Templates/Nueva nota.md",
+    "Templates/Plantilla reunión.md",
+    "Job Search/Job Templates.md",
+    "Job Search/Interview Questions/Turing Questions Help.md",
+    "Job Search/Interview Questions/Interview Questions.md",
+    "Job Search/Cover Letter Template/Cover Letter Template.md",
+    "Job Search/Compara/Compara 2025.md",
+    "Ing Electronica/Semestre 9 2023-1/Semestre 9 2023-1.md",
+    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
+    "Ing Electronica/Semestre 9 2023-1/POO/POO.md",
+    "Ing Electronica/Semestre 9 2023-1/POO/Polimorfismo.md",
+    "Ing Electronica/Semestre 9 2023-1/POO/4. MRO.md",
+    "Ing Electronica/Semestre 9 2023-1/POO/3. Herencia Multiple.md",
+    "Ing Electronica/Semestre 9 2023-1/POO/2. Herencia.md",
+    "Ing Electronica/Semestre 9 2023-1/POO/1. Clases.md",
     "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
     "Self Study/POO - LUISA RINCON 2025/2.DiseñoOrientadoObjetos.md",
     "Self Study/POO - LUISA RINCON 2025/0. github classroom.md",
@@ -240,20 +259,6 @@
     "Self Study/⬛🟥🟨 B1/Erste Klasse.md",
     "Self Study/⬛🟥🟨 B1/Dativ vs Akkusativ.md",
     "Self Study/⬛🟥🟨 B1/B1.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/1. Unidad 1 Componentes fundamentales de las redes neuronales.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/🧠 Principio de Manifold Learning.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Actividad 2.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Optimizadores-Early Stopping.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Parámetros vs Hiperparametros.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Notas Script 1 M1U1.md",
-    "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md",
-    "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
-    "Qubika/Entrevista Qubika No 1.md",
-    "Qubika/Qversity 2025/Docker - Qversity.md",
-    "Self Study/Microsoft/Microsoft.md",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 1/Basic SQL",
     "Self Study/IBM/IBM Badges/IBM Garage Essentials",
     "Self Study/Coursera/Databases and SQL for Data Science with Python/Semana 2",
@@ -263,7 +268,6 @@
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
     "Self Study/⬛🟥🟨 B1/context.mdb",
     "Self Study/Microsoft/GitHub",
-    "Self Study/Microsoft/CSharp",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
