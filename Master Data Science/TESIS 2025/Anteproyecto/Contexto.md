@@ -14,7 +14,9 @@ Ahora mismo estoy trabajando en un proyecto con una temática dentro del **machi
 
   
 
-Puedes leer la **intoducción y la seccion 2.1** para entender un poco el problema. Me cuentas si estás interesado e iniciamos con una reunión. Yo puedo el lunea en la mañana; sin emabergo podemos explorar otros horarios.
+Puedes leer la **intoducción y la seccion 2.1** para entender un poco el problema. Me cuentas si estás interesado e iniciamos con una reunión. Yo puedo el lunes en la mañana; sin emabergo podemos explorar otros horarios.
+
+
 
 # Objetivos
 
