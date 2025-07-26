@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.Contexto"
+              "title": "2.Experiencia"
             }
           }
         ]
@@ -232,8 +232,15 @@
   },
   "active": "c80669be31dcf9a9",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/A Transfer Learning approach for AI-based classification of brain tumors.pdf",
+    "Files/HANDS-~1.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf",
+    "Files/HANDSO~1.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/Hands On Machine Learning with Scikit Learn and TensorFlow.pdf",
+    "Files/ANINTR~1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/An Introduction to Machine Learning Miroslav 2021.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/A Transfer Learning approach for AI-based classification of brain tumors.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos- Evaluacion del Aprendizaje.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
@@ -245,12 +252,7 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
-    "Files/1_MACH~1.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
-    "Files/A Transfer Learning approach for AI-based classification of brain tumors 1.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/A Transfer Learning approach for AI-based classification of brain tumors.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/Material/A Transfer Learning approach for AI-based classification of brain tumors 1.pdf",
     "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4.Evaluación.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/3.Accion.md",
@@ -266,7 +268,6 @@
     "Templates/Plantilla reunión.md",
     "Job Search/Job Templates.md",
     "Job Search/Interview Questions/Turing Questions Help.md",
-    "Job Search/Interview Questions/Interview Questions.md",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
