@@ -3,7 +3,7 @@
 /* Aplica blending general según tema */
 
 .theme-dark img {
-  display: block;
+  display: block !important;
   max-width: 80%;
   margin: 0 auto;
   mix-blend-mode: screen;
@@ -11,7 +11,7 @@
 }
 
 .theme-light img {
-  display: block;
+  display: block !important;
   max-width: 80%;
   margin: 0 auto;
   mix-blend-mode: multiply;
@@ -19,7 +19,6 @@
 }
 
 /* Inversión de colores dinámica según sufijo en alt text */
-
 .theme-dark img[alt$="invert_B"] {
   filter: invert(1) hue-rotate(180deg);
 }
@@ -34,4 +33,17 @@
 
 .theme-light img[alt$="invert_W_C"] {
   filter: invert(1) hue-rotate(180deg) contrast(1.45);
+}
+
+/* Centrado automático de todas las imágenes */
+img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Asegura centrado también en Live Preview / edición */
+.markdown-source-view.mod-cm6 .cm-content > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
