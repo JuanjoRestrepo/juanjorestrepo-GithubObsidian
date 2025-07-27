@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas no supervisadas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.1.Perceptrones Multicapa (MLP) - Parte 1"
+              "title": "0.Tecnicas no supervisadas"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas no supervisadas.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2.1.Perceptrones Multicapa (MLP) - Parte 1"
+              "title": "Outline of 0.Tecnicas no supervisadas"
             }
           },
           {
@@ -231,11 +231,14 @@
   },
   "active": "c80669be31dcf9a9",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas no supervisadas.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/1.Máquinas de vectores de soporte (SVM).md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas no supervisadas.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 6 Máquinas de vectores de soporte  (SVM) (marzo 10 2023).md",
     "CLASE.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/4.Acción.md",
@@ -268,9 +271,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/1.Experiencia.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/0.Conceptos básicos.md",
-    "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4.Evaluación.md",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
