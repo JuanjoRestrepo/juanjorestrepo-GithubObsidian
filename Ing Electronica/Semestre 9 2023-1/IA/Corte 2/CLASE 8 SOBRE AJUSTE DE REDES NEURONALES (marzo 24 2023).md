@@ -47,7 +47,7 @@ Existen estrategias que disminuyen el impacto del sobre-ajuste. Entre estas se r
 - El sub-ajuste es el **fenómeno en el cual el modelo no es lo suficientemente robusto para capturar la estructura de los datos.**  
 - En general, el sub-ajuste se identifica cuando **el modelo no alcanza el rendimiento esperado.**  
 - El rendimiento esperado es un aspecto subjetivo que debe definirse de acuerdo con la aplicación y/o con base en el consejo de un experto.  
-- El sub-ajuste **puede minimizarse al utilizar modelos más complejos**. En el caso de las redes neuronales, una solución al sub-ajuste corresponde a agregar m ́as capas o más neuronas por capa.  
+- El sub-ajuste **puede minimizarse al utilizar modelos más complejos**. En el caso de las redes neuronales, una solución al sub-ajuste corresponde a agregar *más capas o más neuronas por capa.*  
 
 ![[Subajuste.png]]
 
