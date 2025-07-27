@@ -444,6 +444,6 @@ Estas funciones introducen no linealidades y mejoran la capacidad de la red para
 
 |         ⏭️ Seguir a          |
 | :--------------------------: |
-| [[Tecnicas no supervisadas]] |
+| [[0.Tecnicas no supervisadas]] |
 
 
