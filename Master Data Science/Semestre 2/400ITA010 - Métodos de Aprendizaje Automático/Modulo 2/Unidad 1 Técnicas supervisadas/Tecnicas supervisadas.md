@@ -18,10 +18,11 @@ tags:
 
 ## Introducción al Aprendizaje Supervisado
 
-El aprendizaje supervisado es una rama del machine learning en la que se entrena un modelo a partir de un conjunto de datos que incluye tanto **atributos de entrada** (X₁, X₂, ..., Xₙ) como **atributos de salida** (Y₁, Y₂, ..., Yₘ). El objetivo es aprender una función f que permita predecir los valores de salida para nuevas entradas:
+El aprendizaje supervisado es una rama del machine learning en la que se entrena un modelo a partir de un conjunto de datos que incluye tanto **atributos de entrada** $(X₁, X₂, ..., Xₙ)$ como **atributos de salida** $(Y₁, Y₂, ..., Yₘ)$. El objetivo es aprender una función f que permita predecir los valores de salida para nuevas entradas:
 
-  **Ŷ = f(X₁, X₂, ..., Xₙ)**
-
+$$
+  Ŷ = f(X₁, X₂, ..., Xₙ)
+$$
 Este enfoque es útil para resolver problemas de **clasificación** (predicción de categorías) y **regresión** (predicción de valores continuos). En el contexto del proyecto, se aplicará para predecir la probabilidad de que un cliente de telecomunicaciones presente **churn** (cancelación del servicio) o **no churn**.
 
 ---
@@ -61,11 +62,6 @@ A continuación, se presenta una visión general de algunas de las técnicas má
 ---
 
 ### 4. Máquina de Vectores de Soporte (SVM)
-
-
-[Link text](CLASE 6 Máquinas de vectores de soporte  (SVM) (marzo 10 2023))
-
-
 - **Concepto:**  
   Busca trazar una frontera de decisión que maximice el margen entre dos clases.  
 - **Aspectos Clave:**  
@@ -74,6 +70,10 @@ A continuación, se presenta una visión general de algunas de las técnicas má
   Se resuelve un problema de optimización cuadrática; el kernel (por ejemplo, el radial) permite tratar problemas no lineales.
 - **Parámetros:**  
   C (regularización) y gamma, que deben optimizarse mediante grid search o validación cruzada.
+
+Ver más
+[[CLASE 6 Máquinas de vectores de soporte  (SVM) (marzo 10 2023)|Clase 6 SVM Pregrado]]
+
 
 ---
 
