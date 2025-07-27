@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🤔",
       "TiCircleNumber2",
       "TiCircleNumber3",
       "TiCircleNumber1",
-      "TiCircleNumber0",
-      "RaCancel"
+      "TiCircleNumber0"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -267,5 +267,5 @@
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos- Evaluacion del Aprendizaje.md": "TiCircleNumber0",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md": "TiCircleNumber2",
-  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/3.Reflexión.md": "TiCircleNumber3"
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/3.Reflexión.md": "🤔"
 }
