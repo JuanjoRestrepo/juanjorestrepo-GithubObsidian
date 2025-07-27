@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.2.Perceptrón Multicapa Parte 2 - Back Propagation"
+              "title": "0.Tecnicas supervisadas"
+            }
+          }
+        ]
+      },
+      {
+        "id": "add4adfbd0cc47c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "234bdcb590ef060a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.1.Perceptrones Multicapa (MLP) - Parte 1"
             }
           }
         ]
@@ -98,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 669.5
+    "width": 369.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -115,13 +135,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2.2.Perceptrón Multicapa Parte 2 - Back Propagation"
+              "title": "Outline of 2.1.Perceptrones Multicapa (MLP) - Parte 1"
             }
           },
           {
@@ -229,13 +249,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c80669be31dcf9a9",
+  "active": "234bdcb590ef060a",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.Máquinas de vectores de soporte (SVM).md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/1.Máquinas de vectores de soporte (SVM).md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas no supervisadas.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Tecnicas supervisadas.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 6 Máquinas de vectores de soporte  (SVM) (marzo 10 2023).md",
     "CLASE.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/4.Acción.md",
