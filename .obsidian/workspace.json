@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.Algoritmos Jerarquicos"
+              "title": "1.DBSCAN"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2.Algoritmos Jerarquicos"
+              "title": "Outline of 1.DBSCAN"
             }
           },
           {
@@ -231,8 +231,8 @@
   },
   "active": "c80669be31dcf9a9",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas No Supervisadas.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
