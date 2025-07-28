@@ -75,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4ec017a478863232",
@@ -231,7 +230,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "48ce14ce6af510f7",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
     "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
