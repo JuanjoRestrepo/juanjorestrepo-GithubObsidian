@@ -31,9 +31,22 @@
 
 [[CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023)### Capas Pooling|Capas Pooling en Redes Neuronales]]
 [[Redes Convolucionales#Padding, strides, max pooling y stacking en las REDES CONVOLUCIONALES|Capas Pooling Clase Redes Convolucionales 2025]]
+- Analizar el contenido de una imagen **por bloques o regiones**
+- Se usa para **extraer la información más representativa** de las mismas
+- Similar a los strides
+	- Reduce la cantidad de datos **entre una capa y otra**, para **facilitar el procesamiento** imágenes y el **entrenamiento de la red**
+	- **Reduce la cantidad de datos y preserva la información**
+- 
 
+---
+# 🧩 Tipos de métodos MIL
 
-
+## 1. _Instance-space (IS)_:
+- Clasificación desde el nivel instancia y luego agregación mediante asunción MI estándar, colectiva (suma/average) o máxima/mínima
+- Ejemplos:
+	- **mi-SVM** y **MI-SVM** (extensiones de SVM para MIL) 
+	- **EM-DD** (Diverse Density con Expectation-Maximization).
+	- **RSIS**, **MIL-Boost**, **mi‑Net** (red neuronal MIL)
 
 
 ---
