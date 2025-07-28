@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.DBSCAN"
+              "title": "Solución Ejercicio Diseño"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369.5
+    "width": 694.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -232,39 +232,40 @@
   },
   "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
+    "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos - Evaluacion del Aprendizaje.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/1.Máquinas de vectores de soporte (SVM).md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
+    "Templates/Math template.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
     "Transactions/transactions 1.ledger",
     "Transactions/transactions.ledger",
     "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
     "Qubika/Qversity 2025/Proyecto Final/Qversity Insights 1.html",
     "Qubika/Qversity 2025/Proyecto Final/Qversity Insights.html",
-    "Qubika/Qversity 2025/Proyecto Final/Qversity 2025 - Business Insights Report.pdf",
     "Self Study/Docker/0.Introduccion.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material/M2U1-introduccion-aprendizaje_supervisado.pdf",
-    "Self Study/Data Engineering/Material",
-    "Self Study/Data Engineering",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas No Supervisadas.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.1.Perceptrones Multicapa (MLP) - Parte 1.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/2.2.Perceptrón Multicapa Parte 2 - Back Propagation.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/1.Máquinas de vectores de soporte (SVM).md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 6 Máquinas de vectores de soporte  (SVM) (marzo 10 2023).md",
     "CLASE.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/4.Acción.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/3.Reflexión.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos - Evaluacion del Aprendizaje.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 8 SOBRE AJUSTE DE REDES NEURONALES (marzo 24 2023).md",
     "Files/Grafico Subajuste.png",
     "Files/Grafico Sobreajuste.png",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",
-    "Templates/Math template.md",
     "Files/Error De Bayes.png",
     "Keys/Google Account Keys.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
