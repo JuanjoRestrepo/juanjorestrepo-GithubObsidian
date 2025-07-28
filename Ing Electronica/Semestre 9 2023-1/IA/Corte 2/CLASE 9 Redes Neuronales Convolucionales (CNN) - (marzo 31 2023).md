@@ -167,19 +167,16 @@ convolucional con *7* filtros de tamaño *3 × 3*. Además, supongamos que el pa
 De esta forma, como se muestra en la figura, la salida de la capa convolucional  tendrá un tamaño de *3 × 3 × 7.*
 
 ### Capas Pooling
-
-Su labor no es extraer caracterisitcas, sino solo hacer compresión de las imágenes. Contrario a las convolucionales, que extraen características pero no compresión
-
-- Esta operación tiene como objetivo reducir el tamaño de las representaciones con el fin de aumentar la velocidad de los cálculos y para robustecer las características extraídas por las capas convolucionales.
+Su labor no es extraer características, sino solo hacer compresión de las imágenes. Contrario a las convolucionales, que extraen características pero no compresión
+- Esta operación tiene como objetivo **reducir el tamaño de las representaciones** con el fin de **aumentar la velocidad de los cálculo**s y para **robustecer las características extraídas** por las capas convolucionales.
 
 Se reconocen dos tipos de pooling: 
-- **Max Pooling (M ́aximo)**
+- **Max Pooling (Máximo)**
 - **Average Pooling (Promedio).** 
 
 Veamos un ejemplo para entender su funcionamiento.
 
 #### **EJEMPLO MAX POOLING**
-
 Se tiene una imagen de tamaño *4 × 4* y se le aplica una operación pooling con un **paso de 2** y donde el tamaño
 del filtro es de *2 × 2*.
 
@@ -189,7 +186,7 @@ Esto corresponde a dividir la imagen en cuatro partes de tamaño *2 × 2,* como 
 
 De cada región, se extrae el ***máximo, si usamos Max Pooling*** o ***el promedio si empelamos el Average Pooling*.**
 
-• Las capas Pooling no tienen ningún parámetro que se deba estimar a partir del gradiente descendente. Sin embargo, si tiene hiper-parámetros que deben ser ajustados: El tamaño del filtro y del paso
+• Las **capas Pooling no tienen ningún parámetro que se deba estimar a partir del gradiente descendente**. Sin embargo, **si tiene hiper-parámetros que deben ser ajustados**: *El tamaño del filtro y del paso*
 
 ![[Max Pooling 2.png]]
 

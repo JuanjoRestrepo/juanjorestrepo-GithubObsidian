@@ -22,7 +22,11 @@
 # 📊 Aprendizaje en MIL
 
 1. **Clasificación a nivel de instancia**: se entrena una función $f(x)$ que asigna una probabilidad o score a cada instancia
-2.  
+2. **Agregado (pooling)**: combinar scores/embeddings para obtener una representación del bag:
+	- _Max pooling_
+	- _Mean pooling_
+	- _Attention-based pooling_ (muy utilizado actualmente)
+3. **Clasificación final del bag**: aplicando un clasificador al embedding agregado.
 
 
 
