@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🧠",
       "🛠",
       "FasUserGraduate",
       "SiDatabricks",
-      "FasFilePdf",
-      "🤔"
+      "FasFilePdf"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -175,6 +175,7 @@
   "Master Data Science/TESIS 2025/Anteproyecto": "📗",
   "Master Data Science/TESIS 2025/Situacion Actual - A Resolver": "LiListTodo",
   "Ing Electronica/Semestre 7 2022-1/Sistemas Digitales": "SiLinux",
+  "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático para Toma Decisiones/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del aprendizaje": "TiCircleNumber3",
   "Templates/Nueva nota.md": "TiNews",
   "Templates/Math template.md": "TiMath",
   "Self Study": "📚",
@@ -271,5 +272,6 @@
   "Self Study/Data Engineering": "SiDatabricks",
   "Self Study/Data Engineering/Material": "FasFilePdf",
   "Qubika/DataCamp Qversity Certificate.pdf": "FasUserGraduate",
-  "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines": "🛠"
+  "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines": "🛠",
+  "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md": "🧠"
 }
