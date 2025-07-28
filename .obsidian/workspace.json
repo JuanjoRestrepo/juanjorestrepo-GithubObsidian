@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "REUNION 1"
+              "title": "Cronograma"
             }
           }
         ]
@@ -230,12 +230,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES",
     "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 8 SOBRE AJUSTE DE REDES NEURONALES (marzo 24 2023).md",
     "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
@@ -254,7 +254,6 @@
     "Self Study/Data Engineering/Material",
     "Self Study/Data Engineering",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/0.Tecnicas supervisadas.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas No Supervisadas.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/2.Algoritmos Jerarquicos.md",
