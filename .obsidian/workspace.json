@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cronograma"
+              "title": "REUNION 1"
             }
           }
         ]
@@ -230,12 +230,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "48ce14ce6af510f7",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES",
+    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 8 SOBRE AJUSTE DE REDES NEURONALES (marzo 24 2023).md",
     "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023).md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Convolucionales.md",
@@ -268,9 +270,7 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/0. Conceptos básicos - Evaluacion del Aprendizaje.md",
     "Files/Grafico Subajuste.png",
     "Files/Grafico Sobreajuste.png",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/0.Introducción Modulo 1 - Ciclo de construcción de un sistema de Machine Learning.md",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",
-    "Templates/Math template.md",
     "Files/Error De Bayes.png",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",

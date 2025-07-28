@@ -23,3 +23,11 @@ Elegir uno de los dos
 # TODO
 - Para la otra semana, el lunes, reunirnos para tener listo el planteamiento del problema y definir los objetivos
 
+
+
+
+
+
+
+
+

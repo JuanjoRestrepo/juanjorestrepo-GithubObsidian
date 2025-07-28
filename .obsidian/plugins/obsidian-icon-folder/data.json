@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "OcPeople16",
+      "✅",
       "🧠",
       "🛠",
-      "FasUserGraduate",
-      "SiDatabricks",
-      "FasFilePdf"
+      "FasUserGraduate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -273,5 +273,7 @@
   "Self Study/Data Engineering/Material": "FasFilePdf",
   "Qubika/DataCamp Qversity Certificate.pdf": "FasUserGraduate",
   "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines": "🛠",
-  "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md": "🧠"
+  "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md": "🧠",
+  "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md": "✅",
+  "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES": "OcPeople16"
 }
