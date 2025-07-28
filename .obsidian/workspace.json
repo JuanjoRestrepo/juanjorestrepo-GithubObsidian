@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estructura"
+              "title": "REUNION 1"
             }
           }
         ]
@@ -232,8 +232,8 @@
   },
   "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
-    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Documento",
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
