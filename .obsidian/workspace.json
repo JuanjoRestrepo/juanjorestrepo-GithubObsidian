@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "33229cd18daf234b",
+        "id": "469da33fce7567b4",
         "type": "tabs",
         "children": [
           {
-            "id": "44f6ab8ad47c033d",
+            "id": "1d016400d4a907d8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -226,8 +226,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "1d016400d4a907d8",
   "lastOpenFiles": [
+    "Job Search/Recomendaciones/Referencia Personal - Juan Jose Restrepo Rosero.pdf",
+    "Job Search/Recomendaciones/Referencia Familiar - Juan Jose Restrepo Rosero.pdf",
+    "Job Search/Recomendaciones/Referencia Familiar 2 - Juan Jose Restrepo Rosero.pdf",
+    "Job Search/Recomendaciones/Recomendación Juan Jose Restrepo Rosero firmada.pdf",
+    "Job Search/Recomendaciones/Certificado Salud y Pension.pdf",
+    "Job Search/Job Templates.md",
+    "Ing Electronica/Semestre 9 2023-1/PDF RESULTADOS null.pdf",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md",
     "Self Study/POO - LUISA RINCON 2025/Solución Ejercicios Practica Clases.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
@@ -243,11 +250,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
-    "Transactions/transactions 1.ledger",
-    "Transactions/transactions.ledger",
-    "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
-    "Qubika/Qversity 2025/Proyecto Final/Qversity Insights 1.html",
-    "Qubika/Qversity 2025/Proyecto Final/Qversity Insights.html",
     "Self Study/Docker/0.Introduccion.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/0.Tecnicas No Supervisadas.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/3.K-Means.md",
@@ -266,8 +268,6 @@
     "Files/Error De Bayes.png",
     "Keys/Google Account Keys.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/3.Reflexión.md",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/2.Experiencia - Consideraciones básicas sobre los tipos de atributos y las técnicas exploratorias.md",
-    "The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining..pdf.md",
     "Files/mathTest.svg",
     "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
