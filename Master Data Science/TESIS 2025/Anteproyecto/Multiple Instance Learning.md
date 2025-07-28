@@ -86,12 +86,49 @@
 |Embedded-space|Bag completo|Embedding + red neuronal|mi‑Net, atención basada, DSMIL, CAP|
 |Bag-space|Bag completo|Similitud entre bags|kNN- / SVM-bag-level|
 
+---
+🔄 Diagrama de flujo de datos en MIL (Mermaid)
+
+```mermaid
+flowchart TD
+  graph TD
+  A(Bag con instancias) --> B1(Instancia 1)
+  A --> B2(Instancia 2)
+  A --> B3(Instancia 3)
+  B1 --> C1(Embedding instancia 1)
+  B2 --> C2(Embedding instancia 2)
+  B3 --> C3(Embedding instancia 3)
+  C1 --> D(Pooling: max/mean/atención)
+  C2 --> D
+  C3 --> D
+  D --> E(Embedding del Bag)
+  E --> F(Clasificador final)
+  F --> G(Predicción del Bag)
+
+
+```
+
 
 
 
 
 
 ---
-# Fuentes:
-1. https://nilg.ai/202105/an-introduction-to-multiple-instance-learning/
 
+# 📚 Referencias
+
+1. **NILG.AI**. _An Introduction to Multiple Instance Learning_ (Paulo Maia, 2021). [https://nilg.ai/202105/an-introduction-to-multiple-instance-learning](https://nilg.ai/202105/an-introduction-to-multiple-instance-learning)
+
+2. **Wikipedia**. _Multiple Instance Learning_. https://en.wikipedia.org/wiki/Multiple_instance_learning
+    
+3. **Papers with Code**. _Multiple Instance Learning Benchmarks and Papers_. https://paperswithcode.com/task/multiple-instance-learning
+    
+4. **MDPI Electronics Journal**. _A Comprehensive Review on Multiple Instance Learning_. https://www.mdpi.com/2079-9292/12/20/4323
+    
+5. **Medium – One Minute ML**. _Multiple Instance Learning – One Minute Introduction_ (Jeffrey Boschman). https://medium.com/one-minute-machine-learning/multiple-instance-learning-one-minute-introduction-c1a382936105
+    
+6. **arXiv (DSMIL)**. _Dual-stream Maximum Self-attention Multi-instance Learning_. [https://arxiv.org/abs/2006.05538](https://arxiv.org/abs/2006.05538)
+    
+7. **arXiv (Multiple Instance Verification)**. _Multiple Instance Verification_ (2024). [https://arxiv.org/abs/2407.06544](https://arxiv.org/abs/2407.06544)
+    
+8. **MDPI Encyclopedia**. _Multiple-Instance Learning Methods_. https://encyclopedia.pub/entry/50741
