@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "469da33fce7567b4",
+        "id": "71fa1c8414df4fab",
         "type": "tabs",
         "children": [
           {
-            "id": "1d016400d4a907d8",
+            "id": "2a98ffc2dfc512f8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -226,8 +226,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1d016400d4a907d8",
+  "active": "2a98ffc2dfc512f8",
   "lastOpenFiles": [
+    "Files/1_MACH~1.pdf",
     "Job Search/Recomendaciones/Referencia Personal - Juan Jose Restrepo Rosero.pdf",
     "Job Search/Recomendaciones/Referencia Familiar - Juan Jose Restrepo Rosero.pdf",
     "Job Search/Recomendaciones/Referencia Familiar 2 - Juan Jose Restrepo Rosero.pdf",
@@ -247,7 +248,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Introduction to Data Mining Tan Steinbach Kumar Pearson 2019.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 2 Técnicas no supervisadas/1.DBSCAN.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md",
     "Self Study/Docker/0.Introduccion.md",
