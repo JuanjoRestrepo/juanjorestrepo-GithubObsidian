@@ -29,6 +29,11 @@
 3. **Clasificación final del bag**: aplicando un clasificador al embedding agregado.
 
 
+[[CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023)### Capas Pooling|Capas Pooling en Redes Neuronales]]
+[[Redes Convolucionales#Padding, strides, max pooling y stacking en las REDES CONVOLUCIONALES|Capas Pooling Clase Redes Convolucionales 2025]]
+
+
+
 
 
 ---
