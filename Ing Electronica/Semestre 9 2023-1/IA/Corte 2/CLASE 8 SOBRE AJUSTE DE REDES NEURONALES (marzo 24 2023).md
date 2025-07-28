@@ -40,8 +40,10 @@ Existen estrategias que disminuyen el impacto del sobre-ajuste. Entre estas se r
 - Es una forma de reducir el sobre-ajuste.  Puedo ajustar las imagenes, rotandolas, haciendole zoom, cortandola.
 - Esto es útil porque puede pasar de 100 a 10000 datos. 
 
+---
 **TRANSFERENCIA DE APRENDIZAJE:**
-
+<iframe width="800" height="600" src="https://www.youtube.com/embed/9Dur_oUMGG8" title="¿Pocos datos de entrenamiento? Prueba esta técnica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+---
 ### **Sub-ajuste:**
 
 - El sub-ajuste es el **fenómeno en el cual el modelo no es lo suficientemente robusto para capturar la estructura de los datos.**  
