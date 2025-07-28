@@ -48,6 +48,48 @@
 	- **EM-DD** (Diverse Density con Expectation-Maximization).
 	- **RSIS**, **MIL-Boost**, **mi‑Net** (red neuronal MIL)
 
+## 2. _Bag-space (BS)_:
+- Trata cada bag como entidad completa y entrena un clasificador sobre la similitud entre bags (p.ej. kNN, SVM sobre distancias de bag)
+
+## 3. _Embedded-space (ES)_:
+- Mapea cada bag a un solo embedding (“meta-instancia”) y entrena sobre él; pooling + red neuronal es típico
+
+---
+# 🔬 Aplicaciones comunes
+
+- **Imagen médica (histopatología)**: Bag = imagen completa, instancias = parches; solo se etiqueta el diagnóstico general
+- **Química computacional**: Moléculas con múltiples conformaciones como instancias y molécula etiquetada como activa o no.
+- **NLP (Document Classification)**: Documentos compuestos por múltiples páginas o párrafos; sólo se conoce la etiqueta del documento.
+- **Audio/Video weak labels**: etiquetas a nivel de clip/video sin segmentación temporal precisa 
+- **Marketing, series temporales**: se conoce un total agregado, pero no el detalle por componente o periodo.
+
+---
+## 🧠 Ventajas de MIL
+
+- Reduce **costos de anotación**: no requiere etiquetar cada instancia.
+- Refleja escenarios reales donde solo hay etiquetas a nivel agregado o más elevado.
+- Ideal para aprendizaje débil o semi-supervisado (etiquetas difusas)
+---
+## 📌 Técnicas modernas
+
+- **mi-Net**: red neuronal que estima score para cada instancia antes de agregación mil-pooling (max, mean, log‑sum‑exp) 
+- **DSMIL** (Dual-stream Self‑Attention MIL): primero max‑pool para encontrar la instancia más activada, luego atención auto-regresiva para atención fina sobre todas instancias
+- **Attention-aware Multiple-Instance Neural Network**: aprendizaje end‑to‑end con un operador de pooling basado en atención espacial entrenable, mejor alineación de instancias clave y representación de bag 
+- **CAP (Cross-Attention Pooling)**: diseñado para _verificación MIL_, usa atención cruzada (query‑bag) para mejorar precisión y explicabilidad
+---
+
+## 📚 Comparativa rápida de métodos
+
+|Enfoque|Nivel de etiqueta|Pooling típico|Aplicabilidad actual|
+|---|---|---|---|
+|Instance-space|Instancia oculta|Max/Mean/Mil-pooling|EM-DD, mi-SVM, mi-Net (deep learning)|
+|Embedded-space|Bag completo|Embedding + red neuronal|mi‑Net, atención basada, DSMIL, CAP|
+|Bag-space|Bag completo|Similitud entre bags|kNN- / SVM-bag-level|
+
+
+
+
+
 
 ---
 # Fuentes:
