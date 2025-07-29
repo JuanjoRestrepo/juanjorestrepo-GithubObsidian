@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiKubernetes",
+      "SiLinuxmint",
+      "LiNetwork",
       "SiLinux",
-      "🖼",
-      "SiKalilinux",
-      "TiBook",
-      "SiDocker"
+      "🖼"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -290,5 +290,8 @@
   "Self Study/Pinguino Mario - Hacking/Glosario de Términos": "TiBook",
   "Self Study/Pinguino Mario - Hacking/Hacking": "SiKalilinux",
   "Self Study/Pinguino Mario - Hacking/images": "🖼",
-  "Self Study/Pinguino Mario - Hacking/Linux": "SiLinux"
+  "Self Study/Pinguino Mario - Hacking/Linux": "SiLinux",
+  "Self Study/Pinguino Mario - Hacking/Redes": "LiNetwork",
+  "Self Study/Pinguino Mario - Hacking/Windows": "SiLinuxmint",
+  "Self Study/Pinguino Mario - Hacking/Linux/Kubernetes": "SiKubernetes"
 }
