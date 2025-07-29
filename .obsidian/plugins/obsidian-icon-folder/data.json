@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasFilePdf",
       "SiKubernetes",
       "SiLinuxmint",
       "LiNetwork",
-      "SiLinux",
-      "🖼"
+      "SiLinux"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -293,5 +293,6 @@
   "Self Study/Pinguino Mario - Hacking/Linux": "SiLinux",
   "Self Study/Pinguino Mario - Hacking/Redes": "LiNetwork",
   "Self Study/Pinguino Mario - Hacking/Windows": "SiLinuxmint",
-  "Self Study/Pinguino Mario - Hacking/Linux/Kubernetes": "SiKubernetes"
+  "Self Study/Pinguino Mario - Hacking/Linux/Kubernetes": "SiKubernetes",
+  "Master Data Science/TESIS 2025/Anteproyecto/Referencias": "FasFilePdf"
 }
