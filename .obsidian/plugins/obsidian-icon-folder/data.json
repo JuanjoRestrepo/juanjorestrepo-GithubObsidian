@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🐧",
       "CoFileDocument",
       "OcPeople16",
       "✅",
-      "🧠",
-      "🛠"
+      "🧠"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -276,5 +276,6 @@
   "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md": "🧠",
   "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md": "✅",
   "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES": "OcPeople16",
-  "Master Data Science/TESIS 2025/Anteproyecto/Documento": "CoFileDocument"
+  "Master Data Science/TESIS 2025/Anteproyecto/Documento": "CoFileDocument",
+  "Self Study/Pinguino Mario - Hacking": "🐧"
 }
