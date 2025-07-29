@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estructura"
+              "title": "2.Experiencia"
             }
           }
         ]
@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -230,8 +231,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Going deeper through the Gleason scoring scale - An automatic end-to-end system for histology prostate grading and cribriform pattern detection.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Introducing instance label correlation in multiple instance learning. Application to cancer detection on histopathological images.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias",
@@ -267,7 +269,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/9 - Condicionales",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Operadores",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/12 - Arrays y Objetos",
     "Files/Grafico Subajuste.png",
     "Files/Grafico Sobreajuste.png",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",
