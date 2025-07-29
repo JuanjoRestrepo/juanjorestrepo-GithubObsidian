@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "🐧",
-      "CoFileDocument",
-      "OcPeople16",
-      "✅",
-      "🧠"
+      "SiLinux",
+      "🖼",
+      "SiKalilinux",
+      "TiBook",
+      "SiDocker"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -277,5 +277,18 @@
   "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md": "✅",
   "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES": "OcPeople16",
   "Master Data Science/TESIS 2025/Anteproyecto/Documento": "CoFileDocument",
-  "Self Study/Pinguino Mario - Hacking": "🐧"
+  "Self Study/Pinguino Mario - Hacking": "🐧",
+  "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB": "SiMongodb",
+  "Self Study/Pinguino Mario - Hacking/Bases de Datos/Mysql": "SiMysql",
+  "Self Study/Pinguino Mario - Hacking/Coding/Java": "FabJava",
+  "Self Study/Pinguino Mario - Hacking/Coding/JavaScript": "SiJavascript",
+  "Self Study/Pinguino Mario - Hacking/Coding/PHP": "SiPhp",
+  "Self Study/Pinguino Mario - Hacking/Coding/Powershell": "SiPowershell",
+  "Self Study/Pinguino Mario - Hacking/Coding/Python": "SiPython",
+  "Self Study/Pinguino Mario - Hacking/Coding": "TiCode",
+  "Self Study/Pinguino Mario - Hacking/Docker": "SiDocker",
+  "Self Study/Pinguino Mario - Hacking/Glosario de Términos": "TiBook",
+  "Self Study/Pinguino Mario - Hacking/Hacking": "SiKalilinux",
+  "Self Study/Pinguino Mario - Hacking/images": "🖼",
+  "Self Study/Pinguino Mario - Hacking/Linux": "SiLinux"
 }

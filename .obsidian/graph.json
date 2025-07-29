@@ -2,10 +2,10 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#Semestre8",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "query": "path:Pingu",
+      "query": "path:\"Self Study/Pinguino Mario - Hacking\"  ",
       "color": {
         "a": 1,
         "rgb": 4133113
@@ -88,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.010928869053109821,
-  "close": false
+  "scale": 0.021528718442430348,
+  "close": true
 }

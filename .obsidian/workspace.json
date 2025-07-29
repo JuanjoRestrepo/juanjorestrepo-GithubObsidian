@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
+                "file": "Self Study/Pinguino Mario - Hacking/Glosario de Términos/Glosario de Términos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Multiple Instance Learning"
+              "title": "Glosario de Términos"
             }
           }
         ]
@@ -230,7 +230,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f27588b64f52208d",
+  "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
     "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React/0 - Botón de Login Básico.md",
