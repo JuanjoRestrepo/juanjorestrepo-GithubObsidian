@@ -71,10 +71,10 @@
       }
     },
     {
-      "query": "",
+      "query": "path:Pingu",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 4133113
       }
     }
   ],
