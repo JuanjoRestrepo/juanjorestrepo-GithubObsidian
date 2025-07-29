@@ -75,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4ec017a478863232",
@@ -234,6 +233,7 @@
   "active": "48ce14ce6af510f7",
   "lastOpenFiles": [
     "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Going deeper through the Gleason scoring scale - An automatic end-to-end system for histology prostate grading and cribriform pattern detection.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Introducing instance label correlation in multiple instance learning. Application to cancer detection on histopathological images.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias",
@@ -261,7 +261,6 @@
     "Self Study/Pinguino Mario - Hacking/Redes/Modelo TCP-IP.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Modelo OSI.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Máscara de red.md",
-    "Self Study/Pinguino Mario - Hacking/Glosario de Términos/Glosario de Términos.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
