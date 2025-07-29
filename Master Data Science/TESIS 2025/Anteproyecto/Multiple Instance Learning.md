@@ -57,7 +57,10 @@
 ---
 # 🔬 Aplicaciones comunes
 
-- **Imagen médica (histopatología)**: Bag = imagen completa, instancias = parches; solo se etiqueta el diagnóstico general
+- **Imagen médica (histopatología)**: 
+	- Bag = imagen completa, 
+	- instancias = parches; 
+	- solo se etiqueta el diagnóstico general
 - **Química computacional**: Moléculas con múltiples conformaciones como instancias y molécula etiquetada como activa o no.
 - **NLP (Document Classification)**: Documentos compuestos por múltiples páginas o párrafos; sólo se conoce la etiqueta del documento.
 - **Audio/Video weak labels**: etiquetas a nivel de clip/video sin segmentación temporal precisa 
