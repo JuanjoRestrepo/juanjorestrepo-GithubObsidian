@@ -86,5 +86,5 @@ Con este esquema:
 - Se encapsula nueva funcionalidad en carpetas lógicas.
 - Se facilita la reutilización de utilidades (`scripts/utils.py`).
     
-- Haces tu proyecto escalable: cuando llegue una nueva técnica ómica, agregas un extractor en `Ingestion/` sin tocar lo demás.
+- Se hace el proyecto escalable: cuando llegue una nueva técnica ómica, se agrega un extractor en `Ingestion/` sin tocar lo demás.
     
