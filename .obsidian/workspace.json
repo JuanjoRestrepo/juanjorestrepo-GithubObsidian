@@ -11,10 +11,14 @@
             "id": "2eb52022eb7c6e10",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Omicas/Julio Changes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Julio Changes"
             }
           }
         ]
@@ -228,6 +232,7 @@
   },
   "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
+    "Master Data Science/Omicas/Julio Changes.md",
     "Master Data Science/Directorio Facultades Javeriana Cali 2023.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
@@ -256,7 +261,6 @@
     "Self Study/Pinguino Mario - Hacking/Redes/DNS.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Protocolo HTTP-HTTPS + Wireshark.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Modelo TCP-IP.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/Modelo OSI.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
