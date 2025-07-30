@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "48120de5879b330e",
+        "id": "bdb1599d922c2d9f",
         "type": "tabs",
         "children": [
           {
-            "id": "dff7d2c26e38f567",
+            "id": "2eb52022eb7c6e10",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -226,7 +226,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "dff7d2c26e38f567",
+  "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
     "Master Data Science/Directorio Facultades Javeriana Cali 2023.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md",
