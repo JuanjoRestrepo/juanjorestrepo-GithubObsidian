@@ -1,18 +1,18 @@
 
 # 📌 Data Visualization – Definición y Relevancia (Tableau)
 
+**Fuente:**
+
+> “What Is Data Visualization? Definition, Examples, And Learning Resources”, Tableau  
+> [https://www.tableau.com/visualization/what-is-data-visualization](https://www.tableau.com/visualization/what-is-data-visualization)
+
 ## 1. ¿Qué es la _Visualización de Datos_?
-
-> Representación gráfica de información y datos mediante elementos visuales (gráficos, mapas, dashboards) para facilitar la detección de patrones, tendencias y valores atípicos. ([turn0search1]/_adaptado_/[coursera.org+2tableau.com+2guides.lib.uh.edu+2](https://www.tableau.com/data-insights/data-visualization/advantages-disadvantages?utm_source=chatgpt.com))
-
----
+Representación gráfica de información y datos mediante elementos visuales (gráficos, mapas, dashboards) para facilitar la detección de patrones, tendencias y valores atípicos.
 
 ## 2. ¿Por qué es importante?
-
-- Facilita la comprensión rápida de datos complejos para audiencia _técnica y no técnica_ ([turn0search1]turn0search24).
-- Promueve una cultura más _data-driven_ en organizaciones al comunicar hallazgos masivamente ([turn0search24]turn0search12).
-- Permite explorar información de forma visual, intuitiva y efectiva, fomentando la toma de decisiones informada ([turn0search0]turn0search24).
----
+- **Accesibilidad:** Permite a audiencias técnicas y no técnicas entender resultados complejos.
+- **Comunicación:** Fomenta una cultura data-driven al difundir hallazgos de forma clara.
+- **Exploración:** Facilita la interacción y el descubrimiento de oportunidades ocultas.
 
 ## 3. 🟢 Ventajas y ⚠️ Desventajas
 
@@ -28,17 +28,43 @@ flowchart LR
 
 ```
 
-### Ventajas
-1. Intuitivo incluso para personas sin formación matemática o técnica. ([turn0search1]turn0search0)
-2. Facilita comunicación efectiva y colaborativa. ([turn0search1]turn0search2turn0search24)
-3. Permite identificar tendencias, relaciones y excepciones visualmente. ([turn0search0]turn0search24)
-4. Soporta una exploración más interactiva y unificada de los datos. ([turn0search0]turn0search24)
+- **Ventajas**
+    1. Atrae la atención y acelera la comprensión.
+    2. Simplifica la colaboración y el intercambio de insights.
+    3. Destaca tendencias, relaciones y valores atípicos al instante.
+    4. Ofrece exploración interactiva (filtros, drill-down, tooltips).
 
-### Desventajas
-1. Riesgo de representaciones sesgadas o confusas si no se elige bien el enfoque visual.
-2. La correlación no implica causalidad: se pueden inferir conclusiones erróneas.
-3. Se puede perder el mensaje central si hay demasiada información visual. ([turn0search1]turn0search0)
+- **Desventajas**
+    - Riesgo de malas interpretaciones si se elige mal el tipo de gráfico.
+    - Correlación visual no garantiza causalidad.
+    - Visualizaciones sobrecargadas pueden ocultar el mensaje principal.
 
 
+## 4. Visualización en _Big Data_
+- Indispensable para sintetizar trillones de registros en insights accionables.
+- “Contar historias” reduciendo ruido y enfatizando lo relevante.
+- Equilibrio entre **forma** (estética) y **función** (claridad).
 
----
+
+## 5. Tipos comunes de visualizaciones
+
+```mermaid
+graph TD
+  A[Tipos de Visualizaciones] --> B[Charts / Gráficos]
+  A --> C[Tables / Tablas]
+  A --> D[Geospatial / Mapas]
+  A --> E[Infographics]
+  A --> F[Dashboards]
+
+```
+
+
+- **Charts / Gráficos**: barras, líneas, dispersión, etc.
+- **Tables / Tablas**: ideal para comparaciones precisas o datos tabulares.
+- **Geospatial / Mapas**: choropleth, isopléticas, mapas de calor georreferenciados.
+- **Infographics**: mezcla de gráficos y texto para storytelling.
+- **Dashboards**: conjuntos de visualizaciones interactivas en un solo panel.
+
+_Otros ejemplos:_ box-plot, treemap, bullet graph, histograma, gantt chart, heatmap, cluster chart…
+
+
