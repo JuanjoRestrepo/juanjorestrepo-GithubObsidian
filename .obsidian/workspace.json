@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/2.Contexto.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/3.Experiencia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.Contexto"
+              "title": "3.Experiencia"
             }
           }
         ]
@@ -232,8 +232,10 @@
   },
   "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/1.Introduccion.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Notas.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/2.Contexto.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/1.Introduccion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos",
     "Files/Pasted image 20250731143145.png",
@@ -269,8 +271,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/Java/0 - Conceptos Introductorios/6 - Modificadores de Acceso.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Java/0 - Conceptos Introductorios/2 - Clases, Métodos, Constructores e Instancia de Clase.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Java/0 - Conceptos Introductorios/0 - Intellij IDEA en Java.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Java/0 - Conceptos Introductorios/1 - Configurar Maven en Java.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Java/3 - Ejercicios Prácticos en Java/Conectar Base de datos con Java.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
