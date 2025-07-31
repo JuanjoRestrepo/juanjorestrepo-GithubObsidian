@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbGraphLineDown",
+      "🥉",
       "FasPhone",
       "FasFilePdf",
-      "SiKubernetes",
-      "SiLinuxmint",
-      "LiNetwork"
+      "SiKubernetes"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -295,5 +295,7 @@
   "Self Study/Pinguino Mario - Hacking/Windows": "SiLinuxmint",
   "Self Study/Pinguino Mario - Hacking/Linux/Kubernetes": "SiKubernetes",
   "Master Data Science/TESIS 2025/Anteproyecto/Referencias": "FasFilePdf",
-  "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone"
+  "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
+  "Master Data Science/Semestre 3": "🥉",
+  "Master Data Science/Semestre 3/Visualizacion de Datos": "IbGraphLineDown"
 }
