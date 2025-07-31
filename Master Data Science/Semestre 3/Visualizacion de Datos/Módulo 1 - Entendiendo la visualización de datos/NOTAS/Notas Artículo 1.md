@@ -6,8 +6,13 @@
 > “What Is Data Visualization? Definition, Examples, And Learning Resources”, Tableau  
 > [https://www.tableau.com/visualization/what-is-data-visualization](https://www.tableau.com/visualization/what-is-data-visualization)
 
+
+![[Pasted image 20250731172416.png|500]]
+
 ## 1. ¿Qué es la _Visualización de Datos_?
 Representación gráfica de información y datos mediante elementos visuales (gráficos, mapas, dashboards) para facilitar la detección de patrones, tendencias y valores atípicos.
+
+![[Pasted image 20250731172431.png|550]]
 
 ## 2. ¿Por qué es importante?
 - **Accesibilidad:** Permite a audiencias técnicas y no técnicas entender resultados complejos.
@@ -48,6 +53,8 @@ flowchart LR
 
 ## 5. Tipos comunes de visualizaciones
 
+![[Pasted image 20250731172547.png]]
+
 ```mermaid
 graph TD
   A[Tipos de Visualizaciones] --> B[Charts / Gráficos]
@@ -58,7 +65,6 @@ graph TD
 
 ```
 
-
 - **Charts / Gráficos**: barras, líneas, dispersión, etc.
 - **Tables / Tablas**: ideal para comparaciones precisas o datos tabulares.
 - **Geospatial / Mapas**: choropleth, isopléticas, mapas de calor georreferenciados.
@@ -66,5 +72,38 @@ graph TD
 - **Dashboards**: conjuntos de visualizaciones interactivas en un solo panel.
 
 _Otros ejemplos:_ box-plot, treemap, bullet graph, histograma, gantt chart, heatmap, cluster chart…
+
+![[Pasted image 20250731172624.png]]
+
+## 6. Mejores prácticas y principios
+1. **Data-ink ratio:** maximizar la proporción de tinta dedicada a los datos.
+2. **Simplicidad:** eliminar elementos decorativos innecesarios.
+3. **Comparaciones claras:** agrupar datos comparables juntos.
+4. **Dirección visual:** usar color y tamaño para priorizar información.
+5. **Interactividad:** filtros, drill-downs y tooltips para exploración.
+
+## 7. Herramientas y recursos
+
+- **Tableau:** dashboards sin código, conectividad amplia (SQL, Excel, servicios cloud).
+- **Power BI:** integración con Microsoft 365 y Azure.
+- **Plotly / Dash / Streamlit:** visualizaciones interactivas en Python.
+- **Matplotlib / Seaborn / Altair:** librerías de Python para análisis reproducible.
+- **D3.js:** visualizaciones web altamente personalizables.
+
+
+## 8. 📚 Recursos recomendados
+- **Libros**
+    - _Information Dashboard Design_ – Stephen Few
+    - _Storytelling With Data_ – Cole N. Knaflic
+    - _Fundamentals of Data Visualization_ – Claus O. Wilke
+
+- **Blogs y galerías**
+    - Tableau Public Gallery
+    - Viz of the Day
+    - Data Visualization Society
+
+- **Cursos**
+    - Tableau Training (oficial)
+    - MOOCs en Coursera / edX sobre visualización y UX de datos
 
 
