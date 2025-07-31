@@ -1,0 +1,19 @@
+---
+tags:
+  - VisualizacionDatos
+  - Semestre3
+  - Master
+  - Maestria
+fecha: 2025-07-22
+---
+
+# Visualización de datos
+
+## Metodología
+El curso se desarrollará en **tres módulos** en los cuales, a través de videos explicativos, lecturas y talleres de aplicación de los conocimientos, los estudiantes lograrán apropiarse de los conceptos abordados en las unidades con el fin de consolidar los aprendizajes esperados, logrando así comunicar efectivamente lo que se pretende a través de las representaciones visuales de la información. 
+
+# Objetivo
+Identificar las **características de los datos** a través del estudio de los **tipos de datasets** disponibles, las **tipologías de los datos** y las **razones que motivan** las visualizaciones para habilitar el **mapeo de los datos** con la **representación visual adecuada**, **comunicando el mensaje objetivo** de la visualización
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/pn8Zv3W8djo" title="Visualización de datos - Introducción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

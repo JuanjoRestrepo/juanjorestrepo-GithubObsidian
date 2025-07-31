@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/Introduccion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1.Mejor manera de ordenar Dockerfile"
+              "title": "Introduccion"
             }
           }
         ]
@@ -230,8 +230,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
+    "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/Introduccion.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso",
     "Master Data Science/Semestre 3/Visualizacion de Datos",
     "Master Data Science/Semestre 3",
     "Master Data Science/Omicas/MinIO.md",
@@ -261,13 +264,10 @@
     "Self Study/Pinguino Mario - Hacking/Redes/Puertos más Importantes - Servicios/Puertos y Protocolos.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Direcciones MAC.md",
     "Self Study/Pinguino Mario - Hacking/Redes/Dirección Loopback.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/DNS.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Angular",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/9 - Condicionales",
     "Files/Grafico Subajuste.png",
     "Files/Grafico Sobreajuste.png",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",

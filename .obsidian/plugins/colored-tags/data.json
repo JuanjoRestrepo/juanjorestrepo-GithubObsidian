@@ -149,7 +149,9 @@
     "Docker": 137,
     "AprendizajeAutomatico": 138,
     "math": 139,
-    "Tesis": 140
+    "Tesis": 140,
+    "VisualizacionDatos": 141,
+    "Semestre3": 142
   },
   "_version": 3
 }
