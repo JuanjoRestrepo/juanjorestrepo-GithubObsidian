@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/Introduccion.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/1.Introduccion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduccion"
+              "title": "1.Introduccion"
             }
           }
         ]
@@ -232,8 +232,17 @@
   },
   "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/2.Datos del docente.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/1.Introduccion.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2.Reflexión.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
+    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/2. Análisis Componentes Principales.md",
+    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/1. Modelos Descriptivos de Análisis Multivariado.md",
+    "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 2 Primer Avance.md",
+    "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md",
+    "Files/Pasted image 20250731142534.png",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/Introduccion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso",
     "Master Data Science/Semestre 3/Visualizacion de Datos",
     "Master Data Science/Semestre 3",
@@ -256,14 +265,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/Java/2 - Programación/1 - Hola Mundo en Java + Primeros Pasos.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Comunidad Hacking Ético/MÁQUINA CRYPTOCORP.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Comunidad Hacking Ético/MÁQUINA FAKE NEWS.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Comunidad Hacking Ético/MAQUINA CAPYPENGUIN.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/Codificación/MD5SUM - Generar Hash md5 de un Archivo.md",
-    "Self Study/Pinguino Mario - Hacking/Linux/Árbol de Directorios en Linux.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/CURL/Diferencias Peticiones HTTP con HEAD, POST y GET.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/CURL/1 - Conceptos básicos Curl.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/Puertos más Importantes - Servicios/Puertos y Protocolos.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/Direcciones MAC.md",
-    "Self Study/Pinguino Mario - Hacking/Redes/Dirección Loopback.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
@@ -277,7 +278,6 @@
     "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
     "Files/Screenshot 2025-07-24 at 9.39.59 PM.png",
     "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
     "Untitled.canvas"
   ]
 }

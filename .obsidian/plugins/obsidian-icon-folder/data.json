@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiPresentationFill",
       "IbGraphLineDown",
       "🥉",
       "FasPhone",
-      "FasFilePdf",
-      "SiKubernetes"
+      "FasFilePdf"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -297,5 +297,6 @@
   "Master Data Science/TESIS 2025/Anteproyecto/Referencias": "FasFilePdf",
   "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
   "Master Data Science/Semestre 3": "🥉",
-  "Master Data Science/Semestre 3/Visualizacion de Datos": "IbGraphLineDown"
+  "Master Data Science/Semestre 3/Visualizacion de Datos": "IbGraphLineDown",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso": "RiPresentationFill"
 }
