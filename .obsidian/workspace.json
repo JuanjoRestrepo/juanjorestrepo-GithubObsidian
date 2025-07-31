@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/1.Introduccion.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.Introduccion"
+              "title": "Cronograma"
             }
           }
         ]
@@ -230,10 +230,17 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2eb52022eb7c6e10",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/2.Datos del docente.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso/1.Introduccion.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos",
+    "Files/Pasted image 20250731143145.png",
+    "Files/Pasted image 20250731143139.png",
+    "Files/Pasted image 20250731143130.png",
+    "Files/Pasted image 20250731143116.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/2.Datos del docente.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md",
+    "Files/Pasted image 20250731143054.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/1.Introduccion.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/1.Contexto - Ciclo de Construcción de un Sistema ML.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2.Reflexión.md",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos.md",
@@ -243,7 +250,7 @@
     "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md",
     "Files/Pasted image 20250731142534.png",
     "Self Study/Docker/1.1.Mejor manera de ordenar Dockerfile.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso",
     "Master Data Science/Semestre 3/Visualizacion de Datos",
     "Master Data Science/Semestre 3",
     "Master Data Science/Omicas/MinIO.md",
@@ -263,8 +270,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/Java/0 - Conceptos Introductorios/1 - Configurar Maven en Java.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Java/3 - Ejercicios Prácticos en Java/Conectar Base de datos con Java.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Java/2 - Programación/1 - Hola Mundo en Java + Primeros Pasos.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Comunidad Hacking Ético/MÁQUINA CRYPTOCORP.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Comunidad Hacking Ético/MÁQUINA FAKE NEWS.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React/Ejercicios React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/Node JS",
@@ -273,11 +278,6 @@
     "Files/Grafico Sobreajuste.png",
     "Files/Ejemplo Error Bayes Rendimiento Humano en Tarea.png",
     "Files/Error De Bayes.png",
-    "Files/mathTest.svg",
-    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.39.59 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
     "Untitled.canvas"
   ]
 }

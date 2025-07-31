@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiPresentationFill",
-      "IbGraphLineDown",
-      "🥉",
-      "FasPhone",
-      "FasFilePdf"
+      "TiFolder",
+      "📅",
+      "SiFirst",
+      "🧑‍🏫",
+      "RiPresentationFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -298,5 +298,9 @@
   "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
   "Master Data Science/Semestre 3": "🥉",
   "Master Data Science/Semestre 3/Visualizacion de Datos": "IbGraphLineDown",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Presentacion del Curso": "RiPresentationFill"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": "TiFolder",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso": "RiPresentationFill",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/1.Introduccion.md": "SiFirst",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/2.Datos del docente.md": "🧑‍🏫",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md": "📅"
 }
