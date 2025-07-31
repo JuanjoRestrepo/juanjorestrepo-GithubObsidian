@@ -1,11 +1,8 @@
 
 # 📌 Data Visualization – Definición y Relevancia (Tableau)
 
-**Fuente:**
-
-> “What Is Data Visualization? Definition, Examples, And Learning Resources”, Tableau  
-> [https://www.tableau.com/visualization/what-is-data-visualization](https://www.tableau.com/visualization/what-is-data-visualization)
-
+[Fuente - What Is Data Visualization? Definition, Examples, And Learning Resources”, Tableau  ](https://www.tableau.com/visualization/what-is-data-visualization)
+ 
 
 ![[Pasted image 20250731172416.png|500]]
 
