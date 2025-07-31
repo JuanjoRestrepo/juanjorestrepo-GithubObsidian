@@ -21,7 +21,6 @@
     - **Fluidez**: procesar múltiples formatos (JSON, CSV, HTML) limpiándolos, unificándolos y estructurándolos.
     - **Gestión concurrente de peticiones**: simultaneidad rápida y eficiente.
 
-
 # 3. Beneficios para las empresas
 
 1. **Consolidación de datos**: múltiples fuentes convergen a un solo depósito centralizado.
