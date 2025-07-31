@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🤔",
       "✏",
       "🏗",
       "FasBrain",
-      "ℹ",
-      "📁"
+      "ℹ"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -310,5 +310,6 @@
   "Master Data Science/Omicas/Tecnicas": "📁",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/3.Experiencia.md": "FasBrain",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/2.Contexto.md": "🏗",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Notas Data Pipeline Architecture for Businesses - Bright Data.md": "✏"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Notas Data Pipeline Architecture for Businesses - Bright Data.md": "✏",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/4.Reflexion.md": "🤔"
 }
