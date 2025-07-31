@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "TiFolder",
-      "📅",
-      "SiFirst",
-      "🧑‍🏫",
-      "RiPresentationFill"
+      "✏",
+      "🏗",
+      "FasBrain",
+      "ℹ",
+      "📁"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -297,10 +297,18 @@
   "Master Data Science/TESIS 2025/Anteproyecto/Referencias": "FasFilePdf",
   "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
   "Master Data Science/Semestre 3": "🥉",
-  "Master Data Science/Semestre 3/Visualizacion de Datos": "IbGraphLineDown",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": "TiFolder",
+  "Master Data Science/Semestre 3/Visualizacion de Datos": "📈",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": "📁",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso": "RiPresentationFill",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/1.Introduccion.md": "SiFirst",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/2.Datos del docente.md": "🧑‍🏫",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md": "📅"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md": "📅",
+  "Master Data Science/Semestre 1/Inducción/Modulo 1": "📁",
+  "Master Data Science/Semestre 1/Inducción/Modulo 2": "📁",
+  "Master Data Science/Semestre 1/Material Informativo": "ℹ",
+  "Master Data Science/Omicas/DEV": "📁",
+  "Master Data Science/Omicas/Tecnicas": "📁",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/3.Experiencia.md": "FasBrain",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/2.Contexto.md": "🏗",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Notas Data Pipeline Architecture for Businesses - Bright Data.md": "✏"
 }
