@@ -11,10 +11,14 @@
             "id": "14517cc10572a69b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/4.Reflexion.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "4.Reflexion"
             }
           }
         ]
@@ -226,8 +230,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "14517cc10572a69b",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/Rediseño.md",
     "Keys/Notion Backup Codes.md",
     "Keys/CPP POO 2025 SSH Key.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Ventanas y Alertas.md",
@@ -253,9 +260,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/1.Introduccion Módulo 1.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/1.Introduccion a la Visualización de Datos.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/2.Contexto.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/3.Experiencia.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/4.Reflexion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos",
