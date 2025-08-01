@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AVANCE JULIO"
+              "title": "Estructura"
             }
           }
         ]
@@ -232,8 +232,11 @@
   },
   "active": "14517cc10572a69b",
   "lastOpenFiles": [
-    "Master Data Science/Omicas/DEV/Coding/API KEY TEST.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
     "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
+    "Master Data Science/Omicas/DEV/Coding/API KEY TEST.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
@@ -255,9 +258,6 @@
     "Self Study/NodeJs/Clase 4/3. Intro a MongoDB Atlas.md",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
     "Self Study/NodeJs/Clase 4/1. Pasando de commonJS a ESModules.md",
-    "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
-    "Self Study/NodeJs/Clase 2/3. Headers y  Buffers.md",
-    "Self Study/NodeJs/Clase 2/2. Status Codes.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
