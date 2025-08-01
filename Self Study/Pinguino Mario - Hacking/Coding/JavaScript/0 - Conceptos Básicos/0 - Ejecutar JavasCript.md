@@ -74,7 +74,7 @@ let inputText = document.getElementById('userInput').value;
 En resumen, `document.getElementById()` es una herramienta poderosa y eficiente para seleccionar y manipular elementos HTML individuales basándose en su atributo `id`.
 # Ejecutar JavasCript en Terminal
 
-Node.js es un entorno de ejecución de JavaScript que permite ejecutar código JavaScript fuera de un navegador web, es decir, en el entorno del servidor o en la línea de comandos del sistema, y podemos usar NPM para gestionar las dependencias:
+**Node.js** es un entorno de ejecución de JavaScript que permite ejecutar código JavaScript fuera de un navegador web, es decir, en el entorno del servidor o en la línea de comandos del sistema, y podemos usar NPM para gestionar las dependencias:
 ```javascript
 console.log("Hola mundo")
 ```
