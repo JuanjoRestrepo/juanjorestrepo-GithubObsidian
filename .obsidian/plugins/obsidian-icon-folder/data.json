@@ -49,7 +49,10 @@
     "iconColor": "#00eeff"
   },
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II": "SiCodeproject",
-  "Keys/Facebook Account Keys.md": "SiFacebook",
+  "Keys/Facebook Account Keys.md": {
+    "iconName": "SiFacebook",
+    "iconColor": "#002aff"
+  },
   "Keys/Firefox Account Keys.md": {
     "iconName": "SiFirefox",
     "iconColor": "#ff5900"
@@ -88,7 +91,10 @@
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 1": "📁",
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 2": "📁",
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/images": "LiImage",
-  "Keys/Notion Backup Codes.md": "SiNotion",
+  "Keys/Notion Backup Codes.md": {
+    "iconName": "SiNotion",
+    "iconColor": "#ffffff"
+  },
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Datos profesora.md": "ℹ",
   "Master Data Science/Semestre 1/Gestion Datos/Mod 2/1. Bases de Datos Relacionales.md": "FasDatabase",
   "Master Data Science/Semestre 1/Gestion Datos/Mod 2/2. El Modelo Relacional.md": "SiRelay",
@@ -156,7 +162,10 @@
   "Qubika/Qversity 2025/3. Pandas": "SiPandas",
   "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)": "SiDatadog",
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "LiHammer",
-  "Keys/dbt key.md": "SiDbt",
+  "Keys/dbt key.md": {
+    "iconName": "SiDbt",
+    "iconColor": "#d4531c"
+  },
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": {
@@ -165,7 +174,10 @@
   },
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
   "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
-  "Keys/CPP POO 2025 SSH Key.md": "SiCplusplus",
+  "Keys/CPP POO 2025 SSH Key.md": {
+    "iconName": "SiCplusplus",
+    "iconColor": "#384fff"
+  },
   "Keys/Play Station Account 2024 Backup Codes and Pass.md": {
     "iconName": "SiPlaystation",
     "iconColor": "#0007d1"
