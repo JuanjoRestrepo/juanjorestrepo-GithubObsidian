@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Documento/Final.md",
+                "file": "Master Data Science/Omicas/DEV/Final.md",
                 "mode": "source",
                 "source": false
               },
@@ -230,15 +230,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "14517cc10572a69b",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+    "Master Data Science/Omicas/DEV/Final.md",
     "Files/Diagram_Omicas.png",
     "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Final.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
     "Master Data Science/Omicas/DEV/Coding/API KEY TEST.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
     "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
@@ -277,7 +277,6 @@
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Going deeper through the Gleason scoring scale - An automatic end-to-end system for histology prostate grading and cribriform pattern detection.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Introducing instance label correlation in multiple instance learning. Application to cancer detection on histopathological images.pdf",
     "Files/Grafico Subajuste.png",
-    "Files/Grafico Sobreajuste.png",
     "Untitled.canvas"
   ]
 }

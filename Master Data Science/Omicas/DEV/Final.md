@@ -1,10 +1,10 @@
 
 
-# Informe de Avances del Proyecto Omicas
+# Informe de Avances del Proyecto Ómicas
 
 **Fecha:** 31 de julio de 2025  
-**Autor(es):** Juan José Restrepo Rosero et al.  
-**Contexto:** Proyecto de sistematización y gestión de datos multiómicos en el semillero iÓMICAS, Maestría en Ciencia de Datos – Pontificia Universidad Javeriana Cali.
+**Autor(es):** Juan José Restrepo Rosero.  
+**Contexto:** Proyecto de sistematización y gestión de datos multiómicos en el semillero iÓMICAS
 
 ---
 
@@ -16,7 +16,8 @@ El objetivo de este proyecto es construir un pipeline ETL reproducible y escalab
 
 ## 2. Arquitectura General
 
-![[Diagram_Omicas.png]]
+
+![[Diagram_Omicas.png|centered]]
 
 
 **Descripción de capas**:  
