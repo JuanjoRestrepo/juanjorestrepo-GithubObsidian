@@ -1,4 +1,5 @@
 Primero creamos la estructura en HTML y después con javascript modificamos el input y los botones:
+
 ```javascript
 <!DOCTYPE html>
 <html lang="en">
