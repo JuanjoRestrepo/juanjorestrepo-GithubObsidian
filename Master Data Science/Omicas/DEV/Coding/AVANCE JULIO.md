@@ -58,3 +58,21 @@ flowchart LR
 
 ```
 
+
+
+```mermaid
+flowchart TB
+  subgraph Airflow
+    direction TB
+    extract_scopus --> clean_scopus --> load_scopus
+    extract_raman   --> clean_raman   --> load_raman
+    extract_ftir    --> clean_ftir    --> load_ftir
+    extract_uvvis   --> clean_uvvis   --> load_uvvis
+  end
+
+  subgraph ETL [ ETL Pipeline ]
+    direction LR
+    Airflow
+  end
+
+```
