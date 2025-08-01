@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasFilePdf",
-      "TiCircleNumber1",
-      "🧪",
       "RiSendPlane2Fill",
-      "🤔"
+      "🤔",
+      "✏",
+      "🏗",
+      "FasBrain"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -49,10 +49,7 @@
     "iconColor": "#00eeff"
   },
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II": "SiCodeproject",
-  "Keys/Facebook Account Keys.md": {
-    "iconName": "SiFacebook",
-    "iconColor": "#002aff"
-  },
+  "Keys/Facebook Account Keys.md": "SiFacebook",
   "Keys/Firefox Account Keys.md": {
     "iconName": "SiFirefox",
     "iconColor": "#ff5900"
@@ -91,10 +88,7 @@
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 1": "📁",
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 2": "📁",
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/images": "LiImage",
-  "Keys/Notion Backup Codes.md": {
-    "iconName": "SiNotion",
-    "iconColor": "#ffffff"
-  },
+  "Keys/Notion Backup Codes.md": "SiNotion",
   "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Datos profesora.md": "ℹ",
   "Master Data Science/Semestre 1/Gestion Datos/Mod 2/1. Bases de Datos Relacionales.md": "FasDatabase",
   "Master Data Science/Semestre 1/Gestion Datos/Mod 2/2. El Modelo Relacional.md": "SiRelay",
@@ -162,10 +156,7 @@
   "Qubika/Qversity 2025/3. Pandas": "SiPandas",
   "Qubika/Qversity 2025/5. Canalizaciones de Datos (ETL)": "SiDatadog",
   "Qubika/Qversity 2025/6. Construyendo Data Pipelines": "LiHammer",
-  "Keys/dbt key.md": {
-    "iconName": "SiDbt",
-    "iconColor": "#d4531c"
-  },
+  "Keys/dbt key.md": "SiDbt",
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
   "Keys/Open AI API Key 2025.md": {
@@ -174,10 +165,7 @@
   },
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
   "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
-  "Keys/CPP POO 2025 SSH Key.md": {
-    "iconName": "SiCplusplus",
-    "iconColor": "#384fff"
-  },
+  "Keys/CPP POO 2025 SSH Key.md": "SiCplusplus",
   "Keys/Play Station Account 2024 Backup Codes and Pass.md": {
     "iconName": "SiPlaystation",
     "iconColor": "#0007d1"
@@ -320,13 +308,7 @@
   "Master Data Science/Semestre 1/Material Informativo": "ℹ",
   "Master Data Science/Omicas/DEV": "📁",
   "Master Data Science/Omicas/Tecnicas": "📁",
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/5.Acción.md": "RiSendPlane2Fill",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS": "✏",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS/Notas Data Pipeline Architecture for Businesses - Bright Data.md": "✏",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos": "TiCircleNumber1",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/2.Contexto.md": "🏗",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/3.Experiencia.md": "FasBrain",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/4.Reflexion.md": "🤔",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md": "RiSendPlane2Fill",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md": "🧪",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Material": "FasFilePdf"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS/Notas Data Pipeline Architecture for Businesses - Bright Data.md": "✏"
 }

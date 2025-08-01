@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e5a4cae58109daf7",
+        "id": "bdb1599d922c2d9f",
         "type": "tabs",
         "children": [
           {
-            "id": "14517cc10572a69b",
+            "id": "2eb52022eb7c6e10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/Documento/Final.md",
+                "file": "Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Final"
+              "title": "Borrador de scopus_schema.json"
             }
           }
         ]
@@ -45,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -91,7 +91,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -214,12 +214,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
@@ -230,54 +230,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "14517cc10572a69b",
+  "active": "2eb52022eb7c6e10",
   "lastOpenFiles": [
-    "Files/Diagram_Omicas.png",
+    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
     "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Final.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Contexto.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
-    "Master Data Science/Omicas/DEV/Coding/API KEY TEST.md",
-    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario.md",
-    "Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/1. Arch.md",
-    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/DEV/Analisis de Series de Tiempo.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/4.Reflexion.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/6.Evaluación.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Final.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/1.Introduccion a la Visualización de Datos.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/Rediseño.md",
-    "Keys/Notion Backup Codes.md",
-    "Keys/CPP POO 2025 SSH Key.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Ventanas y Alertas.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/6 - Array.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/7 - Tipos de Datos en JS.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/3 - Campos de input y botones.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/4 - POO en JavaScript.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/0 - Ejecutar JavasCript.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Operadores/1 - Operador Typeof.md",
-    "Self Study/NodeJs/SSH KEY.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/4.Reflexion.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/2.Contexto.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/3.Experiencia.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Reflexión Sobre los 3 Casos.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/1.Introduccion Módulo 1.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Herramientas a usar.md",
+    "Files/Diagram_Omicas.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS/Notas Artículo 2.md",
+    "Files/Pasted image 20250731173433.png",
+    "Files/Pasted image 20250731173421.png",
+    "Files/Pasted image 20250731173416.png",
+    "Files/Pasted image 20250731173402.png",
+    "Files/Pasted image 20250731173351.png",
+    "Files/Pasted image 20250731173342.png",
+    "Files/Pasted image 20250731173317.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS/Notas Artículo 1.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/2.Contexto.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/3.Experiencia.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/4.Reflexion.md",
+    "Files/Pasted image 20250731172624.png",
+    "Files/Pasted image 20250731172547.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS/Notas Data Pipeline Architecture for Businesses - Bright Data.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/1.Introduccion.md",
+    "Master Data Science/Semestre 1/Trabajo de Grado.md",
+    "Master Data Science/Semestre 1/Semestre 1.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/Cronograma.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos",
     "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso",
     "Master Data Science/Semestre 3/Visualizacion de Datos",
     "Master Data Science/Semestre 3",
-    "Files/Pasted image 20250731152233.png",
-    "Files/Pasted image 20250731151733.png",
-    "Files/Pasted image 20250731143145.png",
-    "Files/Pasted image 20250731143139.png",
-    "Files/Pasted image 20250731143130.png",
-    "Files/Pasted image 20250731143116.png",
-    "Files/Pasted image 20250731143054.png",
-    "Files/Pasted image 20250731142534.png",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Going deeper through the Gleason scoring scale - An automatic end-to-end system for histology prostate grading and cribriform pattern detection.pdf",
     "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Introducing instance label correlation in multiple instance learning. Application to cancer detection on histopathological images.pdf",
-    "Files/Grafico Subajuste.png",
-    "Files/Grafico Sobreajuste.png",
     "Untitled.canvas"
   ]
 }
