@@ -11,10 +11,14 @@
             "id": "7d9b4ffaab3ab757",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "REUNION 1"
             }
           }
         ]
@@ -228,10 +232,11 @@
   },
   "active": "7d9b4ffaab3ab757",
   "lastOpenFiles": [
+    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
+    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
     "Keys/Google Account Keys.md",
     "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/Omicas/DEV/Final.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
     "Files/Diagram_Omicas.png",
     "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Cronograma.md",
@@ -254,7 +259,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/3 - Campos de input y botones.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/4 - POO en JavaScript.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/0 - Ejecutar JavasCript.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Operadores/1 - Operador Typeof.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
