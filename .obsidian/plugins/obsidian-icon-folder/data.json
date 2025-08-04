@@ -60,7 +60,10 @@
   "Keys/Google Account Keys.md": "SiGoogle",
   "Keys/Info Cuenta Libreta Militar.md": "🪖",
   "Keys/Info Cuenta SURA 2024.md": "⚕",
-  "Keys/VMware Workstation Pro 17 full license keys 2023.md": "SiVmware",
+  "Keys/VMware Workstation Pro 17 full license keys 2023.md": {
+    "iconName": "SiVmware",
+    "iconColor": "#fede10"
+  },
   "GitHub Porfolio ReadMe Profiles": "SiGithub",
   "Transactions": "💰",
   "Keys/Obsidian Templates GitHub Token.md": {

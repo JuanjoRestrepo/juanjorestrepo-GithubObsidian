@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e5a4cae58109daf7",
+        "id": "368119283c472738",
         "type": "tabs",
         "children": [
           {
-            "id": "14517cc10572a69b",
+            "id": "7d9b4ffaab3ab757",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "REUNION 1"
+              "title": "New tab"
             }
           }
         ]
@@ -230,8 +226,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "14517cc10572a69b",
+  "active": "7d9b4ffaab3ab757",
   "lastOpenFiles": [
+    "Keys/Google Account Keys.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/Omicas/DEV/Final.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
     "Files/Diagram_Omicas.png",
@@ -257,7 +255,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/4 - POO en JavaScript.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/0 - Ejecutar JavasCript.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Operadores/1 - Operador Typeof.md",
-    "Self Study/NodeJs/SSH KEY.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
