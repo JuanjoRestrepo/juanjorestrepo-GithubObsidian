@@ -11,14 +11,12 @@
             "id": "7d9b4ffaab3ab757",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf"
               },
-              "icon": "lucide-file",
-              "title": "REUNION 1"
+              "icon": "lucide-file-text",
+              "title": "Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data"
             }
           }
         ]
@@ -232,10 +230,19 @@
   },
   "active": "7d9b4ffaab3ab757",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Probability and Statistics for Computer Science.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material/M2U1-introduccion-aprendizaje_supervisado.pdf",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Convolucionales.md",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Recurrentes (RNN).md",
+    "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023).md",
+    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
     "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
     "Keys/Google Account Keys.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Master Data Science/Omicas/DEV/Final.md",
     "Files/Diagram_Omicas.png",
     "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
@@ -254,19 +261,12 @@
     "Keys/Notion Backup Codes.md",
     "Keys/CPP POO 2025 SSH Key.md",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Ventanas y Alertas.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/6 - Array.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/7 - Tipos de Datos en JS.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/3 - Campos de input y botones.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/4 - POO en JavaScript.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/0 - Ejecutar JavasCript.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos",
     "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso",
-    "Master Data Science/Semestre 3/Visualizacion de Datos",
-    "Master Data Science/Semestre 3",
     "Files/Pasted image 20250731152233.png",
     "Files/Pasted image 20250731151733.png",
     "Files/Pasted image 20250731143145.png",
@@ -275,8 +275,6 @@
     "Files/Pasted image 20250731143116.png",
     "Files/Pasted image 20250731143054.png",
     "Files/Pasted image 20250731142534.png",
-    "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Going deeper through the Gleason scoring scale - An automatic end-to-end system for histology prostate grading and cribriform pattern detection.pdf",
-    "Master Data Science/TESIS 2025/Anteproyecto/Referencias/Introducing instance label correlation in multiple instance learning. Application to cancer detection on histopathological images.pdf",
     "Files/Grafico Subajuste.png",
     "Untitled.canvas"
   ]
