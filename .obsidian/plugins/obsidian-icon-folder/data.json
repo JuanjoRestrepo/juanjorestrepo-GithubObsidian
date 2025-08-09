@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiGooglegemini",
       "RiSendPlane2Fill",
       "🤔",
       "✏",
-      "🏗",
-      "FasBrain"
+      "🏗"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -321,5 +321,9 @@
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md": "RiSendPlane2Fill",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md": "🧪",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Material": "FasFilePdf",
-  "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material": "FasFilePdf"
+  "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material": "FasFilePdf",
+  "Keys/Gemini API Key 2025.md": {
+    "iconName": "SiGooglegemini",
+    "iconColor": "#978aff"
+  }
 }
