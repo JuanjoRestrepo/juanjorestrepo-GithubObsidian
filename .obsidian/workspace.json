@@ -11,16 +11,14 @@
             "id": "d74640329eee429f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_236-240.pdf",
-                "page": 1,
-                "left": 26,
-                "top": 670,
-                "zoom": 1.5194444444444444
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/3.Experiencia.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_236-240"
+              "icon": "lucide-file",
+              "title": "3.Experiencia"
             }
           }
         ]
@@ -236,6 +234,7 @@
   "lastOpenFiles": [
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/lectura_marcas_ canales_uso_del_color.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_236-240.pdf",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_182-198.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material",
@@ -253,7 +252,6 @@
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material/M2U1-introduccion-aprendizaje_supervisado.pdf",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Convolucionales.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Recurrentes (RNN).md",
