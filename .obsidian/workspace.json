@@ -13,13 +13,32 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf"
+                "file": "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf",
+                "page": 1,
+                "left": -10,
+                "top": 665,
+                "zoom": 1.6279761904761905
               },
               "icon": "lucide-file-text",
               "title": "Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron"
             }
+          },
+          {
+            "id": "e822a8f10bc25b3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -228,10 +247,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7d9b4ffaab3ab757",
+  "active": "e822a8f10bc25b3b",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material/M2U1-introduccion-aprendizaje_supervisado.pdf",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf",
+    "conflict-files-obsidian-git.md",
+    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
+    "Keys/Gemini API Key 2025.md",
+    "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material/M2U1-introduccion-aprendizaje_supervisado.pdf",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/Material/Data Mining Concepts and Techniques (Third Edition) - Chapter 2 - Getting to Know Your Data.pdf",
     "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/Material/1_Machine Learning Refined_Ch1.pdf",
@@ -260,13 +282,9 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/Rediseño.md",
-    "Keys/Notion Backup Codes.md",
-    "Keys/CPP POO 2025 SSH Key.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/0 - Conceptos Básicos/8 - Ventanas y Alertas.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material/Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussbaumer - Storytelling with data a data visualization guide for business professionals Knaflic, Cole Nussb.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/NOTAS",
     "Files/Pasted image 20250731152233.png",
     "Files/Pasted image 20250731151733.png",
     "Files/Pasted image 20250731143145.png",
