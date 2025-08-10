@@ -41,7 +41,7 @@ Los mecanismos de representación de información empleados durante la pandemia 
 
 [2] SaluData - Observatorio de Salud de Bogotá, “Datos que salvan.” [En línea]. Disponible en: [https://saludata.saludcapital.gov.co/osb/datos-que-salvan/](https://saludata.saludcapital.gov.co/osb/datos-que-salvan/) [Accedido: 10-ago-2025].
 
-[3] C. Ardura, “Visualización de datos COVID-19 en Colombia,” 2020. [En línea].
+[3] C. Ardura, “Visualización de datos COVID-19 en Colombia,” 2020.
 
 [4] M. L. Montes Rojas, J. González Vélez y M. L. Pier Castello, “El diseño de información en la visualización interactiva de prensa para la cobertura de la pandemia COVID-19,” _Revista 180_, no. 50, pp. 18–31, 2022.
 
