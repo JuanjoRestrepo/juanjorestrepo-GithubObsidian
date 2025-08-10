@@ -33,3 +33,6 @@ Ofrecía una interfaz más limpia y focalizada, con mapas por localidad e indica
     
 
 En conclusión, los mecanismos de representación de información oficiales fueron cruciales para el seguimiento ciudadano de la pandemia. No obstante, la efectividad comunicativa no depende solo de la precisión de los datos, sino también de cómo se presentan. Una visualización clara, estandarizada, contextualizada y accesible puede no solo mejorar la comprensión pública, sino también fortalecer la confianza en las instituciones.
+
+
+
