@@ -1,57 +1,54 @@
-### **Mecanismos de Representación de Información sobre la COVID-19 en Colombia: Un Análisis de los Desafíos y las Oportunidades**
+# **Mecanismos de Representación de Información sobre la COVID-19 en Colombia: Un Análisis de los Desafíos y las Oportunidades**
 
-Durante la pandemia de COVID-19 en Colombia, la comunicación de datos epidemiológicos fue esencial para la toma de decisiones y para mantener informada a la ciudadanía. Instituciones como el Instituto Nacional de Salud (INS), el Ministerio de Salud y las secretarías de salud locales implementaron diversas herramientas visuales, tales como tableros interactivos, gráficos de líneas y mapas, para seguir la evolución de la pandemia. La intención era proporcionar acceso libre y constante a la información, lo que permitió un monitoreo riguroso. Sin embargo, la efectividad comunicativa de estos mecanismos dependió en gran medida de su diseño y presentación.
+Durante la pandemia de COVID-19 en Colombia, la comunicación de datos epidemiológicos jugó un papel decisivo en la toma de decisiones y en informar a la ciudadanía. Instituciones como el Instituto Nacional de Salud (INS), el Ministerio de Salud y secretarías de salud locales desplegaron herramientas visuales —tableros interactivos, gráficos de líneas, mapas y paneles de indicadores— para mostrar la evolución del virus y garantizar acceso abierto a la información [1], [2]. No obstante, la claridad comunicativa de estas herramientas dependió en gran medida de su diseño visual y de la contextualización de los datos [3].
 
----
+### Análisis de los mecanismos de representación
 
-#### **Análisis de los Mecanismos de Representación**
+El tablero del INS se destacó por consolidar datos estructurados con opciones de filtro por departamento, municipio, grupo etario y género, lo que permitió un monitoreo detallado [1]. Aun así, el exceso de elementos visuales en una sola interfaz —como mapas, gráficos y tablas superpuestos— pudo causar sobrecarga cognitiva, especialmente para audiencias no especializadas [4].
 
-La mayoría de las plataformas oficiales, como el tablero del **Instituto Nacional de Salud (INS)**, se destacaron por centralizar datos estructurados y ofrecer la posibilidad de filtrar información por variables clave como departamento, municipio, grupo etario y género (INS, s.f.). Este enfoque permitió un seguimiento detallado y transparente. No obstante, se identificaron áreas de mejora que afectaron la claridad y la usabilidad:
+Además, muchas visualizaciones no precisaban si la fecha correspondía a notificación, diagnóstico o inicio de síntomas, lo que generó ambigüedad temporal [3]. Tampoco incluían narrativa explicativa o definiciones de términos técnicos como “letalidad” o “positividad”, lo que afectaba interpretación y podía incentivar percepciones equivocadas [6].
 
-- **Sobrecarga cognitiva:** Un problema recurrente fue la saturación de elementos visuales en una sola pantalla. La combinación de mapas, gráficos, tablas y medidores en un mismo espacio podía dificultar la interpretación para audiencias no especializadas, generando una sobrecarga de información (Montes Rojas et al., 2022).
-    
-- **Falta de contexto y narrativa:** A menudo, las visualizaciones no especificaban claramente si las fechas correspondían a la notificación, el diagnóstico o el inicio de síntomas, lo que generaba ambigüedad sobre el verdadero momento de la evolución de la pandemia (Ardura, 2020). Además, se observó que, si bien se informaba sobre datos, se dejaba la interpretación al público, sin un acompañamiento narrativo que explicara los términos técnicos o el significado de los indicadores. Esta falta de contexto no solo afectaba la comprensión, sino que podía generar confusión o alarma en la población.
-    
-- **Diseño visual inconsistente:** En algunos casos, se usaron colores muy saturados y escalas no unificadas entre gráficos, lo que distraía y dificultaba la comparación. Se ha destacado la necesidad de estandarizar la presentación visual para evitar interpretaciones erróneas y fortalecer la confianza en la información oficial (Scielo, 2020).
-    
+Contrastando con lo anterior, el panel de **SaluData Bogotá** ofreció una interfaz más clara, con segmentación territorial precisa e indicadores visibles al primer vistazo [2]. Sin embargo, se beneficiaría de añadir tasas por 100 000 habitantes y líneas de tendencia para visualizar las variaciones diarias [5].
 
-Por otro lado, plataformas como el panel de **SaluData Bogotá** ofrecieron una interfaz más limpia y focalizada (SaluData, s.f.). Su fortaleza radicó en una mejor usabilidad y en una segmentación territorial clara, con indicadores clave visibles de inmediato. Estos ejemplos demuestran que la efectividad comunicativa no solo se logra con datos precisos, sino también con una presentación visualmente coherente y ordenada.
+Además, el Gobierno Nacional lanzó el **Safe Economic Reactivation Dashboard**, desarrollado en colaboración con el Banco Mundial. Este incluyó datos en tiempo real sobre contagios, capacidad sanitaria y capacidad para reactivar sectores económicos en más de 1 100 municipios, con desglose por género y etnia, facilitando decisiones equitativas y contextualizadas [0].
 
----
+Herramientas basadas en inteligencia de negocios también resultaron valiosas. Un panel web interactivo basado en datos del INS permitió seguimiento económico y sanitario en cinco ciudades principales (Bogotá, Medellín, Cali, Barranquilla y Cartagena). La plataforma, construida en Microsoft Power BI, incluía filtros dinámicos y análisis de tendencias —en escalas lineales y semilogarítmicas— así como cálculo de letalidad municipal, brindando una visión clara y flexible para la toma de decisiones [6], [5].
 
-#### **Desafíos y Propuestas de Mejora**
+### Lecciones de diseño global
 
-La experiencia de la pandemia reveló varios desafíos en la visualización de datos epidemiológicos en Colombia, que son cruciales para futuras situaciones de crisis. Los retos no solo residían en la presentación de los datos, sino también en el contexto de su recopilación y la necesidad de una comunicación más efectiva.
+Las revisiones internacionales muestran que los dashboards fueron esenciales para monitorear contagios, muertes, recuperaciones y pruebas; aunque muchos fueron principalmente informativos, no siempre apoyaban el análisis profundo [7]. Reflexiones recientes destacan que los dashboards se diseñaron apresuradamente y sin considerar audiencias específicas. Esto dejó lecciones clave para futuros desarrollos: la necesidad de claridad visual, menor sobrecarga, interactividad significativa y narrativas que guíen al usuario [8].
 
-1. **Narrativa y Contexto:** Es crucial acompañar cada gráfico con una breve interpretación y explicar los términos técnicos (p. ej., “letalidad” o “positividad”). Un buen ejemplo sería añadir anotaciones sobre eventos clave, como las cuarentenas o la aparición de nuevas variantes, para contextualizar los picos o las caídas en las cifras.
-    
-2. **Contextualización Per Cápita:** Se deben presentar las cifras normalizadas por población (por ejemplo, tasas por cada 100,000 habitantes) para evitar percepciones distorsionadas y permitir una comparación justa entre regiones con distinto tamaño.
-    
-3. **Estandarización y Accesibilidad:** Es esencial unificar paletas de colores, escalas y formatos para facilitar la comparación entre diferentes fuentes y periodos. Asimismo, se debe priorizar la accesibilidad mejorando el contraste, el tamaño de la fuente y usando paletas aptas para personas con daltonismo.
-    
-4. **Interactividad Ampliada:** Las plataformas deben permitir a los usuarios filtrar fácilmente los datos por edad, localidad, fecha y tipo de indicador. También es fundamental proveer una opción de descarga de datos que fomente la transparencia y la confianza.
-    
+### Propuestas de mejora
 
----
+- **Narrativa y contexto**: acompañar visualizaciones con textos que expliquen términos técnicos, eventos clave (como cuarentenas o variantes emergentes), y patrones de comportamiento [3], [4].
+- **Contextualización per cápita**: utilizar tasas por población para comparar regiones de distinto tamaño de forma justa [5].
+- **Estandarización y accesibilidad**: uniformizar colores, escalas y formatos; mejorar contraste y tipografía; usar paletas amigables para personas daltónicas [6].
+- **Interactividad ampliada**: permitir filtros por edad, localidad, fecha e indicador; incluir opciones de descarga de datos para transparencia [1], [6].
+- **Segmentación inclusiva**: incorporar variables como género y etnia —ya implementadas en el dashboard de reactivación económica— para visibilizar impactos desiguales [0].
+- **Equilibrio informativo-informativo**: diseñar dashboards que no solo informen, sino también ayuden a interpretar y analizar, como destacan estudios globales [7].
 
-### **Conclusión**
+### Conclusión
 
-El despliegue de mecanismos de representación de información fue una parte vital del manejo de la pandemia en Colombia. No obstante, la experiencia dejó en claro que la presentación de los datos es tan importante como su precisión. Una visualización clara, estandarizada y contextualizada puede mejorar la comprensión pública y fortalecer la confianza en las instituciones oficiales, sirviendo como una herramienta clave para la toma de decisiones informadas y la mitigación de la desinformación.
+Los mecanismos de representación de información empleados durante la pandemia fueron clave para la gobernanza y el empoderamiento ciudadano. No obstante, el diseño, la claridad y la contextualización determinaron su impacto real. Visualizaciones simples, estandarizadas, accesibles y contextualizadas no solo mejoran la comprensión, sino que fortalecen la confianza institucional y permiten respuestas más equitativas y efectivas ante crisis futuras.
 
 ---
 
-### **Referencias**
+**Referencias IEEE**
 
-- **Ardura, C.** (2020). _Visualización de datos COVID-19 en Colombia_. [http://ardura.co/200920_covid19_colombia.html](http://ardura.co/200920_covid19_colombia.html)
-    
-- **Departamento Nacional de Planeación (DNP)**. Tablero de vacunación COVID-19. [Consultado en informe adjunto].
-    
-- **Instituto Nacional de Salud (INS)**. Tablero oficial de la situación COVID-19 en Colombia. [https://www.ins.gov.co/Noticias/Paginas/coronavirus-casos.aspx](https://www.ins.gov.co/Noticias/Paginas/coronavirus-casos.aspx)
-    
-- Montes Rojas, M. L., González Vélez, J., & Pier Castello, M. L. (2022). El diseño de información en la visualización interactiva de prensa para la cobertura de la pandemia COVID-19: el caso del periódico The New York Times. _Revista 180_, (50), 18-31.
-    
-- **Organización Mundial de la Salud (OMS)**. Tablero global de la situación COVID-19. [https://data.who.int/dashboards/covid19/deaths?n=o](https://data.who.int/dashboards/covid19/deaths?n=o)
-    
-- **SaluData - Observatorio de Salud de Bogotá.** _Datos que salvan_. [https://saludata.saludcapital.gov.co/osb/datos-que-salvan/](https://saludata.saludcapital.gov.co/osb/datos-que-salvan/)
-    
-- **Scielo.** (2020). _Circulación de información relacionada con la salud en Colombia: el caso de la infodemia en redes sociales, en la pandemia por COVID-19_. [https://www.scielosp.org/article/rsap/2020.v22n2/214-219/en/?utm_source=chatgpt.com#](https://www.scielosp.org/article/rsap/2020.v22n2/214-219/en/?utm_source=chatgpt.com#)
+[0] _World Bank_, “Guiding Complex Decision-Making During the COVID-19 Crisis: Colombia Improves Data Collection Through a Real-Time Safe Economic Reactivation Dashboard,” 2021. [En línea].
+
+[1] Instituto Nacional de Salud (INS), “Tablero oficial de la situación COVID-19 en Colombia.” [En línea]. Disponible en: [https://www.ins.gov.co/Noticias/Paginas/coronavirus-casos.aspx](https://www.ins.gov.co/Noticias/Paginas/coronavirus-casos.aspx) [Accedido: 10-ago-2025].
+
+[2] SaluData - Observatorio de Salud de Bogotá, “Datos que salvan.” [En línea]. Disponible en: [https://saludata.saludcapital.gov.co/osb/datos-que-salvan/](https://saludata.saludcapital.gov.co/osb/datos-que-salvan/) [Accedido: 10-ago-2025].
+
+[3] C. Ardura, “Visualización de datos COVID-19 en Colombia,” 2020. [En línea].
+
+[4] M. L. Montes Rojas, J. González Vélez y M. L. Pier Castello, “El diseño de información en la visualización interactiva de prensa para la cobertura de la pandemia COVID-19,” _Revista 180_, no. 50, pp. 18–31, 2022.
+
+[5] Organización Mundial de la Salud (OMS), “Tablero global de la situación COVID-19.” [En línea]. Disponible en: [https://data.who.int/dashboards/covid19/deaths?n=o](https://data.who.int/dashboards/covid19/deaths?n=o) [Accedido: 10-ago-2025].
+
+[6] Scielo, “Circulación de información relacionada con la salud en Colombia: el caso de la infodemia… pandemia por COVID-19,” _Revista de Salud Pública_, vol. 22, no. 2, pp. 214–219, 2020. [En línea].
+
+[7] A. S. Asadzadeh _et al_., “Characteristics and specifications of dashboards developed for the ...” _BMC Public Health_, 2021.
+
+[8] A. Arleo _et al_., “Reflections on the Use of Dashboards in the Covid-19 Pandemic,” _arXiv_, Feb. 2025.
