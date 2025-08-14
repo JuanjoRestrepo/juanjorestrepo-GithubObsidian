@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
+                "file": "Master Data Science/Data Engineering Path 2023/Data Engineering Path 2023.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plan de Trabajo semillero iÓMICAS"
+              "title": "Data Engineering Path 2023"
             }
           }
         ]
@@ -232,6 +232,8 @@
   },
   "active": "d74640329eee429f",
   "lastOpenFiles": [
+    "Files/Pasted image 20250813235044.png",
+    "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
     "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
@@ -276,8 +278,6 @@
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Recurrentes (RNN).md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023).md",
     "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
-    "Master Data Science/TESIS 2025/Anteproyecto/Documento/Estructura.md",
-    "Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis.md",
     "Untitled.canvas"
   ]
 }
