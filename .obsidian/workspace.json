@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -98,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 570.5
+    "width": 443.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -230,7 +231,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d74640329eee429f",
+  "active": "04746bf9311ea587",
   "lastOpenFiles": [
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
