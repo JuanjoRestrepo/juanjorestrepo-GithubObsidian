@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ed91a899703e0666",
+        "id": "952e81bc28a4e415",
         "type": "tabs",
         "children": [
           {
-            "id": "d74640329eee429f",
+            "id": "24d199be7ff2f530",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Master Data Science/Data Engineering Path 2023/Data Engineering Path 2023.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Data Engineering Path 2023"
+              "title": "New tab"
             }
           }
         ]
@@ -45,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -75,8 +71,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4ec017a478863232",
@@ -92,7 +87,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "title": "Graph view"
             }
           }
         ]
@@ -215,12 +210,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
       "obsidian42-brat:BRAT": false,
       "ledger-obsidian:Add to Ledger": false,
       "obsidian-excalidraw-plugin:New drawing": false,
@@ -231,10 +226,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "04746bf9311ea587",
+  "active": "24d199be7ff2f530",
   "lastOpenFiles": [
-    "Files/Pasted image 20250813235044.png",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf",
+    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
+    "Files/Pasted image 20250813235044.png",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
     "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
@@ -261,7 +258,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/1.Lectura Marcas Canales.md",
     "Files/2018-04-18_17-51-46-00e99eda62fc7ef6f07d1bfb422ff134.jpg",
     "Files/2018-04-18_17-49-59-afc0a00e1db7c0b7d6960eff7783c751.png",
-    "Files/2018-04-18_17-55-45-9b37e247cc61f12ecac07484f638d761.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/lectura_marcas_ canales_uso_del_color.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_236-240.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material/TamaraMunzner_2015__VisualizationAnalysis_Other_Channels_182-198.pdf",
@@ -269,7 +265,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Material",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/1.Introduccion a la Visualización de Datos.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/2.Contexto.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material/Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)",
     "conflict-files-obsidian-git.md",
     "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
@@ -278,7 +273,6 @@
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Convolucionales.md",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 2/Redes Recurrentes (RNN).md",
     "Ing Electronica/Semestre 9 2023-1/IA/Corte 2/CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023).md",
-    "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md",
     "Untitled.canvas"
   ]
 }
