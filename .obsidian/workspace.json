@@ -11,14 +11,12 @@
             "id": "24d199be7ff2f530",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
-                "mode": "source",
-                "source": false
+                "file": "Files/flights_multiview_example.png"
               },
-              "icon": "lucide-file",
-              "title": "2.Lecuta estrategias de reducción de datos"
+              "icon": "lucide-image",
+              "title": "flights_multiview_example"
             }
           }
         ]
@@ -230,11 +228,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "24d199be7ff2f530",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Files/overview_detail_map.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
-    "Files/Pasted image 20250817152028.png",
+    "Files/overview_bogota_map.png",
+    "Files/overview_detail_map.png",
+    "Files/flights_multiview_example.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material",
     "Files/Pasted image 20250817144811.png",
@@ -255,7 +254,6 @@
     "Job Search/UAO Trabajo",
     "Files/Screenshot 2025-08-13 at 10.46.02 AM.png",
     "Files/Screenshot 2025-08-13 at 10.30.03 AM.png",
-    "Files/Screenshot 2025-08-13 at 10.21.38 AM.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/ENSAYO/Ensayo_Opinion_Visualizaciones_Juan_Jose_Restrepo_Rosero.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/1. Introducción módulo 2.md",
