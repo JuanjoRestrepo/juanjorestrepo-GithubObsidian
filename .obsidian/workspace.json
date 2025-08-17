@@ -11,12 +11,14 @@
             "id": "24d199be7ff2f530",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Files/flights_multiview_example.png"
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "flights_multiview_example"
+              "icon": "lucide-file",
+              "title": "2.Lecuta estrategias de reducción de datos"
             }
           }
         ]
@@ -228,12 +230,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "24d199be7ff2f530",
   "lastOpenFiles": [
+    "Files/flights_multiview_example.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
     "Files/overview_bogota_map.png",
     "Files/overview_detail_map.png",
-    "Files/flights_multiview_example.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material",
     "Files/Pasted image 20250817144811.png",
