@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiGooglecolab",
       "CoFileDocument",
       "✏",
       "FasFilePdf",
-      "TiCircleNumber1",
-      "FasFolder"
+      "TiCircleNumber1"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -332,5 +332,6 @@
   },
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)": "TiCircleNumber1",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS": "✏",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/ENSAYO": "CoFileDocument"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/ENSAYO": "CoFileDocument",
+  "Master Data Science/TESIS 2025/Anteproyecto/Google Colab": "SiGooglecolab"
 }
