@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "952e81bc28a4e415",
+        "id": "88bc3e5834f62784",
         "type": "tabs",
         "children": [
           {
-            "id": "24d199be7ff2f530",
+            "id": "c266687f2ec70123",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -226,7 +226,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "24d199be7ff2f530",
+  "active": "c266687f2ec70123",
   "lastOpenFiles": [
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Ejercicio_4_paises_OWID_Template_Colombia 1.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Ejercicio_4_paises_OWID_Template_Colombia.pdf",
