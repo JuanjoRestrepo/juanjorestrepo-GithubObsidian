@@ -11,10 +11,14 @@
             "id": "c266687f2ec70123",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -228,6 +232,10 @@
   },
   "active": "c266687f2ec70123",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/1. Trabajar con los datos - Storage.md",
+    "Master Data Science/TESIS 2025/Anteproyecto/Google Colab",
+    "Keys/Javeriana.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Ejercicio_4_paises_OWID_Template_Colombia 1.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Ejercicio_4_paises_OWID_Template_Colombia.pdf",
     "MASTER~1/SEMEST~3/VISUAL~1/MDULO2~1/UNIDAD~2/Material/Images Actividad 4 paises/male-population-collage.png",
@@ -255,7 +263,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/1.Introduccion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material",
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
@@ -271,8 +278,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/1. Introducción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/1.Lectura Marcas Canales.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/1.Introduccion a la Visualización de Datos.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/2.Contexto.md",
     "Untitled.canvas"
   ]
 }
