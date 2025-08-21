@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiIbm",
       "✏",
       "FasFilePdf",
       "TiCircleNumber3",
-      "FasFolder",
-      "TiFolder"
+      "FasFolder"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -341,5 +341,6 @@
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material": "FasFilePdf",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises": "FasImage",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones": "TiCircleNumber3",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material": "FasFilePdf"
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material": "FasFilePdf",
+  "Keys/IBM 2025.md": "SiIbm"
 }
