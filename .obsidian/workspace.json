@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/5.Acción.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.Acción"
+              "title": "4.Reflexión"
             }
           }
         ]
@@ -231,18 +231,19 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "130a77e166b30fbe",
   "lastOpenFiles": [
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/5.Acción.md",
-    "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.pdf",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/2.Contexto.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/1.Introduccion.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/3.Lectura Dashboard Ejemplo Análisis.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.pdf",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
+    "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis 1.docx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.docx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/2.Contexto.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/1.Introduccion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones",
     "conflict-files-obsidian-git.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/1. Trabajar con los datos - Storage.md",
@@ -277,8 +278,6 @@
     "Keys/Department of State Enterprise Exchange Student Alumni Account/Important Account Info.md",
     "Keys/Claude API Key 2025.md",
     "Job Search/UAO Trabajo/Metodo STAR.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/1. Introducción módulo 2.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/Debate - Mecanismos de representación de información.md",
     "Untitled.canvas"
   ]
 }
