@@ -34,6 +34,32 @@ Cada implementación sigue esencialmente estos pasos:
 	- *Código*: `baseline = baseline_als(y_sg, lam=baseline_lam, p=baseline_p, niter=10)` (función `baseline_als` en tu archivo).
 	- *Técnica*: ALS — resuelve un sistema lineal penalizando la curvatura del baseline; robusto para espectros químicos. Parámetros `lam` (fuerza de suavizado) y `p` (asimetría: cuánto penaliza puntos por encima vs debajo).
 
+- **Señal corregida y shift positivo**
+	- *Código*: `y_corr = y_sg - baseline` y `y_corr_shift = y_corr - np.nanmin(y_corr)` si hay negativos.
+	- *Motivo*: muchos detectores (y definiciones de prominencia) asumen señales no-negativas.
+
+- **Detección de picos (Scipy)**
+	- *Código*: `peaks_idx, props = find_peaks(y_corr_shift, prominence=prominence, distance=distance, height=height, **find_peaks_kwargs)`
+	- *Algoritmo*: `find_peaks` usa criterios locales sobre amplitud/vecindad; `prominence` mide cuánto sobresale un pico respecto a sus valles vecinos (más robusto que altura bruta).
+	- *Parámetros críticos*:
+	    - `prominence`: umbral relativo al ruido. En tu código se calcula por defecto como `max(np.nanstd(y_corr_shift)*3, 1e-9)` o variantes.
+	    - `distance`: separación mínima en puntos entre picos.
+	    - `height`: altura mínima absoluta opcional.
+
+- **Refinamiento del ápice**
+    - Código: `parabolic_interpolation(x, y_corr_shift, idx)` — devuelve apex sub-muestra (x_apex, y_apex).
+    - Técnica: ajuste parabólico con el punto y sus vecinos para desplazar el pico a una posición más precisa entre muestras discretas.
+
+- **Cálculo centroid/área**
+    - Código: `peak_centroid_area` usa `np.trapz` (integración numérica) sobre la ventana de base izquierda/derecha.
+    - Técnica: área bajo la curva y centro de masa dentro de la base del pico.
+
+- **FWHM estimado**
+    - Código: `fwhm_from_peak` estimación por recorrido hasta la mitad del máximo y linear interpolation para obtener posición de media altura.
+
+- **Resultado**
+    - DataFrame con: `shift_cm-1` (apex sub-muestra), `intensity` (apex refinado), `centroid`, `area`, `fwhm`, `raw_index`, `left_base_idx`, `right_base_idx`.
+
 
 
 ```python
