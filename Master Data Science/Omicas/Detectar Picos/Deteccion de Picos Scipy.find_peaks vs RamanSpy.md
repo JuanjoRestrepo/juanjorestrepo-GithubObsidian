@@ -37,6 +37,7 @@ Cada implementación sigue esencialmente estos pasos:
 - **Señal corregida y shift positivo**
 	- *Código*: `y_corr = y_sg - baseline` y `y_corr_shift = y_corr - np.nanmin(y_corr)` si hay negativos.
 	- *Motivo*: muchos detectores (y definiciones de prominencia) asumen señales no-negativas.
+	- `nanmin` retorna el minimo de un array a lo largo de un eje ignorando los *NaNs*
 
 - **Detección de picos (Scipy)**
 	- *Código*: `peaks_idx, props = find_peaks(y_corr_shift, prominence=prominence, distance=distance, height=height, **find_peaks_kwargs)`
@@ -62,7 +63,14 @@ Cada implementación sigue esencialmente estos pasos:
 
 
 
-```python
-  
+# 2. `inspect_peaks_rsp.py`
 
-```
+La más estable internamente hace:
+
+- **Lectura y normalización** (igual que arriba).
+- **Suavizado**: en una versión intentaste usar Ramanspy; la versión estable usa `savgol_filter` (igual que `inspect_peaks.py`), o en idea con Ramanspy usar `SavGol` u otro preprocessor de Ramanspy.
+- **Baseline**: en la versión simple usaste `baseline = np.min(y_smooth)` (muy simple) o intentaste usar `ASPLS` o `als_baseline` de Ramanspy.
+- **Detección**: finalmente usaste de nuevo `find_peaks` (porque la API de Ramanspy en tu contenedor no coincidía). Algunas versiones intentaban `spectrum.find_peaks(...)` de Ramanspy.
+- **Salida**: en la versión simplificada que funcionó produjiste `shift_cm-1`, `intensity`, `raw_index`, `prominence` como columnas.
+
+
