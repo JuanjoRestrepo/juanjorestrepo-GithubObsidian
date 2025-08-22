@@ -22,20 +22,21 @@
             }
           },
           {
-            "id": "9d499f0abd991a84",
+            "id": "1bb3f6554b0a7146",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.youtube.com/watch?v=uagkGbz12FU&t=1s",
-                "title": "(10) [M2U3] Entrevista Herramienta Rúbrica de Visualización - YouTube",
+                "url": "https://mg-local.servicios.javerianacali.edu.co/samlv2/idp/sign_in/29",
+                "title": "OneGate",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "(10) [M2U3] Entrevista Herramienta Rúbrica de Visualización - YouTube"
+              "title": "OneGate"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,7 +246,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "345639deabb63d69",
+  "active": "1bb3f6554b0a7146",
   "lastOpenFiles": [
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
