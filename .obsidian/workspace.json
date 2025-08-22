@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
+                "file": "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Solucion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.Acción"
+              "title": "Solucion"
             }
           }
         ]
@@ -233,11 +233,15 @@
   },
   "active": "345639deabb63d69",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/~$Car_Datasets_inventory.xlsx",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/Car_Datasets_inventory.xlsx",
+    "Files/Pasted image 20250822182409.png",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Solucion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/EVALUACION_VIS 1.xlsx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/EVALUACION_VIS.xlsx",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/3.Lectura Dashboard Ejemplo Análisis.md",
     "Master Data Science/Omicas/Detectar Picos/Deteccion de Picos Scipy.find_peaks vs RamanSpy.md",
     "Master Data Science/Omicas/Detectar Picos/Nuevas Notas.md",
@@ -254,7 +258,6 @@
     "Files/Pasted image 20250820201529.png",
     "Files/Pasted image 20250820201321.png",
     "Files/Pasted image 20250820194304.png",
-    "Files/Pasted image 20250820194017.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/1.Introduccion.md",
@@ -263,7 +266,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis 1.docx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.docx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/1. Trabajar con los datos - Storage.md",
     "Keys/Javeriana.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Herramientas a usar.md",
@@ -277,7 +279,6 @@
     "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2/Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron.md",
     "Master Data Science/Omicas/DEV/Plan de Trabajo semillero iÓMICAS.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
-    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
     "Untitled.canvas"
   ]
 }
