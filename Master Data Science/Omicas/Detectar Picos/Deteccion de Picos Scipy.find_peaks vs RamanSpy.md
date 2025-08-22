@@ -17,40 +17,26 @@ Cada implementación sigue esencialmente estos pasos:
 
 ## Usamos `find_peaks`
 
+
+
+### 1. A partir del archivo que tienes, los bloques clave son:
+
+- **Lectura y normalización de columnas**
+    - *Código*: `df = pd.DataFrame(data)` + renombrado `shift_cm1` → `shift_cm-1`.
+    - *Objetivo*: garantizar que `x` y `y` existan.
+
+- **Suavizado (Savitzky–Golay)**
+	- *Código*: `y_sg = savgol_filter(y, smoothing_window, polyorder)` (o su manejo si `smoothing_window` inválido).
+	- *Técnica*: filtro de polinomio local que preserva forma de picos mejor que un simple promedio.
+	- *Parámetro importante*: `smoothing_window` (debe ser impar) y `polyorder`.
+
+- **Baseline (ALS implementado localmente)**
+	- *Código*: `baseline = baseline_als(y_sg, lam=baseline_lam, p=baseline_p, niter=10)` (función `baseline_als` en tu archivo).
+	- *Técnica*: ALS — resuelve un sistema lineal penalizando la curvatura del baseline; robusto para espectros químicos. Parámetros `lam` (fuerza de suavizado) y `p` (asimetría: cuánto penaliza puntos por encima vs debajo).
+
+
+
 ```python
-  # --- Cargar JSON ---
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    df = pd.DataFrame(data)
+  
 
-
-    if df.empty:
-        meta = {"error": "empty"}
-        return (pd.DataFrame(), {}, meta) if return_meta else (pd.DataFrame(), {})
-
-  
-    # Normalizar columna shift
-    if "shift_cm1" in df.columns and "shift_cm-1" not in df.columns:
-        df = df.rename(columns={"shift_cm1": "shift_cm-1"})
-
-    if "shift_cm-1" not in df.columns:
-        raise KeyError("No se encontró 'shift_cm-1' ni 'shift_cm1' en el JSON")
-
-  
-    x = np.asarray(df["shift_cm-1"], dtype=float)
-    y = np.asarray(df["intensity"], dtype=float)
-
-  
-
-    # --- Suavizado ---
-
-    if smoothing_window >= len(y):
-
-        smoothing_window = len(y) - 1 if len(y) % 2 == 0 else len(y)
-
-    if smoothing_window % 2 == 0:
-
-        smoothing_window += 1
-
-    y_smooth = savgol_filter(y, window_length=smoothing_window, polyorder=polyorder)
 ```
