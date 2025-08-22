@@ -19,7 +19,7 @@ Cada implementación sigue esencialmente estos pasos:
 
 
 
-### 1. A partir del archivo que tienes, los bloques clave son:
+### 1. A partir del archivo los bloques clave son:
 
 - **Lectura y normalización de columnas**
     - *Código*: `df = pd.DataFrame(data)` + renombrado `shift_cm1` → `shift_cm-1`.
