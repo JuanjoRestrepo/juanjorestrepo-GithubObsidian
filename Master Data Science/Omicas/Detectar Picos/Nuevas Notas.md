@@ -214,3 +214,51 @@ def inspect_peaks_rsp(json_path, plot=False, return_meta=False,
 - Exportar los resultados por lote a CSV / tabla SQL (ya tienes `save_peaks.py` → integrarlo).
 
 
+
+
+![[Pasted image 20250822001059.png]]
+
+Entrada (JSON con shift_cm-1 e intensity)
+        ↓
+Suavizado (Savitzky-Golay)
+        ↓
+Corrección de baseline (ALS)
+        ↓
+Normalización (shift si hay negativos)
+        ↓
+Detección inicial (find_peaks con prominence, distance, height)
+        ↓
+Refinamiento (interpolación parabólica)
+        ↓
+Cálculo de métricas (centroid, área, FWHM - solo en inspect_peaks)
+        ↓
+Salida (DataFrame + plot opcional + meta info)
+
+
+
+# 🔎 Comparación `inspect_peaks` vs `inspect_peaks_rsp`
+
+|Paso|`inspect_peaks.py`|`inspect_peaks_rsp.py`|
+|---|---|---|
+|**Entrada**|JSON con `shift_cm-1` e `intensity`.|Igual.|
+|**Suavizado**|`savgol_filter` (ventana y orden ajustables).|Igual.|
+|**Baseline**|Algoritmo ALS (Asymmetric Least Squares).|Igual.|
+|**Normalización**|Desplaza señal si hay valores negativos.|Igual.|
+|**Detección inicial**|`scipy.signal.find_peaks` con heurísticas:  <br>• prominence = 3 × σ  <br>• distance = 0.2% de la longitud del espectro|Igual (cuando se usa SciPy).  <br>Si `backend="ramanspy"`, intenta usar métodos nativos de **ramanspy** y si falla → cae a SciPy.|
+|**Refinamiento del ápice**|Interpolación parabólica (sub-pixel).|Igual.|
+|**Bases izquierda/derecha**|Calculadas desde `find_peaks`.|Igual.|
+|**Métricas adicionales**|✔️ Incluye:  <br>• Centroide  <br>• Área (integral trapezoidal)  <br>• FWHM (ancho a media altura).|❌ Solo entrega:  <br>• posición del ápice (`shift_cm-1`)  <br>• intensidad  <br>• prominencia  <br>• índices de base.|
+|**Backend**|Solo SciPy.|SciPy (por defecto) o **ramanspy** (si está disponible).|
+|**Salida**|DataFrame completo con picos + métricas.|DataFrame básico con picos (más ligero).|
+|**Plots**|Opción de plot con señal corregida + picos.|Igual.|
+|**Meta info**|Parámetros usados + path de plot.|Igual (pero añade flag `used_ramanspy`).|
+
+---
+
+📌 **Conclusión rápida:**
+
+- `inspect_peaks` es más **rico en análisis** (área, FWHM, centroid).
+- `inspect_peaks_rsp` es más **flexible en backend** (puede usar ramanspy), pero más básico en resultados.
+- En la práctica, ambos detectan los mismos picos con SciPy.
+
+
