@@ -37,6 +37,7 @@ Cada implementación sigue esencialmente estos pasos:
 - **Señal corregida y shift positivo**
 	- *Código*: `y_corr = y_sg - baseline` y `y_corr_shift = y_corr - np.nanmin(y_corr)` si hay negativos.
 	- *Motivo*: muchos detectores (y definiciones de prominencia) asumen señales no-negativas.
+	- `nanmin` retorna el minimo de un array a lo largo de un eje ignorando los *NaNs*
 
 - **Detección de picos (Scipy)**
 	- *Código*: `peaks_idx, props = find_peaks(y_corr_shift, prominence=prominence, distance=distance, height=height, **find_peaks_kwargs)`
