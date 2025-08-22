@@ -21,3 +21,24 @@
 
 
 ![[Pasted image 20250821225829.png]]
+
+airflow@b5fdfb5d9e4e:/opt/airflow/project$ python test_inspect_peaks.py 🔹 13. Procesando: WE-PI-China-4-sensor 2.json Saved plot to: /opt/airflow/project/logs/inspect_peaks_WE-PI-China-4-sensor_2.png ✅ Número de picos detectados: 3 📊 Ruta del plot generado: /opt/airflow/project/logs/inspect_peaks_WE-PI-China-4-sensor_2.png shift_cm-1 intensity centroid area fwhm raw_index left_base_idx right_base_idx 0 1349.224006 95.113307 997.440077 13349.459654 47.038644 1296 257 1392 1 1581.098078 175.604053 1585.469210 9234.143066 39.438504 1536 1392 1640 2 2693.678212 107.789200 2527.380726 17054.023837 62.936478 2690 1640 3077 
+
+
+
+Comparado con el 
+
+airflow@b5fdfb5d9e4e:/opt/airflow/project$ python ETL/Silver/show_peaks.py 
+
+=== Picos detectados === 
+🔹 inspect_peaks:
+shift_cm-1 intensity 
+1349.224006 95.113307 
+1581.098078 175.604053 
+2693.678212 107.789200 
+
+🔹 inspect_peaks_rsp:
+shift_cm-1 intensity 
+1349.224006 95.113307 
+1581.098078 175.604053 
+2693.678212 107.789200
