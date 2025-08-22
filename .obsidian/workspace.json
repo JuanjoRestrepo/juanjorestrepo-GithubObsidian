@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "3.Experiencia"
             }
+          },
+          {
+            "id": "9d499f0abd991a84",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.youtube.com/watch?v=uagkGbz12FU&t=1s",
+                "title": "(10) [M2U3] Entrevista Herramienta Rúbrica de Visualización - YouTube",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "(10) [M2U3] Entrevista Herramienta Rúbrica de Visualización - YouTube"
+            }
           }
         ]
       }
@@ -233,6 +247,7 @@
   },
   "active": "345639deabb63d69",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/3.Lectura Dashboard Ejemplo Análisis.md",
     "Master Data Science/Omicas/Detectar Picos/Deteccion de Picos Scipy.find_peaks vs RamanSpy.md",
@@ -253,7 +268,6 @@
     "Files/Pasted image 20250820194017.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/1.Introduccion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.pdf",
