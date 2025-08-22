@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📁",
       "RiBankFill",
       "SiIbm",
       "✏",
-      "FasFilePdf",
-      "TiCircleNumber3"
+      "FasFilePdf"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -301,10 +301,7 @@
   "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
   "Master Data Science/Semestre 3": "🥉",
   "Master Data Science/Semestre 3/Visualizacion de Datos": "📈",
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": {
-    "iconName": "FasFolder",
-    "iconColor": "#e1ff00"
-  },
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": "📁",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso": "RiPresentationFill",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/1.Introduccion.md": "SiFirst",
   "Master Data Science/Semestre 3/Visualizacion de Datos/1.Presentacion del Curso/2.Datos del docente.md": "🧑‍🏫",
@@ -329,10 +326,7 @@
     "iconName": "SiGooglegemini",
     "iconColor": "#978aff"
   },
-  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones": {
-    "iconName": "FasFolder",
-    "iconColor": "#fafe0b"
-  },
+  "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones": "📁",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)": "TiCircleNumber1",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS": "✏",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/ENSAYO": "CoFileDocument",
@@ -343,5 +337,6 @@
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones": "TiCircleNumber3",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material": "FasFilePdf",
   "Keys/IBM 2025.md": "SiIbm",
-  "Self Study/Santander": "RiBankFill"
+  "Self Study/Santander": "RiBankFill",
+  "Master Data Science/Omicas/Detectar Picos": "📁"
 }
