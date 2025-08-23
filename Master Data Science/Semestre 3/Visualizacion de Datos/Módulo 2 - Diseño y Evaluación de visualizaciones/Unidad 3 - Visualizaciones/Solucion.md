@@ -120,7 +120,7 @@ He generado un histograma de ejemplo (con KDE superpuesto) y lo guardé como arc
 
 - Usando percentiles 33–67 como estimador del “rango de concentración” encontramos que **la mayor concentración de precios está entre ≈ 42,000 y 80,000 (moneda local).**
     
-- Estadísticas clave del dataset (N = 1,618 registros):
+- Estadísticas clave del dataset (N = 1,617 registros):
     
     - Mínimo: **1** (valor atípico/documentación).
         
