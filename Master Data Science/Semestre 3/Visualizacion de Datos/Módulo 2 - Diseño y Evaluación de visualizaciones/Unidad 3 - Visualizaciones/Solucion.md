@@ -104,3 +104,7 @@ He generado un histograma de ejemplo (con KDE superpuesto) y lo guardé como arc
 
 > **Visualización de referencia (generada con datos simulados):**  
 > Se presenta un histograma de precios de autos usados con KDE superpuesto (archivo: `histograma_precios_ejemplo.png`). El histograma usa bins de USD 1,000 y el KDE está escalado a la frecuencia para facilitar la comparación entre la forma de la distribución y la altura de las barras. En la muestra simulada, el rango de mayor concentración (33º–67º percentil) se ubica aproximadamente entre **USD 5,700 y USD 10,230**, lo que sugiere que la mayor parte del inventario se encuentra en la gama media de precios. Este gráfico sirve como guía para construir el boceto y validar la elección del histograma como método apropiado para responder: _¿Dónde se concentra el mayor rango de precio en este inventario?_
+
+
+
+How have you been? Whats up?
