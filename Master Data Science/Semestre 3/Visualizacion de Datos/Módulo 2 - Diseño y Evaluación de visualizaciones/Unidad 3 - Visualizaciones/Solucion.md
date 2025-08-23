@@ -107,4 +107,118 @@ He generado un histograma de ejemplo (con KDE superpuesto) y lo guardé como arc
 
 
 
-How have you been? Whats up?
+---
+
+
+# Histograma Final
+
+![[Pasted image 20250822215905.png]]
+
+## 1) Resultado principal (respuesta a la pregunta)
+
+**¿Dónde se concentra el mayor rango de precio en este inventario?**
+
+- Usando percentiles 33–67 como estimador del “rango de concentración” encontramos que **la mayor concentración de precios está entre ≈ 42,000 y 80,000 (moneda local).**
+    
+- Estadísticas clave del dataset (N = 1,618 registros):
+    
+    - Mínimo: **1** (valor atípico/documentación).
+        
+    - Máximo: **806,599**
+        
+    - Media: **≈ 65,652**
+        
+    - Mediana: **60,000**
+        
+    - Percentil 25: **32,686**
+        
+    - Percentil 33: **42,000**
+        
+    - Percentil 67: **80,000**
+        
+    - Percentil 75: **90,000**
+        
+
+**Interpretación breve:** la distribución es claramente sesgada a la derecha (cola larga hacia precios altos). La mayoría del inventario se agrupa en la gama baja-media/media (aprox. 42k–80k). Hay relativamente pocos autos premium que empujan la media hacia arriba; la mediana (60k) confirma que la “típica” oferta es de gama media.
+
+---
+
+## 2) Archivo generado (imagen)
+
+He guardado la figura en tu espacio de trabajo:
+
+- **Histograma (precio real con KDE y rango sombreado):**  
+    `/mnt/data/histograma_precios_reales.png`
+    
+
+(En la interfaz del chat deberías poder descargar ese archivo. Si quieres lo convierto a SVG o a PDF también.)
+
+La figura incluye:
+
+- Histograma (bins de 50,000 en moneda local — elegido según la dispersión).
+    
+- Curva KDE escalada sobre la frecuencia.
+    
+- Rango sombreado (33–67 percentil) y líneas punteadas.
+    
+- Anotación con N y rango estimado.
+    
+
+---
+
+## 3) Qué hice (breve metodología)
+
+- Leí y limpié columnas del Excel (renombré columnas a `name, year, km_driven, price, fuel, seller_type, transmission, owner`).
+    
+- Convertí `price` a numérico (coerce).
+    
+- Calculé percentiles y estadísticas descriptivas.
+    
+- Elegí **bin_width = 50,000** (aprox.) por la escala de precios; generé histograma + KDE y sombreé el intervalo 33–67% para marcar la concentración.
+    
+- Guardé la imagen en `/mnt/data/histograma_precios_reales.png`.
+    
+
+Nota: el dataset contiene valores atípicos (ej. precio = 1). Recomiendo revisar y, si corresponde, filtrar registros con precios no plausibles antes de la versión final.
+
+---
+
+## 4) Texto listo para pegar en tu entrega (PDF). Copia y pega tal cual:
+
+**Planteamiento del problema**  
+Determinar en qué rango de precio se concentra la mayor parte del inventario de autos usados. Esta información es crítica para segmentación comercial, fijación de precios y estrategias de marketing.
+
+**Visualización propuesta**  
+Se utilizó un **histograma** de precios (bins = 50,000 unidades) con una curva de densidad (KDE) superpuesta. El histograma permite visualizar la frecuencia por intervalos de precio; la KDE suaviza la forma de la distribución y ayuda a ver picos de concentración.
+
+**Resultado**  
+La mayor concentración del inventario se encuentra aproximadamente entre **42,000 y 80,000** (moneda local). El histograma y la KDE muestran un pico en la parte baja-media del rango, confirmando que la oferta está concentrada en vehículos de gama media.
+
+**Justificación de la elección visual**
+
+- El precio es una variable cuantitativa continua → el histograma (o densidad) es la representación más expresiva y efectiva.
+    
+- Los bins permiten agrupar y simplificar la lectura (evitan saturación por valores individuales).
+    
+- La superposición de KDE ayuda a identificar el pico real de la distribución sin depender únicamente de la altura de barras.
+    
+- Para profundizar: se podrían crear _small multiples_ (histogramas por marca, por año o por tipo de transmisión) o un histograma apilado por categoría (por ejemplo, por `fuel` o `seller_type`) para comparar concentraciones entre subgrupos.
+    
+
+**Archivo demostrativo**  
+Adjunto el histograma generado con los datos reales: `histograma_precios_reales.png`. (Inserta esta imagen en el PDF y, además, añade la foto del esbozo manual como evidencia del boceto).
+
+---
+
+## 5) Recomendaciones para tu PDF final (Actividad 2)
+
+1. **Foto del boceto manual**: toma una foto nítida del dibujo a mano (buena iluminación, sin sombras).
+    
+2. **Incluir la figura real** (`histograma_precios_reales.png`) como referencia “computada”.
+    
+3. **Marcar en el boceto** el rango 42,000–80,000 con color destacado y añadir leyenda/nota explicativa.
+    
+4. **Anotar posibles anomalías** (e.g., registros con precio = 1; decidir si se excluyen en análisis final).
+    
+5. **Entregar tanto la foto del boceto como la imagen generada** y el texto (la sección “Resultado” + “Justificación”) en el PDF.
+
