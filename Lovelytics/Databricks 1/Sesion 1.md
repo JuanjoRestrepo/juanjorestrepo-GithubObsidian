@@ -24,8 +24,27 @@
 
 ![[Pasted image 20250924161516.png]]
 
+## Lakehouse Fundamentals
 - Contenido gratuito
 - 8-10 videos de 1hora
-- Con
+- Conceptos introductorios
+- Test multiples preguntas
+- Se puede repetir las varias veces
+- Nada de código, es mas conceptual. Muy básico
 
-# 2. Databricks 
+## Data Engineer Associate
+- Orientado para iniciantes en Databricks
+
+
+## Engineer Profressional
+- Profesionales con mas experiencia
+- 
+# 2. Databricks Data Engineer Associate
+
+![[Pasted image 20250924161739.png]]
+
+
+# Certificación
+![[Pasted image 20250924161917.png]]
+
+
