@@ -98,4 +98,12 @@
 
 ---
 
-**![[Pasted image 20250924171958.png]]**
+![[Pasted image 20250924171958.png]]
+
+
+![[Pasted image 20250924172345.png]]
+
+![[Pasted image 20250924172638.png]]
+
+
+
