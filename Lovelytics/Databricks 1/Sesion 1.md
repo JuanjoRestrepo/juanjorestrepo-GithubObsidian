@@ -48,3 +48,12 @@
 ![[Pasted image 20250924161917.png]]
 
 
+# Importancia de un Data Engineer
+
+![[Pasted image 20250924162135.png]]
+
+
+![[Pasted image 20250924162301.png]]
+
+![[Pasted image 20250924162429.png]]
+
