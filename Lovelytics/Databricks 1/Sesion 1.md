@@ -71,4 +71,7 @@
 ## Workspace
 - Espacio central donde tenemos todo lo de la plataforma, los recursos y permite a las personas trabajar en conjunto de ese entorno
 - Storage Account: los datos que se generan al usar databricks, logs, sparks, etc...
-- 
+
+
+![[Pasted image 20250924163613.png]]
+
