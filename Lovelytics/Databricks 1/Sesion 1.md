@@ -79,3 +79,16 @@
 
 ![[Pasted image 20250924164615.png]]
 
+# Databricks Free Edition
+![[Pasted image 20250924164727.png]]
+
+
+# Demo Databricks - Ingesta 
+
+![[Pasted image 20250924164820.png]]
+
+![[Pasted image 20250924164929.png]]
+
+
+![[Pasted image 20250924165124.png]]
+
