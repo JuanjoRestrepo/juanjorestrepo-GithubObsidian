@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiApple",
       "SiMicrosoft",
       "RaLoveHowl",
       "TiBrandDatabricks",
-      "📁",
-      "RiBankFill"
+      "📁"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -341,5 +341,6 @@
   "Master Data Science/Omicas/Detectar Picos": "📁",
   "Lovelytics/Databricks 1": "TiBrandDatabricks",
   "Lovelytics": "RaLoveHowl",
-  "Keys/Microsoft.md": "SiMicrosoft"
+  "Keys/Microsoft.md": "SiMicrosoft",
+  "Keys/Apple Id.md": "SiApple"
 }
