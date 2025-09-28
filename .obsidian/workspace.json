@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keys/Google Account Keys.md",
+                "file": "Keys/Facebook Account Keys.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Google Account Keys"
+              "title": "Facebook Account Keys"
             }
           }
         ]
@@ -233,6 +233,7 @@
   },
   "active": "345639deabb63d69",
   "lastOpenFiles": [
+    "Keys/Google Account Keys.md",
     "Lovelytics/Databricks 1/Sesion 1.md",
     "Files/Pasted image 20250924173815.png",
     "Files/Pasted image 20250924173808.png",
