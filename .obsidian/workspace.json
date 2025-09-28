@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keys/Microsoft.md",
+                "file": "Keys/Apple Id.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Microsoft"
+              "title": "Apple Id"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/Microsoft.md",
+                "file": "Keys/Apple Id.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Microsoft"
+              "title": "Outline of Apple Id"
             }
           },
           {
@@ -232,8 +232,9 @@
   },
   "active": "345639deabb63d69",
   "lastOpenFiles": [
-    "Keys/Javeriana.md",
     "Keys/Microsoft.md",
+    "Keys/Apple Id.md",
+    "Keys/Javeriana.md",
     "Keys/Facebook Account Keys.md",
     "Keys/Google Account Keys.md",
     "Lovelytics/Databricks 1/Sesion 1.md",
@@ -277,7 +278,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/1.Introduccion.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/2.Lecuta estrategias de reducción de datos.md",
     "Untitled.canvas"
   ]
 }
