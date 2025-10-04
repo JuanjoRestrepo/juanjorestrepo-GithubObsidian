@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keys/Apple Id.md",
+                "file": "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/2. Contexto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apple Id"
+              "title": "2. Contexto"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/Apple Id.md",
+                "file": "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/2. Contexto.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Apple Id"
+              "title": "Outline of 2. Contexto"
             }
           },
           {
@@ -209,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 329.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,8 +233,16 @@
   },
   "active": "345639deabb63d69",
   "lastOpenFiles": [
-    "Keys/Microsoft.md",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/caso_anne_roberts 1.docx",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/caso_anne_roberts.docx",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/1. Introducción.md",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/2. Contexto.md",
     "Keys/Apple Id.md",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 3 Equipo Humano de los Proyectos en Ciencia de Datos",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 2 Proceso de los Proyectos en Ciencia de Datos",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos",
+    "Keys/Microsoft.md",
     "Keys/Javeriana.md",
     "Keys/Facebook Account Keys.md",
     "Keys/Google Account Keys.md",
@@ -257,27 +266,19 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/Car_Datasets_inventory.xlsx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/EVALUACION_VIS 1.xlsx",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/EVALUACION_VIS.xlsx",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/3.Lectura Dashboard Ejemplo Análisis.md",
     "Master Data Science/Omicas/Detectar Picos/Deteccion de Picos Scipy.find_peaks vs RamanSpy.md",
     "Master Data Science/Omicas/Detectar Picos/Nuevas Notas.md",
     "conflict-files-obsidian-git.md",
-    "Master Data Science/Omicas/Detectar Picos",
     "Keys/IBM 2025.md",
-    "Self Study/Santander",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/NOTAS",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/2.Contexto.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/1.Introduccion.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Material/lectura-dashboard_ejemplo_analisis.pdf",
     "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/1. Trabajar con los datos - Storage.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Herramientas a usar.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/5.Acción.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/4.Reflexión.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/3.Experiencia.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/2.Contexto.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/1.Introduccion.md",
     "Untitled.canvas"
   ]
 }
