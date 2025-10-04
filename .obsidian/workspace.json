@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mantenimiento",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -231,7 +232,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "345639deabb63d69",
+  "active": "04746bf9311ea587",
   "lastOpenFiles": [
     "Files/Pasted image 20251004111307.png",
     "Files/Pasted image 20251004105539.png",
