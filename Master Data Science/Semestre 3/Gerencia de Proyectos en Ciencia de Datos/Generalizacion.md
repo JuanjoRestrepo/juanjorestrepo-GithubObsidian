@@ -11,8 +11,10 @@ El curso se desarrollará en tres módulos en los cuales, a través del estudio 
 # Módulos
 
 ## Módulo 1: Estrategia empresarial y Ciencia de Datos
-1. Unidad 1: Estrategia empresarial y proyectos en ciencia de datos Módulo 2: El proceso de los Proyectos de Ciencia de Datos
-2. Unidad 1: Planeación
-3. Unidad 2: Ejecución de proyectos en Ciencia de Datos
-## Módulo 3: Equipo humano de los proyectos de Ciencia de Datos Unidad 1: Conseguir el equipo humano del proyecto
-1. Unidad 2: Liderar el equipo del proyecto
+1. Unidad 1: Estrategia empresarial y proyectos en ciencia de datos 
+## Módulo 2: El proceso de los Proyectos de Ciencia de Datos
+1. Unidad 1: Planeación
+2. Unidad 2: Ejecución de proyectos en Ciencia de Datos
+## Módulo 3: Equipo humano de los proyectos de Ciencia de Datos 
+1. Unidad 1: Conseguir el equipo humano del proyecto
+2. Unidad 2: Liderar el equipo del proyecto 
