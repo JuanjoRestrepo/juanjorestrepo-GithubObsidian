@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mantenimiento",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -232,8 +232,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "04746bf9311ea587",
+  "active": "345639deabb63d69",
   "lastOpenFiles": [
+    "Files/Pasted image 20251004112341.png",
     "Files/Pasted image 20251004111307.png",
     "Files/Pasted image 20251004105539.png",
     "Files/Pasted image 20251004104908.png",
@@ -260,7 +261,6 @@
     "Files/Pasted image 20250924173104.png",
     "Files/Pasted image 20250924172842.png",
     "Files/Pasted image 20250924172638.png",
-    "Files/Pasted image 20250924172345.png",
     "Lovelytics/Databricks 1",
     "Lovelytics",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/5.Acción.md",
