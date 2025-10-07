@@ -70,3 +70,21 @@ La heurística de detección de tejido consideró que todos los parches tienen t
     
 - Los valores `3, 4, 5` probablemente son **clases anotadas** — en SICAPv2 suelen codificar distintos grados o tipos (por ejemplo: Gleason 3, Gleason 4, Gleason 5 o subclases).  
     **Importante**: NO asumas mapeo exacto sin confirmar con la documentación oficial del dataset o el README de SICAPv2. El mapeo (qué número = qué etiqueta) suele estar en la página del dataset o en los metadatos. Revisa `SICAPv2` README o `mask_palettes_summary.json`.
+
+
+---
+
+5) ¿Qué hago ahora por ti?
+
+Puedo:
+
+(1) Generarte la celda B completa para Colab que extrae embeddings con ResNet-50 (preprocesado correcto, batch, guardado en HDF5 por slide o por parche).
+
+(2) Generarte la celda para construir bag_manifest.csv (slide-level labels) y splits por paciente (train/val/test estratificados).
+
+(3) Generarte la celda para entrenar ABMIL (Ilse et al.) usando los embeddings guardados (loop de entrenamiento + cálculo de AUC/F1 + checkpointing).
+
+Mi recomendación práctica: Primero B (embeddings) y a continuación (2) splits. ¿Te genero ya la celda B lista para pegar en Colab?
+
+---
+
