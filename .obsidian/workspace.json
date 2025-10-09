@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Objetivo.md",
+                "file": "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Objetivo"
+              "title": "1. Protocolo HTTP"
             }
           }
         ]
@@ -233,8 +233,10 @@
   },
   "active": "537c68baeaa21157",
   "lastOpenFiles": [
-    "Rappi/Eleccion/Opcion A/5. Tech Stack.md",
+    "Self Study/NodeJs/Clase 1/2. Callbacks.md",
+    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Objetivo.md",
+    "Rappi/Eleccion/Opcion A/5. Tech Stack.md",
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1",
     "Rappi/Eleccion/Opcion A/1. MVP.md",
     "Rappi/Eleccion/Opcion A/2. Resumen rápido del dataset.md",
@@ -277,8 +279,6 @@
     "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/3. Experiencia.md",
     "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/2. Contexto.md",
     "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/1. Introducción.md",
-    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Generalizacion.md",
-    "Keys/Apple Id.md",
     "Untitled.canvas"
   ]
 }
