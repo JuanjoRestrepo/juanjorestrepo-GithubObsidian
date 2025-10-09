@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/5. Presentacion.md",
+                "file": "Rappi/Eleccion/7. Riesgos y Complicaciones.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Presentacion"
+              "title": "7. Riesgos y Complicaciones"
             }
           }
         ]
@@ -233,8 +233,10 @@
   },
   "active": "537c68baeaa21157",
   "lastOpenFiles": [
-    "Rappi/Eleccion/4. Métricas y Criterios.md",
+    "Rappi/Eleccion/Plan de Trabajo.md",
+    "Rappi/Eleccion/7. Riesgos y Complicaciones.md",
     "Rappi/Eleccion/5. Presentacion.md",
+    "Rappi/Eleccion/4. Métricas y Criterios.md",
     "Rappi/Eleccion/3. Tech Stack.md",
     "Rappi/Eleccion/2. Alcance.md",
     "Rappi/Eleccion/1. Comparación Opciones.md",
@@ -277,8 +279,6 @@
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/4.Reflexión.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/Solucion.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 3 - Visualizaciones/3.Experiencia.md",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS/3.Lectura Dashboard Ejemplo Análisis.md",
-    "Master Data Science/Omicas/Detectar Picos/Deteccion de Picos Scipy.find_peaks vs RamanSpy.md",
     "Untitled.canvas"
   ]
 }
