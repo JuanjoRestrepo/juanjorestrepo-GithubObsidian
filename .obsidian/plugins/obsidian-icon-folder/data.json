@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber0",
+      "SiUbereats",
       "BoBxsBusiness",
       "TiFolder",
-      "TiCircleNumber3",
-      "TiCircleNumber2",
-      "TiCircleNumber1"
+      "TiCircleNumber3"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -348,5 +348,7 @@
   "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 3 Equipo Humano de los Proyectos en Ciencia de Datos": "TiCircleNumber3",
   "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1": "TiFolder",
   "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos": "BoBxsBusiness",
-  "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo": "TiFolder"
+  "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo": "TiFolder",
+  "Rappi": "SiUbereats",
+  "Rappi/Eleccion": "TiCircleNumber0"
 }
