@@ -6,11 +6,11 @@ flowchart TD
 
   subgraph Fase1["Fase 1: Data Pipeline"]
 
-    A[Data Sources]
+    A[Data Sources - CSV, APIs]
 
     B[Ingestion & Validation]
 
-    C[Preprocessing]
+    C[Preprocessing - Pandas DataFrame]
 
   end
 
@@ -24,7 +24,7 @@ flowchart TD
 
   subgraph Fase2["Fase 2: Insights Engine"]
 
-    D[Insights Engine]
+    D[Insights Engine - anomalías, trends, KPIs]
 
     E[Reports & Visualizaciones]
 
@@ -42,7 +42,7 @@ flowchart TD
 
     F[Esquema de Datos y reglas/contexto]
 
-    V[Embeddings & Vector DB]
+    V[Embeddings & Vector DB - FAISS]
 
     G[Retriever / Search]
 
