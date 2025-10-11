@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Diagrama Arquitectura.md",
+                "file": "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 2/Plan de Trabajo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diagrama Arquitectura"
+              "title": "Plan de Trabajo"
             }
           }
         ]
@@ -233,8 +233,10 @@
   },
   "active": "537c68baeaa21157",
   "lastOpenFiles": [
-    "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Objetivo.md",
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Diagrama Arquitectura.md",
+    "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 2/Plan de Trabajo.md",
+    "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 2",
+    "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1/Objetivo.md",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
     "Self Study/NodeJs/Clase 4/1. Pasando de commonJS a ESModules.md",
     "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
@@ -265,7 +267,6 @@
     "Rappi/Eleccion",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Primer Checking.md",
     "Rappi",
-    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/Transcripts.md",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/readme.txt",
     "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo",
     "Files/Pasted image 20251007105131.png",
@@ -278,7 +279,6 @@
     "Files/Pasted image 20251007103832.png",
     "Files/Pasted image 20251007103730.png",
     "Files/Pasted image 20251007103637.png",
-    "Job Search/Amrize IT",
     "Untitled.canvas"
   ]
 }
