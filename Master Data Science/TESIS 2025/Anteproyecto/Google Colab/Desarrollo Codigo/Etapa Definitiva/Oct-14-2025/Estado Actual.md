@@ -57,3 +57,62 @@ Ordenados por prioridad (alto → bajo):
 
 ---
 
+# 3) Recomendaciones técnicas concretas (code + arquitectura)
+
+Breves y accionables (puedes pedirme que te entregue snippets/plantillas de código):
+
+A. **Preprocesamiento / patching**
+
+- Resolución: elegir 256×256 o 512×512 según trade-off; documenta rationale.
+    
+- StainNorm: Macenko (implementación en `staintools` o tu propio).
+    
+- Tissue filter: `quick_has_tissue` ya la tienes; fija `min_frac=0.05` u otro y registra.
+    
+
+B. **Extractor de características (embeddings)**
+
+- Modelos: ResNet50 (imagenet) fine-tune parcial; EfficientNet-B0 como alternativa. Extrae vector de 512–2048 dim.
+    
+- Guardar: un `.npy` por patch + `manifest.csv` con ruta, slide_id, patient_id, coords, has_tissue, gleason.
+    
+
+C. **Experimentos MIL (mínimo viable → luego avanzas)**
+
+- Baseline 1: ABMIL (Ilse et al.) — atención simple.
+    
+- Baseline 2: CLAM or DSMIL (si hay implementaciones disponibles).
+    
+- Avanzado: Graph-MIL (usar GNN sobre parches vecinos) y VGPMIL-PR para incertidumbre espacial.
+    
+
+D. **Entrenamiento**
+
+- Entrena sobre embeddings (no imágenes) — acelera.
+    
+- Sampling: limitar bag size (ej. 100–1000 patches), probar top-k.
+    
+- Optimización: AdamW, scheduler CosineLR, early stopping por AUC val.
+    
+- Checkpoints y reproducibilidad: guardar seed, versión código (git commit hash) en metadatos del checkpoint.
+    
+
+E. **Métricas & estadística**
+
+- Para cada fold reporta AUC, precision, recall, F1, Kappa y curva ROC. Agrega IC 95% via bootstrap a nivel slide. Comparaciones entre modelos: prueba de DeLong para AUC (o bootstrap paired).
+    
+
+F. **Explicabilidad**
+
+- Atención → heatmaps a WSI (re-dibujar pesos sobre ubicación de patches).
+    
+- Grad-CAM sobre parches top-attended para explicar la decisión local.
+    
+- Documenta ejemplos clínicos (casos FP/FN) con overlays.
+    
+
+G. **Incertidumbre**
+
+- MC Dropout: varias pasadas con dropout en modo eval → calcular varianza de predicción.
+    
+- VGPMIL-PR: acepta correlación espacial y da distribuciones; es citado en tu marco, entonces implementarlo como variante avanzada.
