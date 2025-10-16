@@ -158,3 +158,25 @@ flowchart TD
     
  > Funciones comunes y límites heurísticos (ej. máximo plausible del fee).
  
+
+# 3) Salidas (S2)
+
+- **D1 — `data/output/results.json` (o `results.json`, `multi_platform_results.json`)**
+    
+    - Qué contiene: lista de registros por producto por dirección (precios, fees, finalPrice, productFound/not_found, metadata de resolución).
+        
+    - Uso en presentación: muestra ejemplos — ya nos compartiste registros que muestran deliveryFeeValue, priceValue, finalPriceValue.
+        
+- **D2 — `data/mapping.csv`**
+    
+    - Qué contiene: cache / mapeo addressLabel → restaurantUrlResolved + nombre y confidence.
+        
+    - Por qué útil: evita re-resolver el mismo restaurante y ayuda a auditar fallos de resolución.
+        
+- **D3 — `data/screenshots/` y `data/debug_responses/`**
+    
+    - Screenshots para evidencia visual y debug.
+        
+    - `debug_responses` guarda `__NEXT_DATA__`, resúmenes XHR, y dumps para inspección manual cuando algo falla.
+
+
