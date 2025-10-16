@@ -138,22 +138,24 @@ flowchart TD
 
 
 
-**Scraper de Rappi — `scrapers/rappi_scraper.py` (SR1)**
+3. **Scraper de Rappi — `scrapers/rappi_scraper.py` (SR1)**
 
 - Rol: Extrae precios, fees (delivery/service), ETA, disponibilidad y captura productos objetivo.
-    
 - Mecanismos de extracción (en orden de prioridad):
-    
     1. `window.__NEXT_DATA__` (JSON in-page) — parseo heurístico.
-        
     2. XHR responses capturadas por `page.on("response")` — parseo de JSONs para claves como `delivery`, `service`, `fee`.
-        
     3. Análisis de texto en el DOM (`page.inner_text("body")`) — buscar patrones `envío`, `servicio`.
-        
     4. Simular add-to-cart — intentar agregar un item, leer el drawer/cart y extraer fees (si está disponible sin login).
-        
+
 - Productos: ejecuta una evaluación JS para listar bloques de producto (`BLOCK_QUERY`) y aplica heurísticas/sinónimos para encontrar `Big Mac`, `Combo Mediano`, `Coca-Cola 500ml`.
     
-- Output: una lista de registros por producto con campos: precios, flags de oferta, deliveryFeeValue, serviceFeeValue, finalPriceValue, feeSource, captura de screenshot.
+- Output: una lista de registros por producto con campos: `precios`, `flags de oferta`, `deliveryFeeValue`, `serviceFeeValue`, `finalPriceValue`, `feeSource`, captura de screenshot.
     
-- Qué decir: “El scraper aplica múltiples mecanismos en cascada para maximizar la probabilidad de extraer fees y precios; además intenta detectar ofertas y computar precios finales.”
+> El scraper aplica múltiples mecanismos en cascada para maximizar la probabilidad de extraer fees y precios; además intenta detectar ofertas y computar precios finales.
+
+4. **Scraper de UberEats / DiDi (SR2, otros)**
+- Hay`ubereats_scraper.py` y `didi_scraper.py`. Su papel es equivalente a `rappi_scraper.py` pero con selectores y heurísticas adaptadas a cada plataforma (buscar `__NEXT_DATA__`, XHR JSON, DOM, simulación de carrito).
+
+> Cada plataforma requiere adaptaciones puntuales — el orquestador mantiene la misma interfaz para normalizar outputs.
+
+
