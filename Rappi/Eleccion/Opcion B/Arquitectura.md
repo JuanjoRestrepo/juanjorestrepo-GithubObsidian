@@ -180,3 +180,31 @@ flowchart TD
     - `debug_responses` guarda `__NEXT_DATA__`, resúmenes XHR, y dumps para inspección manual cuando algo falla.
 
 
+---
+
+
+# 5) Flujo completo (línea por línea — lo que dices en la diapositiva del diagrama)
+
+1. `addresses.csv` → **resolver** (`resolve_restaurant_url`)
+    
+    - Dices: “Por cada dirección intentamos resolver cuál es el restaurante relevante con heurísticas en la página de búsqueda de Rappi.”
+        
+2. `selector` (inline) → **scrapers**
+    
+    - Dices: “Los selectores están embebidos en los scrapers; cada scraper los usa para localizar bloques y precios.”
+        
+3. `resolver` devuelve URLs → **scraper platform** (`scrapeRappi`, `scrapeUberEats`, etc.)
+    
+    - Dices: “Con la URL resuelta llamamos al scraper de la plataforma, pasándole la página de Playwright y la lista de targets.”
+        
+4. **Scrapers** → escriben datos crudos en el multi-plataforma / normalizan → **results.json** y **mapping.csv**
+    
+    - Dices: “Normalizamos los registros y los guardamos en JSON; también actualizamos el mapping cache para acelerar futuras corridas.”
+        
+5. **Screenshots + debug_responses** → se guardan para auditoría
+    
+    - Dices: “Guardamos pruebas (screenshots, NEXT_DATA, XHR dumps) para poder auditar por qué un valor fue extraído o por qué falló.”
+        
+6. **Resultados JSON** → alimentan `rappi_competitive_analysis.py` y demás → producen tablas, estadísticas y reportes visuales
+    
+    - Dices: “Los resultados son la entrada para el análisis automatizado que genera los dashboards y el reporte ejecutivo.”
