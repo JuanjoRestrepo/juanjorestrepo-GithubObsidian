@@ -1,14 +1,11 @@
 
 
 ```mermaid
-
 flowchart TD
 
     %% === ENTRADA DE DATOS ===
 
     A1["Archivo addresses.csv - contiene direcciones objetivo"]
-
-    A2["Archivo selector_config.py - define los selectores CSS y XPath"]
 
   
 
@@ -65,10 +62,6 @@ flowchart TD
     %% === FLUJO DE DATOS ===
 
     A1 -->|Direcciones de entrada| R1
-
-    A2 -->|Selectores| SR1
-
-    A2 -->|Selectores| SR2
 
     R1 -->|URL resueltas| SR1
 
