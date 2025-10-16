@@ -97,3 +97,16 @@ flowchart TD
     A5 -->|Visualizaciones interactivas| O2
 
 ```
+
+
+# 1) Entradas (A1, A2)
+
+**A1 — `data/addresses.csv`**
+- Qué es: CSV con las direcciones/queries que vas a muestrear (cada fila: `addressLabel`, `searchQuery`, `restaurantUrl` opcional).
+    
+- Uso: el runner (`scrapers/playwright_poc.py`) carga este CSV con `load_addresses()` y por cada entrada construye la `heuristic_query` o usa `restaurantUrl` override.
+
+>Las direcciones son la unidad de muestreo. El scraper itera por ellas para simular usuarios desde diferentes ubicaciones
+
+
+
