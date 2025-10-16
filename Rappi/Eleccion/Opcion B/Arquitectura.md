@@ -152,3 +152,9 @@ flowchart TD
 > Cada plataforma requiere adaptaciones puntuales — el orquestador mantiene la misma interfaz para normalizar outputs.
 
 
+6. **Utilidades y Logs — `scrapers/utils.py` (U1)**
+
+- Contiene funciones reutilizables: `sanitize_number`, `dump_json_to`, `retry`, `random_delay`, `now_utc_iso`, constantes como `MAX_REASONABLE_FEE`.
+    
+ > Funciones comunes y límites heurísticos (ej. máximo plausible del fee).
+ 
