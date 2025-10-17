@@ -33,22 +33,25 @@ Explicación paso a paso:
         
 2. **Caso 1:** si la query del usuario **ya menciona "mcdonald"**,  
     entonces no se altera:
-    ```python
-    heuristic_query = "McDonald's Polanco"
-    ```
     
-    porque ya es suficientemente específica.
+```python
+heuristic_query = "McDonald's Polanco"
+```
+    
+	Porque ya es suficientemente específica.
     
 3. **Caso 2:** si **no menciona "mcdonald"**,  
     el código **la enriquece automáticamente** para guiar la búsqueda:
     
-    `heuristic_query = f"McDonald's {base}"`
+```python
+heuristic_query = f"McDonald's {base}"
+```
+
     
     donde `base` es la dirección o barrio (`addr_label`).
-    
-    Ejemplo:
-    
-    - addressLabel = "Condesa"
-        
-    - searchQuery = ""  
-        👉 Resultado: `"McDonald's Condesa"`
+
+Ejemplo:
+
+- addressLabel = "Condesa"
+- searchQuery = ""  
+	👉 Resultado: `"McDonald's Condesa"`
