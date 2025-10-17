@@ -133,7 +133,7 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
 
 ### 1️⃣ Distribución de precios
 
-
+![[Pasted image 20251017005929.png]]
 
 - _“En general, los precios se concentran en dos rangos principales: uno bajo alrededor de $80–100 y otro alto cerca de $180–200 pesos. Esto refleja la segmentación entre bebidas y combos premium.”_
     
@@ -142,6 +142,8 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
 
 ### 2️⃣ Precios por plataforma
 
+![[Pasted image 20251017010051.png]]
+
 - _“Aquí vemos claramente que Rappi tiende a tener precios más altos que UberEats.”_
     
 - _“El rango de Rappi es más amplio, lo que refleja variación por zonas o promociones. UberEats muestra valores más compactos y económicos.”_
@@ -149,6 +151,7 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
 
 ### 3️⃣ Distribución por categoría de producto
 
+![[Pasted image 20251017010141.png]]
 - _“La muestra está equilibrada: tenemos 5 productos premium, 5 combos y 4 bebidas.”_
     
 - _“Esto asegura comparabilidad entre tipos de ítems en ambas plataformas.”_
@@ -156,14 +159,27 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
 
 ### 4️⃣ Precios promedio por zona
 
+
+
 - _“Los precios son consistentes en las zonas de mayor poder adquisitivo: Polanco, Condesa y Tlalpan Centro rondan los $142 pesos.”_
     
 - _“El Centro Histórico es significativamente más barato ($79), lo que confirma una diferenciación geográfica de precios.”_
 
 
+## 🗣️ **Cómo presentarlo oralmente (resumen de 20–25 segundos):**
+
+> “Aquí vemos el análisis exploratorio de precios.  
+> En la esquina superior izquierda observamos que la distribución es bimodal —productos económicos y combos premium—.  
+> En la comparación de plataformas, Rappi muestra precios más altos.  
+> En la parte inferior izquierda, vemos que las categorías están balanceadas, y a la derecha, las zonas premium mantienen precios alrededor de 140 pesos, mientras que el Centro Histórico es el más económico.”
 
 
 
+
+
+
+
+---
 
 
 # 3) ¿Qué hace cada script / dónde se ejecutan las piezas clave?
