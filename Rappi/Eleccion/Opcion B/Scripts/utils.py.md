@@ -108,6 +108,11 @@ def retry(func: Callable, attempts: int = 3, base_delay: float = 0.6):
 ```
 **Propósito:** ejecutar una función con **reintentos automáticos** en caso de error (patrón de “retry with backoff”).
 
+**Flujo:**
+
+1. Intenta ejecutar `func()` hasta `attempts` veces.
+2. Si falla, espera un tiempo antes de volver a intentar:
+
 
 ---
 
@@ -120,3 +125,53 @@ def random_delay(min_s: float = 1.2, max_s: float = 3.5):
 - Ayuda a simular comportamiento humano y **evita bloqueos automáticos** por detección de bots.
 
 ---
+
+```python
+def dump_json_to(path: str, obj: Any):
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+```
+
+Guarda cualquier objeto Python como archivo JSON:
+
+1. Crea directorios si no existen (`parents=True`).
+    
+2. Escribe el contenido de forma **formateada y legible** (`indent=2`).
+    
+3. Usa `ensure_ascii=False` para conservar acentos y caracteres especiales.
+    
+
+✅ **Usos:**
+
+- Guardar respuestas XHR o estructuras capturadas (`debug_responses`).
+- Registrar resultados parciales del scraping para análisis posterior.
+
+---
+
+```python
+def setup_logging(name: str) -> logging.Logger:
+
+```
+- Configura un **logger estandarizado** con nombre personalizado.
+- Solo se crea si no existe (evita duplicados).
+- Define formato:
+
+Centraliza cómo se imprimen los logs; mantiene consistencia en todo el pipeline.
+
+---
+
+```python
+async def save_screenshot(page, path: str, description: str = ""):
+```
+
+Guarda una captura de pantalla de la página, con manejo de errores robusto.
+
+Usa await page.screenshot(...) para capturar en modo asincrónico (compatible con Playwright async).
+
+Si el directorio no existe, lo crea.
+
+Imprime confirmación o error.
+
+✅ Propósito: capturar evidencia visual del estado del scraping (errores, bloqueos, etc.).
