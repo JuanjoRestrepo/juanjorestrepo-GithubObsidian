@@ -1,4 +1,18 @@
 
+# Guion completo — palabra por palabra (por diapositiva)
+
+**Slide 1 — Portada (0:00 – 0:40)**  
+"Buenos días. Soy Juan José Restrepo Rosero. Gracias por el tiempo. Hoy voy a presentar el caso técnico: ‘Sistema de Competitive Intelligence para Rappi’. En los próximos minutos les mostraré el objetivo del PoC, la arquitectura técnica, la estrategia de scraping, los principales hallazgos comparativos frente a Uber Eats y las recomendaciones accionables."
+
+**Slide 2 — Contexto y Objetivo (1:00 – 1:30)**  
+"Contexto breve: las plataformas de delivery compiten en tiempo real con promociones, tarifas dinámicas y disponibilidad variable. El objetivo de este PoC fue obtener métricas comparativas entre plataformas —en particular Rappi y Uber Eats— para entender competitividad por producto y por zona, y proponer acciones tácticas y técnicas. Importante: DiDi no estuvo disponible en este muestreo inicial; lo documentamos como limitación y proponemos integrarlo en la siguiente fase."
+
+**Slide 4 — Arquitectura (1:30 – 2:30)**  
+"Arquitectura de alto nivel: partimos de un archivo de direcciones representativas, un orquestador ejecuta scrapers modulares por plataforma y consolida los resultados en JSON y CSV. El stack técnico clave fue Playwright para scraping y Python/pandas para análisis; los outputs son reproducibles en notebooks para auditoría y demo. Esta arquitectura permite re-ejecución automática y trazabilidad mediante screenshots y logs."
+
+
+
+
 
 
 
