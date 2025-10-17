@@ -129,6 +129,38 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
 
 
 
+## 🧠 **Interpretación (para decir al presentar):**
+
+### 1️⃣ Distribución de precios
+
+
+
+- _“En general, los precios se concentran en dos rangos principales: uno bajo alrededor de $80–100 y otro alto cerca de $180–200 pesos. Esto refleja la segmentación entre bebidas y combos premium.”_
+    
+- _“La media es $128.93 y la mediana $144, lo que indica una ligera asimetría hacia productos de menor precio.”_
+    
+
+### 2️⃣ Precios por plataforma
+
+- _“Aquí vemos claramente que Rappi tiende a tener precios más altos que UberEats.”_
+    
+- _“El rango de Rappi es más amplio, lo que refleja variación por zonas o promociones. UberEats muestra valores más compactos y económicos.”_
+    
+
+### 3️⃣ Distribución por categoría de producto
+
+- _“La muestra está equilibrada: tenemos 5 productos premium, 5 combos y 4 bebidas.”_
+    
+- _“Esto asegura comparabilidad entre tipos de ítems en ambas plataformas.”_
+    
+
+### 4️⃣ Precios promedio por zona
+
+- _“Los precios son consistentes en las zonas de mayor poder adquisitivo: Polanco, Condesa y Tlalpan Centro rondan los $142 pesos.”_
+    
+- _“El Centro Histórico es significativamente más barato ($79), lo que confirma una diferenciación geográfica de precios.”_
+
+
 
 
 
