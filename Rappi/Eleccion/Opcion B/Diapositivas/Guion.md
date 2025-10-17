@@ -68,3 +68,25 @@ Aquí vemos la arquitectura general del sistema.”
 > “Y por último, usamos **simulación de interacción**, por ejemplo, agregando un producto al carrito, para detectar tarifas o precios que sólo aparecen después de una acción del usuario.”
 
 > “Estas tres capas se integran para construir un dataset **completo, verificable y estandarizado**, base de todo el análisis  posterior.”
+
+
+---
+
+## 🧠 **Diapositiva: Mejora — Simulación Add-to-Cart**
+#### **Texto breve en diapositiva (3–4 bullets):**
+
+- Último fallback cuando no se encuentran tarifas visibles.
+- Simula clics reales en “Agregar al carrito”.
+- Extrae tarifas directamente del resumen del pedido.
+- Aumenta la cobertura y confiabilidad del scraping.
+
+
+---
+### 🗣️ **Explicación oral (qué decir tú):**
+
+> “Esta mejora permite obtener las tarifas incluso cuando no están visibles en el HTML.  
+> El sistema identifica botones como _Agregar_ o _Añadir_, ejecuta un clic simulado y analiza el contenido del carrito, donde aparecen valores como el costo de envío o la tarifa de servicio.  
+> Esto hace que el scraper se comporte como un usuario real y actúe como capa de respaldo cuando los métodos tradicionales (como XHR o DOM parsing) no encuentran la información.  
+> Está implementado dentro del módulo _rappi_scraper.py_, en la función privada __try_simulate_add_to_cart_, y fue clave para aumentar la precisión del modelo de scraping.”
+
+
