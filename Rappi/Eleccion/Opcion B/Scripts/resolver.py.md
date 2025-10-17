@@ -177,3 +177,17 @@ def resolve_restaurant_url(page: Page, search_query: str) -> Tuple[Optional[str]
 
 
 
+
+
+
+# Resumen ejecutivo (3–5 puntos para la diapositiva)
+
+1. **Qué hace**: Orquesta el flujo completo — lee direcciones, resuelve URL de restaurante, ejecuta scraper específico por plataforma, captura XHR y guarda resultados (JSON + mapping + screenshots + debug).
+    
+2. **Arquitectura**: `playwright_poc.py` = _coordinador_. `resolver.py` elige URL; `rappi_scraper.py` extrae precios/fees; `utils.py` helper + delays; outputs en `data/output` y `data/debug_responses`.
+    
+3. **Robustez y trazabilidad**: rotación de User-Agent, delays aleatorios, captura de respuestas XHR, `selector_hash` y `resolution_meta` guardados como metadata para auditoría.
+    
+4. **Comportamiento ante fallos**: errores locales no abortan el run; se generan registros con `scrapeStatus` indicando la razón (no_restaurant, error_scraper, error_navigate).
+    
+5. **Extensible**: diseño modular — se puede añadir fácilmente `ubereats_scraper` o `didi_scraper` y un `multi_platform_scraper.py` que consolide.
