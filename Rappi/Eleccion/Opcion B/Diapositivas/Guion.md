@@ -1,64 +1,91 @@
-# Guion final (30 min: 20 exposición + 10 preguntas)
+## 🕐 0:00 – 1:30 | Introducción general
 
-## 🕐 0:00 – 1:30 | **Introducción general** (Slide: 1)
+**Diapositiva (texto corto):**
 
-**Slide (texto mínimo):**
-
-- Proyecto: Competitive Intelligence — Rappi vs. Uber Eats
+- PoC: Competitive Intelligence para plataformas de delivery
     
-- Objetivo: recolectar y comparar precios, delivery fee, service fee y disponibilidad
+- Plataformas: Rappi, Uber Eats
     
-- Estado: PoC funcional
+- Métricas: precio, delivery fee, service fee, disponibilidad
     
 
-**Lo que dices (30–45s):**  
-“Buenos días, soy Juan José. Presento un PoC de Competitive Intelligence para plataformas de delivery —principalmente Rappi y Uber Eats— que automatiza la recolección, validación y análisis de métricas clave como precio de producto, tarifas de envío y cargos de servicio. El resultado son datasets estandarizados listos para generar reportes ejecutivos.”
+**Qué decir (texto literal):**  
+“Buenos días, mi nombre es Juan José. El proyecto que presento hoy es un sistema de **Competitive Intelligence** para plataformas de delivery — centrado en **Rappi** y **Uber Eats**. Su propósito es recolectar, procesar y analizar métricas clave como precios, tarifas y disponibilidad de productos, de forma automática y auditada.”
+
+**Bullets oralmente (rápido):**
+
+- “Es un Proof of Concept funcional.”
+    
+- “Automatiza la captura y análisis de datos de mercado.”
+    
+- “Permite comparar comportamiento competitivo entre plataformas.”
+    
 
 ---
 
-## 🕐 1:30 – 4:00 | **Motivación y problema** (Slide: 2)
+## 🕐 1:30 – 4:00 | Motivación y problema
 
-**Slide (texto mínimo):**
+**Diapositiva (texto corto):**
 
-- Problema: no hay APIs públicas → datos no comparables
+- Problema: no hay APIs públicas comparables
     
-- Meta: sistema robusto, auditable y reproducible
+- Variabilidad: zona, hora, demanda
+    
+- Solución: scraping controlado y auditable
     
 
-**Lo que dices (45–60s):**  
-“El problema es simple: no tenemos APIs oficiales para comparar precios. Los valores cambian por zona, hora y demanda. Necesitamos datos comparables y trazables: por eso construimos este pipeline con Playwright que captura evidencia (screenshots y JSON) para auditoría.”
+**Qué decir (texto literal):**  
+“El reto: no hay APIs públicas comparables; los precios varían por zona, hora y demanda. Nuestro objetivo fue construir un sistema robusto y reproducible para obtener datos comparables entre plataformas.”
+
+**Puntos orales (breves):**
+
+- “Problema: falta de acceso oficial a datos.”
+    
+- “Enfoque: Playwright para navegación dinámica y captura de red.”
+    
+- “Valor: datos comparables, reproducibles y auditables.”
+    
 
 ---
 
-## 🕐 4:00 – 8:30 | **Arquitectura del sistema** (Slide: 3 — muestra el diagrama mermaid que ya tienes)
+## 🕐 4:00 – 8:30 | Arquitectura del sistema — explicación ampliada
 
-**Slide (texto mínimo):**  
-“Arquitectura modular, escalable y auditable — entrada: CSV → salida: reportes y dashboards”
+**Diapositiva (texto corto + diagrama):**
 
-**Explicación (lo que dices, 3–4 frases):**  
-“La arquitectura es modular: cada componente tiene responsabilidad única y queda bien desacoplado. El orquestador `multi_platform_scraper.py` controla el flujo; `resolver.py` localiza la URL correcta del restaurante; los scrapers `rappi_scraper.py` y `ubereats_scraper.py` extraen precios y fees; `utils.py` contiene validaciones, delays y persistencia; y el análisis final se realizó en `Rappi_Engineering_2025.ipynb`.”
-
-**Mini-descripciones (una frase cada una — para explicar rápida):**
-
-- `multi_platform_scraper.py`: orquesta todo (lectura CSV, instancias Playwright, escritura `results.json`).
+- Arquitectura modular, escalable y auditable
     
-- `resolver.py`: resuelve y selecciona la URL de restaurante más probable usando reglas de decisión.
-    
-- `rappi_scraper.py` / `ubereats_scraper.py`: extraen DOM, XHR y simulan add-to-cart para tarifas.
-    
-- `utils.py`: limpieza, retries, delays y dumps de debug.
-    
-- Notebook: análisis exploratorio, gráficos y conclusiones (fuente de los dashboards).
+- Flujos: CSV → orquestador → scrapers → JSON + evidencias → análisis
     
 
-**Si te preguntan “¿por qué modular y escalable?”** (respuesta corta):  
-“Modular porque cada pieza hace una tarea única (fácil de mantener/reemplazar). Escalable porque el orquestador acepta nuevas plataformas añadiendo un scraper y mantiene el formato de salida — se pueden ejecutar instancias en paralelo o cambiar el CSV para otros países.”
+**Qué decir (introducción):**  
+“La arquitectura que diseñé es modular, escalable y auditable. Todo parte de un archivo de direcciones y termina en reportes ejecutivos y dashboards visuales.”
+
+**Explicación módulo a módulo (línea por línea, decirlo tal cual):**
+
+- **multi_platform_scraper.py — orquestador:**  
+    “Es el núcleo. Lee el `addresses.csv`, itera direcciones y plataformas, captura respuestas HTTP y screenshots, compila `results.json` y `mapping.csv`.”
+    
+- **resolver.py — resolución de URL:**  
+    “Localiza la URL del restaurante usando una **lógica de selección** (reglas de decisión) que puntúa candidatos y devuelve `resolutionMeta` con la confianza.”
+    
+- **rappi_scraper.py / ubereats_scraper.py — scrapers por plataforma:**  
+    “Extraen nombre, precio, disponibilidad y tarifas. Implementan múltiples técnicas para obtener fees: `window.__NEXT_DATA__`, XHR/JSON, parsing del DOM y simulación Add-to-Cart.”
+    
+- **utils.py — utilidades:**  
+    “Contiene funciones transversales: `sanitize_number()` para limpiar números, `dump_json_to()` para guardar debug, delays aleatorios y umbrales (`MAX_REASONABLE_FEE`).”
+    
+- **Notebook / scripts de análisis:**  
+    “Aunque hay scripts en `analysis/`, el trabajo de análisis y visualización final se realizó en `Rappi_Engineering_2025.ipynb`.”
+    
+
+**Cierre (decirlo exactamente):**  
+“La separación por módulos facilita mantenimiento o extensión — por eso es _modular_; se puede paralelizar o ejecutar en más direcciones/plataformas sin cambiar la arquitectura — por eso es _escalable_; y cada ejecución deja capturas y JSON para auditoría — por eso es _auditable_.”
 
 ---
 
-## 🕐 8:30 – 11:00 | **Estrategias de scraping** (Slide: 4)
+## 🕐 8:30 – 11:00 | Estrategias de scraping
 
-**Slide (bullets cortos):**
+**Diapositiva (3 bullets):**
 
 - DOM parsing
     
@@ -67,170 +94,122 @@
 - Simulación Add-to-Cart
     
 
-**Lo que dices (30–40s):**  
-“Combinamos tres capas para aumentar cobertura: lectura del DOM (lo visible), captura de respuestas XHR/JSON (datos de backend) y la simulación de interacción (add-to-cart) para exponer tarifas ocultas. Juntas forman un dataset completo y verificable.”
-
-**Nota corta (qué script):**  
-“La simulación Add-to-Cart está en `rappi_scraper.py` → `_try_simulate_add_to_cart()`.”
+**Qué decir (texto literal):**  
+“Combinamos tres estrategias complementarias para maximizar cobertura y exactitud: DOM parsing para lo visible, XHR/JSON parsing para respuestas estructuradas del backend, y simulación Add-to-Cart como respaldo cuando las tarifas solo aparecen tras interacción del usuario.”
 
 ---
 
-## 🕐 11:00 – 13:30 | **Mejora: Simulación Add-to-Cart** (Slide: 5)
+## 🕐 11:00 – 13:30 | Mejora — Simulación Add-to-Cart
 
-**Slide (3–4 bullets):**
+**Diapositiva (4 bullets):**
 
-- Fallback para tarifas ocultas
+- Fallback último si no hay fees visibles
     
-- Simula clic en “Agregar”
+- Simula clics en 'Agregar'
     
-- Extrae resumen del pedido (delivery/service)
+- Extrae tarifas del resumen de pedido
     
-- Implementado en `rappi_scraper.py`
+- Implementado en `rappi_scraper.py` → `_try_simulate_add_to_cart`
     
 
-**Lo que dices (30–40s):**  
-“Al añadir el producto al carrito, aparecen valores que no están en el menú: tarifas dinámicas, comisiones o cargos por promociones. Eso aumentó nuestra tasa de detección y la exactitud del `finalPriceValue`.”
+**Qué decir (texto literal):**  
+“Si no encontramos fees por otras vías, simulamos añadir un producto al carrito. El scraper busca botones como 'Agregar' o 'Añadir', ejecuta un clic simulado y analiza el contenido del carrito donde aparecen el delivery y la service fee. Esto actúa como comportamiento de usuario real y fue clave para aumentar la precisión.”
 
 ---
 
-## 🕐 13:30 – 16:30 | **Procesamiento y validación de datos** (Slide: 6)
+## 🕐 13:30 – 16:30 | Procesamiento y validación de datos
 
-**Slide (bullets):**
+**Diapositiva (bullets):**
 
-- `results.json` (estandarizado) + `mapping.csv`
+- Outputs: `results.json`, `mapping.csv`, `data/debug_responses/`, `data/screenshots/`
     
-- `sanitize_number()` y `MAX_REASONABLE_FEE`
+- Limpieza: `sanitize_number()`
     
-- 4 vías para fees: NEXT_DATA, XHR, DOM, Add-to-Cart
+- Reglas: `MAX_REASONABLE_FEE`
     
-- Evidencia: screenshots + `debug_responses`
+- Clasificación: `success` / `not_found` / `error`
     
 
-**Lo que dices (40–45s):**  
-“Limpiamos y normalizamos los datos: convertimos cadenas a números con `sanitize_number()`, aplicamos umbrales (`MAX_REASONABLE_FEE`) y registramos cada decisión con `debug_responses` y screenshots para poder auditar fácilmente. Las rutas para extraer fees son: 1) `window.__NEXT_DATA__`, 2) XHR/JSON, 3) regex en DOM y 4) simulación de carrito.”
+**Qué decir (texto literal):**  
+“Los datos crudos se normalizan y validan: `sanitize_number()` limpia distintos formatos numéricos; rechazamos fees fuera de un umbral razonable; y cada registro incluye metadata de la resolución y origen del fee (`feeSource`). Además guardamos evidencia: JSONs de `window.__NEXT_DATA__`, resúmenes XHR y screenshots para auditoría y debugging.”
 
 ---
 
-## 🕐 16:30 – 19:00 | **Análisis exploratorio — Rappi vs Uber Eats** (Slides 7–11: gráficos)
+## 🕐 16:30 – 19:00 | Análisis exploratorio & hallazgos — Rappi vs Uber Eats
 
-> **Instrucción:** cada slide con gráfico pone 2 líneas de bullets; tú hablas ~20–30s por gráfico.
+> **Instrucción:** muestra los gráficos del notebook en el mismo orden. Aquí tienes exactamente qué decir por cada gráfico.
 
-### Slide 7 — **Distribución de precios (bimodal)**
+### Gráfico 1 — Distribución de precios (histograma)
 
-**Slide (bullets):**
+**Qué decir (20–25s):**  
+“Aquí vemos una distribución bimodal: un grupo de productos económicos alrededor de $80–100 MXN y un grupo premium cerca de $180–200 MXN. La media ronda $129 MXN y la mediana $144 MXN, lo que sugiere una ligera asimetría por productos de menor precio.”
 
-- Distribución bimodal: rango bajo (≈80–100) y alto (≈180–200)
-    
-- Media ≈ 129, Mediana ≈ 144
-    
+### Gráfico 2 — Precios por plataforma (boxplots Rappi vs UberEats)
 
-**Lo que dices (20–30s):**  
-“Observamos una distribución bimodal: productos individuales y combos premium. La media y la mediana muestran ligera asimetría hacia productos más baratos, lo que indica mezcla de ítems y promociones.”
+**Qué decir (20s):**  
+“En la comparación, Rappi muestra medianas más altas y un rango más amplio; Uber Eats aparece más compacto y con valores generalmente menores. Esto indica que Rappi tiende a tener precios base más altos o mayor variabilidad por zona o promoción.”
 
----
+### Gráfico 3 — Distribución por categoría (bebidas / combos / premium)
 
-### Slide 8 — **Precios por plataforma (Rappi vs UberEats)**
+**Qué decir (15–20s):**  
+“La muestra está equilibrada entre categorías, lo que nos permite comparar manzanas con manzanas entre plataformas: bebidas, combos y productos premium están representados.”
 
-**Slide (bullets):**
+### Gráfico 4 — Precios promedio por zona (barras o mapa)
 
-- Rappi muestra valores más altos y mayor variabilidad
-    
-- UberEats presenta rango más compacto y económico
-    
+**Qué decir (20s):**  
+“Polanco, Condesa y Tlalpan presentan precios promedio altos (~142 MXN), mientras que el Centro Histórico es mucho más barato (~79 MXN). Esto confirma segmentación geográfica: zonas premium vs zonas más económicas.”
 
-**Lo que dices (20–30s):**  
-“En esta comparación Rappi tiende a precios base más altos y con mayor dispersión, mientras UberEats es más consistente y algo más barato en promedio. Esto sugiere diferencias en pricing y promociones por plataforma.”
+### Gráfico 5 — Precio final combinado (producto + delivery + service)
 
----
-
-### Slide 9 — **Distribución por categoría de producto**
-
-**Slide (bullets):**
-
-- Categorías balanceadas: premium, combos, bebidas
-    
-- Muestra comparativa clara entre plataformas
-    
-
-**Lo que dices (20–30s):**  
-“La muestra incluye categorías balanceadas (premium, combos, bebidas), lo que ayuda a comparar de forma justa entre plataformas y evitar sesgos por tipo de producto.”
+**Qué decir (20s):**  
+“Al sumar delivery y service fees, Polanco y Condesa muestran los totales más altos. Uber Eats suele mantener delivery más bajo, y Rappi concentra mayor valor total en varias zonas. Esto sugiere estrategias de pricing y cobertura distintas.”
 
 ---
 
-### Slide 10 — **Precios promedio por zona**
+## 🕐 19:00 – 20:00 | Conclusiones finales
 
-**Slide (bullets):**
+**Diapositiva (bullets):**
 
-- Polanco/Condesa ≈ $140 promedio
+- PoC exitoso y reproducible
     
-- Centro Histórico ≈ $79 (mucho más barato)
+- Add-to-Cart aumentó cobertura de fees
+    
+- Rappi: precios base más altos; Uber Eats: delivery más competitivo
+    
+- Próximos pasos: incluir DiDi Food, automatizar corridas, dashboards interactivos
     
 
-**Lo que dices (25–30s):**  
-“Geográficamente, zonas de mayor poder adquisitivo (Polanco, Condesa) tienen precios promedio ~140; Centro Histórico es significativamente más barato — esto confirma segmentación geográfica y estrategia de cobertura.”
+**Qué decir (texto literal, 25s):**  
+“El proyecto demuestra que es posible construir una capa de inteligencia competitiva confiable sobre plataformas sin API. La simulación Add-to-Cart fue crítica para capturar tarifas ocultas. Como hallazgo: Rappi muestra precios base más altos, Uber Eats tiende a ser más competitivo en delivery. Siguientes pasos: ampliar plataformas, programar ejecuciones periódicas y exponer dashboards para la toma de decisiones.”
 
 ---
 
-### Slide 11 — **Precio final por zona (producto + delivery + fees)**
+## 🕐 20:00 – 30:00 | Preguntas — respuestas preparadas
 
-**Slide (bullets):**
-
-- Polanco/Condesa: totales más altos (≈ $950–$1000 MXN por pedidos simulados)
-    
-- UberEats: menor costo logístico (delivery) en general
-    
-
-**Lo que dices (25–30s):**  
-“Combinando producto + delivery + service, Polanco/Condesa dominan el costo total. UberEats suele tener menor delivery fee, mientras Rappi presenta mayor valor total por zona — posible enfoque en conveniencia o tarifas dinámicas.”
-
----
-
-## 🕐 19:00 – 20:00 | **Conclusiones** (Slide: 12)
-
-**Slide (bullets cortos):**
-
-- Sistema modular, auditable y escalable (PoC listo)
-    
-- Add-to-Cart aumentó precisión
-    
-- Rappi vs UberEats: diferencias en pricing y fees
-    
-- Siguiente paso: automatizar ejecución y dashboards en tiempo real
-    
-
-**Lo que dices (30–40s):**  
-“Resumiendo: el PoC es funcional y trazable. La simulación de carrito mejoró la calidad del dato. Las plataformas aplican estrategias diferentes —Rappi con precios base más altos y UberEats con menores costos de envío—. Próximo paso: automatizar ejecuciones periódicas y exponer dashboards ejecutivos.”
-
----
-
-## 🕐 20:00 – 30:00 | **Preguntas (10 min)**
-
-**Preguntas esperadas y respuestas breves:**
+**Preguntas frecuentes y respuestas (corta y lista):**
 
 - **¿Por qué Playwright y no Selenium?**  
-    “Playwright maneja múltiples contextos, intercepta XHR/JSON más fácilmente y suele ser más robusto para SPAs modernas.”
+    “Playwright ofrece mejor control de múltiples contextos, interceptación de red y estabilidad moderna para páginas dinámicas.”
     
-- **¿Qué significa `score += 50` en resolver?**  
-    “Es una regla de decisión: ganar 50 puntos cuando el candidato contiene ‘mcdonald’ —prioriza coincidencias fuertes para elegir la URL.”
+- **¿Qué es la ‘lógica de selección’ en el resolver?**  
+    “Son reglas de decisión que puntúan candidatos (por ejemplo: +50 si el href o texto contiene 'mcdonald'); la URL con mayor puntaje se devuelve junto con un `confidence` (high/medium/low).”
     
-- **¿Cómo se evita ser bloqueado?**  
-    “Rotación de user-agents, delays aleatorios, y límites de requests; además guardamos evidencia para revisar fallos.”
+- **¿Cómo se minimiza la detección anti-bot?**  
+    “Rotación de user-agents, delays aleatorios, y límites de frecuencia. Además, guardamos capturas y JSON para analizar bloqueos si ocurren.”
     
-- **¿Cómo validar que el fee es correcto?**  
-    “Comparamos múltiples fuentes: `__NEXT_DATA__`, XHR, DOM y carrito; si coinciden, confianza alta; todo auditado con JSON y screenshots.”
+- **¿Qué grado de confianza tienen los fees extraídos?**  
+    “Elevada cuando provienen de JSON/XHR o `window.__NEXT_DATA__`. Si vienen solo de parsing textual del DOM, la confianza es menor; Add-to-Cart eleva la confianza cuando lo logra.”
     
-- **¿Qué tan escalable es para otros países o cadenas?**  
-    “Se añade un scraper específico por plataforma o cadena; formato de salida y orquestador se mantienen, por lo que la ampliación es directa.”
+- **¿Dónde corren las tareas? ¿Se pueden paralelizar?**  
+    “Se ejecutan desde `multi_platform_scraper.py` (o `playwright_poc.py`) con Playwright; la arquitectura permite ejecutar múltiples instancias en paralelo para escalar.”
     
 
 ---
 
-## Apéndice para tus notas (resumen técnico rápido — copy/paste)
+## Notas rápidas (para tus apuntes personales)
 
-**Dónde está cada cosa:**
-
-- Orquestador: `multi_platform_scraper.py` (main)
+- Cuando muestres un gráfico, apunta siempre a 3 mensajes: _qué es el gráfico_, _qué se observa_, _qué implica para negocio_.
     
-- Resolver: `resolver.py` → `resolve_restaurant_url(page, query)` (reglas de decisión)
+- Si te piden detalles técnicos, menciona funciones clave: `_try_parse_next_data`, `_scan_xhr_responses`, `_try_simulate_add_to_cart`, `sanitize_number`.
     
-- Rappi scraper: `rappi_scraper.py` → scraping DOM /
+- Si te preguntan por limitaciones: menciona dependencia de estructura HTML, posible bloqueo anti-bot, y tamaño de la muestra (n addresses).
