@@ -107,3 +107,46 @@ Primero el orquestador guarda los resultados estandarizados en `results.json` y 
 La limpieza usa `sanitize_number()` para normalizar formatos numéricos (puntos/comas) y varias heurísticas en `rappi_scraper.py` para extraer delivery fee y service fee desde: `window.__NEXT_DATA__`, respuestas XHR (capturadas), texto del DOM o simulación Add-to-Cart.
 
 Validamos automáticamente campos clave (precio producto, delivery, service, precio final). Si faltan datos o valores son irrazonables (ej. fees > MAX_REASONABLE_FEE), el scraper marca ese registro como `not_found` o `error` y lo deja para revisión manual. Esto nos da trazabilidad y una métrica de calidad (success rate por plataforma).”
+
+
+# 3) ¿Qué hace cada script / dónde se ejecutan las piezas clave?
+
+- **main (multi_platform_scraper.py / playwright_poc.py)**
+    
+    - Lee `addresses.csv`, orquesta scrapers por plataforma, captura respuestas HTTP y screenshots, guarda todos los resultados en `results.json` y `mapping.csv`.
+        
+- **rappi_scraper.py**
+    
+    - Extrae productos y precios desde el DOM (bloques evaluados por JS).
+        
+    - Extrae fees con varias estrategias (funciones clave):
+        
+        - `_try_parse_next_data()` → busca `window.__NEXT_DATA__`.
+            
+        - `_scan_xhr_responses()` → analiza XHR/JSON capturados.
+            
+        - `_extract_text_fees_from_dom()` → búsqueda por regex en el DOM.
+            
+        - `_try_simulate_add_to_cart()` → simula añadir producto para exponer tarifas ocultas.
+            
+    - Arma registros finales con `priceValue`, `deliveryFeeValue`, `serviceFeeValue`, `finalPriceValue`, `feeSource`.
+        
+- **utils.py**
+    
+    - `sanitize_number()` normaliza cadenas numéricas.
+        
+    - `dump_json_to()` escribe debug files.
+        
+    - `MAX_REASONABLE_FEE` define umbral para detectar valores anómalos.
+        
+- **resolver.py**
+    
+    - Resuelve la URL del restaurante desde la búsqueda (genera `resolutionMeta` usado luego en mapping y debugging).
+        
+- **Outputs de evidencia**
+    
+    - `data/debug_responses/*` (NEXT_DATA, XHR summaries) para auditar por porqué un fee fue / no fue detectado.
+        
+    - `data/screenshots/*` para revisar visualmente.
+
+
