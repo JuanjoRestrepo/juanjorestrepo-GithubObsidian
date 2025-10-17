@@ -90,3 +90,20 @@ Aquí vemos la arquitectura general del sistema.”
 > Está implementado dentro del módulo _rappi_scraper.py_, en la función privada __try_simulate_add_to_cart_, y fue clave para aumentar la precisión del modelo de scraping.”
 
 
+
+---
+
+## Título: **Procesamiento y validación de datos**
+
+- **Contenido mínimo para la diapositiva** (texto para mostrar — pocas líneas). 
+- **Guión exacto y conciso** para que lo digas (lo que vas a hablar).
+- **Detalles técnicos** (qué scripts hacen qué y validaciones automáticas).
+- **Acciones recomendadas / next steps** (1–2 bullets finales).
+
+
+“En esta etapa transformamos los datos crudos en un conjunto fiable y auditable.  
+Primero el orquestador guarda los resultados estandarizados en `results.json` y el mapeo address→restaurant en `mapping.csv`. Además generamos evidencias (screenshots y JSON de respuestas) en `data/screenshots` y `data/debug_responses` para auditoría.
+
+La limpieza usa `sanitize_number()` para normalizar formatos numéricos (puntos/comas) y varias heurísticas en `rappi_scraper.py` para extraer delivery fee y service fee desde: `window.__NEXT_DATA__`, respuestas XHR (capturadas), texto del DOM o simulación Add-to-Cart.
+
+Validamos automáticamente campos clave (precio producto, delivery, service, precio final). Si faltan datos o valores son irrazonables (ej. fees > MAX_REASONABLE_FEE), el scraper marca ese registro como `not_found` o `error` y lo deja para revisión manual. Esto nos da trazabilidad y una métrica de calidad (success rate por plataforma).”
