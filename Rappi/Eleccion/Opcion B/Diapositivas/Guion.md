@@ -235,3 +235,20 @@ Finalmente, cada registro se valida frente a umbrales razonables y se clasifica 
     - `data/screenshots/*` para revisar visualmente.
 
 
+
+
+
+---
+
+
+### 🕐 **20:00 – 30:00 | Sesión de preguntas**
+
+**Posibles preguntas y cómo responder:**
+
+|Pregunta|Respuesta sugerida|
+|---|---|
+|¿Por qué usar Playwright y no Selenium?|Playwright es más moderno, rápido y soporta interceptación de red y múltiples contextos.|
+|¿Qué hace que la arquitectura sea escalable?|Está separada por módulos — se puede añadir otra plataforma con solo crear un nuevo scraper e integrarlo al orquestador.|
+|¿Cómo manejaste los bloqueos o detección anti-bot?|Con rotación de user-agents, demoras aleatorias y tiempos variables de navegación.|
+|¿Qué tipo de validaciones implementaste?|Validación numérica, límites máximos razonables y registros JSON de cada respuesta capturada.|
+|¿Cómo planeas extender el sistema?|Integrando DiDi Food, automatizando ejecución diaria y generando dashboards dinámicos.|
