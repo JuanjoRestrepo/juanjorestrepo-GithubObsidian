@@ -68,7 +68,38 @@ Intro frase:
 
 
 
+### INSIGHT #5: La Raíz del Problema (El Ataque Estratégico)
 
+**Slide 11 — Análisis de Valor Total por Zona (8:20 – 10:00)**
+
+Apertura:  
+"Ahora aplicamos la corrección y analizamos el valor total —producto más delivery— por zona."
+
+Texto que dices al mostrar el gráfico:  
+"El gráfico muestra que el precio del producto entre plataformas es casi idéntico, pero la diferencia en el precio final está enteramente en el Delivery Fee: la franja superior es la que marca la distancia en la altura total."
+
+Finding / Impact / Recomendación (preciso):  
+"Finding: Uber Eats subsidi­a casi el 100% del Delivery Fee en zonas estratégicas —Zona 1 y Zona 2— con el objetivo de igualar o bajar el precio final. Impacto: La entrega se convierte en la palanca competitiva principal. Recomendación: Mover el foco de Rappi del precio del producto al precio final total; implementar un Delivery Fee dinámico a nivel de zona y subsidiar automáticamente en zonas donde detectemos subsidios agresivos por parte de la competencia."
+
+Breve ejemplo operacional:  
+"Operativamente proponemos un piloto que subsidie el delivery al 100% en tres zonas donde Uber Eats lidera, midiendo variación en share y AOV en 4 semanas."
+
+
+### INSIGHT #6: Estrategia Bimodal y Riesgo Geográfico
+
+**Slide 12 — Cheapest platform code by address — Heatmap (10:00 – 11:30)**
+
+Apertura:  
+"Finalmente, miremos la variabilidad geográfica sintetizada en el heatmap."
+
+Texto que dices al mostrar el heatmap:  
+"El posicionamiento de precio es binario y depende de la zona: Rappi es más barato en zonas wealthier —Condesa y Polanco— mientras que Uber Eats es más barato en zonas de expansión como Tlalpan Centro."
+
+Finding / Impact / Recomendación estratégica:  
+"Finding: El ataque competitivo de Uber Eats está focalizado en ganar penetración en zonas de expansión, que son fuentes de crecimiento. Impacto: Si no actuamos, podemos perder la base de usuarios de crecimiento. Recomendación de estrategia bimodal: en zonas wealthier competir en calidad operacional y tiempos de entrega; en zonas de expansión neutralizar el precio con subsidios direccionados para blindar el mercado en crecimiento."
+
+Transición hacia conclusiones:  
+"Con estos hallazgos, paso a un resumen ejecutivo y las recomendaciones priorizadas."
 
 
 
