@@ -1,7 +1,7 @@
 
 
 
-## 🗣️ **GUION ORAL (qué debes decir tú al presentar la diapositiva)**
+## 🗣️ **ARQUITECTURA**
 
 Aquí vemos la arquitectura general del sistema.”
 
@@ -39,3 +39,23 @@ Aquí vemos la arquitectura general del sistema.”
 > “Porque cada ejecución deja evidencia trazable: logs, capturas de pantalla, metadatos y archivos JSON que documentan cada decisión y resultado.”
 
 **👉 Ejemplo:** si un dato es inconsistente, puedo revisar el _screenshot_ y el JSON de depuración (`debug_responses/`) para entender exactamente qué ocurrió.
+
+---
+
+## **Diapositiva: Estrategias de Scraping**
+
+> “La estrategia de scraping se diseñó con el objetivo de **obtener métricas comparables entre plataformas** de delivery —principalmente Rappi, UberEats y DiDi Food.  
+> El alcance inicial se enfocó en **Rappi como prueba de concepto**, pero la arquitectura ya soporta múltiples plataformas de forma unificada.”
+
+> “El sistema extrae **métricas cuantitativas clave** como el precio de los productos, tarifas de envío y servicio, descuentos aplicados y disponibilidad.  
+> Esto permite construir una **base de datos estandarizada** para análisis competitivo, pricing y experiencia de usuario.”
+
+> “En términos técnicos, cada scraper emplea **Playwright para la navegación dinámica**, y combina tres estrategias:  
+> 1️⃣ extracción directa del _DOM_,  
+> 2️⃣ lectura de respuestas _XHR / JSON_, y  
+> 3️⃣ simulación de interacción (_add to cart_) para obtener tarifas ocultas.”
+
+
+
+
+
