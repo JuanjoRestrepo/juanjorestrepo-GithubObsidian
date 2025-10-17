@@ -142,9 +142,10 @@
 ### Gráfico 1 — Distribución de precios (histograma)
 
 **Qué decir (20–25s):**  
-“Aquí vemos una visualización con una **distribución bimodal**, es decir, que los precios se agrupan en **dos modas o picos distintos**. Esto revela la existencia de **dos subpoblaciones de productos**: un grupo **económico** concentrado alrededor de **$80–100 MXN** y un grupo **premium** cerca de **$180–200 MXN**.
+“Aquí vemos una visualización con una **distribución bimodal**,   indicando que los precios se agrupan en **dos segmentos dominantes**: un conjunto **económico** (alrededor de **$80–100 MXN**) y un conjunto **premium** (cerca de **$180–200 MXN**).
+La estadística central revela una **ligera asimetría** en la distribución. Dado que la **Mediana ($144.00 MXN)** es mayor que la **Media ($128.93 MXN)**, concluimos que la distribución tiene un **sesgo hacia la izquierda (asimetría negativa)**. Esto ocurre debido a la influencia de una **cola de precios bajos** (como el pico alrededor de $50-60 MXN) que **tira del valor de la Media hacia abajo**, colocándola por debajo de la Mediana. Esto es un claro reflejo de la **segmentación** del mercado.
 
-Las estadísticas centrales confirman esta polarización: la **media** se sitúa en **$129 MXN**, mientras que la **mediana** es notablemente más alta, en **$144 MXN**. El hecho de que la mediana ($144 MXN) sea superior a la media ($129 MXN) indica una **ligera asimetría hacia la izquierda (sesgo negativo)**, lo que es causado principalmente por la influencia del grupo más numeroso de productos en el rango de precios más alto (premium).”
+”
 
 ### Gráfico 2 — Precios por plataforma (boxplots Rappi vs UberEats)
 
