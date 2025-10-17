@@ -57,5 +57,14 @@ Aquí vemos la arquitectura general del sistema.”
 
 
 
+1️⃣ **DOM Parsing:** lectura directa del contenido visible.  
+2️⃣ **XHR/JSON:** captura de datos en respuestas de red.  
+3️⃣ **Simulación de interacción:** detección de tarifas ocultas.
 
+> “El sistema aplica tres estrategias complementarias de scraping para asegurar que se capture toda la información, incluso la que no está directamente visible.”
 
+> “Primero, se hace **DOM parsing**, que lee los elementos visibles en la interfaz.”  
+> “Segundo, se analiza el tráfico de red, con el enfoque **XHR/JSON parsing**, donde se interceptan las respuestas que contienen datos estructurados del backend.”  
+> “Y por último, usamos **simulación de interacción**, por ejemplo, agregando un producto al carrito, para detectar tarifas o precios que sólo aparecen después de una acción del usuario.”
+
+> “Estas tres capas se integran para construir un dataset **completo, verificable y estandarizado**, base de todo el análisis  posterior.”
