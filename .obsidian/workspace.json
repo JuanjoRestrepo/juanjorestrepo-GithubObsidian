@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/Opcion B/Diapositivas/Guion.md",
+                "file": "Rappi/Eleccion/Opcion B/Diapositivas/GUION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guion"
+              "title": "GUION"
             }
           }
         ]
@@ -233,13 +233,14 @@
   },
   "active": "537c68baeaa21157",
   "lastOpenFiles": [
+    "Rappi/Eleccion/Opcion B/Diapositivas/Guion Borrador.md",
+    "Rappi/Eleccion/Opcion B/Diapositivas/GUION.md",
     "Files/Pasted image 20251017010141.png",
     "Files/Pasted image 20251017010108.png",
     "Files/Pasted image 20251017010102.png",
     "Files/Pasted image 20251017010051.png",
     "Files/Pasted image 20251017005929.png",
     "Rappi/Eleccion/Opcion B/Scripts/multi_platform_scraper.md",
-    "Rappi/Eleccion/Opcion B/Diapositivas/Guion.md",
     "Rappi/Eleccion/Opcion B/Diapositivas",
     "Rappi/Eleccion/Opcion B/Scripts/RUN.md",
     "Rappi/Eleccion/Opcion B/Scripts/Untitled",
@@ -278,7 +279,6 @@
     "Files/Pasted image 20251007104653.png",
     "Files/Pasted image 20251007104415.png",
     "Files/Pasted image 20251007104140.png",
-    "Files/Pasted image 20251007104020.png",
     "Untitled.canvas"
   ]
 }
