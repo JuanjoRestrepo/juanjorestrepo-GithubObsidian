@@ -95,18 +95,43 @@ Aquí vemos la arquitectura general del sistema.”
 
 ## Título: **Procesamiento y validación de datos**
 
-- **Contenido mínimo para la diapositiva** (texto para mostrar — pocas líneas). 
-- **Guión exacto y conciso** para que lo digas (lo que vas a hablar).
-- **Detalles técnicos** (qué scripts hacen qué y validaciones automáticas).
-- **Acciones recomendadas / next steps** (1–2 bullets finales).
+- Datos estandarizados: `results.json` y `mapping.csv`
+- Limpieza automática con `sanitize_number()` y reglas de negocio
+- Extracción y validación de _delivery fee_ y _service fee_ (4 estrategias)
+- Evidencias y trazabilidad: _screenshots_ + JSON de depuración
 
 
-“En esta etapa transformamos los datos crudos en un conjunto fiable y auditable.  
-Primero el orquestador guarda los resultados estandarizados en `results.json` y el mapeo address→restaurant en `mapping.csv`. Además generamos evidencias (screenshots y JSON de respuestas) en `data/screenshots` y `data/debug_responses` para auditoría.
+“En esta fase procesamos los datos crudos y los convertimos en información confiable y auditable.
 
-La limpieza usa `sanitize_number()` para normalizar formatos numéricos (puntos/comas) y varias heurísticas en `rappi_scraper.py` para extraer delivery fee y service fee desde: `window.__NEXT_DATA__`, respuestas XHR (capturadas), texto del DOM o simulación Add-to-Cart.
+Primero generamos los archivos **`results.json`** con los registros estandarizados y **`mapping.csv`** que mapea direcciones con los restaurantes.
 
-Validamos automáticamente campos clave (precio producto, delivery, service, precio final). Si faltan datos o valores son irrazonables (ej. fees > MAX_REASONABLE_FEE), el scraper marca ese registro como `not_found` o `error` y lo deja para revisión manual. Esto nos da trazabilidad y una métrica de calidad (success rate por plataforma).”
+Usamos funciones como **`sanitize_number()`** para limpiar formatos y reglas que validan los precios y tarifas. Las tarifas de envío y servicio se extraen mediante **cuatro estrategias combinadas**:  
+1️⃣ inspección del objeto `window.__NEXT_DATA__`,  
+2️⃣ análisis de respuestas XHR,  
+3️⃣ búsqueda textual en el DOM, y  
+4️⃣ simulación **Add-to-Cart** para forzar la visibilidad del resumen de pago.
+
+Además, todos los pasos generan **evidencias**: capturas de pantalla y archivos JSON en carpetas de _debug_, lo que nos permite **rastrear, auditar y reproducir cualquier error**.
+
+Finalmente, cada registro se valida frente a umbrales razonables y se clasifica como _success_, _not_found_ o _error_, lo que nos da un indicador de calidad por plataforma.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # 3) ¿Qué hace cada script / dónde se ejecutan las piezas clave?
