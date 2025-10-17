@@ -175,3 +175,17 @@ Si el directorio no existe, lo crea.
 Imprime confirmación o error.
 
 ✅ Propósito: capturar evidencia visual del estado del scraping (errores, bloqueos, etc.).
+
+
+
+|Función|Rol|Usos principales|
+|---|---|---|
+|`now_utc_iso()`|Generar timestamps en formato estándar UTC.|Etiquetar registros y logs.|
+|`sanitize_number()`|Convertir textos con precios a números float válidos.|Parsing de precios, delivery y service fees.|
+|`retry()`|Ejecutar una función con reintentos y backoff.|Robustecer tareas inestables.|
+|`random_delay()`|Esperas aleatorias entre acciones.|Evitar detección de bot.|
+|`dump_json_to()`|Guardar JSONs legibles y seguros.|Exportar resultados y depuración.|
+|`setup_logging()`|Configurar registro estructurado.|Control de logs en consola.|
+|`save_screenshot()`|Capturar pantallas con manejo de errores.|Evidencias visuales y debugging.|
+
+

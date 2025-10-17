@@ -55,3 +55,4 @@ Ejemplo:
 - addressLabel = "Condesa"
 - searchQuery = ""  
 	👉 Resultado: `"McDonald's Condesa"`
+
