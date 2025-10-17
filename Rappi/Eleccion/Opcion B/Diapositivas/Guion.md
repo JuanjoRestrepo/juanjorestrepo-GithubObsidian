@@ -32,3 +32,10 @@ Aquí vemos la arquitectura general del sistema.”
 > El flujo y los formatos de salida permanecen constantes.”
 
 **👉 Ejemplo:** puedo ejecutar varias instancias en paralelo o escalar el scraping a distintos países simplemente cambiando el CSV de entrada.
+
+
+### 🔍 **Auditable**
+
+> “Porque cada ejecución deja evidencia trazable: logs, capturas de pantalla, metadatos y archivos JSON que documentan cada decisión y resultado.”
+
+**👉 Ejemplo:** si un dato es inconsistente, puedo revisar el _screenshot_ y el JSON de depuración (`debug_responses/`) para entender exactamente qué ocurrió.
