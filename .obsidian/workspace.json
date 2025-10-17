@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/Opcion B/Scripts/RUN.md",
+                "file": "Rappi/Eleccion/Opcion B/Diapositivas/guion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RUN"
+              "title": "guion"
             }
           }
         ]
@@ -233,7 +233,10 @@
   },
   "active": "99ba67eca9b76029",
   "lastOpenFiles": [
-    "Rappi/Eleccion/Opcion B/Diapositivas/GUION.md",
+    "Files/Pasted image 20251017150504.png",
+    "Rappi/Eleccion/Opcion B/Diapositivas/GUION BORADDOR.md",
+    "Rappi/Eleccion/Opcion B/Diapositivas/guion.md",
+    "Rappi/Eleccion/Opcion B/Scripts/RUN.md",
     "Rappi/Eleccion/Opcion B/Diapositivas/Guion Borrador.md",
     "Files/Pasted image 20251017010141.png",
     "Files/Pasted image 20251017010108.png",
@@ -242,7 +245,6 @@
     "Files/Pasted image 20251017005929.png",
     "Rappi/Eleccion/Opcion B/Scripts/multi_platform_scraper.md",
     "Rappi/Eleccion/Opcion B/Diapositivas",
-    "Rappi/Eleccion/Opcion B/Scripts/RUN.md",
     "Rappi/Eleccion/Opcion B/Scripts/Untitled",
     "Rappi/Eleccion/Opcion B/Scripts/rappi_scrapper.py.md",
     "Rappi/Eleccion/Opcion B/Scripts/playwright main.py.md",
@@ -268,8 +270,6 @@
     "Self Study/NodeJs/Clase 4/1. Pasando de commonJS a ESModules.md",
     "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
     "Self Study/NodeJs/Clase 2/2. Status Codes.md",
-    "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
-    "Self Study/NodeJs/Clase 1/2. Callbacks.md",
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1",
     "Rappi/Eleccion/Opcion A/Desarrollo/API KEY",
     "Rappi/Eleccion/Opcion A/Desarrollo",
