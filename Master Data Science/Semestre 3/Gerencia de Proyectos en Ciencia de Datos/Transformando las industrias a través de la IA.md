@@ -18,6 +18,20 @@ La idea es hablar un poco de IA, cómo se están transformando las industrias, q
 ![[Pasted image 20251026133952.png]]
 
 
+![[Pasted image 20251026134031.png]]
+
+- Se hablaba sobre "Qué era ser Inteligente"
+
+# El perceptron
+La primera Red Neuronal documentada. Para replicar/modelar la habilidad de reconocimiento de patrones
+
+![[Pasted image 20251026134339.png]]
+
+![[Pasted image 20251026134349.png]]
+
+
+
+
 
 
 
