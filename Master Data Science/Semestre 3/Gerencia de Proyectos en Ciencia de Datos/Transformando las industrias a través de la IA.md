@@ -36,6 +36,28 @@ La primera Red Neuronal documentada. Para replicar/modelar la habilidad de recon
 
 ![[Pasted image 20251026134943.png]]
 
+**Curiosidad:**
+- Desde 1957 tenemos la base, los modelos pero nos falta la capacidad computacional y los datos
+
+
+![[Pasted image 20251026135202.png]]
+
+![[Pasted image 20251026135257.png]]
+
+- Crear algoritmos para que la máquina aprenda
+
+No necesariamente está bien ese proceso de desarrollo:
+- Se pueden cambiar y variar las fases de diseño. **METODOLOGÍA CRISP-DM**
+
+![[Pasted image 20251026135359.png]]
+
+
+![[Pasted image 20251026135420.png]]
+
+![[Pasted image 20251026135513.png]]
+
+
+
 
 
 
