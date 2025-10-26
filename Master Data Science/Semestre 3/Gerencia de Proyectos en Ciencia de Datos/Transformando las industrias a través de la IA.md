@@ -62,11 +62,45 @@ No necesariamente está bien ese proceso de desarrollo:
 
 
 
-
-
-
+# Designing Data Products
+### Data Product Canvas Example
+![[Pasted image 20251026140126.png]]
 
 https://www.datamesh-architecture.com/data-product-canvas
+
+---
+
+![[Pasted image 20251026140159.png]]
+
+![[Pasted image 20251026140209.png]]
+
+---
+
+![[Pasted image 20251026140222.png]]
+
+
+![[Pasted image 20251026140254.png]]
+
+
+### Herramienta de Calidad de Datos
+https://greatexpectations.io/
+
+![[Pasted image 20251026140348.png]]
+
+---
+
+# Clustering para identificar eventos atipicos
+![[Pasted image 20251026140404.png]]
+
+![[Pasted image 20251026140424.png]]
+
+---
+
+
+![[Pasted image 20251026140457.png]]
+
+
+
 
 
 https://medium.com/@leandroscarvalho/data-product-canvas-a-practical-framework-for-building-high-performance-data-products-7a1717f79f0
