@@ -94,10 +94,16 @@ https://greatexpectations.io/
 
 ![[Pasted image 20251026140424.png]]
 
+- Se buscaba que algo que en accuracy fuera bueno pero que también tuviera buen rendimiento en ejecución
 ---
 
 
 ![[Pasted image 20251026140457.png]]
+
+
+
+
+![[Pasted image 20251026140956.png]]
 
 
 
