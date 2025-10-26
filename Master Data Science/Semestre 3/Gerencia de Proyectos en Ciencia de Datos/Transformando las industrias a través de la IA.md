@@ -156,5 +156,7 @@ Dependiendo de dónde se encuentre en el ecosistema, MCP puede tener una varieda
 ![[Pasted image 20251026143053.png]]
 
 
+![[Pasted image 20251026143208.png]]
+
 
 
