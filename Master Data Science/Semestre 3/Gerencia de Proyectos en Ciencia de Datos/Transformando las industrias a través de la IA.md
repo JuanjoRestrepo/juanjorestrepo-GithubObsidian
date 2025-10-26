@@ -56,7 +56,9 @@ No necesariamente está bien ese proceso de desarrollo:
 
 ![[Pasted image 20251026135513.png]]
 
+## Qué tipos de Modelos de ML se pueden usar para identificar casos atípicos (hablando de los subgrupos)
 
+- **Modelo No Supervisado de Clustering** lo que esté lejos de los centroides, podría verse como atípico
 
 
 
