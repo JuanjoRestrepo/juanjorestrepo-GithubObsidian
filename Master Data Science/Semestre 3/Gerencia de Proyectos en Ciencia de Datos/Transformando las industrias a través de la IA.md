@@ -105,6 +105,9 @@ https://greatexpectations.io/
 
 ![[Pasted image 20251026140956.png]]
 
+![[Pasted image 20251026141121.png]]
+
+
 
 
 
