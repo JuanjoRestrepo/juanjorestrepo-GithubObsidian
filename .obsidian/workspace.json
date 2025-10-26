@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d0598cd37567906b",
+        "id": "065d2d0a67fd1bdc",
         "type": "tabs",
         "children": [
           {
-            "id": "99ba67eca9b76029",
+            "id": "7d5c8301595405df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rappi/Eleccion/Opcion B/Diapositivas/guion.md",
+                "file": "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Transformando las industrias a través de la IA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "guion"
+              "title": "Transformando las industrias a través de la IA"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 441.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -232,11 +231,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "99ba67eca9b76029",
+  "active": "7d5c8301595405df",
   "lastOpenFiles": [
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/3. Experiencia.md",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Transformando las industrias a través de la IA.md",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/Transcripts.md",
+    "Rappi/Eleccion/Opcion B/Diapositivas/guion.md",
     "Files/Pasted image 20251017150504.png",
     "Rappi/Eleccion/Opcion B/Diapositivas/GUION BORADDOR.md",
-    "Rappi/Eleccion/Opcion B/Diapositivas/guion.md",
     "Rappi/Eleccion/Opcion B/Scripts/RUN.md",
     "Rappi/Eleccion/Opcion B/Diapositivas/Guion Borrador.md",
     "Files/Pasted image 20251017010141.png",
@@ -269,8 +271,6 @@
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 2",
     "Self Study/NodeJs/Clase 4/2. MVC.md",
     "Self Study/NodeJs/Clase 4/1. Pasando de commonJS a ESModules.md",
-    "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
-    "Self Study/NodeJs/Clase 2/2. Status Codes.md",
     "Rappi/Eleccion/Opcion A/Desarrollo/Bloque 1",
     "Rappi/Eleccion/Opcion A/Desarrollo/API KEY",
     "Rappi/Eleccion/Opcion A/Desarrollo",
@@ -279,7 +279,6 @@
     "Files/Pasted image 20251007104924.png",
     "Files/Pasted image 20251007104653.png",
     "Files/Pasted image 20251007104415.png",
-    "Files/Pasted image 20251007104140.png",
     "Untitled.canvas"
   ]
 }
