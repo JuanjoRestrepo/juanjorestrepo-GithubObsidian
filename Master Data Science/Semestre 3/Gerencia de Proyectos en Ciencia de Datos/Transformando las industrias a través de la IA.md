@@ -31,6 +31,13 @@ La primera Red Neuronal documentada. Para replicar/modelar la habilidad de recon
 
 
 
+![[Pasted image 20251026134533.png]]
+
+
+![[Pasted image 20251026134943.png]]
+
+
+
 
 
 
