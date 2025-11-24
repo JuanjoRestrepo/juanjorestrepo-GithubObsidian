@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Transformando las industrias a través de la IA"
             }
+          },
+          {
+            "id": "2b5fd444011f28cd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,7 +244,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d6febd7dde6ed968",
+  "active": "2b5fd444011f28cd",
   "lastOpenFiles": [
     "Files/Pasted image 20251026143208.png",
     "Files/Pasted image 20251026143053.png",
