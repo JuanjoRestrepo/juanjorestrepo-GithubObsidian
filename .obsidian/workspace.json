@@ -25,12 +25,14 @@
             "id": "2b5fd444011f28cd",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.10.3"
+                "file": "Self Study/NodeJs/Clase 3/1. Rest API con Express.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "icon": "lucide-file",
+              "title": "1. Rest API con Express"
             }
           }
         ],
