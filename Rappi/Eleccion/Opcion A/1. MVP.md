@@ -1,0 +1,17 @@
+
+# MVP (lo mínimo que debes entregar y defender — alto impacto / bajo riesgo)
+
+- Repo en GitHub con `README` y `run_local.sh` / `Dockerfile`.
+    
+- Script ETL que importe las hojas del Excel y genere: raw → cleaned → features (delta wk, pct change, rolling mean, z-score).
+    
+- Notebooks que generen: tablas resumen, detección de anomalías y gráficos (2–4 visuales clave).
+    
+- Pipeline RAG simple: transformar tablas a texto/embeddings → vector DB local (FAISS) o simple prompt + contexto → LLM query con salida JSON.
+    
+- Evaluación: `human_eval.csv` con 30 ejemplos y rubric (factualidad/utilidad).
+    
+- Slides + `demo_script.md`.
+
+
+

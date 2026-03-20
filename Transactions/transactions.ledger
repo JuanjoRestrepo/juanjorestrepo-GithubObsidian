@@ -1,0 +1,29 @@
+alias b=Banco
+alias d=Deudas
+alias g=Gastos
+alias i=Ingresos
+alias a=Ahorros
+
+
+2023/07/10 Inicio de Balance
+    b:ScotiaBank $0
+    i:Practica:Holcim $0
+    a:PCGamer $1000000
+    Inicio de control
+
+2023/07/28 Primer Pago Práctica
+	b:ScotiaBank $1092000
+	Holcim ABS
+	
+2023/08/28 Segundo Pago Práctica
+    b:ScotiaBank $1600000
+    Holcim ABS
+
+2023/09/21 Tío Marino to Scotiabank
+    b:ScotiaBank    $100000.00
+    Tio Marino
+
+2023/09/21 Coche Bingo
+	b.ScotiaBank $-200000
+	Gastos
+
