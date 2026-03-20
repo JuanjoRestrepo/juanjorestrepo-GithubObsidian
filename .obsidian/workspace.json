@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "World Cup 2026 Project⚽🏆/Review.md",
+                "file": "Self Study/AWS/1. Qué es el Cloud.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Review"
+              "title": "1. Qué es el Cloud"
             }
           }
         ]
@@ -233,6 +233,8 @@
   },
   "active": "d6febd7dde6ed968",
   "lastOpenFiles": [
+    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
+    "Self Study/World Cup 2026 Project⚽🏆/Review.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Variables.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Sentencias Condicionales IF, ELIF, ELSE.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Constantes.md",
@@ -259,9 +261,7 @@
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Nmap con Python.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Libreria PWN",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Keylogger en Python.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Interactuar con Bases de Datos desde Python.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Exploits",
-    "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Base64 - Encriptar un Script de Python con Base64.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Generico/Librerías",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Generico/Conceptos Básicos",
     "Self Study/Pinguino Mario - Hacking/Coding/JavaScript/Frameworks y Backend/React",

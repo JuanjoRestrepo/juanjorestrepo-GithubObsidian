@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RaSoccerBall",
       "😬",
       "TiCircleNumber0",
       "SiUbereats",
-      "BoBxsBusiness",
-      "TiFolder"
+      "BoBxsBusiness"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -351,5 +351,6 @@
   "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo": "TiFolder",
   "Rappi": "SiUbereats",
   "Rappi/Eleccion": "TiCircleNumber0",
-  "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva": "😬"
+  "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva": "😬",
+  "Self Study/World Cup 2026 Project⚽🏆": "RaSoccerBall"
 }
