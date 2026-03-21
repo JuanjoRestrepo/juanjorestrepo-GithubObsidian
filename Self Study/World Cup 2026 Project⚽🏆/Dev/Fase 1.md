@@ -75,3 +75,20 @@ Para balancear velocidad + calidad:
 3. Luego migramos a `src/`
 
 
+---
+
+# Notebook done
+# Qué acabamos de hacer (importante)
+
+Sin escribir teoría, ya implementamos:
+
+✔ Ingesta de datos  
+✔ Limpieza inicial  
+✔ Validación  
+✔ Feature básica (target)  
+✔ EDA  
+✔ Primer dataset curado
+
+Esto es exactamente la **Fase 1 — Data Foundation**.
+
+
