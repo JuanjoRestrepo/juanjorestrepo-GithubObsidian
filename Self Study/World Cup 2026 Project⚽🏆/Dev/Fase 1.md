@@ -42,8 +42,36 @@ RAW DATA → CLEAN DATA → MODEL DATASET
 4. Crear variable target
 5. Validar calidad básica
  
- ¿Lenguaje y entorno?
+ **¿Lenguaje y entorno?**
 - Python
 - Jupyter / Colab inicialmente
 - luego migramos a estructura `src/`
+
+**¿Nivel de ingeniería desde el inicio?**
+Opción A (más ágil):
+- Notebook primero
+- luego refactorizamos a pipeline
+
+Opción B (más pro desde el día 1):
+- estructura de proyecto
+- scripts modulares
+- logging
+
+**¿Target inicial?**
+Te recomiendo:
+✔ Empezar con:
+- clasificación (win/draw/loss)
+Luego escalar a:
+- modelo de goles (Poisson)
+
+--- 
+
+# Decisión Final
+
+Para balancear velocidad + calidad:
+
+1. Empezamos en **notebook (EDA + limpieza)**
+2. Pero con mentalidad de pipeline
+3. Luego migramos a `src/`
+
 
