@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/World Cup 2026 Project⚽🏆/Dev/Fase 1.md",
+                "file": "Self Study/World Cup 2026 Project⚽🏆/Dev/Poisson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fase 1"
+              "title": "Poisson"
             }
           }
         ]
@@ -233,6 +233,8 @@
   },
   "active": "77f4880c3a686cf7",
   "lastOpenFiles": [
+    "Self Study/World Cup 2026 Project⚽🏆/Dev/Mejoras Fase 2.md",
+    "Self Study/World Cup 2026 Project⚽🏆/Dev/Poisson.md",
     "Self Study/World Cup 2026 Project⚽🏆/Dev/Fase 2.md",
     "Self Study/World Cup 2026 Project⚽🏆/Dev/Fase 1.md",
     "Self Study/World Cup 2026 Project⚽🏆/2. Estructuración.md",
@@ -259,8 +261,6 @@
     "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Modificar Archivos.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Select String (Equivalente a grep).md",
     "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Read-Host - Entradas de Texto.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Listas en Powershell.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Leer Contenido de archivo (Similar a cat).md",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Libreria PWN",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Exploits",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Generico/Librerías",
