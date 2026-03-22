@@ -8,10 +8,13 @@ Modelamos:
 
 Luego:
 
-$P(score=i,j)=Poisson(i,λhome)⋅Poisson(j,λaway)P(score = i,j) = Poisson(i, \lambda_{home}) \cdot Poisson(j, \lambda_{away})P(score=i,j)=Poisson(i,λhome​)⋅Poisson(j,λaway​)$
+$$
+P(score = i,j) = Poisson(i, \lambda_{home}) \cdot Poisson(j, \lambda_{away})
+$$
 
 Y de ahí:
 
-- Win → i>ji > ji>j
-- Draw → i=ji = ji=j
-- Loss → i<ji < ji<j
+- $Win → i>j$
+- $Draw → i=j$
+- $Loss → i<j$
+
