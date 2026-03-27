@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasFilePdf",
       "FabDev",
       "RaSoccerBall",
       "😬",
-      "TiCircleNumber0",
-      "SiUbereats"
+      "TiCircleNumber0"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -353,5 +353,9 @@
   "Rappi/Eleccion": "TiCircleNumber0",
   "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva": "😬",
   "Self Study/World Cup 2026 Project⚽🏆": "RaSoccerBall",
-  "Self Study/World Cup 2026 Project⚽🏆/Dev": "FabDev"
+  "Self Study/World Cup 2026 Project⚽🏆/Dev": "FabDev",
+  "Self Study/Backend Project 2026/Docs": {
+    "iconName": "FasFilePdf",
+    "iconColor": "#ff0000"
+  }
 }
