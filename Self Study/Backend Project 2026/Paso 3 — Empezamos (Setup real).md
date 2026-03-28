@@ -82,3 +82,30 @@ docker run --name postgres-db \
   -d postgres
 ```
 
+## 3.5 Primer archivo base
+`src/server.ts`
+```typescript
+import app from "./app";
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+```
+
+`src/app.ts`
+```typescript
+import express from "express";
+
+const app = express();
+
+app.use(express.json());
+
+app.get("/health", (_req, res) => {
+  res.json({ status: "ok" });
+});
+
+export default app;
+```
+
