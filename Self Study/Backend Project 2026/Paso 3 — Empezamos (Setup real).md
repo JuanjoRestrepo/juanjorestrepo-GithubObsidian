@@ -55,10 +55,30 @@ Learn more: https://pris.ly/getting-started
 
 
 ## 3.4 .env
+
+Tu `.env` debería quedar así
 ```env
 PORT=3000
 DATABASE_URL="postgresql://user:password@localhost:5432/tasks_db"
 JWT_SECRET=supersecret
 ```
 
+Opción A — PostgreSQL local (recomendada)
+Si ya lo tienes instalado:
+- usuario: `postgres`
+- password: `postgres` (o el que tengas)
+- crear DB:
+```sql
+CREATE DATABASE tasks_db;
+```
+
+Opción B — Docker (más limpio)\
+```bash
+docker run --name postgres-db \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=postgres \
+  -e POSTGRES_DB=tasks_db \
+  -p 5432:5432 \
+  -d postgres
+```
 
