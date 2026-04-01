@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber4",
+      "TiCircleNumber3",
+      "TiCircleNumber2",
       "TiCircleNumber1",
-      "FasFlagCheckered",
-      "FasGear",
-      "FasFilePdf",
-      "FabDev"
+      "FasFlagCheckered"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -363,5 +363,8 @@
     "iconColor": "#fff700"
   },
   "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP": "FasFlagCheckered",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1": "TiCircleNumber1"
+  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1": "TiCircleNumber1",
+  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2": "TiCircleNumber2",
+  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3": "TiCircleNumber3",
+  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4": "TiCircleNumber4"
 }
