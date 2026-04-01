@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/Objetivo del Proyecto.md",
+                "file": "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Objetivo del Proyecto"
+              "title": "ESTRUCTUA DE CARPETAS"
             }
           }
         ]
@@ -231,10 +231,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1a4ae1b212ce91aa",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/OBJETIVO DEL PROYECTO.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ARQUITECTURA (SIMPLIFICADA).md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/Objetivo del Proyecto.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED",
     "Self Study/World Cup 2026 Project⚽🏆/OLD",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Fase 1.md",
@@ -261,11 +265,7 @@
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Variables.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Sentencias Condicionales IF, ELIF, ELSE.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Constantes.md",
-    "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Declare, Begin, Exception, End.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Developer/PL - SQL/Bucles",
-    "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Write-Output - Imprimir Mensajes por Pantalla.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Variables.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Powershell/Powershell Scripting/Tuberias.md",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Libreria PWN",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Hacking Python/Exploits",
     "Self Study/Pinguino Mario - Hacking/Coding/Python/Generico/Librerías",
