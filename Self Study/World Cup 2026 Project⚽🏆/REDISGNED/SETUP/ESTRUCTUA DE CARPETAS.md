@@ -1,31 +1,33 @@
 
 ```bash
-world-cup-predictor/
+worldcup-2026-pipeline/
 │
 ├── docker/
-│   ├── docker-compose.yml
+│   └── postgres/
+│       └── init.sql
 │
-├── data/
-│   ├── raw/        (bronze)
-│   ├── processed/  (silver)
-│   ├── features/   (gold)
-│
-├── pipelines/
+├── src/
+│   ├── config/
+│   │   └── settings.py
+│   │
+│   ├── database/
+│   │   └── connection.py
+│   │
 │   ├── ingestion/
+│   │   └── (vacío por ahora)
+│   │
 │   ├── processing/
-│   ├── feature_engineering/
+│   │   └── (vacío por ahora)
+│   │
+│   └── modeling/
+│       └── (vacío por ahora)
 │
-├── models/
-│   ├── train.py
-│   ├── predict.py
+├── tests/
+│   └── test_db_connection.py
 │
-├── api/
-│   ├── server.js   (o FastAPI)
-│
-├── dbt/
-│
-├── notebooks/
-│
+├── .env
+├── docker-compose.yml
+├── requirements.txt
 └── README.md
 ```
 
