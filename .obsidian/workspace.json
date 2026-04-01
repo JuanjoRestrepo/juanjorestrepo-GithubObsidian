@@ -214,10 +214,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "ledger-obsidian:Add to Ledger": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -227,11 +223,10 @@
       "markdown-importer:Open format converter": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "omnisearch:Omnisearch": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b523222f735e79dc",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
     "Self Study/Backend Project 2026/Paso 2 — Roadmap de Implementación.md",
     "Self Study/Backend Project 2026/Paso 3 — Empezamos (Setup real).md",
