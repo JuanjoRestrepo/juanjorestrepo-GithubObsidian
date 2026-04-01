@@ -1,4 +1,3 @@
-
 ### Día 1–2
 - [ ] Setup repo + Docker + PostgreSQL
 
