@@ -353,9 +353,9 @@
   "Rappi/Eleccion": "TiCircleNumber0",
   "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva": "😬",
   "Self Study/World Cup 2026 Project⚽🏆": "RaSoccerBall",
-  "Self Study/World Cup 2026 Project⚽🏆/Dev": "FabDev",
   "Self Study/Backend Project 2026/Docs": {
     "iconName": "FasFilePdf",
     "iconColor": "#ff0000"
-  }
+  },
+  "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev": "FabDev"
 }
