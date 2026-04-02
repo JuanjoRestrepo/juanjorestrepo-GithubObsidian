@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/Transcripts.md",
+                "file": "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Transcripts"
+              "title": "Esquema de STACK RECOMENDADO"
             }
           },
           {
@@ -201,16 +201,15 @@
               "type": "google-calendar-view-month",
               "state": {},
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "google-calendar-view-month"
+              "icon": "calendar-days",
+              "title": "GCal Month View"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 329.5,
-    "collapsed": true
+    "width": 235.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,7 +222,12 @@
       "bases:Crear nueva base": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false,
+      "ledger-obsidian:Add to Ledger": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "90311f96837d2a6a",
