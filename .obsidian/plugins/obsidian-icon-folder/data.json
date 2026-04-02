@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasFilePdf",
       "SiBrave",
       "SiDbt",
       "TiCircleNumber6",
-      "TiCircleNumber5",
-      "TiCircleNumber4"
+      "TiCircleNumber5"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -382,5 +382,6 @@
   "Keys/Brave Keys": {
     "iconName": "SiBrave",
     "iconColor": "#ff5900"
-  }
+  },
+  "Job Search/CV 2026 BOGOTA": "FasFilePdf"
 }

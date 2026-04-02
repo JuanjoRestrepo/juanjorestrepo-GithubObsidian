@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keys/Microsoft - Windows.md",
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Microsoft - Windows"
+              "title": "SKILL.md"
             }
           }
         ]
@@ -62,7 +62,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/Microsoft - Windows.md",
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Microsoft - Windows"
+              "title": "Esquema de SKILL.md"
             }
           },
           {
@@ -230,8 +230,17 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "9a948a778c43e957",
   "lastOpenFiles": [
+    "Keys/Microsoft - Windows.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/data-science-expert.skill",
+    "Templates/AI SKILLS/BACKEND DEV",
+    "Templates/AI SKILLS/ML-DATA SCIENCE",
+    "Templates/AI SKILLS",
+    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
+    "Job Search/CV 2026 BOGOTA",
+    "Keys/Brave Keys/Brave Passwords 1.csv",
     "Keys/Brave Keys/Brave Passwords.csv",
     "Keys/Brave Keys",
     "Keys/Social Security Dad/Info Cali.png",
@@ -243,7 +252,6 @@
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.44.28 p.m..png",
     "Keys/Social Security Dad/Liquidacion Seguridad Social JHRR.jpg",
     "Keys/Epic Games.md",
-    "Keys/Microsoft - Windows.md",
     "Keys/dbt key.md",
     "Keys/dbt recovery key 2026.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
@@ -262,16 +270,8 @@
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5/1. API.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4/1. MODELO.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3/1. FEATURES.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2/1. MODELADO DE DATOS.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD",
     "Self Study/Backend Project 2026/Paso 1 — Decisiones Arquitectónicas.md",
     "Self Study/Backend Project 2026/Paso 2 — Roadmap de Implementación.md",
     "Self Study/Backend Project 2026/Paso 3 — Empezamos (Setup real).md",
