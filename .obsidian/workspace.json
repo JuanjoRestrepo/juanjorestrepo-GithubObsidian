@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
+                "file": "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
                 "mode": "source",
                 "source": false
               },
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
+                "file": "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -232,8 +232,10 @@
   },
   "active": "9a948a778c43e957",
   "lastOpenFiles": [
-    "Keys/Microsoft - Windows.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
+    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
+    "Templates/AI SKILLS/BACKEND DEV/web-devops.skill",
+    "Keys/Microsoft - Windows.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/data-science-expert.skill",
     "Templates/AI SKILLS/BACKEND DEV",
     "Templates/AI SKILLS/ML-DATA SCIENCE",
@@ -268,14 +270,12 @@
     "Self Study/World Cup 2026 Project⚽🏆/OLD/2. Estructuración.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6/1. DOCKER.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5/1. API.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4/1. MODELO.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3/1. FEATURES.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2/1. MODELADO DE DATOS.md",
     "Self Study/Backend Project 2026/Paso 1 — Decisiones Arquitectónicas.md",
     "Self Study/Backend Project 2026/Paso 2 — Roadmap de Implementación.md",
     "Self Study/Backend Project 2026/Paso 3 — Empezamos (Setup real).md",
-    "Untitled.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png",
     "Untitled.canvas"
