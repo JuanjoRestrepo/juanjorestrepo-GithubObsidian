@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f15268ca6284bb07",
+        "id": "97980cfe84b4b2f4",
         "type": "tabs",
         "children": [
           {
-            "id": "90311f96837d2a6a",
+            "id": "9a948a778c43e957",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Keys/dbt key.md",
-                "mode": "source",
-                "source": false
+                "file": "Keys/Social Security Dad/Info Cali.png"
               },
-              "icon": "lucide-file",
-              "title": "dbt key"
+              "icon": "lucide-image",
+              "title": "Info Cali"
             }
           }
         ]
@@ -115,13 +113,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/dbt key.md",
+                "file": "Keys/Social Security Dad/Info Cali.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de dbt key"
+              "title": "Esquema de Info Cali"
             }
           },
           {
@@ -230,10 +228,20 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "90311f96837d2a6a",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Keys/dbt recovery key 2026.md",
+    "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
+    "Keys/Social Security Dad/Info Cali.png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.53.24 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.48.22 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.46.44 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.44.28 p.m..png",
+    "Keys/Social Security Dad/Liquidacion Seguridad Social JHRR.jpg",
+    "Keys/Epic Games.md",
+    "Keys/Microsoft.md",
     "Keys/dbt key.md",
+    "Keys/dbt recovery key 2026.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/OBJETIVO DEL PROYECTO.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
@@ -265,19 +273,9 @@
     "Self Study/Backend Project 2026/Paso 2 — Roadmap de Implementación.md",
     "Self Study/Backend Project 2026/Paso 3 — Empezamos (Setup real).md",
     "Untitled.md",
-    "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/🧠 Principio de Manifold Learning.md",
-    "Eurócratas.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Tecnócratas.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-collage.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-mexico.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-colombia.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-brasil.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/life-expectancy-at-birth.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-argentina.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/historic-population.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/historic-population-with-china-india.png",
     "Untitled.canvas"
   ]
 }

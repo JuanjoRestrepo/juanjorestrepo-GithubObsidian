@@ -341,7 +341,10 @@
   "Master Data Science/Omicas/Detectar Picos": "📁",
   "Lovelytics/Databricks 1": "TiBrandDatabricks",
   "Lovelytics": "RaLoveHowl",
-  "Keys/Microsoft.md": "SiMicrosoft",
+  "Keys/Microsoft.md": {
+    "iconName": "SiMicrosoft",
+    "iconColor": "#6ac1d2"
+  },
   "Keys/Apple Id.md": "SiApple",
   "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos": "TiCircleNumber1",
   "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 2 Proceso de los Proyectos en Ciencia de Datos": "TiCircleNumber2",
