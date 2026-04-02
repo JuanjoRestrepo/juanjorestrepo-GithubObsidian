@@ -11,12 +11,14 @@
             "id": "9a948a778c43e957",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Keys/Social Security Dad/Info Cali.png"
+                "file": "Keys/Microsoft - Windows.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Info Cali"
+              "icon": "lucide-file",
+              "title": "Microsoft - Windows"
             }
           }
         ]
@@ -113,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/Social Security Dad/Info Cali.png",
+                "file": "Keys/Microsoft - Windows.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Info Cali"
+              "title": "Esquema de Microsoft - Windows"
             }
           },
           {
@@ -230,8 +232,10 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
+    "Keys/Brave Keys/Brave Passwords.csv",
+    "Keys/Brave Keys",
     "Keys/Social Security Dad/Info Cali.png",
+    "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.53.24 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.48.22 p.m..png",
@@ -239,7 +243,7 @@
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.44.28 p.m..png",
     "Keys/Social Security Dad/Liquidacion Seguridad Social JHRR.jpg",
     "Keys/Epic Games.md",
-    "Keys/Microsoft.md",
+    "Keys/Microsoft - Windows.md",
     "Keys/dbt key.md",
     "Keys/dbt recovery key 2026.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
@@ -268,14 +272,12 @@
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED",
     "Self Study/World Cup 2026 Project⚽🏆/OLD",
-    "Self Study/Backend Project 2026/Docs/prueba-tecnica-it-tools-backend.pdf",
     "Self Study/Backend Project 2026/Paso 1 — Decisiones Arquitectónicas.md",
     "Self Study/Backend Project 2026/Paso 2 — Roadmap de Implementación.md",
     "Self Study/Backend Project 2026/Paso 3 — Empezamos (Setup real).md",
     "Untitled.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-collage.png",
     "Untitled.canvas"
   ]
 }
