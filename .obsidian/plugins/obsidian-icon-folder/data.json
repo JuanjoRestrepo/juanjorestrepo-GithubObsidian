@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasFilePdf",
       "TiCircleNumber6",
       "TiCircleNumber5",
       "TiCircleNumber4",
-      "TiCircleNumber3",
-      "TiCircleNumber2"
+      "TiCircleNumber3"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -370,5 +370,9 @@
   },
   "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4": "TiCircleNumber4",
   "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5": "TiCircleNumber5",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6": "TiCircleNumber6"
+  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6": "TiCircleNumber6",
+  "Job Search/CV 2026 BOGOTA": {
+    "iconName": "FasFilePdf",
+    "iconColor": "#e01a1a"
+  }
 }
