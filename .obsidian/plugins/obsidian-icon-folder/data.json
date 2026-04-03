@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiPython",
       "TiStretching2",
       "FasFilePdf",
       "SiBrave",
-      "SiDbt",
-      "TiCircleNumber6"
+      "SiDbt"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -384,5 +384,6 @@
     "iconColor": "#ff5900"
   },
   "Job Search/CV 2026 BOGOTA": "FasFilePdf",
-  "Templates/AI SKILLS": "TiStretching2"
+  "Templates/AI SKILLS": "TiStretching2",
+  "Templates/Python": "SiPython"
 }
