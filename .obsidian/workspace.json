@@ -11,16 +11,10 @@
             "id": "c489706117a9bf68",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-                "page": 1,
-                "left": -16,
-                "top": 795,
-                "zoom": 0.9154411764705882
-              },
-              "icon": "lucide-file-text",
-              "title": "CV_Resume_Juan_José_Restrepo_Rosero_English_2026"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
