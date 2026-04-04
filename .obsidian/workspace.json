@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "aerospace",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -111,12 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of SKILL.md"
             }
           },
           {
@@ -225,8 +226,31 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "102841d9ebd9d263",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references",
+    "Templates/AI SKILLS/AEROSPACE/aerospace-robotics-engineering.skill",
+    "Templates/AI SKILLS/BACKEND DEV/SKILL.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/scaffolding.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/docker-kubernetes.md",
+    "Templates/AI SKILLS/BACKEND DEV/references",
+    "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
+    "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
+    "Templates/AI SKILLS/AEROSPACE/references/rocket-aerospace.md",
+    "Templates/AI SKILLS/AEROSPACE/references/robotics.md",
+    "Templates/AI SKILLS/AEROSPACE/references/embedded-rtos.md",
+    "Templates/AI SKILLS/AEROSPACE/references/control-systems.md",
+    "Templates/AI SKILLS/AEROSPACE/references/ai-ml-engineering.md",
+    "Templates/AI SKILLS/AEROSPACE/references",
+    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
+    "Templates/AI SKILLS/AEROSPACE/SKILL.md.md",
+    "Templates/AI SKILLS/AEROSPACE",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Templates/Python/pyproject.toml.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/env.md",
@@ -237,20 +261,10 @@
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/OBJETIVO DEL PROYECTO.md",
     "README.md",
-    "Untitled.md",
     "Untitled.canvas",
-    "Eurócratas.md",
-    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
     "Templates/AI SKILLS/BACKEND DEV/web-devops.skill",
-    "Keys/Microsoft - Windows.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/data-science-expert.skill",
     "Templates/AI SKILLS/BACKEND DEV",
-    "Templates/AI SKILLS/ML-DATA SCIENCE",
-    "Templates/AI SKILLS",
-    "Job Search/CV 2026 BOGOTA",
-    "Keys/Brave Keys/Brave Passwords 1.csv",
-    "Keys/Brave Keys/Brave Passwords.csv",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
@@ -259,18 +273,6 @@
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.46.44 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.44.28 p.m..png",
     "Keys/Social Security Dad/Liquidacion Seguridad Social JHRR.jpg",
-    "Keys/Epic Games.md",
-    "Keys/dbt key.md",
-    "Keys/dbt recovery key 2026.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1/1. INGESTA DE DATOS.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Poisson.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Mejoras Fase 2.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Fase 2.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Fase 1.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/2. Estructuración.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6/1. DOCKER.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5/1. API.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png"
   ]
