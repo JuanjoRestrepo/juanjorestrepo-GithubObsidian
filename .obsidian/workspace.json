@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "805949005f3740f2",
+        "id": "f26ca01713e951b4",
         "type": "tabs",
         "children": [
           {
-            "id": "c489706117a9bf68",
+            "id": "55e9b9cda046fa82",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -227,7 +227,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c489706117a9bf68",
+  "active": "55e9b9cda046fa82",
   "lastOpenFiles": [
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Job Search/UAO Trabajo/Metodo STAR.md",
