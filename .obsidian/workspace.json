@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "805949005f3740f2",
+        "id": "7ea659bcd1db0e82",
         "type": "tabs",
         "children": [
           {
-            "id": "c489706117a9bf68",
+            "id": "40cdf519e40e3070",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -41,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -58,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -87,14 +87,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 441.5
+    "width": 254.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -111,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Modulo 1 Estrategia Empresarial y Ciencia de Datos/Unidad 1/Transcripts.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Transcripts"
+              "title": "Esquema"
             }
           },
           {
@@ -197,28 +196,27 @@
               "type": "google-calendar-view-month",
               "state": {},
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "google-calendar-view-month"
+              "icon": "calendar-days",
+              "title": "GCal Month View"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 329.5,
-    "collapsed": true
+    "width": 235.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "bases:Crear nueva base": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
       "ledger-obsidian:Add to Ledger": false,
@@ -227,32 +225,44 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c489706117a9bf68",
+  "active": "40cdf519e40e3070",
   "lastOpenFiles": [
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Job Search/UAO Trabajo/Metodo STAR.md",
     "Templates/Python/pyproject.toml.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
-    "Templates/Python",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
-    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/data-science-expert.skill",
-    "Templates/AI SKILLS/BACKEND DEV/web-devops.skill",
-    "Templates/AI SKILLS/ML-DATA SCIENCE",
-    "Templates/AI SKILLS/BACKEND DEV",
-    "Templates/AI SKILLS",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/env.md",
-    "Keys/dbt recovery key 2026.md",
-    "Keys/Social Security Dad/Info Cali.png",
-    "Keys/Microsoft - Windows.md",
-    "Keys/Brave Keys/Brave Passwords.csv",
-    "Keys/Brave Keys",
-    "Job Search/CV 2026 BOGOTA",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/OBJETIVO DEL PROYECTO.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
+    "Templates/Python",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ARQUITECTURA (SIMPLIFICADA).md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1/1. INGESTA DE DATOS.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/CHECKLIST.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/STACK RECOMENDADO.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ESTRUCTUA DE CARPETAS.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/OBJETIVO DEL PROYECTO.md",
+    "README.md",
+    "Untitled.md",
+    "Untitled.canvas",
+    "Eurócratas.md",
+    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
+    "Templates/AI SKILLS/BACKEND DEV/web-devops.skill",
+    "Keys/Microsoft - Windows.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/data-science-expert.skill",
+    "Templates/AI SKILLS/BACKEND DEV",
+    "Templates/AI SKILLS/ML-DATA SCIENCE",
+    "Templates/AI SKILLS",
+    "Job Search/CV 2026 BOGOTA",
+    "Keys/Brave Keys/Brave Passwords 1.csv",
+    "Keys/Brave Keys/Brave Passwords.csv",
+    "Keys/Social Security Dad/Info Cali.png",
+    "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.53.24 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.48.22 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.46.44 p.m..png",
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.44.28 p.m..png",
+    "Keys/Social Security Dad/Liquidacion Seguridad Social JHRR.jpg",
+    "Keys/Epic Games.md",
+    "Keys/dbt key.md",
+    "Keys/dbt recovery key 2026.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1/1. INGESTA DE DATOS.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Poisson.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Mejoras Fase 2.md",
@@ -261,19 +271,7 @@
     "Self Study/World Cup 2026 Project⚽🏆/OLD/2. Estructuración.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6/1. DOCKER.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5/1. API.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4/1. MODELO.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3/1. FEATURES.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2/1. MODELADO DE DATOS.md",
-    "Self Study/Backend Project 2026/Paso 1 — Decisiones Arquitectónicas.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-collage.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-mexico.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-colombia.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-brasil.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/life-expectancy-at-birth.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/male-population-by-age-group-argentina.png",
-    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/historic-population.png",
-    "Untitled.canvas"
+    "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png"
   ]
 }
