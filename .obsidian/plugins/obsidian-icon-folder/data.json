@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiScikitlearn",
+      "FabNode",
+      "🚀",
       "SiPython",
-      "TiStretching2",
-      "FasFilePdf",
-      "SiBrave",
-      "SiDbt"
+      "TiStretching2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -388,5 +388,8 @@
     "iconColor": "#f22626"
   },
   "Templates/AI SKILLS": "TiStretching2",
-  "Templates/Python": "SiPython"
+  "Templates/Python": "SiPython",
+  "Templates/AI SKILLS/AEROSPACE": "🚀",
+  "Templates/AI SKILLS/BACKEND DEV": "FabNode",
+  "Templates/AI SKILLS/ML-DATA SCIENCE": "SiScikitlearn"
 }
