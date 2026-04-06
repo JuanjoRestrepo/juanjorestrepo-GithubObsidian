@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3a75c99ab2aec7d7",
+        "id": "67ef40715b47d67a",
         "type": "tabs",
         "children": [
           {
-            "id": "53cc9de552f160cb",
+            "id": "ea20f4dad0b0e2c6",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
-                "page": 1,
-                "left": 753,
-                "top": 726,
-                "zoom": 1.48828125
-              },
-              "icon": "lucide-file-text",
-              "title": "BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -117,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE"
+              "title": "Outline"
             }
           },
           {
@@ -253,10 +246,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "53cc9de552f160cb",
+  "active": "ea20f4dad0b0e2c6",
   "lastOpenFiles": [
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/modeling-and-analysis-of-dynamic-systems.pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/modeling-and-analysis-of-dynamic-systems.pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/TERCERA EDICION-Modeling and Analysis of Dynamic Systems, Third Edition ( CPENTalk.com ).pdf",
