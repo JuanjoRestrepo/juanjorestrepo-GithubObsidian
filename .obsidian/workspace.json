@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
+                "file": "Transactions/scotch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📊UNION vs UNION ALL"
+              "title": "scotch"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UNION ALL",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
+                "file": "Transactions/scotch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 📊UNION vs UNION ALL"
+              "title": "Outline of scotch"
             }
           },
           {
@@ -253,12 +253,23 @@
   },
   "active": "bc97a0f24de17e22",
   "lastOpenFiles": [
-    "Self Study/SQL/MySQL/Resources.md",
-    "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
-    "Self Study/SQL/SQL Server",
-    "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
-    "Self Study/SQL/MySQL",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
+    "Transactions/scotch.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Intel Loihi 3.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Inteligencia Artificial 2025.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Robótica Médica.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Science-Viking 1.pdf",
+    "Self Study/SQL/MySQL/5. Foreign Key y Relaciones.md",
+    "Self Study/SQL/MySQL/4. Volver a correr una DB - Hacer Drop.md",
+    "Self Study/SQL/MySQL/3. Insertar Datos en una Tabla.md",
     "Self Study/SQL/MySQL/2. Crear DB y Tablas.md",
+    "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
+    "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
+    "Self Study/SQL/MySQL/Resources.md",
+    "Self Study/SQL/SQL Server",
+    "Self Study/SQL/MySQL",
     "Keys/Proton Recovery Kit/proton-recovery-kit.pdf",
     "Keys/Proton Recovery Kit",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
@@ -276,19 +287,8 @@
     "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
     "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
     "Templates/AI SKILLS/AEROSPACE/references/rocket-aerospace.md",
-    "Templates/AI SKILLS/AEROSPACE/references/robotics.md",
-    "Templates/AI SKILLS/AEROSPACE/references/embedded-rtos.md",
-    "Templates/AI SKILLS/AEROSPACE/references/control-systems.md",
-    "Templates/AI SKILLS/AEROSPACE/references/ai-ml-engineering.md",
     "Templates/AI SKILLS/AEROSPACE/references",
-    "Templates/AI SKILLS/BACKEND DEV/SKILL.md.md",
-    "Templates/AI SKILLS/AEROSPACE/SKILL.md.md",
     "Templates/AI SKILLS/AEROSPACE",
-    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Templates/Python/pyproject.toml.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/env.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP/ARQUITECTURA (SIMPLIFICADA).md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/CHECKLIST.md",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",

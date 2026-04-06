@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "SiMicrosoftsqlserver",
       "TiSql",
       "TiBrandMysql",
-      "SiProtonvpn",
-      "SiScikitlearn"
+      "SiProtonvpn"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -403,5 +403,6 @@
   "Self Study/SQL/SQL Server": {
     "iconName": "SiMicrosoftsqlserver",
     "iconColor": "#f63737"
-  }
+  },
+  "Transactions/scotch.md": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
 }
