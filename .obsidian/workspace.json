@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8f80c0247ac6dcd6",
+        "id": "72dd5a8e4c88b069",
         "type": "tabs",
         "children": [
           {
-            "id": "102841d9ebd9d263",
+            "id": "55bea4bbe1ad3682",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -111,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SKILL.md"
+              "title": "Outline"
             }
           },
           {
