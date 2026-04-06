@@ -11,10 +11,16 @@
             "id": "dd519fce0c68a846",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
+                "page": 1,
+                "left": -8,
+                "top": 652,
+                "zoom": 1.7958855938430878
+              },
+              "icon": "lucide-file-text",
+              "title": "Differential_Equations_Devaney"
             }
           }
         ]
@@ -111,12 +117,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Differential_Equations_Devaney"
             }
           },
           {
@@ -248,6 +255,15 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Unconfirmed 721010.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Unconfirmed 328480.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/New folder",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales",
+    "Ing Electronica/Semestre 4 2020-2",
     "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/scotch.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
@@ -264,26 +280,17 @@
     "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
     "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
     "Self Study/SQL/MySQL/Resources.md",
-    "Self Study/SQL/SQL Server",
-    "Self Study/SQL/MySQL",
-    "Keys/Proton Recovery Kit/proton-recovery-kit.pdf",
-    "Keys/Proton Recovery Kit",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references",
-    "Templates/AI SKILLS/AEROSPACE/aerospace-robotics-engineering.skill",
     "Templates/AI SKILLS/BACKEND DEV/SKILL.md",
     "Templates/AI SKILLS/BACKEND DEV/references/scaffolding.md",
     "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
     "Templates/AI SKILLS/BACKEND DEV/references/docker-kubernetes.md",
-    "Templates/AI SKILLS/BACKEND DEV/references",
     "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
     "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
-    "Templates/AI SKILLS/AEROSPACE/references",
-    "Templates/AI SKILLS/AEROSPACE",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
