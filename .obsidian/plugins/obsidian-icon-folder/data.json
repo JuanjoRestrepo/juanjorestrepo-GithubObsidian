@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiProtonvpn",
       "SiScikitlearn",
       "FabNode",
       "🚀",
-      "SiPython",
-      "TiStretching2"
+      "SiPython"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -391,5 +391,9 @@
   "Templates/Python": "SiPython",
   "Templates/AI SKILLS/AEROSPACE": "🚀",
   "Templates/AI SKILLS/BACKEND DEV": "FabNode",
-  "Templates/AI SKILLS/ML-DATA SCIENCE": "SiScikitlearn"
+  "Templates/AI SKILLS/ML-DATA SCIENCE": "SiScikitlearn",
+  "Keys/Proton Recovery Kit": {
+    "iconName": "SiProtonvpn",
+    "iconColor": "#9e32f5"
+  }
 }
