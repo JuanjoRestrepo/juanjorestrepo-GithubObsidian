@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "24dbe3ed22c1273e",
+        "id": "3a75c99ab2aec7d7",
         "type": "tabs",
         "children": [
           {
-            "id": "dd519fce0c68a846",
+            "id": "53cc9de552f160cb",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
-                "page": 21,
-                "left": 19,
-                "top": 144,
-                "zoom": 1.7958855938430878
-              },
-              "icon": "lucide-file-text",
-              "title": "Differential_Equations_Devaney"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -117,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Differential_Equations_Devaney"
+              "title": "Outline"
             }
           },
           {
@@ -253,19 +246,19 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "53cc9de552f160cb",
   "lastOpenFiles": [
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2/Punto1 Parcial 2 EDOS.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2/Unconfirmed 332523.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2/Punto 2 Parcial EDOS.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2/Unconfirmed 274384.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Unconfirmed 721010.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Unconfirmed 328480.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Diapositiva_Entregable2corte2pdf.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Unconfirmed 106172.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Entregable Videos.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Unconfirmed 103393.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Entregable Masa-Resorte.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Unconfirmed 23551.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/664-1871-4-PB.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte/Unconfirmed 569217.crdownload",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Entregables Masa Resorte",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Parcial 2/Punto1 Parcial 2 EDOS.pdf",
     "Transactions/scotch.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
