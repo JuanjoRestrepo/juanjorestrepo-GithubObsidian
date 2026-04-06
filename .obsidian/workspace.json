@@ -11,10 +11,16 @@
             "id": "53cc9de552f160cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
+                "page": 1,
+                "left": 753,
+                "top": 726,
+                "zoom": 1.48828125
+              },
+              "icon": "lucide-file-text",
+              "title": "BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE"
             }
           }
         ]
@@ -94,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 445.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -111,12 +117,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE"
             }
           },
           {
@@ -246,19 +253,19 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "53cc9de552f160cb",
   "lastOpenFiles": [
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Taller corte 2.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Unconfirmed 867654.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Taller Corte 2 Multi.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Unconfirmed 814995.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Taller 1.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable/Unconfirmed 890332.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Sistemas Lineales Matriciales/Sistemas Lineales2 (Entregable).pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Sistemas Lineales Matriciales/Unconfirmed 912112.crdownload",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Sistemas Lineales Matriciales/Parte 2 Sistemas lineales 1.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte/Sistemas Lineales Matriciales/Unconfirmed 305096.crdownload",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/modeling-and-analysis-of-dynamic-systems.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/TERCERA EDICION-Modeling and Analysis of Dynamic Systems, Third Edition ( CPENTalk.com ).pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Solucionarios/NISE_Control_Systems_Engineering_6th_Ed.pdf",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.zip",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Unconfirmed 789765.crdownload",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Unconfirmed 986744.crdownload",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Unconfirmed 866006.crdownload",
+    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Solucionarios/SkillsSolutions.pdf",
     "Transactions/scotch.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",

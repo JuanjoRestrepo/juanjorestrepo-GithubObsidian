@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RaRobotArm",
       "TiCircleNumber2",
       "TiMathIntegrals",
       "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-      "SiMicrosoftsqlserver",
-      "TiSql"
+      "SiMicrosoftsqlserver"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -406,5 +406,6 @@
   },
   "Transactions/scotch.md": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
   "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales": "TiMathIntegrals",
-  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte": "TiCircleNumber2"
+  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte": "TiCircleNumber2",
+  "Ing Electronica/Semestre 7 2022-1/Realimentados": "RaRobotArm"
 }
