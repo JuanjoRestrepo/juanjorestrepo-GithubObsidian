@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2b66df6cf817efc9",
+        "id": "24dbe3ed22c1273e",
         "type": "tabs",
         "children": [
           {
-            "id": "bc97a0f24de17e22",
+            "id": "dd519fce0c68a846",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Transactions/scotch.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "scotch"
+              "title": "New tab"
             }
           }
         ]
@@ -115,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Transactions/scotch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of scotch"
+              "title": "Outline"
             }
           },
           {
@@ -251,10 +246,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "bc97a0f24de17e22",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
+    "Self Study/POO - LUISA RINCON 2025/Modern C++ for Absolute Beginners- A Friendly Introduction to the C++ Programming Language and C++11 to C++23 Standards.pdf",
     "Transactions/scotch.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Intel Loihi 3.md",
@@ -286,7 +282,6 @@
     "Templates/AI SKILLS/BACKEND DEV/references",
     "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
     "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
-    "Templates/AI SKILLS/AEROSPACE/references/rocket-aerospace.md",
     "Templates/AI SKILLS/AEROSPACE/references",
     "Templates/AI SKILLS/AEROSPACE",
     "Untitled.canvas",
