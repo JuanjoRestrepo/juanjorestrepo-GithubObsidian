@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiMicrosoftsqlserver",
+      "TiSql",
+      "TiBrandMysql",
       "SiProtonvpn",
-      "SiScikitlearn",
-      "FabNode",
-      "🚀",
-      "SiPython"
+      "SiScikitlearn"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -189,7 +189,7 @@
   "Self Study/POO - LUISA RINCON 2025": "SiCplusplus",
   "Self Study/Coursera": "SiCoursera",
   "Self Study/AWS": "FabAws",
-  "Self Study/SQL": "TiBrandMysql",
+  "Self Study/SQL": "TiSql",
   "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md": "TiCircleNumber1",
   "Self Study/NodeJs/Clase 1/2. Callbacks.md": "TiCircleNumber2",
   "Self Study/NodeJs/Clase 2": "TiCircleNumber2",
@@ -395,5 +395,13 @@
   "Keys/Proton Recovery Kit": {
     "iconName": "SiProtonvpn",
     "iconColor": "#9e32f5"
+  },
+  "Self Study/SQL/MySQL": {
+    "iconName": "TiBrandMysql",
+    "iconColor": "#f58f19"
+  },
+  "Self Study/SQL/SQL Server": {
+    "iconName": "SiMicrosoftsqlserver",
+    "iconColor": "#f63737"
   }
 }
