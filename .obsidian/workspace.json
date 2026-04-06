@@ -185,8 +185,29 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "bfdcd3b363ee2081",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
+            }
+          },
+          {
+            "id": "34b70671f9fe6780",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       },
       {
         "id": "ed82d83676065a4b",

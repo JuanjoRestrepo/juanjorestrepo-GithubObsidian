@@ -5,11 +5,20 @@ En SQL Server, ambos operadores se utilizan para combinar los resultados de dos 
 
 ## Resumen Rápido
 
-|**Característica**|**UNION**|**UNION ALL**|
-|---|---|---|
-|**Duplicados**|Los **elimina** (solo devuelve filas distintas).|Los **mantiene** (devuelve todas las filas).|
-|**Rendimiento**|Más **lento** (requiere un proceso de filtrado/ordenado).|Más **rápido** (solo "pega" los resultados).|
-|**Uso de memoria**|Mayor (debe comparar filas para hallar duplicados).|Menor (no necesita comparar nada).|
+
+
+| Característica  | `UNION`                                           | `UNION ALL`                                 |
+| :-------------- | :------------------------------------------------ | :------------------------------------------ |
+| **Duplicados**  | Los **elimina** (devuelve filas únicas)           | Los **mantiene** (devuelve todas las filas) |
+| **Rendimiento** | Más **lento** (filtra/ordena)                     | Más **rápido** (solo une)                   |
+| **Memoria**     | Mayor uso (comparar filas para hallar duplicados) | Menor uso (no compara filas)                |
+
+
+| **Característica** | **UNION**                                                 | **UNION ALL**                                |
+| ------------------ | --------------------------------------------------------- | -------------------------------------------- |
+| **Duplicados**     | Los **elimina** (solo devuelve filas distintas).          | Los **mantiene** (devuelve todas las filas). |
+| **Rendimiento**    | Más **lento** (requiere un proceso de filtrado/ordenado). | Más **rápido** (solo "pega" los resultados). |
+| **Uso de memoria** | Mayor (debe comparar filas para hallar duplicados).       | Menor (no necesita comparar nada).           |
 
 ---
 
@@ -31,13 +40,21 @@ Simplemente une los resultados tal como vienen. Si la Consulta A tiene 5 filas y
 Imagina que tienes dos tablas de clientes:
 
 **Tabla_A** 
-| ID | Nombre |
-| :--- | :--- |
-| 1 | Juan |
-| 2 | Maria 
+
+| ID  | Nombre |
+| :-- | :----- |
+| 1   | Juan   |
+| 2   | Maria  |
 
 
-**Tabla_B** | ID | Nombre | | :--- | :--- | | 2 | Maria | | 3 | Pedro |
+**Tabla_B**
+
+| ID  | Nombre |
+| :-- | :----- |
+| 2   | Maria  |
+| 3   | Pedro  |
+
+
 
 ### Resultado con `UNION`:
 ```SQL
@@ -45,7 +62,15 @@ SELECT Nombre FROM Tabla_A
 UNION
 SELECT Nombre FROM Tabla_B;
 ```
+
+| ID  | Nombre |
+| :-- | :----- |
+| 1   | Juan   |
+| 2   | Maria  |
+| 3   | Pedro  |
+
 **Resultado:** Juan, Maria, Pedro (3 filas).
+
 
 ### Resultado con `UNION ALL`:
 ```SQL
@@ -53,4 +78,95 @@ SELECT Nombre FROM Tabla_A
 UNION ALL
 SELECT Nombre FROM Tabla_B;
 ```
+
+| ID | Nombre |
+| :-- | :-- |
+| 1 | Juan |
+| 2 | Maria |
+| 2 | Maria |
+| 3 | Pedro |
+
 **Resultado:** Juan, Maria, **Maria**, Pedro (4 filas).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+# 📊 Diferencia entre `UNION` y `UNION ALL` en SQL Server
+
+En SQL Server, ambos operadores se utilizan para combinar los resultados de dos o más consultas `SELECT` en un solo conjunto de resultados.
+
+---
+
+## 📝 Resumen Comparativo
+---
+
+## 🔍 Explicación Detallada
+
+### 1. `UNION`
+Combina los resultados y aplica un proceso interno de `DISTINCT`. Si una fila aparece en ambas consultas, solo se mostrará una vez.
+* **Uso:** Cuando necesitas una lista limpia de valores únicos.
+
+### 2. `UNION ALL`
+Une los resultados tal como vienen. Es la opción más eficiente porque SQL Server no tiene que revisar si los datos ya existen en la otra tabla.
+* **Uso:** Cuando la velocidad es prioridad o sabes que no hay duplicados.
+
+---
+
+## 🛠️ Ejemplo Visual
+
+Imagina estas dos tablas de origen:
+
+**Tabla_A**
+| ID | Nombre |
+| :-- | :-- |
+| 1 | Juan |
+| 2 | Maria |
+
+**Tabla_B**
+| ID | Nombre |
+| :-- | :-- |
+| 2 | Maria |
+| 3 | Pedro |
+
+### Resultado con `UNION`
+*(Elimina la repetición de Maria)*
+
+### Resultado con `UNION ALL`
+*(Mantiene a Maria dos veces)*
+
+| ID | Nombre |
+| :-- | :-- |
+| 1 | Juan |
+| 2 | Maria |
+| 2 | Maria |
+| 3 | Pedro |
+
+---
+
+## ⚠️ Reglas de Estructura
+Para que funcionen, debes cumplir:
+1. Mismo **número de columnas**.
+2. **Tipos de datos** compatibles en el mismo orden.
+3. El nombre de las columnas finales será el del **primer SELECT**.
+
+> [!TIP] Tip de Rendimiento
+> Si no te importa ver duplicados, usa siempre **`UNION ALL`**. Es significativamente más rápido en bases de datos grandes.
+
+#SQL #Database #SqlServer #ObsidianNotes
