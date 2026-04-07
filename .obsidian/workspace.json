@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "81330eeaba22dbd2",
+        "id": "af90558be791779b",
         "type": "tabs",
         "children": [
           {
-            "id": "9e905a67509a0f7f",
+            "id": "a52bba14d381687f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -225,9 +225,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "9e905a67509a0f7f",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
+    "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero Inetum.pdf",
+    "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero VASS.pdf",
+    "Job Search/Cover Letter Template/Cover_Letter_Adidas.pdf",
+    "Job Search/Cover Letter Template/Cover Letter Template.md",
+    "Job Search/Cover Letter Template/Cover_Letter_Clara.pdf",
     "Templates/Python/pyproject.toml.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/env.md",
     "Templates/Python",
@@ -248,9 +253,6 @@
     "Templates/AI SKILLS/BACKEND DEV",
     "Templates/AI SKILLS/ML-DATA SCIENCE",
     "Templates/AI SKILLS",
-    "Job Search/CV 2026 BOGOTA",
-    "Keys/Brave Keys/Brave Passwords 1.csv",
-    "Keys/Brave Keys/Brave Passwords.csv",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
@@ -270,7 +272,6 @@
     "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev/Fase 1.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/2. Estructuración.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6/1. DOCKER.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5/1. API.md",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population.png",
     "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 2 - Estrategias para reducir complejidad en los datos/Material/Images Actividad 4 paises/population-density-heat-map.png"
   ]
