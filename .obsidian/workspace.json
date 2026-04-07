@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7ea659bcd1db0e82",
+        "id": "81330eeaba22dbd2",
         "type": "tabs",
         "children": [
           {
-            "id": "40cdf519e40e3070",
+            "id": "9e905a67509a0f7f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -225,7 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "40cdf519e40e3070",
+  "active": "9e905a67509a0f7f",
   "lastOpenFiles": [
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Templates/Python/pyproject.toml.md",
