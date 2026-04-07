@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiPython",
-      "TiStretching2",
-      "FasFilePdf",
-      "SiBrave",
-      "SiDbt"
+      "📚",
+      "RaRobotArm",
+      "TiCircleNumber2",
+      "TiMathIntegrals",
+      "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -189,7 +189,7 @@
   "Self Study/POO - LUISA RINCON 2025": "SiCplusplus",
   "Self Study/Coursera": "SiCoursera",
   "Self Study/AWS": "FabAws",
-  "Self Study/SQL": "TiBrandMysql",
+  "Self Study/SQL": "TiSql",
   "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md": "TiCircleNumber1",
   "Self Study/NodeJs/Clase 1/2. Callbacks.md": "TiCircleNumber2",
   "Self Study/NodeJs/Clase 2": "TiCircleNumber2",
@@ -388,5 +388,25 @@
     "iconColor": "#f22626"
   },
   "Templates/AI SKILLS": "TiStretching2",
-  "Templates/Python": "SiPython"
+  "Templates/Python": "SiPython",
+  "Templates/AI SKILLS/AEROSPACE": "🚀",
+  "Templates/AI SKILLS/BACKEND DEV": "FabNode",
+  "Templates/AI SKILLS/ML-DATA SCIENCE": "SiScikitlearn",
+  "Keys/Proton Recovery Kit": {
+    "iconName": "SiProtonvpn",
+    "iconColor": "#9e32f5"
+  },
+  "Self Study/SQL/MySQL": {
+    "iconName": "TiBrandMysql",
+    "iconColor": "#f58f19"
+  },
+  "Self Study/SQL/SQL Server": {
+    "iconName": "SiMicrosoftsqlserver",
+    "iconColor": "#f63737"
+  },
+  "Transactions/scotch.md": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales": "TiMathIntegrals",
+  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte": "TiCircleNumber2",
+  "Ing Electronica/Semestre 7 2022-1/Realimentados": "RaRobotArm",
+  "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro": "📚"
 }
