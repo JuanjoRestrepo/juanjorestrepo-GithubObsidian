@@ -11,14 +11,16 @@
             "id": "a52bba14d381687f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
+                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
+                "page": 1,
+                "left": -4,
+                "top": 687,
+                "zoom": 1.25
               },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "icon": "lucide-file-text",
+              "title": "Ecuaciones_Diferenciales_y_Problemas_"
             }
           }
         ]
@@ -115,13 +117,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de conflict-files-obsidian-git"
+              "title": "Esquema de Ecuaciones_Diferenciales_y_Problemas_"
             }
           },
           {
@@ -232,6 +234,7 @@
   },
   "active": "a52bba14d381687f",
   "lastOpenFiles": [
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
     "conflict-files-obsidian-git.md",
     "Transactions/scotch.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
@@ -267,7 +270,6 @@
     "Keys/Proton Recovery Kit/proton-recovery-kit.pdf",
     "Keys/Proton Recovery Kit",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Solucionarios/NISE_Control_Systems_Engineering_6th_Ed.pdf",
-    "Job Search/Cover Letter Template/Cover Letter Template.md",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
