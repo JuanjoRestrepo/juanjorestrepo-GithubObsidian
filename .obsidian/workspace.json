@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d7018615f38d927f",
+        "id": "1c9d6879d6161547",
         "type": "tabs",
         "children": [
           {
-            "id": "8de96e2899ec82dc",
+            "id": "1b744d4102293abc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -225,7 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "8de96e2899ec82dc",
+  "active": "1b744d4102293abc",
   "lastOpenFiles": [
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
