@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "15c8c808ecf3b1f4",
+        "id": "520159ddc0119ba8",
         "type": "tabs",
         "children": [
           {
-            "id": "fe27cdb14e2489ab",
+            "id": "25645dff3292172e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -246,7 +246,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "fe27cdb14e2489ab",
+  "active": "25645dff3292172e",
   "lastOpenFiles": [
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/Data Bases (SQL).md",
     "Keys/dbt key.md",
