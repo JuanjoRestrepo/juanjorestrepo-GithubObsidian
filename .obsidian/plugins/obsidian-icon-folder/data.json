@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiComputerFill",
       "SiTerraform",
       "SiApple",
       "RiHealthBookLine",
-      "SiProtonvpn",
-      "SiObsidian"
+      "SiProtonvpn"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -52,5 +52,6 @@
   "Self Study/Terraform": {
     "iconName": "SiTerraform",
     "iconColor": "#8c00ff"
-  }
+  },
+  "Self Study/AWS/Introducción al Cómputo": "RiComputerFill"
 }
