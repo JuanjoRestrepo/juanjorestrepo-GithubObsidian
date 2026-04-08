@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "🔑",
-      "SiExcalidraw",
-      "TiDatabase",
-      "SiDocker",
-      "TiBrandNodejs"
+      "SiApple",
+      "RiHealthBookLine",
+      "SiProtonvpn",
+      "SiObsidian",
+      "SiGooglecalendar"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,5 +41,12 @@
   "Self Study/Docker": "SiDocker",
   "Self Study/Backend Project 2026": "TiDatabase",
   "Excalidraw": "SiExcalidraw",
-  "Keys": "🔑"
+  "Keys": "🔑",
+  "Templates": "TiTemplate",
+  "Keys/Department of State Enterprise Exchange Student Alumni Account": "🇺🇸",
+  "Keys/Google Calendar API Credentials for Obsidian": "SiGooglecalendar",
+  "Keys/Obsidian Github Access Token": "SiObsidian",
+  "Keys/Proton Recovery Kit": "SiProtonvpn",
+  "Keys/Social Security Dad": "RiHealthBookLine",
+  "Keys/Apple Id.md": "SiApple"
 }
