@@ -5,7 +5,13 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "🔑",
+      "SiExcalidraw",
+      "TiDatabase",
+      "SiDocker",
+      "TiBrandNodejs"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -27,5 +33,13 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "Self Study": "📚",
+  "Self Study/World Cup 2026 Project⚽🏆": "⚽",
+  "Self Study/Pinguino Mario - Hacking": "🐧",
+  "Self Study/NodeJs": "TiBrandNodejs",
+  "Self Study/Docker": "SiDocker",
+  "Self Study/Backend Project 2026": "TiDatabase",
+  "Excalidraw": "SiExcalidraw",
+  "Keys": "🔑"
 }
