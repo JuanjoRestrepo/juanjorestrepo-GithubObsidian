@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "✏",
       "🧹",
       "TiReportAnalytics",
       "TiFileDatabase",
-      "SiRelay",
-      "LiDatabase"
+      "SiRelay"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -396,5 +396,6 @@
   "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/SETUP": "FasFlagCheckered",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 2 Primer Avance.md": "TiCircleNumber2",
-  "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 4 a 6 Revisión de avances.md": "TiCircleNumber3"
+  "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 4 a 6 Revisión de avances.md": "TiCircleNumber3",
+  "Master Data Science/Omicas/Tecnicas/Notas Visitas": "✏"
 }
