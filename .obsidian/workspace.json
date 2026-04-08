@@ -41,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "google calendar",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -87,14 +87,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 429.5
+    "width": 254.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -116,7 +116,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Esquema"
             }
           },
           {
@@ -180,29 +180,8 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "bfdcd3b363ee2081",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
-            }
-          },
-          {
-            "id": "34b70671f9fe6780",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       },
       {
         "id": "ed82d83676065a4b",
@@ -225,19 +204,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 235.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "bases:Crear nueva base": false,
       "obsidian42-brat:BRAT": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
       "ledger-obsidian:Add to Ledger": false,
@@ -287,43 +266,43 @@
   },
   "active": "ea024ae3898ddaf3",
   "lastOpenFiles": [
-    "Keys/Google Account Keys.md",
-    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
-    "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
-    "Keys/Google Calendar API Credentials for Obsidian/Unconfirmed 343713.crdownload",
+    "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
+    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
     "Keys/Google Calendar API Credentials for Obsidian",
-    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Transformando las industrias a través de la IA.md",
-    "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/Data Bases (SQL).md",
-    "Keys/dbt key.md",
-    "Keys/dbt recovery key 2026.md",
-    "Master Data Science/Cursor on Website.md",
-    "Master Data Science/TESIS 2025/CANCELACION/Carta_Renuncia_Proyecto_Aplicado_Juan_Jose_Restrepo_Rosero.pdf",
-    "Master Data Science/TESIS 2025/CANCELACION/CANCELADO Resumen pre-entrega final.md",
-    "Master Data Science/Semestre 1/Asesora Academica.md",
-    "Master Data Science/Semestre 1/Semestre 1.md",
-    "Master Data Science/Omicas/Tecnicas/3. Espectrofotometría UV-Vis.md",
-    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
-    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
-    "Master Data Science/Omicas/MinIO.md",
-    "Master Data Science/Data Engineering Path 2023/Data Engineering Path 2023.md",
-    "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
-    "Master Data Science/Data Engineering Path 2023/Path de Estudio Data Science 2023.md",
-    "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
-    "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 1/Experiencia.md",
-    "Master Data Science/Semestre 1/Inducción/Inducción.md",
-    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/4 - Conexión MongoDB con Python.md",
-    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/3 - MongoExport.md",
-    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/1 - Conceptos Básicos MongoDB.md",
-    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/0 - Instalación de MongoDB.md",
-    "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
+    "conflict-files-obsidian-git.md",
+    "Transactions/scotch.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/scaffolding.md",
+    "Templates/AI SKILLS/BACKEND DEV/references/docker-kubernetes.md",
+    "Templates/AI SKILLS/BACKEND DEV/references",
+    "Templates/AI SKILLS/BACKEND DEV/SKILL.md",
+    "Templates/AI SKILLS/AEROSPACE/references/embedded-rtos.md",
+    "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
+    "Templates/AI SKILLS/AEROSPACE/references/rocket-aerospace.md",
+    "Templates/AI SKILLS/AEROSPACE/references/control-systems.md",
+    "Templates/AI SKILLS/AEROSPACE/references/robotics.md",
+    "Templates/AI SKILLS/AEROSPACE/references/ai-ml-engineering.md",
+    "Templates/AI SKILLS/AEROSPACE/references",
+    "Templates/AI SKILLS/AEROSPACE/aerospace-robotics-engineering.skill",
+    "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
+    "Templates/AI SKILLS/AEROSPACE",
+    "Self Study/SQL/SQL Server/📊UNION vs UNION ALL.md",
+    "Self Study/SQL/SQL Server",
+    "Self Study/SQL/MySQL/2. Crear DB y Tablas.md",
+    "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
+    "Self Study/SQL/MySQL/Resources.md",
+    "Self Study/SQL/MySQL/5. Foreign Key y Relaciones.md",
+    "Self Study/SQL/MySQL",
     "Untitled.canvas",
-    "Qubika/DataCamp Qversity Certificate.pdf",
-    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Job Search/Cover Letter Template/Cover_Letter_Clara.pdf",
-    "Job Search/Cover Letter Template/Cover_Letter_Adidas.pdf",
-    "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero VASS.pdf",
-    "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero Inetum.pdf",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
