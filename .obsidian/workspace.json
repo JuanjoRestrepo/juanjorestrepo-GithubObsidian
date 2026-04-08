@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "96f1ed9174c74315",
+        "id": "2ae2f5dcd22f9631",
         "type": "tabs",
         "children": [
           {
-            "id": "c037028174c5d279",
+            "id": "47ea4e385215a012",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -225,7 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c037028174c5d279",
+  "active": "47ea4e385215a012",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
