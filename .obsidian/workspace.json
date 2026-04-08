@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "520159ddc0119ba8",
+        "id": "0bc29cbcde7b37cd",
         "type": "tabs",
         "children": [
           {
-            "id": "25645dff3292172e",
+            "id": "3a243c1a80c1366f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Keys/Google Account Keys.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Google Account Keys"
             }
           }
         ]
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Omicas",
+                "query": "google calendar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 429.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -225,7 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,8 +250,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "25645dff3292172e",
+  "floating": {
+    "id": "210e4dc9401aa96b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "def76722d5141446",
+        "type": "window",
+        "children": [
+          {
+            "id": "6baa43a1c4a4ceda",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b827d5b0a2739507",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "http://127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events",
+                    "title": "127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 448,
+        "y": 116,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "b827d5b0a2739507",
   "lastOpenFiles": [
+    "Keys/Google Account Keys.md",
+    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
+    "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
+    "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
+    "Keys/Google Calendar API Credentials for Obsidian/Unconfirmed 343713.crdownload",
+    "Keys/Google Calendar API Credentials for Obsidian",
+    "Master Data Science/Semestre 3/Gerencia de Proyectos en Ciencia de Datos/Transformando las industrias a través de la IA.md",
     "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/Data Bases (SQL).md",
     "Keys/dbt key.md",
     "Keys/dbt recovery key 2026.md",
@@ -271,20 +321,13 @@
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/1 - Conceptos Básicos MongoDB.md",
     "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/0 - Instalación de MongoDB.md",
     "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
-    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
-    "README.md",
     "Untitled.canvas",
-    "Qubika/Entrevista Qubika No 1.md",
     "Qubika/DataCamp Qversity Certificate.pdf",
-    "Job Search/Job Templates.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Job Search/Cover Letter Template/Cover_Letter_Clara.pdf",
     "Job Search/Cover Letter Template/Cover_Letter_Adidas.pdf",
     "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero VASS.pdf",
     "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero Inetum.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/modeling-and-analysis-of-dynamic-systems.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
