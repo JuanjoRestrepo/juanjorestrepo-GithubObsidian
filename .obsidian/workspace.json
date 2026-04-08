@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "68847fd92cceeca5",
+        "id": "9c3dcdd2db13ca98",
         "type": "tabs",
         "children": [
           {
-            "id": "fbebb4902617d0f2",
+            "id": "1348d04bb7e0bd73",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"Self Study/NodeJs/Clase 1/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -246,8 +246,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "fbebb4902617d0f2",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/4 - Conexión MongoDB con Python.md",
+    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/3 - MongoExport.md",
+    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/1 - Conceptos Básicos MongoDB.md",
+    "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB/0 - Instalación de MongoDB.md",
+    "Self Study/NodeJs/Clase 2/1. Protocolo HTTP.md",
+    "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md",
     "README.md",
     "Untitled.canvas",
     "Qubika/Entrevista Qubika No 1.md",
@@ -279,12 +285,6 @@
     "Self Study/SQL/MySQL/Resources.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
-    "Templates/AI SKILLS/BACKEND DEV/SKILL.md",
-    "Templates/AI SKILLS/BACKEND DEV/references/scaffolding.md",
-    "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",

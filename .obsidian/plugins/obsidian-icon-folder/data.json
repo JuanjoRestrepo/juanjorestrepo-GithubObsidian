@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "⚙",
+      "SiDevdotto",
+      "LiDatabase",
       "SiMicrosoftsqlserver",
-      "TiBrandMysql",
-      "TiSql",
-      "SiCplusplus",
-      "TiBrandNodejs"
+      "SiMongodb"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -276,8 +276,8 @@
   "Master Data Science/TESIS 2025/Anteproyecto/Documento": "CoFileDocument",
   "Self Study/Pinguino Mario - Hacking": "🐧",
   "Self Study/Pinguino Mario - Hacking/Bases de Datos/MongoDB": "SiMongodb",
-  "Self Study/Pinguino Mario - Hacking/Bases de Datos/Mysql": "SiMysql",
-  "Self Study/Pinguino Mario - Hacking/Coding/Java": "FabJava",
+  "Self Study/Pinguino Mario - Hacking/Bases de Datos/Mysql": "TiBrandMysql",
+  "Self Study/Pinguino Mario - Hacking/Coding/Java": "RiJavaLine",
   "Self Study/Pinguino Mario - Hacking/Coding/JavaScript": "SiJavascript",
   "Self Study/Pinguino Mario - Hacking/Coding/PHP": "SiPhp",
   "Self Study/Pinguino Mario - Hacking/Coding/Powershell": "SiPowershell",
@@ -345,26 +345,9 @@
   "Rappi": "SiUbereats",
   "Rappi/Eleccion": "TiCircleNumber0",
   "Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva": "😬",
-  "Self Study/World Cup 2026 Project⚽🏆": "RaSoccerBall",
-  "Self Study/Backend Project 2026/Docs": {
-    "iconName": "FasFilePdf",
-    "iconColor": "#ff0000"
-  },
-  "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev": "FabDev",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED": {
-    "iconName": "FasGear",
-    "iconColor": "#fff700"
-  },
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/SETUP": "FasFlagCheckered",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 1": "TiCircleNumber1",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 2": "TiCircleNumber2",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 3": {
-    "iconName": "TiCircleNumber3",
-    "iconColor": "#b0b0b0"
-  },
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 4": "TiCircleNumber4",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 5": "TiCircleNumber5",
-  "Self Study/World Cup 2026 Project⚽🏆/REDISGNED/FASE 6": "TiCircleNumber6",
+  "Self Study/World Cup 2026 Project⚽🏆": "⚽",
+  "Self Study/Backend Project 2026/Docs": "TiFileTypePdf",
+  "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev": "SiDevdotto",
   "Keys/dbt recovery key 2026.md": {
     "iconName": "SiDbt",
     "iconColor": "#ff7300"
@@ -396,5 +379,19 @@
   "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro": "📚",
   "Rappi/Eleccion/Opcion A": "TiLetterA",
   "Rappi/Eleccion/Opcion B": "TiLetterB",
-  "Self Study/Backend Project 2026": "TiDatabase"
+  "Self Study/Backend Project 2026": "TiDatabase",
+  "Self Study/Coursera/Java": "RiJavaLine",
+  "Self Study/Pinguino Mario - Hacking/Bases de Datos/SQL Server": "SiMicrosoftsqlserver",
+  "Self Study/Pinguino Mario - Hacking/Bases de Datos": "LiDatabase",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED": "⚙",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 1": "TiCircleNumber1",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 2": "TiCircleNumber2",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 3": {
+    "iconName": "TiCircleNumber3",
+    "iconColor": "#b0b0b0"
+  },
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4": "TiCircleNumber4",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 5": "TiCircleNumber5",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 6": "TiCircleNumber6",
+  "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/SETUP": "FasFlagCheckered"
 }
