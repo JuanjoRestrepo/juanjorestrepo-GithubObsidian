@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "af90558be791779b",
+        "id": "d7018615f38d927f",
         "type": "tabs",
         "children": [
           {
-            "id": "a52bba14d381687f",
+            "id": "8de96e2899ec82dc",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
-                "page": 1,
-                "left": -4,
-                "top": 687,
-                "zoom": 1.25
-              },
-              "icon": "lucide-file-text",
-              "title": "Ecuaciones_Diferenciales_y_Problemas_"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -117,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Ecuaciones_Diferenciales_y_Problemas_"
+              "title": "Esquema"
             }
           },
           {
@@ -232,8 +225,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a52bba14d381687f",
+  "active": "8de96e2899ec82dc",
   "lastOpenFiles": [
+    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
     "conflict-files-obsidian-git.md",
     "Transactions/scotch.md",
@@ -269,7 +263,6 @@
     "Self Study/SQL/MySQL",
     "Keys/Proton Recovery Kit/proton-recovery-kit.pdf",
     "Keys/Proton Recovery Kit",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Solucionarios/NISE_Control_Systems_Engineering_6th_Ed.pdf",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
