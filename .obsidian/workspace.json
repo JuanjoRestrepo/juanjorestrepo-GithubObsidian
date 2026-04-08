@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0bc29cbcde7b37cd",
+        "id": "3c4027cb33912e2a",
         "type": "tabs",
         "children": [
           {
-            "id": "3a243c1a80c1366f",
+            "id": "db6c9599e7981249",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Keys/Google Account Keys.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Google Account Keys"
+              "title": "New tab"
             }
           }
         ]
@@ -251,29 +247,29 @@
     }
   },
   "floating": {
-    "id": "210e4dc9401aa96b",
+    "id": "7a5bb4e85ca76971",
     "type": "floating",
     "children": [
       {
-        "id": "def76722d5141446",
+        "id": "2b09e7699e4d2049",
         "type": "window",
         "children": [
           {
-            "id": "6baa43a1c4a4ceda",
+            "id": "4e14e69013a3f8ef",
             "type": "tabs",
             "children": [
               {
-                "id": "b827d5b0a2739507",
+                "id": "ea024ae3898ddaf3",
                 "type": "leaf",
                 "state": {
                   "type": "webviewer",
                   "state": {
-                    "url": "http://127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events",
-                    "title": "127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events",
+                    "url": "https://obsidian.md/auth#forgotpass",
+                    "title": "Account - Obsidian",
                     "mode": "webview"
                   },
                   "icon": "globe-2",
-                  "title": "127.0.0.1:42813/callback?state=rmopfmhkll9fj38viyv6vj&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8BRb9CAsnEFYT1nx9wQ6qnd9VtuH-ytsHCEcqvwLX40Yp4MTGP7rfxpS34YpxHgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.events"
+                  "title": "Account - Obsidian"
                 }
               }
             ]
@@ -289,7 +285,7 @@
       }
     ]
   },
-  "active": "b827d5b0a2739507",
+  "active": "ea024ae3898ddaf3",
   "lastOpenFiles": [
     "Keys/Google Account Keys.md",
     "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
