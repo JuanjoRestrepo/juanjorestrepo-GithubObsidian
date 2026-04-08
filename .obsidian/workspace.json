@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bb090d3740462123",
+        "id": "2749406dc7e62baa",
         "type": "tabs",
         "children": [
           {
-            "id": "14838cb70a9753a1",
+            "id": "77f88b032eb320b5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Keys/dbt key.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "dbt key"
             }
           }
         ]
@@ -248,6 +252,19 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Keys/dbt recovery key 2026.md",
+    "Keys/dbt key.md",
+    "Master Data Science/Cursor on Website.md",
+    "Master Data Science/TESIS 2025/CANCELACION/Carta_Renuncia_Proyecto_Aplicado_Juan_Jose_Restrepo_Rosero.pdf",
+    "Master Data Science/TESIS 2025/CANCELACION/CANCELADO Resumen pre-entrega final.md",
+    "Master Data Science/Semestre 1/Asesora Academica.md",
+    "Master Data Science/Semestre 1/Semestre 1.md",
+    "Master Data Science/Omicas/Tecnicas/3. Espectrofotometría UV-Vis.md",
+    "Master Data Science/Omicas/Tecnicas/2. Espectroscopía Infrarroja por Transformada de Fourier (FTIR).md",
+    "Master Data Science/Omicas/Tecnicas/1. Espectroscopía Raman.md",
+    "Master Data Science/Omicas/MinIO.md",
+    "Master Data Science/Data Engineering Path 2023/Data Engineering Path 2023.md",
+    "GitHub Porfolio ReadMe Profiles/ReadMe Profile Generator.md",
     "Master Data Science/Data Engineering Path 2023/Path de Estudio Data Science 2023.md",
     "Master Data Science/Omicas/Tecnicas/Notas Visitas/Notas Visita 1 Omicas.md",
     "Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 1/Experiencia.md",
@@ -272,19 +289,6 @@
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/modeling-and-analysis-of-dynamic-systems.pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE",
-    "Transactions/scotch.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/IBM AI Digital Twins.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Intel Loihi 3.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Inteligencia Artificial 2025.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Robótica Médica.md",
-    "Self Study/SQL/MySQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/MySQL/4. Volver a correr una DB - Hacer Drop.md",
-    "Self Study/SQL/MySQL/3. Insertar Datos en una Tabla.md",
-    "Self Study/SQL/MySQL/2. Crear DB y Tablas.md",
-    "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",

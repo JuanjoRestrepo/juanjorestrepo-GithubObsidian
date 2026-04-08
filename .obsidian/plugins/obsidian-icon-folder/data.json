@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "✏",
-      "🧹",
-      "TiReportAnalytics",
-      "TiFileDatabase",
-      "SiRelay"
+      "TiFileTypePdf",
+      "TiCircleNumber5",
+      "LiBinary",
+      "SiVmware",
+      "SiPlaystation"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,7 +42,7 @@
   "Master Data Science/Semestre 1": "🥇",
   "Master Data Science/Semestre 2": "🥈",
   "Keys/Department of State Enterprise Exchange Student Alumni Account": "🇺🇸",
-  "Keys/Obsidian Github Access Token": "🔷",
+  "Keys/Obsidian Github Access Token": "SiObsidian",
   "Job Search/Cover Letter Template": "TiMailAi",
   "Files": {
     "iconName": "LiFiles",
@@ -50,30 +50,21 @@
   },
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II": "SiCodeproject",
   "Keys/Facebook Account Keys.md": "SiFacebook",
-  "Keys/Firefox Account Keys.md": {
-    "iconName": "SiFirefox",
-    "iconColor": "#ff5900"
-  },
-  "Keys/Google Account Keys.md": "SiGoogle",
+  "Keys/Firefox Account Keys.md": "SiFirefox",
+  "Keys/Google Account Keys.md": "RiGoogleFill",
   "Keys/Info Cuenta Libreta Militar.md": "🪖",
   "Keys/Info Cuenta SURA 2024.md": "⚕",
-  "Keys/VMware Workstation Pro 17 full license keys 2023.md": {
-    "iconName": "SiVmware",
-    "iconColor": "#fede10"
-  },
+  "Keys/VMware Workstation Pro 17 full license keys 2023.md": "SiVmware",
   "GitHub Porfolio ReadMe Profiles": "SiGithub",
   "Transactions": "💰",
-  "Keys/Obsidian Templates GitHub Token.md": {
-    "iconName": "SiObsidian",
-    "iconColor": "#9238ff"
-  },
+  "Keys/Obsidian Templates GitHub Token.md": "SiObsidian",
   "Templates": "TiTemplate",
   "Tags": "LiTags",
   "Job Search/IBM": "SiIbm",
   "Job Search/Kiwibot": "LiBot",
   "Job Search/Siemens": "SiSiemens",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)": "SiSqlite",
-  "Ing Electronica/Semestre 9 2023-1/IA": "OcCopilot16",
+  "Ing Electronica/Semestre 9 2023-1/IA": "SiGithubcopilot",
   "Ing Electronica/Semestre 8 2022-2/CPI": "🎛",
   "Templates/TODO List.md": "SiTodoist",
   "Job Search/Job Templates.md": "TiTemplate",
@@ -103,7 +94,7 @@
   "Ing Electronica/Semestre 9 2023-1/IA/Corte 1": "1️⃣",
   "Ing Electronica/Semestre 9 2023-1/IA/Corte 2": "2️⃣",
   "Ing Electronica/Semestre 9 2023-1/IA/Corte 3": "3️⃣",
-  "Ing Electronica/Semestre 9 2023-1/POO": "FabJava",
+  "Ing Electronica/Semestre 9 2023-1/POO": "RiJavaLine",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Cronograma.md": "📅",
   "Master Data Science/Semestre 2/Deep Learning": "🤖",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado": "TiCircleNumber1",
@@ -156,17 +147,11 @@
   "Keys/dbt key.md": "SiDbt",
   "Qubika/Qversity 2025/9. Airflow": "SiApacheairflow",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL DALTO": "SiPostgresql",
-  "Keys/Open AI API Key 2025.md": {
-    "iconName": "SiOpenai",
-    "iconColor": "#adff8a"
-  },
+  "Keys/Open AI API Key 2025.md": "SiOpenai",
   "Master Data Science/Data Engineering Path 2023/Data_Science_Assets": "LiImages",
   "Master Data Science/Data Engineering Path 2023": "SiAkiflow",
   "Keys/CPP POO 2025 SSH Key.md": "SiCplusplus",
-  "Keys/Play Station Account 2024 Backup Codes and Pass.md": {
-    "iconName": "SiPlaystation",
-    "iconColor": "#0007d1"
-  },
+  "Keys/Play Station Account 2024 Backup Codes and Pass.md": "SiPlaystation",
   "Keys/Epic Games.md": "SiEpicgames",
   "Master Data Science/TESIS 2025": "📙",
   "Master Data Science/TESIS 2025/Anteproyecto": "📗",
@@ -204,7 +189,7 @@
   "Self Study/POO - LUISA RINCON 2025/4.1PrimeraCod - Profesorcito.md": "TiCircleNumber4",
   "Self Study/POO - LUISA RINCON 2025/5.EjerciciosDiseño.md": "TiCircleNumber5",
   "Self Study/POO - LUISA RINCON 2025/Garbage Collector.md": "LiTrash",
-  "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "OcFileBinary16",
+  "Self Study/POO - LUISA RINCON 2025/Makefiles - build.bat .ssh.md": "LiBinary",
   "Self Study/POO - LUISA RINCON 2025/Notas libro.md": "TiNotes",
   "Self Study/POO - LUISA RINCON 2025/Repositorios Github.md": "SiGithub",
   "Self Study/POO - LUISA RINCON 2025/Solución Ejercicio Diseño.md": "✏",
@@ -253,14 +238,11 @@
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/2.Reflexión.md": "🤔",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 1 Conceptos basicos/4.Evaluación.md": "LiPlane",
   "Self Study/F1": "SiF1",
-  "Self Study/F1/Material": "FasFilePdf",
+  "Self Study/F1/Material": "TiFileTypePdf",
   "Self Study/⬛🟥🟨 B1/Material": "FasFilePdf",
   "Master Data Science/Directorio Posgrados FIC Neojaverianos 2024 -2.pdf": "TiPhone",
-  "Master Data Science/TESIS 2025/CANCELACION/CANCELADO Resumen pre-entrega final.md": {
-    "iconName": "RaCancel",
-    "iconColor": "#fe1616"
-  },
-  "Master Data Science/TESIS 2025/CANCELACION": "RaCancel",
+  "Master Data Science/TESIS 2025/CANCELACION/CANCELADO Resumen pre-entrega final.md": "SiX",
+  "Master Data Science/TESIS 2025/CANCELACION": "SiX",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/1.Contexto.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/2.Experiencia.md": "TiCircleNumber2",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje/3.Reflexión.md": "🤔",
@@ -316,10 +298,7 @@
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos/Unidad 1 - Introducción a la visualización de datos/6.Evaluación.md": "🧪",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Material": "TiFileTypePdf",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Material": "FasFilePdf",
-  "Keys/Gemini API Key 2025.md": {
-    "iconName": "SiGooglegemini",
-    "iconColor": "#978aff"
-  },
+  "Keys/Gemini API Key 2025.md": "SiGooglegemini",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones": "📁",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/Unidad 1 - Mapeo de visualizaciones según el tipo de datos y percepción (visual encoding)": "TiCircleNumber1",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 2 - Diseño y Evaluación de visualizaciones/NOTAS": "✏",
@@ -348,34 +327,25 @@
   "Self Study/World Cup 2026 Project⚽🏆": "⚽",
   "Self Study/Backend Project 2026/Docs": "TiFileTypePdf",
   "Self Study/World Cup 2026 Project⚽🏆/OLD/Dev": "SiDevdotto",
-  "Keys/dbt recovery key 2026.md": {
-    "iconName": "SiDbt",
-    "iconColor": "#ff7300"
-  },
+  "Keys/dbt recovery key 2026.md": "SiDbt",
   "Keys/Microsoft - Windows.md": {
     "iconName": "SiMicrosoft",
     "iconColor": "#6ac1d2"
   },
-  "Keys/Brave Keys": {
-    "iconName": "SiBrave",
-    "iconColor": "#ff5900"
-  },
+  "Keys/Brave Keys": "SiBrave",
   "Job Search/CV 2026 BOGOTA": "TiFileTypePdf",
   "Templates/AI SKILLS": "TiStretching2",
   "Templates/Python": "SiPython",
   "Templates/AI SKILLS/AEROSPACE": "🚀",
   "Templates/AI SKILLS/BACKEND DEV": "FabNode",
   "Templates/AI SKILLS/ML-DATA SCIENCE": "SiScikitlearn",
-  "Keys/Proton Recovery Kit": {
-    "iconName": "SiProtonvpn",
-    "iconColor": "#9e32f5"
-  },
+  "Keys/Proton Recovery Kit": "SiProtonvpn",
   "Self Study/SQL/MySQL": "TiBrandMysql",
   "Self Study/SQL/SQL Server": "SiMicrosoftsqlserver",
   "Transactions/scotch.md": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales": "TiMathIntegrals",
+  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales": "TiMathIntegralX",
   "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte": "TiCircleNumber2",
-  "Ing Electronica/Semestre 7 2022-1/Realimentados": "RaRobotArm",
+  "Ing Electronica/Semestre 7 2022-1/Realimentados": "🤖",
   "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro": "📚",
   "Rappi/Eleccion/Opcion A": "TiLetterA",
   "Rappi/Eleccion/Opcion B": "TiLetterB",
@@ -397,5 +367,7 @@
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 1 Primer Encuentro.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 2 Primer Avance.md": "TiCircleNumber2",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Semana 4 a 6 Revisión de avances.md": "TiCircleNumber3",
-  "Master Data Science/Omicas/Tecnicas/Notas Visitas": "✏"
+  "Master Data Science/Omicas/Tecnicas/Notas Visitas": "✏",
+  "Ing Electronica/Semestre 4 2020-2/Calculo Multivariable": "TiMathIntegrals",
+  "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros": "📚"
 }
