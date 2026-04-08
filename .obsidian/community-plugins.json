@@ -11,12 +11,12 @@
   "obsidian-excalidraw-plugin",
   "google-calendar",
   "obsidian-git",
-  "obsidian-icon-folder",
   "highlightr-plugin",
   "ninja-cursor",
   "omnisearch",
   "cmdr",
   "ledger-obsidian",
   "obsidian-mind-map",
-  "pdf-plus"
+  "pdf-plus",
+  "obsidian-icon-folder"
 ]
