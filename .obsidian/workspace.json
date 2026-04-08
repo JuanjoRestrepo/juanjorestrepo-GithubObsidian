@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c055afcd04ca2679",
+        "id": "384882366812343e",
         "type": "tabs",
         "children": [
           {
-            "id": "e509d672b76a9c80",
+            "id": "09e296eb8406a959",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Keys/Google Account Keys.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Google Account Keys"
+              "title": "New tab"
             }
           }
         ]
@@ -115,7 +111,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/Google Account Keys.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -209,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,16 +225,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e509d672b76a9c80",
+  "active": "09e296eb8406a959",
   "lastOpenFiles": [
-    "Keys/Google Account Keys.md",
+    "conflict-files-obsidian-git.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
     "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
     "Keys/Google Calendar API Credentials for Obsidian",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
-    "conflict-files-obsidian-git.md",
     "Transactions/scotch.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",

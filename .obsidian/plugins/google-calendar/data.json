@@ -14,7 +14,7 @@
   "importStartOffset": 1,
   "importEndOffset": 1,
   "optionalNotePrefix": "",
-  "eventNoteNameFormat": "{date}} - {{event-title}}",
+  "eventNoteNameFormat": "{{date}} - {{event-title}}",
   "defaultCalendar": "restrepojuanjo@gmail.com",
   "calendarBlackList": [],
   "insertTemplates": [],
