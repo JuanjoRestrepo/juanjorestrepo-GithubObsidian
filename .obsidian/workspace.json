@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "29ee1b11c707261d",
+        "id": "c055afcd04ca2679",
         "type": "tabs",
         "children": [
           {
-            "id": "fabb59e2508c15d0",
+            "id": "e509d672b76a9c80",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -41,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -87,7 +87,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "title": "Graph view"
             }
           }
         ]
@@ -116,7 +116,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Outline"
             }
           },
           {
@@ -208,15 +208,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
-      "bases:Crear nueva base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
       "ledger-obsidian:Add to Ledger": false,
@@ -225,7 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "fabb59e2508c15d0",
+  "active": "e509d672b76a9c80",
   "lastOpenFiles": [
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
