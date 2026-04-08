@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c4027cb33912e2a",
+        "id": "29ee1b11c707261d",
         "type": "tabs",
         "children": [
           {
-            "id": "db6c9599e7981249",
+            "id": "fabb59e2508c15d0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -225,46 +225,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "floating": {
-    "id": "7a5bb4e85ca76971",
-    "type": "floating",
-    "children": [
-      {
-        "id": "2b09e7699e4d2049",
-        "type": "window",
-        "children": [
-          {
-            "id": "4e14e69013a3f8ef",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ea024ae3898ddaf3",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://obsidian.md/auth#forgotpass",
-                    "title": "Account - Obsidian",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "Account - Obsidian"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 448,
-        "y": 116,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "ea024ae3898ddaf3",
+  "active": "fabb59e2508c15d0",
   "lastOpenFiles": [
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
