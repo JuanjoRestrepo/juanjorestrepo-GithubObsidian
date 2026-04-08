@@ -11,10 +11,14 @@
             "id": "e509d672b76a9c80",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Keys/Google Account Keys.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Google Account Keys"
             }
           }
         ]
@@ -111,6 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Keys/Google Account Keys.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -227,6 +232,7 @@
   },
   "active": "e509d672b76a9c80",
   "lastOpenFiles": [
+    "Keys/Google Account Keys.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
     "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
@@ -262,7 +268,6 @@
     "Self Study/SQL/MySQL/1. MySQL User Credentials.md",
     "Self Study/SQL/MySQL/Resources.md",
     "Self Study/SQL/MySQL/5. Foreign Key y Relaciones.md",
-    "Self Study/SQL/MySQL",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
