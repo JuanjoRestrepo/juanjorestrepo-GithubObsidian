@@ -11,16 +11,14 @@
             "id": "18bc16844c22e044",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-                "page": 1,
-                "left": -11,
-                "top": 264,
-                "zoom": 1.400735294117647
+                "file": "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CV_Resume_Juan_José_Restrepo_Rosero_English_2026"
+              "icon": "lucide-file",
+              "title": "Cambiar CV Linkedin"
             }
           }
         ]
@@ -254,6 +252,8 @@
   },
   "active": "18bc16844c22e044",
   "lastOpenFiles": [
+    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Job Search/Cover Letter Template/Cover_Letter_Clara.pdf",
     "Job Search/Cover Letter Template/Cover_Letter_Adidas.pdf",
     "Job Search/Cover Letter Template/Cover Letter Juan Jose Restrepo Rosero VASS.pdf",
@@ -264,7 +264,6 @@
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/TERCERA EDICION-Modeling and Analysis of Dynamic Systems, Third Edition ( CPENTalk.com ).pdf",
     "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/Solucionarios/NISE_Control_Systems_Engineering_6th_Ed.pdf",
-    "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro/BOOK CONTROL SYSTEMS ENGINEERING NORMA S NISE.zip",
     "Transactions/scotch.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/1. MOC (Mapa de Contenido Principal).md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Computación Cuántica y Neuromórfica.md",
@@ -289,7 +288,6 @@
     "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
     "Templates/AI SKILLS/BACKEND DEV/references/docker-kubernetes.md",
     "Templates/AI SKILLS/AEROSPACE/SKILL.MD",
-    "Templates/AI SKILLS/AEROSPACE/references/rocketry-mathematics.md",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
