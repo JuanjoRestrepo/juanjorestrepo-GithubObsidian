@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "📚",
-      "RaRobotArm",
-      "TiCircleNumber2",
-      "TiMathIntegrals",
-      "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      "SiMicrosoftsqlserver",
+      "TiBrandMysql",
+      "TiSql",
+      "SiCplusplus",
+      "TiBrandNodejs"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,7 +43,7 @@
   "Master Data Science/Semestre 2": "🥈",
   "Keys/Department of State Enterprise Exchange Student Alumni Account": "🇺🇸",
   "Keys/Obsidian Github Access Token": "🔷",
-  "Job Search/Cover Letter Template": "🔤",
+  "Job Search/Cover Letter Template": "TiMailAi",
   "Files": {
     "iconName": "LiFiles",
     "iconColor": "#00eeff"
@@ -116,20 +116,14 @@
   "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Unidad 1 Modelos multivariados/2. Análisis Componentes Principales.md": "TiCircleNumber2",
   "Ing Electronica/Semestre 9 2023-1/Accenture Intern Challenge 2023 - 2/Intern Challenge Day": "SiAccenture",
   "Ing Electronica/Semestre 9 2023-1/Data Bases (SQL)/SQL FOR DATA SCIENCE COURSERA": "Si365datascience",
-  "Master Data Science/Omicas": {
-    "iconName": "TiPlant2",
-    "iconColor": "#00ffaa"
-  },
+  "Master Data Science/Omicas": "TiPlant2",
   "Master Data Science/Semestre 2/400ITA012 - Proyecto Aplicado II/Unidad 1 - Desarrollo primera parte del proyecto aplicado/Plan de Trabajo 2025 Tesis.md": "✍",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1": "📂",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/1. Unidad 1 Componentes fundamentales de las redes neuronales.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Es lineal o no lineal la base de datos.md": "LiLineChart",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Época y Tam Batch.md": "TiArrowsMaximize",
   "Master Data Science/Semestre 2/Deep Learning/Información Básica": "📁",
-  "Qubika": {
-    "iconName": "SiQase",
-    "iconColor": "#ffffff"
-  },
+  "Qubika": "SiQase",
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 2": "📁",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos": "CoData",
   "Qubika/Qversity 2025/1. Comprender la ingenieria de datos/1. About the course.md": "SiInstructure",
@@ -184,11 +178,11 @@
   "Self Study": "📚",
   "Self Study/IBM": "SiIbm",
   "Self Study/Microsoft": "SiMicrosoft",
-  "Self Study/NodeJs": "SiNodedotjs",
+  "Self Study/NodeJs": "TiBrandNodejs",
   "Self Study/Docker": "SiDocker",
   "Self Study/POO - LUISA RINCON 2025": "SiCplusplus",
   "Self Study/Coursera": "SiCoursera",
-  "Self Study/AWS": "FabAws",
+  "Self Study/AWS": "TiBrandAws",
   "Self Study/SQL": "TiSql",
   "Self Study/NodeJs/Clase 1/1. Qué es Node Js.md": "TiCircleNumber1",
   "Self Study/NodeJs/Clase 1/2. Callbacks.md": "TiCircleNumber2",
@@ -251,7 +245,7 @@
   "Master Data Science/Semestre 2/Deep Learning/Modulo 1/Unidad 1/Certificaciones.md": "FasUserGraduate",
   "Master Data Science/Semestre 2/Deep Learning/Información Básica/1. Introduccion y Datos Docente.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/Deep Learning/Información Básica/2. Cronograma Deep Learning.md": "TiCircleNumber2",
-  "Master Data Science/Cursor on Website.md": "TiWorldWww",
+  "Master Data Science/Cursor on Website.md": "TiWorld",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/0.Introducción.md": "TiCircleNumber0",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Info General Curso/Información General del Curso.md": "TiCircleNumber1",
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 3 Evaluación del Aprendizaje": "TiCircleNumber3",
@@ -261,7 +255,7 @@
   "Self Study/F1": "SiF1",
   "Self Study/F1/Material": "FasFilePdf",
   "Self Study/⬛🟥🟨 B1/Material": "FasFilePdf",
-  "Master Data Science/Directorio Posgrados FIC Neojaverianos 2024 -2.pdf": "FasPhone",
+  "Master Data Science/Directorio Posgrados FIC Neojaverianos 2024 -2.pdf": "TiPhone",
   "Master Data Science/TESIS 2025/CANCELACION/CANCELADO Resumen pre-entrega final.md": {
     "iconName": "RaCancel",
     "iconColor": "#fe1616"
@@ -274,7 +268,7 @@
   "Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Modulo 2/Unidad 1 Técnicas supervisadas/Material": "FasFilePdf",
   "Self Study/Data Engineering": "SiDatabricks",
   "Self Study/Data Engineering/Material": "FasFilePdf",
-  "Qubika/DataCamp Qversity Certificate.pdf": "FasUserGraduate",
+  "Qubika/DataCamp Qversity Certificate.pdf": "🎓",
   "Qubika/Qversity 2025/Despliegue y Mantenimiento de Pipelines": "🛠",
   "Master Data Science/TESIS 2025/Anteproyecto/Multiple Instance Learning.md": "🧠",
   "Master Data Science/TESIS 2025/Anteproyecto/REUNIONES/REUNION 1.md": "✅",
@@ -298,7 +292,7 @@
   "Self Study/Pinguino Mario - Hacking/Windows": "SiLinuxmint",
   "Self Study/Pinguino Mario - Hacking/Linux/Kubernetes": "SiKubernetes",
   "Master Data Science/TESIS 2025/Anteproyecto/Referencias": "FasFilePdf",
-  "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "FasPhone",
+  "Master Data Science/Directorio Facultades Javeriana Cali 2023.md": "TiPhone",
   "Master Data Science/Semestre 3": "🥉",
   "Master Data Science/Semestre 3/Visualizacion de Datos": "📈",
   "Master Data Science/Semestre 3/Visualizacion de Datos/Módulo 1 - Entendiendo la visualización de datos": "📁",
@@ -383,10 +377,7 @@
     "iconName": "SiBrave",
     "iconColor": "#ff5900"
   },
-  "Job Search/CV 2026 BOGOTA": {
-    "iconName": "FasFilePdf",
-    "iconColor": "#f22626"
-  },
+  "Job Search/CV 2026 BOGOTA": "TiFileTypePdf",
   "Templates/AI SKILLS": "TiStretching2",
   "Templates/Python": "SiPython",
   "Templates/AI SKILLS/AEROSPACE": "🚀",
@@ -396,17 +387,14 @@
     "iconName": "SiProtonvpn",
     "iconColor": "#9e32f5"
   },
-  "Self Study/SQL/MySQL": {
-    "iconName": "TiBrandMysql",
-    "iconColor": "#f58f19"
-  },
-  "Self Study/SQL/SQL Server": {
-    "iconName": "SiMicrosoftsqlserver",
-    "iconColor": "#f63737"
-  },
+  "Self Study/SQL/MySQL": "TiBrandMysql",
+  "Self Study/SQL/SQL Server": "SiMicrosoftsqlserver",
   "Transactions/scotch.md": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
   "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales": "TiMathIntegrals",
   "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Segundo Corte": "TiCircleNumber2",
   "Ing Electronica/Semestre 7 2022-1/Realimentados": "RaRobotArm",
-  "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro": "📚"
+  "Ing Electronica/Semestre 7 2022-1/Realimentados/Libro": "📚",
+  "Rappi/Eleccion/Opcion A": "TiLetterA",
+  "Rappi/Eleccion/Opcion B": "TiLetterB",
+  "Self Study/Backend Project 2026": "TiDatabase"
 }
