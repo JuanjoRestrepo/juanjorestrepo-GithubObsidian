@@ -1,12 +1,26 @@
-# Archivos del sistema
+# --- Obsidian UI & Layout ---
+# Evita bloqueos por mover pestañas o cambiar el zoom
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/appearance.json
+
+# --- Archivos Temporales y de Sistema ---
+.trash/
+*.conflict*
 .DS_Store
 Thumbs.db
+*.tmp
 
-# Archivos de conflicto o temporales
-*.conflict*
-.obsidian/workspace-mobile.json
-.obsidian/workspace.json 2.json
+# --- Seguridad y Logs ---
+# Por si acaso instalas plugins que generen logs de error
+*.log
+# NUNCA subir archivos con credenciales sueltas si llegas a usar scripts de Python
+.env
+__pycache__/
+*.py[cod]
 
-# Opcionalmente, puedes ignorar solo basura o backups
-.trash/
-
+# --- Backups de Plugins ---
+# Algunos plugins crean copias de seguridad locales que no necesitas en GitHub
+.obsidian/plugins/*/*.bak
