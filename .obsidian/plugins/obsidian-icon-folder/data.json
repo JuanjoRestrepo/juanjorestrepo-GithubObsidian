@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiTerraform",
       "SiApple",
       "RiHealthBookLine",
       "SiProtonvpn",
-      "SiObsidian",
-      "SiGooglecalendar"
+      "SiObsidian"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -48,5 +48,9 @@
   "Keys/Obsidian Github Access Token": "SiObsidian",
   "Keys/Proton Recovery Kit": "SiProtonvpn",
   "Keys/Social Security Dad": "RiHealthBookLine",
-  "Keys/Apple Id.md": "SiApple"
+  "Keys/Apple Id.md": "SiApple",
+  "Self Study/Terraform": {
+    "iconName": "SiTerraform",
+    "iconColor": "#8c00ff"
+  }
 }
