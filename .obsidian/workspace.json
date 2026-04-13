@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "924e4829b2e4ef5d",
+        "id": "458d81cfeffeb22d",
         "type": "tabs",
         "children": [
           {
-            "id": "6755cc6f9eef7d6b",
+            "id": "d7a2a67790f73ea9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "1. MODELO"
+              "title": "New tab"
             }
           }
         ]
@@ -54,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Bing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -75,7 +71,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -115,13 +112,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1. MODELO"
+              "title": "Outline"
             }
           },
           {
@@ -230,8 +226,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "6755cc6f9eef7d6b",
+  "active": "d7a2a67790f73ea9",
   "lastOpenFiles": [
+    "Keys/Google Account Keys.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
     "Self Study/Terraform/1. Qué es Terraform.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 3/1. FEATURES.md",
@@ -268,9 +266,7 @@
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references",
-    "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
     "Templates/AI SKILLS/BACKEND DEV/references",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
