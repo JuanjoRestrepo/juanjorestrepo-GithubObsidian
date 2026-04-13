@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keys/ACIEM Ingenieria Tarjeta.md",
+                "file": "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ACIEM Ingenieria Tarjeta"
+              "title": "Dbd vs PySpark"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keys/ACIEM Ingenieria Tarjeta.md",
+                "file": "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ACIEM Ingenieria Tarjeta"
+              "title": "Outline of Dbd vs PySpark"
             }
           },
           {
@@ -230,10 +230,13 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d7a2a67790f73ea9",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
-    "Transactions/Scotch.md",
+    "Files/Pasted image 20260413173209.png",
     "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
+    "Self Study/Dbd vs PySpark",
+    "Transactions/Scotch.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
     "Keys/Google Account Keys.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
@@ -265,13 +268,10 @@
     "conflict-files-obsidian-git.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
-    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
     "Keys/Google Calendar API Credentials for Obsidian",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references",
-    "Templates/AI SKILLS/BACKEND DEV/references",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
