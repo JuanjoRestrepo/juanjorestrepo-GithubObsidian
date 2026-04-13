@@ -11,10 +11,14 @@
             "id": "d7a2a67790f73ea9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Transactions/Scotch.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Scotch"
             }
           }
         ]
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bing",
+                "query": "4608",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4ec017a478863232",
@@ -112,12 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Transactions/Scotch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Scotch"
             }
           },
           {
@@ -228,6 +232,7 @@
   },
   "active": "d7a2a67790f73ea9",
   "lastOpenFiles": [
+    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
     "Keys/Google Account Keys.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
     "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
@@ -262,10 +267,9 @@
     "Keys/Google Calendar API Credentials for Obsidian",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
-    "Transactions/scotch.md",
+    "Transactions/Scotch.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references",
     "Templates/AI SKILLS/BACKEND DEV/references",
     "Untitled.canvas",
