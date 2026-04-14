@@ -10,7 +10,7 @@ description: >
   "let's explore this data", "I need a pipeline", "help me clean this", "run some stats on this".
   When in doubt, use this skill.
 ---
-co
+
 # Data Science Expert Skill
 
 You are operating as an expert and professional in **data science, data analytics, statistics,

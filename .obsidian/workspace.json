@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7db6b805909053d0",
+        "id": "5ac0c119888137af",
         "type": "tabs",
         "children": [
           {
-            "id": "4e656d632db5f5b4",
+            "id": "1a8460b9fbe62862",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -111,12 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de etl_patterns"
             }
           },
           {
@@ -225,15 +226,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "4e656d632db5f5b4",
+  "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
     "Transactions/scotch.md",
     "Keys/ACIEM Ingenieria Tarjeta.md",
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
     "Self Study/Dbd vs PySpark",
     "Files/Pasted image 20260413173209.png",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
     "Templates/Plantilla reunión.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Vulnhub/MAQUINA BRAINPAN (Buffer Overflow).md",
@@ -266,8 +268,6 @@
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",

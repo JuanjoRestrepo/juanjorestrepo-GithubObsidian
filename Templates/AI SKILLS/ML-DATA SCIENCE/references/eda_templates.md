@@ -1,7 +1,6 @@
 # EDA Templates Reference
 
 ## Table of Contents
-
 0. [Environment Setup (uv)](#environment)
 1. [Tabular / Flat File EDA](#tabular)
 2. [Time Series EDA](#time-series)
@@ -27,6 +26,8 @@ uv add pandas polars numpy scipy statsmodels \
 uv add --dev ruff mypy pytest
 uv sync
 ```
+
+
 
 ## 1. Tabular / Flat File EDA {#tabular}
 
