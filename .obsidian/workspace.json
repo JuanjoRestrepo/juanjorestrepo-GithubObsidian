@@ -111,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de SKILL"
+              "title": "Esquema"
             }
           },
           {
@@ -226,10 +225,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "8d223a2a932966cc",
   "lastOpenFiles": [
-    "Templates/AI SKILLS/Warp/git-obsidian-fix",
     "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
+    "Templates/AI SKILLS/Warp/git-obsidian-fix",
     "Templates/AI SKILLS/Warp",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
@@ -268,7 +267,6 @@
     "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
     "Keys/Google Calendar API Credentials for Obsidian",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
-    "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
