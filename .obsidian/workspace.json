@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e788faa129b02640",
+        "id": "f123a4bba6676dbf",
         "type": "tabs",
         "children": [
           {
-            "id": "57f0e2b3d71fdad5",
+            "id": "00bf89613e57ec95",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -111,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+                "file": "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de etl_patterns"
+              "title": "Esquema de SKILL"
             }
           },
           {
@@ -228,6 +228,9 @@
   },
   "active": "46cd114c9707ddaf",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/Warp/git-obsidian-fix",
+    "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
+    "Templates/AI SKILLS/Warp",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
@@ -267,8 +270,6 @@
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
