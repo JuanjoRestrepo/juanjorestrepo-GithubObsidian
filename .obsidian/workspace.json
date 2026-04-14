@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "925b41f137c6c816",
+        "id": "7db6b805909053d0",
         "type": "tabs",
         "children": [
           {
-            "id": "ceaa0b3a67179b37",
+            "id": "4e656d632db5f5b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -45,7 +41,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -54,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "4608",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -91,7 +87,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -115,13 +111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SKILL"
+              "title": "Esquema"
             }
           },
           {
@@ -213,14 +208,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "bases:Crear nueva base": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
@@ -230,23 +225,18 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ceaa0b3a67179b37",
+  "active": "4e656d632db5f5b4",
   "lastOpenFiles": [
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
-    "Files/Pasted image 20260413173209.png",
+    "Transactions/scotch.md",
     "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
     "Self Study/Dbd vs PySpark",
-    "Transactions/Scotch.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
-    "Keys/Google Account Keys.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
-    "Self Study/Terraform/1. Qué es Terraform.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 3/1. FEATURES.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 2/1. MODELADO DE DATOS.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 1/1. INGESTA DE DATOS.md",
+    "Files/Pasted image 20260413173209.png",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
+    "Templates/Plantilla reunión.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Vulnhub/MAQUINA BRAINPAN (Buffer Overflow).md",
     "Keys/Heroku.md",
     "Self Study/AWS/Introducción al Cómputo/CURSO 1.md",
     "Files/Pasted image 20260408183230.png",
@@ -257,6 +247,7 @@
     "Self Study/Terraform/4. Comandos.md",
     "Self Study/Terraform/2. Descargar Terraform.md",
     "Self Study/Terraform/3. Hola Mundo.md",
+    "Self Study/Terraform/1. Qué es Terraform.md",
     "Self Study/Terraform",
     "Self Study/AWS/Introducción al Cómputo/Task 1/Getting Started with Compute Simulation Instructions_es-LA.pdf",
     "Self Study/AWS/Introducción al Cómputo/Task 1",
@@ -269,9 +260,14 @@
     "conflict-files-obsidian-git.md",
     "Keys/Google Calendar API Credentials for Obsidian/Obsidian_Calendar_Credentials.json",
     "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
+    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
     "Keys/Google Calendar API Credentials for Obsidian",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Ecuaciones_Diferenciales_y_Problemas_.pdf",
     "Ing Electronica/Semestre 4 2020-2/Ecuaciones Diferenciales/Libros/Differential_Equations_Devaney.pdf",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
