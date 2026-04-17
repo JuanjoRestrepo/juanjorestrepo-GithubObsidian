@@ -19,7 +19,7 @@ uv python pin 3.12
 uv venv .venv --python 3.12 && source .venv/bin/activate
 
 # ML evaluation stack
-uv add scikit-learn xgboost lightgbm shap lime \
+uv add catboost scikit-learn xgboost lightgbm shap lime \
        matplotlib seaborn plotly pandas numpy scipy
 
 # Deep learning (add as needed)

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "23a982fbe893c31a",
+        "id": "cf621a7f746fcbfe",
         "type": "tabs",
         "children": [
           {
-            "id": "e5b260f3ecf48c77",
+            "id": "c726575769b87837",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
+              "title": "New tab"
             }
           }
         ]
@@ -54,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "4608",
+                "query": "xgboost",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +71,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -98,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 289.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -164,12 +161,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
+              "title": "Outgoing links"
             }
           },
           {
@@ -231,8 +227,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e5b260f3ecf48c77",
+  "active": "c726575769b87837",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
+    "Ing Electronica/Semestre 9 2023-1/IA/Corte 3/Clase 11 Decision Trees (Árboles de Decisión).md",
+    "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
     "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
     "Self Study/Data Engineering/Tools 2026.md",
@@ -269,11 +269,7 @@
     "Self Study/Terraform/1. Qué es Terraform.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 3/1. FEATURES.md",
     "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 2/1. MODELADO DE DATOS.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 1/1. INGESTA DE DATOS.md",
-    "Keys/Heroku.md",
-    "Self Study/AWS/Introducción al Cómputo/CURSO 1.md",
     "Files/Pasted image 20260408183230.png",
-    "Self Study/AWS/Introducción al Cómputo/1. Qué es el Cloud.md",
     "Self Study/Terraform",
     "Files/DiagramaTerraform.png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
