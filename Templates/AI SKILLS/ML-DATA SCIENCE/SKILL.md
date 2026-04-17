@@ -59,13 +59,13 @@ and embed SQL or R where appropriate.
 
 ### ML Frameworks — Selection Guide
 
-| Use Case | Framework |
-|---|---|
-| Classical ML, pipelines, preprocessing | `scikit-learn` |
-| Deep learning, production models | `TensorFlow / Keras` |
-| Research, custom architectures | `PyTorch` |
-| Tabular data, gradient boosting, competitions | `XGBoost / LightGBM` |
-| Large-scale distributed ML | `Apache Spark MLlib` |
+| Use Case                                      | Framework                       |
+| --------------------------------------------- | ------------------------------- |
+| Classical ML, pipelines, preprocessing        | `scikit-learn`                  |
+| Deep learning, production models              | `TensorFlow / Keras`            |
+| Research, custom architectures                | `PyTorch`                       |
+| Tabular data, gradient boosting, competitions | `XGBoost / LightGBM / CatBoost` |
+| Large-scale distributed ML                    | `Apache Spark MLlib`            |
 
 Always justify framework selection in code comments.
 

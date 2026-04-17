@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Python/Proyecto Architecture Template.md",
+                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proyecto Architecture Template"
+              "title": "𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 472.5
+    "width": 200
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Python/Proyecto Architecture Template.md",
+                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Proyecto Architecture Template"
+              "title": "Outline of 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
             }
           },
           {
@@ -164,12 +164,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Python/Proyecto Architecture Template.md",
+                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Proyecto Architecture Template"
+              "title": "Outgoing links from 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
             }
           },
           {
@@ -210,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,9 +233,13 @@
   },
   "active": "e5b260f3ecf48c77",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
+    "Self Study/Data Engineering/Tools 2026.md",
+    "Files/Pasted image 20260417004737.png",
+    "Templates/Python/Proyecto Architecture Template.md",
     "Files/Pasted image 20260417004406.png",
     "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
-    "Templates/Python/Proyecto Architecture Template.md",
     "Files/Pasted image 20260417004148.png",
     "Job Search/AON Bogota/Vacante.md",
     "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Untitled",
@@ -252,7 +256,6 @@
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
     "Files/Pasted image 20260413173209.png",
@@ -271,14 +274,11 @@
     "Self Study/AWS/Introducción al Cómputo/CURSO 1.md",
     "Files/Pasted image 20260408183230.png",
     "Self Study/AWS/Introducción al Cómputo/1. Qué es el Cloud.md",
-    "Self Study/Terraform/Free Servers Options.md",
     "Self Study/Terraform",
     "Files/DiagramaTerraform.png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.37.17 p.m..png",
     "Untitled.canvas",
-    "Keys/Social Security Dad/Info Cali.png",
-    "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
-    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png"
+    "Keys/Social Security Dad/Info Cali.png"
   ]
 }
