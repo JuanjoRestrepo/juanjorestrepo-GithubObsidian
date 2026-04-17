@@ -53,6 +53,10 @@ A los 5,400 pies, los paracaídas de frenado (drogue) se cortaron para dar paso 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j3Pq35gm4qA" title="NASA Artemis II Daily News Conference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BXrIuIT4H4k?si=Dnc8I4o-5Px6fYHq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rSN3Mlq7B8w?si=rHMKmrYIXR02umKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ### Referencias y Literatura
 - `[@NASA2026Artemis2_Updates]` - NASA Blogs. (2026). *Artemis II Flight Day 10: Live Re-Entry Updates*. Recuperado el 10 de Abril de 2026.
