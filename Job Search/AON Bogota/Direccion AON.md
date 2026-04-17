@@ -1,0 +1,2 @@
+
+¿Puedes confirmar tu disponibilidad para trabajar 40 horas semanales en un formato híbrido, algunos días en presencial y otros en el home office, en Aon en Bogotá (Edificio Segovia - Carrera 11, No 86-53 - Bogotá, Distrito Capital 13106-001, Colombia)? Si usted es de otra ciudad/estado, considere que no recibirá ningún tipo de asistencia de costes por parte de Aon en caso de que necesite mudarse*****

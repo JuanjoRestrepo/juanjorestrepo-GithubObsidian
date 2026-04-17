@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+                "file": "Job Search/AON Bogota/Vacante.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Model selection Image Reference"
+              "title": "Vacante"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+                "file": "Job Search/AON Bogota/Vacante.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Model selection Image Reference"
+              "title": "Outline of Vacante"
             }
           },
           {
@@ -232,9 +232,12 @@
   },
   "active": "e5b260f3ecf48c77",
   "lastOpenFiles": [
+    "Job Search/AON Bogota/Direccion AON.md",
+    "Job Search/AON Bogota/Vacante.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+    "Job Search/AON Bogota",
     "Files/Pasted image 20260416234456.png",
     "Templates/Math template.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
     "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
     "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
     "Templates/AI SKILLS/Warp/git-obsidian-fix",
@@ -266,10 +269,8 @@
     "Keys/GitHub Passkey 2026.md",
     "Self Study/Terraform/Referencias.md",
     "Self Study/Terraform/4. Comandos.md",
-    "Self Study/Terraform/2. Descargar Terraform.md",
     "Self Study/Terraform",
     "Self Study/AWS/Introducción al Cómputo/Task 1/Getting Started with Compute Simulation Instructions_es-LA.pdf",
-    "Self Study/AWS/Introducción al Cómputo/Task 1",
     "Files/DiagramaTerraform.png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.37.17 p.m..png",
@@ -277,7 +278,6 @@
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
     "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.54.03 p.m..png",
-    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.53.24 p.m..png",
-    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.48.22 p.m..png"
+    "Keys/Social Security Dad/Captura de pantalla 2025-12-30 a la(s) 2.53.24 p.m..png"
   ]
 }
