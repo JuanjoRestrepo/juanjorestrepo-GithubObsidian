@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2c457b39419b3ba9",
+        "id": "23a982fbe893c31a",
         "type": "tabs",
         "children": [
           {
-            "id": "4cca8699a5cdcd50",
+            "id": "e5b260f3ecf48c77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Model selection Image Reference"
             }
           }
         ]
@@ -45,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "4608",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +62,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -91,7 +91,7 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "title": "Graph view"
             }
           }
         ]
@@ -115,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Sin título"
+              "title": "Outline of Model selection Image Reference"
             }
           },
           {
@@ -209,19 +209,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5,
-    "collapsed": true
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
-      "bases:Crear nueva base": false,
-      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
@@ -231,29 +230,34 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "4cca8699a5cdcd50",
+  "active": "e5b260f3ecf48c77",
   "lastOpenFiles": [
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/05_Canvas",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/04_Media",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
+    "Files/Pasted image 20260416234456.png",
+    "Templates/Math template.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+    "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
     "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
     "Templates/AI SKILLS/Warp/git-obsidian-fix",
     "Templates/AI SKILLS/Warp",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
+    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
-    "Transactions/scotch.md",
-    "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
-    "Self Study/Dbd vs PySpark",
     "Files/Pasted image 20260413173209.png",
-    "Templates/Plantilla reunión.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Vulnhub/MAQUINA BRAINPAN (Buffer Overflow).md",
+    "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Self Study/Dbd vs PySpark",
+    "Transactions/Scotch.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
+    "Keys/Google Account Keys.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
+    "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
+    "Self Study/Terraform/1. Qué es Terraform.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 3/1. FEATURES.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 2/1. MODELADO DE DATOS.md",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 1/1. INGESTA DE DATOS.md",
     "Keys/Heroku.md",
     "Self Study/AWS/Introducción al Cómputo/CURSO 1.md",
     "Files/Pasted image 20260408183230.png",
@@ -263,18 +267,12 @@
     "Self Study/Terraform/Referencias.md",
     "Self Study/Terraform/4. Comandos.md",
     "Self Study/Terraform/2. Descargar Terraform.md",
-    "Self Study/Terraform/3. Hola Mundo.md",
-    "Self Study/Terraform/1. Qué es Terraform.md",
     "Self Study/Terraform",
-    "Self Study/AWS/Introducción al Cómputo/2. EC2.md",
-    "Self Study/AWS/Introducción al Cómputo/3. Simulación - Introducción a Amazon EC2.md",
+    "Self Study/AWS/Introducción al Cómputo/Task 1/Getting Started with Compute Simulation Instructions_es-LA.pdf",
+    "Self Study/AWS/Introducción al Cómputo/Task 1",
     "Files/DiagramaTerraform.png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.37.17 p.m..png",
-    "conflict-files-obsidian-git.md",
-    "Keys/Google Calendar API Credentials for Obsidian/OAuth Client.md",
-    "Keys/Google Calendar API Credentials for Obsidian/Json Obsidian_Calendar_Credentials.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Untitled.canvas",
     "Keys/Social Security Dad/Info Cali.png",
     "Keys/Social Security Dad/Captura de pantalla 2026-03-30 a la(s) 6.24.39 p.m..png",
