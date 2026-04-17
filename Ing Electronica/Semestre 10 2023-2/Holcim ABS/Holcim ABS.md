@@ -13,7 +13,7 @@ Created: 2023-07-10
 
 # Proyecto Chatbot
 ---
-[[Proyecto]]
+[[Ing Electronica/Semestre 10 2023-2/Holcim ABS/Proyecto/Proyecto]]
 
 
 
