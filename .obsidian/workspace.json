@@ -11,16 +11,14 @@
             "id": "b41b64952ba356e6",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
-                "page": 1,
-                "left": -11,
-                "top": 738,
-                "zoom": 1.3308823529411764
+                "file": "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "CV Resume Juan Jose Restrepo Rosero English"
+              "icon": "lucide-file",
+              "title": "Cambiar CV Linkedin"
             }
           }
         ]
@@ -235,8 +233,9 @@
   },
   "active": "b41b64952ba356e6",
   "lastOpenFiles": [
-    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
+    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English 1.pdf",
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Templates/UV Python/Proyecto Architecture Template.md",
@@ -281,7 +280,6 @@
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
     "Templates/Plantilla reunión.md",
     "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Vulnhub/MAQUINA BRAINPAN (Buffer Overflow).md",
     "Untitled.canvas"
   ]
 }
