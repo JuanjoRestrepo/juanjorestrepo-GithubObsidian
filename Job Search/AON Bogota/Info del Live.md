@@ -29,7 +29,7 @@ Acompañan a las grandes empresas a tomar las decisiones
 
 # Alberto Muriel
 - CDMX 2 años en AON
-- Finit: DISTRIBUYE LOS SEGUROS A. BUSINESS TO BUSSINES TO CONSUMER
+- Fidic: DISTRIBUYE LOS SEGUROS A. BUSINESS TO BUSSINES TO CONSUMER
 - Hacer estrategias para capturar mas clientes a su modelo de negocio
 - Primera experiencia laboral despues de egresado
 
@@ -45,3 +45,8 @@ Beneficios:
 - Interactuar con equipos de diferentes areas y localidades
 - Networking y Sponsor
 - Tener un mentor durante toda la etapa del proceso
+
+
+# TIPS
+- APRENDER A RELACIONARSE CON TODOS LOS COMPAÑEROS
+- ASI SEA ALGUIEN SUPERIOR, DE OTRA AREA... A TRAVES DE ESAS CONVERSACIONES ES QUE SE LOGRA ABRIR LA CAJA, ENTENDER MEJOR LOS OTROS PROCESOS, DESDE OTROS PAISES
