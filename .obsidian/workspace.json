@@ -4,21 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff26d7c696e50bc",
+        "id": "51e26bb92a7c8678",
         "type": "tabs",
         "children": [
           {
-            "id": "f5cac53fc674ec2d",
+            "id": "b41b64952ba356e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Templates/UV Python/pyproject.toml.md",
-                "mode": "source",
-                "source": false
+                "file": "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
+                "page": 1,
+                "left": -11,
+                "top": 738,
+                "zoom": 1.3308823529411764
               },
-              "icon": "lucide-file",
-              "title": "pyproject.toml"
+              "icon": "lucide-file-text",
+              "title": "CV Resume Juan Jose Restrepo Rosero English"
             }
           }
         ]
@@ -45,7 +47,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -54,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xgboost",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +64,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -91,14 +93,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 254.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -115,13 +117,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
+                "file": "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
+              "title": "Esquema de Mate"
             }
           },
           {
@@ -164,12 +166,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/UV Python/pyproject.toml.md",
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from pyproject.toml"
+              "title": "Outgoing links from 4.0PrimeraCod"
             }
           },
           {
@@ -186,8 +188,7 @@
               "title": "All properties"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "ed82d83676065a4b",
@@ -210,18 +211,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 287.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "bases:Crear nueva base": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
@@ -231,54 +233,55 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "b41b64952ba356e6",
   "lastOpenFiles": [
-    "Templates/UV Python/Proyecto Architecture Template.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Python/API/Librería VirusTotal Apis.md",
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
     "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/SETUP/STACK RECOMENDADO.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
-    "Ing Electronica/Semestre 9 2023-1/IA/Corte 3/Clase 11 Decision Trees (Árboles de Decisión).md",
-    "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
+    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
+    "Templates/UV Python/Proyecto Architecture Template.md",
+    "Templates/UV Python/pyproject.toml.md",
+    "Templates/UV Python",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Self Study/Data Engineering/Tools 2026.md",
-    "Files/Pasted image 20260417004737.png",
-    "Files/Pasted image 20260417004406.png",
-    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
-    "Files/Pasted image 20260417004148.png",
-    "Job Search/AON Bogota/Vacante.md",
-    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Untitled",
-    "Job Search/AON Bogota/Direccion AON.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/Python/Proyecto Architecture Template.md",
+    "Templates/Python/pyproject.toml.md",
+    "Files/Pasted image 20240624210058.png",
+    "Files/Screenshot 2025-07-15 at 5.45.27 PM.png",
+    "Files/Screenshot 2025-07-15 at 5.46.38 PM.png",
+    "Files/Screenshot 2025-07-24 at 8.43.36 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
+    "Templates/Nueva nota.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
+    "Self Study/Data Engineering/Tools 2026.md",
+    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
+    "Job Search/AON Bogota/Vacante.md",
+    "Job Search/AON Bogota/Direccion AON.md",
     "Job Search/AON Bogota",
-    "Files/Pasted image 20260416234456.png",
-    "Templates/Math template.md",
-    "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
-    "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
-    "Templates/AI SKILLS/Warp/git-obsidian-fix",
-    "Templates/AI SKILLS/Warp",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/05_Canvas",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/04_Media",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
-    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
-    "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
-    "Files/Pasted image 20260413173209.png",
+    "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
+    "Transactions/scotch.md",
     "Keys/ACIEM Ingenieria Tarjeta.md",
-    "Self Study/Dbd vs PySpark",
-    "Transactions/Scotch.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
-    "Keys/Google Account Keys.md",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/FASE 4/1. MODELO.md",
-    "Self Study/World Cup 2026 Project⚽🏆/OLD/1. Review.md",
-    "Files/Pasted image 20260408183230.png",
-    "Files/DiagramaTerraform.png",
-    "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
-    "Files/Captura de pantalla 2026-04-08 a la(s) 2.37.17 p.m..png",
-    "Untitled.canvas",
-    "Keys/Social Security Dad/Info Cali.png"
+    "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
+    "Templates/Plantilla reunión.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Vulnhub/MAQUINA BRAINPAN (Buffer Overflow).md",
+    "Untitled.canvas"
   ]
 }
