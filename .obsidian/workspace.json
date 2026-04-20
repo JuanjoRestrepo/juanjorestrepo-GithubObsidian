@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "51e26bb92a7c8678",
+        "id": "b6b5e56850bcd4e9",
         "type": "tabs",
         "children": [
           {
-            "id": "b41b64952ba356e6",
+            "id": "a7d3383a750cebee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Cambiar CV Linkedin"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -231,11 +227,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b41b64952ba356e6",
+  "active": "a7d3383a750cebee",
   "lastOpenFiles": [
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English 1.pdf",
-    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Templates/UV Python/Proyecto Architecture Template.md",
@@ -272,7 +268,6 @@
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
     "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
     "Transactions/scotch.md",
