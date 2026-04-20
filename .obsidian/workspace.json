@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Job Search/AON Bogota/Requisitos.md",
+                "file": "Job Search/AON Bogota/Info del Live.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Requisitos"
+              "title": "Info del Live"
             }
           }
         ]
@@ -164,12 +164,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Job Search/AON Bogota/Requisitos.md",
+                "file": "Job Search/AON Bogota/Info del Live.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Requisitos"
+              "title": "Outgoing links from Info del Live"
             }
           },
           {
@@ -233,9 +233,11 @@
   },
   "active": "f42e00f7fbb5f770",
   "lastOpenFiles": [
+    "Files/Pasted image 20260420180756.png",
     "Job Search/AON Bogota/Programa de Trainee.md",
-    "Job Search/AON Bogota/Requisitos.md",
+    "Job Search/AON Bogota/Info del Live.md",
     "Job Search/AON Bogota/Sobre la Empresa.md",
+    "Job Search/AON Bogota/Requisitos.md",
     "Job Search/AON Bogota/Vacante.md",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
     "Templates/UV Python/Proyecto Architecture Template.md",
@@ -272,8 +274,6 @@
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
     "Files/Pasted image 20260413173209.png",
     "Keys/ACIEM Ingenieria Tarjeta.md",
-    "Transactions/Scotch.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
     "Files/Pasted image 20260408183230.png",
     "Files/DiagramaTerraform.png",
     "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
