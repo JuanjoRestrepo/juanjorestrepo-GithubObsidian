@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b6b5e56850bcd4e9",
+        "id": "59189b18396d4102",
         "type": "tabs",
         "children": [
           {
-            "id": "a7d3383a750cebee",
+            "id": "f42e00f7fbb5f770",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Job Search/AON Bogota/Requisitos.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Requisitos"
             }
           }
         ]
@@ -41,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "xgboost",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +62,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -87,14 +91,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 289.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -111,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
+                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Mate"
+              "title": "Outline of 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
             }
           },
           {
@@ -160,12 +164,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
+                "file": "Job Search/AON Bogota/Requisitos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 4.0PrimeraCod"
+              "title": "Outgoing links from Requisitos"
             }
           },
           {
@@ -182,7 +186,8 @@
               "title": "All properties"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "ed82d83676065a4b",
@@ -205,19 +210,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
-      "bases:Crear nueva base": false,
-      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
@@ -227,54 +231,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "46cd114c9707ddaf",
+  "active": "f42e00f7fbb5f770",
   "lastOpenFiles": [
-    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
-    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
-    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English 1.pdf",
-    "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
-    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
-    "Templates/UV Python/Proyecto Architecture Template.md",
-    "Templates/UV Python/pyproject.toml.md",
-    "Templates/UV Python",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
-    "Templates/Python/Proyecto Architecture Template.md",
-    "Templates/Python/pyproject.toml.md",
-    "Files/Pasted image 20240624210058.png",
-    "Files/Screenshot 2025-07-15 at 5.45.27 PM.png",
-    "Files/Screenshot 2025-07-15 at 5.46.38 PM.png",
-    "Files/Screenshot 2025-07-24 at 8.43.36 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.36.48 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.42.45 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.48.13 PM.png",
-    "Templates/Nueva nota.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
-    "Self Study/Data Engineering/Tools 2026.md",
-    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
+    "Job Search/AON Bogota/Programa de Trainee.md",
+    "Job Search/AON Bogota/Requisitos.md",
+    "Job Search/AON Bogota/Sobre la Empresa.md",
     "Job Search/AON Bogota/Vacante.md",
-    "Job Search/AON Bogota/Direccion AON.md",
-    "Job Search/AON Bogota",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/05_Canvas",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/04_Media",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
+    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
+    "Templates/UV Python/Proyecto Architecture Template.md",
+    "Self Study/Pinguino Mario - Hacking/Coding/Python/API/Librería VirusTotal Apis.md",
+    "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
+    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/SETUP/STACK RECOMENDADO.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
+    "Ing Electronica/Semestre 9 2023-1/IA/Corte 3/Clase 11 Decision Trees (Árboles de Decisión).md",
+    "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Self Study/Data Engineering/Tools 2026.md",
+    "Files/Pasted image 20260417004737.png",
+    "Files/Pasted image 20260417004406.png",
+    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
+    "Files/Pasted image 20260417004148.png",
+    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Untitled",
+    "Job Search/AON Bogota/Direccion AON.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+    "Job Search/AON Bogota",
+    "Files/Pasted image 20260416234456.png",
+    "Templates/Math template.md",
+    "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
     "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
-    "Transactions/scotch.md",
-    "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Templates/AI SKILLS/Warp/git-obsidian-fix",
+    "Templates/AI SKILLS/Warp",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
+    "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Self Study/Dbd vs PySpark/Dbd vs PySpark.md",
-    "Templates/Plantilla reunión.md",
-    "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Buffer Overflow/Buffer Overflow en windows.md",
-    "Untitled.canvas"
+    "Files/Pasted image 20260413173209.png",
+    "Keys/ACIEM Ingenieria Tarjeta.md",
+    "Transactions/Scotch.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/CTF/Laboratorios PortSwigger/Server-side request forgery/Laboratorio 1 - Basic SSRF against the local server.md",
+    "Files/Pasted image 20260408183230.png",
+    "Files/DiagramaTerraform.png",
+    "Files/Captura de pantalla 2026-04-08 a la(s) 2.54.23 p.m..png",
+    "Files/Captura de pantalla 2026-04-08 a la(s) 2.37.17 p.m..png",
+    "Untitled.canvas",
+    "Keys/Social Security Dad/Info Cali.png"
   ]
 }
