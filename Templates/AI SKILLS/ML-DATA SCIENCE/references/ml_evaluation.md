@@ -1,6 +1,7 @@
 # ML Model Evaluation Reference
 
 ## Table of Contents
+
 0. [Environment Setup (uv)](#environment)
 1. [Gradient Boosting Selection Guide — XGBoost vs LightGBM vs CatBoost](#gbm-guide)
 2. [Classification Metrics](#classification)
@@ -37,31 +38,32 @@ uv sync
 
 > **Scientific basis**: Gradient Boosting was formalized by Friedman (2001). Modern
 > implementations (XGBoost, LightGBM, CatBoost) dominate tabular ML.
-> Grinsztajn et al. (2022) — *"Why tree-based models still outperform deep learning
-> on tabular data"* — empirically confirms that tree-based models are the default
+> Grinsztajn et al. (2022) — _"Why tree-based models still outperform deep learning
+> on tabular data"_ — empirically confirms that tree-based models are the default
 > state-of-the-art for structured/tabular problems. Always benchmark all three
 > before considering neural networks on tabular data.
 
 ### Framework Comparison Matrix
 
-| Dimension | XGBoost | LightGBM | CatBoost |
-|---|---|---|---|
-| **Authors** | Chen & Guestrin, 2016 | Microsoft / Ke et al., 2017 | Yandex / Prokhorenkova et al., 2018 |
-| **Tree growth** | Level-wise (depth-first) | Leaf-wise (best-first) | Symmetric (oblivious) trees |
-| **Training speed** | Moderate | ⚡ Fastest | Moderate–Slow (more epochs) |
-| **Memory usage** | Moderate | Low | Moderate |
-| **Categorical features** | Manual encoding required | Manual encoding required | ✅ Native, no encoding needed |
-| **Data leakage risk** | Standard | Standard | ✅ Reduced via ordered boosting |
-| **Regularization** | L1 + L2 | L1 + L2 | Built-in + ordered boosting |
-| **Overfitting control** | Strong | Good (needs careful leaf tuning) | Strong |
-| **GPU support** | ✅ Yes | ✅ Yes | ✅ Yes (optimized) |
-| **SHAP integration** | ✅ Native | ✅ Native | ✅ Native (highly optimized) |
-| **Kaggle dominance** | ✅ Very strong | ✅ Very strong | Moderate |
-| **Production maturity** | ✅ Excellent | ✅ Excellent | ✅ Good |
+| Dimension                | XGBoost                  | LightGBM                         | CatBoost                            |
+| ------------------------ | ------------------------ | -------------------------------- | ----------------------------------- |
+| **Authors**              | Chen & Guestrin, 2016    | Microsoft / Ke et al., 2017      | Yandex / Prokhorenkova et al., 2018 |
+| **Tree growth**          | Level-wise (depth-first) | Leaf-wise (best-first)           | Symmetric (oblivious) trees         |
+| **Training speed**       | Moderate                 | ⚡ Fastest                       | Moderate–Slow (more epochs)         |
+| **Memory usage**         | Moderate                 | Low                              | Moderate                            |
+| **Categorical features** | Manual encoding required | Manual encoding required         | ✅ Native, no encoding needed       |
+| **Data leakage risk**    | Standard                 | Standard                         | ✅ Reduced via ordered boosting     |
+| **Regularization**       | L1 + L2                  | L1 + L2                          | Built-in + ordered boosting         |
+| **Overfitting control**  | Strong                   | Good (needs careful leaf tuning) | Strong                              |
+| **GPU support**          | ✅ Yes                   | ✅ Yes                           | ✅ Yes (optimized)                  |
+| **SHAP integration**     | ✅ Native                | ✅ Native                        | ✅ Native (highly optimized)        |
+| **Kaggle dominance**     | ✅ Very strong           | ✅ Very strong                   | Moderate                            |
+| **Production maturity**  | ✅ Excellent             | ✅ Excellent                     | ✅ Good                             |
 
 ### Decision Criteria — When to Use Each
 
 **Use XGBoost when:**
+
 - You need a robust, well-regularized baseline on any structured dataset
 - The dataset is moderate size (up to ~10M rows with standard hardware)
 - You want the most battle-tested, widely supported gradient boosting library
@@ -69,6 +71,7 @@ uv sync
 - You are competing in Kaggle or benchmarking against literature
 
 **Use LightGBM when:**
+
 - Training speed is a hard constraint (large datasets, frequent retraining, production pipelines)
 - Dataset exceeds tens of millions of rows — LightGBM's histogram-based algorithm handles this efficiently
 - Memory is constrained — LightGBM uses significantly less RAM than XGBoost at scale
@@ -76,6 +79,7 @@ uv sync
 - You need fast hyperparameter search across many iterations
 
 **Use CatBoost when:**
+
 - The dataset contains many high-cardinality categorical features (e.g., user IDs, product codes, geographic codes)
 - You want to eliminate manual encoding pipelines (`OrdinalEncoder`, `OneHotEncoder`, `TargetEncoder`) entirely
 - Reducing data leakage risk is a priority — CatBoost's ordered boosting computes target statistics in a way that prevents the target leakage common in naive target encoding
@@ -200,8 +204,6 @@ def benchmark_gradient_boosters(
 2. **CatBoost's leakage reduction** is a genuine algorithmic advantage, not a marketing claim. On datasets with many categoricals, CatBoost frequently outperforms the other two without any preprocessing.
 3. **SHAP is equally native** across all three — there is no interpretability cost to using CatBoost or LightGBM over XGBoost.
 4. **Pipeline simplification**: CatBoost's native categorical handling eliminates the `ColumnTransformer` + encoding step, which reduces code complexity and a common source of data leakage in ML pipelines.
-
-
 
 ```python
 from sklearn.metrics import (
@@ -418,21 +420,25 @@ def shap_summary(model, X_train, X_test=None, model_type: str = "tree") -> None:
 Before finalizing any model evaluation, verify:
 
 **Data Leakage**
+
 - [ ] No target-derived features in the feature set
 - [ ] Train/test split performed BEFORE any preprocessing fitted on training data only
 - [ ] No temporal leakage in time series (always use walk-forward validation)
 
 **Class Imbalance**
+
 - [ ] Check class distribution in train and test sets
 - [ ] Report precision, recall, F1 per class — not just accuracy
 - [ ] Consider SMOTE, class weighting, or threshold tuning if imbalanced
 
 **Statistical Validity**
+
 - [ ] Cross-validation strategy matches problem type (Stratified K-Fold for classification)
 - [ ] Report confidence intervals on key metrics (use bootstrap if needed)
 - [ ] Perform paired statistical tests when comparing models (Wilcoxon signed-rank)
 
 **Business Interpretation**
+
 - [ ] Translate metrics into business impact (cost of false positives vs. false negatives)
 - [ ] Document model limitations and failure modes
 - [ ] Specify monitoring strategy for production deployment

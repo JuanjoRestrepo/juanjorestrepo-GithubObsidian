@@ -1,6 +1,7 @@
 # Statistical Test Selection Guide
 
 ## Table of Contents
+
 1. [Test Selection Decision Tree](#decision-tree)
 2. [Parametric Tests](#parametric)
 3. [Non-Parametric Tests](#non-parametric)
@@ -290,15 +291,15 @@ def compute_sample_size(effect_size: float, alpha: float = 0.05,
 
 Every statistical result MUST be reported with the following components:
 
-| Component | Example |
-|---|---|
-| Test name | "Welch's independent t-test" |
-| Test statistic | t(df) = 3.42 |
-| p-value | p = .003 |
-| Effect size + interpretation | d = 0.61 (medium) |
-| Confidence interval | 95% CI [1.2, 5.8] |
-| Sample sizes | n₁ = 120, n₂ = 118 |
-| Conclusion | "There was a statistically significant and practically meaningful difference..." |
+| Component                    | Example                                                                          |
+| ---------------------------- | -------------------------------------------------------------------------------- |
+| Test name                    | "Welch's independent t-test"                                                     |
+| Test statistic               | t(df) = 3.42                                                                     |
+| p-value                      | p = .003                                                                         |
+| Effect size + interpretation | d = 0.61 (medium)                                                                |
+| Confidence interval          | 95% CI [1.2, 5.8]                                                                |
+| Sample sizes                 | n₁ = 120, n₂ = 118                                                               |
+| Conclusion                   | "There was a statistically significant and practically meaningful difference..." |
 
 **Critical reminder**: Statistical significance (p < α) does NOT imply practical significance.
 Always report and interpret the effect size alongside the p-value.

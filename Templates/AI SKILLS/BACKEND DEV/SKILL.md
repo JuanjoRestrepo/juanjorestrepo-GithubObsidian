@@ -174,7 +174,62 @@ See `references/github-actions.md` for full workflow YAML templates.
 
 ---
 
-### 5. Cloud Deployment
+### 5. GitHub Releases & Semantic Versioning
+
+GitHub Releases are a mandatory component of any professional CD pipeline. They provide a permanent, auditable artifact for every production deployment, with a human-readable changelog tied to a specific image digest and Git state.
+
+**When to use releases:**
+- Any project with external users or downstream consumers
+- Any containerized app where image tags must be traceable to a changelog
+- Any team that needs rollback capability with a clear version history
+
+**Tag convention — always use Semantic Versioning (`MAJOR.MINOR.PATCH`):**
+
+| Bump | When | Example |
+|---|---|---|
+| `PATCH` | Bug fixes, no API change | `v1.2.3 → v1.2.4` |
+| `MINOR` | New features, backward-compatible | `v1.2.3 → v1.3.0` |
+| `MAJOR` | Breaking changes | `v1.2.3 → v2.0.0` |
+
+Use `v` prefix consistently: `v1.0.0`, never `1.0.0`.
+
+**Creating a release (Git workflow):**
+```bash
+git tag -a v1.2.0 -m "Release v1.2.0"
+git push origin v1.2.0
+# This triggers the create-release job automatically
+```
+
+**Pipeline architecture — separate CI from CD:**
+```
+CI (push to main):   lint → test → build → push :sha + :latest
+CD (push vX.Y.Z tag): build → push :vX.Y.Z + semver tags → create GitHub Release
+```
+
+**Best practices:**
+- Always gate `create-release` on `startsWith(github.ref, 'refs/tags/v')` — never run on branch pushes
+- Use `fetch-depth: 0` in checkout — required for `generate_release_notes: true` to traverse full commit history
+- Add Docker layer caching (`cache-from/cache-to: type=gha`) to every build step
+- Pin third-party actions to a full commit SHA, not a mutable version tag — `@v2` can change silently
+- Set `make_latest: true` so GitHub marks the newest tag correctly
+- Remove no-op notification jobs (`echo "success"`) — wire to Slack/email or omit entirely
+- For hardened pipelines: sign images with **Cosign** after push (Sigstore) and attach the signature as a release asset
+
+**Changelog quality — use Conventional Commits:**
+`generate_release_notes: true` groups commits by type automatically when you follow the convention:
+```
+feat: add user authentication via OAuth
+fix: resolve null pointer in payment service
+chore: bump dependencies
+docs: update API reference
+```
+Pair with `commitlint` + `@commitlint/config-conventional` enforced in CI to guarantee clean history.
+
+See `references/github-actions.md` for the production-ready workflow template.
+
+---
+
+### 6. Cloud Deployment
 
 #### Vercel / Netlify
 - Framework auto-detection usually works; verify `build` and `output` settings
@@ -275,7 +330,7 @@ Apply these regardless of task type.
 | Dockerfile | Single file with inline comments explaining each decision |
 | K8s manifests | One YAML per resource, or kustomize layout |
 | GitHub Actions | `.github/workflows/*.yml` file(s) |
-| Cloud deploy | Step-by-step runbook + any config files |
+| GitHub Release pipeline | Corrected workflow YAML + tag convention + changelog strategy |
 | Code review | Inline suggestions + summary of issues by category |
 | Best practices audit | Checklist with ✅/❌ + prioritized recommendations |
 | Debugging help | Hypothesis → steps to verify → fix |

@@ -1,6 +1,135 @@
 # GitHub Actions Workflow Templates
 
-## Node.js / Next.js — Lint, Test, Build, Deploy to Vercel
+## Production CD Pipeline — Docker Build, Push & GitHub Release
+
+This is the reference template for a professional CD pipeline with semantic versioning,
+Docker image tagging, and automated GitHub Releases. Apply all corrections noted below.
+
+```yaml
+name: CD Pipeline
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-and-push:
+    name: Build & Push Docker Images
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata for API image
+        id: meta-api
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/api
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch
+            type=sha
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+
+      - name: Build and push API image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: docker/api/Dockerfile
+          push: true
+          tags: ${{ steps.meta-api.outputs.tags }}
+          labels: ${{ steps.meta-api.outputs.labels }}
+          cache-from: type=gha # ← required: cuts build time significantly
+          cache-to: type=gha,mode=max
+
+      - name: Extract metadata for Frontend image
+        id: meta-frontend
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/frontend
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch
+            type=sha
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+
+      - name: Build and push Frontend image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: docker/frontend/Dockerfile
+          push: true
+          tags: ${{ steps.meta-frontend.outputs.tags }}
+          labels: ${{ steps.meta-frontend.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  create-release:
+    name: Create GitHub Release
+    if: startsWith(github.ref, 'refs/tags/v') # only runs on vX.Y.Z tags
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # ← required: full history for generate_release_notes
+
+      - name: Create GitHub Release
+        # Pin to SHA — never use mutable @v2 tag in production
+        uses: softprops/action-gh-release@c062e08bd532815e2082a85e87e3ef29c3e6d191 # v2.1.0
+        with:
+          generate_release_notes: true # auto-generates "What's Changed" from commits
+          make_latest: true # marks this as the latest release on GitHub
+          draft: false
+          prerelease: ${{ contains(github.ref, '-rc') || contains(github.ref, '-beta') }}
+```
+
+**Key decisions explained:**
+
+- `concurrency.cancel-in-progress: true` — if two pushes happen fast, the older run is cancelled to avoid race conditions on GHCR
+- `cache-from/cache-to: type=gha` — uses GitHub Actions cache for Docker layers; skips unchanged layers entirely
+- `fetch-depth: 0` — shallow clone (default) breaks changelog generation; full history is required
+- SHA-pinned action — `softprops/action-gh-release@c062e08...` cannot be silently changed by the maintainer
+- `prerelease` condition — tags like `v2.0.0-rc.1` or `v1.5.0-beta` are automatically flagged as pre-releases
+- `make_latest: true` — without this, GitHub may not update the "Latest" badge on the releases page
+
+**Triggering a release:**
+
+```bash
+git tag -a v1.2.0 -m "Release v1.2.0"
+git push origin v1.2.0
+```
+
+---
 
 ```yaml
 name: CI/CD
