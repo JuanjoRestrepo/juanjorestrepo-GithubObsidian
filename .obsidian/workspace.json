@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cd6d64e8263ef84d",
+        "id": "e25060464c820b58",
         "type": "tabs",
         "children": [
           {
-            "id": "99d883029250c813",
+            "id": "fd1363e7e00ee100",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Cambiar CV Linkedin"
             }
           }
         ]
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "R Studio",
+                "query": "linkedin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "4ec017a478863232",
@@ -227,8 +232,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "99d883029250c813",
+  "active": "fd1363e7e00ee100",
   "lastOpenFiles": [
+    "Files/CV Resume Juan Jose Restrepo Rosero English.pdf",
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
@@ -247,7 +254,6 @@
     "Files/Pasted image 20260420185919.png",
     "Files/Pasted image 20260420185827.png",
     "Files/Pasted image 20260420180756.png",
-    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
     "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English 1.pdf",
     "Templates/UV Python/Proyecto Architecture Template.md",
     "Templates/UV Python/pyproject.toml.md",
