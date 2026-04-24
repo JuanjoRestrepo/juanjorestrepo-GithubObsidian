@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ca528e0ea45076b9",
+        "id": "cd6d64e8263ef84d",
         "type": "tabs",
         "children": [
           {
-            "id": "4d534efc103d97ac",
+            "id": "99d883029250c813",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Model selection Image Reference"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -54,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "R Studio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,12 +227,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "4d534efc103d97ac",
+  "active": "99d883029250c813",
   "lastOpenFiles": [
+    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Ing Electronica/Semestre 10 2023-2/Holcim ABS/Capacitaciones/UiPath Course/RPA Developer Foundation/Build Your First Process With Studio/1. Exploring UiPath Studio Interface.md",
+    "Self Study/Pinguino Mario - Hacking/Hacking/Hacking Generico/Hacking Web/(CSRF) - Cross-Site Request Forgery.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
     "Files/Pasted image 20260423223001.png",
     "Templates/TODO List.md",
     "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Job Search/AON Bogota/TIPS PROCESO DE SELECCION.md",
     "Job Search/AON Bogota/Sobre la Empresa.md",
@@ -252,8 +252,6 @@
     "Templates/UV Python/Proyecto Architecture Template.md",
     "Templates/UV Python/pyproject.toml.md",
     "Templates/UV Python",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
     "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
@@ -265,7 +263,6 @@
     "Files/Screenshot 2025-07-24 at 8.43.36 PM.png",
     "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
     "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
-    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
     "Templates/Nueva nota.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
     "Self Study/Data Engineering/Tools 2026.md",
@@ -273,7 +270,6 @@
     "Job Search/AON Bogota/Vacante.md",
     "Job Search/AON Bogota/Direccion AON.md",
     "Job Search/AON Bogota",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/05_Canvas",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/04_Media",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
