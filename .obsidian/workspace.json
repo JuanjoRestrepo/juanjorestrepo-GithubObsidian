@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "96a1c50d57772898",
+        "id": "ca528e0ea45076b9",
         "type": "tabs",
         "children": [
           {
-            "id": "3f085978da281459",
+            "id": "4d534efc103d97ac",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Model selection Image Reference"
             }
           }
         ]
@@ -41,7 +45,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -50,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "linkedin",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +62,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -87,14 +91,14 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 295.5
   },
   "right": {
     "id": "cf20e551102d8f87",
@@ -111,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
+                "file": "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀"
+              "title": "Esquema de Mate"
             }
           },
           {
@@ -160,11 +164,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Self Study/POO - LUISA RINCON 2025/4.0PrimeraCod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 4.0PrimeraCod"
             }
           },
           {
@@ -181,8 +186,7 @@
               "title": "All properties"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "ed82d83676065a4b",
@@ -205,18 +209,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 287.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "bases:Crear nueva base": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
@@ -226,54 +231,55 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "3f085978da281459",
+  "active": "4d534efc103d97ac",
   "lastOpenFiles": [
-    "Templates/AI SKILLS/BACKEND DEV/references/github-actions.md",
-    "Templates/AI SKILLS/BACKEND DEV/SKILL.md",
-    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+    "Files/Pasted image 20260423223001.png",
+    "Templates/TODO List.md",
+    "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
     "Job Search/CV 2026 BOGOTA/CV_Resume_Juan_José_Restrepo_Rosero_English_2026.pdf",
     "Job Search/AON Bogota/TIPS PROCESO DE SELECCION.md",
-    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
-    "Files/Pasted image 20260420185919.png",
-    "Files/Pasted image 20260420185827.png",
-    "Job Search/AON Bogota/Info del Live.md",
-    "Files/Pasted image 20260420180756.png",
-    "Job Search/AON Bogota/Programa de Trainee.md",
     "Job Search/AON Bogota/Sobre la Empresa.md",
     "Job Search/AON Bogota/Requisitos.md",
-    "Job Search/AON Bogota/Vacante.md",
+    "Job Search/AON Bogota/Programa de Trainee.md",
+    "Job Search/AON Bogota/Info del Live.md",
+    "Files/Pasted image 20260420185919.png",
+    "Files/Pasted image 20260420185827.png",
+    "Files/Pasted image 20260420180756.png",
+    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English.pdf",
+    "Job Search/CV 2026 BOGOTA/Cambiar CV Linkedin.md",
+    "Job Search/CV 2026 BOGOTA/CV Resume Juan Jose Restrepo Rosero English 1.pdf",
     "Templates/UV Python/Proyecto Architecture Template.md",
-    "Self Study/Pinguino Mario - Hacking/Coding/Python/API/Librería VirusTotal Apis.md",
-    "Templates/𝗫𝗚𝗕𝗼𝗼𝘀𝘁, 𝗟𝗶𝗴𝗵𝘁𝗚𝗕𝗠 𝘆 𝗖𝗮𝘁𝗕𝗼𝗼𝘀𝘁 - 𝗹𝗼𝘀 𝗺𝗼𝗱𝗲𝗹𝗼𝘀 𝗾𝘂𝗲 𝗱𝗼𝗺𝗶𝗻𝗮𝗻 𝗲𝗹 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗲𝗻 𝗱𝗮𝘁𝗼𝘀 𝘁𝗮𝗯𝘂𝗹𝗮𝗿𝗲𝘀.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
-    "Self Study/World Cup 2026 Project⚽🏆/REDESGINED/SETUP/STACK RECOMENDADO.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
-    "Master Data Science/Omicas/DEV/Coding/Julio Changes.md",
-    "Ing Electronica/Semestre 9 2023-1/IA/Corte 3/Clase 11 Decision Trees (Árboles de Decisión).md",
-    "Master Data Science/Omicas/DEV/Coding/AVANCE JULIO.md",
+    "Templates/UV Python/pyproject.toml.md",
+    "Templates/UV Python",
     "Templates/AI SKILLS/ML-DATA SCIENCE/SKILL.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/statistics_reference.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/ml_evaluation.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/etl_patterns.md",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/references/eda_templates.md",
+    "Templates/Python/Proyecto Architecture Template.md",
+    "Templates/Python/pyproject.toml.md",
+    "Files/Pasted image 20240624210058.png",
+    "Files/Screenshot 2025-07-15 at 5.45.27 PM.png",
+    "Files/Screenshot 2025-07-15 at 5.46.38 PM.png",
+    "Files/Screenshot 2025-07-24 at 8.43.36 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.29.50 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.33.31 PM.png",
+    "Files/Screenshot 2025-07-24 at 9.35.37 PM.png",
+    "Templates/Nueva nota.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica/Mate.md",
     "Self Study/Data Engineering/Tools 2026.md",
-    "Files/Pasted image 20260417004737.png",
-    "Files/Pasted image 20260417004406.png",
     "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Valor P.md",
-    "Files/Pasted image 20260417004148.png",
-    "Master Data Science/Semestre 2/400MEA009 Grupo A - Mod. Estad. para la Toma Decisiones/Untitled",
+    "Job Search/AON Bogota/Vacante.md",
     "Job Search/AON Bogota/Direccion AON.md",
-    "Templates/AI SKILLS/ML-DATA SCIENCE/references/Model selection Image Reference.md",
     "Job Search/AON Bogota",
-    "Files/Pasted image 20260416234456.png",
-    "Templates/Math template.md",
-    "Self Study/Data Engineering/Material/big-book-of-data-engineering-3rd-edition-1-27-2025.pdf",
-    "Templates/AI SKILLS/Warp/git-obsidian-fix/SKILL.md",
-    "Templates/AI SKILLS/Warp/git-obsidian-fix",
-    "Templates/AI SKILLS/Warp",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision/Sin título.md",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/05_Canvas",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/04_Media",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/03_Fuentes_y_Papers",
+    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/02_GNC_y_Fisica",
     "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm/01_Diario_Mision",
-    "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm",
-    "Files/Pasted image 20260413173209.png",
-    "Files/Pasted image 20260408183230.png",
-    "Files/DiagramaTerraform.png",
+    "Templates/AI SKILLS/ML-DATA SCIENCE/Sin título.canvas",
     "Untitled.canvas"
   ]
 }
