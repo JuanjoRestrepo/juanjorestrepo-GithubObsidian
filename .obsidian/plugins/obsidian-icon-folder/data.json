@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber1",
+      "TiCircleNumber2",
       "TiCircleNumber0",
       "SiDjango",
-      "👨‍🚀",
-      "RiComputerFill",
-      "SiTerraform"
+      "👨‍🚀"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -56,5 +56,7 @@
   "Self Study/AWS/Introducción al Cómputo": "RiComputerFill",
   "Self Study/🛩️ 🧠 ERNESTO KNOWLEDGE ERNESTO KNOWLEDGE/Artemis Programm": "👨‍🚀",
   "Self Study/Django": "SiDjango",
-  "Self Study/Django/Que es Django.md": "TiCircleNumber0"
+  "Self Study/Django/1. Organizacion Proyecto.md": "TiCircleNumber1",
+  "Self Study/Django/0. Que es Django.md": "TiCircleNumber0",
+  "Self Study/Django/2. Setup Django using UV and venv.md": "TiCircleNumber2"
 }
