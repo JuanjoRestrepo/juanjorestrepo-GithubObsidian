@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiCircleNumber3",
       "TiCircleNumber1",
       "TiCircleNumber2",
       "TiCircleNumber0",
-      "SiDjango",
-      "👨‍🚀"
+      "SiDjango"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,6 @@
   "Self Study/Django": "SiDjango",
   "Self Study/Django/1. Organizacion Proyecto.md": "TiCircleNumber1",
   "Self Study/Django/0. Que es Django.md": "TiCircleNumber0",
-  "Self Study/Django/2. Setup Django using UV and venv.md": "TiCircleNumber2"
+  "Self Study/Django/2. Setup Django using UV and venv.md": "TiCircleNumber2",
+  "Self Study/Django/3. Estructura del proyecto creado.md": "TiCircleNumber3"
 }
