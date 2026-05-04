@@ -34,7 +34,6 @@ A blue menu will appear in the terminal.
 
 ![[Pasted image 20260504170245.png]]
 
-
 ### **Important Notes for Your Setup**
 
 - **Per-Device Activation**: This activation is stored locally on your machine. If you have another computer, you must repeat these steps on that specific device.
