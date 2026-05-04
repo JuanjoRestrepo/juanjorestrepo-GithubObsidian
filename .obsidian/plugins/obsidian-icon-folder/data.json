@@ -6,7 +6,7 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiF1",
+      "RiMicrosoftFill",
       "TiCircleNumber3",
       "TiCircleNumber1",
       "TiCircleNumber2",
@@ -60,5 +60,6 @@
   "Self Study/Django/0. Que es Django.md": "TiCircleNumber0",
   "Self Study/Django/2. Setup Django using UV and venv.md": "TiCircleNumber2",
   "Self Study/Django/3. Estructura del proyecto creado.md": "TiCircleNumber3",
-  "Keys/f1 race summarizer": "SiF1"
+  "Keys/Microsoft - Windows.md": "RiMicrosoftFill",
+  "Keys/Microsoft 365 Permanent Activation Guide (MAS Method).md": "RiMicrosoftFill"
 }
