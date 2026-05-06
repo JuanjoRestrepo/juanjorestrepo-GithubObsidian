@@ -21,7 +21,7 @@ description: >
 2. **Ask clarifying questions** if the stack or target platform is unclear — don't guess.
 3. **Produce outputs** in the format most useful: code files, configs, runbooks, or a combination.
 4. **Always apply** [Cross-Cutting Best Practices](#cross-cutting-best-practices) regardless of task type.
-5. **Explain decisions** — especially for infra and architecture. Say _why_, not just _what_.
+5. **Explain decisions** — especially for infra and architecture choices, not just the "what" but the "why". Users learn more and trust the output more when reasoning is visible.
 
 ### Quick Stack Decision Guide
 
