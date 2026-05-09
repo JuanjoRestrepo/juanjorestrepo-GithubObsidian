@@ -1,3 +1,29 @@
 restrepojuanjo@gmail.com
 Colombia
 Binguit0M@g0l0210108*
+
+# Get Recovery Codes
+
+
+## Recovery Codes
+
+FS7WVS8N9P
+
+GG3DZJIUZ9
+
+XY05LIHV8R
+
+9404L5XY15
+
+OXSFGBBU67
+
+A5BXHDAQ7I
+
+UZTFX3IG9A
+
+RV9ST074KN
+
+YPMXSY59R4
+
+HOTHMK3EK0
+
