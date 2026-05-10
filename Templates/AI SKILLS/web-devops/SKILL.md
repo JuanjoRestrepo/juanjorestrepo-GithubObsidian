@@ -1,14 +1,6 @@
 ---
 name: web-devops
-description: >
-  Expert-level web development and DevOps skill. Use whenever the user mentions: scaffolding a
-  web project (React, Next.js, Vue/Nuxt, Express, FastAPI, Django, MERN, PERN, T3 Stack); T3
-  tools (tRPC, Prisma, Drizzle, NextAuth, Zod, Tailwind); Dockerfiles or Kubernetes configs;
-  GitHub Actions or CI/CD pipelines; deploying to Vercel, Netlify, AWS, GCP, or Azure; or
-  applying best practices (testing, security, observability, code quality). Trigger on vague
-  requests too: "help me deploy this", "dockerize my app", "set up CI", "scaffold a project",
-  "create a T3 app", "set up tRPC", "configure NextAuth", "review my pipeline". When in doubt,
-  use this skill — it covers the full SDLC from project creation to production.
+description: 'Expert-level web development and DevOps skill. Use whenever the user mentions: scaffolding a web project (React, Next.js, Vue/Nuxt, Express, FastAPI, Django, MERN, PERN, T3 Stack); T3 tools (tRPC, Prisma, Drizzle, NextAuth, Zod, Tailwind); Dockerfiles or Kubernetes configs; GitHub Actions or CI/CD pipelines; deploying to Vercel, Netlify, AWS, GCP, or Azure; or applying best practices (testing, security, observability, code quality). Trigger on vague requests too: "help me deploy this", "dockerize my app", "set up CI", "scaffold a project", "create a T3 app", "set up tRPC", "configure NextAuth", "review my pipeline". When in doubt, use this skill — it covers the full SDLC from project creation to production.'
 ---
 
 # Web Development & DevOps Skill
