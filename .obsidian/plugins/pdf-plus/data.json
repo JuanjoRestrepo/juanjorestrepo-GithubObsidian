@@ -27,7 +27,7 @@
     },
     {
       "name": "Link",
-      "template": "{{linkWithDisplay}}"
+      "template": "{{linkToPageWithDisplay}} {{color}}"
     },
     {
       "name": "Embed",
@@ -38,8 +38,8 @@
       "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> {{text}}\n"
     },
     {
-      "name": "Quote in callout",
-      "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> > {{text}}\n> \n> "
+      "name": "Text",
+      "template": "\"{{selection}}\" {{linkWithDisplay}}"
     }
   ],
   "useAnotherCopyTemplateWhenNoSelection": false,
@@ -73,12 +73,11 @@
   "highlightOnHoverBacklinkPane": true,
   "backlinkHoverColor": "",
   "colors": {
-    "Purple": "#bb61e5",
     "Green": "#04f000",
-    "Key Concepts": "#ea5252",
-    "Blue": "#086ddd"
+    "Key Concepts": "#ffff00",
+    "Quotes": "#086ddd"
   },
-  "defaultColor": "Blue",
+  "defaultColor": "Quotes",
   "defaultColorPaletteItemIndex": 0,
   "syncColorPaletteItem": true,
   "syncDefaultColorPaletteItem": false,
@@ -217,7 +216,7 @@
   "clearSelectionAfterAutoPaste": true,
   "respectCursorPositionWhenAutoPaste": true,
   "blankLineAboveAppendedContent": true,
-  "autoCopy": false,
+  "autoCopy": true,
   "autoFocus": false,
   "autoPaste": false,
   "autoFocusTarget": "last-active-and-open-then-last-paste",
