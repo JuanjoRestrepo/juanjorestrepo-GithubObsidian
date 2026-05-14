@@ -6,19 +6,15 @@
     },
     {
       "name": "Page",
-      "template": "p.{{pageLabel}}"
+      "template": "p.{{page}}"
     },
     {
       "name": "Text",
-      "template": "{{text}}"
+      "template": "{{selection}}"
     },
     {
       "name": "Emoji",
       "template": "📖"
-    },
-    {
-      "name": "None",
-      "template": ""
     }
   ],
   "defaultDisplayTextFormatIndex": 0,
