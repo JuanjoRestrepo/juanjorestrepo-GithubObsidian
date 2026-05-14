@@ -5,7 +5,7 @@
 
 Experiencia:Indiferente (de 0 a más de 20 años de experiencia)
 
-Carrera(s):Administración de EmpresasCiencia de DatosRelaciones InternacionalesComunicación SocialCurso MatemáticasDerechoEconomíaDiseño IndustrialFinanzasInformática MatemáticaIngeniería IndustrialMatemáticasNegocios InternacionalesTrabajo SocialIngeniería MecánicaIngeniería de Sistemas
+Carrera(s):Administración de Empresas, Ciencia de Datos, Relaciones Internacionales, Comunicación Social, Curso Matemáticas, Derecho, Economía,Diseño Industrial, Finanzas, Informática, Matemática, Ingeniería Industrial, Matemáticas, Negocios Internacionales, Trabajo Social, Ingeniería Mecánica, Ingeniería de Sistemas
 
 Idiomas:Inglés (Avanzado)
 
@@ -43,17 +43,19 @@ Como organización, estamos unidos a través de la confianza como un equipo incl
   
 Cómo será el día  
   
-Participar en sesiones periódicas de mentoría con líderes senior, quienes compartirán valiosos insights sobre el negocio y apoyarán tu desarrollo y crecimiento profesional en Aon.  
-Contribuir en proyectos relevantes, que impactan directamente a los colegas y clientes de Aon, incluyendo análisis de datos, creación de materiales, desarrollo de dashboards y uso de herramientas (especialmente Excel) para impulsar la toma de decisiones informada y estratégica.  
-Participar en sesiones de capacitación mensuales orientadas al fortalecimiento de tus habilidades profesionales y competencias clave.  
-Colaborar con trainees de otros países y áreas de negocio en un proyecto estratégico para abordar desafíos reales de Aon, culminando con presentaciones virtuales de las soluciones ante sponsors del proyecto y líderes senior.  
-Ampliar tu red profesional, interactuando con trainees de Latinoamérica y otras regiones, colaborando con colegas del negocio y construyendo relaciones con clientes de Aon.  
-Realizar otras actividades administrativas, según sea necesario.  
+- Participar en sesiones periódicas de mentoría con líderes senior, quienes compartirán valiosos insights sobre el negocio y apoyarán tu desarrollo y crecimiento profesional en Aon.  
+- Contribuir en proyectos relevantes, que impactan directamente a los colegas y clientes de Aon, incluyendo análisis de datos, creación de materiales, desarrollo de dashboards y uso de herramientas (especialmente Excel) para impulsar la toma de decisiones informada y estratégica.  
+- Participar en sesiones de capacitación mensuales orientadas al fortalecimiento de tus habilidades profesionales y competencias clave.  
+- Colaborar con trainees de otros países y áreas de negocio en un proyecto estratégico para abordar desafíos reales de Aon, culminando con presentaciones virtuales de las soluciones ante sponsors del proyecto y líderes senior.  
+- Ampliar tu red profesional, interactuando con trainees de Latinoamérica y otras regiones, colaborando con colegas del negocio y construyendo relaciones con clientes de Aon.  
+- Realizar otras actividades administrativas, según sea necesario.  
+
 Habilidades y experiencia que te llevarán al éxito  
   
-Graduados de todas las carreras universitarias.  
-Graduación entre julio de 2024 y julio de 2026.  
-Inglés avanzado (oral y escrito). Este requisito será evaluado a lo largo del proceso de selección.  
-Disponibilidad para trabajar 40 horas semanales en formato híbrido (algunos días presenciales y otros a distancia) en Bogotá (Edificio Segovia - Carrera 11, No 86-53, 13106-001).  
-Interés en desarrollarse en un entorno de trabajo consultivo.  
-Conocimientos prácticos en la herramienta Microsoft Excel y experiencia profesional serán considerados un diferencial.
+- Graduados de todas las carreras universitarias.  
+- Graduación entre julio de 2024 y julio de 2026.  
+- Inglés avanzado (oral y escrito). Este requisito será evaluado a lo largo del proceso de selección.  
+- Disponibilidad para trabajar 40 horas semanales en formato híbrido (algunos días presenciales y otros a distancia) en Bogotá (Edificio Segovia - Carrera 11, No 86-53, 13106-001).  
+- Interés en desarrollarse en un entorno de trabajo consultivo.  
+- Conocimientos prácticos en la herramienta Microsoft Excel y experiencia profesional serán considerados un diferencial.
+
