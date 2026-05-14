@@ -517,9 +517,232 @@ jobs:
 
 ---
 
-## 10. Security Checklist (Pre-launch)
+## 10. Supply Chain Security (Dependency Attacks)
+
+npm's lifecycle hooks (`preinstall`, `postinstall`) execute arbitrary code from the internet
+with full developer privileges the moment you run `npm install`. This is the primary attack
+vector for modern JavaScript supply chain attacks — and it requires explicit, proactive defense.
+
+### The Threat Landscape
+
+This is not a theoretical risk. Since September 2025, the npm ecosystem has experienced a
+documented wave of escalating attacks, all confirmed by Wiz, Trend Micro, Splunk, Palo Alto
+Unit 42, Snyk, and StepSecurity:
+
+| Incident                  | Date         | Scope                                           | Vector                                               |
+| ------------------------- | ------------ | ----------------------------------------------- | ---------------------------------------------------- |
+| **Shai-Hulud**            | Sep 2025     | 500+ packages; first self-propagating npm worm  | `postinstall` script; phished maintainer credentials |
+| **Shai-Hulud 2.0**        | Nov 2025     | 796 packages; 132M monthly downloads affected   | `preinstall` scripts; credential theft + backdoors   |
+| **Axios / Chalk / Debug** | Mar 2026     | High-impact individual packages                 | Compromised maintainer accounts                      |
+| **Mini Shai-Hulud**       | Apr–May 2026 | `@tanstack/*`, `@mistralai/*`, `@bitwarden/cli` | GitHub Actions Pwn Request + OIDC token extraction   |
+
+**What happens on a compromised install:** the malicious `postinstall` script runs silently,
+harvests npm tokens, GitHub tokens, AWS/GCP/Azure credentials, and SSH keys from the local
+environment; clones private repositories and makes them public; injects malicious GitHub
+Actions workflows; and uses any npm tokens found to publish poisoned versions of every
+accessible package — propagating automatically without further attacker involvement.
+
+### Defense Layer 1 — Block Lifecycle Scripts
+
+**pnpm (recommended) — disabled by default since v10:**
+
+pnpm v10+ disables `postinstall` script execution for all dependencies by default. Rather than
+re-enabling them globally, maintain an explicit allowlist of packages whose build scripts you
+trust:
+
+```yaml
+# pnpm-workspace.yaml
+allowBuilds:
+  - esbuild # required to compile its Go binary
+  - sharp # requires native image processing compilation
+  - bcrypt # native Node.js addon
+  - '@parcel/watcher'
+  - better-sqlite3
+```
+
+Never use `dangerouslyAllowAllBuilds: true` — this fully disables the protection.
+
+**npm — add to `.npmrc` at project root:**
+
+```ini
+# .npmrc
+ignore-scripts=true
+```
+
+Or for a one-off install without disabling globally:
+
+```bash
+npm install some-package --ignore-scripts
+```
+
+**Trade-off:** some legitimate packages require their build scripts to compile native addons
+(e.g., `esbuild`, `sharp`, `bcrypt`, `better-sqlite3`). These will fail silently or with
+build errors when scripts are blocked. The correct fix is the `allowBuilds` allowlist
+(pnpm) or a per-package exception — never disabling the protection globally.
+
+### Defense Layer 2 — Delay New Versions (Cooldown Period)
+
+Most malicious packages are detected and removed from the npm registry within hours. A
+version age requirement means you never install a package version fresh off the registry
+during the highest-risk window.
+
+**pnpm v11+ (default: 1 day):**
+
+```yaml
+# pnpm-workspace.yaml
+minimumReleaseAge: '1440' # minutes — 1 day default in pnpm v11
+# set to "10080" for 1 week on high-security projects
+# set to "0" to disable (not recommended)
+```
+
+**Dependabot (since July 2025) — cooldown on automated PRs:**
+
+```yaml
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    cooldown:
+      default-days: 7 # wait 7 days before opening a PR for any new version
+      semver-patch-days: 3 # shorter wait for patch versions
+```
+
+### Defense Layer 3 — Block Exotic Dependency Sources
+
+Prevent transitive dependencies from resolving from git repositories, direct tarball URLs,
+or other non-registry sources. These bypass registry-level security scanning entirely.
+
+```yaml
+# pnpm-workspace.yaml
+blockExoticSubdeps: true
+```
+
+### Defense Layer 4 — Trust Policy Enforcement (pnpm v11+)
+
+Prevent installation of a package whose trust level has decreased compared to previous
+releases — catching cases where a previously verified publisher's account is compromised:
+
+```yaml
+# pnpm-workspace.yaml
+trustPolicy: 'no-downgrade'
+```
+
+### Defense Layer 5 — Active Scanning
+
+**Always run before merging dependency PRs:**
+
+```bash
+npm audit                    # detects known malicious/vulnerable packages
+pnpm audit                   # pnpm equivalent
+```
+
+**Integrate into CI — block PRs with critical findings:**
+
+```yaml
+# .github/workflows/audit.yml
+- name: Security audit
+  run: pnpm audit --audit-level=high
+```
+
+**Third-party scanners (deeper detection — recommended for teams):**
+
+| Tool       | Strength                                                | Integration      |
+| ---------- | ------------------------------------------------------- | ---------------- |
+| **Socket** | Detects new/changed scripts in PRs before install       | GitHub App       |
+| **Snyk**   | Broad vulnerability DB + supply chain monitoring        | GitHub App + CLI |
+| **Aikido** | Developer-focused; detects compromised packages quickly | GitHub App       |
+
+Socket is particularly effective: it analyzes package diffs at PR review time and flags
+new `postinstall` scripts that weren't present in previous versions — catching attacks before
+`npm install` is ever run.
+
+### Defense Layer 6 — Always Commit the Lockfile
+
+A committed lockfile (`pnpm-lock.yaml`, `package-lock.json`, `yarn.lock`) pins every
+transitive dependency to an exact version and hash. Without it, `npm install` resolves to
+"latest compatible" — which may be a freshly published malicious version.
+
+```bash
+# CI should always install from the lockfile — never resolve fresh
+pnpm install --frozen-lockfile
+npm ci                         # npm equivalent of --frozen-lockfile
+```
+
+### Minimum Required Configuration (apply to every project)
+
+**`pnpm-workspace.yaml` (pnpm projects):**
+
+```yaml
+allowBuilds:
+  - esbuild
+  - sharp
+  # add others only as needed, with justification
+
+blockExoticSubdeps: true
+minimumReleaseAge: '1440'
+trustPolicy: 'no-downgrade'
+```
+
+**`.npmrc` (npm projects):**
+
+```ini
+ignore-scripts=true
+audit=true
+```
+
+**`.github/dependabot.yml`:**
+
+```yaml
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    cooldown:
+      default-days: 7
+```
+
+### If You Suspect Compromise
+
+```bash
+# 1. Immediately rotate all credentials accessible from your dev environment:
+#    npm token, GitHub token/SSH keys, AWS/GCP/Azure credentials, database passwords
+
+# 2. Audit recently installed packages
+npm audit
+pnpm audit
+
+# 3. Check for unexpected files dropped during install
+find . -name "*.sh" -newer package.json -not -path "*/node_modules/*"
+find /tmp -newer /tmp -maxdepth 1 2>/dev/null
+
+# 4. Check for unexpected GitHub Actions workflows added to your repos
+git log --all --oneline -- .github/workflows/
+
+# 5. Check for repositories unexpectedly made public
+#    GitHub → Settings → Repositories → sort by "recently updated"
+
+# 6. If a GitHub token was exposed: revoke all tokens, audit all org repo access logs
+```
+
+---
+
+## 11. Security Checklist (Pre-launch)
 
 Use this before going to production on any project:
+
+**Supply Chain**
+
+- [ ] `ignore-scripts=true` in `.npmrc` (npm) or `allowBuilds` allowlist configured (pnpm)
+- [ ] `minimumReleaseAge` / Dependabot cooldown configured
+- [ ] `blockExoticSubdeps: true` set (pnpm)
+- [ ] Lockfile committed and CI uses `--frozen-lockfile` / `npm ci`
+- [ ] Socket, Snyk, or Aikido integrated in GitHub for PR-level scanning
+- [ ] `pnpm audit` / `npm audit` runs in CI and blocks on high severity
 
 **Authentication & Authorization**
 
