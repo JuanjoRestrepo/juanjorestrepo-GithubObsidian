@@ -71,3 +71,27 @@ Prestar atencion a todos los casos, detalles peques que pueden ser relevantes pa
 
 ![[Pasted image 20260515133902.png]]
 
+
+# Contrato FINAL
+![[Pasted image 20260515134723.png]]
+
+- Salario competitivo de Analista
+- Todas las prestaciones de ley
+- Rotaciones dentro de una misma linea de negocio (6 meses broking y otros 6 meses en client facing)
+
+TODOS LOS GASTOS DE VIAJES Y ALOJAMIENTO POR CUENTA PROPIA
+
+![[Pasted image 20260515134859.png]]
+
+![[Pasted image 20260515134920.png]]
+
+
+
+
+Aon Experience Day:    
+Chile: June 15    
+Argentina: June 18    
+Mexico: June 22    
+Colombia: June 25  
+
+
