@@ -19,5 +19,5 @@ tags: #política #sociedad
 - Modelos: [[Singapur]] (híbrido) vs [[México]] (tecnosocialismo)
 
 ## Vinculado
-- [[Eurócratas]] | [[Tecnocracia en Crisis]]
+- [[Tecnócratas]] | [[Tecnocracia en Crisis]]
 ---
