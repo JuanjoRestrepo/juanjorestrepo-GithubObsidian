@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiMicrosoft",
       "RiMicrosoftFill",
       "TiCircleNumber3",
       "TiCircleNumber1",
-      "TiCircleNumber2",
-      "TiCircleNumber0"
+      "TiCircleNumber2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -61,5 +61,6 @@
   "Self Study/Django/2. Setup Django using UV and venv.md": "TiCircleNumber2",
   "Self Study/Django/3. Estructura del proyecto creado.md": "TiCircleNumber3",
   "Keys/Microsoft - Windows.md": "RiMicrosoftFill",
-  "Keys/Microsoft Office 365 Permanent Activation Guide (MAS Method).md": "RiMicrosoftFill"
+  "Keys/Microsoft Office 365 Permanent Activation Guide (MAS Method).md": "RiMicrosoftFill",
+  "Keys/Dad Microsoft Account.md": "SiMicrosoft"
 }
