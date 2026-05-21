@@ -17,3 +17,12 @@
 ![[Pasted image 20260521161603.png]]
 
 
+![[Pasted image 20260521162136.png]]
+
+
+# Beneficios
+
+![[Pasted image 20260521162400.png]]
+
+
+
