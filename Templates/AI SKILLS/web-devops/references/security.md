@@ -1213,6 +1213,358 @@ git log --all --oneline -- .github/workflows/
 
 ---
 
+## 13. Active CVEs & Incident Intelligence (2025–2026)
+
+This section tracks critical, confirmed vulnerabilities and real-world incidents directly
+relevant to the stacks in this skill. Every entry is sourced from official advisories,
+vendor postmortems, or Tier-1 security research. Update this section as new CVEs land.
+
+---
+
+### CVE-2025-29927 — Next.js Middleware Authorization Bypass (CRITICAL, CVSS 9.1)
+
+**Disclosed:** March 21, 2025. **Status:** Patched. **Actively exploited** (GreyNoise confirmed).
+
+**What it is:** Next.js uses an internal HTTP header `x-middleware-subrequest` to mark
+requests as internal subrequests, causing middleware to skip execution. This header was
+never validated for externally-originating requests. An attacker sends a single crafted
+HTTP request with this header — middleware runs zero security checks, and the attacker
+reaches any protected route directly.
+
+**Affected versions:**
+
+| Branch | Vulnerable       | Patched                    |
+| ------ | ---------------- | -------------------------- |
+| 11.x   | 11.1.4+          | No patch — upgrade to 15.x |
+| 12.x   | all < 12.3.5     | 12.3.5                     |
+| 13.x   | 13.0.0 – 13.5.8  | 13.5.9                     |
+| 14.x   | 14.0.1 – 14.2.24 | 14.2.25                    |
+| 15.x   | 15.0.1 – 15.2.2  | 15.2.3                     |
+
+**Who is NOT affected:** apps hosted on Vercel or Netlify (headers stripped at the edge);
+static export deployments (no middleware execution).
+
+**Immediate fix:**
+
+```bash
+# Check current version
+cat package.json | grep next
+
+# Upgrade (T3 / Next.js projects)
+pnpm add next@latest   # targets 15.x — current safe branch
+```
+
+**If immediate upgrade is not feasible — NGINX mitigation:**
+
+```nginx
+# nginx.conf — strip the header before it reaches Next.js
+server {
+    location / {
+        # Drop the internal Next.js header from all external requests
+        proxy_set_header x-middleware-subrequest "";
+        # Or use more_clear_input_headers if ngx_headers_more is installed:
+        # more_clear_input_headers "x-middleware-subrequest";
+        proxy_pass http://nextjs_upstream;
+    }
+}
+```
+
+**If running behind a Node.js reverse proxy (Express/Fastify):**
+
+```typescript
+// Strip the header in your reverse proxy before forwarding to Next.js
+app.use((req, res, next) => {
+  delete req.headers['x-middleware-subrequest'];
+  next();
+});
+```
+
+**The architectural lesson:** middleware in Next.js centralizes authentication,
+logging, and security enforcement across all incoming requests — but this centralization
+creates a single point of failure. Critical security checks must be reinforced beyond
+middleware, adding redundancy to security layers. Never rely solely on middleware
+for authorization. Always validate permissions in route handlers and server actions as well.
+
+---
+
+### CVE-2025-55184 / CVE-2025-55183 — React 19 RSC DoS & Source Code Exposure
+
+**Disclosed:** May 2025 (follow-up to CVE-2025-29927 community research). **Status:** Patched.
+
+**What they are:** a high-severity Denial of Service (CVE-2025-55184) and a
+medium-severity Source Code Exposure (CVE-2025-55183) affecting React 19 and frameworks that
+use it, including Next.js. Neither allows Remote Code Execution.
+
+**Affected versions:** React 19.0.0 – 19.2.1 and Next.js 13.x – 16.x.
+
+**Fix:** update React to ≥19.3.0 and Next.js to the latest patched version.
+
+```bash
+pnpm add react@latest react-dom@latest next@latest
+```
+
+---
+
+### CVE-2026-42945 (NGINX Rift) — 18-Year-Old Heap Overflow, RCE (CRITICAL, CVSS 9.2)
+
+**Disclosed:** May 13, 2026. **Status:** Patched. **Actively exploited** (VulnCheck confirmed,
+PoC public on GitHub the day patches were released).
+
+**What it is:** a heap buffer overflow in the `ngx_http_rewrite_module`
+component, introduced in NGINX 0.6.27 (2008) and undiscovered for 18 years across all versions
+up to 1.30.0. The root cause: the script engine uses a two-pass process —
+first pass calculates buffer size, second pass writes data — and the internal engine state
+changes between these passes, causing a mismatch that overflows the heap.
+
+**Exploitability:** can be exploited remotely, without authentication, via
+crafted HTTP requests. On default deployments, exploitation triggers a server restart (DoS).
+If ASLR is disabled, exploitation leads to remote code execution.
+
+**Trigger condition:** the vulnerability is triggered when a configuration
+uses both `rewrite` and `set` directives together — a common pattern in API gateway configurations.
+
+**Affected versions:** NGINX Plus and NGINX Open Source, all versions 0.6.27 – 1.30.0.
+
+**Additional CVEs in the same disclosure:**
+
+- **CVE-2026-42946** (CVSS 8.3): excessive memory allocation in two modules — causes a ~1 TB key length calculation, crashing the worker
+- **CVE-2026-40701** (CVSS 6.3): use-after-free in `ngx_http_ssl_module` during TLS + DNS
+- **CVE-2026-42934** (CVSS 6.3): out-of-bounds read in `ngx_http_charset_module`
+
+**Immediate fix:**
+
+```bash
+# Check current version
+nginx -v
+
+# Ubuntu / Debian
+sudo apt update && sudo apt upgrade nginx
+
+# CentOS / RHEL / Amazon Linux
+sudo yum update nginx
+# or
+sudo dnf update nginx
+
+# Verify after upgrade
+nginx -v  # must show 1.30.1 or later
+```
+
+**If immediate upgrade is not feasible — configuration mitigation:**
+
+```nginx
+# Replace unnamed captures with named captures in every affected rewrite directive
+# ❌ VULNERABLE — unnamed capture with set directive
+rewrite ^/api/(.*)$ /new-api/$1 last;
+set $orig_path $1;
+
+# ✅ SAFE — named capture eliminates the state mismatch
+rewrite ^/api/(?P<path>.*)$ /new-api/$path last;
+set $orig_path $path;
+```
+
+**Verify ASLR is enabled on your Linux host** (RCE requires it disabled):
+
+```bash
+cat /proc/sys/kernel/randomize_va_space
+# Expected output: 2 (full ASLR — default on all modern Linux distros)
+# If output is 0: enable immediately
+echo 2 > /proc/sys/kernel/randomize_va_space
+# Make permanent:
+echo "kernel.randomize_va_space = 2" >> /etc/sysctl.conf
+sysctl -p
+```
+
+---
+
+### GitHub Actions — `pull_request_target` "Pwn Request" (CWE-829)
+
+**Real-world incidents:** Grafana Labs (April 26, 2025 — confirmed; May 17, 2026 — second
+incident), TanStack (May 11, 2026 — CVE-2026-45321).
+
+**What it is:** a vulnerable GitHub Action utilizing `pull_request_target`
+instead of the safer `pull_request` allows an unauthorized user to execute code from a malicious
+branch within a trusted environment.
+
+The critical difference:
+
+| Trigger               | Runs in context of           | Can access secrets? | Safe for forks?  |
+| --------------------- | ---------------------------- | ------------------- | ---------------- |
+| `pull_request`        | **fork** — no secrets        | ❌ No               | ✅ Yes           |
+| `pull_request_target` | **base repo** — full secrets | ✅ Yes              | ❌ **Dangerous** |
+
+`pull_request_target` was designed for trusted operations like labeling and commenting on PRs
+from forks, where you need repo write access. It was never designed to check out and run
+untrusted fork code with base-repo secrets — but many workflows do exactly this.
+
+**The TanStack attack chain** — the attacker chained three known vulnerability
+classes: a `pull_request_target` "Pwn Request" misconfiguration, GitHub Actions cache poisoning
+across the fork↔base trust boundary, and runtime memory extraction of the OIDC token from the
+Actions runner process — to publish credential-stealing malware under a trusted identity.
+
+**Audit your workflows — find every occurrence:**
+
+```bash
+# Find all workflows using pull_request_target in your repo
+grep -r "pull_request_target" .github/workflows/
+
+# Find workflows that also check out code (the dangerous combination)
+grep -r -A 20 "pull_request_target" .github/workflows/ | grep -i "checkout\|actions/checkout"
+```
+
+**The dangerous pattern:**
+
+```yaml
+# ❌ CRITICAL — pull_request_target + checkout of fork code = secrets exposed to attacker
+on:
+  pull_request_target: # runs with base repo secrets
+
+jobs:
+  test:
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }} # checks out FORK code with base secrets
+      - run: npm test # attacker controls this code
+```
+
+**The safe replacement pattern:**
+
+```yaml
+# ✅ SAFE — use pull_request for anything that runs untrusted fork code
+on:
+  pull_request: # runs with fork context — no base secrets exposed
+    branches: [main]
+
+jobs:
+  test:
+    steps:
+      - uses: actions/checkout@v4 # checks out fork code safely
+      - run: npm test
+```
+
+**If you legitimately need `pull_request_target`** (e.g., to label PRs or post comments):
+
+```yaml
+# ✅ SAFE — pull_request_target without checking out fork code
+on:
+  pull_request_target:
+
+jobs:
+  label:
+    permissions:
+      pull-requests: write
+    steps:
+      # NO checkout step — never run fork code in pull_request_target
+      - uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+```
+
+**Cache poisoning defense** — prevent fork PRs from writing to the base-repo cache:
+
+```yaml
+# In workflows triggered by pull_request (fork context):
+- uses: actions/cache@v4
+  with:
+    path: ~/.npm
+    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    # Add this to prevent fork cache entries from polluting base-repo runs:
+    restore-keys: |
+      ${{ runner.os }}-node-
+```
+
+Additional hardening for all workflows (defense in depth):
+
+```yaml
+jobs:
+  build:
+    permissions:
+      contents: read # grant minimum permissions — not write by default
+      packages: read
+    # Never use: permissions: write-all
+```
+
+---
+
+### VS Code Extension Supply Chain Attacks (TeamPCP / UNC6780)
+
+**Incidents:** Nx Console v18.95.0 compromised May 18, 2026 (2.2M installs, live 11 minutes);
+GitHub internal breach May 19–20, 2026 (~3,800 internal repositories exfiltrated via poisoned
+extension on a developer's device).
+
+**What happens:** the malicious extension executes as soon as a developer
+opens any workspace, silently fetching and running an obfuscated payload hidden inside a
+dangling orphan commit on the official GitHub repository. The payload harvests GitHub
+tokens, npm tokens, AWS/GCP/Azure credentials, SSH keys, and 1Password material from the
+workspace.
+
+**Why "11 minutes live" is still dangerous:** the community caught the Nx
+Console compromise in 11 minutes — which sounds fast until you realize how many machines
+auto-update in that window. VS Code auto-updates extensions in the background without
+any prompt. At 2.2 million installs, even 11 minutes represents tens of thousands of
+potentially compromised devices.
+
+**Immediate hardening — disable auto-updates in VS Code:**
+
+```json
+// .vscode/settings.json (project) or settings.json (global)
+{
+  "extensions.autoUpdate": false, // never update extensions automatically
+  "extensions.autoCheckUpdates": false // don't check in background
+}
+```
+
+**Review and clean your installed extensions:**
+
+```bash
+# List all installed extensions with versions
+code --list-extensions --show-versions
+
+# Remove an extension
+code --uninstall-extension publisher.extension-name
+
+# Audit: look for extensions recently published that you didn't manually update
+# VS Code → Extensions panel → right-click → "Show Extension Version History"
+```
+
+**Organizational policy (enforce via settings sync or MDM):**
+
+```json
+// VS Code managed policy — restrict extensions to an approved allowlist
+{
+  "extensions.allowedExtensionsAuthors": [
+    "ms-python",
+    "ms-vscode",
+    "esbenp",
+    "dbaeumer",
+    "prisma"
+    // add only publishers you have vetted
+  ]
+}
+```
+
+**General VS Code extension hygiene:**
+
+- Prefer extensions from Microsoft, verified publishers, or organizations you can audit
+- Check the extension's source repository — verify the publisher account matches the repo owner
+- Treat any extension that requests workspace file access as high-risk
+- Subscribe to security advisories for extensions you depend on (GitHub → Watch → Security alerts)
+
+---
+
+### Incident Summary Table (2025–2026)
+
+| Date     | CVE / Incident              | Component          | Severity    | Status                                  |
+| -------- | --------------------------- | ------------------ | ----------- | --------------------------------------- |
+| Mar 2025 | CVE-2025-29927              | Next.js middleware | CVSS 9.1    | Patched; actively exploited             |
+| May 2025 | CVE-2025-55184/55183        | React 19 + Next.js | High/Medium | Patched                                 |
+| Apr 2025 | Grafana Pwn Request         | GitHub Actions     | Critical    | Contained                               |
+| May 2026 | CVE-2026-45321              | TanStack npm       | Critical    | Packages deprecated                     |
+| May 2026 | CVE-2026-42945 (NGINX Rift) | NGINX ≤1.30.0      | CVSS 9.2    | Patched; actively exploited             |
+| May 2026 | Nx Console / GitHub breach  | VS Code extension  | Critical    | Extension pulled; investigation ongoing |
+
+---
+
 ## 12. Security Checklist (Pre-launch)
 
 Use this before going to production on any project:
@@ -1229,6 +1581,16 @@ Use this before going to production on any project:
 - [ ] Recovery codes hashed (argon2id); single-use; shown to user exactly once
 - [ ] MFA disable/change requires re-authentication + CSRF token
 - [ ] `otpauth` library used — not the unmaintained `speakeasy`
+
+**Active CVEs & Tooling**
+
+- [ ] Next.js ≥15.2.3 (or per-branch patch); `x-middleware-subrequest` header stripped at proxy if on older version
+- [ ] Security checks duplicated in route handlers — never rely on middleware alone
+- [ ] React ≥19.3.0 if using RSC
+- [ ] NGINX ≥1.30.1 (CVE-2026-42945 / Nginx Rift); ASLR enabled (`randomize_va_space = 2`)
+- [ ] `pull_request_target` audited in all GitHub Actions workflows; no `checkout` + fork code in `pull_request_target` context
+- [ ] VS Code extension auto-update disabled (`extensions.autoUpdate: false`) on all developer machines
+- [ ] Installed VS Code extensions audited; no unrecognized recently-updated extensions
 
 **Supply Chain**
 
