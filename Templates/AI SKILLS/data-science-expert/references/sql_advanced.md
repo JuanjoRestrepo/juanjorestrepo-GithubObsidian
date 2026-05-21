@@ -1,13 +1,16 @@
 # Advanced SQL — Data Science & Data Engineering Reference
 
 > This reference covers advanced SQL patterns used in data analysis, data engineering,
-> EDA, and BI reporting. Content validated against: PostgreSQL 16 official documentation
-> (postgresql.org/docs), Winand, M. (2012) _SQL Performance Explained_, Kimball, R. &
-> Ross, M. (2013) _The Data Warehouse Toolkit_ (3rd ed.), and Molinaro, A. (2009)
-> _SQL Cookbook_ (O'Reilly). All examples use ANSI SQL unless noted.
+> EDA, and BI reporting. Content validated against: PostgreSQL 16/18 official documentation
+> (postgresql.org/docs), Microsoft T-SQL SELECT reference (learn.microsoft.com/sql),
+> Winand, M. (2012) _SQL Performance Explained_, Kimball, R. & Ross, M. (2013)
+> _The Data Warehouse Toolkit_ (3rd ed.), Molinaro, A. (2009) _SQL Cookbook_ (O'Reilly),
+> and Itzik Ben-Gan (2016) _T-SQL Fundamentals_ (3rd ed., Microsoft Press).
+> All examples use ANSI SQL unless noted.
 
 ## Table of Contents
 
+0. [SQL Order of Execution — Logical Processing Order](#execution-order)
 1. [SQL Standards for Data Work](#standards)
 2. [Subqueries](#subqueries)
 3. [Common Table Expressions (CTEs)](#cte)
@@ -18,6 +21,231 @@
 8. [Practical Analytical Patterns](#patterns)
 9. [Query Optimization & Execution Plans](#optimization)
 10. [SQL for Data Science — Analytical Workflows](#ds-patterns)
+
+---
+
+## 0. SQL Order of Execution — Logical Processing Order {#execution-order}
+
+> **Primary references**:
+> PostgreSQL 18 Documentation. _Section 7 — Queries_. https://www.postgresql.org/docs/current/queries.html
+> Microsoft (2024). _Logical Processing Order of the SELECT statement (T-SQL)_.
+> https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql
+> Ben-Gan, I. (2016). _T-SQL Fundamentals_ (3rd ed.). Microsoft Press. Chapter 1.
+
+SQL is a declarative language: you describe the result you want, not the steps to
+produce it. As a consequence, the written order of clauses in a query does not match
+the order in which the database engine evaluates them. This distinction is one of the
+most important concepts in SQL — it explains the root cause of a large class of
+common errors and is the foundation for writing correct, efficient queries.
+
+### Logical vs. Physical Execution Order
+
+**Logical execution order** defines which clause can reference the output of which
+other clause. This order is standardized across all major RDBMS (PostgreSQL, SQL
+Server, MySQL, Oracle, BigQuery, Snowflake, Redshift).
+
+**Physical execution order** is determined by the query optimizer and may differ
+significantly from the logical order. The optimizer can reorder operations, use
+indexes, apply early termination, and exploit parallelism. However, the result must
+always be identical to what the logical order would produce.
+
+**The practical implication**: when reasoning about query correctness (is this alias
+available here? can this aggregate be used in this clause?), always reason from the
+logical order, not the written order.
+
+### The Logical Execution Order
+
+```
+Written order (how you type it)    Logical execution order (how the engine evaluates it)
+─────────────────────────────────  ──────────────────────────────────────────────────────
+  SELECT                          Step 1.  FROM  — identify base tables
+  FROM                            Step 2.  JOIN  — apply join conditions, build working set
+  WHERE                           Step 3.  WHERE — filter individual rows (pre-aggregation)
+  GROUP BY                        Step 4.  GROUP BY — collapse rows into groups
+  HAVING                          Step 5.  HAVING — filter groups (post-aggregation)
+  ORDER BY                        Step 6.  SELECT — evaluate expressions, assign aliases
+  LIMIT                           Step 7.  DISTINCT — remove duplicate rows (if specified)
+                                  Step 8.  ORDER BY — sort the result set
+                                  Step 9.  LIMIT / OFFSET / TOP — restrict row count
+```
+
+Note on window functions: they are evaluated during the SELECT phase (Step 6), after
+WHERE and GROUP BY have already been applied. This is why window functions cannot be
+used in WHERE, GROUP BY, or HAVING clauses.
+
+Note on CTEs (WITH clause): they are evaluated before FROM, as named temporary result
+sets that the main query references. They do not change the internal logical order.
+
+### Detailed Phase Descriptions
+
+**Step 1 — FROM**: The engine identifies all tables, views, subqueries, or CTEs
+referenced in the query. This is where the initial working dataset is established.
+
+**Step 2 — JOIN**: Join conditions are evaluated and the matching rows from multiple
+tables are combined into a single working set. For `LEFT JOIN`, unmatched rows from
+the left table are preserved with `NULL` values for right-table columns.
+
+**Step 3 — WHERE**: Filters are applied to individual rows. The WHERE clause has
+access to all columns from the FROM/JOIN working set. It does not have access to
+column aliases defined in SELECT (those do not exist yet) and cannot reference
+aggregate functions (aggregation has not happened yet).
+
+**Step 4 — GROUP BY**: Rows are collapsed into groups based on the specified columns.
+After this step, each group becomes one row in the working set. Individual row values
+are no longer accessible except through aggregate functions.
+
+**Step 5 — HAVING**: Filters are applied to groups (not individual rows). HAVING is
+evaluated after GROUP BY and therefore can reference aggregate functions (`COUNT`,
+`SUM`, `AVG`, `MAX`, `MIN`). HAVING cannot reference SELECT aliases.
+
+**Step 6 — SELECT**: Column expressions are evaluated, computed columns are derived,
+and column aliases are assigned. This is the first point where aliases exist.
+Window functions are evaluated here — they operate on the result of all previous steps.
+
+**Step 7 — DISTINCT**: Duplicate rows in the result set are removed (if `DISTINCT`
+was specified).
+
+**Step 8 — ORDER BY**: The result set is sorted. ORDER BY is the only clause that
+can reference SELECT-defined aliases, because it executes after SELECT.
+
+**Step 9 — LIMIT / OFFSET / TOP**: The row count is restricted. Applied after sorting,
+so the top N rows reflect the sort order.
+
+### Consequences of the Logical Order — Common Errors Explained
+
+These errors have a single root cause: incorrect assumptions about clause evaluation order.
+
+#### Error 1 — Using a SELECT alias in WHERE
+
+```sql
+-- WRONG: alias 'discounted_price' is defined in SELECT (Step 6)
+-- WHERE executes at Step 3 — the alias does not exist yet
+SELECT price * 0.9 AS discounted_price
+FROM products
+WHERE discounted_price > 100;  -- ERROR: column "discounted_price" does not exist
+
+-- CORRECT: reference the expression directly in WHERE
+SELECT price * 0.9 AS discounted_price
+FROM products
+WHERE price * 0.9 > 100;
+
+-- CORRECT ALTERNATIVE: wrap in a subquery or CTE
+WITH discounted AS (
+    SELECT price * 0.9 AS discounted_price
+    FROM products
+)
+SELECT discounted_price
+FROM discounted
+WHERE discounted_price > 100;
+```
+
+#### Error 2 — Using an aggregate function in WHERE
+
+```sql
+-- WRONG: AVG() is an aggregate — aggregation happens at Step 4 (GROUP BY)
+-- WHERE executes at Step 3 — aggregates are not yet computed
+SELECT departamento, AVG(salario)
+FROM empleados
+WHERE AVG(salario) > 6000;  -- ERROR: aggregate functions not allowed in WHERE
+
+-- CORRECT: use HAVING, which executes after GROUP BY
+SELECT departamento, AVG(salario) AS avg_salary
+FROM empleados
+GROUP BY departamento
+HAVING AVG(salario) > 6000;
+```
+
+#### Error 3 — Using a window function in WHERE
+
+```sql
+-- WRONG: window functions execute at SELECT (Step 6)
+-- WHERE executes at Step 3 — window functions are not yet computed
+SELECT nombre, salario,
+       RANK() OVER (ORDER BY salario DESC) AS rnk
+FROM empleados
+WHERE RANK() OVER (ORDER BY salario DESC) <= 5;  -- ERROR
+
+-- CORRECT: wrap in a subquery or CTE — filter after the window function executes
+SELECT *
+FROM (
+    SELECT nombre, salario,
+           RANK() OVER (ORDER BY salario DESC) AS rnk
+    FROM empleados
+) ranked
+WHERE rnk <= 5;
+```
+
+#### Error 4 — WHERE vs. HAVING: wrong clause for the right task
+
+```sql
+-- WRONG: using HAVING to filter individual rows (works, but is inefficient —
+-- HAVING fires after GROUP BY, so all rows are grouped before being filtered)
+SELECT departamento, COUNT(*) AS headcount
+FROM empleados
+HAVING departamento = 'IT'  -- Incorrect placement
+GROUP BY departamento;
+
+-- CORRECT: WHERE filters rows before grouping — reduces the working set early
+SELECT departamento, COUNT(*) AS headcount
+FROM empleados
+WHERE departamento = 'IT'   -- Filters at Step 3 — before grouping
+GROUP BY departamento;
+```
+
+### WHERE vs. HAVING — Decision Rule
+
+| Use case                                        | Correct clause                   | Reason                                   |
+| ----------------------------------------------- | -------------------------------- | ---------------------------------------- |
+| Filter on a column value (non-aggregate)        | `WHERE`                          | Fires before GROUP BY — more efficient   |
+| Filter on an aggregate result (COUNT, SUM, AVG) | `HAVING`                         | Fires after GROUP BY — aggregates exist  |
+| Filter on a window function result              | Subquery / CTE wrapping `SELECT` | Window functions exist only after SELECT |
+| Filter on a SELECT alias                        | Subquery / CTE wrapping `SELECT` | Aliases exist only after SELECT          |
+
+### Optimization Implication — Filter as Early as Possible
+
+The logical order of execution is essential for query optimization: it allows you to filter data as early as possible, reducing the dataset size before more resource-intensive operations.
+
+Applying the correct clause at the earliest possible phase minimizes the number of
+rows carried through subsequent (more expensive) operations:
+
+- A `WHERE` filter at Step 3 reduces rows before JOIN expansion, GROUP BY grouping,
+  and SELECT expression evaluation.
+- Moving a condition from `HAVING` to `WHERE` (when it does not involve an aggregate)
+  can yield significant performance gains on large tables, because `WHERE` fires
+  before the grouping step reduces rows.
+- Pre-filtering in a CTE or subquery before a JOIN reduces the join input size,
+  which directly reduces join cost.
+
+```sql
+-- SLOW: HAVING used for a non-aggregate filter — groups all rows first
+SELECT departamento, COUNT(*) AS headcount
+FROM empleados
+GROUP BY departamento
+HAVING departamento IN ('IT', 'Ventas');  -- Unnecessary late filtering
+
+-- FAST: WHERE used — rows are filtered before grouping
+SELECT departamento, COUNT(*) AS headcount
+FROM empleados
+WHERE departamento IN ('IT', 'Ventas')    -- Early filter
+GROUP BY departamento;
+
+-- Pre-filter before an expensive JOIN
+-- SLOW: join first, then filter
+SELECT e.nombre, d.presupuesto
+FROM empleados e
+INNER JOIN departamentos d ON e.dept_id = d.id
+WHERE e.fecha_ingreso > '2022-01-01';
+
+-- BETTER: pre-filter in a CTE before the join (reduces the join input)
+WITH recent_hires AS (
+    SELECT *
+    FROM empleados
+    WHERE fecha_ingreso > '2022-01-01'  -- Filter before join
+)
+SELECT r.nombre, d.presupuesto
+FROM recent_hires r
+INNER JOIN departamentos d ON r.dept_id = d.id;
+```
 
 ---
 
@@ -882,10 +1110,12 @@ FROM user_funnel_events;
 
 ## References
 
-- PostgreSQL 16 Documentation. _Window Functions_. https://www.postgresql.org/docs/current/tutorial-window.html
-- PostgreSQL 16 Documentation. _EXPLAIN_. https://www.postgresql.org/docs/current/sql-explain.html
-- PostgreSQL 16 Documentation. _WITH Queries (Common Table Expressions)_. https://www.postgresql.org/docs/current/queries-with.html
+- PostgreSQL 18 Documentation. _Chapter 7 — Queries_. https://www.postgresql.org/docs/current/queries.html
+- PostgreSQL 18 Documentation. _EXPLAIN_. https://www.postgresql.org/docs/current/sql-explain.html
+- PostgreSQL 18 Documentation. _WITH Queries (Common Table Expressions)_. https://www.postgresql.org/docs/current/queries-with.html
+- Microsoft (2024). _SELECT — Transact-SQL: Logical Processing Order_. https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql
 - Winand, M. (2012). _SQL Performance Explained_. Markus Winand. [use-the-index-luke.com]
+- Ben-Gan, I. (2016). _T-SQL Fundamentals_ (3rd ed.). Microsoft Press.
 - Date, C. J. (2011). _SQL and Relational Theory_ (2nd ed.). O'Reilly.
 - Kimball, R., & Ross, M. (2013). _The Data Warehouse Toolkit_ (3rd ed.). Wiley.
 - Molinaro, A. (2009). _SQL Cookbook_. O'Reilly.
