@@ -361,21 +361,158 @@ no_implicit_optional = true
 show_error_codes = true
 ```
 
-#### Pre-commit / CI Enforcement
+#### Pre-commit Hook Enforcement — Mandatory for Every Project
+
+**The problem with running checks manually**: manually running `ruff`, `mypy`, and
+`pytest` before committing is unreliable. The checks are skipped under time pressure,
+forgotten after rebases, or simply missed. The result is CI/CD failures on GitHub
+Actions — the same failures that would have been caught locally in under 10 seconds.
+
+**The solution**: wire the checks to the git commit event using the `pre-commit`
+framework. The hook runs automatically on every `git commit`. If any check fails,
+the commit is blocked. No manual step required.
+
+**Standard `pre-commit-config.yaml`** — place at project root:
+
+```yaml
+# .pre-commit-config.yaml
+# Install: uv add --dev pre-commit && pre-commit install
+# Run manually on all files: pre-commit run --all-files
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.0
+    hooks:
+      - id: ruff # Linter — must pass before commit
+        args: [--fix] # Auto-fix safe violations in-place
+      - id: ruff-format # Formatter — enforces code style
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.10.0
+    hooks:
+      - id: mypy
+        args: [--strict]
+        additional_dependencies:
+          - pandas-stubs
+          - types-PyYAML
+          - types-requests
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: pytest tests/ -v --tb=short -q
+        language: system
+        pass_filenames: false
+        always_run: true
+```
+
+**One-time project setup** — run once per project:
 
 ```bash
-# Run Ruff linter
-ruff check .
+# Install pre-commit into the project dev dependencies
+uv add --dev pre-commit
 
-# Run Ruff formatter
-ruff format .
+# Wire the hook to git — this is what makes it run on every commit
+pre-commit install
 
-# Run mypy strict type checking
-mypy src/ --strict
-
-# Run tests
-pytest tests/ -v --tb=short
+# Run all hooks against all files immediately to validate the setup
+pre-commit run --all-files
 ```
+
+After `pre-commit install`, every subsequent `git commit` automatically runs
+Ruff, mypy, and pytest. A failing check blocks the commit and prints the error.
+Fix the issue and re-commit — no extra command needed.
+
+**Updating hook versions** — run periodically:
+
+```bash
+pre-commit autoupdate
+```
+
+#### GitHub Actions CI Workflow — Matching the Local Hooks
+
+The GitHub Actions workflow must run the identical checks as the local pre-commit
+hooks. If they diverge, CI fails on commits that passed locally.
+
+Place this file at `.github/workflows/ci.yml`:
+
+```yaml
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: latest
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Ruff lint
+        run: uv run ruff check .
+
+      - name: Ruff format check
+        run: uv run ruff format --check .
+
+      - name: mypy type checking
+        run: uv run mypy src/ --strict
+
+      - name: Run tests
+        run: uv run pytest tests/ -v --tb=short --cov=src --cov-report=term-missing
+
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v4
+        if: always()
+        with:
+          fail_ci_if_error: false
+```
+
+#### The Commit Workflow After Setup
+
+```bash
+# Normal development flow — pre-commit runs automatically
+git add .
+git commit -m "feat: add feature X"
+# → pre-commit fires: ruff check, ruff format, mypy, pytest
+# → all pass → commit succeeds → push to GitHub → CI passes
+
+# If a check fails locally
+git commit -m "feat: add feature X"
+# → pre-commit fires → mypy: error in module.py → commit BLOCKED
+# Fix the type error, then:
+git add module.py
+git commit -m "feat: add feature X"
+# → all checks pass → commit succeeds
+
+# Skip hooks only in a genuine emergency (creates tech debt — document it)
+git commit --no-verify -m "WIP: emergency hotfix — pre-commit skipped"
+
+# Run all hooks on demand without committing (useful before a PR)
+pre-commit run --all-files
+```
+
+**Rule**: `--no-verify` is permitted only for genuine emergencies and must be
+accompanied by a follow-up commit that passes all checks. Never merge to `main`
+with outstanding mypy errors or failing tests.
 
 ### Python Code Standards
 
