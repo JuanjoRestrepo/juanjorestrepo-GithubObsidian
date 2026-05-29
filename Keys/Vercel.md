@@ -1,0 +1,10 @@
+
+# Recovery codes MacOs
+
+7539f699-0805f43e
+3d60e35e-659b5299
+d531fb62-7ce70fb0
+3d002204-1f693479
+c7694abc-b8bbba58
+2c54c23a-b9ef118e
+
