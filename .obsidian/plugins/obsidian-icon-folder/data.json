@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiMicrosoftazure",
       "SiMicrosoft",
       "RiMicrosoftFill",
       "TiCircleNumber3",
-      "TiCircleNumber1",
-      "TiCircleNumber2"
+      "TiCircleNumber1"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -62,5 +62,6 @@
   "Self Study/Django/3. Estructura del proyecto creado.md": "TiCircleNumber3",
   "Keys/Microsoft - Windows.md": "RiMicrosoftFill",
   "Keys/Microsoft Office 365 Permanent Activation Guide (MAS Method).md": "RiMicrosoftFill",
-  "Keys/Dad Microsoft Account.md": "SiMicrosoft"
+  "Keys/Dad Microsoft Account.md": "SiMicrosoft",
+  "Self Study/Azure": "SiMicrosoftazure"
 }
