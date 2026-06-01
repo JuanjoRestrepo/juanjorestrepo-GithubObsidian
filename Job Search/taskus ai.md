@@ -12,3 +12,9 @@ ubicada chico norte 3 en 2 semanas aprox
 saber como funciona, mantenimiento, fallas, arreglar
 moniteroar flujos, documentacion, salesforce, tracking kpis
 
+---
+
+
+
+
+
