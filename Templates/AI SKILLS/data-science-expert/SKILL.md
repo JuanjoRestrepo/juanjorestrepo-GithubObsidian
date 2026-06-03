@@ -45,6 +45,7 @@ Apply the full depth of this skill to every relevant interaction.
 | **ETL & Data Engineering**       | Ingestion, transformation, validation, orchestration, pipeline design patterns                                           |
 | **Software Development**         | Production-grade code, APIs, modular architecture, testing, CI/CD awareness                                              |
 | **Dashboard Design & BI**        | Power BI, Tableau, chart selection by task, layout hierarchy, data storytelling, KPI design, color strategy              |
+| **Geometric & Topological ML**   | GNNs (GCN/GAT/GraphSAGE/GIN), TDA (persistent homology, Takens embedding), data shape analysis, spectral graph theory    |
 
 ---
 
@@ -61,15 +62,40 @@ and embed SQL or R where appropriate.
 
 ### ML Frameworks — Selection Guide
 
-| Use Case                                                            | Framework            |
-| ------------------------------------------------------------------- | -------------------- |
-| Classical ML, pipelines, preprocessing                              | `scikit-learn`       |
-| Deep learning, production models                                    | `TensorFlow / Keras` |
-| Research, custom architectures                                      | `PyTorch`            |
-| Tabular data — robust, well-regularized baseline                    | `XGBoost`            |
-| Tabular data — large-scale, speed-critical, production              | `LightGBM`           |
-| Tabular data — high-cardinality categoricals, minimal preprocessing | `CatBoost`           |
-| Large-scale distributed ML                                          | `Apache Spark MLlib` |
+| Use Case                                                            | Framework                         |
+| ------------------------------------------------------------------- | --------------------------------- |
+| Classical ML, pipelines, preprocessing                              | `scikit-learn`                    |
+| Deep learning, production models                                    | `TensorFlow / Keras`              |
+| Research, custom architectures                                      | `PyTorch`                         |
+| Tabular data — robust, well-regularized baseline                    | `XGBoost`                         |
+| Tabular data — large-scale, speed-critical, production              | `LightGBM`                        |
+| Tabular data — high-cardinality categoricals, minimal preprocessing | `CatBoost`                        |
+| Graph-structured data (nodes + edges) — node/edge/graph tasks       | `PyTorch Geometric (PyG)` / `DGL` |
+| Topological data analysis (shape, periodicity, connectivity)        | `giotto-tda` / `ripser` / `gudhi` |
+| Large-scale distributed ML                                          | `Apache Spark MLlib`              |
+
+**Neural architecture selection by data geometry**: the correct deep learning architecture
+is determined by the structure of the data, not by current popularity. Bronstein et al.
+(2021) _Geometric Deep Learning_ establishes the unifying framework:
+
+- Spatial grid data (images, video) → CNN
+- Ordered sequences with temporal dependency → RNN / LSTM
+- Language, long-range context, reasoning → Transformer
+- Graph-structured data (nodes + explicit relational edges) → GNN (PyG / DGL)
+- Data with latent topological structure (periodicity, loops, voids) → TDA (giotto-tda)
+- Tabular data without geometric structure → GBM (XGBoost / LightGBM / CatBoost)
+
+**TDA — when the question is about shape**: use Topological Data Analysis when the
+analytical question involves detecting periodic structure, multi-scale clustering,
+branching topology, or global geometric features that statistical summaries cannot
+capture. TDA is especially powerful for short, noisy, or non-stationary time series
+(physiological signals, financial data, ICU monitoring) where FFT and classical
+statistics fail. See `references/tda_reference.md` for the full reference including
+persistent homology, Takens embedding, higher-order TDA, and giotto-tda implementation.
+
+See `references/gnn_reference.md` for the full architecture selection framework,
+GNN architecture guide (GCN / GAT / GraphSAGE / GIN), PyTorch Geometric implementation,
+limitations (over-smoothing, over-squashing), and real-world applications.
 
 **Gradient boosting on tabular data**: XGBoost, LightGBM, and CatBoost are the
 state-of-the-art for structured/tabular problems. Per Grinsztajn et al. (2022),
@@ -182,7 +208,9 @@ Always **report effect size** alongside p-values — statistical significance �
 - Always check stationarity (ADF test) before modeling — non-stationary series produce spurious relationships
 - Always verify decomposition residuals with Ljung-Box test — non-white-noise residuals indicate unexploited signal
 - Always plot ACF/PACF on the stationary series before specifying ARIMA order
-- For financial or high-frequency series, assess conditional heteroskedasticity (ARCH/GARCH) — standard ARIMA assumes constant variance and is inadequate for volatility clustering
+- For financial or high-frequency series, assess conditional heteroskedasticity (ARCH/GARCH)
+- For short, noisy, or non-stationary time series where periodicity or topological structure is the question:
+  use TDA (Takens embedding + persistent H₁) — see `references/tda_reference.md` Section 5
 - See `references/eda_templates.md` Section 2 for full theoretical foundations, implementation, and authoritative references
 
 ### Text / NLP
@@ -583,5 +611,7 @@ For deeper guidance on specific subdomains, consult:
 - `references/data_formats.md` — File format selection guide (CSV, JSON, Parquet, ORC, Avro, Delta Lake, Apache Iceberg)
 - `references/dashboard_design.md` — Dashboard design, chart selection, Power BI and Tableau guidelines, data storytelling
 - `references/sql_advanced.md` — Advanced SQL: subqueries, CTEs, window functions, advanced JOINs, aggregations, set operations, analytical patterns, query optimization
+- `references/gnn_reference.md` — GNNs and neural architecture selection: spectral graph theory, GCN/GAT/GraphSAGE/GIN math and derivations, CNN/RNN/Transformer/GNN pipeline comparison, PyTorch Geometric, over-smoothing/over-squashing, real applications
+- `references/tda_reference.md` — Topological Data Analysis: simplicial complexes, persistent homology, stability theorem, Takens embedding for time series periodicity, higher-order TDA (simplicial complexes, sheaves), giotto-tda implementation, applications in biomarkers/finance/brain networks
 
 Load the relevant reference file when the task falls primarily within that subdomain.

@@ -425,11 +425,42 @@ cumulative reward. No labeled dataset — the signal comes from environmental fe
 | Model-Free / Value-Based         | Q-Learning, Deep Q-Network (DQN)      | Learns a value function; off-policy; discrete action spaces     | Game playing (Atari); discrete decision problems                    |
 | Model-Based                      | World Model + Planner                 | Learns environment dynamics; uses model for planning            | Data-efficient learning; environments where simulation is available |
 
+### 1.5 Deep Learning Architecture Selection by Data Geometry
+
+> **Reference**: Bronstein et al. (2021). Geometric Deep Learning: Grids, Groups,
+> Graphs, Geodesics, and Gauges. arXiv:2104.13478.
+
+Standard ML algorithm selection (Sections 1.1–1.4) assumes tabular or vector data.
+When the data has geometric structure, architecture selection must start from the
+data shape. Bronstein et al. (2021) unify CNN, RNN, Transformer, and GNN under a
+single framework: each architecture exploits a specific symmetry group of its data domain.
+
+| Data structure                             | Symmetry                            | Architecture                        | Task examples                                                |
+| ------------------------------------------ | ----------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
+| Regular spatial grid (images, video)       | Translation equivariance            | CNN                                 | Object detection, medical imaging, satellite imagery         |
+| Ordered sequence (short-to-medium)         | Time-shift equivariance             | RNN / LSTM                          | Time series, IoT sensors, short NLP                          |
+| Sequence with long-range dependencies      | Global permutation equivariance     | Transformer                         | Language, code generation, summarization                     |
+| Graph — nodes + edges (arbitrary topology) | Neighborhood permutation invariance | GNN                                 | Molecules, fraud detection, recommendation, knowledge graphs |
+| Tabular — no geometric structure           | None                                | GBM (XGBoost / LightGBM / CatBoost) | Business analytics, structured datasets                      |
+
+**GNN is the correct architecture only when**: the data is explicitly structured as a
+graph (V nodes, E edges) and the connectivity pattern carries predictive signal beyond
+what node features alone provide. See `references/gnn_reference.md` for the complete
+GNN reference including GCN, GAT, GraphSAGE, GIN architectures, PyTorch Geometric
+implementation, and known failure modes (over-smoothing, over-squashing).
+
 ### Algorithm Selection Decision Logic
 
 Apply this as Step 1 of the Workflow Decision Logic defined in SKILL.md:
 
 ```
+0. What is the structure of the data?
+   Graph (nodes + explicit edges with relational meaning) → GNN
+     → See references/gnn_reference.md for architecture selection (GCN/GAT/GraphSAGE/GIN)
+   Spatial grid (pixels, voxels) → CNN
+   Ordered sequence → LSTM (short) / Transformer (long-range)
+   Tabular / vector → Continue to Step 1
+
 1. Is the target variable known for training examples?
    YES → Supervised Learning
    NO  → Unsupervised Learning
