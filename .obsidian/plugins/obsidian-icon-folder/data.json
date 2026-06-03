@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiMicrosoftazure",
-      "SiMicrosoft",
-      "RiMicrosoftFill",
-      "TiCircleNumber3",
-      "TiCircleNumber1"
+      "SiPython",
+      "TiUxCircle",
+      "🤖",
+      "SiWarp",
+      "SiAzuredevops"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -63,5 +63,12 @@
   "Keys/Microsoft - Windows.md": "RiMicrosoftFill",
   "Keys/Microsoft Office 365 Permanent Activation Guide (MAS Method).md": "RiMicrosoftFill",
   "Keys/Dad Microsoft Account.md": "SiMicrosoft",
-  "Self Study/Azure": "SiMicrosoftazure"
+  "Self Study/Azure": "SiMicrosoftazure",
+  "Templates/AI SKILLS": "🧠",
+  "Templates/AI SKILLS/AEROSPACE": "👨‍🚀",
+  "Templates/AI SKILLS/web-devops": "SiAzuredevops",
+  "Templates/AI SKILLS/Warp": "SiWarp",
+  "Templates/AI SKILLS/data-science-expert": "🤖",
+  "Templates/AI SKILLS/frontend-design": "TiUxCircle",
+  "Templates/UV Python": "SiPython"
 }
