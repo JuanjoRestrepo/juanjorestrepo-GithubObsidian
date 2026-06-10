@@ -173,3 +173,6 @@ La arquitectura actual del bot es crucial en este caso, y aún no se dispone de 
 	
 	Sin estas integraciones, la tasa de resolución no puede mejorar significativamente, independientemente de las mejoras en el NLU.
 
+
+---
+
