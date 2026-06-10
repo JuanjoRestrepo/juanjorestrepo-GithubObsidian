@@ -91,15 +91,85 @@ El patrón ***"Not defined by Bot"*** en el canal exclusivo para bots ($41.354$)
 
 Las siguientes subcategorías presentan un alto volumen de escalamiento por parte de los agentes, una baja tasa de bots y son técnicamente viables para la automatización:
 
-|Category|Subcategory|Agent Vol|Hybrid Vol|Bot%|Automation Type|
-|---|---|---|---|---|---|
-|Support on Ordering|**Explain how to order**|52,148|4,165|0.4%|Pure informational — FAQ bot|
-|Returns & Refunds|**Return status**|30,817|18,098|20.9%|Transactional — OMS integration|
-|Existing Order|**Size**|20,702|20,571|31.8%|Product info + FAQ|
-|Existing Order|**Not delivered**|15,842|13,517|3.7%|Transactional — carrier integration|
-|Existing Order|**In transit**|11,238|14,978|12.4%|Transactional — order tracking API|
-|Returns & Refunds|**Label Request**|12,139|14,028|7.9%|Transactional — label generation API|
-|Existing Order|**Delay**|10,584|13,885|7.1%|Transactional + proactive messaging|
-|Payment|**Payment rejection**|5,726|6,145|15.4%|Sensitive — partial automation|
-|Returns & Refunds|**Refund proof**|7,436|4,338|0.0%|Document/status API|
-|Existing Order|**Failed intent of delivery**|5,070|4,875|0.0%|Carrier integration|
+| Category            | Subcategory                   | Agent Vol | Hybrid Vol | Bot%  | Automation Type                      |
+| ------------------- | ----------------------------- | --------- | ---------- | ----- | ------------------------------------ |
+| Support on Ordering | **Explain how to order**      | 52,148    | 4,165      | 0.4%  | Pure informational — FAQ bot         |
+| Returns & Refunds   | **Return status**             | 30,817    | 18,098     | 20.9% | Transactional — OMS integration      |
+| Existing Order      | **Size**                      | 20,702    | 20,571     | 31.8% | Product info + FAQ                   |
+| Existing Order      | **Not delivered**             | 15,842    | 13,517     | 3.7%  | Transactional — carrier integration  |
+| Existing Order      | **In transit**                | 11,238    | 14,978     | 12.4% | Transactional — order tracking API   |
+| Returns & Refunds   | **Label Request**             | 12,139    | 14,028     | 7.9%  | Transactional — label generation API |
+| Existing Order      | **Delay**                     | 10,584    | 13,885     | 7.1%  | Transactional + proactive messaging  |
+| Payment             | **Payment rejection**         | 5,726     | 6,145      | 15.4% | Sensitive — partial automation       |
+| Returns & Refunds   | **Refund proof**              | 7,436     | 4,338      | 0.0%  | Document/status API                  |
+| Existing Order      | **Failed intent of delivery** | 5,070     | 4,875      | 0.0%  | Carrier integration                  |
+
+**Potencial de automatización conservador (60 % del volumen de contactos no generados por bots para las 15 intenciones principales):** 
+
+- *$~198,000$ contactos adicionales*: Si se capturara, el volumen de contactos generados exclusivamente por bots se triplicaría aproximadamente, lo que impulsaría directamente la contención por encima del $55\%$.
+
+
+### 2.5 — La paradoja de "Cómo devolver" (Bot Canary)
+
+*"Cómo devolver" (Devoluciones y reembolsos)* es la subcategoría con mejor rendimiento del bot: 
+
+- Gestiona el $51,7\%$ del volumen exclusivamente mediante el bot ($19,915$ contactos). 
+- Sin embargo, $6,856$ contactos siguen siendo atendidos por agentes y $11,764$ se gestionan mediante un sistema híbrido.
+- Esto indica que el bot **tiene la capacidad de gestionar las devoluciones informativas**, pero *algún problema en el enrutamiento o el flujo de diálogo* está provocando que una *gran parte de los contactos se desvíe a los canales humanos*. 
+- Esto representa una solución rápida: 
+	>corregir la lógica de enrutamiento de un flujo que ya funciona correctamente en el bot.
+
+
+
+---
+## Section 3 — Resumen del diagnóstico de la causa raíz
+
+Hay **tres niveles de fallo**, cada uno agravando el anterior:
+#### **Nivel 1: Fallo de entrada (¿Por qué el bot no entiende?):**
+- El $32,7\%$ de los contactos *no tienen una subintención clasificada (Campo en blanco + Sin definir).*
+- La taxonomía de NLU/intención está incompleta. El bot desconoce las necesidades de los clientes en muchas categorías de alto volumen.
+
+#### **Nivel 2: Fallo de resolución (¿Por qué el bot no resuelve el problema?):**
+- Incluso cuando se reconoce la intención, el bot a menudo no puede resolver el problema. 
+* Las intenciones de alto volumen más automatizables (*estado de devolución, seguimiento de pedidos, generación de etiquetas*) requieren integraciones del sistema con las API de OMS/WMS/transportistas, las cuales parecen estar ausentes o incompletas.
+
+#### **Nivel 3: Fallo del bucle (¿Por qué los clientes vuelven?):**
+- Sin una resolución en el primer contacto, el $28\%$ de los clientes vuelven a contactar. 
+- *Cada nuevo contacto genera una carga tanto para el bot como para el agente de respaldo*, lo que **incrementa el coste de cada interacción inicial** sin resolver.
+
+
+---
+
+
+## Section 4 — Recomendaciones sobre tecnología y arquitectura de la solución
+
+Dado el tipo de problema, el alcance y las limitaciones, recomiendo lo siguiente:
+
+### **Para el análisis y el panel de control (esta presentación y el monitoreo continuo):**
+
+1. Los *datos están estructurados, en formato tabular y son de tamaño moderado* (menos de 1 millón de filas). No se requiere GPU ni computación distribuida.
+
+#### Stack primario:
+- Python 3.12 + pandas + Plotly para análisis
+- Power BI o Tableau para el panel ejecutivo
+- Para la presentación, una aplicación interactiva Plotly Dash o un informe estático HTML de Plotly se crean más rápido y resultan más impactantes que una presentación estática.
+- Para el proceso de análisis basado en notebooks: Python + pandas + Seaborn (distribuciones) + Plotly (interactivo)
+- Great Expectations o Pandera para la validación de contratos de datos.
+
+
+### Para el trabajo de mejora del chatbot (más allá de la presentación):
+
+La arquitectura actual del bot es crucial en este caso, y aún no se dispone de esa información. Sin embargo, la recomendación general es la siguiente:
+
+1. **El problema de la clasificación de intenciones apunta a la necesidad de:** 
+	1. **(a)** reentrenar el *NLU (Natural Language Understanding)* con datos de conversación *debidamente etiquetados*, 
+	2. **(b)** utilizar una capa de modelo de lenguaje grande de reserva (GPT-4/Claude) para la clasificación de intenciones sin entrenamiento previo en los casos de `"No definido"` y `"En blanco"`, o 
+	3. **(c)** adoptar un enfoque híbrido donde las intenciones de alta confianza permanezcan en el flujo determinista y las de baja confianza se redirijan a la generación de respuestas asistida por el modelo de lenguaje.
+
+2. **El problema de la resolución apunta a** 
+	1. la necesidad de integraciones de API con el sistema de gestión de pedidos, 
+	2. la plataforma de gestión de devoluciones 
+	3. y las API de seguimiento de transportistas. 
+	
+	Sin estas integraciones, la tasa de resolución no puede mejorar significativamente, independientemente de las mejoras en el NLU.
+
