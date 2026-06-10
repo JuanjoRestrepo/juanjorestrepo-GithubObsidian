@@ -2,7 +2,8 @@
 
 Now the workflow becomes much cleaner.
 
-# STEP 1 — Environment + Structure
+# [x] STEP 1 — Environment + Structure
+
 
 Minimal and clean.
 
