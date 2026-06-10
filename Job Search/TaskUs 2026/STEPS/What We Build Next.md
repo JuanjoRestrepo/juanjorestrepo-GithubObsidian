@@ -9,7 +9,7 @@ Minimal and clean.
 
 ---
 
-# STEP 2 — Data Understanding Notebook
+# [x] STEP 2 — Data Understanding Notebook
 
 Focus:
 
