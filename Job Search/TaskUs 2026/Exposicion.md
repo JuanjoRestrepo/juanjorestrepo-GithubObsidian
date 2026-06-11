@@ -13,7 +13,13 @@ Si observamos nuestros KPIs actuales, estamos fallando en tres frentes simultán
 A primera vista, la hipótesis sería que 
 	***los usuarios rechazan el bot o no confían en él***.
 
-Pero la volumetría nos dice lo contrario: 
+Pero este gráfico nos dice lo contrario: 
+
+Tenemos tres canales de atención
+1. El canal de `agentes humanos` maneja 398,000 contactos — casi el 50% del volumen total.
+2. El canal `híbrido`, donde el bot inicia pero un agente termina, maneja 277,000 contactos — otro 35%
+3. Y el canal `bot-only`, donde el bot resuelve de inicio a fin sin intervención humana, maneja 124,000 contactos — apenas el 15.5%.
+
 	***el bot participa activamente en el 50.2% de todas las interacciones.***
 
 **(Señala el callout debajo del gráfico de barras de distribución por canal)**
