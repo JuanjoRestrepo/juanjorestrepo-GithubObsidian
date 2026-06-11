@@ -3,9 +3,10 @@ Buen día a todos, mi nombre es Juan José Restrepo y hoy les vengo a presentar 
 
 > los LAM están entrenados para **ejecutar acciones** concretas dentro de aplicaciones y sistemas digitales
 
+# (Página 1 — Executive Overview)
 El contexto inicial rápidamente era que...
 
-Si observamos nuestros KPIs actuales, estamos fallando en tres frentes simultáneamente:
+Si observamos nuestros KPIs actuales, se está fallando en tres frentes simultáneamente:
 - la Tasa de Contención está en 48% contra una meta del 55%
 - la Tasa de Contacto Repetido está en el 28% cuando debería ser del 18%.
 - la Tasa de Resolución está apenas en el 30% contra un objetivo del 50%
@@ -15,20 +16,32 @@ A primera vista, la hipótesis sería que
 
 Pero este gráfico nos dice lo contrario: 
 
+## **(Señala cada barra mientras hablas)**
+
+![[Pasted image 20260611173319.png]]
+
+
 Tenemos tres canales de atención
-1. El canal de `agentes humanos` maneja 398,000 contactos — casi el 50% del volumen total.
-2. El canal `híbrido`, donde el bot inicia pero un agente termina, maneja 277,000 contactos — otro 35%
-3. Y el canal `bot-only`, donde el bot resuelve de inicio a fin sin intervención humana, maneja 124,000 contactos — apenas el 15.5%.
+1. El canal de `agentes humanos` maneja $398,000$ contactos — casi el $50\%$ del volumen total.
+2. El canal `híbrido`, donde el bot inicia pero un agente termina, maneja $277,000$ contactos — otro $35\%$
+3. Y el canal `bot-only`, donde el bot resuelve de inicio a fin sin intervención humana, maneja $124,000$ contactos — apenas el $15.5\%$
 
-	***el bot participa activamente en el 50.2% de todas las interacciones.***
+## **(Señala el callout "Bot participa en 50.2% pero solo contiene 15.5%")**
+Ahora, si sumamos el canal `híbrido` y el `bot-only` 
+- ***el bot está participando activamente en el 50.2% de todas las interacciones.***
+- Pero **solo está conteniendo el 15.5%. 
+- **Hay una brecha de 35 puntos porcentuales entre participación y contención real.
 
-**(Señala el callout debajo del gráfico de barras de distribución por canal)**
+Eso significa que
+> De cada 10 contactos donde el bot interviene, en 7 de ellos el bot no pudo terminar el trabajo y necesitó un agente humano para cerrar el caso.
 
-![[Pasted image 20260611164757.png]]
+###  **Falsa Contención**
+A esto lo denomino **Falsa Contención**:
+- el bot saluda y clasifica la intención del usuario, pero al carecer de capacidad transaccional, no puede resolver
+- El sistema lo registra como un contacto 'contenido' porque técnicamente no escaló, pero en la realidad el cliente cerró la ventana sin respuesta, y luego vuelve a llamar.
 
-El problema raíz no es de adopción. 
+### Esta dinámica explica los tres KPIs de forma simultánea: 
 
-El problema es lo que yo denomino **Falsa Contención**: 
-	el bot saluda, clasifica la intención del usuario, pero al carecer de capacidad transaccional, no puede resolver.
-
-El sistema lo registra como un contacto 'contenido' porque técnicamente nunca llegó a un agente, pero en la realidad el cliente cerró la ventana sin respuesta.
+- la contención no llega al 55% porque el bot no termina los casos, 
+- la resolución está en el 30% porque contener no es lo mismo que resolver, 
+- y el contacto repetido está en el 28% porque los clientes sin respuesta vuelven. Los tres tienen la misma causa raíz."
