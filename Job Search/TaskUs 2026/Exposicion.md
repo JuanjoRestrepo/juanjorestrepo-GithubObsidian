@@ -182,19 +182,19 @@ Por ejemplo, `Explain how to order`:
 
 # (Página 3 — Action Plan)
 
+Ahora que entendimos dónde están las fricciones operacionales, la siguiente pregunta es:
 
-Aquí presentamos el roadmap de implementación propuesto.
+> ¿Cómo convertimos este diagnóstico en un plan ejecutable y priorizado?
 
-El plan prioriza estrictamente dos variables:
-
-- volumen operacional impactado,
+El roadmap que proponemos organiza las iniciativas según dos variables:
+- impacto operacional,
 - y complejidad de implementación.
 
-La lógica del roadmap es progresiva:
+Y la lógica del plan es progresiva:
 
-- Primero corregimos visibilidad y quick wins operacionales.
-- Luego habilitamos resolución transaccional real.
-- Finalmente optimizamos inteligencia conversacional y reducción de falsa contención.
+- Primero recuperamos visibilidad y resolvemos quick wins.
+- Después habilitamos resolución transaccional real.
+- Finalmente refinamos inteligencia conversacional y reducimos falsa contención.
 
 Cada fase desbloquea la siguiente.
 
@@ -203,9 +203,56 @@ Cada fase desbloquea la siguiente.
 
 #### **Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
 
-La primera fase se enfoca en dos objetivos:
-- recuperar visibilidad operacional,
-- y capturar automatizaciones de baja complejidad y alto volumen.
+La primera fase no busca construir capacidades avanzadas de IA.
+Primero necesitamos resolver dos problemas fundamentales:
+
+- falta de visibilidad,
+- y automatizaciones básicas que hoy siguen llegando a agentes.
+
+La primera acción es corregir el problema de `Left Blank`.
+
+- Ya que actualmente, cerca de 197,000 contactos — aproximadamente el 25% de toda la operación — no tienen subcategoría registrada.
+
+Eso significa que:
+- el sistema pierde granularidad,
+- dificulta el análisis causal,
+- limita el routing inteligente,
+- y además reduce la capacidad futura de entrenamiento NLP.
+
+
+Por eso proponemos hacer obligatoria la captura de subcategoría dentro del CRM.
+
+Porque operacionalmente existe una regla simple:
+
+> No podemos optimizar lo que no podemos medir.
+
+Y esto es importante:  
+esta fase no solo mejora reporting.  
+También crea la base de datos que necesitaremos más adelante para entrenar nuevos intents y mejorar automatización
+
+Ahora, una vez recuperamos visibilidad, el segundo quick win es activar correctamente intents FAQ de alta frecuencia.
+
+El mejor ejemplo es:  
+`Explain how to order`.
+
+Actualmente genera más de 56,000 contactos que siguen terminando en agentes humanos.
+
+Y aquí aparece algo importante:  
+- este flujo no requiere integraciones complejas.  
+- No necesita OMS.  
+- No necesita APIs externas.  
+- No necesita autenticación avanzada.
+
+La respuesta es prácticamente estática.
+
+Por eso esta iniciativa tiene el mejor ratio impacto-esfuerzo de toda la propuesta:
+
+- bajo costo técnico,
+- implementación rápida,
+- e impacto inmediato en Containment Rate.
+
+
+
 
 1. **Primero Governanza de Datos — Eliminación de “Left Blank”:**
 	1. Se piensa capturar de subcategoría en el CRM (Gestión de la Relación con el Cliente) para eliminar los $197,000$ contactos que hoy quedan sin clasificar como `Left Blank`. 
