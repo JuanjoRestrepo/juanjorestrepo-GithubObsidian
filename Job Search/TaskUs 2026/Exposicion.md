@@ -178,6 +178,27 @@ Por ejemplo, `Explain how to order`:
 - 61,000 contactos, complejidad media, requiere OMS API, Fase 2. Y así para cada uno.
 
 
+---
+
+# (Página 3 — Action Plan)
+
+
+Aquí tenemos el plan de implementación  el cual prioriza estrictamente dos variables:
+- volumen de contactos impactados
+- complejidad de implementación
+
+
+El cronograma visual les muestra la secuencia por Fases:
+
+
+## **(Señala el Gantt visual a la izquierda)**
+
+**Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
+
+Hay dos acciones inmediatas;
+1. **La primera es de gobernanza de datos:**
+	1. vamos a forzar la captura obligatoria de subcategoría en el CRM para eliminar los 197,000 contactos que hoy quedan sin clasificar como 'Left Blank'. Casi el 25% de nuestra operación es actualmente un punto ciego analítico. Sin corregir esto, cualquier decisión de inversión en Fase 2 y 3 está basada en datos incompletos.
+
 
 
 
