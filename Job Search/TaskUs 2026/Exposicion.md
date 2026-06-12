@@ -63,7 +63,7 @@ Para eso apliqué el **Principio de Pareto**, también conocido como la regla de
 En nuestro caso, eso se traduce en que 
 - **pocas categorías de contacto concentran la mayor parte del volumen.**
 
-Por lo que si podemos identificar cuáles son esas categorías, podemos ignorar el resto temporalmente y concentrar toda la inversión donde realmente mueve la aguja.
+Por lo que si podemos identificar cuáles son esas categorías, podemos ignorar el resto temporalmente y concentrar toda la inversión donde realmente impacte.
 
 ## **(Señala el eje izquierdo y las barras azules)**
 
@@ -110,11 +110,11 @@ Este gráfico de barras apiladas nos muestra, para cada categoría, qué proporc
 1. **Primero, `Customer Feedback` y `Support on Ordering` tienen cero por ciento de contención por bot o casi nula**
 
 > Esto quiero decir que EL $91\%$ y el $90\%$ respectivamente va directo a agentes humanos.
-> y el ot no participa casi en absoluto
+> y el bot no participa casi en absoluto
 
 Y aquí hay una distinción estratégica importante:
 - enviar el feedback de un cliente frustrado a un agente humano es la decisión correcta, porque requiere empatía y juicio y manejo emocional. Eso no se automatiza
-- Pero enviar 56,000 consultas del tipo `cómo hago un pedido` a un agente humano operativamente no sería lo más eficiente, sino más bien se debería tratar como un **FAQ**, **Preguntas Frecuentes**, un banco de FAQs usando un flujo de texto para procesarlas y no requerir de ayuda externa humana
+- Pero enviar más de 50,000 consultas del tipo `cómo hago un pedido` a un agente humano operativamente no sería lo más eficiente, sino más bien se debería tratar como un **FAQ**, **Preguntas Frecuentes**, un banco de FAQs usando un flujo de texto para procesarlas y no requerir de ayuda externa humana
 
 ## **(Señala las barras de Existing Order y Returns & Refunds)**
 
@@ -131,7 +131,7 @@ Porque estas consultas no son informacionales, son transaccionales, es decir:
 	NO ES "tu devolución específica, con tu número de orden específico, está en este estado en este momento"
 - Para dar esa respuesta, el bot necesita conectarse en tiempo real al sistema de gestión de pedidos — el OMS — consultar el estado de esa orden concreta y devolver un resultado dinámico.
 - Si esa conexión no existe, el bot reconoce perfectamente que el cliente quiere saber el estado de su devolución, pero no tiene forma de consultarlo.
-- Entonces hace lo único que puede: escala al agente humano, que sí tiene acceso al OMS desde su pantalla.
+- Entonces hace lo único que puede: escala al agente humano, que sí tiene acceso al OMS
 
 ***No es un problema de inteligencia artificial. El bot entiende al cliente. El problema es que el bot no tiene las herramientas conectadas para actuar sobre lo que entendió.***
 
