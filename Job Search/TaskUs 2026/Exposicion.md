@@ -183,20 +183,31 @@ Por ejemplo, `Explain how to order`:
 # (Página 3 — Action Plan)
 
 
-Aquí tenemos el plan de implementación  el cual prioriza estrictamente dos variables:
-- volumen de contactos impactados
-- complejidad de implementación
+Aquí presentamos el roadmap de implementación propuesto.
 
+El plan prioriza estrictamente dos variables:
 
-El cronograma visual les muestra la secuencia por Fases:
+- volumen operacional impactado,
+- y complejidad de implementación.
+
+La lógica del roadmap es progresiva:
+
+- Primero corregimos visibilidad y quick wins operacionales.
+- Luego habilitamos resolución transaccional real.
+- Finalmente optimizamos inteligencia conversacional y reducción de falsa contención.
+
+Cada fase desbloquea la siguiente.
 
 
 ## **(Señala el Gantt visual a la izquierda)**
 
 #### **Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
 
-Hay dos acciones inmediatas:
-1. **La primera es de gobernanza de datos:**
+La primera fase se enfoca en dos objetivos:
+- recuperar visibilidad operacional,
+- y capturar automatizaciones de baja complejidad y alto volumen.
+
+1. **Primero Governanza de Datos — Eliminación de “Left Blank”:**
 	1. Se piensa capturar de subcategoría en el CRM (Gestión de la Relación con el Cliente) para eliminar los $197,000$ contactos que hoy quedan sin clasificar como `Left Blank`. 
 	2. Pues casi el $25\%$ de la operación es actualmente un punto ciego analítico. 
 	3. Sino se corrige esto, cualquier primero, cualquier decisión de inversión en Fase 2 y Fase 3 estará basada en datos incompletos.
@@ -208,8 +219,32 @@ Hay dos acciones inmediatas:
 
 #### **Fase 2, días 30 a 60 — Core Transaccional. La integración que desbloquea la resolución real**
 
+Esta fase es sobre darle al bot la capacidad de hacer lo que hoy solo un agente puede hacer.
 
+En la tabla, la fila de 'OMS Integration: Return status + In transit':
+1. Muestra $91,804$ contactos impactados con un impacto proyectado de `Resolution Rate` +8pp y `Repeat Rate` -4pp.
+2. Son los números más altos de impacto en KPI de toda la tabla. Y no es casualidad, porque estos dos intents generan el ciclo más dañino de toda la operación.
+3. Si lo pensamos desde la perspectiva del cliente, en donde hizo una devolución y lleva varios días sin saber si fue aprobada
+	1. Contacta al bot. El bot lo saluda, identifica que quiere saber el estado de su devolución, y en ese momento se topa con la pared: ***no tiene acceso al sistema donde está esa información***
+	2. Ahí luego Escala al agente.
+	3. El agente busca en el OMS, le da la respuesta en tres minutos y cierra el caso
+4. Ese contacto fue resuelto, pero consumió tiempo de un agente humano para responder algo que era una consulta de lectura pura: ***solo requería mirar un dato en un sistema***
+5. Y si ese mismo cliente no recibe una actualización proactiva en los días siguientes, vuelve a contactar.
 
+**Ese es el mecanismo exacto que genera el 28% de Tasa de Contacto Repetido.**
+
+## (Señala Return status e In transit en el gráfico de barras de la parte inferior de Página 2)
+
+![[Pasted image 20260611215840.png]]
+
+Y si recordamos lo que vimos en la página anterior 
+- el `Return status`tenía $61,857$ contactos 
+- 'In transit' tenía 29,947.
+- Son 91,000 contactos que hoy dependen de que un agente abra el OMS manualmente para responder una pregunta cuya respuesta ya existe en un sistema.
+- Es por eso que la integración que construimos en esta fase es conceptualmente directa: 
+	- una conexión API entre la plataforma del bot y el OMS 
+	- que le permita autenticar al usuario, tomar su número de orden 
+	- y devolver el estado en tiempo real, sin intervención humana.
 
 
 #### **Fase 3, días 60 a 90 — Eliminar la Falsa Contención**
