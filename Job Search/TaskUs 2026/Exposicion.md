@@ -195,11 +195,16 @@ El cronograma visual les muestra la secuencia por Fases:
 
 #### **Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
 
-Hay dos acciones inmediatas;
+Hay dos acciones inmediatas:
 1. **La primera es de gobernanza de datos:**
-	1. vamos a capturar de subcategoría en el CRM para eliminar los $197,000$ contactos que hoy quedan sin clasificar como `Left Blank`. 
-	2. Casi el $25\%$ de nuestra operación es actualmente un punto ciego analítico. 
-	3. Sin corregir esto, cualquier decisión de inversión en Fase 2 y 3 está basada en datos incompletos.
+	1. Se piensa capturar de subcategoría en el CRM (Gestión de la Relación con el Cliente) para eliminar los $197,000$ contactos que hoy quedan sin clasificar como `Left Blank`. 
+	2. Pues casi el $25\%$ de la operación es actualmente un punto ciego analítico. 
+	3. Sino se corrige esto, cualquier primero, cualquier decisión de inversión en Fase 2 y Fase 3 estará basada en datos incompletos.
+	4. dado que no podemos optimizar lo que no podemos medir
+2. La segunda acción es Activar el enrutamiento correcto para las FAQs de alta frecuencia.
+	1. `Explain how to order` tiene $56,000$ contactos yendo a agentes humanos
+	2. y como se vió en la Página 2, este *intent* tiene complejidad baja y cero integraciones requeridas ya que la respuesta es siempre la misma para cualquier usuario
+	3. 
 
 #### **Fase 2, días 30 a 60 — Core Transaccional. La integración que desbloquea la resolución real**
 
