@@ -197,7 +197,9 @@ El cronograma visual les muestra la secuencia por Fases:
 
 Hay dos acciones inmediatas;
 1. **La primera es de gobernanza de datos:**
-	1. vamos a forzar la captura obligatoria de subcategoría en el CRM para eliminar los 197,000 contactos que hoy quedan sin clasificar como 'Left Blank'. Casi el 25% de nuestra operación es actualmente un punto ciego analítico. Sin corregir esto, cualquier decisión de inversión en Fase 2 y 3 está basada en datos incompletos.
+	1. vamos a capturar de subcategoría en el CRM para eliminar los $197,000$ contactos que hoy quedan sin clasificar como `Left Blank`. 
+	2. Casi el $25\%$ de nuestra operación es actualmente un punto ciego analítico. 
+	3. Sin corregir esto, cualquier decisión de inversión en Fase 2 y 3 está basada en datos incompletos.
 
 
 
