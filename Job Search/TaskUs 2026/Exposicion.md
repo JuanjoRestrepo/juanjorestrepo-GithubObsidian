@@ -252,6 +252,127 @@ Por eso esta iniciativa tiene el mejor ratio impacto-esfuerzo de toda la propues
 - e impacto inmediato en Containment Rate.
 
 
+Ahora bien, después de resolver quick wins y mejorar observabilidad, el siguiente cuello de botella ya no es de diseño conversacional.
+
+Es de capacidad transaccional.
+#### **Fase 2, días 30 a 60 — Core Transaccional. La integración que desbloquea la resolución real**
+
+Aquí entramos al principal hallazgo técnico de todo el análisis:
+
+- el bot sí entiende muchas intenciones,  
+- pero no puede completar la resolución.
+
+Y esto ocurre especialmente en procesos post-compra.
+
+## (Señala las barras de “Return status” e “In transit”)
+Por ejemplo:
+- `Return status`
+- e `In transit`
+
+si recordamos, representan juntos más de 91,000 contactos.
+
+Y si lo pensamos desde la experiencia del cliente, el flujo actual funciona así:
+1. El cliente entra al chat preguntando por su devolución o envío.
+2. El bot entiende correctamente la intención.
+3. Pero en ese momento encuentra una limitación crítica:  
+    no tiene acceso al OMS ni al sistema de tracking.
+4. Entonces escala el caso al agente.
+5. El agente abre manualmente el sistema, consulta el estado y responde.
+
+Y aquí está el insight clave:
+- El problema no es NLP.  
+- El problema es ausencia de integración transaccional.
+
+Porque responder este caso no requiere razonamiento complejo.  
+Solo requiere consultar información que ya existe en un sistema.
+
+Y mientras esa integración no exista:
+- los contactos seguirán escalando,
+- el canal híbrido seguirá creciendo,
+- y los clientes seguirán recontactando cuando no reciben actualizaciones.
+
+De hecho, este es precisamente el mecanismo que explica gran parte del 28% de Repeat Rate reportado en el Business Case.
+
+Por eso esta fase propone:
+- integración OMS,
+- integración con tracking APIs,
+- autenticación de usuario,
+- y resolución automática end-to-end desde el bot.
+
+Esta es la fase con mayor impacto esperado sobre:
+- Resolution Rate,
+- reducción de escalaciones,
+- y disminución de contactos repetidos.
+
+
+
+Ahora, incluso si resolvemos integraciones y automatización, todavía queda un problema más :
+
+**el sistema aún tiene conversaciones que ni siquiera logra clasificar correctamente.**
+
+Y eso nos lleva a la Fase 3.
+
+#### **Fase 3, días 60 a 90 — Eliminar la Falsa Contención**
+
+Aquí abordamos el problema de falsa contención.
+El análisis mostró que:
+- el 82.5% de los contactos `Not defined by Bot`
+- permanecen en el canal `bot_only`
+- sin escalar correctamente a un agente humano.
+
+Eso significa que el bot:
+- no entendió la intención,
+- pero tampoco transfirió el caso.
+
+Desde el punto de vista del sistema, el contacto aparece como “contenido”.  
+Pero desde el punto de vista del cliente, el problema nunca fue resuelto.
+
+Es decir:
+- hay contención en métricas, 
+- pero abandono en experiencia real.
+
+## (Señala rápidamente Left Blank Monitor)
+
+Y este problema se conecta directamente con la Fase 1.
+
+Porque hoy existen casi 197,000 contactos `Left Blank` donde la operación no está capturando suficiente información.
+
+A medida que esa visibilidad mejore:
+- aparecerán nuevos patrones recurrentes,
+- nuevas subcategorías,
+- y nuevos intents entrenables.
+
+Por eso la Fase 3 tiene dos objetivos:
+1. expandir la cobertura del árbol de intents,
+2. y mejorar la lógica de fallback y escalamiento inteligente.
+
+
+La meta final no es únicamente aumentar contención.
+
+La meta es lograr:
+- contención con resolución real,
+- menor abandono,
+- y una experiencia consistente de extremo a extremo.
+
+
+### En resumen:
+- La Fase 1 mejora observabilidad y captura quick wins.
+- La Fase 2 habilita resolución transaccional real.
+- Y la Fase 3 transforma al bot de un sistema reactivo a una plataforma conversacional realmente inteligente.
+
+Y lo más importante es que el roadmap está priorizado sobre evidencia cuantitativa:  
+cada iniciativa fue seleccionada por volumen impactado, fricción operacional y potencial de mejora en KPI.
+
+
+
+
+
+
+
+
+
+
+
 
 
 1. **Primero Governanza de Datos — Eliminación de “Left Blank”:**
