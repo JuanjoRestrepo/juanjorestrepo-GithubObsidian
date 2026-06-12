@@ -4,7 +4,17 @@ Buen día a todos, mi nombre es Juan José Restrepo y hoy les vengo a presentar 
 > los LAM están entrenados para **ejecutar acciones** concretas dentro de aplicaciones y sistemas digitales
 
 # (Página 1 — Executive Overview)
-El contexto inicial rápidamente era que...
+El contexto inicial rápidamente era que el Business Case reportaba brechas importantes en los principales KPIs operacionales del chatbot:
+
+- Containment Rate por debajo del target,
+- Resolution Rate considerablemente baja,
+- y una Repeat Rate elevada.
+
+A partir de ahí, el objetivo del análisis fue identificar:
+- dónde estaba ocurriendo la fricción operacional,
+- por qué el bot escalaba tantos contactos,
+- y qué iniciativas generarían el mayor impacto sobre los KPIs del negocio.
+
 
 Si observamos nuestros KPIs actuales, se está fallando en tres frentes simultáneamente:
 - la Tasa de Contención está en 48% contra una meta del 55%
@@ -372,7 +382,7 @@ cada iniciativa fue seleccionada por volumen impactado, fricción operacional y 
 
 
 
-
+# NO
 
 
 1. **Primero Governanza de Datos — Eliminación de “Left Blank”:**
