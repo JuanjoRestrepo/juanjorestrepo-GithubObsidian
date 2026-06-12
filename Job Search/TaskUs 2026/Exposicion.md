@@ -124,7 +124,7 @@ Este gráfico de barras apiladas nos muestra, para cada categoría, qué proporc
 
 Y aquí hay una distinción estratégica importante:
 - enviar el feedback de un cliente frustrado a un agente humano es la decisión correcta, porque requiere empatía y juicio y manejo emocional. Eso no se automatiza
-- Pero enviar más de 50,000 consultas del tipo `cómo hago un pedido` a un agente humano operativamente no sería lo más eficiente, sino más bien se debería tratar como un **FAQ**, **Preguntas Frecuentes**, un banco de FAQs usando un flujo de texto para procesarlas y no requerir de ayuda externa humana
+- Pero enviar más de 50,000 consultas del tipo `cómo hago un pedido`  del tipo de `Support Ordering`, a un agente humano operativamente no sería lo más eficiente, sino más bien se debería tratar como un **FAQ**, **Preguntas Frecuentes**, un banco de FAQs usando un flujo de texto para procesarlas y no requerir de ayuda externa humana
 
 ## **(Señala las barras de Existing Order y Returns & Refunds)**
 
