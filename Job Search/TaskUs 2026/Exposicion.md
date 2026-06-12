@@ -427,6 +427,17 @@ cada iniciativa fue seleccionada por volumen impactado, fricción operacional y 
 
 
 
+
+#### 🔴 Preguntas sobre Decisiones Metodológicas (las más difíciles)
+
+|Si preguntan sobre...|Ir a...|Qué decir mientras muestras|
+|---|---|---|
+|Por qué no calculaste la Containment Rate directamente desde los datos|**Section 9 — Objetivo (bloque IMPORTANTE)**|_"Los KPIs de Containment, Resolution y Repeat Rate son inputs del Business Case, no calculables desde datos agregados sin session IDs. El dataset es un cubo de reporting, no logs transaccionales. La Section 9 lo declara explícitamente desde el inicio."_|
+|Por qué no hay análisis de sentimientos o NLP sobre los textos|**Section 5 — Interpretación de la Estructura de Datos**|_"El dataset no contiene texto libre ni transcripciones. Son conteos agregados por taxonomía. Eso está documentado en la interpretación de Section 5: no tenemos raw conversation logs, tenemos un reporte operacional pre-agregado."_|
+|Por qué usaste Plotly en lugar de matplotlib o seaborn|**Section 10.1 — Visualization Imports**|_"Plotly para visualizaciones exploratorias interactivas y ejecutivas. El skill de data science establece ese criterio: Seaborn para distribuciones estadísticas, Plotly para dashboards interactivos y output web. Las gráficas de este análisis son ejecutivas, no estadísticas académicas."_|
+|Si los porcentajes que usas son del dataset o del Business Case|**Section 8.7 — Validate Final Datasets**|_"Los porcentajes de distribución de volumen por canal y por categoría son calculados directamente desde el dataset. Los KPIs declarados — 48%, 30%, 28% — son inputs del Business Case. Están tratados como parámetros conocidos del problema, no derivados."_|
+
+
 ---
 # NO
 
