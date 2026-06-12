@@ -202,7 +202,7 @@ El roadmap que proponemos organiza las iniciativas según dos variables:
 
 Y la lógica del plan es progresiva:
 
-- Primero recuperamos visibilidad y resolvemos quick wins.
+- Primero recuperamos visibilidad y resolvemos quick wins, que son las iniciativas de alto impacto y baja complejidad.
 - Después habilitamos resolución transaccional real.
 - Finalmente refinamos inteligencia conversacional y reducimos falsa contención.
 
@@ -226,7 +226,7 @@ Eso significa que:
 - y además reduce la capacidad futura de entrenamiento NLP.
 
 
-Por eso proponemos hacer obligatoria la captura de subcategoría
+Por se propone hacer obligatoria la captura de las subcategorías
 
 Porque operacionalmente existe una regla simple:
 
