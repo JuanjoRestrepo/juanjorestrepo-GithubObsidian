@@ -353,15 +353,13 @@ Por eso la Fase 3 tiene dos objetivos:
 2. y mejorar la lógica de fallback y escalamiento inteligente.
 
 
-La meta final no es únicamente aumentar contención.
-
 La meta es lograr:
 - contención con resolución real,
 - menor abandono,
 - y una experiencia consistente de extremo a extremo.
 
 
-### En resumen:
+# En resumen:
 - La Fase 1 mejora observabilidad y captura quick wins.
 - La Fase 2 habilita resolución transaccional real.
 - Y la Fase 3 transforma al bot de un sistema reactivo a una plataforma conversacional realmente inteligente.
@@ -372,12 +370,64 @@ cada iniciativa fue seleccionada por volumen impactado, fricción operacional y 
 
 
 
+---
+# Preguntas
+
+### Mapa de Navegación por Tipo de Pregunta
+
+#### 🔵 Preguntas sobre Estructura y Calidad de Datos
+
+|Si preguntan sobre...|Ir a...|Qué mostrar|
+|---|---|---|
+|Por qué hay tantos valores nulos|**Section 6 — Missing Values**|La explicación de que son artefactos de formato Excel (dos tablas dinámicas en la misma hoja), no datos faltantes operacionales|
+|Qué significa "Left Blank" vs "Not defined by Bot"|**Section 6 — Hallazgos Operacionales (parte D)**|La distinción entre fallo de proceso (Left Blank) y fallo NLP (Not defined by Bot)|
+|Cómo estaban estructuradas las hojas originales de Excel|**Section 5 — Inspect Shapes** + **Section 6**|Los shapes (184, 8), (208, 8), (77, 8) y la explicación de las dos tablas laterales|
+|Si los datos están limpios o tienen errores|**Section 7 — Standardize Column Names**|La función `clean_columns()` y la estandarización de nombres|
+
+
+
+#### 🟢 Preguntas sobre Transformación y Modelado de Datos
+
+| Si preguntan sobre...                                 | Ir a...                                       | Qué mostrar                                                                                                       |
+| ----------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Cómo construiste los datasets limpios                 | **Section 8.1 — `build_category_table()`**    | La función con docstring y la lógica de extracción de la tabla izquierda (categorías macro)                       |
+| Cómo separaste categorías de subcategorías            | **Section 8.2 — `build_subcategory_table()`** | La función de extracción de la tabla derecha (subcategorías) y el renombre de columnas                            |
+| Cómo consolidaste los tres canales en un solo dataset | **Section 8.6 — Consolidate Datasets**        | El `pd.concat()` con los tres dataframes y el resultado final                                                     |
+| Si hay duplicados o inconsistencias en los datos      | **Section 8.7 — Validate Final Datasets**     | Los resultados de `.duplicated().sum()` (cero duplicados) y la validación de porcentajes que suman 100% por canal |
+| Qué tipo de dataset final tienes                      | **Section 8.7**                               | Los shapes finales: `categories_df` y `subcategories_df` con sus dimensiones                                      |
+
+
+
+
+
+#### 🟡 Preguntas sobre KPIs y Métricas Operacionales
+
+| Si preguntan sobre...                               | Ir a...                                           | Qué mostrar                                                                                              |
+| --------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| De dónde viene el total de 798,617 contactos        | **Section 9.1 — Total Contact Volume**            | El cálculo `categories_df["volume"].sum()` y el print del resultado                                      |
+| Cómo calculaste la distribución por canal           | **Section 9.2 — Channel Distribution**            | El `groupby("handling_channel")["volume"].sum()` con los resultados por canal                            |
+| De dónde vienen los intents del Top 10              | **Section 9.3 — Top Intents Overall**             | El `groupby("contact_reason")` con los volúmenes ordenados descendente                                   |
+| Cómo identificaste los candidatos de automatización | **Section 9.5 — Automation Opportunity Analysis** | El filtro explícito sobre subcategorías determinísticas y la tabla con volúmenes                         |
+| Por qué dices que 4 categorías = 81.7% del volumen  | **Section 9.7** (si existe) o **Section 10.5**    | El dataframe `pareto_df` con `cumulative_percentage` que muestra 0.817 en la fila de Support on Ordering |
 
 
 
 
 
 
+#### 🟠 Preguntas sobre Visualizaciones y Análisis Exploratorio
+
+| Si preguntan sobre...                                    | Ir a...                                                 | Qué mostrar                                                                                              |
+| -------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Cómo construiste el análisis de Pareto                   | **Section 10.5 — Pareto Analysis**                      | El código de `cumulative_volume` y `cumulative_percentage`, más el gráfico de doble eje con Plotly       |
+| Qué muestra el gráfico de distribución por canal apilado | **Section 10.4 — Stacked Channel Comparison**           | El `pivot_table` con `aggfunc="sum"` y el gráfico de barras 100% apiladas                                |
+| Cómo visualizaste los intents de automatización          | **Section 10.6 — Automation Opportunity Visualization** | El `groupby("sub_category")["volume"].sum()` y la gráfica de barras por subcategoría                     |
+| De dónde viene el dato de 'Left Blank'                   | **Section 10.8 — Left Blank Operational Analysis**      | El filtro `subcategories_df[subcategories_df["sub_category"] == "Left Blank"]` y el `left_blank_summary` |
+| Cómo encontraste el problema de 'Not defined by Bot'     | **Section 10.7 — Undefined Intent Analysis**            | El filtro sobre `categories_df` y el dataframe `undefined_df` con volúmenes por canal                    |
+
+
+
+---
 # NO
 
 
