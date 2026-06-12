@@ -19,7 +19,7 @@ A partir de ahí, el objetivo del análisis fue identificar:
 Si observamos nuestros KPIs actuales, se está fallando en tres frentes simultáneamente:
 - la Tasa de Contención está en 48% contra una meta del 55%
 - la Tasa de Contacto Repetido está en el 28% cuando debería ser del 18%.
-- la Tasa de Resolución está apenas en el 30% contra un objetivo del 50%
+- la Tasa de Resolución está en el 30% contra un objetivo del 50%
 
 A primera vista, la hipótesis sería que 
 	***los usuarios rechazan el bot o no confían en él***.
