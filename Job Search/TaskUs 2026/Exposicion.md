@@ -193,7 +193,7 @@ El cronograma visual les muestra la secuencia por Fases:
 
 ## **(Señala el Gantt visual a la izquierda)**
 
-**Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
+#### **Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
 
 Hay dos acciones inmediatas;
 1. **La primera es de gobernanza de datos:**
@@ -201,6 +201,63 @@ Hay dos acciones inmediatas;
 	2. Casi el $25\%$ de nuestra operación es actualmente un punto ciego analítico. 
 	3. Sin corregir esto, cualquier decisión de inversión en Fase 2 y 3 está basada en datos incompletos.
 
+#### **Fase 2, días 30 a 60 — Core Transaccional. La integración que desbloquea la resolución real**
 
 
 
+
+
+#### **Fase 3, días 60 a 90 — Eliminar la Falsa Contención**
+
+Para entender esta fase necesito que miremos este gráfico de la derecha.
+
+>**el 82.5% de los contactos no definidos son gestionados por el bot sin resolución.**
+
+## **Qué nos quiere decir esto?**
+## **(Señala las dos barras del gráfico: Bot Only en rojo, Hybrid en amarillo)**
+Tenemos aquí los contactos que el sistema etiqueta como `Not defined by Bot`
+- Son contactos donde el bot no pudo identificar en absoluto a qué categoría pertenece la intención del usuario.
+- Es decir, que el modelo de lenguaje recibió el mensaje del cliente, intentó clasificarlo, y no encontró ninguna *intent/inteción* conocida que coincidiera.
+
+Ahora, lo que esperaríamos que ocurriera en ese escenario es que el bot reconociera su propia limitación y escalara el contacto a un agente humano
+- Eso sería lo correcto. Pero lo que este gráfico nos muestra es que el 82.5% de esos contactos —$4,800 $de los $5,800$ totales — se quedó en el canal bot-only.
+- El bot no escaló. Se quedó gestionando algo que no entendía.
+
+**Entonces, ¿Qué le pasa al cliente en ese momento?**
+
+El bot entra en un bucle:
+- Le pide que reformule la pregunta. 
+- El cliente reformula. 
+- El bot sigue sin entender. 
+- Le pide que reformule de nuevo. 
+- El cliente, frustrado, cierra la ventana. 
+- El sistema registra ese contacto como `contenido/contained` porque técnicamente nunca llegó a un agente.
+- Pero el cliente no recibió ninguna respuesta.
+
+**Es contención en los números y abandono en la realidad. Por eso lo denominamos Falsa Contención.**
+
+
+## **(Pausa. Señala brevemente el Left Blank Monitor a la izquierda antes de volver al argumento central)**
+
+
+Y este problema no está aislado. Si miran el monitor de 'Left Blank' a la izquierda,
+- `Customer Feedback` tiene $77,000$ contactos sin subcategoría registrada, 
+- `Returns & Refunds` tiene $47,00,$ 
+- `Spam` y `No Contact` tiene $42,000$
+
+Son **categorías enteras** donde ***ni el bot ni los agentes están capturando con qué subconsulta específica llegó el cliente***
+
+- Eso significa que incluso cuando un agente resuelve el caso, el sistema no aprende qué fue lo que resolvió.
+- Es decir, la operación trabaja pero no acumula inteligencia.
+
+## (Vuelve al gráfico de Falsa Contención)
+
+Es por eso que La Fase 3 ataca este problema desde dos ángulos:
+
+1. **El primero es ampliar la cobertura de intents en la plataforma del bot**. 
+	1. Hoy los contactos`not defined `son $5,800$, que parece poco. Pero ese número es solo lo que podemos ver. 
+	2. Los $197,000$ `Left Blank` de la **Fase 1** que empezamos a clasificar correctamente van a revelar nuevos patrones de intención que hoy son invisibles. 
+	3. Es posible que existan miles de consultas recurrentes que el bot nunca ha podido categorizar simplemente porque nadie las registró
+	
+ 
+ La Fase 1 nos da la visibilidad; la Fase 3 actúa sobre ella.
