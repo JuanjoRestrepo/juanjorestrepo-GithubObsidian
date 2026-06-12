@@ -438,7 +438,73 @@ cada iniciativa fue seleccionada por volumen impactado, fricción operacional y 
 |Si los porcentajes que usas son del dataset o del Business Case|**Section 8.7 — Validate Final Datasets**|_"Los porcentajes de distribución de volumen por canal y por categoría son calculados directamente desde el dataset. Los KPIs declarados — 48%, 30%, 28% — son inputs del Business Case. Están tratados como parámetros conocidos del problema, no derivados."_|
 
 
----
+#### 🔴 Pregunta 1 — Sobre la integración con el OMS
+
+> _"Propones conectar el bot al OMS vía API. ¿Cómo funciona eso exactamente? ¿Qué tipo de integración estás imaginando?"_
+
+**Tu respuesta:**
+
+> _"La integración que propongo sigue un patrón estándar de webhook o API REST síncrona. El flujo es el siguiente: el bot autentica al usuario — típicamente con número de orden más email o documento de identidad — y una vez autenticado, dispara una llamada GET al endpoint del OMS con ese identificador como parámetro. El OMS devuelve el estado del pedido en JSON, el bot parsea la respuesta y la formula en lenguaje natural para el cliente. El bot nunca escribe en el OMS, solo lee. Eso simplifica enormemente la revisión de seguridad porque el scope de permisos es de solo lectura._
+> 
+> _La dependencia técnica real no es el bot — es que el OMS tenga un endpoint expuesto y documentado para ese tipo de consulta. Si ese endpoint ya existe para uso interno de los agentes, el trabajo de integración es principalmente de configuración del bot, no de desarrollo de backend nuevo. Si no existe, ahí sí hay una historia de ingeniería más larga."_
+
+
+
+#### 🔴 Pregunta 2 — Sobre la arquitectura del AI Agent con RAG
+
+> _"Mencionaste RAG y Tool Calling. ¿Puedes explicar cómo funcionaría eso en la práctica para el caso de Adidas?"_
+
+**Tu respuesta:**
+
+> _"Claro. RAG y Tool Calling son dos mecanismos distintos que trabajan juntos._
+> 
+> _RAG — Retrieval-Augmented Generation — resuelve el problema del conocimiento estático. En lugar de que el LLM responda desde su entrenamiento general, lo conectamos a una base de conocimiento interna de Adidas: políticas de devolución actualizadas, FAQs de producto, términos y condiciones. Cuando el cliente hace una pregunta sobre política de cambios, el sistema hace una búsqueda semántica en esa base de conocimiento, recupera los fragmentos relevantes, y se los pasa al LLM como contexto. El LLM no inventa la política — la formula en lenguaje natural desde la fuente oficial. Eso elimina el riesgo de alucinación en el dominio de conocimiento._
+> 
+> _Tool Calling resuelve el problema de las acciones transaccionales. El LLM tiene acceso a un conjunto definido y acotado de herramientas: consultar OMS, consultar carrier, generar etiqueta. Cuando entiende que el cliente necesita el estado de su pedido, no responde desde suposición — llama a la herramienta correcta y devuelve el dato real. El LLM nunca tiene acceso directo a los sistemas; solo puede invocar las herramientas que el equipo de arquitectura haya aprobado y expuesto explícitamente. Ese boundary es lo que hace que el sistema sea seguro y auditable._
+> 
+> _La combinación de los dos significa que el LLM entiende cualquier forma en que el cliente formule su problema, sabe qué herramienta usar para resolverlo, y nunca inventa información que no viene de una fuente validada."_
+
+
+
+
+
+#### 🔴 Pregunta 4 — Sobre la plataforma actual del bot
+
+> _"¿Trabajaste con Dialogflow? ¿Con Salesforce Einstein Bot? ¿Con LivePerson? ¿Qué plataforma asumes que estamos usando?"_
+
+**Tu respuesta:**
+
+> _"No tenía acceso a esa información en el ejercicio, así que intencionalmente mantuve el análisis y las recomendaciones agnósticas de plataforma. Lo que sí puedo decirte es lo que observé en los datos: las subcategorías tienen un prefijo 'adibot' en varios registros, lo que sugiere que el bot tiene un nombre interno y probablemente corre sobre una plataforma enterprise con capacidad de intent management estructurado. Los candidatos más probables para una operación de este escala en LAM serían Dialogflow CX, Salesforce Einstein Bot, o LivePerson._
+> 
+> _Las recomendaciones de Fase 1 — routing de FAQs y taxonomía — son ejecutables en cualquiera de las tres. Las de Fase 2 — integraciones API — también, aunque el mecanismo de configuración varía: en Dialogflow CX usarías webhooks con fulfillment handlers, en Salesforce usarías Apex callouts o Flow con HTTP actions, en LivePerson usarías su framework de Functions. El principio es el mismo en todos los casos; cambia la implementación específica._
+> 
+> _Lo primero que haría el primer día en el rol es confirmar el stack y mapear las recomendaciones al mecanismo de integración correcto para esa plataforma."_
+
+
+
+#### 🔴 Pregunta 5 — Sobre escalabilidad multi-país
+
+> _"Adidas LAM opera en múltiples países con español y portugués. ¿Cómo escala tu arquitectura a eso?"_
+
+**Tu respuesta:**
+
+> _"Es una dimensión que el dataset no me permitía analizar con precisión porque no había segmentación geográfica en los datos, pero es una restricción arquitectural real que impacta varias decisiones._
+> 
+> _En términos de NLU, español y portugués requieren modelos separados o un modelo multilingüe. Plataformas como Dialogflow CX soportan agentes multilingües nativamente: puedes tener los mismos intents con training phrases en ambos idiomas dentro del mismo agente, o tener agentes separados por mercado con una capa de routing por idioma o por país al inicio del flujo._
+> 
+> _En términos de integraciones, el OMS probablemente es el mismo sistema para toda LAM, pero los carriers y las plataformas de devolución pueden variar por país — DHL puede ser el carrier en Colombia pero no en Brasil. Eso significa que la capa de Tool Calling del AI Agent necesita ser configurable por mercado: el bot de Brasil llama a la API del carrier de Brasil, el de Colombia a la de Colombia._
+> 
+> _La recomendación arquitectural para ese escenario es una capa de configuración por mercado que sea declarativa — un archivo de configuración que diga qué herramientas están disponibles en qué país — en lugar de tener lógica de mercado hardcodeada en el flujo del bot. Eso hace que agregar un nuevo país sea trabajo de configuración, no de desarrollo."_
+
+
+
+
+
+
+
+
+
+
 # NO
 
 
