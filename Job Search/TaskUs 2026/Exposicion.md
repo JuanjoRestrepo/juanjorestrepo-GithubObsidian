@@ -206,14 +206,10 @@ Y la lógica del plan es progresiva:
 - Después habilitamos resolución transaccional real.
 - Finalmente refinamos inteligencia conversacional y reducimos falsa contención.
 
-Cada fase desbloquea la siguiente.
-
-
 ## **(Señala el Gantt visual a la izquierda)**
 
 #### **Fase 1, días 0 a 30 — Victorias Tempranas sin dependencias técnicas pesada**
 
-La primera fase no busca construir capacidades avanzadas de IA.
 Primero necesitamos resolver dos problemas fundamentales:
 
 - falta de visibilidad,
@@ -230,7 +226,7 @@ Eso significa que:
 - y además reduce la capacidad futura de entrenamiento NLP.
 
 
-Por eso proponemos hacer obligatoria la captura de subcategoría dentro del CRM.
+Por eso proponemos hacer obligatoria la captura de subcategoría
 
 Porque operacionalmente existe una regla simple:
 
