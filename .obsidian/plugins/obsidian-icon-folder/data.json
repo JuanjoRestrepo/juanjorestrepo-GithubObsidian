@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🐊",
+      "SiAmazonaws",
       "SiOracle",
       "SiPython",
-      "TiUxCircle",
-      "🤖",
-      "SiWarp"
+      "TiUxCircle"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -71,5 +71,7 @@
   "Templates/AI SKILLS/data-science-expert": "🤖",
   "Templates/AI SKILLS/frontend-design": "TiUxCircle",
   "Templates/UV Python": "SiPython",
-  "Self Study/Oracle": "SiOracle"
+  "Self Study/Oracle": "SiOracle",
+  "Self Study/Codigo Facilito/Bootcamp AWS Agents con Kiro": "SiAmazonaws",
+  "Self Study/Codigo Facilito": "🐊"
 }
