@@ -14,7 +14,7 @@ sticker: emoji//1f9e0
 
 ## 1. Clases
 ____________________________________________________
-1. [[Clase 1]]
+1. [[Ing Electronica/Semestre 10 2023-2/Retos Data Science/Clase 1]]
 2. [[Clase 2]]
 
 ## 2. Módulos
