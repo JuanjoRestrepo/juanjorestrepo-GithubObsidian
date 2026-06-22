@@ -1,7 +1,6 @@
 # EDA Templates Reference
 
 ## Table of Contents
-
 0. [Environment Setup (uv)](#environment)
 1. [Visualization Strategy Guide — Plot Selection](#viz-strategy)
 2. [Tabular / Flat File EDA](#tabular)
@@ -49,20 +48,17 @@ The box plot is a non-parametric summary based on order statistics. It makes no
 assumption about the underlying distribution shape.
 
 Components:
-
 - Median (Q2): the center line inside the box
 - Interquartile range (IQR): the box spans Q1 to Q3, containing the middle 50% of data
 - Whiskers: extend to Q1 - 1.5*IQR and Q3 + 1.5*IQR (Tukey fences)
 - Outliers: individual points beyond the whisker fences
 
 Strengths:
-
 - Robust outlier detection using a principled, formula-based rule
 - Fast, unambiguous comparison of medians and spread across many groups
 - Compact — scales cleanly to 10, 20, or 50 side-by-side groups
 
 Limitations:
-
 - Completely hides distributional shape — a bimodal distribution and a uniform
   distribution with identical quartiles are indistinguishable in a box plot
 - Misrepresents sample size — a box with n=15 looks identical to one with n=15,000
@@ -74,14 +70,12 @@ on both sides. Width at any point on the y-axis represents the density of observ
 at that value.
 
 Strengths:
-
 - Reveals full distributional shape: skewness, multimodality (multiple peaks), heavy tails
 - The KDE is a mathematically smoothed representation of the histogram — it exposes
   structure that quartile summaries suppress
 - Effective for detecting bimodal distributions, which are invisible in box plots
 
 Limitations:
-
 - KDE requires bandwidth selection — a poorly chosen bandwidth over-smooths or
   under-smooths the distribution, potentially creating phantom peaks or hiding real ones
 - Misleading at small sample sizes (n < 30) — the KDE implies smooth density where
@@ -94,20 +88,20 @@ The best practice in professional EDA is the hybrid: render the violin plot for
 distributional shape, and overlay a thin box plot inside it for the summary statistics.
 This eliminates the trade-off entirely.
 
-> Wilke (2019) in _Fundamentals of Data Visualization_ (O'Reilly) explicitly recommends
+> Wilke (2019) in *Fundamentals of Data Visualization* (O'Reilly) explicitly recommends
 > the hybrid as the preferred approach for continuous distributions, noting that the
 > combination conveys more information than either plot alone without adding visual clutter.
 
 #### Decision Table
 
-| Objective                                             | Recommended Plot                             |
-| ----------------------------------------------------- | -------------------------------------------- |
-| Detect outliers, compare medians across many groups   | Box plot                                     |
-| Understand distributional shape, detect multimodality | Violin plot                                  |
-| Complete EDA — shape + summary statistics             | Hybrid (violin + inner box plot)             |
-| Small sample size (n < 30)                            | Box plot only — KDE is unreliable at small n |
-| Publication with space constraints                    | Box plot                                     |
-| Interactive EDA for data exploration                  | Violin plot or hybrid                        |
+| Objective | Recommended Plot |
+|---|---|
+| Detect outliers, compare medians across many groups | Box plot |
+| Understand distributional shape, detect multimodality | Violin plot |
+| Complete EDA — shape + summary statistics | Hybrid (violin + inner box plot) |
+| Small sample size (n < 30) | Box plot only — KDE is unreliable at small n |
+| Publication with space constraints | Box plot |
+| Interactive EDA for data exploration | Violin plot or hybrid |
 
 #### Implementation
 
@@ -244,28 +238,28 @@ def plot_distribution_comparison(
 
 Apply this table when choosing any EDA visualization — not just for distributions:
 
-| Data structure                   | Analysis goal          | Recommended plot                                                                |
-| -------------------------------- | ---------------------- | ------------------------------------------------------------------------------- |
-| One continuous variable          | Distribution shape     | Histogram + KDE (small n); violin (large n)                                     |
-| One continuous variable          | Outlier detection      | Box plot                                                                        |
-| One continuous variable          | Full picture           | Hybrid violin                                                                   |
-| One continuous + one categorical | Group comparison       | Box plot (many groups) / Hybrid violin (few groups)                             |
-| Two continuous variables         | Relationship           | Scatter plot + regression line                                                  |
-| Two continuous variables         | Density at scale       | Hex bin or 2D KDE (when n > 10k and scatter overplotting occurs)                |
-| Many continuous variables        | Pairwise relationships | `seaborn.pairplot()`                                                            |
-| Many continuous variables        | Correlation structure  | Heatmap (Pearson or Spearman)                                                   |
-| One categorical variable         | Frequency              | Horizontal bar chart, ordered by value (never pie chart in analytical contexts) |
-| Time series                      | Trend + seasonality    | Line chart; decomposition plot                                                  |
-| High-dimensional data            | Structure / clusters   | PCA scatter (2D projection)                                                     |
+| Data structure | Analysis goal | Recommended plot |
+|---|---|---|
+| One continuous variable | Distribution shape | Histogram + KDE (small n); violin (large n) |
+| One continuous variable | Outlier detection | Box plot |
+| One continuous variable | Full picture | Hybrid violin |
+| One continuous + one categorical | Group comparison | Box plot (many groups) / Hybrid violin (few groups) |
+| Two continuous variables | Relationship | Scatter plot + regression line |
+| Two continuous variables | Density at scale | Hex bin or 2D KDE (when n > 10k and scatter overplotting occurs) |
+| Many continuous variables | Pairwise relationships | `seaborn.pairplot()` |
+| Many continuous variables | Correlation structure | Heatmap (Pearson or Spearman) |
+| One categorical variable | Frequency | Horizontal bar chart, ordered by value (never pie chart in analytical contexts) |
+| Time series | Trend + seasonality | Line chart; decomposition plot |
+| High-dimensional data | Structure / clusters | PCA scatter (2D projection) |
 
 ### Visualization Integrity Rules — Anti-patterns and Corrections
 
 The credibility of a data analysis depends on the accuracy of its visual communication.
 Each rule below addresses a documented cognitive bias or perceptual limitation.
 
-> **Reference**: Cairo, A. (2016). _The Truthful Art: Data, Charts, and Maps for Communication_.
-> New Riders Press. Wilke, C. O. (2019). _Fundamentals of Data Visualization_. O'Reilly.
-> Tufte, E. R. (2001). _The Visual Display of Quantitative Information_ (2nd ed.). Graphics Press.
+> **Reference**: Cairo, A. (2016). *The Truthful Art: Data, Charts, and Maps for Communication*.
+> New Riders Press. Wilke, C. O. (2019). *Fundamentals of Data Visualization*. O'Reilly.
+> Tufte, E. R. (2001). *The Visual Display of Quantitative Information* (2nd ed.). Graphics Press.
 
 **Rule 1 — Categorical comparison: use ordered horizontal bar charts, not pie charts.**
 The human visual system compares lengths along a common baseline with high precision.
@@ -322,16 +316,25 @@ the explicit goal is showing part-to-whole composition across categories.
 
 #### Anti-pattern Quick Reference
 
-| Anti-pattern                                  | Correct alternative              | Reason                                          |
-| --------------------------------------------- | -------------------------------- | ----------------------------------------------- |
-| Pie chart with > 4 categories                 | Horizontal bar chart, ordered    | Length comparison is more accurate than angle   |
-| Bar chart for time series trends              | Line chart                       | Bars fragment continuity; lines show flow       |
-| Mean reported alone                           | Mean + std dev + histogram       | Mean conceals distributional shape              |
-| Y-axis not starting at zero (bar chart)       | Y-axis from 0                    | Truncation exaggerates magnitude differences    |
-| Scatter plot with no trend line               | Scatter + OLS line + r/R²        | Prevents subjective pattern attribution         |
-| 3D chart                                      | 2D flat equivalent               | 3D perspective introduces perceptual distortion |
-| Sequential color scale on correlation heatmap | Divergent scale (blue–white–red) | Sequential scale hides polarity                 |
-| 100% stacked bars for magnitude comparison    | Grouped bar chart                | Floating baselines prevent accurate comparison  |
+| Anti-pattern | Correct alternative | Reason |
+|---|---|---|
+| Pie chart with > 4 categories | Horizontal bar chart, ordered | Length comparison is more accurate than angle |
+| Bar chart for time series trends | Line chart | Bars fragment continuity; lines show flow |
+| Mean reported alone | Mean + std dev + histogram | Mean conceals distributional shape |
+| Y-axis not starting at zero (bar chart) | Y-axis from 0 | Truncation exaggerates magnitude differences |
+| Scatter plot with no trend line | Scatter + OLS line + r/R² | Prevents subjective pattern attribution |
+| 3D chart | 2D flat equivalent | 3D perspective introduces perceptual distortion |
+| Sequential color scale on correlation heatmap | Divergent scale (blue–white–red) | Sequential scale hides polarity |
+| 100% stacked bars for magnitude comparison | Grouped bar chart | Floating baselines prevent accurate comparison |
+
+---
+
+## 2. Tabular / Flat File EDA — Six Standard Visualizations {#tabular}
+
+A complete first-pass EDA on tabular data covers six canonical views: numeric
+distribution, categorical distribution, bivariate relationship, correlation
+structure, multivariate outlier scan, and trend over time. `quick_eda_overview()`
+below runs all six in sequence.
 
 ```python
 import pandas as pd
@@ -417,11 +420,237 @@ def generate_profile_report(df: pd.DataFrame, output_path: str = "eda_report.htm
     profile = ProfileReport(df, title="EDA Report", explorative=True)
     profile.to_file(output_path)
     logger.info("Profile report saved to %s", output_path)
+
+
+def plot_categorical_distribution(
+    df: pd.DataFrame,
+    col: str,
+    top_n: int = 15,
+    imbalance_threshold: float = 0.8,
+) -> None:
+    """
+    Bar chart of category frequencies, ordered by count — never a pie chart.
+
+    Flags class imbalance: if the top category exceeds imbalance_threshold of
+    total observations, this is logged as a warning (relevant for classification
+    target variables — informs the need for class weighting or resampling).
+
+    Args:
+        col: Categorical column name.
+        top_n: Maximum number of categories to display; remainder grouped as "Other".
+        imbalance_threshold: Proportion above which the top category triggers
+            an imbalance warning.
+    """
+    counts = df[col].value_counts()
+    if len(counts) > top_n:
+        top = counts.iloc[: top_n - 1]
+        other = pd.Series({"Other": counts.iloc[top_n - 1:].sum()})
+        counts = pd.concat([top, other])
+
+    top_share = counts.iloc[0] / counts.sum()
+    if top_share > imbalance_threshold:
+        logger.warning(
+            "Class imbalance detected in '%s': top category '%s' = %.1f%% of observations",
+            col, counts.index[0], top_share * 100
+        )
+
+    plt.figure(figsize=(10, max(4, len(counts) * 0.4)))
+    sns.barplot(x=counts.values, y=counts.index, orient="h", color="steelblue")
+    plt.xlabel("Frequency")
+    plt.title(f"Distribution: {col}")
+    plt.tight_layout()
+    plt.show()
+
+
+def plot_relationship(
+    df: pd.DataFrame,
+    x_col: str,
+    y_col: str,
+    annotate_correlation: bool = True,
+) -> dict:
+    """
+    Scatter plot with OLS trend line for two numeric variables.
+
+    Always annotates with Pearson r — a scatter plot without a correlation
+    statistic invites subjective pattern attribution (see dashboard_design.md
+    anti-patterns). Switches automatically to Spearman if either variable is
+    non-normal (Shapiro-Wilk p < 0.05).
+
+    Args:
+        x_col: Predictor variable column name.
+        y_col: Response variable column name.
+        annotate_correlation: Whether to overlay the correlation coefficient.
+
+    Returns:
+        Dictionary with correlation method, coefficient, and p-value.
+    """
+    from scipy import stats as scipy_stats
+
+    x, y = df[x_col].dropna(), df[y_col].dropna()
+    common_idx = x.index.intersection(y.index)
+    x, y = df.loc[common_idx, x_col], df.loc[common_idx, y_col]
+
+    _, p_x = scipy_stats.shapiro(x) if len(x) < 5000 else (None, 1.0)
+    _, p_y = scipy_stats.shapiro(y) if len(y) < 5000 else (None, 1.0)
+    method = "pearson" if (p_x > 0.05 and p_y > 0.05) else "spearman"
+    corr_fn = scipy_stats.pearsonr if method == "pearson" else scipy_stats.spearmanr
+    r, p_value = corr_fn(x, y)
+
+    plt.figure(figsize=(8, 6))
+    sns.regplot(
+        x=x, y=y, scatter_kws={"alpha": 0.5, "s": 25},
+        line_kws={"color": "darkorange", "linestyle": "--"}
+    )
+    if annotate_correlation:
+        plt.annotate(
+            f"{method.capitalize()} r = {r:.3f} (p = {p_value:.4f})",
+            xy=(0.05, 0.95), xycoords="axes fraction",
+            fontsize=10, verticalalignment="top",
+            bbox={"boxstyle": "round", "facecolor": "white", "alpha": 0.8},
+        )
+    plt.xlabel(x_col)
+    plt.ylabel(y_col)
+    plt.title(f"Relationship: {x_col} vs. {y_col}")
+    plt.tight_layout()
+    plt.show()
+
+    logger.info("%s correlation(%s, %s) = %.4f, p = %.4f", method, x_col, y_col, r, p_value)
+    return {"method": method, "r": round(float(r), 4), "p_value": round(float(p_value), 4)}
+
+
+def plot_multivariate_outliers(
+    df: pd.DataFrame,
+    cols: Optional[list[str]] = None,
+    iqr_multiplier: float = 1.5,
+) -> pd.DataFrame:
+    """
+    Side-by-side box plots across multiple numeric columns for rapid outlier scanning.
+
+    This is distinct from a single-variable box plot: it places all specified
+    numeric columns on one figure for simultaneous outlier comparison across
+    variables — the standard "outlier panel" view in exploratory data analysis.
+
+    Uses the Tukey fence rule (Q1 - k*IQR, Q3 + k*IQR) to count outliers per
+    column, independent of the visualization.
+
+    Args:
+        cols: Numeric columns to include. Defaults to all numeric columns.
+        iqr_multiplier: Tukey fence multiplier (1.5 = standard, 3.0 = extreme only).
+
+    Returns:
+        DataFrame summarizing outlier counts and percentage per column.
+    """
+    numeric_cols = cols or df.select_dtypes(include=np.number).columns.tolist()
+
+    plt.figure(figsize=(max(8, len(numeric_cols) * 1.5), 6))
+    sns.boxplot(data=df[numeric_cols], orient="v", palette="Set2")
+    plt.ylabel("Value")
+    plt.title("Multivariate Outlier Detection")
+    plt.xticks(rotation=30, ha="right")
+    plt.tight_layout()
+    plt.show()
+
+    summary_rows = []
+    for col in numeric_cols:
+        q1, q3 = df[col].quantile([0.25, 0.75])
+        iqr = q3 - q1
+        lower, upper = q1 - iqr_multiplier * iqr, q3 + iqr_multiplier * iqr
+        n_outliers = ((df[col] < lower) | (df[col] > upper)).sum()
+        summary_rows.append({
+            "column": col,
+            "lower_fence": round(lower, 4),
+            "upper_fence": round(upper, 4),
+            "n_outliers": int(n_outliers),
+            "pct_outliers": round(100 * n_outliers / len(df), 2),
+        })
+
+    summary = pd.DataFrame(summary_rows).sort_values("pct_outliers", ascending=False)
+    logger.info("Outlier summary:\n%s", summary.to_string(index=False))
+    return summary
+
+
+def plot_trend(df: pd.DataFrame, date_col: str, value_col: str) -> None:
+    """
+    Quick line chart for a value's evolution over time — the standard EDA
+    trend check before any time series-specific analysis (see Section 2).
+
+    Args:
+        date_col: Column containing dates or datetime values.
+        value_col: Numeric column to trend.
+    """
+    plot_df = df[[date_col, value_col]].dropna().sort_values(date_col)
+    plt.figure(figsize=(12, 5))
+    plt.plot(plot_df[date_col], plot_df[value_col], marker="o", markersize=3,
+              linewidth=1.5, color="steelblue")
+    plt.xlabel(date_col)
+    plt.ylabel(value_col)
+    plt.title(f"Trend: {value_col} over {date_col}")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    plt.show()
+
+
+def quick_eda_overview(
+    df: pd.DataFrame,
+    numeric_col: Optional[str] = None,
+    categorical_col: Optional[str] = None,
+    relationship_pair: Optional[tuple[str, str]] = None,
+    date_col: Optional[str] = None,
+    trend_col: Optional[str] = None,
+) -> None:
+    """
+    Run the six standard EDA visualizations in sequence — the minimum viable
+    EDA pass for any new tabular dataset: distribution, categorical breakdown,
+    relationship, correlation matrix, multivariate outliers, and trend.
+
+    Auto-selects sensible defaults for any argument left as None (first numeric
+    column, first categorical column, first two numeric columns for the
+    relationship plot). Pass explicit arguments to target specific columns.
+
+    Args:
+        numeric_col: Column for the distribution histogram. Defaults to first numeric column.
+        categorical_col: Column for the bar chart. Defaults to first categorical column.
+        relationship_pair: Tuple of (x_col, y_col) for the scatter plot.
+        date_col: Date column for the trend chart.
+        trend_col: Value column for the trend chart.
+    """
+    numeric_cols = df.select_dtypes(include=np.number).columns.tolist()
+    categorical_cols = df.select_dtypes(include="object").columns.tolist()
+
+    # 1. Numeric distribution
+    target_numeric = numeric_col or (numeric_cols[0] if numeric_cols else None)
+    if target_numeric:
+        plot_distributions(df, cols=[target_numeric])
+
+    # 2. Categorical distribution
+    target_categorical = categorical_col or (categorical_cols[0] if categorical_cols else None)
+    if target_categorical:
+        plot_categorical_distribution(df, target_categorical)
+
+    # 3. Relationship between numeric variables
+    if relationship_pair:
+        plot_relationship(df, *relationship_pair)
+    elif len(numeric_cols) >= 2:
+        plot_relationship(df, numeric_cols[0], numeric_cols[1])
+
+    # 4. Correlation heatmap
+    if len(numeric_cols) >= 2:
+        plot_correlation_matrix(df)
+
+    # 5. Multivariate outlier detection
+    if numeric_cols:
+        plot_multivariate_outliers(df, cols=numeric_cols)
+
+    # 6. Trend over time
+    if date_col and trend_col:
+        plot_trend(df, date_col, trend_col)
+    else:
+        logger.info("Skipping trend panel — no date_col/trend_col provided")
 ```
 
 ---
 
-## 2. Time Series EDA {#time-series}
+## 3. Time Series EDA {#time-series}
 
 ### Theoretical Foundations
 
@@ -433,18 +662,18 @@ realization of a stochastic process {Y_t, t ∈ T}.
 **Why time series violates standard ML assumptions:**
 Most classical statistical models and ML algorithms assume observations are
 Independent and Identically Distributed (IID). Time series data breaks this
-assumption entirely: each observation Y*t is statistically dependent on its
-past values Y*{t-1}, Y*{t-2}, ..., Y*{t-k}. Ignoring this dependence in a
+assumption entirely: each observation Y_t is statistically dependent on its
+past values Y_{t-1}, Y_{t-2}, ..., Y_{t-k}. Ignoring this dependence in a
 standard regression model causes underestimated standard errors, producing
 artificially narrow confidence intervals and invalid significance tests.
 
 **Three statistical properties that must be assessed in every time series EDA:**
 
-| Property                       | Definition                                                     | Consequence if Ignored                                              |
-| ------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Autocorrelation                | Correlation of Y*t with its own lagged values Y*{t-k}          | Standard regression errors are underestimated; p-values are invalid |
-| Stationarity                   | Mean and variance of Y_t are constant over time                | Models fit spurious relationships; forecasts are unreliable         |
-| Conditional Heteroskedasticity | Variance of Y_t depends on past values (volatility clustering) | Risk is underquantified; model confidence intervals are wrong       |
+| Property | Definition | Consequence if Ignored |
+|---|---|---|
+| Autocorrelation | Correlation of Y_t with its own lagged values Y_{t-k} | Standard regression errors are underestimated; p-values are invalid |
+| Stationarity | Mean and variance of Y_t are constant over time | Models fit spurious relationships; forecasts are unreliable |
+| Conditional Heteroskedasticity | Variance of Y_t depends on past values (volatility clustering) | Risk is underquantified; model confidence intervals are wrong |
 
 **On stationarity in depth:** A non-stationary series has a time-varying mean,
 variance, or both. Fitting a model to a non-stationary series risks discovering
@@ -458,7 +687,6 @@ ARIMA, VAR, and most classical forecasting models.
     Y_t = T_t + S_t + R_t
 
 Where:
-
 - T_t — Trend: the underlying long-term movement in the mean level
 - S_t — Seasonality: periodic, repeating fluctuations (e.g., weekly, monthly, annual)
 - R_t — Residual (noise): what remains after removing trend and seasonality
@@ -472,12 +700,12 @@ grows proportionally with the trend level (common in economic and sales data).
 
 **Business domains where time series is the primary analytical tool:**
 
-| Domain                | Application                                                       | Key Challenge                                                  |
-| --------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------- |
-| Supply Chain / Retail | Demand forecasting, inventory optimization                        | Seasonality, promotional events, intermittent demand           |
-| Energy / Smart Grids  | Load forecasting, renewable integration                           | High-frequency data, weather dependency, real-time constraints |
-| Fintech / Trading     | Regime detection, algorithmic execution, risk modeling            | Non-stationarity, volatility clustering, market microstructure |
-| Healthcare            | ECG/EEG signal analysis, patient monitoring, disease surveillance | Non-stationarity, irregular sampling, noise                    |
+| Domain | Application | Key Challenge |
+|---|---|---|
+| Supply Chain / Retail | Demand forecasting, inventory optimization | Seasonality, promotional events, intermittent demand |
+| Energy / Smart Grids | Load forecasting, renewable integration | High-frequency data, weather dependency, real-time constraints |
+| Fintech / Trading | Regime detection, algorithmic execution, risk modeling | Non-stationarity, volatility clustering, market microstructure |
+| Healthcare | ECG/EEG signal analysis, patient monitoring, disease surveillance | Non-stationarity, irregular sampling, noise |
 
 ### Implementation
 
@@ -686,17 +914,19 @@ def fit_arch_garch(series: pd.Series, p: int = 1, q: int = 1) -> object:
 
 ### References
 
-- Hyndman, R. J., & Athanasopoulos, G. (2021). _Forecasting: Principles and Practice_ (3rd ed.). OTexts. [Available free at otexts.com/fpp3]
-- Box, G. E. P., Jenkins, G. M., & Reinsel, G. C. (2015). _Time Series Analysis: Forecasting and Control_. Wiley.
-- Hamilton, J. D. (1994). _Time Series Analysis_. Princeton University Press.
-- Taylor, S. J., & Letham, B. (2018). Forecasting at Scale. _The American Statistician_, 72(1), 37–45. [Facebook Prophet]
-- Brockwell, P. J., & Davis, R. A. (2016). _Introduction to Time Series and Forecasting_. Springer.
-- Engle, R. F. (1982). Autoregressive Conditional Heteroskedasticity with Estimates of the Variance of United Kingdom Inflation. _Econometrica_, 50(4), 987–1007. [Original ARCH paper]
-- Bollerslev, T. (1986). Generalized Autoregressive Conditional Heteroskedasticity. _Journal of Econometrics_, 31(3), 307–327. [Original GARCH paper]
+- Hyndman, R. J., & Athanasopoulos, G. (2021). *Forecasting: Principles and Practice* (3rd ed.). OTexts. [Available free at otexts.com/fpp3]
+- Box, G. E. P., Jenkins, G. M., & Reinsel, G. C. (2015). *Time Series Analysis: Forecasting and Control*. Wiley.
+- Hamilton, J. D. (1994). *Time Series Analysis*. Princeton University Press.
+- Taylor, S. J., & Letham, B. (2018). Forecasting at Scale. *The American Statistician*, 72(1), 37–45. [Facebook Prophet]
+- Brockwell, P. J., & Davis, R. A. (2016). *Introduction to Time Series and Forecasting*. Springer.
+- Engle, R. F. (1982). Autoregressive Conditional Heteroskedasticity with Estimates of the Variance of United Kingdom Inflation. *Econometrica*, 50(4), 987–1007. [Original ARCH paper]
+- Bollerslev, T. (1986). Generalized Autoregressive Conditional Heteroskedasticity. *Journal of Econometrics*, 31(3), 307–327. [Original GARCH paper]
+
+
 
 ---
 
-## 3. Text / NLP EDA {#nlp}
+## 4. Text / NLP EDA {#nlp}
 
 ```python
 import pandas as pd
@@ -753,7 +983,7 @@ def plot_top_ngrams(series: pd.Series, n: int = 1, top_k: int = 20) -> None:
 
 ---
 
-## 4. Image Data EDA {#image}
+## 5. Image Data EDA {#image}
 
 ```python
 import numpy as np
@@ -806,7 +1036,7 @@ def inspect_image_dataset(image_dir: str | Path, sample_size: int = 9) -> dict:
 
 ---
 
-## 5. SQL-Based EDA {#sql}
+## 6. SQL-Based EDA {#sql}
 
 ```sql
 -- Profile a table: row count, null rates, distinct counts
