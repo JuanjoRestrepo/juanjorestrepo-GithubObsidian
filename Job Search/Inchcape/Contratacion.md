@@ -42,7 +42,10 @@ Llegar antes de las 9 am
 - Se registra
 - Se hace fila
 
+Los computadores pueden salir hoy y demorarse hasta un poco despues del lunes
 
+
+8am a 6pm
 
 
 
