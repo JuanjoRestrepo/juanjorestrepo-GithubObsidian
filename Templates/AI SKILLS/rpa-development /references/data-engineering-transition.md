@@ -103,6 +103,16 @@ extracts data from a legacy/Citrix-only system and lands it as structured files 
 Blob Storage is functionally the **Extract** step of an ELT pipeline — Airflow or ADF can then
 pick up from that landing zone exactly as it would from any other source connector.
 
+UiPath itself is a concrete, production-scale example of this pattern: their Maestro and
+Insights products ingest platform events (Robotlogs, Maestro events, Job/Queue/Machine events)
+via Spark Structured Streaming on Azure Databricks, processing ~40,000 events/second with
+a median end-to-end latency of ~27 seconds. The full architecture — the problem the previous
+dual-pipeline setup created, how SSS on Databricks solved it, the Spark execution model,
+delivery guarantees, and operational considerations — is documented in
+`references/uipath-databricks-integration.md`. That file also covers the Databricks Agent
+connector for Maestro: how a Maestro agentic process calls a Databricks AI model (deployed
+via Mosaic AI Model Serving) as a structured external participant in an automation workflow.
+
 This means real production experience already exists to draw on for interviews and practice
 projects: reframe an existing or hypothetical bot as "the extraction layer for a pipeline with no
 native API," not as a standalone automation — that framing is both accurate and exactly how

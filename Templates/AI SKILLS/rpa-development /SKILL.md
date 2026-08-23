@@ -481,7 +481,11 @@ from RPA developer toward data engineering, or asks how their RPA experience app
 use `references/data-engineering-transition.md` — it maps exactly what transfers, what the real
 gaps are (Airflow/ADF orchestration, polars/Spark at scale, dbt, dimensional modeling, data
 quality tooling, CDC), a learning sequence ordered to reuse existing skills first, and a concrete
-practice project that exercises every gap using tools already covered in this skill.
+practice project that exercises every gap using tools already covered in this skill. See also
+`references/uipath-databricks-integration.md` — UiPath's own production implementation of this
+pattern (Spark Structured Streaming on Databricks for real-time event ingestion) and the
+Databricks Agent connector that lets a Maestro agentic process call a Databricks AI model as
+an external participant, bridging RPA orchestration with ML inference at the platform level.
 
 ---
 
@@ -584,3 +588,14 @@ just deliver the artifact.
 - `references/data-engineering-transition.md` — RPA-to-data-engineering skill mapping, the real
   gaps to close (Airflow/ADF, polars/Spark, dbt, dimensional modeling, data quality tooling, CDC),
   an ordered learning sequence, and a practice project combining existing and new skills
+- `references/uipath-databricks-integration.md` — two integration layers between UiPath and
+  Databricks: (1) UiPath's production real-time event ingestion pipeline — the previous dual-
+  pipeline problem (30-min latency, duplicated storage, high cost), the unified Spark Structured
+  Streaming architecture on Azure Databricks (filtering/flattening/parsing/enrichment stages,
+  Lakeflow Jobs orchestration, ~27s median latency, ~40K events/sec, at-least-once delivery,
+  raw message preservation, DataFrame API rationale, Spark execution model, operational
+  monitoring, schema evolution, throughput tuning); (2) Databricks Agent connector for Maestro
+  — calling a Databricks AI agent via Mosaic AI Model Serving from a Maestro agentic workflow
+  (Query Serving Endpoint, Query Serving Endpoint Manual, JSON payload structure, Maestro
+  expression handling, prompt engineering for structured output, type handling, Unity Catalog
+  permission requirements); RPA-to-DE concept mapping table
