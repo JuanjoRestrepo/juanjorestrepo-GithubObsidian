@@ -488,6 +488,37 @@ consequence and the volume is manageable. In UiPath, implement as two separate O
 on the same image region, two `Get Text` extractions, followed by an equality check that raises
 a `BusinessException` (review queue) on mismatch.
 
+### Databricks `ai_parse_document`: Beyond OCR
+
+For document processing workloads at corpus scale — bulk ingestion of invoice archives,
+processing thousands of scanned PDFs, or building a RAG knowledge base from document
+repositories — the traditional OCR-engine selection decision (Tesseract, Azure CV, Google
+Vision, UiPath Screen/Document OCR) is the wrong frame. At that scale, **Databricks
+`ai_parse_document`** is the appropriate tool: a single SQL function that parses PDFs,
+Word documents, PowerPoint files, and images into structured elements (text paragraphs,
+tables in HTML, figures with AI-generated captions, bounding boxes, confidence scores)
+and returns the result as a `VARIANT`-typed Delta table row.
+
+The key distinction from traditional OCR:
+
+- Traditional OCR engines extract a raw text string with layout information partially or
+  entirely lost. Tables become flat text; figures are skipped or returned as pixels.
+- `ai_parse_document` understands document structure. Every table is returned as HTML with
+  merged cells preserved. Every figure gets an AI-generated natural-language description.
+  Every element carries its type, bounding box, confidence score, and page reference —
+  individually accessible in SQL without any regex post-processing.
+
+This does not replace the OCR engine selection decision for bot-time, per-document
+extraction within a UiPath workflow (where UiPath Document OCR or Screen OCR is still
+the correct tool). It adds a complementary capability at the data-platform layer: the
+same documents captured by a bot can be landed in a Unity Catalog Volume and processed
+at scale by `ai_parse_document` for analytics, search, and AI agent consumption.
+
+Full reference — syntax, arguments, output schema, element types, code examples
+(SQL, PySpark, Lakeflow Pipeline pattern), integration with `ai_extract`/`ai_classify`/
+AI Search, and the architecture pattern combining UiPath capture with Databricks corpus-
+scale parsing — is in `references/uipath-databricks-integration.md`, Part 3.
+
 ### Invoke Code / Custom VB for Complex Regex Logic
 
 When a regex operation requires logic beyond a single `Matches`/`IsMatch`/`Replace` activity

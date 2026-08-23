@@ -451,7 +451,386 @@ activities must be strictly typed.
 
 ---
 
-## Part 3 — Relevance to the RPA-to-Data-Engineering Transition
+## Part 3 — Document Intelligence: `ai_parse_document` on Databricks
+
+### 3.1 Positioning and Context
+
+`ai_parse_document` is a Databricks SQL function (Public Preview, part of the Agent Bricks
+platform) that parses structured content from unstructured documents — PDFs, Word files,
+images, PowerPoint files — using a multimodal AI system developed by the Databricks AI
+Research team. It is invoked as a single SQL function and returns a `VARIANT`-typed structured
+representation of the document's content, including layout, text, tables, figures, and
+spatial metadata.
+
+In the UiPath+Databricks integration context, this function occupies a specific position:
+
+| Dimension              | UiPath Document Understanding (DU)                              | Databricks `ai_parse_document`                                                 |
+| ---------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Primary use**        | Per-document extraction within a running bot at automation time | Batch/pipeline-scale parsing of document corpora at data-platform time         |
+| **Invocation**         | UiPath activity inside a REFramework Performer                  | SQL function inside a Lakeflow Pipeline, SQL editor, or notebook               |
+| **Output**             | Structured field values assigned to workflow variables          | `VARIANT`-typed document object stored in a Delta table                        |
+| **Scale**              | One document per transaction; throughput = robot count          | Millions of documents in parallel; throughput = cluster core count             |
+| **Confidence routing** | Human-in-the-loop via Action Center on low-confidence fields    | Confidence score per element; low-confidence items flagged in Delta for review |
+| **Cost model**         | UiPath Document Understanding API calls per page                | `AI_FUNCTIONS` DBU consumption per document                                    |
+| **Governance**         | UiPath Orchestrator assets and Insights                         | Unity Catalog lineage, audit logs, and permissions                             |
+| **Best for**           | Real-time single-document extraction in an automated process    | Backfill, bulk ingestion, analytics, and RAG over document corpora             |
+
+These are complementary, not competing: a process can use UiPath DU for real-time per-
+transaction extraction during bot execution and then land the same documents in a UC Volume
+for `ai_parse_document` to process at scale for analytics, audit, or downstream AI agents.
+
+### 3.2 `ai_parse_document` Function Reference
+
+**Supported input formats:** PDF, JPG/JPEG, PNG, TIFF/TIF, DOC/DOCX, PPT/PPTX.
+Input must be a `BINARY` column (or `FILE` column in Beta). Maximum 500 pages per document;
+maximum 100 MB per file.
+
+**Requirements:** Databricks Runtime 17.3+. Serverless compute requires environment version 3+
+and SQL or Python. Available via SQL editor, notebooks, Lakeflow Pipelines, Lakeflow Jobs.
+Region availability varies — verify at docs.databricks.com before project scoping.
+
+**Syntax:**
+
+```sql
+ai_parse_document(content)
+
+ai_parse_document(content, MAP('version', '2.0'))
+
+ai_parse_document(
+  content,
+  MAP(
+    'version',                '2.0',
+    'imageOutputPath',        '/Volumes/catalog/schema/volume/images/',
+    'descriptionElementTypes','*',
+    'pageRange',              '1-50'
+  )
+)
+```
+
+**Arguments:**
+
+| Parameter                 | Type     | Required | Description                                                                             |
+| ------------------------- | -------- | -------- | --------------------------------------------------------------------------------------- |
+| `content`                 | `BINARY` | Yes      | Document as byte array                                                                  |
+| `version`                 | String   | No       | Output schema version. Specify `'2.0'` explicitly to pin against breaking changes       |
+| `imageOutputPath`         | String   | No       | UC Volume path to save rendered page images (for multimodal RAG)                        |
+| `descriptionElementTypes` | String   | No       | `'*'` (all, default), `'figure'` (figures only), or `''` (none, reduces cost)           |
+| `pageRange`               | String   | No       | Comma-separated pages/ranges, 1-indexed. E.g. `'1,3,5-10'`. Required if doc > 500 pages |
+
+**Output schema (version 2.0) — `VARIANT` type:**
+
+```
+{
+  "document": {
+    "pages": [
+      { "id": INT,       // 0-based page index
+        "image_uri": STRING }   // path to saved page image if enabled
+    ],
+    "elements": [
+      { "id":          INT,      // 0-based element index
+        "type":        STRING,   // see element types below
+        "content":     STRING,   // extracted text; HTML for tables; NULL for figures
+        "confidence":  DOUBLE,   // extraction confidence score
+        "bbox": [{ "coord": [INT], "page_id": INT }],
+        "description": STRING    // AI-generated description for figures
+      }
+    ]
+  },
+  "error_status": [{ "error_message": STRING, "page_id": INT }],
+  "metadata":     { "id": STRING, "version": STRING }
+}
+```
+
+**Element types returned in `elements[].type`:**
+
+| Type             | Meaning                                                                    |
+| ---------------- | -------------------------------------------------------------------------- |
+| `text`           | Text paragraph or general body text                                        |
+| `table`          | Table; `content` is HTML with merged/nested cells preserved                |
+| `figure`         | Image or diagram; `content` may be NULL; `description` contains AI caption |
+| `title`          | Document title                                                             |
+| `caption`        | Caption for a figure or table                                              |
+| `section_header` | Heading or subheading                                                      |
+| `page_header`    | Page-level header                                                          |
+| `page_footer`    | Page-level footer                                                          |
+| `page_number`    | Page number marker                                                         |
+| `footnote`       | Footnote reference or text                                                 |
+
+**Schema versioning contract:** minor version upgrades are backward-compatible (new fields
+only); major version upgrades may include breaking changes. Always pin `version` explicitly in
+production workloads.
+
+### 3.3 Core Examples
+
+**Basic extraction — text from PDFs in a UC Volume:**
+
+```sql
+SELECT
+  path,
+  ai_parse_document(content) AS parsed_doc
+FROM READ_FILES('/Volumes/finance/invoices/', format => 'binaryFile');
+```
+
+**Extract structured fields after parsing (invoice pipeline):**
+
+```sql
+WITH parsed_docs AS (
+  SELECT
+    path,
+    ai_parse_document(content, MAP('version', '2.0')) AS parsed_content
+  FROM READ_FILES('/Volumes/finance/invoices/', format => 'binaryFile')
+)
+SELECT
+  path,
+  ai_extract(
+    parsed_content,
+    '["invoice_id", "vendor_name", "total_amount"]',
+    MAP('instructions', 'These are vendor invoices.')
+  ) AS invoice_data
+FROM parsed_docs;
+```
+
+**Decompose the VARIANT into typed columns:**
+
+```sql
+WITH corpus AS (
+  SELECT
+    path,
+    ai_parse_document(content, MAP('version', '2.0')) AS parsed
+  FROM READ_FILES('/Volumes/path/to/source/file.pdf', format => 'binaryFile')
+)
+SELECT
+  path,
+  parsed:document:pages     AS pages,
+  parsed:document:elements  AS elements,
+  parsed:error_status       AS errors,
+  parsed:metadata           AS metadata
+FROM corpus;
+```
+
+**With image persistence and figure descriptions (for multimodal RAG):**
+
+```sql
+SELECT
+  path,
+  ai_parse_document(
+    content,
+    MAP(
+      'version',                '2.0',
+      'imageOutputPath',        '/Volumes/catalog/schema/volume/directory/',
+      'descriptionElementTypes','*'
+    )
+  ) AS parsed_doc
+FROM READ_FILES('/Volumes/data/documents/', format => 'binaryFile');
+```
+
+**PySpark (for pipeline code or notebooks):**
+
+```python
+from pyspark.sql.functions import expr
+
+df = (
+    spark.read.format("binaryFile")
+    .load("/Volumes/path/to/your/directory")
+    .withColumn("parsed", expr(
+        "ai_parse_document(content, map('version', '2.0'))"
+    ))
+)
+display(df)
+```
+
+**Collect results to Python (VARIANT → JSON → dict):**
+
+```python
+import json
+
+sql = """
+WITH parsed_documents AS (
+  SELECT
+    path,
+    ai_parse_document(
+      content,
+      map('version', '2.0', 'descriptionElementTypes', '*')
+    ) AS parsed
+  FROM READ_FILES('/Volumes/catalog/schema/volume/source_docs/*', format => 'binaryFile')
+)
+SELECT path, to_json(parsed) AS parsed_json FROM parsed_documents
+"""
+parsed_results = [
+    json.loads(row.parsed_json)
+    for row in spark.sql(sql).collect()
+]
+# Each element is a Python dict with the full document structure.
+```
+
+Note: `ai_parse_document` returns a `VARIANT` type, which cannot be directly collected by
+PySpark. Use `to_json()` in SQL to convert before calling `.collect()`.
+
+### 3.4 Incremental Processing with Spark Declarative Pipelines (Lakeflow)
+
+For production document corpora where new files arrive continuously (SharePoint, ADLS,
+S3), use Spark Declarative Pipelines (formerly Delta Live Tables / Lakeflow Declarative
+Pipelines) to process documents incrementally. Lakeflow handles checkpointing, retries,
+and auto-scaling — new files are parsed on arrival; already-processed files are not
+reprocessed.
+
+**Declarative Pipeline pattern:**
+
+```python
+import dlt
+from pyspark.sql.functions import expr, col
+
+@dlt.table(comment="Raw binary documents from ADLS landing zone")
+def raw_documents():
+    return (
+        spark.readStream.format("cloudFiles")
+        .option("cloudFiles.format", "binaryFile")
+        .load("/mnt/landing/invoices/")
+    )
+
+@dlt.table(comment="Parsed document elements via ai_parse_document")
+def parsed_documents():
+    return (
+        dlt.read_stream("raw_documents")
+        .withColumn("parsed", expr(
+            "ai_parse_document(content, map('version', '2.0'))"
+        ))
+        .select(
+            col("path"),
+            col("modificationTime"),
+            expr("parsed:document:elements") .alias("elements"),
+            expr("parsed:error_status")      .alias("error_status"),
+            expr("parsed:metadata:version")  .alias("schema_version")
+        )
+    )
+```
+
+When new documents arrive, only `raw_documents` rows that haven't been processed are passed
+downstream. The pipeline checkpoint ensures exactly-once delivery at the pipeline level.
+
+**SharePoint integration (Lakeflow Connect — Beta):**
+
+```sql
+CREATE TABLE documents AS
+  SELECT * FROM read_files(
+    'https://mytenant.sharepoint.com/sites/Marketing/Shared%20Documents',
+    databricks.connection => 'my_sharepoint_conn',
+    format => 'binaryFile',
+    pathGlobFilter => '*.{pdf,docx}',
+    schemaEvolutionMode => 'none'
+  );
+
+SELECT *, ai_parse_document(content) AS parsed_content FROM documents;
+```
+
+### 3.5 Integration with the Agent Bricks Ecosystem
+
+Once parsed, the output of `ai_parse_document` is designed to flow naturally through the
+rest of the Databricks Agent Bricks platform:
+
+| Capability                    | Integration with `ai_parse_document` output                                                                              |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **`ai_extract`**              | Extract specific named fields (invoice number, vendor, total) from the parsed VARIANT using natural language field names |
+| **`ai_classify`**             | Classify documents by type, topic, or routing category in SQL                                                            |
+| **`ai_summarize`**            | Generate summaries of parsed text elements                                                                               |
+| **`ai_query`**                | Pass parsed content to any model endpoint (Claude Sonnet, etc.) for complex extraction or reasoning tasks                |
+| **AI Search (vector search)** | Index parsed elements for semantic/multimodal RAG applications that retrieve by meaning rather than keywords             |
+| **Supervisor Agent**          | Coordinate document-analysis agents with other specialized agents for multi-step workflows                               |
+| **AI/BI Dashboards**          | Query parsed Delta tables directly for analytics dashboards                                                              |
+
+These capabilities are composable in SQL, so the pattern `parse → extract → classify →
+store → query` executes as a pipeline without custom orchestration code.
+
+### 3.6 Architecture Pattern: UiPath + Databricks Document Pipeline
+
+The full end-to-end pattern combining UiPath and Databricks for document processing:
+
+```
+[Source Documents]
+  ├── SharePoint / Email attachments / Scanned inbox
+  └── Legacy application output (bot-captured via UiPath)
+
+[UiPath Layer — Real-time, per-transaction]
+  Bot downloads/captures document
+  --> UiPath Document Understanding (optional: per-doc field extraction for immediate process decisions)
+  --> Upload to ADLS/UC Volume landing zone
+
+[Databricks Layer — Batch/pipeline, corpus-scale]
+  Lakeflow Declarative Pipeline + cloudFiles Auto Loader
+  --> ai_parse_document (structured elements, tables, figures, bounding boxes)
+  --> ai_extract / ai_classify / ai_summarize (field-level structured data)
+  --> Delta table (Bronze: raw parsed elements; Silver: extracted fields; Gold: aggregated metrics)
+  --> Unity Catalog (lineage, permissions, audit)
+
+[Consumption Layer]
+  UiPath Insights / AI/BI Dashboards   --> Analytics and monitoring
+  AI Search (vector index)             --> Semantic retrieval for RAG agents
+  Maestro Databricks Agent connector   --> AI agent queries the parsed corpus at process time
+  SQL endpoint / Databricks SQL        --> Ad-hoc queries by analysts
+```
+
+In this architecture:
+
+- UiPath handles the **capture and real-time extraction** layer — the bot's immediate
+  decision-making needs per document.
+- Databricks handles the **corpus-scale understanding** layer — retrospective analytics,
+  audit, search, and AI reasoning over the full document history.
+- The two layers share the same documents (via the UC Volume landing zone) without
+  tight coupling; each scales independently.
+
+### 3.7 Comparison with UiPath OCR Engines
+
+For the OCR engine decision (Tesseract, Azure Computer Vision, Google Cloud Vision, UiPath
+Screen/Document OCR — fully covered in `references/regex-in-rpa.md`), `ai_parse_document`
+occupies a different tier:
+
+| Consideration          | Traditional OCR engines                         | `ai_parse_document`                                                      |
+| ---------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
+| **Output granularity** | Raw text string (with layout loss)              | Structured elements with type, bounding box, confidence, AI descriptions |
+| **Table handling**     | Text extraction from cells (error-prone)        | HTML representation with merged/nested cells preserved                   |
+| **Figure handling**    | Skipped or raw pixel extraction                 | AI-generated natural language description per figure                     |
+| **Integration point**  | UiPath activity within a bot workflow           | SQL function inside a Databricks pipeline                                |
+| **Scale**              | Per-document at bot execution time              | Millions of documents in parallel via Spark                              |
+| **Governance**         | UiPath Orchestrator                             | Unity Catalog lineage and audit                                          |
+| **Cost**               | Per API call (Azure/Google/UiPath cloud)        | `AI_FUNCTIONS` DBU (verify current pricing at databricks.com)            |
+| **When to use**        | Bot needs extracted text immediately to proceed | Documents need to be parsed at scale for storage, analytics, or RAG      |
+
+The key differentiator: traditional OCR extracts text; `ai_parse_document` understands
+document structure. Tables, merged cells, nested lists, figure captions, page headers, and
+footnotes are individually classified and accessible as typed elements — not collapsed into
+a flat text string that requires regex post-processing.
+
+### 3.8 Operational Considerations
+
+**Error handling:** The `error_status` field in the output is per-page. A document can
+partially succeed — some pages parse successfully while others fail (OOM on dense pages,
+corrupted page data, resolution too low). Always inspect `error_status` before consuming
+the `elements` array; filter out rows where `error_status` is non-empty, log them, and
+route to a retry/human-review queue.
+
+**Confidence thresholds:** Each element carries a `confidence` score (DOUBLE). Apply a
+minimum confidence filter at query time rather than at parse time — storing all elements
+(including low-confidence ones alongside the raw document) preserves the ability to re-
+evaluate with a different threshold without reprocessing. Typical production thresholds for
+financial document fields: 0.85-0.90, consistent with the guidance in
+`references/regex-in-rpa.md`'s OCR confidence section.
+
+**Page-limit handling:** Documents exceeding 500 pages fail immediately unless `pageRange`
+is specified. For large documents (annual reports, legal contracts), use `pageRange` to
+process in 500-page batches with a Lakeflow Pipeline that tracks page offsets.
+
+**Schema version pinning:** Always specify `map('version', '2.0')` in production. Without
+it, Databricks may upgrade the default version with breaking schema changes (field
+additions, removals, or renames) on the next runtime upgrade.
+
+**Data security:** Document content is processed within the Databricks security perimeter.
+Databricks does not store the document content passed to `ai_parse_document`, but retains
+metadata run details (runtime version, execution context). For documents containing PII or
+regulated data, verify the applicable data processing terms at databricks.com/trust.
+
+---
+
+## Part 4 — Relevance to the RPA-to-Data-Engineering Transition
 
 The event ingestion pipeline (Part 1) is the real-world embodiment of the skills bridge
 in `data-engineering-transition.md`:
@@ -484,6 +863,18 @@ Unity Catalog, and Lakeflow Jobs simultaneously.
   verified July 2026) — primary source for the previous architecture diagram, new
   architecture description, performance metrics (latency, throughput), and delivery
   guarantee statement; all attributed figures are drawn from this published source.
+- Databricks Engineering Blog: "PDFs to Production: Announcing state-of-the-art document
+  intelligence on Databricks" (databricks.com/blog/pdfs-production-announcing-state-art-
+  document-intelligence-databricks, verified August 2026) — primary source for the
+  ai_parse_document overview, Agent Bricks ecosystem integration, benchmark claims
+  (OmniOCR, internal benchmark), and production scale characteristics.
+- Databricks official documentation: `ai_parse_document` SQL function reference
+  (docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document, verified
+  August 2026) — authoritative source for all syntax, arguments, output schema (version 2.0),
+  element types, bounding box structure, error_status semantics, schema versioning contract,
+  PySpark/Scala usage, limitations (500-page limit, 100 MB, region availability,
+  Runtime 17.3+), and code examples; all code in section 3.3 is drawn verbatim or minimally
+  adapted from this source.
 - UiPath official documentation: Databricks Agent connector
   (docs.uipath.com/integration-service/automation-cloud/latest/user-guide, verified July 2026)
   — source for connector scope, authentication requirements, activity descriptions (Query
@@ -498,14 +889,15 @@ Unity Catalog, and Lakeflow Jobs simultaneously.
   (spark.apache.org/docs/latest/structured-streaming-programming-guide.html).
 - Apache Spark documentation: SQL, DataFrames, and Datasets Guide
   (spark.apache.org/docs/latest/sql-programming-guide.html).
-- Databricks documentation: Lakeflow Jobs (formerly Databricks Workflows); Mosaic AI Model
-  Serving; Unity Catalog permissions (docs.databricks.com, verified July 2026).
-- Delta Lake documentation: MERGE semantics, schema evolution, idempotent writes
-  (delta.io/docs).
+- Databricks documentation: Lakeflow Jobs; Spark Declarative Pipelines (Lakeflow); Mosaic AI
+  Model Serving; Unity Catalog permissions; AI Functions (docs.databricks.com, verified
+  August 2026).
+- Delta Lake documentation: MERGE semantics, schema evolution, idempotent writes (delta.io).
 - Armbrust et al., "Spark SQL: Relational Data Processing in Spark" (SIGMOD 2015) — Catalyst
   optimizer and DataFrame API foundations.
 
-The Databricks Agent connector feature set, Mosaic AI Model Serving endpoint requirements,
-and Unity Catalog permission model are the sections of this file most likely to change across
-product versions — verify against official docs.uipath.com and docs.databricks.com for any
-new implementation.
+The `ai_parse_document` function is in Public Preview as of August 2026 — the output schema,
+supported formats, region availability, and pricing model are the sections most likely to
+change. The Databricks Agent connector feature set, Mosaic AI Model Serving requirements, and
+Unity Catalog permission model are similarly subject to change. Verify against official
+docs.databricks.com and docs.uipath.com before any new production implementation.
