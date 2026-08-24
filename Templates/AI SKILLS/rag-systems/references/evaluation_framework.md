@@ -304,3 +304,61 @@ recall > 0.85 on your eval set.
 
 Each line is a JSON object matching the `EvalQuery` schema. Store alongside the skill
 under `eval/rag_eval_set.jsonl` and version-control it with the codebase.
+
+---
+
+## Two-Layer Evaluation Model
+
+Evaluation must cover both independent layers separately. Running only generation evaluation
+is the most common error in RAG system development.
+
+```
+Layer 1: Retrieval Quality
+    Input:  (query, ground-truth doc_ids)
+    Metrics: Hit Rate@k, Precision@k, Recall@k, MRR, NDCG@k
+    Tools:   RetrievalEvaluator (this file), RAGAS context_precision / context_recall
+    Target:  Recall@k > 0.85 before advancing to generation evaluation
+
+Layer 2: Generation Quality
+    Input:  (query, retrieved_context, generated_answer)
+    Metrics: Correctness, Comprehensiveness, Readability (Databricks standard)
+             Faithfulness, Answer relevance (RAGAS)
+    Tools:   DatabricksLLMJudge, RAGAS, MLflow Evaluation API
+    Target:  Mean composite score > 2.5/3.0 (Databricks scale) or > 0.8 (RAGAS normalized)
+```
+
+**Rule**: do not optimize generation quality until retrieval recall exceeds the threshold.
+Poor retrieval is the root cause of most generation failures — the LLM cannot generate a
+correct answer from irrelevant chunks regardless of its capability.
+
+---
+
+## LLM-as-Judge: Databricks Standard
+
+Source: Leng, Uhlenhuth, Polyzotis — Databricks Blog 2023.
+Full implementation: `references/databricks_rag_deepdive.md`.
+
+The Databricks documentation bot study established the following validated findings for
+production-grade LLM-as-judge evaluation of document Q&A RAG systems:
+
+**Core composite metric:**
+```
+composite = 0.60 * correctness + 0.20 * comprehensiveness + 0.20 * readability
+```
+
+**Recommended procedure:**
+1. Build a domain-specific benchmark of 100+ question-context pairs. Never reuse general
+   benchmarks (chat, math, writing) — RAG performance does not transfer across use cases.
+2. Use GPT-4 zero-shot to generate initial grades and derive rubric examples.
+3. Calibrate grading examples (one per score per dimension) from GPT-4's outputs.
+4. Switch the production judge to GPT-3.5-turbo-16k + few-shot examples: 10x cheaper,
+   3x faster, comparable quality.
+5. Always apply: temperature=0.1, single-answer grading, chain-of-thought reasoning.
+6. Use 0-3 or 1-5 scale. Avoid 0-10 or 0-100 — they produce inconsistent grades.
+7. Track all runs in MLflow: params (chunk_size, model, metric), metrics (composite),
+   artifacts (per-question grades JSONL, grades table).
+
+**Human-LLM judge alignment (validated on Databricks documentation bot):**
+- Exact score agreement: >80% for Correctness and Readability
+- Within-one-score agreement: >95%
+- Comprehensiveness is the most subjective dimension; lowest alignment (~70%)
