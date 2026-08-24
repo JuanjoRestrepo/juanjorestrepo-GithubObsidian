@@ -87,22 +87,39 @@ These are designed to complement each other.
 ### Databricks — Mosaic AI / Lakehouse RAG
 
 Databricks positions RAG as a first-class Lakehouse pattern:
-- **Databricks Vector Search**: managed vector index integrated with Unity Catalog and Delta Lake.
-  Supports scheduled ingestion jobs to keep indexes fresh.
+- **Databricks AI Search**: managed semantic retrieval replacing self-hosted vector stores.
+  Understands query intent regardless of exact phrasing (e.g. "freeze my credit" matches
+  "lock my report"). Outperforms ChromaDB on both latency and retrieval quality in production.
+- **Databricks Vector Search**: low-level vector index backed by Delta Lake, integrated with
+  Unity Catalog. Supports scheduled ingestion workflows to keep indexes synchronized.
 - **MLflow LangChain / PyFunc flavors**: package retrieval logic alongside the model artifact
-  for versioned, reproducible deployment.
-- **MLflow LLM Deployments / Model Serving**: centralized API gateway for OpenAI, Anthropic,
-  and open-source LLMs with cost controls and unified key management.
-- **Medallion + RAG**: Bronze layer ingests raw documents; Silver cleans and chunks; Gold stores
-  vector embeddings and clean structured tables. Indexing pipeline is a Databricks Workflow or
-  DLT pipeline.
+  for versioned, reproducible deployment. Evaluation API (v2.4+) provides side-by-side model
+  comparison; v2.6 adds toxicity, perplexity, and custom LLM-as-judge metrics.
+- **Mosaic AI Model Serving + Model Gateway**: unified endpoint for OpenAI, Anthropic,
+  and open-source LLMs with cost controls, rate limits, and full audit logging.
+- **Medallion + RAG**: Bronze ingests raw documents; Silver cleans and chunks; Gold stores
+  vector embeddings alongside clean structured tables. Indexing pipeline is a Databricks
+  Workflow or DLT pipeline.
+- **Agent Evaluation**: continuous output testing against internal benchmarks in production.
+- **AI Functions**: SQL-native LLM inference for classification, routing, and automated
+  labeling directly inside Delta Lake queries.
 
-**Production case study (Experian)**: Built "Latte" chatbot on Databricks, leveraging RAG for
-improved prompt handling and model accuracy across internal and customer-facing needs.
+**Customization method selection** (Databricks canonical framework): Prompt engineering →
+RAG → Fine-tuning → Pretraining, in ascending cost and complexity. These are not mutually
+exclusive: Experian combined fine-tuning (for email response style) with RAG (for dynamic
+credit policy knowledge), achieving results neither technique delivered alone.
+See `references/databricks_rag_deepdive.md` for the full decision matrix and LLM-as-judge
+evaluation methodology.
 
-**Production case study (Cycle & Carriage / Inchcape Southeast Asia)**: Deployed RAG chatbot
-over proprietary knowledge bases (technical manuals, customer support transcripts, business
-process documents) for natural-language Q&A by employees.
+**Production case study (Experian "Latte")**: Fine-tuned Llama 8B + Databricks AI Search
+(RAG). Automated 35%+ of 1,000+ daily customer emails. NPS +8 points. Fine-tuning time
+reduced from 86 hours to 8 hours (some production runs < 1 hour at ~$100). Full technical
+architecture in `references/databricks_rag_deepdive.md`.
+
+**Production case study (Cycle & Carriage / Inchcape Southeast Asia)**: Deployed RAG
+chatbot over proprietary knowledge bases (technical manuals, support transcripts, business
+process documents) for natural-language Q&A by employees across the automotive distribution
+network.
 
 ### AWS — Amazon Bedrock Knowledge Bases + Amazon Kendra
 
