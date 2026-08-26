@@ -723,23 +723,201 @@ CREATE TABLE documents AS
 SELECT *, ai_parse_document(content) AS parsed_content FROM documents;
 ```
 
-### 3.5 Integration with the Agent Bricks Ecosystem
+### 3.5 AI Functions: Companion Pipeline to `ai_parse_document`
 
-Once parsed, the output of `ai_parse_document` is designed to flow naturally through the
-rest of the Databricks Agent Bricks platform:
+`ai_parse_document` is the entry point of a composable SQL pipeline. Each subsequent
+function accepts the `VARIANT` output of the previous step, enabling a complete document
+intelligence workflow in a single chained SQL query.
 
-| Capability                    | Integration with `ai_parse_document` output                                                                              |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **`ai_extract`**              | Extract specific named fields (invoice number, vendor, total) from the parsed VARIANT using natural language field names |
-| **`ai_classify`**             | Classify documents by type, topic, or routing category in SQL                                                            |
-| **`ai_summarize`**            | Generate summaries of parsed text elements                                                                               |
-| **`ai_query`**                | Pass parsed content to any model endpoint (Claude Sonnet, etc.) for complex extraction or reasoning tasks                |
-| **AI Search (vector search)** | Index parsed elements for semantic/multimodal RAG applications that retrieve by meaning rather than keywords             |
-| **Supervisor Agent**          | Coordinate document-analysis agents with other specialized agents for multi-step workflows                               |
-| **AI/BI Dashboards**          | Query parsed Delta tables directly for analytics dashboards                                                              |
+**Shared requirements for all AI Functions:**
 
-These capabilities are composable in SQL, so the pattern `parse → extract → classify →
-store → query` executes as a pipeline without custom orchestration code.
+- Not available on Pro or Classic SQL warehouses — Serverless SQL warehouse or Serverless
+  compute is required for notebooks and Databricks Workflows
+- Databricks Runtime 17.3+ minimum; DBR 18.2+ recommended for best performance and latest
+  features
+- Region availability varies; verify at docs.databricks.com before project scoping
+- Costs recorded under the `AI_FUNCTIONS` product in Usage dashboard; query
+  `system.billing.usage` filtering on `sku_name = 'AI_FUNCTIONS'`
+- All functions are tuned for English; underlying models handle other languages but
+  accuracy may vary
+
+---
+
+**`ai_extract` — Structured field extraction from text or parsed documents**
+
+Extracts named fields from a STRING or `VARIANT` (from `ai_parse_document`) according to
+a schema. Version 2.1 adds per-field citations (source text spans or bounding boxes) and
+confidence scores for flagging low-confidence extractions for human review.
+
+```sql
+-- Syntax
+ai_extract(content, fields [, options])
+
+-- Basic: extract named fields from a plain string
+SELECT ai_extract(
+  'Invoice #12345 from Acme Corp for $1,250.00 dated 2024-01-15',
+  '["invoice_id", "vendor_name", "total_amount", "invoice_date"]'
+);
+-- Returns:
+-- { "response": { "invoice_id": "12345", "vendor_name": "Acme Corp",
+--                 "total_amount": "1250.00", "invoice_date": "2024-01-15" },
+--   "metadata": { "version": "2.0" }, "error_message": null }
+
+-- Pin version 2.1 to enable citations and confidence scores
+SELECT ai_extract(
+  parsed_content,
+  '["invoice_id", "vendor_name", "total_amount", "due_date", "line_items"]',
+  MAP('version', '2.1')
+) AS extracted_fields
+FROM parsed_invoices;
+
+-- Complex schema with types, descriptions, and nested objects (v2.0+)
+SELECT ai_extract(
+  parsed_content,
+  '{
+    "invoice_id":   {"type": "string",  "description": "Invoice number or ID"},
+    "vendor_name":  {"type": "string",  "description": "Vendor or supplier name"},
+    "total_amount": {"type": "number",  "description": "Total amount due in numeric form"},
+    "currency":     {"type": "enum",    "enum": ["USD", "EUR", "GBP", "AUD"],
+                     "description": "Currency code"},
+    "line_items":   {"type": "array",   "items": {"type": "object",
+                     "properties": {"description": {"type": "string"},
+                                    "quantity":    {"type": "integer"},
+                                    "unit_price":  {"type": "number"}}}}
+  }',
+  MAP('version', '2.1',
+      'instructions', 'These are vendor invoices from an automotive parts distributor.')
+) AS invoice_data
+FROM parsed_invoices;
+```
+
+Constraints: maximum 128 fields per schema; supported types are string, integer, number,
+boolean, enum, array, object. Type validation is enforced — invalid values produce an error,
+not a silent null. Cannot be used with views.
+
+---
+
+**`ai_classify` — Document classification in SQL**
+
+Classifies a document (STRING or `VARIANT`) into one of a set of labelled categories.
+Version 2.1 is recommended.
+
+```sql
+-- Syntax
+ai_classify(content, labels [, options])
+
+-- Classify document type from parsed content
+SELECT
+  path,
+  ai_classify(
+    parsed_content,
+    '{
+      "invoice":        "Vendor or supplier invoices, billing statements",
+      "purchase_order": "POs, procurement requests, order confirmations",
+      "contract":       "Service agreements, legal contracts, SOWs",
+      "receipt":        "Payment receipts, proof of payment",
+      "other":          "Anything that does not match the above categories"
+    }',
+    MAP('version', '2.1')
+  ) AS document_type
+FROM parsed_documents;
+```
+
+The label descriptions are natural language — the function uses them to reason about fit,
+not exact string matching. More precise descriptions produce more reliable classification.
+
+---
+
+**`ai_summarize` — Text summarization**
+
+Generates a text summary from a STRING input. Accepts an optional `max_words` target.
+
+```sql
+-- Syntax
+ai_summarize(content [, max_words])
+
+-- Summarize the text content of all parsed text elements
+SELECT
+  path,
+  ai_summarize(
+    (SELECT string_agg(element.content, ' ')
+     FROM LATERAL explode(parsed_content:document:elements) AS t(element)
+     WHERE element.type IN ('text', 'section_header', 'title')),
+    150   -- target word count
+  ) AS document_summary
+FROM parsed_documents;
+```
+
+Note: `ai_summarize` accepts `STRING`, not `VARIANT` — extract the text content from
+parsed elements before passing it in.
+
+---
+
+**`ai_prep_search` — RAG chunk preparation**
+
+Prepares parsed document content for vector search indexing by chunking, cleaning, and
+formatting elements into search-optimized chunks. Output is designed to be written to a
+Delta table indexed by Databricks AI Search (vector search).
+
+```sql
+-- Syntax
+ai_prep_search(content [, options])
+
+-- Prepare parsed content for semantic search indexing
+SELECT
+  path,
+  ai_prep_search(parsed_content) AS search_chunks
+FROM parsed_documents;
+-- Returns an ARRAY of chunks, each with text and metadata for indexing
+```
+
+---
+
+**Full composable pipeline — parse, classify, extract, and prep for search in one query:**
+
+```sql
+WITH parsed_docs AS (
+  SELECT
+    path,
+    modificationTime,
+    ai_parse_document(content, MAP('version', '2.0')) AS parsed_content
+  FROM READ_FILES('/Volumes/finance/documents/', format => 'binaryFile')
+)
+SELECT
+  path,
+  modificationTime,
+  ai_classify(
+    parsed_content,
+    '{"invoice": "Vendor invoices", "po": "Purchase orders",
+      "contract": "Service agreements", "other": "Anything else"}',
+    MAP('version', '2.1')
+  )                                                AS document_type,
+  ai_extract(
+    parsed_content,
+    '["vendor_name", "total_amount", "invoice_date", "invoice_id"]',
+    MAP('version', '2.1',
+        'instructions', 'These are vendor documents from an automotive distributor.')
+  )                                                AS extracted_fields,
+  ai_prep_search(parsed_content)                   AS search_chunks
+FROM parsed_docs;
+```
+
+This single query replaces: an OCR service call, a layout detection API, a field extraction
+model, a classification model, and a chunking pre-processing step — each of which would
+previously be a separate service integration.
+
+---
+
+**Integration surface with the broader Agent Bricks platform:**
+
+| Capability             | Role in the document pipeline                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`ai_query`**         | Pass parsed content to any model endpoint (GPT-4o, Claude, etc.) via Mosaic AI Gateway for complex reasoning tasks not covered by task-specific functions |
+| **AI Search**          | Vector-index the `ai_prep_search` chunks for multimodal RAG (text and figures); Maestro Databricks Agent then retrieves by semantic similarity            |
+| **Declarative Agents** | Optimize extraction/classification/summarization with natural language instructions for better throughput and lower cost than prompt-only approaches      |
+| **Supervisor Agent**   | Coordinate multiple specialized document-analysis agents for multi-step extraction workflows                                                              |
+| **AI/BI Dashboards**   | Query the extracted and classified Delta tables directly for analytics, without moving data out of the Lakehouse                                          |
+| **Lakeflow Pipelines** | Orchestrate the full pipeline incrementally — only new documents processed on each run                                                                    |
 
 ### 3.6 Architecture Pattern: UiPath + Databricks Document Pipeline
 

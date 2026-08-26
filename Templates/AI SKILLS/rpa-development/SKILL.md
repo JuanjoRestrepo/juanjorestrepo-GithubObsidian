@@ -588,14 +588,18 @@ just deliver the artifact.
 - `references/data-engineering-transition.md` — RPA-to-data-engineering skill mapping, the real
   gaps to close (Airflow/ADF, polars/Spark, dbt, dimensional modeling, data quality tooling, CDC),
   an ordered learning sequence, and a practice project combining existing and new skills
-- `references/uipath-databricks-integration.md` — two integration layers between UiPath and
-  Databricks: (1) UiPath's production real-time event ingestion pipeline — the previous dual-
-  pipeline problem (30-min latency, duplicated storage, high cost), the unified Spark Structured
-  Streaming architecture on Azure Databricks (filtering/flattening/parsing/enrichment stages,
-  Lakeflow Jobs orchestration, ~27s median latency, ~40K events/sec, at-least-once delivery,
-  raw message preservation, DataFrame API rationale, Spark execution model, operational
-  monitoring, schema evolution, throughput tuning); (2) Databricks Agent connector for Maestro
-  — calling a Databricks AI agent via Mosaic AI Model Serving from a Maestro agentic workflow
-  (Query Serving Endpoint, Query Serving Endpoint Manual, JSON payload structure, Maestro
-  expression handling, prompt engineering for structured output, type handling, Unity Catalog
-  permission requirements); RPA-to-DE concept mapping table
+- `references/uipath-databricks-integration.md` — four-part UiPath+Databricks integration
+  reference: (1) Real-time event ingestion pipeline — the previous dual-pipeline problem
+  (30-min latency, duplicated storage, high cost), unified Spark Structured Streaming
+  architecture (filter/flatten/parse/enrich stages, Lakeflow Jobs, ~27s median latency,
+  ~40K events/sec, at-least-once delivery, raw message preservation, DataFrame API, Spark
+  execution model, monitoring, schema evolution, throughput tuning); (2) Databricks Agent
+  connector for Maestro — Query Serving Endpoint and Manual variant, JSON payload, Maestro
+  expression handling, prompt engineering for structured output, type handling, USE CATALOG
+  permission; (3) Document intelligence — `ai_parse_document` full reference (syntax,
+  output schema version 2.0, all 10 element types, bounding boxes, confidence scores),
+  companion AI Functions (`ai_extract` v2.1 with citations, `ai_classify`, `ai_summarize`,
+  `ai_prep_search`), full composable SQL pipeline (parse/classify/extract/prep_search in
+  one query), Lakeflow Declarative Pipeline incremental pattern, UiPath-vs-Databricks OCR
+  positioning table, operational considerations (error_status, confidence thresholds, page
+  limits, schema pinning, data security); (4) RPA-to-DE concept mapping table
