@@ -104,4 +104,4 @@ def _parse_chatgpt(data: List[Dict[str, Any]], path_out: Path):
 
 
 if __name__ == "__main__":
-    process_export("claude_chats_real.json")
+    process_export("chatgpt_chats_real.json")
