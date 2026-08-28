@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA THEOFFICE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo con nmap:
 ![[Pasted image 20240524183517.png]]
 Esto es lo que corre por el puerto 80:
@@ -44,3 +56,10 @@ Desde la máquina atacante nos ponemos en escucha con chisel:
 ![[Pasted image 20240526103905.png]]
 Y desde la víctima nos conectamos:
 ![[Pasted image 20240526103945.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

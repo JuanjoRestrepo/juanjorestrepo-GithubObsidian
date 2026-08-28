@@ -1,3 +1,15 @@
+---
+title: "MAQUINA GALLERY"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap, donde vemos abiertos los puertos 80 y 8080:
 ![[Pasted image 20231024112441.png]]
 Procedemos a hacer fuzzing web con gobuster en el puerto 80, donde vemos el directorio /gallery:
@@ -71,3 +83,10 @@ Presionamos control y r para escribir el siguiente payload:
 ![[Pasted image 20231024121313.png]]
 Presionamos control y x y ya somos root:
 ![[Pasted image 20231024121645.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

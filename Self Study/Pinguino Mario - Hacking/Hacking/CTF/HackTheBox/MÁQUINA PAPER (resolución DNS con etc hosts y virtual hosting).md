@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA PAPER (resolución DNS con etc hosts y virtual hosting)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será ejecutar un nmap para ver los puertos abiertos, y nos muestra los siguientes:
 ![[Pasted image 20230410103543.png]]
 Ahora vamos a inspeccionar esos 3 puertos abiertos con nmap:
@@ -98,3 +110,10 @@ Ahora lo ejecutamos y vemos que funciona:
 Ahora dentro del script había una parte donde nos ponía cual era la contraseña por defecto para el usuario que nos iba a crear el exploit:
 
 Entonces iniciamos sesión con este usuario y contraseña y vemos que nos logueamos con un usuario que tiene todos los permisos, donde si hacemos un sudo su nos convertimos en root:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

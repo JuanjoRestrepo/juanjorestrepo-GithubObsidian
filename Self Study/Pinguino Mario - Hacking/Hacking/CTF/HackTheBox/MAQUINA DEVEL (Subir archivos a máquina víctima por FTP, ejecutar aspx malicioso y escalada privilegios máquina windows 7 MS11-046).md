@@ -1,3 +1,15 @@
+---
+title: "MAQUINA DEVEL (Subir archivos a máquina víctima por FTP, ejecutar aspx malicioso y escalada privilegios máquina windows 7 MS11-046)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconocimientos de siempre con nmap:
 ![[Pasted image 20230312124826.png]]
 Tiene el puerto ftp abierto con el login como anonymous habilitado, por tanto vamos a entrar:
@@ -33,3 +45,10 @@ Y ahora desde la máquina víctima tenemos que ubicarnos en una ruta donde tenga
 ![[Pasted image 20230312125048.png]]
 Ahora simplemente lo ejecutamos y ya somos usuarios root:
 ![[Pasted image 20230312125059.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

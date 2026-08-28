@@ -1,3 +1,14 @@
+---
+title: "Collaborate with Git"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 In this lesson, you learn how to clone a repository (also called a _repo_) to make it available to other people. You also learn to use one of Git's most important features: pull requests.
 
@@ -44,3 +55,8 @@ As a project owner, you need to know how to merge pull requests. First, you use 
 Behind the scenes, `git pull` is a combination of two simpler operations: `git fetch`, which gets the changes, and `git merge`, which merges those changes into your repository. 
 
 In this case, the merge was _fast-forward_, meaning that Alice had your latest commit in their repository, so their commit could be added to the front of your history without any modification.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

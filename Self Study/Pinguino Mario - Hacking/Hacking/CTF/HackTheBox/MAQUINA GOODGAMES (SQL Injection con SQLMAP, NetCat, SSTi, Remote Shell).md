@@ -1,3 +1,15 @@
+---
+title: "MAQUINA GOODGAMES (SQL Injection con SQLMAP, NetCat, SSTi, Remote Shell)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap, donde vemos que tiene abierto sólo el puerto 80:
 ![[Pasted image 20230227205357.png]]
 Y ahora vamos a hacer el escaneo exhaustivo del puerto que tiene abierto, que es el 80:
@@ -140,3 +152,10 @@ Y lo descargamos desde la misma:
 Y ahora ejecutamos este script y nos dice que tanto el puerto 22 y 80 están abiertos:
 ![[Pasted image 20230307085714.png]]
 Por tanto, ya que vemos que el puerto 22 que es el puerto de ssh está abierto, vamos a probar en iniciar sesión como el usuario Augustus y con la contraseña que antes encontramos (superadministrator):
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA POSTMAN (Importando nuestra clave pública ssh a través de hackear reddis y conectarnos por ssh)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconocimientos de siempre:
 ![[Pasted image 20230220135258.png]]
 ![[Pasted image 20230220135303.png]]
@@ -37,3 +49,10 @@ víctima:
 Ahora que la clave está importada, si me conecto por ssh ya no me pedirá la contraseña de ssh y
 estaremos dentro:
 ![[Pasted image 20230220135528.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

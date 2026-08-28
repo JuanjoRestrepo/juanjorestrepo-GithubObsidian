@@ -1,3 +1,15 @@
+---
+title: "MAQUINA WALDO (Path traversal y Local File Inclusion LFI para obtener clave ssh privada id_rsa para entrar con ssh)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos los reconocimientos de siempre:
 ![[29-1.png]]
 Y en el servidor web hacemos un whatweb y vamos a la página:
@@ -29,3 +41,10 @@ Pero si queremos obtener la id_rsa en formato correcto, lo obtendremos a través
 ![[29-16.png]]
 Y ahora si iniciamos sesión con ssh utilizando este id_rsa vemos que ya estamos dentro:
 ![[29-17.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

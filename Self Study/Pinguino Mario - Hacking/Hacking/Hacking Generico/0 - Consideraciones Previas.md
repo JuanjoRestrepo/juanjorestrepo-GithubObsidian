@@ -1,3 +1,15 @@
+---
+title: "0 - Consideraciones Previas"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## DETECTAR EQUIPOS CONECTADOS A MI RED CON ARP-SCAN
 Para ello tenemos que ejecutar el siguiente comando pasándole la interfaz de red que estemos utilizando:
 ![[Pasted image 20221230095219.png]]
@@ -197,3 +209,29 @@ ssh -6 -i id_rsa cromiphi@fe80::a00:27ff:fe4c:9dd4%eth0
 ```
 Utilizando el archivo id_rsa con la contraseña ilovemyself del fichero id_rsa:
 ![[Pasted image 20240105112413.png]]
+
+## Gobierno de prácticas autorizadas
+
+> [!danger] Alcance obligatorio
+> El contenido de esta nota puede afectar confidencialidad, disponibilidad o integridad si se aplica fuera de un laboratorio. Úsalo solo en activos propios, CTFs o sistemas con autorización previa y explícita. Documenta objetivo, rango autorizado, ventana de tiempo, responsable y plan de reversión; detén la actividad ante cualquier impacto no previsto.
+
+> [!warning] Corrección de red
+> `192.168.0.20.44` no es una dirección IPv4 válida: una IPv4 contiene cuatro octetos, cada uno entre `0` y `255`. El alcance debe expresarse con precisión como una dirección de red y prefijo, y nunca ampliarse fuera de la autorización escrita.
+
+### Controles defensivos que acompañan cualquier práctica
+
+| Fase | Evidencia mínima | Control de seguridad |
+| --- | --- | --- |
+| Autorización | Propietario, rango, ventana y propósito | Revisión de alcance y reglas de compromiso. |
+| Ejecución | Registro de tiempo, origen y acciones | Ritmo conservador; no alterar ni exfiltrar datos. |
+| Validación | Hallazgo reproducible y evidencia mínima | Priorizar impacto, probabilidad y corrección. |
+| Cierre | Informe, limpieza del laboratorio y lecciones | Revocar accesos temporales y conservar trazabilidad. |
+
+Como línea base de desarrollo seguro, relaciona los hallazgos con las categorías actuales de [OWASP Top 10:2025](https://owasp.org/Top10/) —por ejemplo, control de acceso, configuración de seguridad, inyección, autenticación y registro/alertamiento— y documenta una mitigación verificable antes de repetir la prueba.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

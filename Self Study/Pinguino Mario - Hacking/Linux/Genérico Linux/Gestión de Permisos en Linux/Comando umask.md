@@ -1,3 +1,15 @@
+---
+title: "Comando umask"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El comando `umask` se utiliza para establecer los permisos predeterminados para los nuevos archivos y directorios creados por un usuario. El nombre "umask" proviene de "user mask" o "user file creation mask". La máscara umask se utiliza para ocultar (o restar) ciertos permisos de los permisos predeterminados que se asignarían a un archivo o directorio recién creado.
 
 La máscara umask es un valor de tres dígitos octales (0-7) que se aplica al inverso de los permisos que se desean ocultar. Cada dígito en la máscara representa un conjunto específico de permisos (lectura, escritura y ejecución) para el propietario, el grupo y otros. La máscara umask se resta de los permisos predeterminados para determinar los permisos finales.
@@ -17,3 +29,10 @@ Ejemplos de máscaras umask comunes:
 - `umask 022`: Esto significa que se quitará la escritura para el grupo y otros. Los nuevos archivos tendrán permisos 644 (rw-r--r--).
 - `umask 077`: Esto significa que se quitarán todos los permisos para grupo y otros. Los nuevos archivos tendrán permisos 600 (rw-------).
 - `umask 002`: Esto significa que se quitará la escritura para otros. Los nuevos archivos tendrán permisos 664 (rw-rw-r--).
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

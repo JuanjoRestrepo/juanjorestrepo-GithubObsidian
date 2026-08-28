@@ -1,3 +1,15 @@
+---
+title: "Principales Amenazas y Oportunidades en Ciberseguridad - 2024"
+date: 2026-08-27
+tags:
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # Principales Amenazas y Oportunidades en Ciberseguridad - 2024
 
 ## Inventta Latam
@@ -51,3 +63,8 @@ La demanda de profesionales en ciberseguridad continuará superando la oferta. L
 En resumen, la ciberseguridad en el 2024 será un campo dinámico y desafiante. La preparación y la adaptación a las nuevas amenazas tecnológicas serán cruciales para proteger los datos y la privacidad en un mundo cada vez más interconectado. **La colaboración entre organizaciones, gobiernos y profesionales de ciberseguridad será esencial para abordar estos desafíos en constante evolución.**
 
 **En Inventta la tenemos clara.** [**Hablemos y preparemos tu empresa para los desafíos del 2024**](https://wa.me/573160480089)
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

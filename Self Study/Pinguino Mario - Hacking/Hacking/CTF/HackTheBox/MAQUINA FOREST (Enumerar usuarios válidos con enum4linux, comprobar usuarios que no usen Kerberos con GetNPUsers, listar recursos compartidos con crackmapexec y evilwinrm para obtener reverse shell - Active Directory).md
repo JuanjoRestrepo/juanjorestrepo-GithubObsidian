@@ -1,3 +1,15 @@
+---
+title: "MAQUINA FOREST (Enumerar usuarios válidos con enum4linux, comprobar usuarios que no usen Kerberos con GetNPUsers, listar recursos compartidos con crackmapexec y evilwinrm para obtener reverse shell - Active Directory)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconocimientos de siempre:
 ![[Pasted image 20230126111303.png]]
 Ya que es una máquina Windows, debemos enumerar con crackmapexec qué máquina es y qué windows tiene instalado, el cual se trata de un Windows Server 2016: [[Crackmapexec#Detectar dominio y hostname con crackmapexec]]
@@ -69,3 +81,10 @@ Y marcamos como pwned este usuario:
 ![[Pasted image 20231123183429.png]]
 Y se nos muestra todo el mapa del AD:
 ![[Pasted image 20231123184137.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

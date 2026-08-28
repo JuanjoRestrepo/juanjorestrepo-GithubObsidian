@@ -1,3 +1,15 @@
+---
+title: "5 - Escalada de Privilegios en Ubuntu 12.04"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a ver la versión de ubuntu que estamos utilizando, y vemos que es la 12.04, para ello podemos usar lsb_release -a:
 ![[Pasted image 20230322020833.png]]
 Podemos buscar por internet algún exploit para esta versión de ubuntu, y nos encontramos con un exploit de la web de Exploit-DB:
@@ -18,3 +30,10 @@ Y aquí tenemos la flag de root:
 ------------------------------------
 
 [[MAQUINA CYBERSPLOIT (Decodificar base64, Inspeccionar código fuente de la página, convertir archivo en binario, escalada de privilegios en Ubuntu 12.04 con exploit de exploitdb overlayfs y compilar exploit en .c con el comando gcc)]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

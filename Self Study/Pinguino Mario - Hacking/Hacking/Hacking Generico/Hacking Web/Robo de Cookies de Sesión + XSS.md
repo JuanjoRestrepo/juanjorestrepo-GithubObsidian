@@ -1,3 +1,15 @@
+---
+title: "Robo de Cookies de Sesión + XSS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Por tanto en este punto, podríamos intentar hacer un robo de cookies, por lo que crearemos otra nota poniendo una dirección URL en la cual el usuario víctima deberá hacer click; y ahí habremos obtenido su cookie de sesión.
 Lo guardamos y veremos que hay un intento de imagen cargada en la web, pero que no llega a cargar:
 ```
@@ -24,3 +36,9 @@ Le ponemos la nueva cookie que hayamos capturado:
 Recargamos la página y ya estamos dentro:
 ![[Pasted image 20230423083844.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

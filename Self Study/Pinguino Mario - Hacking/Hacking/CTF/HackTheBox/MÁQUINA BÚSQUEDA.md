@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA BÚSQUEDA"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vemos los puertos 80 y 22 abiertos:
 ![[Pasted image 20230802192141.png]]
 Si abrimos el navegador, vemos que se aplica virtual hosting:
@@ -26,3 +38,10 @@ jh1usoih2bkjaspwe92
 ![[Pasted image 20230802200317.png]]
 Vemos que podemos insertar un comando al ejecutar este script, además de mostrarnos que podemos ejecutar cualquiera de los tres comandos con docker; y confirmamos con el comando hostname -I, viendo que tenemos varias interfaces de red que pertenecen posiblemente a contenedores de docker:
 ![[Pasted image 20230802200600.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

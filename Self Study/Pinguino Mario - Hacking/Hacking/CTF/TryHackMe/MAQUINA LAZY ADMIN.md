@@ -1,3 +1,15 @@
+---
+title: "MAQUINA LAZY ADMIN"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20230705123730.png]]
 Viendo el puerto 80 nos encontramos con una plantilla por defecto de apache:
@@ -30,3 +42,10 @@ Dentro de esta plataforma, debemos de buscar algún lugar para subir archivos ma
 Y nos encontramos con un botón de add file:
 ![[Pasted image 20230705130718.png]]
 Por tanto vamos a subir un .php malicioso:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

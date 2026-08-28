@@ -1,3 +1,15 @@
+---
+title: "(CSRF) - Cross-Site Request Forgery"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lanzamos el laboratorio con docker-compose up -d:
 ![[Pasted image 20230705154253.png]]
 Y ahora configuramos el /etc/hosts de esta forma:
@@ -51,3 +63,10 @@ Y ahora como Alice, nos llega el mensaje:
 ![[Pasted image 20230705162226.png]]
 Hacemos clic en dicho enlace y tenemos al usuario Boby añadido sin ningún tipo de validación:
 ![[Pasted image 20230705162255.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

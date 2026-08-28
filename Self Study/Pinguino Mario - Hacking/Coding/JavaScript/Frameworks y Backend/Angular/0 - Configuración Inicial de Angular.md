@@ -1,3 +1,15 @@
+---
+title: "0 - Configuración Inicial de Angular"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para realizar nuestro primer hola mundo en Angular, debemos instalar primero nodejs y angular CLI:
 ```bash
 apt install nodejs npm
@@ -26,3 +38,10 @@ ng serve
 ```
 Y por el puerto 4200 del localhost estará corriendo esta aplicación:
 ![[Pasted image 20240329160513.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA LIBERANDO A WILLY"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20240312144814.png]]
 Esto corre por el puerto 80:
@@ -53,3 +65,10 @@ Y vemos que funcionan:
 ![[Pasted image 20240312151027.png]]
 Además, este usuario está dentro del grupo sudo, por lo que si volvemos a poner la misma contraseña ya llegamos a root:
 ![[Pasted image 20240312151100.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

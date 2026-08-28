@@ -1,3 +1,15 @@
+---
+title: "Pivoting Manual"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta es la estructura de red que vamos a intentar replicar:
 ![[Pasted image 20230722161139.png]]
 Lo primero será ir a la parte de herramientas y Administrador de red: 
@@ -26,3 +38,10 @@ socat tcp-l:443,fork,reuseaddr tcp:192.168.0.30:443
 ![[Pasted image 20230722163603.png]]
 Por tanto, una vez hecho esto ya podremos atacar a la máquina metasploitable, por ejemplo con un exploit que explote el puerto 21:
 ![[Pasted image 20230722163945.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

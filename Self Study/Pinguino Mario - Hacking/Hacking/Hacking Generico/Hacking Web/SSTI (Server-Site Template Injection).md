@@ -1,3 +1,15 @@
+---
+title: "SSTI (Server-Site Template Injection)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## EJEMPLO 1
 Vamos al menú de ajustes para ver si es vulnerable a server site template injection, ya que en el nombre se llega a multiplicar el 7 por 7:
 ![[Pasted image 20230227205934.png]]
@@ -51,3 +63,9 @@ Y si enviamos todo esto, vemos cómo recibimos una respuesta donde se ejecuta el
 Llegados a este punto yo puedo ejecutar cualquier código, por ejemplo un whoami en lugar de un /etc/passwd; y vemos como nos da un email:
 ![[Pasted image 20230222132131.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

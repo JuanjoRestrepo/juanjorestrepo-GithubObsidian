@@ -1,3 +1,15 @@
+---
+title: "17 - Configurar Reverse Proxy Apache"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un reverse proxy (o proxy inverso) en Apache es un servidor que se sitúa entre los clientes (navegadores web) y los servidores web backend (donde realmente están alojadas las aplicaciones o sitios web). El reverse proxy acepta las solicitudes de los clientes, las reenvía al servidor backend apropiado y luego devuelve la respuesta del servidor backend al cliente.
 
 - **Seguridad**: El reverse proxy puede ocultar la identidad y la estructura de los servidores backend, añadiendo una capa de protección.
@@ -76,3 +88,10 @@ Y ahora desde el cliente se podrá hacer la petición al frontend, este la hará
 curl -X POST http://consolelog.lab:3000/recurso/ -H "Content-Type: application/json" -d '{"token": "tokentraviesito"}'
 ```
 ![[Pasted image 20240729151105.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

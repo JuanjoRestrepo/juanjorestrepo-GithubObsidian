@@ -1,3 +1,15 @@
+---
+title: "2 - Las Colecciones"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Por ejemplo vamos a crear una base de datos y luego creamos una colección llamada vídeos:
 ![[Pasted image 20230602095149.png]]
 Y aquí creamos otra colección y ya tenemos 2:
@@ -72,3 +84,10 @@ También podemos obtener únicamente todos los datos de un titulo en específico
 db.micoleccion.distinct("titulo")
 ```
 ![[Pasted image 20240514185515.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

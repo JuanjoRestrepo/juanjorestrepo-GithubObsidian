@@ -1,3 +1,15 @@
+---
+title: "Máquina 2 -- Máquina 3"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Ahora en la máquina 2 tenemos que traernos el chisel, por lo que lo compartimos desde la máquina 1:
 ![[Pasted image 20230824102012.png]]
 Nos lo bajamos en la máquina 2:
@@ -35,3 +47,10 @@ Y ahora desde la máquina 3 es cuando podemos decir que envíe la reverse shell 
 ![[Pasted image 20230824110332.png]]
 Y habremos recibido conexión de la máquina 3 a la máquina kali:
 ![[Pasted image 20230824110400.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

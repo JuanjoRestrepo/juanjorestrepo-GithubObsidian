@@ -1,3 +1,15 @@
+---
+title: "OpenSSH 7 Vulnerabilidad User Enumeration"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 [[MAQUINA SOURCE (Servidor Webmin con SSL, exploit para atacar webmin y obtener ejecución remota de comandos)]]
 Si vemos que la versión de OpenSSH es igual o inerior a la 7.7, es vulnerable a poder enumerar usuarios válidos, por lo que podremos hacer un ataque de fuerza bruta para conocer qué usuarios existen por ssh en la siguiente máquina metasploitable que tiene una versión desactualizada de OpenSSH:
 ![[Pasted image 20230523151158.png]]
@@ -8,3 +20,10 @@ No obstante, también nos hará falta un diccionario de posibles usuarios, por l
 ![[Pasted image 20230523151315.png]]
 Ejecutamos el exploit contra la IP de la máquina y nos hará el ataque:
 ![[Pasted image 20230523151402.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "3 - Volúmenes en Dockerfile"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## LA INSTRUCCIÓN VOLUME DENTRO DEL DOCKERFILE
 Primero creo un contenedor indicando que el volumen va a estar dentro del directorio /home del contenedor:
 ![[Pasted image 20221231200629.png]]
@@ -30,3 +42,10 @@ Y si ejecuto el otro contenedor, tenemos los datos sincronizados y compartidos:
 ![[Pasted image 20221231200945.png]]
 Incluso puedo crear un tercer contenedor que será ubuntu3 y también tendría acceso al fichero:
 ![[Pasted image 20221231201002.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

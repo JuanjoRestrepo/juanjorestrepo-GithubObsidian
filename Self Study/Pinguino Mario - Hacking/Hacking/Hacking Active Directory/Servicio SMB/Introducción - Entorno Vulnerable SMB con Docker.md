@@ -1,3 +1,15 @@
+---
+title: "Introducción - Entorno Vulnerable SMB con Docker"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 SMB es un protocolo de red para compartir recursos por la red. Por tanto vamos a desplegar un contenedor de docker con este protocolo que tenga vulnerabilidades:
 ![[Pasted image 20230420105655.png]]
 Lo descargamos:
@@ -17,3 +29,10 @@ Esto es más cómodo porque podemos ver todo el arbol de archivos, lo cual es mu
 ![[Pasted image 20230420111838.png]]
 Si queremos desmontar esto, podemos usar el comando umount:
 ![[Pasted image 20230420111927.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

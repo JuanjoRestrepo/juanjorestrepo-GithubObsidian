@@ -1,3 +1,15 @@
+---
+title: "1 - Crear Reverse Shell con sockets en Python"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Necesitaremos un script de la máquina atacante, donde se va a pedir al usuario que envíe un comando para que se envíe a la máquina víctima; y después al mismo tiempo recibiremos ese output procedente de la máquina víctima de vuelta a nuestra máquina atacante.
 ## CÓDIGO MÁQUINA ATACANTE
 ```python
@@ -74,3 +86,10 @@ while True:
  Ahora el funcionamiento será el siguiente, donde primero ejecutaremos el código desde la máquina víctima para que permanezca en escucha a espera del comando enviado por la máquina atacante:
  ![[Pasted image 20230308125116.png]]
  Y ahora si ejecutamos el código desde la máquina atacante, ya podremos insertar el comando que queramos y recibirlo de vuelta: ![[Pasted image 20230308125219.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

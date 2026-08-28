@@ -1,3 +1,15 @@
+---
+title: "MAQUINA KENOBI (Recursos compartidos SMBMAP, monturas con showmount, vulnerabilidad proFTPd para copiar el id_rsa a la montura en máquina loca, escalada privilegios manipular path)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230617091312.png]]
 Y vemos que dentro del puerto 80 tenemos un robos.txt, además de utilizar nfs, por lo que probablemente haya monturas. NFS (Network File System) está relacionado con las monturas en sistemas operativos Unix y Linux.
@@ -72,3 +84,10 @@ De esta forma, como vemos, lo que hemos enviado se ejecutará como variable de e
 ![[Pasted image 20230617184345.png]]
 De hecho con el comando ifconfig también podríamos haber escalado privilegios de la misma forma, ya que la opción 3 ejecuta el ifconfig:
 ![[Pasted image 20230617191739.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA FRIENDLY 3 (Descargar recursiva FTP, escalada de privilegios viendo procesos en ejecución con pspy e inyectando código malicioso con bucle while)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20230805105624.png]]
 Y esto es lo que corre por el puerto 80, donde se hace una mención al protocolo ftp y vemos un usuario llamado Juan:
@@ -59,3 +71,10 @@ Si hacemos esto estaremos creando constantemente dicho archivo y si ejecutamos e
 ![[Pasted image 20230805115251.png]]
 Y mientras este bucle se ejecuta, posiblemente se haya ejecutado de forma automatizada el script de chek_for_install.sh, por lo que detenemos el script y probamos en ejecutar un bash -p y ya somos root:
 ![[Pasted image 20230805115354.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

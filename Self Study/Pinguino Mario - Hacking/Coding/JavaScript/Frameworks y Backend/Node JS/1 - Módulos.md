@@ -1,3 +1,15 @@
+---
+title: "1 - Módulos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Node.js, los módulos son una forma de organizar y reutilizar el código. Cada archivo en Node.js es un módulo por defecto, y los módulos pueden exportar funcionalidad para ser utilizada en otros archivos.
 ### Tipos de Módulos en Node.js
 
@@ -109,3 +121,10 @@ fs.writeFile('example.txt', 'Hello, Node.js!', (err) => {
     console.log('File written successfully!');
 });
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

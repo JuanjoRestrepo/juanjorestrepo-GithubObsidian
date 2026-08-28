@@ -1,3 +1,15 @@
+---
+title: "3 - Comando netstat para conocer puertos internos abiertos en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para ver qué servicios están corriendo detrás de un puerto específico en Linux, puedes utilizar el comando netstat y su opción -tulpn. El uso del comando es el siguiente:
 ```bash
 sudo netstat -tulpn
@@ -11,4 +23,11 @@ sudo netstat -tln | grep :80
 Y nos encuentra el servicio que está corriendo sobre el puerto 80:
 ![[Pasted image 20230218141725.png]]
 ## SERVICIO CORRIENDO EN PUERTO INTERNO
-Vamos a ver cómo podemos hacer que un servicio esté corriendo por un puerto interno pero que no esté expuesto. 
+Vamos a ver cómo podemos hacer que un servicio esté corriendo por un puerto interno pero que no esté expuesto.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

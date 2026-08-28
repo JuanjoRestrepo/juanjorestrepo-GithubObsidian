@@ -1,3 +1,15 @@
+---
+title: "Intruder en Burp Suite"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Suponemos que tenemos una petición web interceptada con burpsuite; y hay un campo donde queremos hacer fuzzing, como es en este caso dentro de donde pone loaaa.php:
 ![[Pasted image 20230330200119.png]]
 Quiero hacer fuzzing para ver cual es la URL correcta, por lo que debo hacer control + I para ir al intruder:
@@ -21,3 +33,10 @@ Ahora hacemos clic en start attack:
 ![[Pasted image 20230330201000.png]]
 Y vemos que con la palabra gin ha funcionado, porque la ruta del principio era login, cuando antes habia loaaa:
 ![[Pasted image 20230330201040.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

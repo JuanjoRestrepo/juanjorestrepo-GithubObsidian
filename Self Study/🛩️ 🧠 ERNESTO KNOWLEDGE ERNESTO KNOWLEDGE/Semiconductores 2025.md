@@ -1,9 +1,13 @@
 ---
+title: "Semiconductores 2025"
+date: 2026-08-27
 tags:
-  - "#Ernesto"
-  - "#tecnología"
-  - "#hardware"
-fecha: 2025-03-29
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 tags: #Ernesto #tecnología #hardware 
@@ -29,3 +33,8 @@ tags: #Ernesto #tecnología #hardware
 ## Vinculado
 - [[Computación Cuántica]] | [[Automoción 2025]]
 ---
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

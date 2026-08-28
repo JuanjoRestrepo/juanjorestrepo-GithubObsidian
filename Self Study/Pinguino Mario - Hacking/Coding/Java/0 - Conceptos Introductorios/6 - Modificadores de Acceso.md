@@ -1,3 +1,15 @@
+---
+title: "6 - Modificadores de Acceso"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Java, los modificadores de acceso son palabras clave que se utilizan para controlar el acceso a las clases, variables, métodos y constructores. Hay cuatro tipos de modificadores de acceso en Java:
 
 1. **public:** Los miembros (clases, variables, métodos y constructores) marcados como públicos son accesibles desde cualquier clase en el mismo paquete o desde cualquier otra clase en un paquete diferente. Por ejemplo:
@@ -82,3 +94,10 @@ class MyClass {
     }
 }
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

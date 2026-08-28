@@ -1,3 +1,15 @@
+---
+title: "MAQUINA SECNOTES (SQL Injection, CSRF (Cross-site request forgery), detectar usuarios válidos con wfuzz, netcat en windows, php malicioso y escalar privilegios en máquina Windows con subsistema de Linux instalado a través de ejecutar un bash.exe)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos el reconocimiento con nmap como siempre, donde encontramos el puerto 80, 445 y 8808:
 ![[Pasted image 20230210125701.png]]
 Como vemos que tiene abierto el puerto 445 y es una máquina Windows, podemos inspeccionarlo con crackmapexec y vemos que se trata de un Windows 10 Enterprise: [[Crackmapexec#Detectar dominio y hostname con crackmapexec]]
@@ -118,3 +130,10 @@ Y ahora si queremos entrar dentro de la máquina usando una shell, tenemos que u
 winexe -U '.\administrator%u6!4ZwgwOM#^OBf#Nwnh' //10.10.10.97 cmd.exe
 ```
 ![[Pasted image 20240127102015.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

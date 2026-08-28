@@ -1,3 +1,14 @@
+---
+title: "Puerto 445 - SMB"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 Es un protocolo de red que opera en la capa de aplicación y se utiliza para compartir archivos, impresoras y otros recursos en una red. El SMB facilita la comunicación entre sistemas diferentes, permitiendo a los usuarios y aplicaciones acceder y manipular archivos y recursos en una red.
 
@@ -43,3 +54,10 @@ rpcclient -U "" -N 192.168.0.54
 querydispinfo and enumdomusers
 ```
 ![[Pasted image 20231229113412.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

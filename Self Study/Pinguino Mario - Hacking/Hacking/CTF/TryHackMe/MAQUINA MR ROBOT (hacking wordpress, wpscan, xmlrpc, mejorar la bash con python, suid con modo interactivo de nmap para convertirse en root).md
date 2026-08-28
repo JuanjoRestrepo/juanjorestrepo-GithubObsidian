@@ -1,3 +1,15 @@
+---
+title: "MAQUINA MR ROBOT (hacking wordpress, wpscan, xmlrpc, mejorar la bash con python, suid con modo interactivo de nmap para convertirse en root)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230419170126.png]]
 Y esta es la web que corre por el puerto 80:
@@ -120,3 +132,10 @@ Y lo interesante es que nmap tiene un modo interactivo, donde podemos ejecutar c
 ![[Pasted image 20230506095901.png]]
 En cuanto a la primera flag, está dentro del directorio web de robots.txt:
 ![[Pasted image 20230506100158.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

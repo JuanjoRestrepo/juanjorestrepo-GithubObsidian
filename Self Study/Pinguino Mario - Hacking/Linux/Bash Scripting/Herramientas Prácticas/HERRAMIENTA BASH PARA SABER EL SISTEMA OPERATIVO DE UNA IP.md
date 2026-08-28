@@ -1,3 +1,15 @@
+---
+title: "HERRAMIENTA BASH PARA SABER EL SISTEMA OPERATIVO DE UNA IP"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 También podemos saber en cuántas líneas se repite un patrón utilizando la opción -c, donde en este caso nos dice que la palabra ttl=64 dentro del fichero ping.log se repite una vez, por tanto podemos saber que es un linux:
 ![[Pasted image 20230101174501.png]]
 ![[Pasted image 20230101174506.png]]
@@ -67,3 +79,10 @@ os_name = detect_os(ip)
 print(os_name)
 ```
 ![[Pasted image 20230211005748.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

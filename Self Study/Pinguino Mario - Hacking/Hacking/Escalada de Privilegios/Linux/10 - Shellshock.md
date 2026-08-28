@@ -1,3 +1,15 @@
+---
+title: "10 - Shellshock"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## **VULNERABILIDAD SHELLSHOCK**
 
 Ahora que vemos que estamos ante un fichero -sh y se trata de una bash, ya que vemos también que la ruta es cgi-bin, podemos intentar explotar la vulnerabilidad shellshock, para colarnos en esa bash y lanzar comandos remotos; para hacer la comprobación lo haremos de esta manera:
@@ -52,3 +64,10 @@ Por tanto ejecutamos esto mismo contra la máquina víctima interceptando primer
 ![[Pasted image 20230731100932.png]]
 Y a continuación lanzamos el payload:
 ![[Pasted image 20230731101110.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

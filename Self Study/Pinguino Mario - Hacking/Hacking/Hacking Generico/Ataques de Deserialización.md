@@ -1,3 +1,15 @@
+---
+title: "Ataques de Deserialización"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un ataque de deserialización es una vulnerabilidad de seguridad que ocurre cuando una aplicación deserializa (convierte en objeto) datos provenientes de una fuente externa, como una solicitud de red o un archivo. Esta vulnerabilidad puede ser explotada por un atacante malintencionado para ejecutar código malicioso o manipular datos en la aplicación objetivo.
 
 -------------------
@@ -154,3 +166,10 @@ Si pegamos en la última línea el código serializado de antes con el código m
 ![[Pasted image 20230711121633.png]]
 Si lo ejecutamos, obtenemos una reverse shell:
 ![[Pasted image 20230711121655.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

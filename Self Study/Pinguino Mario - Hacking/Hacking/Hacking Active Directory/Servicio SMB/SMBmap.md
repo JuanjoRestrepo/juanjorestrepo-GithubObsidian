@@ -1,3 +1,15 @@
+---
+title: "SMBmap"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Smbmap es una herramienta de línea de comandos que se utiliza para enumerar y explorar recursos compartidos en una red SMB.
 ## Enumerar recursos compartidos en un servidor SMB
 ```python
@@ -35,3 +47,10 @@ Así sería el funcionamiento de smbmap
 # DESCARGAR UN ARCHIVO CON SMBMAP
 Lo haríamos con el parámetro --download:
 ![[Pasted image 20230727151919.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

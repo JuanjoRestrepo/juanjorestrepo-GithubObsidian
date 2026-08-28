@@ -1,3 +1,14 @@
+---
+title: "Puerto 111 - NFS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 El protocolo NFS utiliza el puerto 111 para la administración de servicios RPC, lo que permite la comunicación entre sistemas para compartir y acceder a archivos de manera remota a través de una red.
 
@@ -68,3 +79,10 @@ Lo intentamos crackear en crackstation, donde vemos que la contraseña es bacona
 ```bash
 Admin@htb.local:baconandcheese
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

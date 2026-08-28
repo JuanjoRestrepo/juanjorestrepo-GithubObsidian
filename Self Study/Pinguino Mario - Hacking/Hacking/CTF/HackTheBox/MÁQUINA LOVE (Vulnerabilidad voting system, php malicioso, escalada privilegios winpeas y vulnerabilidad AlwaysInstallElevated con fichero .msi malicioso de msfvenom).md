@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA LOVE (Vulnerabilidad voting system, php malicioso, escalada privilegios winpeas y vulnerabilidad AlwaysInstallElevated con fichero .msi malicioso de msfvenom)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Empezaremos con los reconocimientos de siempre de nmap:
 ![[Pasted image 20230410102341.png]]
 Como tiene el puerto 80 abierto lo analizamos:
@@ -54,3 +66,10 @@ Ahora habremos recibido una reverse shell como el usuario authority/system con n
 ![[Pasted image 20230410102725.png]]
 Y ya podemos acceder a la flag de root:
 ![[Pasted image 20230410102733.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

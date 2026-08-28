@@ -1,3 +1,15 @@
+---
+title: "Exercise - Write your first CSharp code"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### Hello World
 ---
 ```C#
@@ -53,3 +65,8 @@ The three new lines of code you added demonstrated the difference between the [C
 To print an entire message to the output console, you used the first technique, `Console.WriteLine()`. At the end of the line, it added a line feed similar to how to create a new line of text by pressing Enter or Return.
 
 To print to the output console, but without adding a line feed at the end, you used the second technique, `Console.Write()`. So, the next call to `Console.Write()` prints another message to the same line.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

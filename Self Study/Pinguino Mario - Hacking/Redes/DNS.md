@@ -1,3 +1,15 @@
+---
+title: "DNS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 DNS es un sistema que se utiliza para traducir los nombres de dominio legibles por humanos, como www.ejemplo.com, en direcciones IP (Protocolo de Internet) numéricas. 
 
 -------------------------
@@ -29,3 +41,10 @@ Otros servidores externos útiles pueden ser:
 209.244.0.4 Level3
 208.67.222.222 OpenDNS
 208.67.220.220 OpenDNS
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

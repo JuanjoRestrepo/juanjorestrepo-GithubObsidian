@@ -1,3 +1,15 @@
+---
+title: "MAQUINA TABBY (Virtual hosting etc-hosts, path traversal para ver puertos internos de ruta proc - net - tcp, y comando locate para localizar donde se guarda un el tomcat-users.xml e inicio de sesión en tomcat, y activar pseudo-consola) -- INCOMPLETA"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos un fuzzing en esta web y vemos que sólo nos encuentra un directorio de files y assets, al que no tenemos permiso:Hacemos los reconocimientos de siempre:
 ![[Pasted image 20230312220429.png]]
 Lanzamos un whatweb porque vemos el puerto 80 y 8080 abierto:
@@ -69,3 +81,10 @@ Ahora vamos a activar una pseudo consola para estar más cómodos:
 Y navegando por los directorios vemos que para el usuario ash no tenemos permiso para entrar:
 ![[Pasted image 20230312221008.png]]
 Ahora tenemos que efectuar un user pivoting para convertirnos en el usuario ash:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

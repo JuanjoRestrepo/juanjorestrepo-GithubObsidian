@@ -1,3 +1,15 @@
+---
+title: "6 - Crear y eliminar archivos con JavaScript"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 - `fs` es el módulo `File System` (Sistema de Archivos) que proporciona una API para interactuar con el sistema de archivos del sistema operativo donde se ejecuta Node.js.
 
 Hay que tener en cuenta que podemos crear o eliminar un archivo de forma síncrona o asíncrona. La diferencia fundamental entre crear o eliminar un archivo de forma síncrona o asíncrona radica en cómo se gestiona el flujo de ejecución del programa y cómo maneja el sistema las operaciones de archivo.
@@ -97,4 +109,9 @@ fs.access(rutaArchivo, fs.constants.F_OK, (err) => {
 });
 ```
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

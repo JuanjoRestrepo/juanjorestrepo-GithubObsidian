@@ -1,3 +1,15 @@
+---
+title: "3 - Tipos de Métodos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Java, los métodos se pueden clasificar en diferentes tipos según su comportamiento y cómo interactúan con los objetos de una clase. Aquí hay una descripción de algunos tipos comunes de métodos en Java.
 
 ---------
@@ -108,3 +120,10 @@ Operaciones operaciones = new Operaciones();
 int sumaEnteros = operaciones.sumar(3, 5); // Invocación del método sumar con enteros
 double sumaDobles = operaciones.sumar(3.5, 5.2); // Invocación del método sumar con dobles
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

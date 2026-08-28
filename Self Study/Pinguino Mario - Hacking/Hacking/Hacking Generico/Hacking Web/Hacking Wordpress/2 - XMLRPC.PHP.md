@@ -1,3 +1,15 @@
+---
+title: "2 - XMLRPC.PHP"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # ENUMERAR XMLRPC + ATAQUES FUERZA BRUTA WORDPRESS
 También es posible que podamos enumerar este archivo el cual nos sirve para obtener credenciales de usuarios, ya que se trata de un archivo que permite la comunicación de wordpress y otros sistemas usando php; y si lo buscamos en el navegador vemos que existe pero que sólo tramita peticiones por POST:
 ![[Pasted image 20230421133400.png]]
@@ -86,3 +98,10 @@ wpscan --url <url> -U <user> -P <pass>
 ![[Pasted image 20230421143525.png]]
 Y nos la encuentra:
 ![[Pasted image 20230421143548.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

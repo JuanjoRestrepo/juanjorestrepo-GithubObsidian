@@ -1,3 +1,15 @@
+---
+title: "7 - Sentencias Condicionales en Java"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Las sentencias condicionales en Java funcionan de la siguiente forma. Las cuales deben de contar con llaves de apertura y cierre en cada una de ellas; y cuentan con la siguiente sintaxis:
 ```java
 import javax.swing.JOptionPane;
@@ -52,3 +64,10 @@ public class codigo {
 ```
 ![[Pasted image 20240307202711.png]]
 Es importante notar que después de ejecutar un bloque de código, se utiliza `break` para salir del `switch`.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

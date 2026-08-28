@@ -1,3 +1,15 @@
+---
+title: "Montar Entorno Vulnerable PHP con Docker"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos crear un contenedor de Docker que tenga un servidor web que interprete php; y de esta forma practixar con la subida de un fichero php malicioso para obtener ejecución remota de comandos. Por tanto nos creamos el Dockerfile de docker para montar la imagen con todo lo necesario:
 ![[Pasted image 20230417091451.png]]
 A continuación ejecutamos el comando Docker Build para crear la imagen a partir de este Dockerfile:
@@ -28,4 +40,9 @@ Y entonces así nos quedaría el directorio del servidor web:
 Esto significa que si dentro del servidor de apache llamamos a este archivo, vamos a acceder a él pudiendo ejecutar un comando:
 ![[Pasted image 20230417093350.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

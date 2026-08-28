@@ -1,3 +1,15 @@
+---
+title: "Conectar Python con Shodan"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Tenemos la librería shodan para realizar búsquedas desde Python utilizando su API. Por ejemplo si queremos hacer una búsqueda de equipos con windows XP, lo haríamos de esta forma:
 ```python
 import shodan
@@ -137,3 +149,10 @@ wb.close()
 ```
 Y lo tenemos todo en un excel:
 ![[Pasted image 20230413111815.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "12 - Hilos en Java"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **HILO** -> Un hilo es una unidad de computación que se ejecuta dentro del contexto de un proceso. Es decir, se podría considerar un hilo como un subproceso, por ejemplo si abrimos 5 pestañas del navegador, estaríamos corriendo 5 hilos del mismo proceso.
 
 Con los mismos recursos que utiliza el proceso, se lo va repartiendo por los distintos hilos.
@@ -298,3 +310,10 @@ class Task extends Thread {
     - **Ejemplo**: Procesamiento paralelo en sistemas multicore, donde cada núcleo ejecuta una tarea diferente simultáneamente.
 
 La concurrencia se refiere a la estructura y el diseño del software que permite que múltiples tareas progresen de manera intercalada, mientras que el paralelismo se refiere a la ejecución simultánea de múltiples tareas en hardware de múltiples núcleos.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

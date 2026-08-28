@@ -1,3 +1,15 @@
+---
+title: "2 - Segundo Contenedor - walking CMS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Este contenedor será un wordpress con su respectiva base de datos MySQL donde el usuario registrado tendrá una contraseña débil la cual será vulnerable a un ataque de fuerza bruta con wpscan.
 
 También, instalaremos un plugin para modificar temas de wordpress, de tal forma que el atacante pueda modificar el código de un archivo .php y así insertar codigo malicioso que le proporcione ejecución remota de comandos.
@@ -112,4 +124,9 @@ find / -perm -4000 2>/dev/null
 Y lo localizamos:
 ![[Pasted image 20240320174731.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

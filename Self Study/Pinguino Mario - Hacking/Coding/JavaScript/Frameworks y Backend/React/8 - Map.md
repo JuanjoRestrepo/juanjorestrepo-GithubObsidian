@@ -1,3 +1,15 @@
+---
+title: "8 - Map"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En React, el método `map` de JavaScript se utiliza comúnmente para renderizar listas de elementos. `map` es un método de los arrays que permite iterar sobre cada elemento de un array y aplicar una función de transformación a cada uno, devolviendo un nuevo array con los resultados.
 
 ```javascript
@@ -119,3 +131,9 @@ export default NumerosLista;
 Y así se vería:
 ![[Pasted image 20240714120413.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

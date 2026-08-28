@@ -1,3 +1,15 @@
+---
+title: "NETPLAN - Configurar Redes en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para configurar las redes de Linux, tendremos que modificar el fichero de configuración de netplan, que lo encontramos en la ruta /etc/netplan:
 ![[Pasted image 20230119203125.png]]
 Este fichero con extensión .yaml será el que tengamos que modificar:
@@ -20,3 +32,10 @@ Ahora sólo tenemos que aplicar los cambios con el comando netplan apply:
 ![[Pasted image 20230119203853.png]]
 Y si hacemos un ifconfig ya vemos la nueva configuración:
 ![[Pasted image 20230119203916.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

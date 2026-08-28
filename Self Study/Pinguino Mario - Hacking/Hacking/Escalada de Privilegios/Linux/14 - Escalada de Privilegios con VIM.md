@@ -1,3 +1,15 @@
+---
+title: "14 - Escalada de Privilegios con VIM"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Si ejecutamos el comando sudo -l podemos ver que el usuario www-data puede ejecutar cualquier comando que se encuentre dentro del directorio html o también creado con vim:
 ![[sdgdsfgsdfg.png]]
 Ahora con vim podremos crear un código que nos mande una bash como root y lo podemos editar como sudo porque tenemos ese privilegio:
@@ -21,5 +33,9 @@ Y ahora a continuación si damos a enter se habrá guardado lo de antes; y si lu
 ![[Pasted image 20230128140352.png]]
 ![[Pasted image 20230128140356.png]]
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

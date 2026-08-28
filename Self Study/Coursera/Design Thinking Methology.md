@@ -1,3 +1,15 @@
+---
+title: "Design Thinking Methology"
+date: 2026-08-27
+tags:
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Course Summary
 
 ![[2018-04-18_17-49-59-afc0a00e1db7c0b7d6960eff7783c751.png|400]]
@@ -80,3 +92,8 @@ Take note of it and use this extensive collection of data to improve your protot
 
 
 ![[2018-04-18_18-00-21-5fc8f44d447e9bd897e3923425c7f2f8.png|300]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

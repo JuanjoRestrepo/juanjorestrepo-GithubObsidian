@@ -1,3 +1,15 @@
+---
+title: "Protocolos UDP y TCP"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## PROTOCOLO TCP
 
 Protocolo para comunicarse por internet. 
@@ -58,3 +70,9 @@ Esto hace que el protocolo UDP sea más rápido y eficiente que otros protocolos
 123 -> NTP (Para sincronizar los relojes de los dispositivos en una red)
 161 -> SNMP (Para administrar y supervisar dispositivos en una red)
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

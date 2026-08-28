@@ -1,3 +1,15 @@
+---
+title: "Search"
+date: 2026-08-27
+tags:
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 This problem is trying to figure out what to do when we have some sort of situation that the computer is in.
 
 Some sort of environment that an agent is in, and we would like for that agent to be able to somehow look for a solution.
@@ -167,3 +179,8 @@ A data structure that keeps track of
 
 # Approach
 ---
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

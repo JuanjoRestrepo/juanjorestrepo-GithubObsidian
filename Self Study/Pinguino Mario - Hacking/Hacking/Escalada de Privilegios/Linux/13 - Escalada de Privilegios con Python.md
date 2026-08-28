@@ -1,3 +1,15 @@
+---
+title: "13 - Escalada de Privilegios con Python"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Si encontramos un script de Python donde tengamos permisos de escritura y sea ejecutado por el administrador, podemos modificarlo para poder lanzarnos una shell como root con este código:
 ```python
 import os
@@ -28,3 +40,10 @@ Y lo ejecutamos para convertirnos en root:
 ## Python Library Hijacking
 
 Podemos escalar privilegios inyectando código en las librerías de python si vemos que están siendo utilizadas en un script. Así como crear un script con código malicioso con el mismo nombre de la librería dentro del mismo directorio de trabajo, y así hacer que sea llamado por el script principal:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

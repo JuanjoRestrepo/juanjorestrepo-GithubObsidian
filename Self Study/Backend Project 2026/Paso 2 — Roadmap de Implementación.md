@@ -1,3 +1,14 @@
+---
+title: "Paso 2 — Roadmap de Implementación"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 ### Fase 1 — Setup
 1. [ ] Inicializar proyecto
@@ -29,4 +40,7 @@
 15. [ ] Swagger
 16. [ ] README + DEVELOPMENT_LOG
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

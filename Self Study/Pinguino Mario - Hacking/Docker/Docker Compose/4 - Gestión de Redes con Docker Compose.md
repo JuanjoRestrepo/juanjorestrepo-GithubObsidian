@@ -1,3 +1,15 @@
+---
+title: "4 - Gestión de Redes con Docker Compose"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## USO DE LA RED HOST
 Para hacer que un contenedor utilice la red host con docker compose, hacemos lo siguiente:
 ```bash
@@ -34,3 +46,10 @@ services:
 ![[Pasted image 20240318111958.png]]
 Lo ejecutamos y si vemos las interfaces, vemos que no tiene ninguna:
 ![[Pasted image 20240318112030.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA IN A CAVE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230717192747.png]]
 Y esto es lo que tenemos en la web:
@@ -30,4 +42,9 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection
 Y este es el resultado, donde podemos explotar un XXE y ver el archivo /etc/hosts:
 ![[Pasted image 20230717195711.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

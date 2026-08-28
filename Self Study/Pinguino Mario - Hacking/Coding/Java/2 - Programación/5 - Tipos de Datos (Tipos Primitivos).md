@@ -1,3 +1,15 @@
+---
+title: "5 - Tipos de Datos (Tipos Primitivos)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### Datos de Tipo Enteros
 
 En Java, los datos de tipo entero se utilizan para almacenar valores numéricos enteros sin decimales. Existen varios tipos de datos enteros en Java, cada uno con diferentes tamaños y rangos. Aquí te doy una breve explicación de los tipos de datos enteros más comunes: `int`, `short`, `long`, y `byte`.
@@ -186,3 +198,10 @@ if (esAdulto) {
 }
 ```
 En este ejemplo, la variable `esAdulto` se evalúa como `true` o `false` dependiendo de si la `edad` es mayor o igual a 18. La estructura `if` utiliza esta variable booleana para decidir qué mensaje imprimir en la consola.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

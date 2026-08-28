@@ -1,3 +1,15 @@
+---
+title: "WFUZZ"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta herramienta sirve para fuzzear todo tipo de parámetro, incluso para encontrar subdominios [[Detectar subdominios]].
 
 Para buscar directorios ocultos, lo haremos con este comando y utilizando uno de los diccionarios que se encuentran en la ruta /usr/share/wordlists/dirbuster:
@@ -35,3 +47,10 @@ Podemos detectar subdominios con wfuzz de la siguiente forma:
 ```bash
 wfuzz -c --hc=404,200 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -H "Host: FUZZ.hunterzone.nyx" -u 192.168.0.40
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

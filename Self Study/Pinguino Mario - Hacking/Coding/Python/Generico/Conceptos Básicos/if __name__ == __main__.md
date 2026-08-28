@@ -1,3 +1,15 @@
+---
+title: "if __name__ == __main__"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La sentencia `if __name__ == "__main__":` en Python se utiliza principalmente para definir un bloque de código que se ejecutará solo cuando el script de Python se ejecute directamente, no cuando se importe como un módulo en otro script.
 
 Por ejemplo, si tienes un archivo llamado `mi_script.py` con el siguiente contenido:
@@ -18,3 +30,10 @@ Pero si importas `mi_script.py` en otro script, el bloque `else` se ejecutará y
 Tiene sentido usar esto incluso cuando solo tienes un archivo Python. Aunque es más comúnmente utilizado en programas que se componen de varios módulos o archivos, aún puede ser útil en un solo archivo por varias razones:
 
 **Claridad y organización:** Ayuda a estructurar tu código de manera más clara, especialmente si el archivo tiene funciones o clases definidas y también contiene código que deseas que se ejecute al ejecutar ese archivo directamente.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

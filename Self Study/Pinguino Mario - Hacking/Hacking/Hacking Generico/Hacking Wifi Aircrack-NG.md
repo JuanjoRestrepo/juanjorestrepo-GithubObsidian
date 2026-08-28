@@ -1,3 +1,15 @@
+---
+title: "Hacking Wifi Aircrack-NG"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será instalar aircrack-ng:
 ![[Pasted image 20230103115940.png]]
 Y ahora es necesario activar el modo monitor en nuestra interfaz de red, fijándonos en el nombre de la interfaz wifi:
@@ -44,3 +56,10 @@ Por último, para restablecer nuestra antena y quitar el modo monitor, lo haría
 ```bash
 sudo airmon-ng stop wlan0 # O el nombre de la interfaz que corresponda.
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

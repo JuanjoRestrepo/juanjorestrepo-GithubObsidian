@@ -1,3 +1,15 @@
+---
+title: "6 - API de Java - Paquete Java.lang"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La API de Java son las bibliotecas de clases que vienen predefinidas con el lenguaje java para que las podamos utilizar. 
 ![[Pasted image 20240307120057.png]]
 ### 2 Tipos de Clases en Java
@@ -82,3 +94,10 @@ Donde vemos que ya no nos sale el mismo error del principio y ahora sí podemos 
 ![[Pasted image 20240307121142.png]]
 O también podemos hacer que nos importe sólo la clase que queramos utilizar:
 ![[Pasted image 20240307121240.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

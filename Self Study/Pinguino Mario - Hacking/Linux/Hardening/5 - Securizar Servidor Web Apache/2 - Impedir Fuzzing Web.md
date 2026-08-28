@@ -1,3 +1,15 @@
+---
+title: "2 - Impedir Fuzzing Web"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Puedes usar el módulo **mod_evasive** para evitar ataques de fuerza bruta o fuzzing enviando un número excesivo de solicitudes en poco tiempo.
 ```bash
 sudo apt install libapache2-mod-evasive
@@ -31,3 +43,10 @@ De tal forma que si nosotros ahora hacemos fuzzing web, nuestra IP estará bloqu
 ![[Pasted image 20240909172945.png]]
 También podemos comprobar el correcto funcionamiento revisando los logs de apache `sudo tail -f /var/log/apache2/error.log` donde veremos que el módulo ha funcionado bien:
 ![[Pasted image 20240909173506.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

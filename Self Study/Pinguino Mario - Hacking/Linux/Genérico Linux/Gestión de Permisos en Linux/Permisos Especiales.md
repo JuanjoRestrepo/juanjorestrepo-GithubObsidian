@@ -1,3 +1,15 @@
+---
+title: "Permisos Especiales"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## SetUID
 Permite que un programa se ejecute con los privilegios del propietario del archivo, en lugar de los privilegios del usuario que lo está ejecutando. Esto es especialmente útil para programas que necesitan realizar tareas que requieren permisos elevados, como cambiar la contraseña de un usuario.
 
@@ -23,4 +35,9 @@ Pudiendo otorgarlo o quitarlo con el siguiente comando:
 sudo chmod +t /tmp
 ```
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

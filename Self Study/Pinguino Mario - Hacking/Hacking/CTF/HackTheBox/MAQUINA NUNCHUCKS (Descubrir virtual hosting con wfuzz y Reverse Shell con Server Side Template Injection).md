@@ -1,3 +1,15 @@
+---
+title: "MAQUINA NUNCHUCKS (Descubrir virtual hosting con wfuzz y Reverse Shell con Server Side Template Injection)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero es hacer el reconocimiento de puertos con nmap:
 ![[Pasted image 20230222131737.png]]
 Y ahora como siempre con nmap vamos a inspeccionar estos puertos abiertos:
@@ -73,3 +85,10 @@ Y ahora ya somos root:
 ![[Pasted image 20230222132408.png]]
 VÍDEO DE YOUTUBE:
 https://www.youtube.com/watch?v=Rvr4eBTecY8&t=17s
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

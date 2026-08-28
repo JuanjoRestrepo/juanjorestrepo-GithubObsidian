@@ -1,3 +1,15 @@
+---
+title: "Crear Diccionarios con Crunch y Cupp"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### Utilizando Crunch
 Podemos crear un diccionario utilizando las palabras que creamos que se pueden utilizar en una contraseña; y crunch nos lo irá combinando de todas las formas posibles, lo del 3 y 6 es irrelevante, se puede poner cualquier número:
 ![[Pasted image 20230104000500.png]]
@@ -20,3 +32,10 @@ Y luego también decimos si queremos que utilice números y símbolos aleatorios
 ![[Pasted image 20230107092013.png]]
 Ahora se quedará creando el diccionario y ya lo tendremos listo:
 ![[Pasted image 20230107092349.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

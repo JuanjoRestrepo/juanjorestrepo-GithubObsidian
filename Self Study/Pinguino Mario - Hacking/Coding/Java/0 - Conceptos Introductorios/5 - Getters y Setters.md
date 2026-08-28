@@ -1,3 +1,15 @@
+---
+title: "5 - Getters y Setters"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### MÉTODO GETTERS
 Un getter sirve para acceder a un atributo privado de una clase desde fuera de esa clase. En otras palabras, un getter proporciona un medio seguro y controlado para obtener el valor de un atributo privado.
 ```java
@@ -90,3 +102,10 @@ Aquí hay algunas razones por las cuales se utilizan los setters:
 4. **Flexibilidad**: Si necesitas realizar cambios en la forma en que se establece un atributo en el futuro, puedes hacerlo fácilmente actualizando el código dentro del setter, manteniendo al mismo tiempo el contrato de cómo se accede y se establece el atributo.
     
 5. **Mantenimiento del código**: Al utilizar setters en lugar de permitir el acceso directo a los atributos, se reduce la cantidad de lugares en el código donde se debe hacer cambios si alguna lógica relacionada con la modificación de los datos cambia en el futuro.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

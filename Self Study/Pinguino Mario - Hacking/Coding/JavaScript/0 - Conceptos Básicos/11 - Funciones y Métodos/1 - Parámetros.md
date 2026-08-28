@@ -1,3 +1,15 @@
+---
+title: "1 - Parámetros"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **Parámetros Básicos**
 Puedes definir una función con uno o más parámetros, y al llamar a la función, puedes pasar los argumentos correspondientes.
 ```javascript
@@ -127,3 +139,10 @@ const combinado = { ...objeto1, ...objeto2 };
 console.log(combinado); // Salida: { a: 1, b: 3, c: 4 }
 ```
 ![[Pasted image 20241014124327.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

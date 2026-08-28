@@ -1,3 +1,15 @@
+---
+title: "HERRAMIENTA BASH AUTOMATIZAR SNIFFING CON TCPDUMP"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo haríamos de la siguiente forma:
 ```bash
 #!/bin/bash
@@ -31,3 +43,10 @@ Levantamos el script:
 Y nos habrá generado un archivo .pcap compartido por la red con python, que si lo analizamos con wireshark podemos interceptar credenciales si la víctima se ha logueado con un protocolo vulnerable:
 ![[Pasted image 20231225114925.png]]
 ![[Pasted image 20231225114936.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,14 @@
+---
+title: "Paso 3 — Empezamos (Setup real)"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 ## 3.1 Inicializar proyecto
 
@@ -109,3 +120,7 @@ app.get("/health", (_req, res) => {
 export default app;
 ```
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

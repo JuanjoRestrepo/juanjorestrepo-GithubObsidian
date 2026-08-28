@@ -1,3 +1,15 @@
+---
+title: "MAQUINA VALIDATION (sql injection, Obtener registros, columnas y tablas de bases de datos desde burpsuite, Subir archivo PHP con SQL Injection)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Cómo siempre es saber si estamos ante un linux o un windows, donde veremos que se trata de un linux al ver el TTL:
 ![[Pasted image 20230421024534.png]]
 Ahora escaneamos los puertos abiertos:
@@ -60,3 +72,10 @@ Pegamos esta contraseña al loguearnos como root y vemos que es correcta y ya so
 ![[Pasted image 20230421024923.png]]
 Nos ubicamos dentro del directorio root y vemos que accedemos a la flag de root:
 ![[Pasted image 20230421024930.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

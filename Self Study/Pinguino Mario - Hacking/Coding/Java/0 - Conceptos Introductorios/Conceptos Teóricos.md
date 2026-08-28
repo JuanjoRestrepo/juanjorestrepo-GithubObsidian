@@ -1,3 +1,15 @@
+---
+title: "Conceptos Teóricos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Java, los conceptos de sobrecarga (overloading), sobrescritura (overriding) y redefinición de métodos son fundamentales en la programación orientada a objetos. Aquí tienes una explicación detallada de cada uno:
 ### COMPRENDER LA SOBRECARGA/SOBREESCRITURA/REDEFINICIÓN DE MÉTODOS
 ### 1. **Sobrecarga de Métodos**
@@ -205,3 +217,10 @@ Este diseño permite definir un comportamiento genérico en la clase abstracta (
 - **No se puede crear un objeto directamente de una clase abstracta**: No puedes hacer `new Animal()`.
 - **Se puede crear un objeto de una subclase concreta que extiende de la clase abstracta**: Puedes hacer `new Perro()` si `Perro` extiende `Animal` y proporciona implementaciones para todos los métodos abstractos.
 - **Los métodos concretos de la clase abstracta pueden ser usados por las subclases**: Métodos como `respirar`, que tienen una implementación en la clase abstracta `Animal`, pueden ser llamados directamente en las instancias de las subclases.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

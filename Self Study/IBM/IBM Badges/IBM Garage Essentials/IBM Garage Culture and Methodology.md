@@ -1,3 +1,15 @@
+---
+title: "IBM Garage Culture and Methodology"
+date: 2026-08-27
+tags:
+  - self-study
+  - data-science-engineering
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 The methodology of IBM Garage derives from a number of modern ways of working. It leverages concepts and techniques from Enterprise Design Thinking, Agile software development, Lean Startup, and DevOps.
 
 ![[Pasted image 20240624211816.png|200]]
@@ -105,4 +117,7 @@ We want to highlight some specific cultural practices that we believe are instru
 2. **Agility and Continuous Improvement:** Garage organizations deliver more consistently because they create a culture where **failure is embraced instead of feared.** that is viewed as a positive, and as an opportunity to learn and pivot towards a better outcome
 3. **Safety and Fun:** They are also human beings, with the same emotions, challenges, and struggles as everyone else. Creating a safe, fun work culture is vital for squad members to feel engaged and empowered to deliver their best work.
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Data Science & Engineering|Ciencia e ingeniería de datos]].
+- Criterio de producción: Preserva linaje, esquemas y calidad de datos; separa datos crudos, validados y listos para consumo antes de modelar o publicar.

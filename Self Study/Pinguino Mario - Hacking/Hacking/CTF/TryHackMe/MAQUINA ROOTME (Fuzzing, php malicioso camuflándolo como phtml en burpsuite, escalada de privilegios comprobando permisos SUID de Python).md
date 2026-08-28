@@ -1,3 +1,15 @@
+---
+title: "MAQUINA ROOTME (Fuzzing, php malicioso camuflándolo como phtml en burpsuite, escalada de privilegios comprobando permisos SUID de Python)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconococimientos de nmap y vemos el puerto 80 y 22 abiertos:
 ![[Pasted image 20230401011056.png]]
 Si vemos la web es esta:
@@ -33,3 +45,10 @@ Y lo ejecutamos para convertirnos en root:
 ![[Pasted image 20230401015812.png]]
 ![[Pasted image 20230401015823.png]]
 [[13 - Escalada de Privilegios con Python]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

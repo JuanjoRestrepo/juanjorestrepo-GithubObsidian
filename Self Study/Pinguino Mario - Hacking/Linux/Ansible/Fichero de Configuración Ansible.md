@@ -1,3 +1,15 @@
+---
+title: "Fichero de Configuración Ansible"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En este fichero podemos establecer los distintos hosts que queramos administrar de manera automatizada; pero tenemos que crear una carpeta llamada ansible dentro del directorio /etc; y ahí insertar el fichero hosts:
 ![[Pasted image 20230106080513.png]]
 Y ahora debemos añadir estas líneas, donde pondremos primero las IP de aquellos equipos que queramos administrar, y luego abajo ponemos para que siempre se utilice la última versión de Python:
@@ -12,3 +24,10 @@ También podemos lanzar un comando cualquiera utilizando el módulo shell, por e
 ![[Pasted image 20230106081238.png]]
 Y vemos que el fichero se creó correctamente en el servidor:
 ![[Pasted image 20230106081305.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

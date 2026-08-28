@@ -1,3 +1,15 @@
+---
+title: "MAQUINA TRICK"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los mismos reconocimientos de siempre:
 ![[Pasted image 20230215194055.png]]
 Como vemos que tiene abierto el puerto 80 vamos a entrar en la web y analizarlo con whatweb:
@@ -34,3 +46,10 @@ Le damos los permisos propios de una id_rsa:
 ![[Pasted image 20230215194340.png]]
 Y nos conectamos por ssh de esta manera utilizando la id_rsa:
 ![[Pasted image 20230215194347.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

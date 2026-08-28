@@ -1,3 +1,15 @@
+---
+title: "Scripts de Nmap"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El parámetro "--script" de Nmap se utiliza para especificar un conjunto de scripts que se ejecutarán durante un escaneo. 
 
 El parámetro "--script" puede tomar un solo script como argumento, o puede especificar varios scripts separados por comas. También se pueden utilizar comodines para seleccionar múltiples scripts a la vez. Por ejemplo, --script=http-* ejecutará todos los scripts relacionados con el protocolo HTTP. El uso de scripts puede aumentar significativamente la eficacia de un escaneo de Nmap, ya que permite a los usuarios detectar vulnerabilidades y recopilar información que de otra manera sería difícil de obtener.
@@ -54,3 +66,10 @@ Podemos también listar recursos compartidos con nmap usando el siguiente script
 nmap -p445 --script smb-enum-shares 192.168.0.48
 ```
 ![[Pasted image 20230727150238.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

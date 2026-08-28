@@ -1,3 +1,15 @@
+---
+title: "Prototype Pollution"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Utilizaremos este laboratorio:
 https://github.com/blabla1337/skf-labs/tree/master/nodeJs/Prototype-Pollution
 ![[Pasted image 20240523222345.png]]
@@ -31,3 +43,10 @@ Ahora para explotar la vulnerabilidad, inyectamos el siguiente payload:
 ![[Pasted image 20240523224107.png]]
 Enviamos la petición, y ahora somos admin:
 ![[Pasted image 20240523224132.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

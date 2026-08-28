@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BANK (Filtrar columnas con AWK y subir php malicioso para ganar acceso)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos los reconocimientos de siempre:
 ![[Pasted image 20221218205919.png]]
 Hacemos un whatweb:
@@ -69,3 +81,10 @@ Y recibimos la conexión:
 Y navegando por los directorios ya obtenemos la flag:
 ![[Pasted image 20221218210348.png]]
 Para escalar privilegios, hay un script de Python dentro del directorio /var que se llama emergency, que lo que hace es escalar privilegios, por tanto solo tendremos que ejecutarlo y ya seremos usuarios root:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

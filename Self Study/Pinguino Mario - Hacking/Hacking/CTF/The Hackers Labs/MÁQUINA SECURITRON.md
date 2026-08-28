@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA SECURITRON"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos un escaneo de puertos con nmap:
 ![[Pasted image 20241008090850.png]]
 En el puerto 80 vemos un chat, que tiene una especie de servicio de IA corriendo que tiene como titulo securitron.thl:
@@ -88,3 +100,10 @@ Pero tenemos que fijarnos en el path del crontab, donde vemos que pasa por `PATH
 ![[Pasted image 20241008121023.png]]
 Lo guardamos y al rato veremos que la bash ya puede ser ejecutada como root gracias a que se le activó el bit SUID:
 ![[Pasted image 20241008121209.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

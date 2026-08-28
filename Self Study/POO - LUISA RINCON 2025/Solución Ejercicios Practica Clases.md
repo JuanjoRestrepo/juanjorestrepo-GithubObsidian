@@ -1,9 +1,13 @@
 ---
+title: "Solución Ejercicios Practica Clases"
+date: 2026-08-27
 tags:
-  - POO
-  - OOP
-  - CPP
-fecha: 2025-07-17
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 # Ejercicio 1: Biblioteca
@@ -588,3 +592,7 @@ classDiagram
 
 # Siguiente
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

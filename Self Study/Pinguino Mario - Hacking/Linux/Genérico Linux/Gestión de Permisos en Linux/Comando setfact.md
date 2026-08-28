@@ -1,3 +1,15 @@
+---
+title: "Comando setfact"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El comando `setfacl` se utiliza para establecer listas de control de acceso (ACL). Las ACL permiten un control más detallado sobre los permisos de acceso a archivos y directorios en comparación con los permisos tradicionales de Unix.
 
 `setfacl` se utiliza para gestionar las Listas de Control de Acceso (ACL), que permiten definir permisos más detallados que los proporcionados por `chmod`.
@@ -31,3 +43,10 @@ Esto eliminará la entrada de ACL para el usuario especificado:
 ```bash
 setfacl -x u:usuario nombre_del_archivo
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

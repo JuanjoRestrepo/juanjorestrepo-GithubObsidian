@@ -1,3 +1,14 @@
+---
+title: "Paso 1 — Decisiones Arquitectónicas"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 ## 1.1 Base de datos: PostgreSQL vs MongoDB
 
@@ -103,3 +114,8 @@ BaseError
 Usaremos:
 - swagger-jsdoc
 - swagger-ui-express
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

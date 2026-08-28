@@ -1,3 +1,15 @@
+---
+title: "MAQUINA CYBERSPLOIT 2 (Mensajes ocultos con ROT47, acceso por SSH y escalada de privilegios con Docker)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El primer paso será ejecutar el arp-scan para detectar la máquina dentro de nuestra red: [[0 - Consideraciones Previas#DETECTAR EQUIPOS CONECTADOS A MI RED CON ARP-SCAN]]
 ![[Pasted image 20230322131430.png]]
 Vemos que el ttl es el de Linux, por lo que ya encontramos la máquina:
@@ -42,3 +54,10 @@ docker run -it -v /:/host/ --cap-add=ALL --security-opt apparmor=unconfined --se
 Una vez ejecutados estos comandos, nos convertirmos en usuarios root:
 ![[Pasted image 20230322212042.png]]
 ![[Pasted image 20230322212022.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

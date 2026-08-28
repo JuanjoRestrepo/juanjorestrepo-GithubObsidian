@@ -1,16 +1,13 @@
 ---
-title: "Bitácora Artemis II: De la Tierra a la Luna y el Regreso"
-date: 2026-04-14
+title: "Sin título"
+date: 2026-08-27
 tags:
-  - artemis
-  - espacio
-  - GNC
-  - reentrada
-  - telemetria
-  - diario
-  - Space
-  - NASA
-status: completado
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 # Diario de Misión: Artemis II (Cápsula "Integrity")
@@ -61,3 +58,8 @@ A los 5,400 pies, los paracaídas de frenado (drogue) se cortaron para dar paso 
 ### Referencias y Literatura
 - `[@NASA2026Artemis2_Updates]` - NASA Blogs. (2026). *Artemis II Flight Day 10: Live Re-Entry Updates*. Recuperado el 10 de Abril de 2026.
 - `[[Paper_Analisis_Termico_Orion.pdf]]` - *(Enlaza aquí los PDF técnicos sobre el escudo térmico y los algoritmos de control LQR utilizados en la nave).*
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

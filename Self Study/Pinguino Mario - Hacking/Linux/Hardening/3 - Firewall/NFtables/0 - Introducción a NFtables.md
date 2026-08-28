@@ -1,3 +1,15 @@
+---
+title: "0 - Introducción a NFtables"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El **firewall Nftables** es un sistema que permite gestionar reglas de filtrado de paquetes en Linux, reemplazando a iptables. Proporciona una interfaz unificada para diferentes tipos de filtrado (IPv4, IPv6, ARP, bridge, etc.) y es más eficiente que sus predecesores.
 
 ### **Arquitectura de Nftables**
@@ -61,3 +73,10 @@ Si después de eliminar las reglas y las cadenas quieres eliminar toda la tabla,
 nft delete table inet firewall
 ```
 ![[Pasted image 20240907102340.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

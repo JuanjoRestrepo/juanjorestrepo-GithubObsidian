@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA BIG PIVOTING"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En este escenario tenemos distintas máquinas conectadas entre ellas en un escenario de pivoting en red:
 ```bash
 sudo bash auto_deploy.sh inclusion.tar trust.tar upload.tar walkingcms.tar whereismywebshell.tar
@@ -182,3 +194,10 @@ Y ahora ya desde la última máquina lanzamos la conexión de chisel pasando por
 ```bash
 ./chisel client 30.30.30.2:333 R:9999:socks
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

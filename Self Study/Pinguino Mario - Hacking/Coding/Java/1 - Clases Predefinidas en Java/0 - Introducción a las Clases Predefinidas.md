@@ -1,3 +1,15 @@
+---
+title: "0 - Introducción a las Clases Predefinidas"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Java, las clases predefinidas son las clases que están incluidas en el núcleo del lenguaje y son proporcionadas por el propio entorno de ejecución Java (JRE - Java Runtime Environment). Estas clases se agrupan en varios paquetes y proporcionan funcionalidades esenciales que son ampliamente utilizadas en el desarrollo de aplicaciones Java. Las clases predefinidas se encuentran en el paquete `java.lang` y en otros paquetes como `java.util`, `java.io`, `java.math`, entre otros.
 
 Algunas de las clases predefinidas más comunes en Java son:
@@ -28,3 +40,10 @@ Algunas de las clases predefinidas más comunes en Java son:
     - La clase `Enum` es la base para las enumeraciones en Java, que permiten definir un conjunto fijo de valores constantes.
 
 Estas son solo algunas de las clases predefinidas en Java. El lenguaje proporciona una amplia variedad de clases para abordar diferentes aspectos del desarrollo de software, desde manipulación de cadenas y operaciones matemáticas hasta entrada/salida y manejo de excepciones.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

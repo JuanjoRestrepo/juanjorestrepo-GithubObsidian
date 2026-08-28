@@ -1,3 +1,15 @@
+---
+title: "MAQUINA DRIVER (Vulnerabilidad SCF Shell Command File para obtener hashes de credenciales de usuario de una impresora, crear recurso compartido con impacket-smbserver y evil-winrm para ganar acceso remoto una vez tengamos las credenciales)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos como siempre el primer reconocimiento con nmap:
 ![[Pasted image 20230312215957.png]]
 Vemos que tiene montado un servidor web, por tanto vamos a acceder y vemos que nos pide unas credenciales; y si probamos con admin/admin accederemos y veremos que se trata de una impresora por red:
@@ -61,5 +73,9 @@ Ahora que ya tenemos un nuevo usuario con permisos de administrador, vamos a con
 Y vemos que con este nuevo usuario podemos entrar dentro de la carpeta del Administrador y acceder a la flag de root:
 ![[Pasted image 20230314115214.png]]
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

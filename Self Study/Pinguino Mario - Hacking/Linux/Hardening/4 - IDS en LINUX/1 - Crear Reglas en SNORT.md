@@ -1,3 +1,15 @@
+---
+title: "1 - Crear Reglas en SNORT"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para crear reglas con snort tenemos que editar el archivo `/etc/snort/rules/local.rules`:
 ![[Pasted image 20240829234211.png]]
 Las reglas en Snort siguen un formato específico. Aquí hay un ejemplo básico de una regla de Snort:
@@ -29,3 +41,10 @@ Ahora desde otra máquina nos conectamos por SSH:
 ![[Pasted image 20240830000923.png]]
 Y si visualizamos el archivo `/var/log/auth.log` podremos ver nuestra alerta:
 ![[Pasted image 20240830001019.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

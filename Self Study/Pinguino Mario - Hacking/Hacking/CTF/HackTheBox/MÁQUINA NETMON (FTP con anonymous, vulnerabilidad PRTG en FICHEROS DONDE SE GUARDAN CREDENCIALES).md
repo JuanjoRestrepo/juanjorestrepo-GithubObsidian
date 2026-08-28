@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA NETMON (FTP con anonymous, vulnerabilidad PRTG en FICHEROS DONDE SE GUARDAN CREDENCIALES)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será hacer las comprobaciones de siempre, haciendo un ping y luego nmap:
 ![[Pasted image 20230329172412.png]]
 ![[Pasted image 20230329172415.png]]
@@ -30,3 +42,10 @@ Por tanto vamos a probarla en el servidor web que tiene la máquina, pero en la 
 Probamos las credenciales y entramos:
 ![[Pasted image 20230329172647.png]]
 ![[Pasted image 20230329172649.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,16 +1,15 @@
 ---
-Datum: 2024-02-22
+title: "DENN, WEIL, DA Y DESHALB"
+date: 2026-08-27
 tags:
-  - Aleman
-  - German
-  - Deutsch
-  - "#Connectores"
-  - "#Denn"
-  - "#Weil"
-  - "#Da"
-  - "#Deshalb"
-  - B1
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
+
 tags: #Deutsch 
 
 ## **¿Cuándo necesitamos estos conectores?**
@@ -127,3 +126,8 @@ La preposición '**TROTZ**' (**A PESAR**) tampoco tiene una posición “obligat
 - Ich gehe **trotz** des Regens spazieren.
 
 ![[Pasted image 20240222192012.png|700]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

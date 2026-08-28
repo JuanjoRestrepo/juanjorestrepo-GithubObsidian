@@ -1,3 +1,15 @@
+---
+title: "Glosario de Términos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **TTY** -> Una TTY en Linux es una interfaz que te permite interactuar con el sistema operativo a través de texto. Es decir, la TTY es la consola básica y directa de Linux, accesible sin entorno gráfico. 
 
 **Terminal** -> Una terminal, en cambio, es un programa que emula esa consola dentro de un entorno gráfico, como GNOME Terminal o Konsole.
@@ -19,3 +31,10 @@ Por ejemplo, podemos ver como sda o sdb son los discos duros y sda1 y sdb1 son p
 **ENCRIPTAR** -> Encriptar significa convertir información o datos de un formato legible en uno ilegible mediante un algoritmo criptográfico. Este proceso usa una clave para transformar el texto original (texto en claro) en un formato cifrado que solo puede ser leído de nuevo mediante un proceso inverso, conocido como descifrado, si se tiene la clave adecuada.
 
 **BASTIONADO** -> En el contexto de la informática y servidores, el término "bastionado" (o "bastionado") se refiere a un enfoque de seguridad en el que se utiliza un servidor o una máquina, conocida como "servidor bastión" o "bastion host", para proteger y controlar el acceso a una red interna.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

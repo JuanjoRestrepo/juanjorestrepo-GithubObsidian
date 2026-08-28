@@ -1,3 +1,15 @@
+---
+title: "MAQUINA ACCESS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20231126114645.png]]
 Y vemos que dentro del puerto 6666 hay un websocket, los cuales se utilizan a menudo en aplicaciones web en tiempo real, como chat, juegos y aplicaciones de transmisión de video. También se pueden utilizar en aplicaciones de escritorio y móviles, por lo que nos conectamos con el comando wscat:
@@ -57,3 +69,10 @@ Probamos en entrar por ssh y vemos que tenemos acceso:
 ![[Pasted image 20231126121754.png]]
 Y tenemos este otro binario siendo el usuario powerful:
 ![[Pasted image 20231126121854.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

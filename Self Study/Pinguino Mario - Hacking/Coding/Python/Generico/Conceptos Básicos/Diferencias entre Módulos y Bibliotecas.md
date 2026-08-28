@@ -1,3 +1,15 @@
+---
+title: "Diferencias entre Módulos y Bibliotecas"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 1. **Ejemplo de Módulo:**
 
 Supongamos que tienes un archivo llamado `operaciones.py` que contiene algunas funciones matemáticas básicas:
@@ -40,3 +52,10 @@ print("Año actual:", anio_actual)
 En este ejemplo, `datetime` es una biblioteca que contiene múltiples módulos, incluido `datetime`, que proporciona clases y funciones para trabajar con fechas y horas. Estamos importando el módulo `datetime` de la biblioteca `datetime` para obtener la fecha y hora actual, y luego accedemos a sus funciones y clases para obtener información específica sobre la fecha y la hora actual.
 
 En resumen, el primer ejemplo muestra un módulo (`operaciones.py`) que contiene funciones relacionadas, mientras que el segundo ejemplo muestra una biblioteca (`datetime`) que proporciona funcionalidades más amplias relacionadas con el manejo de fechas y horas en Python.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

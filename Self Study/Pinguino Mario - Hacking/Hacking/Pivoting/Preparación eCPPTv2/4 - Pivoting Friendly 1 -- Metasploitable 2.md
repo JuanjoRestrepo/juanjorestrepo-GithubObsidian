@@ -1,3 +1,15 @@
+---
+title: "4 - Pivoting Friendly 1 -- Metasploitable 2"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Ahora dentro de la máquina friendly 1 tengo que pasarme el chisel, primero compartiéndolo a través de un servidor http con python pasándo por el proxychains:
 ![[Pasted image 20230816161253.png]]
 ![[Pasted image 20230816161218.png]]
@@ -28,3 +40,10 @@ Y podemos incluso enviarnos una reverse shell y entablar conexión desde esta m�
 ![[Pasted image 20230822183909.png]]
 En esta máquina nos volvemos a bajar el chisel:
 ![[Pasted image 20230822184710.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

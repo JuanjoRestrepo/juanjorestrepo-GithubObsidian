@@ -1,3 +1,15 @@
+---
+title: "1 - Selección y Configuración del Hardware"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 IRQ -> Se trata de una señal que se envía a la CPU para que gestione una petición de hardware (teclado, ratón, etc...). Se muestra en /proc/interrupts.
 
 DMA -> El acceso directo a memoria permite a cierto tipo de componentes de una computadora acceder a la memoria del sistema para leer o escribir independientemente de la CPU. 
@@ -29,3 +41,10 @@ Para detectar los dispositivos conectados en Linux, podemos ejecutar el comando 
 **PARA VER PARTICIONES DE LOS DISCOS**
 Para ello tenemos que acceder al directorio /dev/disk; y aquí tendremos la carpeta by-label/ donde se encontrarán las particiones:
 ![[Pasted image 20230112025210.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

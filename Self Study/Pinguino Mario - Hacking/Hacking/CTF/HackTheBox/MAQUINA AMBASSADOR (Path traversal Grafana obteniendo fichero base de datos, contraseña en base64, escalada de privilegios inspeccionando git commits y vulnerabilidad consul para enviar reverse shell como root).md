@@ -1,3 +1,15 @@
+---
+title: "MAQUINA AMBASSADOR (Path traversal Grafana obteniendo fichero base de datos, contraseña en base64, escalada de privilegios inspeccionando git commits y vulnerabilidad consul para enviar reverse shell como root)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Empezamos haciendo un escaneo de nmap:
 ![[Pasted image 20230303022329.png]]
 Y estos son los servicios que corren por detrás de estos puertos:
@@ -60,4 +72,9 @@ Y ahora con netcat habremos recibido la conexión como el usuario root:
 ![[Pasted image 20230308075921.png]]
 ![[Pasted image 20230308075941.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,14 @@
+---
+title: "📊UNION vs UNION ALL"
+date: 2026-08-27
+tags:
+  - self-study
+  - data-science-engineering
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 # Diferencia entre `UNION` y `UNION ALL` en SQL Server
 
@@ -88,3 +99,8 @@ Para que funcionen, debes cumplir:
 > Si no te importa ver duplicados, usa siempre `UNION ALL`. Es significativamente más rápido en bases de datos grandes.
 
 #SQL #Database #SqlServer
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Data Science & Engineering|Ciencia e ingeniería de datos]].
+- Criterio de producción: Preserva linaje, esquemas y calidad de datos; separa datos crudos, validados y listos para consumo antes de modelar o publicar.

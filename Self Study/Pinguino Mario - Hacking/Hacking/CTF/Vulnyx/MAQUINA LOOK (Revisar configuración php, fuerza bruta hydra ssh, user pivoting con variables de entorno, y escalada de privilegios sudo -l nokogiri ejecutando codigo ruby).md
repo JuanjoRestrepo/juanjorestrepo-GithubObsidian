@@ -1,3 +1,15 @@
+---
+title: "MAQUINA LOOK (Revisar configuración php, fuerza bruta hydra ssh, user pivoting con variables de entorno, y escalada de privilegios sudo -l nokogiri ejecutando codigo ruby)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230720154118.png]]
 Y nos encontramos con una plantilla de apache:
@@ -47,4 +59,9 @@ Por tanto, si miramos en gtfobins como escalar privilegios con ruby, nos encontr
 Por tanto, ejecutamos el comando y deberíamos ser root:
 ![[Pasted image 20230722171614.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

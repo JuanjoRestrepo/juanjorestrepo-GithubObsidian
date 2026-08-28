@@ -1,3 +1,15 @@
+---
+title: "3 - CrowdSec"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 CrowdSec es una herramienta moderna de ciberseguridad basada en la detección y mitigación de comportamientos maliciosos. Funciona mediante el análisis de logs y eventos, y es capaz de bloquear IPs maliciosas, además de compartir esta información con una red colaborativa. Esta es su web donde debemos registrarnos:
 ![[Pasted image 20240905100018.png]]
 
@@ -34,3 +46,10 @@ Ahora si queremos configurar este escenario, editamos el siguiente archivo:
 ```bash
 sudo nano /etc/crowdsec/scenarios/ssh-bf.yaml
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA SIMPLE CTF (Vulnerabilidad SQLi CMS made simple con script de Python, ataque fuerza bruta con hydra y escalada de privilegios con sudo -l y con vim)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos un escaneo de nmap y encontramos estos puertos abiertos:
 ![[Pasted image 20230331115709.png]]
 ![[Pasted image 20230331115752.png]]
@@ -41,3 +53,10 @@ Damos  ENTER y ahora escribimos esto otro:
 ![[Pasted image 20230401005310.png]]
 Y ya somos usuarios root:
 ![[Pasted image 20230401005330.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

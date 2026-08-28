@@ -1,3 +1,15 @@
+---
+title: "8 - Manipular el PATH - Path Hijacking"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos escalar privilegios en Linux manipulando el path si vemos que la máquina ejecuta alguna herramienta, por ejemplo curl, ifconfig, etc. Por tanto podemos exportar una variable de entorno con un /bin/bash y luego cuando el sistema ejecute el ifconfig o curl se ejecutará el /bin/bash:
 
 [[MAQUINA KENOBI (Recursos compartidos SMBMAP, monturas con showmount, vulnerabilidad proFTPd para copiar el id_rsa a la montura en máquina loca, escalada privilegios manipular path)]]
@@ -24,3 +36,10 @@ Y ahora enviamos esto al path:
 ![[Pasted image 20230709113544.png]]
 Ahora ejecutamos el script como root pasándole el PATH:
 ![[Pasted image 20230709113505.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

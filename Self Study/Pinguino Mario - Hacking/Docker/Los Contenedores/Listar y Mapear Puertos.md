@@ -1,3 +1,15 @@
+---
+title: "Listar y Mapear Puertos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para ello, por ejemplo vamos a crear un contenedor de jenkins y acceder a varios contenedores desde el navegador. Cada contenedor tendrá un puerto diferente.
 
 Una vez que tengamos el contenedor de jenkins corriendo, si queremos acceder a él desde el navegador, tendremos que fijarnos en los puertos que se marcan en la siguiente captura (se está corriendo en el puerto 80:80):
@@ -18,5 +30,9 @@ También puedo crear otro contenedor y tener jenkins corriendo al mismo tiempo p
 
 ![[Pasted image 20221217110536.png]]
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

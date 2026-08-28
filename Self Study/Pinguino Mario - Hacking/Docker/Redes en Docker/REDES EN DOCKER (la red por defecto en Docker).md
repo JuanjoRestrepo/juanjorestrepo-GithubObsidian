@@ -1,3 +1,15 @@
+---
+title: "REDES EN DOCKER (la red por defecto en Docker)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Si utilizo el comando ip a | grep docker puedo ver la IP que tiene asignada Docker:
 ![[Pasted image 20221231201539.png]]
 Y si hago un ifconfig con mi equipo anfitrión veremos que la IP de mi tarjeta de red es diferente, a pesar de que tengo una interfaz de docker que sí muestra la misma IP:
@@ -90,3 +102,10 @@ Y ahora si miramos la actividad del puerto 80 de nuestra máquina anfitrión, ve
 Por tanto ahora si dentro del contenedor me creo un servidor web, veremos cómo podemos acceder al mismo desde nuestra máquina anfitrión con el localhost:
 ![[Pasted image 20230417085914.png]]
 ![[Pasted image 20230417085927.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

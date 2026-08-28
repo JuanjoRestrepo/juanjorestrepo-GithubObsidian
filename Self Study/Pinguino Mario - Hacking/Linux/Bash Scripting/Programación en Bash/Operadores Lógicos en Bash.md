@@ -1,3 +1,15 @@
+---
+title: "Operadores Lógicos en Bash"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### MAYOR, IGUAL O MENOR QUE OTRO DATO
 Vamos a ver el funcionamiento de los indicadores de igual, mayor o menor que otro dato en bash:
 ```bash
@@ -31,3 +43,10 @@ else
   echo "Ninguno de los archivos existe"
 fi
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

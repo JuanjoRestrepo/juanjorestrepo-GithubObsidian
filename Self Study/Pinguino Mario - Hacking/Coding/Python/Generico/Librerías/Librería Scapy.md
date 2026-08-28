@@ -1,3 +1,15 @@
+---
+title: "Librería Scapy"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Scapy es una librería poderosa de Python que permite manipular paquetes de red de manera sencilla. Puedes usarla para capturar, construir, enviar, recibir y analizar paquetes de red. A continuación te presento algunos usos básicos de Scapy. Lo primero será instalar winpcap para poder usar scapy sin problema:
 ```python
 https://npcap.com/
@@ -291,3 +303,10 @@ def dns_spoof(paquete):
 # Iniciar ARP spoofing y captura de paquetes DNS
 arp_spoof(objetivo_ip, gateway_ip)
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

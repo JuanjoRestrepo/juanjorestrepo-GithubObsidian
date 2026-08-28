@@ -1,3 +1,15 @@
+---
+title: "12 - Blind SQL injection with conditional responses"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Tenemos el siguiente laboratorio:
 
 Donde vemos que la respuesta esperable y normal es un welcome back:
@@ -46,3 +58,10 @@ En este punto, vamos probando hasta comprobar que la contraseña es igual a 20 c
 TrackingId=' UNION SELECT 'test' FROM users where username='administrator' AND LENGTH(password) = 20-- -
 ```
 ![[Pasted image 20240518104021.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

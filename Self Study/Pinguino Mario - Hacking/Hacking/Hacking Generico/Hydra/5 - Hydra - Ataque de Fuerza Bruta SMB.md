@@ -1,3 +1,15 @@
+---
+title: "5 - Hydra - Ataque de Fuerza Bruta SMB"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a utilizar la máquina windows 7 que ya tiene habilitado el login por smb:
 ![[Pasted image 20231105161016.png]]
 Vemos que desde Kali podemos iniciar sesión:
@@ -31,3 +43,10 @@ Y una vez hayamos enumerado el recurso compartido ya podremos acceder a él usan
 smbclient -U 'mario' //192.168.0.28/Users
 ```
 ![[Pasted image 20231105164156.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

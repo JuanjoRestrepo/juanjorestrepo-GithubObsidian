@@ -1,3 +1,15 @@
+---
+title: "10 - Arrays"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un array consiste en una estructura de datos que contiene una colección de valores del mismo tipo; y sirve para almacenar valores que normalmente tienen una relación entre sí.
 
 Esta sería la sintaxis básica donde creamos un array que contenga 5 elementos como máximo:
@@ -95,3 +107,10 @@ public class EjemploArrayList {
 }
 ```
 ![[Pasted image 20240520093440.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

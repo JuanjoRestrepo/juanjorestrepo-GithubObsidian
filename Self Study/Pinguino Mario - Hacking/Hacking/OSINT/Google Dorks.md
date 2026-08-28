@@ -1,3 +1,15 @@
+---
+title: "Google Dorks"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## SITE - MOSTRAR UN DETERMINADO DOMINIO
 Para forzar que sólo nos encuentre un determinado dominio, podemos poner site: dominio de la siguiente manera:
 ![[Pasted image 20230417072432.png]]
@@ -16,3 +28,10 @@ Por ejemplo si queremos filtrar por los dorks que sean de sql:
 ![[Pasted image 20230417074252.png]]
 Y si ponemos alguno de estos, podemos llegarnos a encontrar con credenciales de usuarios donde la base de datos ha sido expuesta:
 ![[Pasted image 20230417080430.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

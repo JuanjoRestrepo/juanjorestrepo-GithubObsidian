@@ -1,3 +1,15 @@
+---
+title: "5 - Objetos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Los objetos en JavaScript son una forma de almacenar colecciones de datos y más complejos entidades. Son estructuras de datos que permiten agrupar propiedades y métodos. Por ejemplo nos creamos el objeto persona y luego podemos acceder a cada una de sus propiedades:
 ```javascript
 const persona = {
@@ -61,3 +73,10 @@ const libro = {
 
 libro.mostrarInformacion(); // Título: JavaScript para Todos, Autor: Mario Álvarez
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

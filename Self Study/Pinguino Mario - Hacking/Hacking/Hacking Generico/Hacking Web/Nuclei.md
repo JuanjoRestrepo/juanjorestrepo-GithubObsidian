@@ -1,3 +1,15 @@
+---
+title: "Nuclei"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Nuclei es una herramienta poderosa para realizar escaneos de vulnerabilidades y reconocimiento en aplicaciones web. Es altamente personalizable y utiliza plantillas YAML para definir las reglas de escaneo.
 
 Por ejemplo, si buscamos por plantillas de lfi encontramos lo siguiente:
@@ -42,3 +54,10 @@ Si queremos que nuclei solo nos reporte vulnerabilidades críticas, podemos apli
 ```bash
 nuclei -u http://example.com -severity high,critical
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

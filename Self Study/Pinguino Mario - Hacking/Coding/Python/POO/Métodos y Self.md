@@ -1,3 +1,15 @@
+---
+title: "Métodos y Self"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## MÉTODOS (Las funciones que están dentro de la clase)
 
 Los métodos nos permiten definir funcionalidades para llamarlas desde las instancias. Es algo similar a una función. Por ejemplo ahora vamos a crear una clase que se llame gestion_archivos, y tenga dos métodos, uno de crear una carpeta y luego otro de listar archivos; y haremos la llamada a uno u otro método:
@@ -50,3 +62,10 @@ elif eleccion == 'restar':
 elif eleccion == 'multiplicar':
     calculo1.multiplicar()
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

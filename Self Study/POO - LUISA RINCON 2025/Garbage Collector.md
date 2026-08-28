@@ -1,9 +1,13 @@
 ---
+title: "Garbage Collector"
+date: 2026-08-27
 tags:
-  - POO
-  - OOP
-  - CPP
-fecha: 2025-07-17
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 En C++, el ==recolector de basura== (garbage collector o GC) no es una característica inherente como en otros lenguajes como Java o C#. 
@@ -23,5 +27,7 @@ Aunque existe soporte para la recolección de basura en el **estándar de C++, n
 - **Control:** C++ se centra en el control y rendimiento, y la gestión manual de memoria permite al programador optimizar el uso de recursos de forma precisa.
 - **Rendimiento:** La recolección de basura puede introducir *pausas inesperadas en la ejecución* del programa, lo que puede ser problemático en aplicaciones de tiempo real o de alto rendimiento. *El GC puede ser costoso en términos de rendimiento* y puede causar problemas de latencia
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

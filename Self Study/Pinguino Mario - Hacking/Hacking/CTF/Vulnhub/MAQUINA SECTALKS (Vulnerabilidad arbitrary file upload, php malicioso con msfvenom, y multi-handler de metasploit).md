@@ -1,3 +1,15 @@
+---
+title: "MAQUINA SECTALKS (Vulnerabilidad arbitrary file upload, php malicioso con msfvenom, y multi-handler de metasploit)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a comprobar que la máquina se encuentre dentro del mismo rango de red con arp-scan:
 ![[Pasted image 20230227123506.png]]
 Y ahora haremos un escaneo de nmap y vemos que sólo tiene abierto el puerto 80:
@@ -75,9 +87,9 @@ Tenemos que compilarlo para poder ejecutarlo con el comando gcc:
 ![[Pasted image 20230227134127.png]]
 Y lo ejecutamos:
 
-
-
-
-
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

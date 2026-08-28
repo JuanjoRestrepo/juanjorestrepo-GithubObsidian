@@ -1,3 +1,15 @@
+---
+title: "1 - Introducción Swing"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### 1. **Swing**
 
 **Swing** es una biblioteca de Java que proporciona un conjunto de componentes GUI (Graphical User Interface) para crear aplicaciones de escritorio. Swing es parte de Java Foundation Classes (JFC) y ofrece una serie de elementos como botones, cuadros de texto, tablas, y más, que permiten la creación de interfaces de usuario ricas y personalizables. Swing es independiente de la plataforma, lo que significa que las aplicaciones creadas con Swing tendrán el mismo aspecto y comportamiento en cualquier sistema operativo.
@@ -246,3 +258,9 @@ public class Main extends JFrame {
 ```
 ![[Pasted image 20240520095926.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

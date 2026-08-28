@@ -1,3 +1,15 @@
+---
+title: "2 - PODS en Kubernetes"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un pod es la unidad donde vamos a controlar los contenedores. En los pods puedo meter varios contenedores a la vez. 
 ## CREAR UN POD
 Vamos a crear un pod que contendrá un contenedor de Ubuntu, lo cual se hace a partir de un fichero yml que por ejemplo lo llamaremos app1.yml, pero debemos hacer que esté en ejecución, por lo que diremos que en su interior haya un bucle while:
@@ -32,3 +44,10 @@ Vamos a copiar un fichero de la máquina anfitrión al contenedor; y para ello l
 ![[Pasted image 20230123215027.png]]
 Y ahora si accedemos dentro del contenedor, nos encontramos con que se copió correctamente al directorio que le habíamos indicado, que era el /home:
 ![[Pasted image 20230123215248.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

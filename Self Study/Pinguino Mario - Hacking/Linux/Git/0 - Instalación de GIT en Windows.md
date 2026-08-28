@@ -1,3 +1,15 @@
+---
+title: "0 - Instalación de GIT en Windows"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Si usamos Windows, debemos instalar git bash para que sea compatible:
 ![[Pasted image 20230108121910.png]]
 Durante la instalación, se nos mostrará lo que se va a instalar:
@@ -27,3 +39,10 @@ Dentro de este directorio, si miramos su contenido podremos ver diferentes archi
 ![[Pasted image 20230108122434.png]]
 Cuando estemos creando un programa y vayamos a subirlo a github, va a haber un proceso que será el siguiente:
 ![[Pasted image 20230108122441.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Cambiar Dirección MAC con Macchanger"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La dirección MAC es un identificador único y permanente que se asigna a cada interfaz de red de un dispositivo. Es importante tener en cuenta que aunque la dirección MAC es única, se puede cambiar de forma temporal mediante software (como en este caso).
 
 Para cambiar la MAC de un dispositivo Linux tenemos una herramienta que se llama macchanger, por tanto su primer comando será este para saber cual es la MAC de mi equipo:
@@ -11,4 +23,9 @@ Y ahora si queremos recuperar la MAC por defecto, la permanente, utilizamos la o
 Por último, aquí tenemos el menú de ayuda para guiarnos por las opciones que trae esta herramienta:
 ![[Pasted image 20230119200411.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

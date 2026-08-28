@@ -1,3 +1,15 @@
+---
+title: "0 - IPTABLES - Configurar Firewall de Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 `iptables` es una herramienta de línea de comandos en Linux que se utiliza para configurar reglas de filtrado de paquetes en el firewall del kernel. Permite a los administradores definir qué tráfico de red está permitido o bloqueado en un sistema.
 
 En `iptables`, las **tablas** y **cadenas** son fundamentales para organizar y aplicar las reglas de firewall. Aquí te doy una breve explicación:
@@ -122,3 +134,10 @@ Y podríamos habilitar el tráfico por ssh sólo a una determinada dirección IP
 Y si accedemos desde esta dirección IP, sí podremos, ya que será la única IP que podrá acceder:
 
 ### TABLA FORWARD - SNAT y DNAT
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

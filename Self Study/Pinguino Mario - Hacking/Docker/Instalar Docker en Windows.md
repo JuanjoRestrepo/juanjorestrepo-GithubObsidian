@@ -1,3 +1,15 @@
+---
+title: "Instalar Docker en Windows"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será entrar en el siguiente enlace:
 ![[Pasted image 20240401210436.png]]
 Pero antes de proceder con la instalación, debemos de ejecutar el siguiente comando en powershell:
@@ -22,3 +34,10 @@ Y procedemos con al instalación hasta que haya terminado, donde se nos pedirá 
 ![[Pasted image 20240401214816.png]]
 En este punto vamos a poder ejecutar comandos de docker sin problema:
 ![[Pasted image 20240401214839.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

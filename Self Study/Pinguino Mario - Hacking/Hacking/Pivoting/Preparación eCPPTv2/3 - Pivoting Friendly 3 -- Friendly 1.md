@@ -1,3 +1,15 @@
+---
+title: "3 - Pivoting Friendly 3 -- Friendly 1"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Una vez dentro de la máquina friendly 3 vemos que tenemos la otra interfaz de red que se conecta con la siguiente máquina:
 ![[Pasted image 20230813134718.png]]
 Vamos a encontrar hosts que estén dentro de esa interfaz 10.10.10.5/24, por tanto creamos un script de bash que vaya haciendo un ping a cada uno de los host dentro del rango de red y los puertos abiertos:
@@ -83,5 +95,9 @@ Y ahora si escuchamos con netcat, habremos recibido la conexión al haber llamad
 ![[Pasted image 20230816160418.png]]
 ![[Pasted image 20230816160429.png]]
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

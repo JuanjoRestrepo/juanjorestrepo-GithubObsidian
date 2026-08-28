@@ -1,3 +1,15 @@
+---
+title: "MAQUINA DISCOVER"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo con nmap:
 ![[Pasted image 20231229113216.png]]
 Hay una herramienta llamada rpcclient que nos permite enumerar usuarios existentes dentro de la máquina víctima si vemos que tiene abierto el puerto 445:
@@ -88,3 +100,10 @@ chisel server --reverse -p 8888
 ```
 ![[Pasted image 20231229124010.png]]
 Y ahora en la máquina víctima, ejecutamos primero el comando para levantar el servicio y después aplicamos un operador lógico && para hacer el port forwarding con chisel:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA TOMGHOST"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20230816112121.png]]
 Vamos a ver la web que corre por el puerto 8080; y se trata de un tomcat donde vemos la versión:
@@ -61,3 +73,10 @@ Ejecutamos la primera y segunda línea y ya somos root:
 ![[Pasted image 20230816125200.png]]
 Con el comando find buscamos las flags de user y root y las encontramos:
 ![[Pasted image 20230816125323.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Utilizar colores dentro de un script de bash"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Así guardamos los colores en variables y luego los podemos utilizar:
 ```bash
 #!/bin/bash
@@ -160,3 +172,10 @@ sin_color='\033[0m'
 echo -e "${sin_color}Esta frase está en el color por defecto."
 ```
 ![[2023-07-18_11-10-19-5ce1d641b72cb7222036622dabb1a90a.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

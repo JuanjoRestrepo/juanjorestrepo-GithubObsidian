@@ -1,3 +1,15 @@
+---
+title: "2 - Personalización Ventanas con Swing"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Con las herencias de la clase JFrame podemos personalizar nuestras interfaces gráficas.
 
 Utilizaremos las clases object, component (con sus métodos setLocation y setBounds), container, windows (con su método seticonimage), frame (con su método setTitle).
@@ -142,3 +154,10 @@ class MarcoCentrado extends JFrame{
 ```
 Y ahora obtenemos el marco totalmente centrado:
 ![[Pasted image 20240325115303.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

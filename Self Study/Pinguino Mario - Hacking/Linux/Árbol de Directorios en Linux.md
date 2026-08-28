@@ -1,3 +1,15 @@
+---
+title: "Árbol de Directorios en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Así es el árbol de directorios de Linux:
 ![[Pasted image 20230528212311.png]]
 EXPLICACIÓN DE CADA UNO DE LOS DIRECTORIOS:
@@ -15,3 +27,10 @@ EXPLICACIÓN DE CADA UNO DE LOS DIRECTORIOS:
 - /tmp: Es un directorio utilizado para almacenar archivos temporales. Los programas y el sistema pueden utilizarlo para almacenar datos temporales que no necesitan persistir a largo plazo.
 - /usr: Contiene archivos y directorios relacionados con programas y datos del usuario. Aquí se encuentran los binarios, bibliotecas, archivos de encabezado y documentación relacionados con las aplicaciones instaladas en el sistema.
 - /var: Este directorio almacena archivos y datos variables, como registros del sistema (log files), correos electrónicos, archivos de bases de datos, archivos spool de impresión, entre otros.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA VULNVERSITY (Fuzzing, vulnerabilidad php malicioso y escalada de privilegios systemctl)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230702115218.png]]
 Vemos que por el puerto 3333 corre un servidor web, por lo que debemos ponerlo en el buscador y accedemos:
@@ -52,3 +64,10 @@ chmod u+s /bin/bash
 ```
 Y de esta forma le habremos cambiado los permisos a la bash, para poder ejecutar el comando bash -p y obtener una bash como root:
 ![[Pasted image 20230702204101.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

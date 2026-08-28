@@ -1,3 +1,15 @@
+---
+title: "1 - Variables, Operadores, Funciones, Estructuras de control y Manipulación del DOM"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # DESDE EL TERMINAL
 ### VARIABLES
 - **var** -> Funciona en todo el bloque de la función donde se declara. Si se declara fuera de una función, es global.
@@ -274,3 +286,10 @@ El DOM es la interfaz de programación para los documentos HTML y XML, y de la s
 ![[Pasted image 20240705095739.png]]
 Si hacemos un clic en el botón, veremos que el texto se cambia:
 ![[Pasted image 20240705095754.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

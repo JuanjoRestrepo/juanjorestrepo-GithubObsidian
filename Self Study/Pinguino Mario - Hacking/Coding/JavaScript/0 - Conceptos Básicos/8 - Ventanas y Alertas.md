@@ -1,3 +1,15 @@
+---
+title: "8 - Ventanas y Alertas"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En JavaScript, puedes usar ventanas y alertas para interactuar con los usuarios y mostrar información. Aquí hay un resumen de las funciones más comunes que puedes utilizar:
 **Alert**
 ```javascript
@@ -36,3 +48,10 @@ Además de las alertas estándar, puedes crear ventanas emergentes personalizada
 let nuevaVentana = window.open("https://www.ejemplo.com", "Ejemplo", "width=600,height=400");
 ```
 ![[Pasted image 20241014122030.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

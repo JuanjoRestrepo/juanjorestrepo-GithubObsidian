@@ -1,3 +1,15 @@
+---
+title: "MAQUINA SQUASHED"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconocimientos de nmap como siempre:
 ![[Pasted image 20230218103500.png]]
 Vemos que tiene el puerto 80, por lo que hacemos un whatweb para conocer cómo funciona dicha web:
@@ -49,4 +61,9 @@ Lo montamos:
 ![[Pasted image 20230218113157.png]]
 Y ahora desde la máquina víctima hacemos un curl de este servidor web y lo pipeamos con bash; mientras nos ponemos en escucha con netcat:
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

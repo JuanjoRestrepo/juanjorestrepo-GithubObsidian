@@ -1,12 +1,14 @@
 ---
+title: "Types of SQL Statements"
+date: 2026-08-27
 tags:
-  - Coursera
-  - SelfLearning
-  - Study
-  - SQL
-  - DataBases
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
-
 
 # DDL vs DML
 ---
@@ -103,3 +105,7 @@ to store the author’s telephone number, use the following statement:
 	- UPDATE: edits row or rows in a table
 	- DELETE: removes a row or rows of data from a table.
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

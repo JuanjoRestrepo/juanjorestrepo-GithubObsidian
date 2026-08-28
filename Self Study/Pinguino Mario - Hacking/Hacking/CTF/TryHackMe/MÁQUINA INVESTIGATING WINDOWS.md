@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA INVESTIGATING WINDOWS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Nos encuentra estos puertos abiertos:
 ![[Pasted image 20240416114426.png]]
 ![[Pasted image 20240416114444.png]]
@@ -18,3 +30,10 @@ Para enumerar más cuentas, usamos el comando net user:
 ![[Pasted image 20240416115637.png]]
 Si nos preguntan por las cuentas con permisos de administrador, usamos el comando net localgroup Administrators:
 ![[Pasted image 20240416115919.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

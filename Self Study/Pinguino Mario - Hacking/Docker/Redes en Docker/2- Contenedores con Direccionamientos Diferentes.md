@@ -1,3 +1,15 @@
+---
+title: "2- Contenedores con Direccionamientos Diferentes"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos crear una red y hacer que dos contenedores tengan un direccionamiento distinto de tal forma que no tengan conexión entre sí:
 ```bash
 docker network create --subnet 192.168.1.0/24 --gateway 192.168.1.1 red_nueva
@@ -23,3 +35,10 @@ Y si miramos la IP de este otro contenedor, será una dentro del redireccionamie
 ![[Pasted image 20240302103811.png]]
 Y si hacemos un ping desde este contenedor a alguna de las otras IPs del contenedor, no debería de haber conexión:
 ![[Pasted image 20240302103906.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

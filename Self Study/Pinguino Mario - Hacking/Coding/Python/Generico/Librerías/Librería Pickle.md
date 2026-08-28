@@ -1,3 +1,15 @@
+---
+title: "Librería Pickle"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La librería pickle de Python es una herramienta muy útil para la serialización y deserialización de objetos Python. La serialización se refiere al proceso de convertir un objeto Python en un flujo de bytes, que se puede guardar en un archivo o transmitir a través de una red (como haremos con sockets más adelante), mientras que la deserialización es el proceso inverso, que consiste en reconstruir el objeto Python a partir de los datos serializados.
 
 ```python
@@ -54,3 +66,10 @@ server_socket.close()
 ```
 Y vemos que se envió correctamente el mensaje:
 ![[Pasted image 20230429212105.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

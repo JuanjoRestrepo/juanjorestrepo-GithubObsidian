@@ -1,3 +1,15 @@
+---
+title: "Bypass Login Máquinas Linux - Saltando el Login desde el Grub en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El "**bypass**" del login mediante el GRUB implica acceder a un sistema Linux sin pasar por el proceso habitual de inicio de sesión. Esto se logra mediante la manipulación del cargador de arranque GRUB, que es responsable de iniciar el sistema operativo. Al realizar ciertos cambios en la configuración del GRUB, se puede ingresar directamente al sistema sin requerir credenciales de inicio de sesión, lo cual puede representar un riesgo de seguridad si no se protege adecuadamente.
 
 Podemos seguir el tutorial desde la siguiente web:
@@ -38,3 +50,10 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ![[Pasted image 20240317130401.png]]
 Ahora si intentamos acceder al grub, nos pedirá contraseña:
 ![[Pasted image 20240317130807.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

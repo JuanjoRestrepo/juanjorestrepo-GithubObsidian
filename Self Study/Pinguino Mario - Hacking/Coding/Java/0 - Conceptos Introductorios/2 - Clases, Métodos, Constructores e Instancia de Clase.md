@@ -1,3 +1,15 @@
+---
+title: "2 - Clases, Métodos, Constructores e Instancia de Clase"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 - Todo programa Java debe estar siempre dentro de una clase, donde cada clase tendrá una llave de apertura y otra de cierre:
  ![[Pasted image 20240305170850.png]]
 Y dentro escribimos una sentencia que va a imprimir el texto Hola; y al tratarse de una sentencia, siempre deben terminar con un punto y coma:
@@ -196,3 +208,9 @@ Este ejemplo muestra cómo se puede utilizar una clase abstracta en Java para de
 
 ---------------
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

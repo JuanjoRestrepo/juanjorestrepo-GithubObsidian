@@ -1,3 +1,15 @@
+---
+title: "2 - Copiar Archivos SCP con SSH"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## Para descargar archivos del servidor
 Lo haremos con scp utilizando este comando, primero poniendo la IP del servidor desde donde queremos bajarnos el archivo, y luego la ruta de nuestra máquina local donde lo queramos descargar:
 ![[Pasted image 20230119184948.png]]
@@ -15,3 +27,10 @@ Y con este comando lo subiríamos todo, ya que con el asterisco indicamos que su
 ![[Pasted image 20230119190046.png]]
 Y aquí están:
 ![[Pasted image 20230119190103.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

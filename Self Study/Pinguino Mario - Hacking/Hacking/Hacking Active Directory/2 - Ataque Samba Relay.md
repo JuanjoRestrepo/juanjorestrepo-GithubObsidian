@@ -1,3 +1,15 @@
+---
+title: "2 - Ataque Samba Relay"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para hacer este ataque, tenemos que tener el DC y la máquina cliente conectadas y bien configuradas dentro del dominio; por tanto una vez hecho esto vamos a abrir el Kali Linux y nos ubicamos a la ubicación de una herramienta que se llama responder:
 ![[Pasted image 20230129165605.png]]
 Lo ejecutamos con estos parámetros:
@@ -13,3 +25,9 @@ Y también podemos interceptar de misma forma el hash del usuario administrador 
 Y ahora con John the Ripper podemos tratar de hacer un ataque de fuerza bruta a cualquiera de estos hashes; y si la password es débil, va a funcionar correctamente como en este caso:[[John The Ripper]]
 ![[Pasted image 20230129171752.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

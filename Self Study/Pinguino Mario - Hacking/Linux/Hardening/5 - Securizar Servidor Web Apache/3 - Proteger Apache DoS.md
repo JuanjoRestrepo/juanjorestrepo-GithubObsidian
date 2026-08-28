@@ -1,3 +1,15 @@
+---
+title: "3 - Proteger Apache DoS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos antes de nada instalar la herramienta hping3 para hacer ataques DoS:
 ```bash
 sudo apt-get install hping3
@@ -37,3 +49,10 @@ También podemos activar un fail2ban:
 ```bash
 sudo apt-get install fail2ban
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

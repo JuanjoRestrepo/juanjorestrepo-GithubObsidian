@@ -1,3 +1,15 @@
+---
+title: "7 - Cardinalidad en Java"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Sin embargo, puedes implementar la cardinalidad en Java a través de la relación entre clases. Aquí tienes un ejemplo simple de una relación de uno a muchos entre dos clases. Supongamos que tienes una clase `Curso` y una clase `Estudiante`. Cada curso puede tener varios estudiantes, pero un estudiante solo puede pertenecer a un curso a la vez. Esto es una relación de uno a muchos.
 
 ------
@@ -109,3 +121,10 @@ public class Main {
     }
 }
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

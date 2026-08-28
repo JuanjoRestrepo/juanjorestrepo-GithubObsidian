@@ -1,3 +1,15 @@
+---
+title: "Modelo OSI"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Es un estandar para los protocolos de red que describe cómo los dispositivos de red se comunican entre sí a través de una red.
 
 ### CAPAS DEL MODELO OSI
@@ -32,3 +44,10 @@ Protocolos que funcionan en esta capa --> JPEG, MPEG, SSL/TLS o ASCII.
 - **Capa de aplicación-->** Esta capa proporciona servicios de red a las aplicaciones del usuario final, como correo electrónico y navegación web.
 
    En esta capa es donde actual los protocolos como FTP, HTTP, SMTP, DNS o SNMP.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

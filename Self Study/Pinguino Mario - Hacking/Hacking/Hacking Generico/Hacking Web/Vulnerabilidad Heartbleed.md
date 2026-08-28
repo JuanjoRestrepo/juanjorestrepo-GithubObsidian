@@ -1,3 +1,15 @@
+---
+title: "Vulnerabilidad Heartbleed"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Heartbleed es una vulnerabilidad en la biblioteca de código abierto OpenSSL. Este bug permite a un atacante leer la memoria de un servidor o un cliente, permitiéndole por ejemplo, conseguir las claves privadas SSL de un servidor. Por tanto para practicar con esta vulnerabilidad del certificado SSL vamos a montar un contenedor de docker para ello desde este repositorio:
 [vulhub/openssl/CVE-2014-0160 at master · vulhub/vulhub (github.com)](https://github.com/vulhub/vulhub/tree/master/openssl/CVE-2014-0160)
 ![[Pasted image 20230418205535.png]]
@@ -20,3 +32,10 @@ Vemos que nos sale siempre lo mismo, pero podemos filtrar esta salida con el com
 python3 ssltest.py 127.0.0.1 -p 8443 | grep -v '00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00'
 ```
 ![[Pasted image 20230418210847.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Comando Whatis, Whois, DNSrecon y robots.txt para Obtener Información de un Dominio"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos usar estos comandos para encontrar información de un dominio, por ejemplo la IP, donde veremos en el siguiente caso que hay 2 direcciones IP, pero es porque se utiliza un proxy (cloudflare):
 ![[Pasted image 20230726110838.png]]
 # ROBOTS.TXT
@@ -12,3 +24,10 @@ Su función principal es obtener información útil sobre la infraestructura de 
 Aunque también tenemos la web de dnsdumpster que es ideal para obtener una información más ordenada y detallada:
 https://dnsdumpster.com/
 ![[Pasted image 20230726112210.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

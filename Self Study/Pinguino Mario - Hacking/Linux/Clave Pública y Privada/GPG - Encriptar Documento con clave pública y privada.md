@@ -1,3 +1,15 @@
+---
+title: "GPG - Encriptar Documento con clave pública y privada"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El proceso general es el siguiente:
 
 1. Tú generas un par de claves (pública y privada) y mantienes la clave privada en secreto.
@@ -28,3 +40,10 @@ Y ya tendremos el archivo desencriptado:
 Por último, voy a listar las claves generadas de ambas máquinas con el comando gpg -k:
 ![[image15.png]]
 ![[image16.jpeg]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

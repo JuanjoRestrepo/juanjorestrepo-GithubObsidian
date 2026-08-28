@@ -1,3 +1,15 @@
+---
+title: "Servidor Proxy en Linux - SQUID"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un servidor proxy consiste en un programa o dispositivo que hace de intermediario en las peticiones de recursos que realiza un cliente a otro servidor, por tanto voy a instalar el servidor proxy en mi máquina Ubuntu Server con un sudo apt install squid:
 ![[Pasted image 20230125103929.png]]
 Activamos el servicio de squid y consultamos cual es el puerto que está utilizando:
@@ -73,3 +85,10 @@ Reiniciamos el servicio como siempre y veremos que ya no podemos navegar desde e
 ![[Pasted image 20230125120108.png]]
 Por último, si queremos comprobar los logs de accesos desde las máquinas clientes, podemos acceder al fichero /var/log/squid.conf (que lo habíamos configurado anteriormente), y vemos que podemos acceder a ellos e incluso vemos la dirección IP del equipo cliente con las acciones que hizo:
 ![[Pasted image 20230125120352.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

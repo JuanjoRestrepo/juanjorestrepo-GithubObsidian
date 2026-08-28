@@ -1,3 +1,15 @@
+---
+title: "Laboratorio 4 - DOM XSS in innerHTML sink using source location.search"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Tenemos el siguiente laboratorio:
 ![[Pasted image 20240523233150.png]]
 Escribimos información y vemos que no pasa nada:
@@ -24,3 +36,10 @@ El payload XSS (Cross-Site Scripting) que has proporcionado es un ejemplo básic
     - Cuando el navegador intenta cargar la imagen desde `src=1`, no puede encontrar un recurso válido, lo que provoca un error de carga.
     - Debido a este error, se dispara el manejador de eventos `onerror`.
     - El código dentro de `onerror` se ejecuta, en este caso, `alert(1)`, lo que provoca que el navegador muestre una alerta con el mensaje `1`.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

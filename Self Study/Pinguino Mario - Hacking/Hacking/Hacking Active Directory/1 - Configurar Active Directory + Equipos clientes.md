@@ -1,3 +1,15 @@
+---
+title: "1 - Configurar Active Directory + Equipos clientes"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a configurar un entorno de active directory donde habrá un domain controller y otro equipo windows vinculado al dominio. Por tanto lo primero será tener instalado un Windows Server:
 ![[Pasted image 20230126125541.png]]
 Lo primero podemos ponerle un nombre al domain controller:
@@ -57,4 +69,9 @@ Y vemos que se nos abre esta ventana de que funcionó correctamente y le podemos
 Y ahora por aquí iniciamos sesión:
 ![[Pasted image 20230129164729.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

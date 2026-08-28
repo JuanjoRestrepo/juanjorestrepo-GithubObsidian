@@ -1,3 +1,15 @@
+---
+title: "MAQUINA YEAR OF THE RABBIT (Fuzzing, desactivar javascript del firefox, ruta oculta con burpsuite, obtener credenciales comando strings, hydra y escalada privilegios binarios SUID y PKexec vulnerable)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos el reconocimiento con nmap:
 ![[Pasted image 20230622202314.png]]
 Empezamos analizando el puerto 80 y nos encontramos con una página de apache por defecto:
@@ -94,3 +106,10 @@ https://github.com/mebeim/CVE-2021-4034
 Seguimos las instrucciones para explotarlo, nos compartimos el exploit y ya somos root:
 ![[Pasted image 20230624103939.png]]
 ![[Pasted image 20230624103955.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

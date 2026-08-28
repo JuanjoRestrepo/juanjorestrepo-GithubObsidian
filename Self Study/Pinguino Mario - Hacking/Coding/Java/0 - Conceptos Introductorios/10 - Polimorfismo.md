@@ -1,3 +1,15 @@
+---
+title: "10 - Polimorfismo"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El polimorfismo permite que un objeto se comporte de diferentes maneras según el contexto en el que se utiliza. Esto se puede lograr mediante dos mecanismos principales en Java: sobrecarga de métodos y sobreescritura de métodos.
 
 ## SOBRECARGA DE MÉTODOS
@@ -71,4 +83,9 @@ public class Main {
 
 En este ejemplo, la clase Animal tiene un método hacerSonido() que está diseñado para hacer un sonido genérico de animal. Las clases Perro y Gato son subclases de Animal y cada una de ellas sobrescribe el método hacerSonido() con su propia implementación específica para el sonido de un perro y un gato, respectivamente. Cuando se llama al método hacerSonido() en objetos de tipo Perro y Gato, se ejecuta la implementación específica proporcionada por cada subclase. Esto demuestra el polimorfismo de sobreescritura de métodos en acción:
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

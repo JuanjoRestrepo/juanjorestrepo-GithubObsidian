@@ -1,3 +1,15 @@
+---
+title: "2 - Funciones dentro de Otras"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Las **funciones dentro de otras funciones** se llaman funciones anidadas o funciones internas. Esto es útil cuando deseas organizar tu código y crear funciones que solo tengan sentido dentro de una función externa.
 
 Las funciones dentro de otras funciones permiten una mejor organización del código y la creación de funciones que se centran en un contexto específico. Pueden acceder a las variables de la función externa, y su uso es común en situaciones donde se necesita encapsular lógica o crear funciones de manera dinámica.
@@ -95,3 +107,9 @@ console.log(triplicar(5)); // Salida: 15
 ```
 ![[Pasted image 20241014123712.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

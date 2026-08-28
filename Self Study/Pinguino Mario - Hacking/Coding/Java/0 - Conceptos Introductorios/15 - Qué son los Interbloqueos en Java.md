@@ -1,3 +1,15 @@
+---
+title: "15 - Qué son los Interbloqueos en Java"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un interbloqueo, también conocido como "deadlock" en inglés, es una situación en la programación concurrente donde dos o más hilos (threads) están bloqueados de forma indefinida, esperando que un recurso que nunca será liberado. Esto sucede cuando cada hilo está esperando por un recurso que está retenido por otro hilo, creando un ciclo de dependencia que impide que cualquiera de los hilos continúe su ejecución.
 
 En este caso, utilizaremos dos objetos de bloqueo y dos hilos. Cada hilo intentará adquirir ambos bloqueos en orden inverso, lo que puede causar un interbloqueo.
@@ -84,3 +96,10 @@ En este ejemplo:
 - Ninguno de los hilos puede continuar porque están esperando indefinidamente a que el otro libere el bloqueo que necesita, lo que causa un interbloqueo.
 
 Este ejemplo muestra claramente cómo puede ocurrir un interbloqueo cuando dos hilos intentan adquirir recursos en orden inverso, y es una buena base para entender y evitar interbloqueos en programas más complejos.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA LISTEN"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ```bash
 nmap -p- --open -sS -sC -sV --min-rate 5000 -n -vvv -Pn 192.168.0.43 -oN escaneo
@@ -53,3 +65,10 @@ bash -p
 ```
 Por lo que creamos un archivo llamado cp con el siguiente contenido para cambiarle el permiso a la bash:
 ![[Pasted image 20230929085600.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Reverse Shell - Bind Shell"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 - **Reverse Shell** --> Reverse Shell Es un método que le da a un atacante la posibilidad de conectarse a un equipo remoto desde un equipo propio. Es decir, se crea una conexión desde el equipo comprometido hacia el equipo del atacante. Esto se consigue ejecutando un programa malintencionado o una orden específica en el equipo remoto que establece la conexión inversa hacia el equipo del atacante, permitiéndole asumir el control del equipo remoto.
 
 -------------------------------------
@@ -14,3 +26,10 @@ Y desde la máquina atacante nos conectaremos:
 nc 192.168.0.44 443
 ```
 ![[Pasted image 20230726104103.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

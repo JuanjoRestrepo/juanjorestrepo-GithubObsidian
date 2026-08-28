@@ -1,3 +1,15 @@
+---
+title: "Diferencias Peticiones HTTP con HEAD, POST y GET"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Existen varias diferencias importantes entre las peticiones HTTP HEAD, POST y GET:
 
 1.  HEAD: La petición HTTP HEAD solicita solo los encabezados de la respuesta HTTP para una URL determinada y no el cuerpo de la respuesta. Esto se utiliza para verificar la existencia de un archivo sin descargar el archivo completo o para ver el estado de un servidor web sin descargar todo el contenido.
@@ -8,3 +20,10 @@ Existen varias diferencias importantes entre las peticiones HTTP HEAD, POST y GE
 
 
 En resumen, la principal diferencia entre estas peticiones HTTP radica en su objetivo. La petición HEAD se utiliza para obtener información sobre la respuesta HTTP, mientras que las peticiones GET y POST se utilizan para recuperar o enviar información de y hacia un servidor web. La petición GET se utiliza para solicitar información existente, mientras que la petición POST se utiliza para enviar información y crear nuevos recursos en un servidor web.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

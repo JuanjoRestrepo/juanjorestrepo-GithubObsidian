@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA VALENTINE (Vulnerabilidad heartbleed, descifrar en base64 y hexadecimal, conectarse por ssh con id_rsa)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Estos son los puertos abiertos y toda la información:
 ![[Pasted image 20230418211225.png]]
 Y este sería el whatweb:
@@ -59,3 +71,10 @@ Y con esta forma ya habremos obtenido acceso a la máquina:
 ![[Pasted image 20230418211627.png]]
 Y ya tenemos la flag:
 ![[Pasted image 20230418211636.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

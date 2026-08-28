@@ -1,3 +1,15 @@
+---
+title: "Ejecutar Servidor Nginx desde Docker"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Puedo tener un contenedor ejecutando un servidor nginx donde aloje un documento html y pueda acceder a él desde el navegador:
 
 En primer lugar, debemos ejecutar el contenedor nginx y dentro del Dockerfile, debemos enviar el archivo html a la siguiente ruta que se nos muestra desde el repositorio oficial de nginx en dockerhub. Debemos primero escribir donde esté nuestro fichero html a la ruta que se indica en la captura de pantalla:
@@ -29,3 +41,10 @@ docker run -d --network=host 73
 ```
 Y ahora desde el propio localhost de ubuntu tendremos el contenedor funcionando:
 ![[Pasted image 20240304133002.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "SET - Social Engineering Toolkit - Ataques de Phising"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para arrancar esta herramienta, escribimos setoolkit:
 ![[Pasted image 20230323031632.png]]
 Elegimos la opción 1:
@@ -15,3 +27,10 @@ Y ahora si accedemos desde otra máquina a la IP de Kali llegaremos al facebook 
 ![[Pasted image 20230323031713.png]]
 Si vemos que da error podemos refrescar la página:
 ![[Pasted image 20230323031719.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

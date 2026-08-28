@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BLUE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos los reconocimientos con nmap y nos encuentra todos estos puertos:
 ![[Pasted image 20230427114901.png]]
 Y con [[Crackmapexec]] podemos ver que estamos ante un windows 7 service pack 1, lo que lo hace muy vulnerable:
@@ -25,3 +37,9 @@ Y con el comando sessions -i 2 podemos seleccionar la sessión de meterpreter qu
 Y desde esta sesión de meterpreter podemos listar los procesos que corren en el sistema:
 ![[Pasted image 20230427123224.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

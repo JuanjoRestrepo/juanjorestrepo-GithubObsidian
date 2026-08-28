@@ -1,3 +1,15 @@
+---
+title: "12 - Excepciones"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Las excepciones se utilizan para manejar errores o situaciones excepcionales que pueden ocurrir durante la ejecución de un programa, como intentar acceder a un archivo que no existe, dividir por cero, entre otros.
 
 1. **`try`**: El bloque de código que puede lanzar una excepción se coloca dentro de un bloque `try`.
@@ -74,3 +86,10 @@ public class EjemploExcepcionPersonalizada {
     }
 }
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

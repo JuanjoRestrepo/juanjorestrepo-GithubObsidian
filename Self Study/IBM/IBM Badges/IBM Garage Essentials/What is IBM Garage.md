@@ -1,3 +1,15 @@
+---
+title: "What is IBM Garage"
+date: 2026-08-27
+tags:
+  - self-study
+  - data-science-engineering
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 IBM Garage is an expert methodology to accelerate business transformation. 
 
 It provokes imaginations, encourages the taking of manageable risks, helps teams get creative, and provides the tools, technologies, and expertise to streamline product development.
@@ -67,3 +79,7 @@ The IBM Garage method is the **repeatable approach to innovation.** It orchestra
 
 [Video Link](https://www.ibm.com/garage/experience/badges/page/courses/Essentials/topic/Essentials_Module/01/01/02/0)
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Data Science & Engineering|Ciencia e ingeniería de datos]].
+- Criterio de producción: Preserva linaje, esquemas y calidad de datos; separa datos crudos, validados y listos para consumo antes de modelar o publicar.

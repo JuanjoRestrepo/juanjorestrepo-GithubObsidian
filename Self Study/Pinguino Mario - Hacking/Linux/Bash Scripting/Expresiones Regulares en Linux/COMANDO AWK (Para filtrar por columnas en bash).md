@@ -1,3 +1,15 @@
+---
+title: "COMANDO AWK (Para filtrar por columnas en bash)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Sirve para filtrar por columnas en una cadena de texto:
 ![[Pasted image 20230515150335.png]]
 ## IMPRIMIR ÚLTIMA COLUMNA
@@ -14,3 +26,10 @@ También podemos establecer un delimitador para que nos cuente a partir de un de
 ![[Pasted image 20230724134758.png]]
 Otro ejemplo:
 ![[Pasted image 20230724135217.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

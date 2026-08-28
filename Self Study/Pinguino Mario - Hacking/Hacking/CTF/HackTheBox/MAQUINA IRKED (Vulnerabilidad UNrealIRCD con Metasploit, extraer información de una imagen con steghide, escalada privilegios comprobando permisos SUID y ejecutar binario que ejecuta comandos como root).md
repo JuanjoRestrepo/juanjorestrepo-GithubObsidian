@@ -1,3 +1,15 @@
+---
+title: "MAQUINA IRKED (Vulnerabilidad UNrealIRCD con Metasploit, extraer información de una imagen con steghide, escalada privilegios comprobando permisos SUID y ejecutar binario que ejecuta comandos como root)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos los escaneos de siempre con nmap y vemos algo de ircunreal, la cual es es una vulnerabilidad que podemos explotar con metasploit:
 ![[Pasted image 20230306210833.png]]
 Vemos algo de unrealIRCd, por lo que abrimos metasploit y buscamos por unrealirc y vemos que existe un exploit:
@@ -46,3 +58,10 @@ No obstante, si queremos convertirnos en usuario root directamente, podemos ejec
 ![[Pasted image 20230306214235.png]]
 Lo ejecutamos y ya nos convertimos en usuario root:
 ![[Pasted image 20230306214257.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

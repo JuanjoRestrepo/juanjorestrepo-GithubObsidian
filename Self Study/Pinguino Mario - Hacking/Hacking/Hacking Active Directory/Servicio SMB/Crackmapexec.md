@@ -1,3 +1,15 @@
+---
+title: "Crackmapexec"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 - [ ] CrackMapExec es una herramienta de seguridad de red que se utiliza para escanear redes, identificar hosts y realizar ataques de credenciales.
 ## Listar equipos disponibles de Windows con Crakmapexec
 ![[Pasted image 20230129172226.png]]
@@ -21,3 +33,10 @@ Pues ahora vamos a explotar la conexión winrm con una herramienta que se llama 
 Y ahora ejecutamos este comando para conectarnos por winrm:
 ![[Pasted image 20230509120516.png]]
 ![[Pasted image 20230509120520.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

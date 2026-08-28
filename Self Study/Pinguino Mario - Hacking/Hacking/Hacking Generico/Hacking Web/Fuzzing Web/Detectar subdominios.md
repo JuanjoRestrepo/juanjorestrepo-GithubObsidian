@@ -1,3 +1,15 @@
+---
+title: "Detectar subdominios"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos detectar subdominios con distintas herramientas como wfuzz o gobuster, aunque también incluso desde la web de phonebook.
 
 Los subdominios son parte de un dominio más grande y a menudo están configurados para apuntar a diferentes recursos de la red.
@@ -43,3 +55,10 @@ Esta es una herramienta de recolección pasiva; y podemos instalarla desde los r
 ![[Pasted image 20230416082146.png]]
 Le podemos pasar dominios:
 ![[Pasted image 20230416082432.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

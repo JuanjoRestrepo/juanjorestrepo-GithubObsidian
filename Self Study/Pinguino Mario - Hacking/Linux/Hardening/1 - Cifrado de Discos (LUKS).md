@@ -1,3 +1,15 @@
+---
+title: "1 - Cifrado de Discos (LUKS)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ### CREAR UN DISCO Y PARTICIÓN
 Podemos cifrar el disco de nuestro sistema Linux utilizando LUKS, de esta forma si un atacante accede a nuestro disco no podrá acceder a la información a no ser que introduzca la contraseña. Por lo que el primer paso será ejecutar el comando `lsblk` para ver los discos duros y particiones:
 ![[Pasted image 20240828143242.png]]
@@ -77,3 +89,10 @@ Ahora si queremos que cuando se reinicie el sistema se mantenga el acceso a la p
 Y ahora tras reiniciar el sistema, se nos pide que introduzcamos la contraseña para acceder al disco:
 ![[Pasted image 20240828152404.png]]
 Tras poner la contraseña 123123, que es la que hemos configurado, podremos acceder al sistema:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA STARTUP (Fuzzing, PHP malicioso, analizar pcap con wireshark y escalada de privilegios modificando script que ejecuta root para enviarnos una reverse shell)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap:
 ![[Pasted image 20230702122506.png]]
 Y esta es la página web:
@@ -41,3 +53,10 @@ Por tanto vamos a modificar el contenido del archivo print.sh y nos enviaremos u
 Esperamos un poco y cuando veamos el archivo llamado reporte ya habremos recibido la reverse shell como root:
 ![[Pasted image 20230702131138.png]]
 ![[Pasted image 20230702131010.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

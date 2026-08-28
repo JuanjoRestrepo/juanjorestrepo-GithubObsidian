@@ -1,3 +1,15 @@
+---
+title: "3 - Módulos del Kernel en el sistema operativo Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ¿Que son los módulos? Los módulos son partes del kernel que se pueden activar o desactivar para quitar o añadir funcionalidades, los cuales están muy vinculados con los driver. Por ejemplo módulo para la disquetera floppy.
 ![[Pasted image 20230115200036.png]]
 Tenemos estos comandos para gestionar los módulos:
@@ -23,3 +35,9 @@ Vamos a ver ahora cómo con el comando modprobe eliminamos un módulo y luego si
 Si quisiéramos cargar este módulo otra vez lo podríamos hacer con el comando modprobe igualmente:
 ![[Pasted image 20230115201656.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

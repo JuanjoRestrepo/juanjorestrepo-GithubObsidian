@@ -1,3 +1,15 @@
+---
+title: "Local File Inclussion (LFI)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta vulnerabilidad consiste en poder acceder a archivos internos de la máquina, donde funciona principalmente con webs hechas en php. Por ejemplo, si estamos ante una web o un CMS vulnerable como en el siguiente caso, podemos ver que si vemos un exploit de esta vulnerabilidad nos explican como acceder a los archivos internos de la máquina:
 ![[pasted image 0 3.png]]
 Vamos a examinar este exploit, donde vemos que se aprovecha de una vulnerabilidad de local file inclusion, lo que significa que podemos acceder a archivos locales de la máquina:
@@ -64,3 +76,10 @@ python3 php_filter_chain_generator.py --chain "<?php system('bash index.html.3')
 ![[Pasted image 20231129132323.png]]
 Y habremos recibido la conexión:
 ![[Pasted image 20231129132337.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

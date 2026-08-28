@@ -1,3 +1,15 @@
+---
+title: "Basic Git commands"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # Basic Git commands
 
 Git works by remembering the changes to your files as if it's taking snapshots of your file system.
@@ -90,3 +102,7 @@ As an aside, you can also remove the most recent commit by using the `git reset`
 git reset --hard HEAD^
 ```
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

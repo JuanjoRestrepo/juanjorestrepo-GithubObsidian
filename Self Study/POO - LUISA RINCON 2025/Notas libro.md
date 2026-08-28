@@ -1,11 +1,14 @@
 ---
+title: "Notas libro"
+date: 2026-08-27
 tags:
-  - POO
-  - OOP
-  - CPP
-fecha: 2025-07-15
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
-
 
 # _Do not use using namespace std;_
 
@@ -81,6 +84,7 @@ There are different ways of passing arguments to a function. Here, we will descr
 # _Mermaid Docs_
 [Mermaid Sintaxis and Symbols](https://mermaid.js.org/syntax/classDiagram.html)
 
-
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

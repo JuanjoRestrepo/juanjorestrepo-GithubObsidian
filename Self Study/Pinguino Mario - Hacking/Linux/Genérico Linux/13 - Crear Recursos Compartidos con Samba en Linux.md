@@ -1,3 +1,15 @@
+---
+title: "13 - Crear Recursos Compartidos con Samba en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En mi caso voy a instalar Samba en una máquina Ubuntu Server, donde primero dejaré los repositorios actualizados para asegurarme de instalar la última versión de Samba:
 ![[Pasted image 20230413130612.png]]
 Y ahora ya podemos instalar samba con el comando apt install samba:
@@ -43,3 +55,10 @@ Accedemos de igual forma a este recurso compartido y vemos que no tenemos permis
 Y lo mismo ocurre con el usuario mario, que tampoco puede escribir, ya que este recurso compartido es de sólo lectura:
 ![[Pasted image 20230413132243.png]]
 Por último, si quisiera que estos recursos compartidos puedas estar siempre disponible, podríamos utilizar el comando systemctl enable smb para que el servicio samba siempre esté disponible cuando arranquemos nuestro servidor Linux; y a continuación usaremos el comando systemctl restart smb para que se apliquen estos cambios.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

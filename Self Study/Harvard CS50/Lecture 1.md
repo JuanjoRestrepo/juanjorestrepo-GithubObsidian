@@ -1,3 +1,15 @@
+---
+title: "Lecture 1"
+date: 2026-08-27
+tags:
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # 1. Search
 ---
 It starts with a problem and we have an AI that we would like it to be able to search for solutions to some kind of problem.
@@ -45,4 +57,9 @@ Human language and look at the challenges that come about as a computer tries to
 Let's go!
 
 1. [[Search]]
-2. 
+2.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

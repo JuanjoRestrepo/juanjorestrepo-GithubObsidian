@@ -1,3 +1,15 @@
+---
+title: "MAQUINA ARMAGEDDON (Vulnerabilidad Drupal 7 con metasploit, escalada privilegios obteniendo credenciales de mysql y entrando y vulnerabilidad snap con dirty shock)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos los reconocimientos con nmap de siempre, y vemos que solo tiene abierto el puerto 22 y el 80:
 ![[Pasted image 20221218150603.png]]
 ![[Pasted image 20221218150606.png]]
@@ -51,3 +63,10 @@ Lo ejecutamos:
 Y nos convertimos en el usuario root:
 ![[Pasted image 20230209110317.png]]
 ![[Pasted image 20230209110337.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

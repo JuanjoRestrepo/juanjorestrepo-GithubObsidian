@@ -1,3 +1,15 @@
+---
+title: "0 - Introducción a Docker Compose"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 (Para crear aplicaciones multicontenedor)
 Docker compose sirve para que varios contenedores funcionen entre sí (por ejemplo un servidor con una base de datos) de una manera simplificada en un único archivo de texto, sin necesidad de hacer todo el proceso largo.
 
@@ -119,3 +131,10 @@ Lo haremos en donde pone links (ahí vinculamos un contenedor con otro):
 ![[Pasted image 20230101174002.png]]
 ## LIMITAR RECURSOS DE UN CONTENEDOR USANDO DOCKER-COMPOSE
 Por ejemplo para limitar el uso de memoria y cpu lo hago de la siguiente manera:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

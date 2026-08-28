@@ -1,3 +1,15 @@
+---
+title: "HERRAMIENTA BASH PARA CODIFICAR UN MENSAJE EN MUCHAS IMÁGENES A LA VEZ CON STEGHIDE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Este código lo que va a hacer es automatizar la inserción de un mensaje en varias imágenes a la vez utilizando la herramienta steghide:[[Esteganografía con Steghide, Foremost y BinWalk]]
 ```bash
 #!/bin/bash
@@ -33,3 +45,10 @@ También se puede dar el caso de tener muchas imágenes y sólo 1 o 2 tienen un 
 Introducimos el mensaje secreto en una de las imágenes y le ponemos contraseña:
 ![[Pasted image 20230613145112.png]]
 Haríamos así el código:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

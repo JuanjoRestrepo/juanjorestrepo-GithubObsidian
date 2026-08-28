@@ -1,3 +1,15 @@
+---
+title: "Crear modelos de aprendizaje automático en Microsoft Azure"
+date: 2026-08-27
+tags:
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## Programa del curso
 ---
 El aprendizaje automático es la base del modelado predictivo y la inteligencia artificial. En este curso, aprenderá los principios básicos del aprendizaje automático y cómo utilizar herramientas y marcos comunes para entrenar, evaluar y utilizar modelos de aprendizaje automático.
@@ -15,3 +27,7 @@ La clasificación es un tipo de aprendizaje automático utilizado para categoriz
 ---
 En este módulo, conocerá los principios fundamentales del aprendizaje profundo y aprenderá a crear modelos de redes neuronales profundas utilizando PyTorch o Tensorflow. También explorará el uso de redes neuronales convolucionales para crear modelos de clasificación de imágenes.
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

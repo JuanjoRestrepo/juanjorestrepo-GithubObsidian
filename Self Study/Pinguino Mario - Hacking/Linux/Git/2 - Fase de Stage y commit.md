@@ -1,3 +1,15 @@
+---
+title: "2 - Fase de Stage y commit"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En esta etapa de stage debemos primero abrir visual studio code desde el terminal en el mismo directorio, lo cual lo expresamos con el punto:
 ![[Pasted image 20230108122625.png]]
 Ahora se nos abrirá el editor de código, donde crearé un archivo python de prueba:
@@ -33,3 +45,10 @@ Y ahora para actualizar este cambio escribiremos git add archivo2.py, y así ya 
 ![[Pasted image 20230108123013.png]]
 Y ahora el siguiente paso será también hacer un commit para actualizar este cambio también:
 ![[Pasted image 20230108123023.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

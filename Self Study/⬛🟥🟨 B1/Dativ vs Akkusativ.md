@@ -1,10 +1,18 @@
 ---
-Datum: 2024-02-14
+title: "Dativ vs Akkusativ"
+date: 2026-08-27
 tags:
-  - B1
-  - Aleman
-  - Deutsch
-  - German
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
-tags: #Deutsch 
 
+tags: #Deutsch
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

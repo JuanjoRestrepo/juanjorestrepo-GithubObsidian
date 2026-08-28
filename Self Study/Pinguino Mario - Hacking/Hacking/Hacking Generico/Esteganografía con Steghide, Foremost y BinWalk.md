@@ -1,3 +1,15 @@
+---
+title: "Esteganografía con Steghide, Foremost y BinWalk"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La esteganografía sirve para ocultar información en algún archivo; y para ello vamos a utilizar una herramienta que se llama steghide, la cual podemos ejecutar el comando steghide --help para ver las distintas opciones que tiene:
 ![[Pasted image 20230224124914.png]]
 ### OCULTAR MENSAJE OCULTO EN IMAGEN CON STEGHIDE
@@ -20,3 +32,10 @@ Foremost es otra herramienta alternativa para realizar esteganografía; y se uti
 # BINWALK
 Binwalk es una herramienta de análisis de archivos binarios utilizada para identificar y extraer información incrustada dentro de ellos. Está diseñada principalmente para analizar imágenes de firmware y archivos empaquetados, como archivos ejecutables, imágenes de disco, firmware de dispositivos, archivos comprimidos, entre otros. Por ejemplo analizamos esta imagen y vemos que tiene varios archivos dentro:
 ![[Pasted image 20230601214121.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

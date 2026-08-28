@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BLUE (Vulnerabilidad eternal blue, explotación con script de Python y Metasploit - WINDOWS 7)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Empezamos con los reconocimientos de siempre, que veremos que estamos ante una máquina windows:
 ![[Pasted image 20230210030049.png]]
 ![[Pasted image 20230210030053.png]]
@@ -53,3 +65,10 @@ Y tras navegar por los directorios, encontramos la flag:
 Ahora vamos a conseguir una reverse shell más interactiva, ya que con esta no podemos ejecutar todos los comandos, por lo que vamos a elegir otro payload, por tanto salimos y ejecutamos el comando show payloads y probamos en seleccionar este:  
 Ahora ejecutamos el run y vemos que tenemos una shell de más calidad y que podemos ejecutar comandos del sistema:  
 Y vemos que ya somos el usuario administrador y por tanto también podemos acceder a la flag de root:
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

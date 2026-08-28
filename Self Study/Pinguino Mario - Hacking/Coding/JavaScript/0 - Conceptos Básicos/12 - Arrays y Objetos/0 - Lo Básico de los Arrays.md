@@ -1,3 +1,15 @@
+---
+title: "0 - Lo Básico de los Arrays"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un array es una estructura de datos que permite almacenar múltiples valores en una sola variable. Los elementos de un array pueden ser de cualquier tipo, incluidos números, cadenas, objetos y otros arrays.
 ```javascript
 let frutas = ['manzana', 'naranja', 'plátano'];
@@ -64,3 +76,10 @@ let frutasLargas = frutas.filter(fruta => fruta.length > 6);
 console.log(frutasLargas); // ['naranja', 'plátano']
 ```
 ![[Pasted image 20241015195923.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,14 @@
+---
+title: "Free Servers Options"
+date: 2026-08-27
+tags:
+  - self-study
+  - cloud-infrastructure
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 Si quieres algo "Gratis para siempre" (Literal)
 
@@ -17,3 +28,7 @@ Si quieres algo que puedas dejar encendido meses sin pagar nada:
 
 **Recomendación:** Si quieres aprender Terraform _hoy mismo_ sin esperar las 72h, vete por **Oracle Cloud (OCI)**. Es la que más recursos te da gratis. Si quieres aprender lo que más pide el mercado laboral, ve por **AWS**, pero prepárate para escribir mucho más código.
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Cloud & Infrastructure|Cloud e infraestructura]].
+- Criterio de producción: Trata la infraestructura como código: revisa el plan, controla versiones, evita secretos en el estado y usa ejecución reproducible.

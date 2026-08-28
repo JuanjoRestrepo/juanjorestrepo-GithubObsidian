@@ -1,11 +1,13 @@
 ---
-Datum: 2024-02-15
+title: "Modalverben"
+date: 2026-08-27
 tags:
-  - Aleman
-  - German
-  - Deutsch
-  - "#ModalVerben"
-  - B1
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 - ***wollen:*** want to.  
@@ -68,3 +70,8 @@ El [Präteritum](https://www.germanveryeasy.com/preterite) es mucho más comú
 | wir | durften | konnten | mochten | mussten | sollten | wollten |
 | ihr | durftet | konntet | mochtet | musstet | solltet | wolltet |
 | sie | durften | konnten | mochten | mussten | sollten | wollten |
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

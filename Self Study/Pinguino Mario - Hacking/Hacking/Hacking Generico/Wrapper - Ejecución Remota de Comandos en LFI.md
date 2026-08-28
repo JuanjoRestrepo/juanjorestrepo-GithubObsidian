@@ -1,3 +1,15 @@
+---
+title: "Wrapper - Ejecución Remota de Comandos en LFI"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En el contexto del Local File Inclusion (LFI), un "wrapper" se refiere a un esquema o protocolo utilizado en PHP para acceder a diferentes tipos de recursos, como archivos locales. PHP proporciona una funcionalidad llamada "URL wrappers" que permite acceder a recursos a través de diferentes protocolos, similares a cómo se accede a los archivos a través del protocolo "file://" en las URL.
 
 Cuando se realiza una solicitud a una URL que contiene un parámetro vulnerable a LFI, es posible que un atacante intente manipular ese parámetro utilizando un wrapper específico para acceder a archivos locales en el servidor. El uso de diferentes wrappers puede permitir al atacante superar las restricciones de acceso y leer archivos que normalmente no deberían estar disponibles públicamente.
@@ -83,3 +95,9 @@ python3 php_filter_chain_generator.py --chain "<?php system('bash index.html.3')
 Y habremos recibido la conexión:
 ![[Pasted image 20231129132337.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

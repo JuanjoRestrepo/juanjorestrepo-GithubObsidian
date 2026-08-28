@@ -1,3 +1,15 @@
+---
+title: "1 - Variables en React"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Una vez tengamos nuestro proyecto creado, el primer paso será crear nuestro primer componente que le llamaré PrimerComponente.tsx y después modificar el main.tsx para que quede de esta forma:
 ```javascript
 import React from 'react'
@@ -30,3 +42,10 @@ Donde veremos lo siguiente en el navegador:
 También podemos imprimir un array:
 ![[Pasted image 20240707233849.png]]
 ![[Pasted image 20240707233858.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

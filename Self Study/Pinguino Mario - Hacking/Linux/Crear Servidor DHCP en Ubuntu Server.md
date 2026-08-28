@@ -1,3 +1,15 @@
+---
+title: "Crear Servidor DHCP en Ubuntu Server"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # PREPARATIVOS
 Vamos a tener un servidor DHCP con Ubuntu Server donde va a tener como cliente una máquina Windows 11; los dos bajo una red interna de virtualbox:
 ![[Pasted image 20230115151052.png]]
@@ -95,3 +107,9 @@ Reiniciamos el servicio:
 Y ahora reiniciamos la máquina windows 7 para comprobar que se le haya asignado correctamente la IP 192.168.1.111:
 ![[Pasted image 20231101120551.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

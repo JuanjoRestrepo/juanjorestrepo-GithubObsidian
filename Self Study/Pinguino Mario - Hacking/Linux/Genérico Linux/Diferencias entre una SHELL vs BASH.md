@@ -1,3 +1,15 @@
+---
+title: "Diferencias entre una SHELL vs BASH"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Una "shell" y "bash" son términos relacionados pero no idénticos. Aquí hay una explicación simple de las diferencias:
 ### Shell
     
@@ -23,3 +35,10 @@ Ejemplo de una bash:
 - La shell es un término más amplio que incluye varios intérpretes de comandos, mientras que Bash es un tipo específico de shell.
 
 - Bash es ampliamente utilizado y es la shell predeterminada en muchos sistemas Unix.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

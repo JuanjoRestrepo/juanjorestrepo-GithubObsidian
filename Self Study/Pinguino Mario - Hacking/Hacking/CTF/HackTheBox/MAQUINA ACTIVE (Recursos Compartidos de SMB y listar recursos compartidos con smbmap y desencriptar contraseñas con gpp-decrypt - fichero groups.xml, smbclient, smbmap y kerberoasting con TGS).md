@@ -1,3 +1,15 @@
+---
+title: "MAQUINA ACTIVE (Recursos Compartidos de SMB y listar recursos compartidos con smbmap y desencriptar contraseñas con gpp-decrypt - fichero groups.xml, smbclient, smbmap y kerberoasting con TGS)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero que haremos serán los reconocimientos de siempre con nmap:
 ![[Pasted image 20230116154608.png]]
 Vemos que tiene abierto el puerto 445, que es el puerto smb, por tanto vamos a usar crackmapexec para analizar dicho puerto:
@@ -60,3 +72,9 @@ Una vez dentro obtenemos la flag de user:
 Y ahora la de root:
 ![[Pasted image 20230126110230.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

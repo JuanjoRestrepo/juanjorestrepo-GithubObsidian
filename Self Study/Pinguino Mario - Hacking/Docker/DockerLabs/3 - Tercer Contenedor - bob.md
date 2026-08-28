@@ -1,3 +1,15 @@
+---
+title: "3 - Tercer Contenedor - bob"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Este contenedor sólamente va a tener el protocolo FTP habilitado, pero podremos entrar como el usuario bob debido a que su contraseña será password1 (vulnerable a fuerza bruta) y en su interior habrá un script llamado autorun.sh, el cual se estará ejecutando con crontab de forma automatizada. Por tanto, como atacantes, lo que debemos de hacer es sustituir el código de ese archivo e insertar una reverse shell para adquirir intrusión al servidor:
 
 ---------------
@@ -94,4 +106,9 @@ Y vemos que al momento de ejecutarlo, se genera dicho archivo con la hora:
 Ahora debemos de hacer como propietario de grupo de este archivo al usuario FTP, para que el usuario anonymous lo pueda modificar, así como establecer los permisos correctos para los grupos:
 ![[Pasted image 20240320121228.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

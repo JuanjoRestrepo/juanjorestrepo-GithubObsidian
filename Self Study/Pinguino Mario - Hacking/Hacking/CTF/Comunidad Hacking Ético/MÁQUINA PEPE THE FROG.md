@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA PEPE THE FROG"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Encontramos la máquina con arp-scan:
 ![[Pasted image 20230725094536.png]]
 La máquina nos pedirá unas credenciales para bootearla, las cuales son las siguientes:
@@ -24,5 +36,9 @@ Probamos en entrar vía ssh y ya estamos dentro:
 Si ejecutamos el comando ls -la vemos un archivo oculto llamado .bash_none extraño, y ahí tenemos la flag de root:
 ![[Pasted image 20230725101333.png]]
 
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

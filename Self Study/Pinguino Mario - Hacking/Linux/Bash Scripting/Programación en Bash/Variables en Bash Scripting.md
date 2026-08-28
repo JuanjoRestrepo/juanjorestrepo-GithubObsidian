@@ -1,3 +1,15 @@
+---
+title: "Variables en Bash Scripting"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Una variable es un espacio de almacenamiento en la memoria del ordenador que se utiliza para almacenar un valor. Las variables se utilizan para almacenar información que puede cambiar durante la ejecución de un programa.
 
 --------------------
@@ -46,3 +58,10 @@ echo $nombre
 La principal diferencia entre las variables de entorno y las variables normales es su alcance. Las variables de entorno están disponibles para todos los procesos que se ejecutan en el sistema, mientras que las variables normales solo están disponibles para el proceso en el que se definen.
 
 Otra diferencia importante es que las variables de entorno se heredan por los procesos secundarios, mientras que las variables normales no. Esto significa que si un proceso define una variable de entorno, esa variable también estará disponible para todos los procesos secundarios que genere.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Nmap con Python"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para conocer todos los equipos conectados dentro de mi red utilizando nmap con Python. Para ello tenemos que importar la librería de nmap:
 ```python
 pip install python-nmap
@@ -38,3 +50,10 @@ print(scanner[ip].all_protocols()) # Muestra el protocolo que está utilizando.
 print("Puertos abiertos: ", scanner[ip]["tcp"].keys()) # Para saber los puertos abiertos.
 ```
 ![[Pasted image 20221217085231.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

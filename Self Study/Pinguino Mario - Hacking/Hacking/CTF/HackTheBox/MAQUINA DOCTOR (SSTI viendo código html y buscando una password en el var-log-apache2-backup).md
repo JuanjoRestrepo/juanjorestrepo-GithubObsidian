@@ -1,3 +1,15 @@
+---
+title: "MAQUINA DOCTOR (SSTI viendo código html y buscando una password en el var-log-apache2-backup)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será hacer los reconocimientos de siempre:
 ![[Pasted image 20230222130856.png]]
 ![[Pasted image 20230222130915.png]]
@@ -45,3 +57,10 @@ Ahora ejecutamos el comando para obtener una pseudo-consola y listo:
 ![[Pasted image 20230222131325.png]]
 Y ya tenemos la flag:
 ![[Pasted image 20230222131333.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

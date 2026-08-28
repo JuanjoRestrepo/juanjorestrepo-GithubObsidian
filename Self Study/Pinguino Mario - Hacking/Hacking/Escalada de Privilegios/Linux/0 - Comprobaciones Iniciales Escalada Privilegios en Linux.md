@@ -1,3 +1,15 @@
+---
+title: "0 - Comprobaciones Iniciales Escalada Privilegios en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **COMPROBACIÓN 1**
 Hay una página web que nos muestra todo un listado de los binarios SUID explotables, la cual es la siguiente:
 ```bash
@@ -35,3 +47,10 @@ Ver si tenemos el poder de hacer un append a un script para añadir código que 
 ![[Pasted image 20230128140529.png]]
 Por tanto hacemos un append de esta manera, donde esto se añadirá al final del script:
 ![[Pasted image 20230128140537.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

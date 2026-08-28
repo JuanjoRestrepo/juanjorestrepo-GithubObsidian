@@ -1,3 +1,15 @@
+---
+title: "Comando Grep en Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Con este comando podemos hacer búsquedas, encontrando líneas donde se encuentra el patrón que estamos buscando, por ejemplo vamos a buscar el nombre Mario dentro del fichero /etc/passwd:
 ![[Pasted image 20231119181828.png]]
 Pero también podemos hacer una búsqueda donde queramos encontrar una cosa o bien otra, por tanto utilizaremos la opción grep -E; y por ejemplo diremos que quiero que me encuentre o bien el nombre Mario o bien el nombre usbmux:
@@ -18,3 +30,10 @@ También podemos saber en cuántas líneas se repite un patrón utilizando la op
 ![[Pasted image 20230128171531.png]]
 Vemos otro ejemplo:
 ![[Pasted image 20231119182403.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

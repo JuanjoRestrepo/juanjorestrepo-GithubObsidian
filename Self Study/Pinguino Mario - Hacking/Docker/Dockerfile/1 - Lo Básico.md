@@ -1,3 +1,15 @@
+---
+title: "1 - Lo Básico"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## CREAR NUESTRA PROPIA IMAGEN DE DOCKER
 
 Nos ubicamos en la carpeta donde vayamos a trabajar con la imagen, por ejemplo voy a crear un directorio llamado docker-images.
@@ -111,3 +123,10 @@ Veremos que tengo varios archivos y uno de ellos se llama ignorar, el cual será
 Ahora vamos a crear la imagen y al ejecutar un contenedor veremos como se copiaron todos los archivos excepto el que indicamos que se ignore:
 
 ![[Pasted image 20221217105918.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BLOCKY (Leer texto en archivos binario con el comando strings y conectarnos por SSH, además de escalar privilegios usando la misma contraseña con el comando sudo su)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será hacer el reconocimiento de siempre, donde veremos que se trata de una máquina Linux y tiene abierto el puerto ftp, ssh, el puerto 80 y el de MInecraft:
 ![[Pasted image 20230312011919.png]]
 ![[Pasted image 20230312012108.png]]
@@ -40,3 +52,10 @@ Una vez dentro, podemos probar en escalar nuestros privilegios con el comando su
 ![[Pasted image 20230312014824.png]]
 Y efectivamente ha funcionado y ya tenemos acceso a la flag de root:
 ![[Pasted image 20230312014903.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "18 - Comando curl"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 `curl` es una herramienta de línea de comandos que se utiliza para realizar solicitudes de transferencia de datos a través de diversos protocolos de red. Su nombre es una abreviatura de "Client for URLs" (Cliente para URLs). La función principal de `curl` es transferir datos con URL:
 
 Algunos de los protocolos que `curl` admite incluyen:
@@ -29,3 +41,10 @@ Podemos comprobar si una petición se ha llevado correctamente o no, utilizando 
 curl -s -o /dev/null -w "%{http_code}\n" https://www.google.com/
 ```
 ![[Pasted image 20231119174930.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

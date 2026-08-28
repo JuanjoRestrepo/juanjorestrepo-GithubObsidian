@@ -1,3 +1,15 @@
+---
+title: "Pivoting con Metasploit Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## CONFIGURACIÓN LABORATORIO
 Lo primero será ir a la parte de herramientas y Administrador de red: 
 ![[Pasted image 20230717133814.png]]
@@ -63,3 +75,9 @@ Vamos a suponer que queremos llegar al puerto 21, por lo que tendríamos que hac
 portfwd add -l 5000 -p 80 -r 10.10.10.5
 ```
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

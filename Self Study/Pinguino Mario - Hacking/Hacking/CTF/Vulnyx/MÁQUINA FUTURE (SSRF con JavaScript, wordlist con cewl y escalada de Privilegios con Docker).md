@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA FUTURE (SSRF con JavaScript, wordlist con cewl y escalada de Privilegios con Docker)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo con nmap:
 ![[Pasted image 20240329113006.png]]
 En este escaneo vemos un dominio que lo añadiremos al archivo /hosts:
@@ -119,3 +131,10 @@ Si queremos pasar a root, simplemente podemos cambiarle el permiso a la bash y d
 chmod u+s /bin/bash
 ```
 ![[Pasted image 20240329152716.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

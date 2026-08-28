@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA RETURN (Conexión SMB utilizando Crackmapexec y conexión remota con evil-winrm)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será hacer un PING para comprobar si estamos ante una máquina Windows o Linux fijándonos en el TTL, que en este caso estamos ante un Windows porque su TTL es 127:
 ![[Pasted image 20230509120323.png]]
 Ahora, tras hacer el escaneo de puertos con nmap, vemos que todos estos están abiertos:
@@ -29,3 +41,10 @@ Ahora si vamos al escritorio de la máquina víctima, tenemos un bloc de notas:
 ![[Pasted image 20230509120528.png]]
 Para leerla usamos el comando type, similar al comando cat de linux:
 ![[Pasted image 20230509120537.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BROOKLYN NINE NINE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap:
 ![[Pasted image 20230705123221.png]]
 Lo primero será ver la página web que corre detrás del puerto 80, pero si hacemos fuzzing o cualquier otra comprobación, no encontramos nada:
@@ -21,3 +33,10 @@ Por tanto ejecutamos el comando less sobre la flag de root y vemos su contenido:
 sudo /usr/bin/less /root/root.txt
 ```
 ![[Pasted image 20230705122733.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

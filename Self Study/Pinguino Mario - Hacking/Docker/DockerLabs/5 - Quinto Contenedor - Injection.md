@@ -1,3 +1,14 @@
+---
+title: "5 - Quinto Contenedor - Injection"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 La idea será de esta máquina vulnerable es que cuente con los puertos 22 y 80 abiertos. De tal forma que en la página web haya un formulario de login donde se tenga que insertar un usuario y contraseña. Si la contraseña es correcta, se mostrará un mensaje por pantalla diciendo que el usuario con la contraseña es correcto. Por tanto, este formulario será vulnerable a una inyección SQL básica donde se podrá ver todos los usuarios registrados en la base de datos.
 
@@ -420,3 +431,10 @@ Usándolo de la siguiente forma:
 ```bash
 bash suBF.sh -u root -w top12000.txt -t 0.5
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "Hashcat - Hacking de Hashes"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## PREPARATIVOS
 Lo primero será cifrar una contraseña de prueba en el formato que queramos, por ejemplo en nuestro caso utilizaremos md5 en esta web:
 ```
@@ -29,3 +41,10 @@ Para utilizar la herramienta hashcat, debemos de indicarle el tipo de hash a des
 Por ejemplo vamos a pasarle un hash en md5:
 ![[Pasted image 20230124161847.png]]
 Por tanto, sabiendo esto ya podemos utilizarlo en la herramienta hashcat.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

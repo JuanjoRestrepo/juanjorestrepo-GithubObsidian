@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BADBYTE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap y vemos que el puerto 22 está abierto pero además en el puerto 30024 está corriendo un servicio ftp:
 ![[Pasted image 20230626194412.png]]
 Y podemos acceder vía FTP como anonymous, y nos encontramos además con un id_rsa:
@@ -55,6 +67,9 @@ Una vez dentro, tras una búsqueda nos encontramos con un archivo llamado /var/l
 ![[Pasted image 20230629202834.png]]
 ![[Pasted image 20230629202820.png]]
 
-
-
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

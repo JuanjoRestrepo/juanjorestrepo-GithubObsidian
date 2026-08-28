@@ -1,4 +1,15 @@
-  
+---
+title: "Librería OS"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El módulo `os` en Python proporciona una interfaz para trabajar con el sistema operativo, permitiendo realizar diversas operaciones relacionadas con archivos, directorios, procesos, variables de entorno, y más. Sin embargo, debido a la cantidad de contenido que tiene el módulo `os`, no es práctico mostrar todo su contenido aquí. Pero puedo darte una visión general de algunas de las funciones y constantes más comunes disponibles en el módulo `os`.
 ## OBTENER RUTA ABSOLUTA DE UN ARCHIVO
 ```python
@@ -33,3 +44,10 @@ print("Variable de entorno para el directorio de inicio del usuario:", os.path.e
 print("Directorio de inicio del usuario:", os.path.expanduser('~'))  # Directorio de inicio del usuario
 ```
 El módulo `os` contiene muchas más funciones y constantes útiles que puedes explorar en la documentación oficial de Python o mediante la función `help(os)` en un entorno interactivo de Python.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

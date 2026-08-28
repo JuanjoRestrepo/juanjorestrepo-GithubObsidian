@@ -1,3 +1,15 @@
+---
+title: "TMUX"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **Iniciar una sesión de tmux:** Para comenzar, abre una terminal y simplemente escribe `tmux` y presiona Enter. Esto iniciará una nueva sesión de tmux.
 
 **Paneles:** Una sesión de tmux se compone de ventanas y paneles. Puedes dividir una ventana en varios paneles horizontales o verticales. Aquí tienes algunos atajos para trabajar con paneles:
@@ -53,3 +65,10 @@
     - Salir de tmux (cerrar sesión): `Ctrl+b` seguido de `d`.
     
     - El atajo de teclado para activar la pantalla completa en Tmux es `prefix + z`, El "prefix" por defecto en Tmux es `Ctrl + b`, por lo que tendrías que presionar `Ctrl + b` seguido de `z` para activar la pantalla completa.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA PACHARÁN"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap, donde ya vemos el dominio pacharan.htl:
 ![[Pasted image 20240805094348.png]]
 Probamos en enumerar recursos compartidos como el usuario invitado:
@@ -98,3 +110,10 @@ Y ahora con .\ExploitCapcom.exe vamos a usar el payload rev.exe creado anteriorm
 ![[Pasted image 20240805103146.png]]
 Y habremos recibido la conexión:
 ![[Pasted image 20240805103204.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

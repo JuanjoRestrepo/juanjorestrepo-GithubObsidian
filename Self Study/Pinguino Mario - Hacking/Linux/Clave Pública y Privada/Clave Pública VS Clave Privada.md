@@ -1,3 +1,15 @@
+---
+title: "Clave Pública VS Clave Privada"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En el contexto de SSH (Secure Shell), la clave privada `id_rsa` y la clave pública `id_rsa.pub` son las dos partes de un par de claves que se utilizan para autenticar de manera segura a un usuario o un sistema.
 
 ### Clave Privada (`id_rsa`):
@@ -30,3 +42,10 @@ En el contexto de SSH (Secure Shell), la clave privada `id_rsa` y la clave públ
 3. **Autenticación**: Cuando el usuario intenta conectarse al servidor remoto, el servidor envía un desafío que el cliente resuelve utilizando su clave privada (`id_rsa`). Si la respuesta es correcta, el servidor otorga el acceso.
 
 Este enfoque asegura que solo alguien con la clave privada correcta puede autenticarse, aunque la clave pública sea conocida.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "16 - Semáforos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El propósito del semáforo en este código es controlar el acceso concurrente a un recurso compartido (representado por la clase `SharedResource`). Los semáforos permiten limitar el número de threads que pueden acceder al recurso simultáneamente. En este caso, el semáforo permite que solo dos threads accedan al recurso al mismo tiempo.
 
 ------
@@ -95,3 +107,9 @@ public class SemaphoreExample {
 ```
 ![[Pasted image 20240617110025.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

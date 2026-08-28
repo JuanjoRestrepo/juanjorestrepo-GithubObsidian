@@ -1,3 +1,15 @@
+---
+title: "MAQUINA PADDING ORACLE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Añadimos la máquina a vulnhub, donde vamos a explotar la vulnerabilidad [[Padding Oracle Attack]]
 ![[Pasted image 20230706155433.png]]
 Lo instalamos en máquina virtual y lo ejecutamos:
@@ -34,3 +46,9 @@ Por tanto ahora vamos a pegar esta cookie dentro del navegador:
 Recargamos la página y seremos el usuario admin:
 ![[Pasted image 20230706162456.png]]
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

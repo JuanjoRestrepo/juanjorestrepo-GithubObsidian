@@ -1,3 +1,15 @@
+---
+title: "Msfvenom"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Msfvenom es una herramienta de línea de comandos que forma parte del framework de pruebas de penetración Metasploit. Se utiliza para generar y personalizar payloads (cargas útiles) maliciosos que pueden ser utilizados en ataques de pruebas de penetración y en la explotación de vulnerabilidades en sistemas informáticos.
 
 ## TIPOS DE PAYLOADS
@@ -118,3 +130,10 @@ Nos compartimos el apk con la víctima y con metasploit nos ponemos en la escuch
 ```bash
 set payload android/meterpreter/reverse_tcp
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

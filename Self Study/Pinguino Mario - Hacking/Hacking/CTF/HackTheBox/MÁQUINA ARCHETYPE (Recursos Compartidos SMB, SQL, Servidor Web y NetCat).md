@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA ARCHETYPE (Recursos Compartidos SMB, SQL, Servidor Web y NetCat)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Y ya estamos dentro:Lo primero como siempre será ejecutar nmap para ver los servicios y puertos de la máquina, con estas opciones veremos los servicios y versiones de lo que corre en los puertos:
 ![[Pasted image 20230702211959.png]]
 Y esto son los resultados, donde tenemos estos servicios y estos puertos abiertos:
@@ -27,3 +39,10 @@ Ahora que estamos dentro de la base de datos, podemos activar la línea de coman
 ![[Pasted image 20230702212346.png]]
 Ahora ya puedo ejecutar comandos con normalidad, por ejemplo un whoami:
 ![[Pasted image 20230702212353.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

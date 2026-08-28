@@ -1,3 +1,15 @@
+---
+title: "Máquina 1 -- Máquina 2"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En la máquina 2, lo que debemos hacer es enviar el tráfico de esta máquina a la de atacante, y para ello usaremos chisel:
 ![[Pasted image 20230823153251.png]]
 ![[Pasted image 20230823153300.png]]
@@ -46,4 +58,9 @@ Y ahora ejecutamos socat de esta forma, donde diremos que todo lo que reciba la 
 Y ahora si con la máquina 2 enviamos la reverse shell, debería de funcionar:
 ![[Pasted image 20230825154713.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

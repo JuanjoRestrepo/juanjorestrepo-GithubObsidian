@@ -1,3 +1,15 @@
+---
+title: "1 - Configurar Maven en Java"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Maven administra las dependencias del proyecto, lo que significa que puede descargar automáticamente las bibliotecas y dependencias requeridas por tu proyecto desde repositorios remotos como Maven Central Repository.
 ![[Pasted image 20240319112230.png]]
 Lo metemos en una carpeta donde nos acordemos, como en la ruta donde está java instalado:
@@ -35,3 +47,10 @@ Y lo pegamos en el archivo pom.xml:
 Y ahora si ejecutamos el código de por ejemplo una conexión a la base de datos, veremos que funciona gracias a que hemos añadido la dependencia:
 ![[Pasted image 20240319114728.png]]
 ![[Pasted image 20240319114736.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

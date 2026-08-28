@@ -1,3 +1,15 @@
+---
+title: "4 - Cuarto Contenedor - move"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta máquina vulnerable va a consistir en una versión vulnerable de Grafana (8.3.0) vulnerable a Local File Inclussion, la cual consiste en la capacidad de acceder a archivos internos de la máquina siempre y cuando el usuario tenga permisos para verlo. Por tanto, vamos a hacer que mediante un servidor FTP con el login como anonymous habilitado se tenga acceso a una base de datos de keepass, pero sin embargo no dispongamos de la contraseña.
 
 La contraseña se encontrará ubicada en el directorio /tmp/pass.txt, que será accesible explotando la vulnerabilidad LFI del grafana vulnerable (la ruta /tmp/pass.txt la indicaremos como pista dentro del puerto 80 con apache).
@@ -174,3 +186,10 @@ Lo comprimimos en formato .zip y lo subimos a mega:
 ![[Pasted image 20240322112951.png]]
 Cargamos dicho enlace a nuestra web:
 ![[Pasted image 20240322113028.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

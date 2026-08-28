@@ -1,3 +1,15 @@
+---
+title: "MAQUINA PRECIOUS (Analizar metadatos de un PDF con exiftool, vulnerabilidad pdfkit, mirar dentro de carpeta config para escalar privilegios, consultar permisos SUID, vulnerabilidad RCE con yml deserializatión a través de código Ruby)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Haremos el reporte con nmap, donde vemos abierto el puerto 80 para un servidor web y el puerto ssh:
 ![[Pasted image 20230310194925.png]]
 Vamos a consultar la web con whatweb y viéndola en el navegador, pero vemos que tenemos que añadir la url al fichero /etc/hosts:
@@ -56,5 +68,10 @@ find / -perm -u=s -type f 2>/dev/null
  ![[Pasted image 20230312001703.png]]
  Y ahora si ejecutamos el comando bash -p nos debería lanzar una bash como root:
  ![[Pasted image 20230312001725.png]]
- 
- 
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

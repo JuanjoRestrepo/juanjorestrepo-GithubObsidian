@@ -1,3 +1,15 @@
+---
+title: "Indices"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Python, los índices se utilizan para acceder a los elementos de una secuencia, como listas, tuplas o cadenas. Los índices empiezan en cero (0) y se incrementan en uno con cada elemento siguiente. Por ejemplo, si tenemos una lista de números:
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -47,3 +59,10 @@ print(numbers[:-1])
 [1, 2, 3, 4]
 ------------------------
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

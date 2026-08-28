@@ -1,3 +1,15 @@
+---
+title: "Excepciones"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 En Python, las excepciones son eventos que ocurren durante la ejecución de un programa y que interrumpen el flujo normal de instrucciones. Puedes manejar estas excepciones utilizando bloques `try`, `except`. 
 
 ----------
@@ -55,3 +67,10 @@ except KeyboardInterrupt:
 ![[Pasted image 20231220114651.png]]
 Se encuentra dentro de un bucle infinito, que tras detenerlo con control + C, se ejecuta el print dentro de la excepción:
 ![[Pasted image 20231220114637.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

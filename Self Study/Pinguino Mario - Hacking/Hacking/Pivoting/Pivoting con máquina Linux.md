@@ -1,3 +1,15 @@
+---
+title: "Pivoting con máquina Linux"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Usaremos la máquina friendly 1 intermedia y la máquina basic de vulnyx máquina final:
 ![[Pasted image 20231112175352.png]]
 Procedemos con la intrusión en la máquina friendly 1 hasta ser usuario root:
@@ -57,3 +69,10 @@ Por lo que atacamos al puerto ssh que también nos hemos traído en el puerto 22
 ```bash
 hydra -l dimitri -P /usr/share/wordlists/rockyou.txt ssh://127.0.0.1 -s 222
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

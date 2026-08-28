@@ -1,3 +1,15 @@
+---
+title: "Librería Signal"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La librería signal en Python se utiliza para manejar señales del sistema. Una señal es una notificación asíncrona enviada a un proceso para notificarle de un evento. Las señales son una forma común en sistemas Unix para manejar eventos como interrupciones de teclado (Ctrl+C), temporizadores y otros eventos del sistema.
 
 ---------
@@ -47,3 +59,10 @@ Lo detenemos:
 ![[Pasted image 20240531112451.png]]
 Y el script recibe la señal por SIGTERM:
 ![[Pasted image 20240531112505.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

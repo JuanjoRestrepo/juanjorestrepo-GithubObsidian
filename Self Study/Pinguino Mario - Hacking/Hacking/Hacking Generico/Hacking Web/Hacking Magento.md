@@ -1,3 +1,15 @@
+---
+title: "Hacking Magento"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a utilizar este repositorio de github para montar el laboratorio de pruebas:
 ![[Pasted image 20230423082003.png]]
 Lo ejecutamos con docker compose:
@@ -33,3 +45,10 @@ Y ahora con php le pasamos este archivo y ya lo tenemos todo listo:
 ![[Pasted image 20230423085101.png]]
 Y así le lanzamos un escaneo:
 ![[Pasted image 20230423085154.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

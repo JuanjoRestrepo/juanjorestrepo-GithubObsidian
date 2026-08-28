@@ -1,15 +1,14 @@
 ---
-sticker: emoji//0032-fe0f-20e3
-Datum: 2024-02-17
-Hausaufgaben: true
-Beschreibung: "Hausaufgaben für nächsten Samstag: ÜB S. 12/13 Nr. 8e,f,9 und Vokabeln lernen (im Intensivtrainer üben)! Ein schönes Wochenende!"
+title: "Zweite Klasse"
+date: 2026-08-27
 tags:
-  - B1
-  - Deutsch
-  - Aleman
-  - German
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
-
 
 ***verreisen:*** viajar, travel
 ***traurig:*** triste, sad 
@@ -35,3 +34,8 @@ tags:
 4. Wir wollen Geld sparen, **deshalb** bleiben wir dieses Jahr zu Hause.
 5. Ich will in die Schweiz fahren, **deshalb** lese ich viele Reiseberichte.
 6. Lena will keinen Wanderurlaub machen, **obwohl** sie sehr sportlich ist.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

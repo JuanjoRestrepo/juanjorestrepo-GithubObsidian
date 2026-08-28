@@ -1,3 +1,15 @@
+---
+title: "Introduction to GitHub"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 # Components of the GitHub flow
 
 In this unit, we're reviewing the following components of the GitHub flow:
@@ -175,4 +187,8 @@ Each category must have a unique name and emoji pairing, and be accompanied by a
     ![A screenshot of starting a new discussion page with the Discussion title box and content box empty.](https://learn.microsoft.com/en-gb/training/github/introduction-to-github/media/start-a-new-discussion.png)
     
 6. Click Start discussion.
-    
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

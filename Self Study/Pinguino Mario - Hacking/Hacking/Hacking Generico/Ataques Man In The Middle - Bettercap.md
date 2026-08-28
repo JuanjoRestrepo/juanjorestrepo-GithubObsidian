@@ -1,3 +1,15 @@
+---
+title: "Ataques Man In The Middle - Bettercap"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Vamos a utilizar la herramienta de bettercap:
 ![[Pasted image 20231214110158.png]]
 ## ARP Spoofing
@@ -41,3 +53,10 @@ dns.spoof on
 ![[Pasted image 20231214112936.png]]
 Y ahora si visitamos facebook.es desde la víctima, nos habrá redirigido al puerto 80 de nuestra máquina atacante:
 ![[Pasted image 20231214113536.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

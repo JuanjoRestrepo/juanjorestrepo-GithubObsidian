@@ -1,9 +1,13 @@
 ---
+title: "Makefiles - build.bat .ssh"
+date: 2026-08-27
 tags:
-  - CPP
-  - POO
-  - OOP
-fecha: 2025-06-29
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
 
 ## 🧰 Makefile vs. build script (`build.sh`)
@@ -60,3 +64,8 @@ fecha: 2025-06-29
 - **Proyecto pequeño y local** → usa `build.sh`.
 - **Proyecto con varios archivos y compilación incremental** → usa Makefile.
 - **Proyecto que crecerá, soportará varias plataformas o IDEs** → considera CMake.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

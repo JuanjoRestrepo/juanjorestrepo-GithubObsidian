@@ -1,3 +1,14 @@
+---
+title: "Branching and Merging"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 ## Branch structure and naming
 ---
@@ -31,3 +42,7 @@ git merge my-feature
 
 After using these commands and resolving any _merge conflicts_ (we'll describe merge conflicts later in this module), **all the changes from your `my-feature` branch would be in `main`.**
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

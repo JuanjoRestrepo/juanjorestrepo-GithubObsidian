@@ -1,3 +1,15 @@
+---
+title: "Bases de Datos MySQL con Docker"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será crear la base de datos, para ello como requisitos previos será tener instalado mysql y también la imagen de mysql.
 
 Una vez hecho esto, vamos a crear el contenedor de mysql, para ello usamos el comando docker run -d –name my-db1 -e “MYSQL_ROOT_PASSWORD=”123123” mysql. Con este comando estamos creando la contraseña para acceder a la base de datos que está dentro del contenedor:
@@ -54,3 +66,10 @@ Ahora probamos en cerrar, borrar el contenedor, volver a crearlo y si le asignam
 ![[Pasted image 20240315140632.png]]
 Así como la carpeta de volumen situada en el escritorio donde se contienen los archivos de la base de datos MySQL:
 ![[Pasted image 20240315140703.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

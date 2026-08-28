@@ -1,3 +1,15 @@
+---
+title: "MAQUINA VULNED ROASTED (enum4linux, enumeración de usuarios con impacket-lookupsid, asreproasting y kerberoasting, john the ripper y acceso con evil-winrm)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el reconocimiento con nmap y nos encontramos con todos estos puertos abiertos:
 ![[Pasted image 20230701103021.png]]
 Nos encontramos con un entorno de directorio activo, por lo que vemos un dominio que tenemos que añadirlo en el /etc/hosts:
@@ -80,3 +92,10 @@ impacket-wmiexec vulnnet-rst.local/Administrator@10.10.203.119 -hashes aad3b435b
 ![[Pasted image 20230712113833.png]]
 Navegamos por los directorios y nos ubicamos en el escritorio para acceder a la flag de system:
 ![[Pasted image 20230712114605.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,11 +1,15 @@
 ---
-Datum: 2024-02-14
+title: "Ja, Nein, Doch"
+date: 2026-08-27
 tags:
-  - B1
-  - Deutsch
-  - Aleman
-  - German
+  - self-study
+  - general-programming-tools
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
 ---
+
 # JA
 ---
 #### ***Sí.***
@@ -40,3 +44,8 @@ Se usa en preguntas/afirmaciones negativas para contradecir al interlocutor
 		- Nein, icha habe keinen Hunger (No, no tengo hambre)}
 
 ![[Pasted image 20240214185954.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#General Programming & Tools|Programación general y herramientas]].
+- Criterio de producción: Convierte los apuntes en práctica verificable: reproduce ejemplos, documenta supuestos y enlaza el resultado con un caso de uso real.

@@ -1,3 +1,15 @@
+---
+title: "Puertos y Protocolos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **Puerto 25 ->** Se trata del puerto SMPT, el cual sirve para la transferencia de correo electrónico. 
 
 **Puerto 53 ->** Es el puerto estándar utilizado por el protocolo de Sistema de Nombres de Dominio. El protocolo DNS se utiliza para traducir los nombres de dominio que las personas utilizan para acceder a sitios web, como [www.ejemplo.com](http://www.ejemplo.com/), en direcciones IP numéricas que los dispositivos de red utilizan para comunicarse entre sí.
@@ -17,3 +29,9 @@ En resumen, el puerto 139 es más antiguo y menos seguro en comparación con el 
 
 Por ejemplo, Microsoft RPC se utiliza en la implementación de Active Directory, permitiendo que los servidores de dominio y los clientes de dominio se comuniquen entre sí.
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

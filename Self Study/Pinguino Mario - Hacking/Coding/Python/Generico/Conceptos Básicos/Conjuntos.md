@@ -1,3 +1,15 @@
+---
+title: "Conjuntos"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un conjunto (set) en Python es una estructura de datos que se utiliza para almacenar una colección desordenada de elementos únicos. A diferencia de las listas, los conjuntos no conservan un orden específico ni permiten elementos duplicados.
 
 -----------------
@@ -33,4 +45,9 @@ print(intersection_set)
 ```
 ![[Pasted image 20230530164104.png]]
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

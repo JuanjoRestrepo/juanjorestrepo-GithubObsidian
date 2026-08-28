@@ -1,3 +1,15 @@
+---
+title: "6 - Sexto Contenedor - upload"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta máquina vulnerable va a consistir en un servidor de apache donde tendremos dos archivos .php y .html, donde uno de ellos se encargará de mostrar al usuario la web donde poder subir un archivo y mientras tanto el otro se encargará de procesar dicho archivo y guardarlo dentro del directorio /uploads.
 
 La idea será que el usuario pueda subir un archivo .php malicioso como una webshell o una reverse shell, de tal forma que pueda acceder a ella en el directorio /uploads (que se deberá encontrar realizando fuzzing web), y una vez encontrado, se podrá utilizar el archivo malicioso subido para obtener ejecución remota de comandos y una intrusión al servidor.
@@ -149,3 +161,10 @@ De esta forma, si desde el usuario www-data ejecutamos el siguiente comando, nos
 ```bash
 sudo -u root /usr/bin/env /bin/sh -p
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

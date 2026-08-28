@@ -1,3 +1,15 @@
+---
+title: "6 - Eventos y UseState"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Los eventos sirven para que los componentes puedan reaccionar ante la interacción del usuario (un clic, escribir, etc).
 
 ------
@@ -29,3 +41,10 @@ Para reflejar el cambio en la pantralla, debemos primero recibir el value por pa
 ![[Pasted image 20240708104729.png]]
 Y ahora vemos que funciona:
 ![[Pasted image 20240708104743.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

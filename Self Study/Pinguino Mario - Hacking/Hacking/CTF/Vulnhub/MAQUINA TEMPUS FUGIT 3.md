@@ -1,3 +1,15 @@
+---
+title: "MAQUINA TEMPUS FUGIT 3"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Lo primero será hacer el reconocimiento de siempre con nmap y también podemos utilizar netdiscover para ver que redes tenemos dentro de nuestra interfaz de red, por tanto ejecutamos el netdiscover eth0 ya que es la interfaz de red que se está utilizando:
 ![[Pasted image 20221218202416.png]]
 Si hacemos el escaneo con nmap vemos que tiene abierto el puerto 80:
@@ -47,3 +59,10 @@ Ahora, aprovechando que estamos dentro de la máquina, podemos mirar los puertos
 ![[Pasted image 20221218202735.png]]
 Lo ejecutamos en la máquina víctima y nos encuentra el puerto 443 y 57255:
 ![[Pasted image 20221218202742.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

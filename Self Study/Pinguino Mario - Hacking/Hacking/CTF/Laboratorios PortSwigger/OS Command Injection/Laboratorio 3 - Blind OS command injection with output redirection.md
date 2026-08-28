@@ -1,3 +1,15 @@
+---
+title: "Laboratorio 3 - Blind OS command injection with output redirection"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 El primer paso será entrar en alguna de las imágenes que se nos muestran:
 ![[Pasted image 20230319145533.png]]
 Y vamos a recargar esta página e interceptamos la petición y nos saldrán 2. En la primera nada interesante:
@@ -20,3 +32,9 @@ Y al interceptar la petición nos encontramos con que podemos llamar al archivo 
 ![[Pasted image 20230319150809.png]]
 Enviamos esta petición y ya estaría completado el laboratorio.
 
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

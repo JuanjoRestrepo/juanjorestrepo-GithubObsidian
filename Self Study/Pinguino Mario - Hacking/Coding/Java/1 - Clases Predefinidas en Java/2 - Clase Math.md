@@ -1,3 +1,15 @@
+---
+title: "2 - Clase Math"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 La clase `Math` en Java es una clase que proporciona métodos estáticos para realizar operaciones matemáticas comunes. Estos métodos son útiles cuando necesitas realizar cálculos matemáticos en tu programa. En el caso de la clase `Math` en Java, no se trata de una clase que puedas instanciar para crear objetos, sino que es una clase que proporciona métodos estáticos, lo que significa que puedes llamar a estos métodos directamente en la clase sin necesidad de crear una instancia de la misma.
 **Método sqrt**
 ```java
@@ -27,3 +39,10 @@ Para convertir un número negativo a absoluto:
 **Método Pow**
 Sirve para calcular la potencia de un número, donde además también podemos hacer cálculos directamente y guardarlos en la variable resutado:
 ![[Pasted image 20240307110914.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

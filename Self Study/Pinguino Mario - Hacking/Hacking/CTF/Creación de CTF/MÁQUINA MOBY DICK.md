@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA MOBY DICK"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Esta máquina tendrá un contenedor de Docker funcionando en su interior pero que no se encontrará expuesto. De tal forma, que dentro del contenedor va a estar corriendo un Grafana vulnerable a LFI. Por tanto, una vez hecha la intrusión por SSH con el usuario llamado Pinguinito, utilizaremos chisel para poder acceder al contenedor de Docker interno y así acceder al grafana que corre por el puerto 3000. 
 
 Dentro del contenedor con el grafana vulnerable a LFI, tendremos un archivo llamado database_pass.txt que contendrá las credenciales de acceso a una base de datos de KeePass dentro del directorio /home de la máquina víctima. 
@@ -93,3 +105,10 @@ crontab -e
 ![[Pasted image 20240312141746.png]]
 Reiniciamos el sistema para comprobar si a cada reinicio se lanza un contenedor de este grafana:
 ![[Pasted image 20240312123240.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

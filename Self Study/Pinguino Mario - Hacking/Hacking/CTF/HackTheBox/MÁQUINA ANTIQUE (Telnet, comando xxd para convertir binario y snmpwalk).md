@@ -1,3 +1,15 @@
+---
+title: "MÁQUINA ANTIQUE (Telnet, comando xxd para convertir binario y snmpwalk)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos los escaneos de siempre con nmap, donde vemos que está abierto el puerto 23, que es el de telnet, por tanto vamos a analizarlo:
 ![[Pasted image 20230509115328.png]]
 ![[Pasted image 20230509115331.png]]
@@ -30,3 +42,10 @@ Para la escalada, usaremos el siguiente exploit procedente el local exploit sugg
 ![[Pasted image 20231203112435.png]]
 Lo ejecutamos y habremos escalado privilegios:
 ![[Pasted image 20231203112512.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "16 - Permisos SUID"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Estos permisos permiten que un archivo se ejecute con los mismos privilegios de seguridad del usuario que lo posee, en lugar de con los permisos del usuario que lo ejecuta.
 
 Ejecutamos el comando find / -perm -4000 2>/dev/null para comprobar donde tenemos permisos SUID (Se tratan de permisos que permiten a un usuario ejecutar un archivo con los privilegios del propietario del archivo), por tanto ejecutamos este comando:
@@ -26,3 +38,10 @@ Y lo ejecutamos para convertirnos en root:
 ![[Pasted image 20230401015812.png]]
 ![[Pasted image 20230401015823.png]]
 [[MAQUINA ROOTME (Fuzzing, php malicioso camuflándolo como phtml en burpsuite, escalada de privilegios comprobando permisos SUID de Python)]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

@@ -1,3 +1,15 @@
+---
+title: "1 - Enumerar Usuarios y Plugins con WordPress"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Si queremos únicamente enumerar usuarios válidos en wordpress con wpscan, lo haríamos de la siguiente forma:
 ```bash
 wpscan --url http://10.10.123.20/wordpress/ -e u
@@ -31,3 +43,10 @@ También podemos enumerar plugins de wordpress directamente con nmap:
 ```bash
 nmap -p80 --script http-wordpress-enum --script-args http-wordpress-enum.root='/wordpress',search-limit=1000 ejemplo.com
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

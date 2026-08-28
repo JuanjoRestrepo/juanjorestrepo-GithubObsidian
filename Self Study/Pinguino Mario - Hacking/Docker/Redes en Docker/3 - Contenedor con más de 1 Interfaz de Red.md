@@ -1,3 +1,15 @@
+---
+title: "3 - Contenedor con más de 1 Interfaz de Red"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## RED BRIDGE + OTRA INTERFAZ
 Para conseguir que un contenedor de Docker pueda tener 2 interfaces de red o más, seguiremos los siguientes pasos, donde primero creamos dos redes con docker:
 ```bash
@@ -28,3 +40,10 @@ Y ahora desde otra pestaña, le conectamos la otra red de pivoting2:
 docker network connect pivoting2 4a
 ```
 ![[Pasted image 20240320095621.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

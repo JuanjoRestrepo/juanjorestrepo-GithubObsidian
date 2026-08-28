@@ -1,3 +1,15 @@
+---
+title: "Hacking Drupal"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Para practicar vamos a utilizar este repositorio de github:
 ![[Pasted image 20230422135923.png]]
 Y lanzamos el docker: donde veremos que este drupal estará corriendo por el puerto 8080:
@@ -27,3 +39,10 @@ Y si ejecutamos esta herramienta con estos parámetros ya podremos ver caracter�
 ![[Pasted image 20230422141402.png]]
 Y ahora que conocemos la versión, podríamos buscar vulnerabilidades con searchsploit [[MAQUINA ARMAGEDDON (Vulnerabilidad Drupal 7 con metasploit, escalada privilegios obteniendo credenciales de mysql y entrando y vulnerabilidad snap con dirty shock)]]:
 ![[Pasted image 20230422141514.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

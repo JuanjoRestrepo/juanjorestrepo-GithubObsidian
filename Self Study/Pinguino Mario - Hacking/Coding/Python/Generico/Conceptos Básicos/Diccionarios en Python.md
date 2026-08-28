@@ -1,3 +1,15 @@
+---
+title: "Diccionarios en Python"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Un diccionario en Python es un tipo de dato que permite almacenar pares clave-valor. Estos pares clave-valor se pueden acceder, modificar o eliminar de manera eficiente utilizando la clave correspondiente.
 ```python
 # Creación de un diccionario
@@ -63,3 +75,10 @@ print(inventario)
 ```
 Y este es el resultado:
 ![[Pasted image 20230616131909.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

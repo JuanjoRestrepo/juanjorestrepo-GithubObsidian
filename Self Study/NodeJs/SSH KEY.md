@@ -1,4 +1,14 @@
-
+---
+title: "SSH KEY"
+date: 2026-08-27
+tags:
+  - self-study
+  - development-architecture
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
 
 Enter same passphrase again: 
 Your identification has been saved in /home/juanjorestrepo/.ssh/id_ed25519
@@ -18,4 +28,7 @@ The key's randomart image is:
 |    .+o .    .+oo|
 +----[SHA256]-----+
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Development & Architecture|Desarrollo y arquitectura]].
+- Criterio de producción: Conecta el concepto con contratos explícitos, validación de entrada, pruebas automatizadas, observabilidad y despliegues reversibles.

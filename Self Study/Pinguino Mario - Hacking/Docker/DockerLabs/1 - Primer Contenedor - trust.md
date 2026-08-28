@@ -1,3 +1,15 @@
+---
+title: "1 - Primer Contenedor - trust"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Este primer contenedor va a tener el protocolo SSH habilitado, donde dentro habrá un servidor de Apache habilitado que indicará un usuario al cual hacer fuerza bruta. Una vez dentro del contenedor, podremos escalar privilegios usando el comando sudo -l del binario vim.
 
 Para configurar el entorno, podemos utilizar o bien la construcción de una imagen a partir de un archivo Dockerfile / Docker-compose o bien entrando dentro del contenedor y de forma manual realizar toda la configuración.
@@ -115,3 +127,10 @@ Y ya se sube nuestra imagen:
 ![[Pasted image 20240320110957.png]]
 Lo comprobamos desde dockerhub:
 ![[Pasted image 20240320111015.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

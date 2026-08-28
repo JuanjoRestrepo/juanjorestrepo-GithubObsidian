@@ -1,3 +1,15 @@
+---
+title: "MAQUINA BLOG (enum4linux, smbmap, wpscan, vulnerabilidad con metasploit wordpress 5 y escalada privilegios pkexec)"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Hacemos el escaneo de nmap y nos encontramos con estos puertos abiertos:
 ![[Pasted image 20230406073923.png]]
 ![[Pasted image 20230406074029.png]]
@@ -49,3 +61,10 @@ Lo compartimos con la máquina víctima, lo ejecutamos y ya somos root:
 ![[Pasted image 20230507114002.png]]
 Por último, para encontrar la flag de user, simplemente podemos usar el comando find y ya la habremos encontrado:
 ![[Pasted image 20230507114726.png]]
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

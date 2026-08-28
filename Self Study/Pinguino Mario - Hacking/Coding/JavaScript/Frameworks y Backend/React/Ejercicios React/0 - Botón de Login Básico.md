@@ -1,3 +1,15 @@
+---
+title: "0 - Botón de Login Básico"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 ## EJEMPLO 1
 
 El primer paso será crear un archivo llamado Greeting.jsx:
@@ -117,3 +129,10 @@ Por último, dentro del main.jsx cargamos la aplicación:
     - Muestra el botón correspondiente basado en el estado actual de `isAdmin`.
 
 Con esta estructura, puedes ver cómo se renderiza el mensaje apropiado y el botón basado en si el usuario es un administrador o no. Esta práctica te ayuda a repasar el uso de condicionales en React y cómo manejarlos en la interfaz de usuario.
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

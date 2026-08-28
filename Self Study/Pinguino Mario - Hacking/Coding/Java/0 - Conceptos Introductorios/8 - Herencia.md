@@ -1,3 +1,15 @@
+---
+title: "8 - Herencia"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 Permite a una clase (llamada clase hija o subclase) heredar atributos y métodos de otra clase (llamada clase padre o superclase), lo que facilita la reutilización de código y la organización jerárquica de las clases.
 
 Cuando una clase hereda de otra, la clase hija adquiere todas las propiedades (métodos y atributos) de la clase padre y puede añadir sus propios métodos o atributos adicionales, o incluso sobrescribir los métodos de la clase padre para adaptarlos a sus necesidades específicas.
@@ -317,4 +329,9 @@ public class Main {
 }
 ```
 
-
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.

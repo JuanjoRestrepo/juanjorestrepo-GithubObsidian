@@ -1,3 +1,15 @@
+---
+title: "2 - Ejemplos de Reglas SNORT"
+date: 2026-08-27
+tags:
+  - self-study
+  - security-penetration-testing
+  - avanzado
+status: verified
+author: "Juan José Restrepo Rosero"
+last_updated: 2026-08-27
+---
+
 **Detección de un Escaneo de Puertos**
 ```bash
 alert tcp any any -> any 80 (msg:"Escaneo de puertos en HTTP"; flags:S; threshold:type threshold, track by_src, count 10, seconds 10; sid:1000003; rev:1;)
@@ -29,3 +41,10 @@ alert http any any -> any any (msg:"Tráfico HTTP inusual"; content:"/admin"; ht
 ```bash
 drop ip any any -> 10.0.0.5 any (msg:"Bloqueo de tráfico hacia IP 10.0.0.5"; sid:1000007; rev:1;)
 ```
+
+<!-- self-study-knowledge-context -->
+## Contexto de estudio
+- Dominio: [[MOC-Self-Study#Security & Penetration Testing|Seguridad y pruebas de penetración]].
+- Criterio de producción: Ejecuta técnicas únicamente en activos propios o con autorización explícita, alcance documentado y controles de no afectación.
+> [!warning] Uso autorizado
+> Este material es exclusivamente educativo y defensivo. Practica en laboratorios aislados, CTFs o sistemas para los que dispongas de autorización previa y explícita.
