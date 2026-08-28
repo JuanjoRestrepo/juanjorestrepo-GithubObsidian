@@ -1,210 +1,114 @@
+---
+title: "Opción B - Arquitectura del Pipeline de Competitive Intelligence"
+date: 2026-08-27
+tags:
+  - caso-estudio
+  - arquitectura
+  - rpa
+  - diagramas
+  - data-engineering
+status: evergreen
+---
 
+# 🏗️ Arquitectura del Pipeline de Competitive Intelligence — Opción B
+
+Sistema modular y desacoplado diseñado para la extracción, validación, normalización y análisis comparativo de precios y tarifas entre plataformas de entrega a domicilio.
+
+---
+
+## 🔄 Diagrama de Flujo de Datos
 
 ```mermaid
 flowchart TD
 
-    %% === ENTRADA DE DATOS ===
+    %% === ENTRADA DE DATOS ===
+    subgraph S0["0. Entrada de Datos"]
+        A1["Archivo addresses.csv\n(Direcciones de muestreo)"]
+    end
 
-    A1["Archivo addresses.csv - contiene direcciones objetivo"]
+    %% === PIPELINE PRINCIPAL ===
+    subgraph S1["1. Pipeline de Extracción (Playwright Engine)"]
+        R1["Resolver Heurístico\n(resolver.py)"]
+        SR1["Scraper Rappi\n(rappi_scraper.py)"]
+        SR2["Scraper Uber Eats\n(ubereats_scraper.py)"]
+        M1["Orquestador Central\n(multi_platform_scraper.py)"]
+        U1["Utilidades & Logs\n(utils.py)"]
+    end
 
-  
+    %% === SALIDAS DE DATOS ===
+    subgraph S2["2. Persistencia y Auditoría"]
+        D1["results.json\n(Resultados estructurados)"]
+        D2["mapping.csv\n(Mapeo URL / Restaurante)"]
+        D3["data/screenshots/ & debug/\n(Evidencia visual y XHR)"]
+    end
 
-    %% === PIPELINE PRINCIPAL ===
+    %% === ANÁLISIS DE RESULTADOS ===
+    subgraph S3["3. Capa Analítica y Visual"]
+        A3["Procesamiento ETL\n(Pandas / RapidFuzz)"]
+        A4["Análisis Estadístico\n(Rappi_Engineering_2025.ipynb)"]
+        O1["Tablas Resumen & KPIs"]
+        O2["Visualizaciones Ejecutivas"]
+    end
 
-    subgraph S1["Scraper Principal - Playwright POC"]
+    %% === RELACIONES DE FLUJO ===
+    A1 -->|Direcciones objetivo| R1
+    R1 -->|URLs resueltas + metadata| SR1
+    R1 -->|URLs resueltas + metadata| SR2
+    SR1 -->|Datos crudos Rappi| M1
+    SR2 -->|Datos crudos Uber Eats| M1
+    U1 -.->|Delays, sanitización & logs| M1
+    
+    M1 -->|JSON estructurado| D1
+    M1 -->|Caché de resolución| D2
+    M1 -->|Capturas de pantalla| D3
 
-        R1["Resolver de URL (resolver.py)"]
+    D1 -->|Carga de datos| A3
+    D2 -->|Validación cruzada| A3
+    A3 -->|DataFrames normalizados| A4
+    A4 -->|Métricas agregadas| O1
+    A4 -->|Histogramas, boxplots, heatmaps| O2
 
-        SR1["Scraper de Rappi (rappi_scraper.py)"]
-
-        SR2["Scraper de UberEats (ubereats_scraper.py)"]
-
-        M1["Módulo Multi-Plataforma (multi_platform_scraper.py)"]
-
-        U1["Utilidades y Logs (utils.py)"]
-
-    end
-
-  
-
-    %% === SALIDAS DE DATOS ===
-
-    subgraph S2["Salida de Datos"]
-
-        D1["Archivo results.json - resultados de scraping"]
-
-        D2["Archivo mapping.csv - mapeo de dirección a restaurante"]
-
-        D3["Capturas en data/screenshots"]
-
-    end
-
-  
-
-    %% === ANÁLISIS DE RESULTADOS ===
-
-    subgraph S3["Análisis y Reportes"]
-
-        A3["Script rappi_competitive_analysis.py"]
-
-        A4["Script advanced_stats.py"]
-
-        A5["Script visualization.py"]
-
-        O1["Tablas resumen y CSVs (summary_by_address_product, etc.)"]
-
-        O2["Reportes ejecutivos (ANALYSIS_REPORT.md, gráficos HTML)"]
-
-    end
-
-  
-
-    %% === FLUJO DE DATOS ===
-
-    A1 -->|Direcciones de entrada| R1
-
-    R1 -->|URL resueltas| SR1
-
-    R1 -->|URL resueltas| SR2
-
-    SR1 -->|Datos crudos de Rappi| M1
-
-    SR2 -->|Datos crudos de UberEats| M1
-
-    M1 -->|JSON y CSV| D1
-
-    M1 -->|Mapeo de URLs| D2
-
-    M1 -->|Capturas| D3
-
-    D1 -->|Carga de datos| A3
-
-    D2 -->|Validaciones cruzadas| A3
-
-    A3 -->|Estadísticas base| A4
-
-    A4 -->|Datos procesados| A5
-
-    A5 -->|Reportes finales| O1
-
-    A5 -->|Visualizaciones interactivas| O2
-
+    classDef stage fill:#f8fafc,stroke:#334155,stroke-width:1px;
+    class S0,S1,S2,S3 stage;
 ```
-
-
-# 1) Entradas (A1, A2)
-
-**A1 — `data/addresses.csv`**
-- Qué es: CSV con las direcciones/queries que vas a muestrear (cada fila: `addressLabel`, `searchQuery`, `restaurantUrl` opcional).
-    
-- Uso: el runner (`scrapers/playwright_poc.py`) carga este CSV con `load_addresses()` y por cada entrada construye la `heuristic_query` o usa `restaurantUrl` override.
-
->Las direcciones son la unidad de muestreo. El scraper itera por ellas para simular usuarios desde diferentes ubicaciones
-
-
-# 2) Pipeline principal (S1 — Playwright POC y submódulos)
-
-
-1. **Scraper Principal — `scrapers/playwright_poc.py`**
-
-- Rol: Orquestador. Lee `addresses.csv`, abre Playwright, mantiene una única `page` por contexto, instala el listener `page.on("response", _on_response)` para capturar XHR/responses, invoca `resolver` y luego el scraper de la plataforma.
-    
-- Puntos clave:
-    - Crea `responses_captured` por dirección (lista de objetos Response) y lo pasa a `scrapeRappi(...)`.
-    - Genera `selector_hash` (hash de la configuración actual — en este repo es un JSON `{}`) y lo añade a cada registro para trazabilidad.
-    - Guarda screenshots y hace dumps debug.
-
-- Archivos/funciones: `main()`, `load_addresses()`, `page.on("response", _on_response)`.
-
-> Es la capa de control. Gestiona la sesión de  navegador y agrupa el resultado por dirección.
-
-
-2. **Resolver de URL — `scrapers/resolver.py` (R1 en el diagrama)**
-
-- Rol: Dado un `search_query` construye la URL de búsqueda `https://www.rappi.com.mx/buscar?query=...`, navega y selecciona enlaces `a[href*='/restaurantes/']`.
-    
-- Lógica principal:
-    - Extrae anchors, filtra cruft (login, redirs), puntúa candidatos (heurística que da peso a 'mcdonald' y coincidencia textual).
-    - Devuelve `chosen_href` + `resolution_meta` (candidates, chosen_score, confidence).
-
-> Intenta resolver automáticamente el restaurante más probable para la ubicación — es heurístico, por eso guardamos metadata para auditar decisiones.
-
-
-
-3. **Scraper de Rappi — `scrapers/rappi_scraper.py` (SR1)**
-
-- Rol: Extrae precios, fees (delivery/service), ETA, disponibilidad y captura productos objetivo.
-- Mecanismos de extracción (en orden de prioridad):
-    1. `window.__NEXT_DATA__` (JSON in-page) — parseo heurístico.
-    2. XHR responses capturadas por `page.on("response")` — parseo de JSONs para claves como `delivery`, `service`, `fee`.
-    3. Análisis de texto en el DOM (`page.inner_text("body")`) — buscar patrones `envío`, `servicio`.
-    4. Simular add-to-cart — intentar agregar un item, leer el drawer/cart y extraer fees (si está disponible sin login).
-
-- Productos: ejecuta una evaluación JS para listar bloques de producto (`BLOCK_QUERY`) y aplica heurísticas/sinónimos para encontrar `Big Mac`, `Combo Mediano`, `Coca-Cola 500ml`.
-    
-- Output: una lista de registros por producto con campos: `precios`, `flags de oferta`, `deliveryFeeValue`, `serviceFeeValue`, `finalPriceValue`, `feeSource`, captura de screenshot.
-    
-> El scraper aplica múltiples mecanismos en cascada para maximizar la probabilidad de extraer fees y precios; además intenta detectar ofertas y computar precios finales.
-
-4. **Scraper de UberEats / DiDi (SR2, otros)**
-- Hay`ubereats_scraper.py` y `didi_scraper.py`. Su papel es equivalente a `rappi_scraper.py` pero con selectores y heurísticas adaptadas a cada plataforma (buscar `__NEXT_DATA__`, XHR JSON, DOM, simulación de carrito).
-
-> Cada plataforma requiere adaptaciones puntuales — el orquestador mantiene la misma interfaz para normalizar outputs.
-
-
-6. **Utilidades y Logs — `scrapers/utils.py` (U1)**
-
-- Contiene funciones reutilizables: `sanitize_number`, `dump_json_to`, `retry`, `random_delay`, `now_utc_iso`, constantes como `MAX_REASONABLE_FEE`.
-    
- > Funciones comunes y límites heurísticos (ej. máximo plausible del fee).
- 
-
-# 3) Salidas (S2)
-
-- **D1 — `data/output/results.json` (o `results.json`, `multi_platform_results.json`)**
-    
-    - Qué contiene: lista de registros por producto por dirección (precios, fees, finalPrice, productFound/not_found, metadata de resolución).
-        
-    - Uso en presentación: muestra ejemplos — ya nos compartiste registros que muestran deliveryFeeValue, priceValue, finalPriceValue.
-        
-- **D2 — `data/mapping.csv`**
-    
-    - Qué contiene: cache / mapeo addressLabel → restaurantUrlResolved + nombre y confidence.
-        
-    - Por qué útil: evita re-resolver el mismo restaurante y ayuda a auditar fallos de resolución.
-        
-- **D3 — `data/screenshots/` y `data/debug_responses/`**
-    
-    - Screenshots para evidencia visual y debug.
-        
-    - `debug_responses` guarda `__NEXT_DATA__`, resúmenes XHR, y dumps para inspección manual cuando algo falla.
-
 
 ---
 
+## 🧩 Desglose Módulo a Módulo
 
-# 5) Flujo completo (línea por línea — lo que dices en la diapositiva del diagrama)
+### 1. Entradas del Sistema (S0)
+- **`data/addresses.csv`**: Archivo de configuración geoespacial que define las ubicaciones representativas a muestrear (`addressLabel`, `searchQuery`, `restaurantUrl` opcional). Cada fila representa una unidad de muestreo independiente.
 
-1. `addresses.csv` → **resolver** (`resolve_restaurant_url`)
-    
-    - Dices: “Por cada dirección intentamos resolver cuál es el restaurante relevante con heurísticas en la página de búsqueda de Rappi.”
-        
-2. `selector` (inline) → **scrapers**
-    
-    - Dices: “Los selectores están embebidos en los scrapers; cada scraper los usa para localizar bloques y precios.”
-        
-3. `resolver` devuelve URLs → **scraper platform** (`scrapeRappi`, `scrapeUberEats`, etc.)
-    
-    - Dices: “Con la URL resuelta llamamos al scraper de la plataforma, pasándole la página de Playwright y la lista de targets.”
-        
-4. **Scrapers** → escriben datos crudos en el multi-plataforma / normalizan → **results.json** y **mapping.csv**
-    
-    - Dices: “Normalizamos los registros y los guardamos en JSON; también actualizamos el mapping cache para acelerar futuras corridas.”
-        
-5. **Screenshots + debug_responses** → se guardan para auditoría
-    
-    - Dices: “Guardamos pruebas (screenshots, NEXT_DATA, XHR dumps) para poder auditar por qué un valor fue extraído o por qué falló.”
-        
-6. **Resultados JSON** → alimentan `rappi_competitive_analysis.py` y demás → producen tablas, estadísticas y reportes visuales
-    
-    - Dices: “Los resultados son la entrada para el análisis automatizado que genera los dashboards y el reporte ejecutivo.”
+---
+
+### 2. Motor de Extracción y Submódulos (S1)
+1. **Orquestador Principal (`multi_platform_scraper.py`):**
+   - Coordina la sesión única de Playwright Chromium.
+   - Instala listeners para intercepción de eventos de red (`page.on("response", ...)`).
+   - Genera el `selector_hash` para trazabilidad de versiones.
+2. **Resolver de URLs (`resolver.py`):**
+   - Construye consultas de búsqueda dinámicas en Rappi (`https://www.rappi.com.mx/buscar?query=...`).
+   - Evalúa enlaces candidatos mediante un algoritmo de puntuación ponderada (+50 por coincidencia de marca, +10 por coincidencia textual).
+   - Retorna la URL seleccionada junto con el objeto de metadata (`resolution_meta`) y nivel de confianza (`high`, `medium`, `low`).
+3. **Scraper Específico de Rappi (`rappi_scraper.py`):**
+   - Ejecuta la **cascada de extracción en 4 niveles**:
+     1. Parseo de `window.__NEXT_DATA__` (fuente JSON primaria).
+     2. Interceptación y filtrado de respuestas XHR/Fetch de red.
+     3. Análisis de texto visible en el DOM.
+     4. Simulación de usuario *Add-to-Cart* para revelar tarifas calculadas en el carrito.
+4. **Módulo de Utilidades (`utils.py`):**
+   - Funciones transversales de sanitización de cadenas numéricas (`sanitize_number`), pausas estocásticas anti-bloqueo (`random_delay`), persistencia JSON (`dump_json_to`) y políticas de reintento (`retry`).
+
+---
+
+### 3. Persistencia, Auditoría y Reportes (S2 y S3)
+- **`results.json`**: Dataset estructurado con campos normalizados (`priceValue`, `deliveryFeeValue`, `serviceFeeValue`, `finalPriceValue`, `feeSource`, `scrapeStatus`).
+- **`mapping.csv`**: Caché persistente que mapea etiquetas de dirección con las URLs resueltas para optimizar ejecuciones subsecuentes.
+- **`data/screenshots/`**: Evidencia visual inmutable de cada captura para auditoría ante inconsistencias.
+- **`Rappi_Engineering_2025.ipynb`**: Entorno analítico donde se calculan estadísticas descriptivas, pruebas de hipótesis y visualizaciones ejecutivas.
+
+---
+
+## 🎙️ Guion de Sustentación del Diagrama en Diapositivas
+
+> *"Esta arquitectura opera como un pipeline de ingeniería de datos continuo: partimos de un conjunto de direcciones de muestreo que representan distintos niveles socioeconómicos y geografías de la ciudad. El módulo **Resolver** identifica de forma heurística la sucursal de restaurante más relevante asignando un puntaje de confianza. Luego, los **Scrapers Modulares** extraen precios y tarifas mediante una cascada resiliente que combina inspección de JSONs internos de Next.js, intercepción de respuestas de red y simulación de interacción en el carrito. Toda la metadata, junto con capturas visuales de auditoría, se consolida en estructuras JSON estandarizadas que alimentan nuestro entorno de análisis estadístico en Pandas."*

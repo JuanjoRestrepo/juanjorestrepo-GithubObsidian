@@ -1,3 +1,23 @@
+---
+title: "Opción B - Módulo de Heurística de Consultas Rappi"
+date: 2026-08-27
+tags:
+  - caso-estudio
+  - rpa
+  - python
+  - heuristica
+  - codigo-referencia
+status: evergreen
+---
+
+# 🛠️ Módulo de Heurística de Consultas: `build_heuristic_query`
+
+Implementación de referencia con tipado estático estricto (`mypy --strict`) y docstrings estilo Google para la construcción determinista de términos de búsqueda.
+
+---
+
+## 💻 Código de Referencia Documental
+
 ```python
 """Módulo de heurística para la construcción de consultas de búsqueda.
 
@@ -7,7 +27,7 @@ Standards: PEP8, mypy --strict, Google Docstrings.
 
 from typing import Final
 
-# Constantes con unidades y dominios explícitos
+# Constantes de dominio con inmutabilidad explícita
 DEFAULT_BRAND: Final[str] = "McDonald's"
 
 
@@ -22,7 +42,7 @@ def build_heuristic_query(user_search: str | None, addr_label: str) -> str:
         str: La cadena de consulta optimizada y enriquecida.
 
     Raises:
-        ValueError: Si tanto user_search como addr_label están vacíos.
+        ValueError: Si tanto user_search como addr_label están vacíos o contienen solo espacios.
     """
     clean_search = (user_search or "").strip()
     clean_addr = addr_label.strip()
@@ -40,3 +60,16 @@ def build_heuristic_query(user_search: str | None, addr_label: str) -> str:
     base = clean_search if clean_search else clean_addr
     return f"{DEFAULT_BRAND} {base}".strip()
 ```
+
+---
+
+## 🔍 Análisis de Diseño y Robustez
+
+1. **Inmutabilidad y Tipado Estricto:**
+   - Uso de `Final[str]` para la constante `DEFAULT_BRAND`.
+   - Soporte de unión de tipos moderna (`str | None`) compatible con Python 3.10+.
+2. **Defensividad ante Datos Sucios:**
+   - Validación explícita de entradas vacías con levantamiento de `ValueError`.
+   - Limpieza de espacios en blanco mediante `.strip()`.
+3. **Determinismo Heurístico:**
+   - Garantiza que cualquier combinación de dirección y búsqueda genere una cadena normalizada, minimizando la dispersión en los resultados del motor de búsqueda de Rappi.
