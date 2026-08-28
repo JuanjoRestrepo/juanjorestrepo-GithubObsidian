@@ -1,3 +1,14 @@
+---
+title: "Semana 2 Primer Avance"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - proyecto-aplicado
+  - apuntes
+status: reference
+---
+
 
 # Primer avance
 ---
@@ -17,7 +28,6 @@ Para realizar la entrega de los avances del cronograma y los avances del proyect
 |                           🗓️◀️ **ANTERIOR**                           |                                 ▶️📌 **SIGUIENTE**                                  |
 | :--------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | [[Semana 1 Primer Encuentro\|📄 Unidad 1 - Semana 1 Primer Encuentro]] | [[Semana 4 a 6 Revisión de avances\|✅ Unidad 1 - Semana 4 a 6 Revisión de avances]] |
-
 
 
 

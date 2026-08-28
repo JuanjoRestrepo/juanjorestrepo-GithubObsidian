@@ -1,9 +1,12 @@
 ---
+title: "Notas clase"
+date: 2026-08-27
 tags:
-  - DeepLearning
-  - Master
-  - Maestria
-date: 2025-05-07
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 

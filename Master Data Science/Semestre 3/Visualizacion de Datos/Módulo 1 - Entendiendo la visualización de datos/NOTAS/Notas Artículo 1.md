@@ -1,3 +1,14 @@
+---
+title: "Notas Artículo 1"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 # 📌 Data Visualization – Definición y Relevancia (Tableau)
 
@@ -102,5 +113,4 @@ _Otros ejemplos:_ box-plot, treemap, bullet graph, histograma, gantt chart, heat
 - **Cursos**
     - Tableau Training (oficial)
     - MOOCs en Coursera / edX sobre visualización y UX de datos
-
 

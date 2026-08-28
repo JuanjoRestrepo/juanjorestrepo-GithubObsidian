@@ -1,3 +1,14 @@
+---
+title: "Debate - Mecanismos de representación de información"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 # **Mecanismos de Representación de Información sobre la COVID-19 en Colombia: Un Análisis de los Desafíos y las Oportunidades**
 

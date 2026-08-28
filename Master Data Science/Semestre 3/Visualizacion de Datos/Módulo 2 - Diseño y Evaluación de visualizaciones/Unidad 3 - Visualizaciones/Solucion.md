@@ -1,3 +1,14 @@
+---
+title: "Solucion"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 
 # Documento de Entrega – Esbozo de Visualización
@@ -221,4 +232,3 @@ Adjunto el histograma generado con los datos reales: `histograma_precios_reales.
 4. **Anotar posibles anomalías** (e.g., registros con precio = 1; decidir si se excluyen en análisis final).
     
 5. **Entregar tanto la foto del boceto como la imagen generada** y el texto (la sección “Resultado” + “Justificación”) en el PDF.
-

@@ -1,9 +1,12 @@
 ---
+title: "🧠 Principio de Manifold Learning"
+date: 2026-08-27
 tags:
-  - DeepLearning
-  - Maestria
-  - Master
-  - DataScience
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 ## 📌 Concepto Clave
@@ -120,5 +123,4 @@ A continuación, se presentan visualizaciones de diferentes métodos de aprendiz
 - [Scikit-learn: Manifold Learning](https://scikit-learn.org/stable/modules/manifold.html)
 - [Implementación de Manifold Learning con Python](https://github.com/scikit-learn/scikit-learn/tree/main/sklearn/manifold)
 - [Libro: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"](https://github.com/yanshengjia/ml-road/blob/master/resources/Hands%20On%20Machine%20Learning%20with%20Scikit%20Learn%20and%20TensorFlow.pdf)
-
 

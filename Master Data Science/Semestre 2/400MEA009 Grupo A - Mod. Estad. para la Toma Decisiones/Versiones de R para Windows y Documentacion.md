@@ -1,3 +1,14 @@
+---
+title: "Versiones de R para Windows y Documentacion"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - modelos-estadisticos
+  - apuntes
+status: reference
+---
+
 
 
 # Previous Releases of R for Windows
@@ -27,4 +38,3 @@ if (!requireNamespace("pkgbuild", quietly = TRUE)) {
 }
 pkgbuild::find_rtools()
 ```
-

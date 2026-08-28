@@ -1,3 +1,14 @@
+---
+title: "Metodos y Simulacion Estadistica"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 ## **Métodos y simulación   estadística**
 ---
 Descripción y metodologíaCon el desarrollo de esta asignatura se espera que los estudiantes logren aplicar técnicas de análisis exploratorio de datos y algunos métodos de inferencia estadística en diversos contextos. Para esto, los estudiantes conocerán librerías y métodos de programación estadística para el manejo, exploración, resumen y clasificación de datos. A través de la comprensión de los conceptos fundamentales asociados a la teoría estadística e inferencial, con un enfoque paramétrico y no-paramétrico, junto a la posibilidad de conocer los elementos de estadística Bayesiana que se podrán extender sobre los modelos a discutir en los cursos subsecuentes.  

@@ -1,3 +1,14 @@
+---
+title: "Trabajo de Grado"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - gestion-academica
+  - apuntes
+status: reference
+---
+
 Trabajo de Grado:
 
 Vamos a hacer estimaciones

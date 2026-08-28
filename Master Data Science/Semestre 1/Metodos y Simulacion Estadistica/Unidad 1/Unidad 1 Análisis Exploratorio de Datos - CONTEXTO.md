@@ -1,3 +1,14 @@
+---
+title: "Unidad 1 Análisis Exploratorio de Datos - CONTEXTO"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 
 # 1. Validez y Confiabilidad
 ---
@@ -116,4 +127,3 @@ Antes de entregarlos, es necesario **validarse en su contexto** y realizar una v
 ![[Pasted image 20240730114446.png]]
 
 ![[Pasted image 20240730114744.png]]
-

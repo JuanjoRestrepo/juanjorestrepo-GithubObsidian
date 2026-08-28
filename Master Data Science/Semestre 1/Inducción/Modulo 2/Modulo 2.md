@@ -1,3 +1,14 @@
+---
+title: "Modulo 2"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - induccion
+  - apuntes
+status: reference
+---
+
 **
 
 Tema de Intervención: Integración de las TIC en el Aprendizaje de la Inteligencia Artificial y Ciencia de Datos

@@ -1,3 +1,14 @@
+---
+title: "Probabilidad e Inferencia Estadística"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 
 # Introducción
 ---
@@ -60,5 +71,4 @@ Se define como la diferencia entre el valor del estimador y el valor real del pa
 El valor que adquiere un estimador es el resultado de un experimento aleatorio, por tanto, un estimador es una variable aleatoria y debe tener una distribución de probabilidad asociada
 
 ![[Pasted image 20240924193618.png]]
-
 

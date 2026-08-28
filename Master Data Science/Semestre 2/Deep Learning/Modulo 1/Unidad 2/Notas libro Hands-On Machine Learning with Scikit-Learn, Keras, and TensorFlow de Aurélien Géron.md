@@ -1,3 +1,14 @@
+---
+title: "Notas libro Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
+---
+
 
 
 # 🧠 Batch Normalization (BN)
@@ -55,4 +66,3 @@ Durante la inferencia, no se utilizan las estadísticas del mini-batch actual. E
 - **Reduce la sensibilidad a la inicialización**: el modelo es menos dependiente de la inicialización de pesos.
     
 - **Mejora la generalización**: actúa como una forma de regularización, ayudando a prevenir el sobreajuste.[Dive into Deep Learning](https://d2l.ai/chapter_convolutional-modern/batch-norm.html?utm_source=chatgpt.com)
-

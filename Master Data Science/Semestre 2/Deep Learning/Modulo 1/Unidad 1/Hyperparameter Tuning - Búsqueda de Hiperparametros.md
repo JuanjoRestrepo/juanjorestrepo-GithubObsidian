@@ -1,3 +1,14 @@
+---
+title: "Hyperparameter Tuning - Búsqueda de Hiperparametros"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
+---
+
 
 
 ## Búsqueda Aleatoria - Random Search

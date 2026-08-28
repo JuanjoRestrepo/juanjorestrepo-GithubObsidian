@@ -1,3 +1,14 @@
+---
+title: "Cronograma"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 ![[Pasted image 20250731143130.png]]
 
@@ -13,5 +24,4 @@
 |       🔙 Volver a       |         ⏭️ Seguir a         |
 | :---------------------: | :-------------------------: |
 | [[2.Datos del docente]] | [[1.Introduccion Módulo 1]] |
-
 

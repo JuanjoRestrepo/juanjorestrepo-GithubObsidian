@@ -1,3 +1,14 @@
+---
+title: "Plan de Trabajo 2025 Tesis"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - proyecto-aplicado
+  - apuntes
+status: reference
+---
+
 
 
 ---
@@ -22,5 +33,4 @@
 	1. Tomar artículos y construir la DB en un excel, etc... 
 	2. En esos articulos, hay que sacar la metodologia, 
 	3. Tomar los articulos, comparlos, sacar las variables mas importantes o que se repiten
-
 

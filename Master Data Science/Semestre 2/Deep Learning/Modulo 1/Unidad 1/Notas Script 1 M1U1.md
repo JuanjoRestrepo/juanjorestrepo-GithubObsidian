@@ -1,10 +1,12 @@
 ---
+title: "Notas Script 1 M1U1"
+date: 2026-08-27
 tags:
-  - DeepLearning
-  - Master
-  - Maestria
-  - Semestre2
-Created: 2025-04-02
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 tags: #DeepLearning #Master #Maestria #Semestre2 

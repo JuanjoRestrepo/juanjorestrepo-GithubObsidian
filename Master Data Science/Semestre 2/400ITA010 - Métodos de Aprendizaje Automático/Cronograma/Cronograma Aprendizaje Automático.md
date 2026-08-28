@@ -1,10 +1,12 @@
 ---
+title: "Cronograma Aprendizaje Automático"
+date: 2026-08-27
 tags:
-  - MachineLearning
-  - AprendizajeAutomatico
-  - Master
-  - Maestria
-  - Semestre2
+  - maestria
+  - semestre-2
+  - aprendizaje-automatico
+  - apuntes
+status: reference
 ---
 
 

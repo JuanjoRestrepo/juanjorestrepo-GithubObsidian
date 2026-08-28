@@ -1,3 +1,14 @@
+---
+title: "Inducción"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - induccion
+  - apuntes
+status: reference
+---
+
 
 ![[Pasted image 20240719181402.png]]
 
@@ -20,4 +31,3 @@ Hablar con el director
 ![[Pasted image 20240719195353.png]]
 
 ![[Pasted image 20240719203641.png]]
-

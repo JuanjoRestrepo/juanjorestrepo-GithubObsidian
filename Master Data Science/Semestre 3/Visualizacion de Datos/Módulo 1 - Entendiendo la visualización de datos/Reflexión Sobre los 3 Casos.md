@@ -1,3 +1,14 @@
+---
+title: "Reflexión Sobre los 3 Casos"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 ### 1. ¿De los ejemplos dados cuál es el mensaje que mejor recuerda?
 El mensaje que más recuerdo es el del caso **sobre la sobrepesca (“How my dad fishes for the future”),** porque la narrativa de este caso, combina datos científicos con una historia personal emotiva ("mi papá"), lo que genera empatía. De acuerdo con buenas prácticas de narrativa visual, humanizar los datos y apoyarse en múltiples canales (texto, imágenes, personajes) facilita que el mensaje permanezca en la memoria.  
@@ -25,4 +36,3 @@ En el caso mencionado se observan:
 
 ### 5. ¿Qué caso le llamó más la atención? y ¿por qué?
 Sin duda, el de la **sobrepesca,** debido a que la mezcla de narrativa emocional, datos confiables y visualización accesible crea una experiencia memorable. Este caso representa el ideal del storytelling con datos: **mensaje relevante + presentación inteligente + humanización del dato**. Así lo recomiendan gurús de visualización: cada gráfico debe tener intención, contexto y claridad para no perder nunca el foco del mensaje
-

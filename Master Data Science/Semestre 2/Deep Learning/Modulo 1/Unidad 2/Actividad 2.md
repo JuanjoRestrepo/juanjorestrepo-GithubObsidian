@@ -1,3 +1,14 @@
+---
+title: "Actividad 2"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
+---
+
 
 ## Análisis del comportamiento de los algoritmos de optimización en Script1M1U2.ipynb
 

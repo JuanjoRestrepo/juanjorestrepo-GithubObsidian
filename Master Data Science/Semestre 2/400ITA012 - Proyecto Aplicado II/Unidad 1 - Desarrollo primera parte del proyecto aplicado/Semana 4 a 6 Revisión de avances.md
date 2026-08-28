@@ -1,3 +1,14 @@
+---
+title: "Semana 4 a 6 Revisión de avances"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - proyecto-aplicado
+  - apuntes
+status: reference
+---
+
 # Revisión de avances
 ---
 **Durante estas semanas cada grupo deberá reunirse con el tutor del curso, Proyecto Aplicado II**, para revisar los avances del proyecto y hacer seguimiento al cronograma. 

@@ -1,3 +1,14 @@
+---
+title: "Proyecto Real"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 La base de datos aparece con datos faltantes para variables cuali y cuanti
 
 Hay que saber que hacer con las variables faltantes y si se van a imputar o no
@@ -37,5 +48,4 @@ Ejemplo profe
 No escribir la mediana es 300 millones de peso... NO!
 
 El precio de las viviendas tuvo un rango entre 1500 millones de peso, el 50% de las viviendas tuvo un subo de...
-
 

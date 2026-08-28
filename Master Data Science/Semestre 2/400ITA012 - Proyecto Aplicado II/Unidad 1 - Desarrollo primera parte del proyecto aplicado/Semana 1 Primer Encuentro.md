@@ -1,3 +1,14 @@
+---
+title: "Semana 1 Primer Encuentro"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - proyecto-aplicado
+  - apuntes
+status: reference
+---
+
 #### Agenda del primer encuentro sincrónico 
 **Fecha:** 01 de abril del 2025  
 **Hora:** 6:30 p.m.  

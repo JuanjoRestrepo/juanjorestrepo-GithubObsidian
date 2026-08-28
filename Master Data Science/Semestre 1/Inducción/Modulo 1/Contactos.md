@@ -1,3 +1,14 @@
+---
+title: "Contactos"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - induccion
+  - apuntes
+status: reference
+---
+
 
 ### Marlen Jineth Acosta Ruíz
 ---

@@ -1,3 +1,14 @@
+---
+title: "Conceptos de pruebas de hipótesis"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 Es posible estimar un parámetro de datos muestrales, bien sea una ***estimación puntual*** o un ***intervalo de confianza***
 
 #### **¿Si mi objetivo no es estimar un parámetro, sino determinar el cumplimiento de una hipótesis sobre un parámetro?**
@@ -62,6 +73,5 @@ El valor del estimador dará alguna evidencia sobre el valor que asume el parám
 ![[Pasted image 20240925145632.png]]
 ![[Pasted image 20240925145803.png]]
 ![[Pasted image 20240925145823.png]]
-
 
 

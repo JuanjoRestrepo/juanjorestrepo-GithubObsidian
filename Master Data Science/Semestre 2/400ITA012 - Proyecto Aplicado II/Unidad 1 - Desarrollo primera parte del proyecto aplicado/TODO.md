@@ -1,3 +1,14 @@
+---
+title: "TODO"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - proyecto-aplicado
+  - apuntes
+status: reference
+---
+
 
 Hacer una base de datos con los articulos
 
@@ -54,4 +65,3 @@ Ultimo articulo: |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |  
 |Model of sustainability of SMEs in V4 countries|2024|Zvarikova, K., Dvorsky, J., Belas, J. J., Metzker, Z.|4|University|University of Zilina, Alexander Dubcek University in Trencin, Tomas Bata University in Zlin|3|Faculty of Social and Economic Relations, Faculty of Management and Economic|2|Czech Republic, Slovakia, Poland, Hungary|Europe|Developed, Developing|SMEs|Journal of Business Economics and Management|Specific|0,57|Q2|2,5|Q2|small and medium enterprises, SME sustainability model, human resources management, ethics in business, CSR, digitisation of companies, environmental aspects, financial management|Quantitative|Factor analysis (FA), structural equation modelling (SEM)|Survey|Predictive|Sustainability theory|Human resources management, financial management, level of digitalization|Lack of knowledge about sustainability|Positive impact on long-term sustainability|Corporate social responsibility, business ethics|
 
 Yo empiezo en la pagina 11
-

@@ -1,10 +1,12 @@
 ---
+title: "Época y Tam Batch"
+date: 2026-08-27
 tags:
-  - DeepLearning
-  - Master
-  - Maestria
-  - Semestre2
-Created: 2025-04-02
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 tags: #DeepLearning #Master #Maestria #Semestre2 
@@ -96,4 +98,3 @@ model.fit(X_train, y_train,
 ```
 
 Accuracy=m1​i=1∑m​I(y^​i​=yi​)×100%​
-

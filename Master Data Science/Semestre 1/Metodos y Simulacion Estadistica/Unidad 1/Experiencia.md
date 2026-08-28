@@ -1,3 +1,14 @@
+---
+title: "Experiencia"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 # Métodos
 ---
 En esta unidad nos ocuparemos de construir conocimiento en torno a tres conceptos. Conceptos básicos de estadística , análisis exploratorio de datos y manejo del software R.

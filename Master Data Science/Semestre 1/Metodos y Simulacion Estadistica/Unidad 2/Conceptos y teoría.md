@@ -1,3 +1,14 @@
+---
+title: "Conceptos y teoría"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 # **Probabilidad**
 ---
 Muchos relacionamos el concepto de probabilidad con los dados, pues forma parte de su origen y de su desarrollo inicial a través de preguntas y situaciones imaginarias que de alguna forma la moldearon desde la matemáticas.
@@ -281,4 +292,3 @@ Información
 - $P(S|M==0.74P(S|M==0.74$
 - $P(S′|H)=0.81P(S′|H)=0.81$
 - $P(S|H)=0.19$
-

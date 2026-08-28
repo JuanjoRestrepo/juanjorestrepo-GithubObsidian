@@ -1,3 +1,14 @@
+---
+title: "Transcripts"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - gerencia-proyectos
+  - apuntes
+status: reference
+---
+
 
 
 

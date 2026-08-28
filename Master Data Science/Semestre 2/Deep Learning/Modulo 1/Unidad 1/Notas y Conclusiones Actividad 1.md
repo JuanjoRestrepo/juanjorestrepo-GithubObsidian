@@ -1,10 +1,12 @@
 ---
+title: "Notas y Conclusiones Actividad 1"
+date: 2026-08-27
 tags:
-  - Master
-  - Maestria
-  - DeepLearning
-  - Semestre2
-Created: 2025-04-10
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 

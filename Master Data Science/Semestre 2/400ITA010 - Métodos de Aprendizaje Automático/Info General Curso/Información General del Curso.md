@@ -1,11 +1,12 @@
 ---
-color: "#eb3b5a"
+title: "Información General del Curso"
+date: 2026-08-27
 tags:
-  - MachineLearning
-  - AprendizajeAutomatico
-  - Master
-  - Maestria
-  - Semestre2
+  - maestria
+  - semestre-2
+  - aprendizaje-automatico
+  - apuntes
+status: reference
 ---
 
 

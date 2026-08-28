@@ -1,3 +1,14 @@
+---
+title: "Notas Data Pipeline Architecture for Businesses - Bright Data"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 # 1. ¿Qué es un _Data Pipeline_?
 - Cadena de procesos desde un sitio objetivo hasta un lago (`Data Lake`) o `“data pool” `que alimenta decisiones o modelos de IA:
@@ -77,5 +88,4 @@ flowchart TD
 - La arquitectura del pipeline (streaming, batch, híbrido) debe ajustarse a tus volúmenes, fuentes y requerimientos de procesamiento.
 - Elegir bien permite automatización, adaptabilidad y reducción de fricción.
 - La selección apropiada sustenta decisiones de mercado más rápidas e informadas.
-
 

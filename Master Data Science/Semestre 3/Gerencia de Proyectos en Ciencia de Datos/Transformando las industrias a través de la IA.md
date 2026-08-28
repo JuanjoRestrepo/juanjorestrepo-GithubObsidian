@@ -1,3 +1,14 @@
+---
+title: "Transformando las industrias a través de la IA"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - gerencia-proyectos
+  - apuntes
+status: reference
+---
+
 
 **Docente: Mónica Viviana Rodríguez Calvache**
 
@@ -157,6 +168,5 @@ Dependiendo de dónde se encuentre en el ecosistema, MCP puede tener una varieda
 
 
 ![[Pasted image 20251026143208.png]]
-
 
 

@@ -1,3 +1,14 @@
+---
+title: "Variables"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 
 # 1. Variable aleatoria
 ---
@@ -129,6 +140,5 @@ Para tener la seguridad que $f(x)$ puede ser una función de densidad de proba
 El valor esperado o esperanza matemática y la varianza corresponde a dos los conceptos principales asociados a una variable aleatoria. El concepto de esperanza está relacionado en un principio con los juegos de azar, pues los jugadores querían conocer cual era el valor esperado de ganar cuando jugaban un gran número de veces.
 
 La esperanza matemática de una variable aleatoria $X$, corresponde a un valor que representa el valor más probable que ocurra o la media población de la variable aleatoria denotada por $E[X]$ o también $μ$
-
 
 

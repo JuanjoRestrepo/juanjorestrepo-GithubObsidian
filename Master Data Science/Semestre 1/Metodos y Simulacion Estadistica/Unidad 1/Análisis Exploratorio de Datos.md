@@ -1,3 +1,14 @@
+---
+title: "Análisis Exploratorio de Datos"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - estadistica
+  - apuntes
+status: reference
+---
+
 
 # Etapas de la metodología Estadística
 ---
@@ -275,4 +286,3 @@ Mide que tanto la forma de la distribución de frecuencias de los datos es simé
 |             🔙 Volver a              |               Seguir a ⏭️                |
 | :----------------------------------: | :--------------------------------------: |
 | [[Datos profesora\|Datos profesora]] | [[Experiencia\| Unidad 1 - Experiencia]] |
-

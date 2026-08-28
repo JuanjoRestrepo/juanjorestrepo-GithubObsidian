@@ -1,3 +1,14 @@
+---
+title: "Notas Artículo 2"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-3
+  - visualizacion-datos
+  - apuntes
+status: reference
+---
+
 
 # 🛰️ Visualización de Datos y Procesamiento en Streaming – Altair
 
@@ -69,6 +80,5 @@ flowchart LR
     - Navegación temporal: zoom in/out en la línea de tiempo.
 
 - Resuelve problemas complejos con unos pocos clics y facilita la investigación rápida de incidentes.
-
 
 

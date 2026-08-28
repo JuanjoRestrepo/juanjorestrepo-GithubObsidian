@@ -1,3 +1,14 @@
+---
+title: "Introduccion"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-1
+  - induccion
+  - apuntes
+status: reference
+---
+
 
 
 ![[Pasted image 20240717181026.png]]
@@ -38,4 +49,3 @@ NATHALIA: Business Analytics
 
 
 ![[Pasted image 20240717201448.png]]
-

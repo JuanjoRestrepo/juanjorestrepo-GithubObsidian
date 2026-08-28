@@ -1,3 +1,14 @@
+---
+title: "Redes Recurrentes (RNN)"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
+---
+
 
 
 ![[Pasted image 20250608111441.png]]
@@ -109,4 +120,3 @@ Sin embargo, normalmente estos modelos no suelen ser muy profundos porque **tien
 ![[Pasted image 20250608120325.png]]
 
 ![[Pasted image 20250608120331.png]]
-

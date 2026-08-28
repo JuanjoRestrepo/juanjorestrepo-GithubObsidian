@@ -1,3 +1,14 @@
+---
+title: "Redes Convolucionales"
+date: 2026-08-27
+tags:
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
+---
+
 
 ![[Pasted image 20250601205004.png]]
 

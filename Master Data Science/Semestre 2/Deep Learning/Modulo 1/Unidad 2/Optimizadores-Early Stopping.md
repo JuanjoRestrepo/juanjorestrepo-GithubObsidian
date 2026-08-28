@@ -1,9 +1,12 @@
 ---
+title: "Optimizadores-Early Stopping"
+date: 2026-08-27
 tags:
-  - DeepLearning
-  - Master
-  - Maestria
-date: 2025-04-23
+  - maestria
+  - semestre-2
+  - deep-learning
+  - apuntes
+status: reference
 ---
 
 
@@ -127,4 +130,3 @@ En conclusion
 
 
 ---
-
