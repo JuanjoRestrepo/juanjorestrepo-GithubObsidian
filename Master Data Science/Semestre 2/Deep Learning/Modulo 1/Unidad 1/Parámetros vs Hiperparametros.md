@@ -9,7 +9,6 @@ tags:
 status: reference
 ---
 
-tags: #DeepLearning #Master #Maestria #Semestre2 
 En Machine Learning, es fundamental entender la diferencia entre **parámetros** e **hiperparámetros**, ya que influyen directamente en el rendimiento del modelo.
 
 ---

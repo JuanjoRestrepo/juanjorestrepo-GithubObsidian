@@ -29,8 +29,23 @@ status: reference
 
 
 - Se puede entender como un modelo basado en un perceptron multicapa (basado en neuronas)
-- La diferencia es que $h_n$ ya no solo depende de $X_n$ sino también de $h_{n-1}$ , es decir, depende tanto del modulo oculto anterior, tanto de su entrada **$X$
-	- Ejemplo: $h_2$ depende tanto del modulo oculto $h_1$ y de $X_2$ 
+- La diferencia es que $\mathbf{h}_t$ no solo depende de $\mathbf{x}_t$, sino también del estado oculto anterior $\mathbf{h}_{t-1}$.
+	- Ejemplo: $\mathbf{h}_2$ depende de $\mathbf{h}_1$ y de $\mathbf{x}_2$.
+
+$$
+\mathbf{h}_t=\phi\!\left(\mathbf{W}_{xh}\mathbf{x}_t+
+\mathbf{W}_{hh}\mathbf{h}_{t-1}+\mathbf{b}_h\right),
+\qquad
+\hat{\mathbf{y}}_t=\psi\!\left(\mathbf{W}_{hy}\mathbf{h}_t+\mathbf{b}_y\right).
+$$
+
+La dependencia recurrente permite modelar secuencias, pero también puede causar gradientes que se desvanecen o explotan; GRU y LSTM introducen compuertas para mitigar este fenómeno.
+
+
+## Referencias verificadas
+
+- [[Master Data Science/Bibliografía Curada y Actualización 2026|Bibliografía curada]]: *Deep Learning* para el análisis de dependencias temporales y optimización en secuencias.
+- [Capas recurrentes — Keras 3](https://keras.io/api/layers/recurrent_layers/): referencia vigente para SimpleRNN, GRU, LSTM, bidireccionalidad y variantes ConvLSTM.
 - Estos modelos **son mas grandes, porque tienen mas parámetros**
 
 

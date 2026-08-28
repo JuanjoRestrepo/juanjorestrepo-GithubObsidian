@@ -52,3 +52,5 @@ Punto de entrada para la Maestría en Ciencia de Datos. Este mapa organiza la pr
 ## Mantenimiento
 
 La taxonomía, el criterio de indexación y las consultas de auditoría están en [[Master Data Science/Estándar de Indexación de Notas|Estándar de Indexación de Notas]]. Todo nuevo apunte debe declarar su semestre, curso y tema antes de enlazarse desde el MOC correspondiente.
+
+La bibliografía académica y documentación oficial para ampliar los apuntes está centralizada en [[Master Data Science/Bibliografía Curada y Actualización 2026|Bibliografía Curada y Actualización 2026]].

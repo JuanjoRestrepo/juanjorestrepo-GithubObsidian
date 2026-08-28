@@ -83,9 +83,23 @@ Recordar: [[CLASE 9 Redes Neuronales Convolucionales (CNN) - (marzo 31 2023)]]
 
 ### Calcular el número de salidas
 
+Para una convolución bidimensional, con entrada de altura $H$, ancho $W$, *padding* $P$, *stride* $S$, tamaño de kernel $K$ y $F$ filtros:
+
 $$
-\text{NumSalidas} = \text{NumEntradas} \times \text{NumFiltros}
+H_{\mathrm{out}}=\left\lfloor\frac{H+2P-K}{S}\right\rfloor+1,
+\qquad
+W_{\mathrm{out}}=\left\lfloor\frac{W+2P-K}{S}\right\rfloor+1,
+\qquad
+C_{\mathrm{out}}=F.
 $$
+
+El tensor de activaciones tiene dimensión $H_{\mathrm{out}}\times W_{\mathrm{out}}\times F$; los filtros determinan los canales de salida, no una multiplicación directa del número de entradas.
+
+
+## Referencias verificadas
+
+- [[Master Data Science/Bibliografía Curada y Actualización 2026|Bibliografía curada]]: *Deep Learning* para fundamentos de convolución y representación jerárquica.
+- [Capas convolucionales — Keras 3](https://keras.io/api/layers/convolution_layers/): consultar la especificación de cada capa antes de asumir el comportamiento de padding, stride, dilatación o formato de datos.
 
 ## Videos de apoyo
 

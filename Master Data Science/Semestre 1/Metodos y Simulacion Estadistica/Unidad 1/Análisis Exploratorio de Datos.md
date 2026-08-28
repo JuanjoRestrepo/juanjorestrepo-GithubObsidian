@@ -286,3 +286,33 @@ Mide que tanto la forma de la distribución de frecuencias de los datos es simé
 |             🔙 Volver a              |               Seguir a ⏭️                |
 | :----------------------------------: | :--------------------------------------: |
 | [[Datos profesora\|Datos profesora]] | [[Experiencia\| Unidad 1 - Experiencia]] |
+
+## Formulación matemática de referencia
+
+Para evitar ambigüedades entre texto e imágenes, las medidas centrales del análisis exploratorio se expresan como:
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i,
+\qquad
+R = \max_i(x_i) - \min_i(x_i),
+$$
+
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2,
+\qquad
+s = \sqrt{s^2},
+\qquad
+\operatorname{CV} = \frac{s}{\bar{x}}\times 100\%.
+$$
+
+Para la detección exploratoria de valores atípicos mediante el criterio de Tukey:
+
+$$
+\text{límite inferior}=Q_1-1.5\operatorname{IQR},
+\qquad
+\text{límite superior}=Q_3+1.5\operatorname{IQR},
+\qquad
+\operatorname{IQR}=Q_3-Q_1.
+$$
+
+Estas medidas fundamentan [[Ordenar y Limpiar Datos]] y la [[Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos|preparación de datos para ML]].

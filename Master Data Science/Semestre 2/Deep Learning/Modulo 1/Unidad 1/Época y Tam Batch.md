@@ -9,7 +9,6 @@ tags:
 status: reference
 ---
 
-tags: #DeepLearning #Master #Maestria #Semestre2 
 
 
 

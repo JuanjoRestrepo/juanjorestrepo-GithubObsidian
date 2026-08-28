@@ -292,3 +292,34 @@ Información
 - $P(S|M==0.74P(S|M==0.74$
 - $P(S′|H)=0.81P(S′|H)=0.81$
 - $P(S|H)=0.19$
+
+## Formulación matemática de referencia
+
+Sea $(\Omega,\mathcal{F},P)$ un espacio de probabilidad. Para eventos $A,B\in\mathcal{F}$:
+
+$$
+0\leq P(A)\leq 1,
+\qquad
+P(\Omega)=1,
+\qquad
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+$$
+
+Cuando $P(B)>0$, la probabilidad condicional y la regla de multiplicación son:
+
+$$
+P(A\mid B)=\frac{P(A\cap B)}{P(B)},
+\qquad
+P(A\cap B)=P(A\mid B)P(B).
+$$
+
+Si $\{A_i\}_{i=1}^{k}$ es una partición de $\Omega$, la ley de probabilidad total y el teorema de Bayes son:
+
+$$
+P(B)=\sum_{i=1}^{k}P(B\mid A_i)P(A_i),
+\qquad
+P(A_j\mid B)=\frac{P(B\mid A_j)P(A_j)}
+{\sum_{i=1}^{k}P(B\mid A_i)P(A_i)}.
+$$
+
+Estas reglas son la base de [[Conceptos de pruebas de hipótesis]] y de la evaluación probabilística de modelos.

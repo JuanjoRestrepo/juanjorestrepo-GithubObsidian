@@ -74,4 +74,22 @@ El valor del estimador dará alguna evidencia sobre el valor que asume el parám
 ![[Pasted image 20240925145803.png]]
 ![[Pasted image 20240925145823.png]]
 
+## Formulación matemática de referencia
 
+Para contrastar una media poblacional, una formulación bilateral es:
+
+$$
+H_0:\mu=\mu_0
+\qquad \text{frente a} \qquad
+H_1:\mu\neq\mu_0.
+$$
+
+Si la desviación estándar poblacional es desconocida y las condiciones del modelo $t$ son razonables, el estadístico de prueba es:
+
+$$
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.
+$$
+
+Con nivel de significancia $\alpha$, se rechaza $H_0$ cuando el valor $p\leq\alpha$. El error de tipo I tiene probabilidad $P(\text{rechazar }H_0\mid H_0\text{ verdadera})=\alpha$ y el error de tipo II tiene probabilidad $\beta=P(\text{no rechazar }H_0\mid H_1\text{ verdadera})$.
+
+La elección de la prueba exige comprobar independencia, diseño muestral, escala de medición y supuestos distribucionales.

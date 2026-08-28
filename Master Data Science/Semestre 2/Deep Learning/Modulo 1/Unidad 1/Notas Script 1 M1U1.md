@@ -9,7 +9,6 @@ tags:
 status: reference
 ---
 
-tags: #DeepLearning #Master #Maestria #Semestre2 
 # Notas Programa Ejemplo para Realizar Aprendizaje Supervisado utilizando aprendizaje profundo
 
 

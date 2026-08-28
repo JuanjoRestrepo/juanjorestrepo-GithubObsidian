@@ -9,7 +9,6 @@ tags:
 status: reference
 ---
 
-tags: #DeepLearning #Master #Maestria #Semestre2 
 
 Se dice que es lineal, cuando con una linea puedo separar las dos clases o las demás clases
 
