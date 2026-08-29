@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "TiBrandDatabricks",
-      "🐊",
-      "SiAmazonaws",
-      "SiOracle",
-      "SiPython"
+      "SiF1",
+      "SiIbm",
+      "TiBrandCpp",
+      "🤖",
+      "TiAutomaticGearbox"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -67,18 +67,15 @@
   "Templates/AI SKILLS": "🧠",
   "Templates/AI SKILLS/AEROSPACE": "👨‍🚀",
   "Templates/AI SKILLS/web-devops": "SiAzuredevops",
-  "Templates/AI SKILLS/Warp": {
-    "iconName": "SiWarp",
-    "iconColor": "#00ffee"
-  },
+  "Templates/AI SKILLS/Warp": "SiWarp",
   "Templates/AI SKILLS/data-science-expert": "🤖",
   "Templates/AI SKILLS/frontend-design": "TiUxCircle",
   "Templates/UV Python": "SiPython",
   "Self Study/Oracle": "SiOracle",
   "Self Study/Codigo Facilito/Bootcamp AWS Agents con Kiro": "SiAmazonaws",
   "Self Study/Codigo Facilito": "🐊",
-  "Templates/AI SKILLS/databricks": {
-    "iconName": "TiBrandDatabricks",
-    "iconColor": "#fa0000"
-  }
+  "Self Study/UiPath": "🤖",
+  "Self Study/POO - LUISA RINCON 2025": "TiBrandCpp",
+  "Self Study/IBM": "SiIbm",
+  "Self Study/F1": "SiF1"
 }
