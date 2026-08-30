@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiRobot2Fill",
       "TiSquareNumber1",
       "TiSquareNumber2",
       "TiSquareNumber5",
-      "SiF1",
-      "SiIbm"
+      "SiF1"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -86,5 +86,6 @@
   "Ing Electronica/Semestre 10 2023-2/Holcim ABS/Capacitaciones/UiPath Course/RPA Developer Foundation": {
     "iconName": "TiSquareNumber1",
     "iconColor": "#c65c06"
-  }
+  },
+  "04_Resources/Automation_RPA": "RiRobot2Fill"
 }
