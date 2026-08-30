@@ -258,14 +258,14 @@ flowchart TD
 
 | Concepto Arquitectónico | Fundamentos 2023 (Holcim ABS) | Estándares Enterprise 2026 (Self Study) | Impacto en Producción |
 | :--- | :--- | :--- | :--- |
-| **Paso de Datos entre Módulos** | [[5. Variables and Arguments in Studio\|Variables y Argumentos con prefijos In_/Out_]] | [[18. Using SpecificContent\|SpecificContent Dictionary & Config Protocol]] | Contratos de interfaz estrictos sin acoplamiento |
-| **Estructura del Proceso** | [[6. Control Flow in Studio\|Secuencias y Flowcharts anidados]] | [[10. Overview of REFramework\|REFramework State Machine Template]] | Tolerancia a fallos, recuperación automática y escalabilidad |
-| **Separación de Responsabilidades** | [[1. Exploring UiPath Studio Interface\|Monolito en Main.xaml]] | [[12. Create Dispatcher Project\|Dispatcher]] / [[17. Running the Performer Bot in UiPath\|Performer]] | Ejecución paralela multi-robot y desacoplamiento de ingesta |
-| **Manejo de Transacciones** | [[1. The REFramwork without Queue Items Development Checklist\|Iteración secuencial sobre DataTables]] | [[13. Creating a New Queue in UiPath Orchestrator\|Colas de Orchestrator con SLAs]] | Reprocesamiento nativo, balanceo de carga y trazabilidad |
-| **Gestión de Errores** | [[2. TryCatch, Throw and Rethrow\|TryCatch clásico y Stop en error]] | [[15. Using Try Catch for Exception Handling in UiPath\|Clasificación BRE vs SE en REFramework]] | Continuidad operativa: si un ítem falla, el bot pasa al siguiente |
-| **Parametrización y Secretos** | [[1. Orchestrator Resources in Studio\|Hardcoding / Variables locales]] | [[16. Update Config File in UiPath\|Config.xlsx + Assets en Orchestrator]] | Despliegue agnóstico del entorno (Dev/Test/Prod) |
-| **Identificación de UI** | [[1. Introducing Selectors\|Selectores Clásicos estáticos]] | [[20. Open Each PDF in Microsoft Edge-Chrome-Etc\|Modern Unified Target & Fuzzy Selectors]] | Resistencia ante actualizaciones y cambios de UI |
-| **Gobernanza de Infraestructura** | [[3. Robot Provisioning and License Distribution\|Aprovisionamiento local en Studio]] | [[3. Unattended Robot Setup\|Robots No Atendidos + Triggers en Orchestrator]] | Automatización enterprise 24/7 sin interacción humana |
+| **Paso de Datos entre Módulos** | [[5. Variables and Arguments in Studio|Variables y Argumentos con prefijos In_/Out_]] | [[18. Using SpecificContent|SpecificContent Dictionary & Config Protocol]] | Contratos de interfaz estrictos sin acoplamiento |
+| **Estructura del Proceso** | [[6. Control Flow in Studio|Secuencias y Flowcharts anidados]] | [[10. Overview of REFramework|REFramework State Machine Template]] | Tolerancia a fallos, recuperación automática y escalabilidad |
+| **Separación de Responsabilidades** | [[1. Exploring UiPath Studio Interface|Monolito en Main.xaml]] | [[12. Create Dispatcher Project|Dispatcher]] / [[17. Running the Performer Bot in UiPath|Performer]] | Ejecución paralela multi-robot y desacoplamiento de ingesta |
+| **Manejo de Transacciones** | [[1. The REFramwork without Queue Items Development Checklist|Iteración secuencial sobre DataTables]] | [[13. Creating a New Queue in UiPath Orchestrator|Colas de Orchestrator con SLAs]] | Reprocesamiento nativo, balanceo de carga y trazabilidad |
+| **Gestión de Errores** | [[2. TryCatch, Throw and Rethrow|TryCatch clásico y Stop en error]] | [[15. Using Try Catch for Exception Handling in UiPath|Clasificación BRE vs SE en REFramework]] | Continuidad operativa: si un ítem falla, el bot pasa al siguiente |
+| **Parametrización y Secretos** | [[1. Orchestrator Resources in Studio|Hardcoding / Variables locales]] | [[16. Update Config File in UiPath|Config.xlsx + Assets en Orchestrator]] | Despliegue agnóstico del entorno (Dev/Test/Prod) |
+| **Identificación de UI** | [[1. Introducing Selectors|Selectores Clásicos estáticos]] | [[20. Open Each PDF in Microsoft Edge-Chrome-Etc|Modern Unified Target & Fuzzy Selectors]] | Resistencia ante actualizaciones y cambios de UI |
+| **Gobernanza de Infraestructura** | [[3. Robot Provisioning and License Distribution|Aprovisionamiento local en Studio]] | [[3. Unattended Robot Setup|Robots No Atendidos + Triggers en Orchestrator]] | Automatización enterprise 24/7 sin interacción humana |
 
 ---
 

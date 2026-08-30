@@ -29,7 +29,7 @@ related:
 
 Lo que aprenderás en este curso
 
-Al final de este curso, usted debería será capaz de:
+Al final de este curso, usted debería ser capaz de:
 
 1. Listar acciones y paneles de depuración.
 2. Defina la depuración remota.
