@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📚",
       "RiRobot2Fill",
       "TiSquareNumber1",
       "TiSquareNumber2",
-      "TiSquareNumber5",
-      "SiF1"
+      "TiSquareNumber5"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -87,5 +87,7 @@
     "iconName": "TiSquareNumber1",
     "iconColor": "#c65c06"
   },
-  "04_Resources/Automation_RPA": "RiRobot2Fill"
+  "04_Resources/Automation_RPA": "RiRobot2Fill",
+  "04_Resources": "📚",
+  "04_Resources/Automation_RPA/UiPath/02_Enterprise_REFramework_2026/Robot 5 PDF Invoice Scraper with REFramework": "TiSquareNumber5"
 }
