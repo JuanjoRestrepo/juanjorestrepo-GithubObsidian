@@ -531,6 +531,20 @@ just deliver the artifact.
   (Sequence vs. Flowchart vs. State Machine, file naming, annotations, decomposition), Windows vs.
   Windows-Legacy project compatibility, logging levels, and this team's Organization-Specific
   naming conventions and Azure DevOps ALM flow for UiPath
+- `references/linq-expressions.md` — LINQ (Language-Integrated Query) in UiPath and RPA:
+  why LINQ replaces For Each Row loops, required namespaces (System.Linq, System.Data,
+  System.Data.DataSetExtensions), VB.NET query syntax vs. method/lambda syntax with side-by-
+  side comparisons, C# equivalents, deferred vs. immediate execution (the most common source
+  of subtle bugs in Studio expressions), and a 17-pattern DataTable cookbook covering: filter
+  by value/multiple conditions/case-insensitive/date range, DBNull handling, remove empty
+  rows, sort (single/multi-key), projection (extract columns as lists), distinct/deduplicate
+  (DataRowComparer.Default), Count/Any/All, First/FirstOrDefault/Single, aggregate (Sum/Avg/
+  Max/Min), GroupBy with aggregation, inner join and left outer join of two DataTables, set
+  operations (Intersect/Except/Union/Concat), column enumeration by type, pagination
+  (Take/Skip); LINQ on Lists/Arrays/Dictionaries; operator quick-reference table (deferred vs.
+  immediate, Assign vs. Invoke Code); debugging guide (CopyToDataTable empty-result trap,
+  namespace errors, DBNull object-reference errors, silent string-mismatch diagnosis);
+  performance guidance and the threshold for switching to Python/Polars
 - `references/python-rpa.md` — `rpaframework`/Robocorp module map, Producer/Consumer skeleton code,
   pywinauto vs. Selenium vs. Playwright decision guide, packaging and CI/CD for Python bots
 - `references/documentation-templates.md` — full PDD, SDD, exception matrix, and test case

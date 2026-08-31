@@ -110,6 +110,14 @@ after the fact without rework.
   Language_ in Studio Settings (Studio Pro profile only — Studio and StudioX profiles always use
   VB, which is itself a signal of where UiPath's own defaults sit).
 
+**LINQ in expressions:** VB.NET expression syntax is the default language for all LINQ queries
+used inside `Assign` activities, `For Each` conditions, and `Invoke Code` bodies. LINQ is the
+primary mechanism for filtering DataTables, transforming collections, joining tables, and
+aggregating data without using `For Each Row` loops. See `references/linq-expressions.md` for
+the full reference: VB.NET vs. C# syntax, required namespaces, deferred vs. immediate
+execution, and a cookbook covering the 17 most common DataTable and collection patterns used
+in UiPath RPA workflows.
+
 ## Workflow Design and Layout Best Practices
 
 Beyond variable/argument naming conventions (below), the shape and structure of the workflows
