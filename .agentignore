@@ -1,0 +1,14 @@
+# System files and configurations
+.git/
+.obsidian/
+.env
+
+# Security and Finance Vaults (Strict access denied)
+_System/Keys/
+02_Areas/Finance/
+
+# Heavy multimedia files
+_System/Assets/
+*.png
+*.jpg
+*.pdf
