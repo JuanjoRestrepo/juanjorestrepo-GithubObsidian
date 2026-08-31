@@ -104,3 +104,8 @@ Podemos intentar reformular la descripción, por ejemplo:
 
 Si quieres, dime cómo te gustaría que modifiquemos la descripción, y lo intentamos de nuevo. 😊
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -144,3 +144,8 @@ IBM ha sido responsable de muchos hitos importantes en la historia de la tecnolo
 
 Un hecho curioso sobre IBM es que durante la década de 1950, la compañía creó una máquina llamada IBM 305 RAMAC, que es considerada como la primera computadora con un disco duro. Sin embargo, el disco duro de esta máquina era enorme en comparación con los estándares actuales: pesaba más de una tonelada y podía almacenar solo 5 megabytes de datos.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

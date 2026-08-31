@@ -8024,3 +8024,8 @@ Done. The skill now has **12 reference files**. Complete change report:
 
 **Business Metrics Governance**: why metric definitions diverge across teams, metric definition YAML with `not_to_be_confused_with` field, three governance layers, and metric certification tiers (Certified → Validated → Draft → Deprecated).
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

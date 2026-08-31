@@ -88,3 +88,8 @@ Mi recomendación práctica: Primero B (embeddings) y a continuación (2) splits
 
 ---
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Master Data Science]]
+- **Dominio**: Master Data Science

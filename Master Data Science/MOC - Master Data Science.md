@@ -42,6 +42,27 @@ Punto de entrada para la Maestría en Ciencia de Datos. Este mapa organiza la pr
 - [[Master Data Science/Data Engineering Path 2023/Data Engineering Path 2023|Data Engineering Path 2023]]
 - [[Master Data Science/Data Engineering Path 2023/Path de Estudio Data Science 2023|Path de Estudio Data Science 2023]]
 
+
+### Desarrollo y Semillero ÓMICAS
+- [[Master Data Science/Omicas/DEV/Analisis de Series de Tiempo|Análisis de Series de Tiempo en Espectroscopía]]
+- [[Master Data Science/Omicas/DEV/Coding/1. Definición del esquema de metadatos y salida/Borrador de scopus_schema.json|Esquema JSON de Scopus]]
+- [[Master Data Science/Omicas/DEV/Coding/2. Database/Opciones de DB|Opciones de Bases de Datos]] · [[Master Data Science/Omicas/DEV/Coding/2. Database/PostgreSQL|Configuración PostgreSQL]]
+- [[Master Data Science/Omicas/DEV/Coding/3. Airflow Orch/Creacion de Usuario|Creación de Usuarios en Airflow]]
+- [[Master Data Science/Omicas/DEV/Coding/API KEY TEST|Pruebas de API Keys]]
+- [[Master Data Science/Omicas/DEV/Coding/AVANCE JULIO|Avances de Desarrollo Julio]] · [[Master Data Science/Omicas/DEV/Coding/Julio Changes|Historial de Cambios Julio]]
+- [[Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Campos de Metadatos|Campos de Metadatos]] · [[Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Estructura de Carpetas|Estructura de Carpetas]] · [[Master Data Science/Omicas/DEV/Coding/Plan de Trabajo/Flujo|Flujo de Orquestación]]
+- [[Master Data Science/Omicas/Optimizacion/Optimizacion Hiperparametros/Optimizacion de Hiperparametros con Optuna|Optimización de Hiperparámetros con Optuna]]
+- [[Master Data Science/Omicas/Reunion/1. Reunion|Minutas de Reunión del Semillero]]
+
+### Tesis y Metodología 2025
+- [[Master Data Science/TESIS 2025/1. Documentos de la Tesis/1. Carta de Aceptación Director de Tesis|Carta de Aceptación Director]]
+- [[Master Data Science/TESIS 2025/1. Documentos de la Tesis/2. Propuesta de Trabajo de Grado|Propuesta Formal de Trabajo de Grado]]
+- [[Master Data Science/TESIS 2025/Anteproyecto/Metodologia|Metodología de Investigación]] · [[Master Data Science/TESIS 2025/Anteproyecto/Problema y Justificacion|Definición del Problema y Justificación]]
+- [[Master Data Science/TESIS 2025/Anteproyecto/Resultados Esperados|Resultados Esperados]] · [[Master Data Science/TESIS 2025/Anteproyecto/Referencias|Referencias Bibliográficas]]
+- [[Master Data Science/TESIS 2025/Anteproyecto/Google Colab/Desarrollo Codigo/Etapa Definitiva/Nov-28-2025/Avances Nov 28|Avances Experimentales Noviembre]]
+- [[Master Data Science/TESIS 2025/Situacion Actual - A Resolver/Notas Situación Tesis|Notas de Diagnóstico y Plan de Acción Tesis]]
+- [[Master Data Science/Cursor on Website|Integración Cursor Web]] · [[Master Data Science/Directorio Facultades Javeriana Cali 2023|Directorio Facultades Javeriana]]
+
 ## Conexiones transversales
 
 - [[Master Data Science/Semestre 1/Metodos y Simulacion Estadistica/Unidad 1/Ordenar y Limpiar Datos|Limpieza de datos]] → [[Master Data Science/Semestre 2/400ITA010 - Métodos de Aprendizaje Automático/Módulo 1 - Ciclo de construcción de un sistema de aprendizaje automático/Unidad 2 Preparacion de los datos/0.Conceptos básicos - Preparación de los datos|preparación de datos para aprendizaje automático]].

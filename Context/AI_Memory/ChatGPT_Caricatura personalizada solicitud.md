@@ -116,3 +116,8 @@ Generaré **directamente** la caricatura y la mostraré aquí mismo, integrando:
 
 📌 **Sube la foto y en el siguiente mensaje genero la caricatura sin más preguntas.**
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

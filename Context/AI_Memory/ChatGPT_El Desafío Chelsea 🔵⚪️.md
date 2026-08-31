@@ -2000,3 +2000,8 @@ Aunque no tengo acceso a información actualizada después de septiembre de 2021
 
 Espero que estos ejemplos te den algunas ideas sobre cómo se han abordado desafíos similares en Copas Mundiales anteriores. Recuerda adaptar y personalizar las soluciones de acuerdo con el contexto actual y los objetivos del Chelsea Challenge.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

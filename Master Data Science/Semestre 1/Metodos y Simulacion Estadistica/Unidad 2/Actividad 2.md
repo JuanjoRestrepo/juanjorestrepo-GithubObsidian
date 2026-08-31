@@ -64,3 +64,9 @@ Usar los códigos, hacer las modificaciones de los valores que se piden y ver qu
 Los resultados deben interpretarse.
 
 Universidad del Norte, libro pagina web del profesor
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Semestre 1]]
+- **Dominio**: Master Data Science — Semestre 1

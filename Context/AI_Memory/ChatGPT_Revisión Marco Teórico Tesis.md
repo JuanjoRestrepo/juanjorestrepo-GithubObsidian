@@ -783,3 +783,8 @@ Este conjunto de métodos disponibles refleja el notable dinamismo del campo de 
 ### Human
 Como quedaria? Si hay que hacer muchos cambios no lo hagas y mejor solo acomoda un parrafo al final para realizar dicha transicion, sino, continuemos con Histopatología digital y WSI, cuyo contenido se encuentra en el archivo Marco Teórico\hispatologia_WSI.tex
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -769,3 +769,8 @@ Sincerely,
 
 This addition highlights your adaptability, appreciation for teamwork, and the value of diverse experiences, which can be valuable assets in a dynamic environment like Red Bull Racing.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

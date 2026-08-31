@@ -491,5 +491,10 @@ En base a los articulos anteriores. Quiero como tener en cuenta por que aun tene
 ### Human
 Ayudame con estos articulos. 
 
-Me van a preguntar sobre ellos, los cuales hablan sobre la corteza cerebral. Ayudame a sacar puntos claves para estudiar 
+Me van a preguntar sobre ellos, los cuales hablan sobre la corteza cerebral. Ayudame a sacar puntos claves para estudiar
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

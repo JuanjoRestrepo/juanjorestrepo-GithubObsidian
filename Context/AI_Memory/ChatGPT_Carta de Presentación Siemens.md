@@ -735,5 +735,10 @@ Agradezco la oportunidad de postularme para este puesto y quedo a disposición p
 
 Atentamente,
 
-Juan José Restrepo Rosero 
+Juan José Restrepo Rosero
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

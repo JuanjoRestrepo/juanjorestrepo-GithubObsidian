@@ -1541,3 +1541,8 @@ Cuentas con disponibilidad inmediata para laborar?
 En que horario puedo llamarte para darte más contexto del puesto?
 Puedes atender una entrevista con el gerente del puesto la próxima semana?
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

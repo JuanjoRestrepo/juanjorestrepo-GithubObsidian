@@ -298,3 +298,9 @@ qH1nmAbAHmAxQfuuixZA9OGf6u7acYEBu5gkHwAzSXVkdILzBdhrpTaZWaMBnNesdl7a2AgEqRp8SZGZ
 n5xSCEbxLNHubrNQNdAVmig5dCKQ4xMU3QW7ARU3wxmAKoDXQ4Ae+YQBH5shdfm6QEJEYB1EZzWuEV5jOKipggfDFFQZ0IQAxADANuZ8wimmMsMJOIaReEXRFwzV/RwAP9Fsqp6Z4mzAQAbMCAA=
 ```
 %%
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Master Data Science]]
+- **Dominio**: Master Data Science

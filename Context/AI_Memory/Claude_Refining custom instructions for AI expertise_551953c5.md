@@ -650,3 +650,8 @@ Apply appropriate static code analysis tools based on the programming language a
 
 Copy and paste this section directly at the end of your instructions file. It integrates your reference request with structured guidance on how to apply the skills and which static analysis tools to use.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

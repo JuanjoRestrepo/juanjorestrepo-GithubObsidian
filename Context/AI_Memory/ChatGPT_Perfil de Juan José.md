@@ -18,3 +18,8 @@ Want me to turn this into a bio, tagline, or profile pitch?
 ### Human
 Describe me based on all our chats — make it catchy!
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

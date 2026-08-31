@@ -191,3 +191,8 @@ I aspire to contribute to a renowned and historic company, leaving a positive im
 
 Overall, my academic journey, practical experience, and personal attributes make me a well-rounded candidate with a deep-rooted commitment to technological innovation and positive contributions to society.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

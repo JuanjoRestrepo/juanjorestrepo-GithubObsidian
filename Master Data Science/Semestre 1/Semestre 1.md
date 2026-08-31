@@ -8,3 +8,9 @@ tags:
   - apuntes
 status: reference
 ---
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Semestre 1]]
+- **Dominio**: Master Data Science — Semestre 1

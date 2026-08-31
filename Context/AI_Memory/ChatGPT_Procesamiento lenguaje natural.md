@@ -914,3 +914,8 @@ Si deseas ampliar tu análisis, puedes realizar el conteo también con Hadoop (u
 
 ¿Necesitas apoyo en alguna etapa en particular o un ejemplo adaptado al entorno que estás utilizando?
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

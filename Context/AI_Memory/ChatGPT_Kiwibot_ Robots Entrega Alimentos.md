@@ -579,3 +579,8 @@ Practicar estos escenarios te ayudará a desarrollar tus habilidades de resoluci
 8. **Resolución de problemas en el campo:**
    - Ante un problema en el campo, realizaría una evaluación rápida de la situación para determinar la gravedad del problema y su impacto en la operación. Utilizaría herramientas de diagnóstico portátiles y registros de errores para identificar la causa raíz del problema y determinar si se puede solucionar in situ o si se requiere asistencia adicional. En caso de ser necesario, coordinaría con el equipo de soporte técnico para implementar medidas correctivas, como el reemplazo de componentes o la reconfiguración del robot, para restaurar la funcionalidad operativa lo antes posible. Durante todo el proceso, mantendría una comunicación abierta y transparente con todas las partes interesadas y documentaría meticulosamente todas las acciones tomadas para futuras referencias y análisis de lecciones aprendidas.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

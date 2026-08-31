@@ -33,6 +33,7 @@ mindmap
       [[7. Cronograma|Cronograma Ejecución]]
       [[Diagrama Arquitectura|Arquitectura RAG]]
       [[Objetivo|Bloque 1: EDA]]
+      [[API KEY OPEN AI|Configuración API Key OpenAI]]
       [[Plan de Trabajo|Bloque 2: Insights]]
     Opción B: RPA & Competitive Intelligence
       [[1. Comparación Opciones|Matriz Comparativa]]

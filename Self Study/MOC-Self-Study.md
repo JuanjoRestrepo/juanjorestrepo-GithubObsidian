@@ -88,6 +88,20 @@ flowchart LR
 - [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/well-architected-framework-pillars.html) y [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/pillars).
 - [OWASP Top 10:2025](https://owasp.org/Top10/).
 
+
+## Dominios Especializados y Sub-MOCs
+
+- [[Qubika/MOC - Qubika|MOC — Qubika & Qversity Data Engineering]]
+- [[Ing Electronica/MOC - Ingenieria Electronica|MOC — Ingeniería Electrónica]]
+- [[Job Search/MOC - Job Search|MOC — Job Search & Technical Cases]]
+- [[Context/MOC - AI Memory & Context|MOC — AI Memory & Context Base]]
+- [[Templates/MOC - Templates & AI Skills|MOC — Templates & Portable AI Skills]]
+- [[04_Resources/Automation_RPA/UiPath/MOC-UiPath|MOC — UiPath RPA Architecture]]
+- [[Master Data Science/MOC - Master Data Science|MOC — Master Data Science]]
+- [[databricks 2026|Databricks 2026 Roadmap & Lakehouse Standards]]
+- [[Microsoft Build 2026|Microsoft Build 2026 Notes]]
+- [[Excalidraw/EC2|Diagrama AWS EC2 Architecture]] · [[Excalidraw/EC2 2|Diagrama AWS EC2 VPC Architecture]]
+
 ## Enlaces de retorno
 
 Las notas estandarizadas incorporan un bloque **Contexto de estudio** que enlaza de vuelta a su dominio en este MOC.

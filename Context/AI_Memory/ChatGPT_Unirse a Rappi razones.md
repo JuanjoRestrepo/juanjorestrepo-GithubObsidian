@@ -72,3 +72,8 @@ Conocimientos en visualización de datos: Conocimientos en PowerBI o LookerStudi
 ### Human
 ¿Por qué quieres unirte a la familia Rappi?*
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

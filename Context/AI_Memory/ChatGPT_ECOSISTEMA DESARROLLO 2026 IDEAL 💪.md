@@ -10544,3 +10544,8 @@ Devicon / Simple Icons es para:
 
 Si quieres, te puedo mapear TODO tu stack a los íconos correctos (Node, Python, Airflow, etc.) para que quede consistente visualmente.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

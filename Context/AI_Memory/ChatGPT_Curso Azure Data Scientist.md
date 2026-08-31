@@ -37,3 +37,8 @@ El curso seleccionado, "Azure Data Scientist" ofrecido por Microsoft en la plata
 
 En resumen, este curso será un paso fundamental en mi desarrollo profesional al proporcionarme las habilidades y el conocimiento necesarios para sobresalir en el campo de la ciencia de datos y la ingeniería informática, al tiempo que contribuirá significativamente a mis objetivos de crecimiento profesional.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

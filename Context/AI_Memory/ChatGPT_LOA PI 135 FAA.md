@@ -10,3 +10,8 @@ puedes buscar esto? PI 135 simulador, puedes buscar la LOA de ese simulador en l
 
 El LOA DE ESE SIMULADOR, NECESITO SABER SI ESE LOA ESTA LEGALMENTE EN EL WEBSITE DE LA FAA O SI PUEDES ENCONTRAR EL DOCUMENTO PDF EXACTO DE ESE SIMULADOR. PI 135
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

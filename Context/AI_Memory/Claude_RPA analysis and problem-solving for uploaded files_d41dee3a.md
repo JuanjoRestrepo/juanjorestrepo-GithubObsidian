@@ -94,5 +94,8 @@ Y lo que mejor consideres para cumplir con ese objetivo de funcionalidad total p
 This block is not supported on your current device yet.
 ```
 
+---
 
-
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

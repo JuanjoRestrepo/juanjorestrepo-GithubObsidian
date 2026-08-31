@@ -3275,3 +3275,8 @@ driver.quit()
 
 Con este código, los datos de Argentina y Ecuador para el año 1959 se combinan correctamente en un solo DataFrame antes de ser agregados al DataFrame final que contiene todos los datos históricos de la Copa América.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -198,3 +198,8 @@ anas, permitiendo la ventilación adecuada en función de la temperatura y la hu
 
 Es importante recordar que estos son solo ejemplos y que las respuestas pueden variar según los recursos disponibles, el presupuesto asignado y los requisitos específicos del proyecto.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

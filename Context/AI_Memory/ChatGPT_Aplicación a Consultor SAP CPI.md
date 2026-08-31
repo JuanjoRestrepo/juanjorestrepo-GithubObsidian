@@ -556,3 +556,8 @@ Aquí tienes una versión optimizada (≤200 caracteres):
 
 Si quieres, puedo ajustarte todo el CV para maximizar ATS específicamente para “SAP CPI + ABAP + Integration Suite keywords” sin falsear experiencia.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

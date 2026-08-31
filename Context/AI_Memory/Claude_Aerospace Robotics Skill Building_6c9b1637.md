@@ -379,3 +379,8 @@ This block is not supported on your current device yet.
 
 Done. "before responding" added exactly as specified. The updated skill package is ready for download.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

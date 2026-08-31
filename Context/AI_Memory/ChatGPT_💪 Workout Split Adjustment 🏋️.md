@@ -2116,3 +2116,8 @@ Let me know — I can make it specific to:
 - Balancing weekly muscle group volume
 - Recovery cycles and progress tracking
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

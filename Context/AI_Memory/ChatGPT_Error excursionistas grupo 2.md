@@ -70,3 +70,8 @@ Esto sugiere que la respuesta correcta es **la mitad del número que se menciona
 
 Sin embargo, los excursionistas del grupo 2 intentaron responder con una lógica diferente ("0", "3"), lo cual no se alinea con el patrón de las respuestas esperadas, y por eso las trampas de seguridad se activaron.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

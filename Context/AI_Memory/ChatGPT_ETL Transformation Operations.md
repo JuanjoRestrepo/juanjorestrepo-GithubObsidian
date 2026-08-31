@@ -1071,3 +1071,8 @@ Evaluate each statement:
 - A data warehouse is optimized for analytical queries, while a data lake is optimized for exploratory queries  
 - A data warehouse is a structured and curated repository of data, while a data lake is an unstructured and raw collection of data
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

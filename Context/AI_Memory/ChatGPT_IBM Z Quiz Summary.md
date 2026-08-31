@@ -168,5 +168,10 @@ CompTIA Linux+
 Enhanced Security
 Quantum-safe Cryptography
 IBM Hyper Protect
-Pervasive Encryption 
+Pervasive Encryption
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -5014,3 +5014,8 @@ If you want to continue correctly:
 
 That’s the next major leap into real aerospace simulation.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

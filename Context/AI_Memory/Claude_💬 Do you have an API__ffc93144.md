@@ -116,3 +116,8 @@ For more detailed information including advanced features, authentication method
 
 Would you like me to explain any specific part of the implementation in more detail?
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

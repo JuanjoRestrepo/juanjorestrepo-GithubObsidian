@@ -75,3 +75,8 @@ Como la analizo para ver en dónde falla? Además, me dicen que el problema podr
 ### Human
 Dónde puedo ver la hoja de datos, data sheet, diagramas, documentación, casos similares sobre como revisar la tarjeta y repararla?
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -63,4 +63,8 @@ tags:
 3. **¿Visualizaciones o informes?**
     - ¿Generamos una versión PDF/Dash o mejoramos los markdown con detalles?
 
+---
 
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Master Data Science]]
+- **Dominio**: Master Data Science

@@ -3579,3 +3579,8 @@ with DAG(
     t_bronze >> t_silver >> t_gold >> t_peaks
     t_bronze >> t_silver >> t_gold >> t_peaks_test
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -474,3 +474,8 @@ Temas dominantes: Las palabras clave más frecuentes (p. ej. “sustainability�
 Diversidad temática: Aunque existe un pequeño conjunto de términos muy recurrentes, el “long tail” de keywords (más de 150 términos únicos) indica una amplia variedad de enfoques y subtemas, desde métodos específicos (“case study”, “survey”) hasta dimensiones geográficas (“emerging economies”).
 Agrupamiento futuro: Para un análisis temático avanzado, conviene agrupar sinónimos y variantes (p. ej. “sme” vs. “small and medium enterprises”), y aplicar técnicas de reducción de dimensionalidad o clustering (p. ej. LDA, k‑means sobre TF-IDF) para descubrir tópicos emergentes.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

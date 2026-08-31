@@ -475,3 +475,8 @@ If you want, next step I recommend:
 
 Or we go step-by-step and build it like a real production system.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

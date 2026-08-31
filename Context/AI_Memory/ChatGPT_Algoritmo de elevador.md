@@ -2701,3 +2701,8 @@ Los checkpoints son útiles para ver el estado de las variables en un momento es
 
 Si necesitas ayuda con un caso específico, ¡proporcióname más detalles y con gusto te guiaré!
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

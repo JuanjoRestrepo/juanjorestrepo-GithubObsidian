@@ -55,3 +55,9 @@ En el script `Script1M1U2.ipynb`, ADAM destaca por su rendimiento superior, log
 - Para problemas de gran escala con múltiples parámetros, ADAM es el optimizador recomendado por su eficiencia y adaptabilidad.
 
 En la práctica, es recomendable experimentar con diferentes optimizadores y ajustar sus hiperparámetros para encontrar la configuración óptima para cada problema específico.
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Semestre 2]]
+- **Dominio**: Master Data Science — Semestre 2

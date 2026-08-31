@@ -404,3 +404,8 @@ Con una breve explicación de cada fase, podrás presentar la metodología de ma
 ### Assistant
 El tiempo que dediques al marco teórico en la presentación dependerá de varios factores, como el nivel de conocimiento de la audiencia sobre el tema y la complejidad del marco teórico en sí mismo. Sin embargo, es importante recordar que el marco teórico es fundamental para contextualizar la investigación y mostrar la relevancia y necesidad del estudio. Por lo tanto, aunque es posible que no necesites profundizar tanto en el marco teórico en una presentación corta, es recomendable dedicarle un tiempo adecuado para que la audiencia comprenda mejor el problema y los objetivos de la investigación. Una posible estrategia es resumir los puntos más relevantes del marco teórico y enfocarse en las contribuciones de la investigación y cómo se relacionan con el marco teórico.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

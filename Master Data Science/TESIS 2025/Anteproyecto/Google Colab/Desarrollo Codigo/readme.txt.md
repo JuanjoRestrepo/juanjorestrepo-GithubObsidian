@@ -29,3 +29,9 @@ D3. partition
 ----------
 T1. wsi_labels
 	Table with the wsi ID, patient ID and its respective Gleason score (primary and secondary grades).
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Master Data Science]]
+- **Dominio**: Master Data Science

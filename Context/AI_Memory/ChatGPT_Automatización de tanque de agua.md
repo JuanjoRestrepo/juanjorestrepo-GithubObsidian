@@ -1766,3 +1766,8 @@ while True:
 ### Resultado esperado:
 Ahora, el sistema debería comportarse de acuerdo con el ciclo: llenar hasta el 80%, luego vaciar, manteniendo el nivel siempre entre el 10% y el 80%, mientras que en caso de falla de **LT1**, se activarán los interruptores de **HLS** y **LLS** para garantizar la seguridad del sistema.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -3370,3 +3370,8 @@ Ahora conoces ladder?
 ### Assistant
 Disculpa por la confusión, ¿a qué te refieres exactamente? ¿Hay algún problema en particular que notaste en la ejecución del código o en la respuesta del sistema? Estoy aquí para ayudarte a resolver cualquier problema o duda que tengas.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -115,3 +115,8 @@ Here is a breakdown of what was built and why.
 
 **One thing to clarify before you paste this into Warp:** Warp currently supports rules as plain text (it does not render markdown tables in the rules editor). The document is structured in Markdown for readability here, but when pasting into Warp you may want to either paste the raw text as-is (Warp handles it) or split it into individual rules per section using the "+" button. Let me know if you want a version reformatted for direct copy-paste into Warp's UI — one rule per block.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -335,3 +335,8 @@ Con esa información puedo:
 - diseñar **tu estrategia EB-2 NIW**
 - decirte **qué deberías construir durante 1–2 años para maximizar aprobación**.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

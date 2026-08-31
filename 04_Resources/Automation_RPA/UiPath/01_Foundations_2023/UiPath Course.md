@@ -40,6 +40,7 @@ https://academy.uipath.com/learning-plans/rpa-developer-advanced
 
 # Imágenes
 [[Assets_UiPath]]
+[[.md]]
 
 ---
 

@@ -555,3 +555,8 @@ Complete. Here's what was built and what changed from the first pass:
 - AgentBricks (Beta at DAIS 2025): auto-generates evaluations and optimizes agent quality and cost from a natural language task description
 - MLflow 3 evaluation and monitoring component designed to iteratively optimize GenAI app quality, built on MLflow Tracing for real-time trace logging across development and production
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

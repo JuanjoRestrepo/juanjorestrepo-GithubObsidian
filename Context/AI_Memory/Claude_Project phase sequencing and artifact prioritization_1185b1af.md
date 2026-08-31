@@ -1455,3 +1455,8 @@ Tightened from your draft, with real numbers so it reads as evidence rather than
 
 Want me to formalize the v0 scope above into a short **Pilot Specification** document (source list, in/out-of-scope statement, the 20 questions, success criteria) so you have something concrete to build against and eventually show alongside the results — or move straight to drafting the actual v0 Skill content itself?
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

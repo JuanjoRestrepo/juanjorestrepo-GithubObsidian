@@ -17,3 +17,9 @@
 
 ## 4. Gestión de Secretos
 *   Cero secretos hardcodeados. Uso estricto de Secret Managers o .env validados.
+
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

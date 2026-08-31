@@ -1009,3 +1009,8 @@ La industria de la salud está en constante evolución y crecimiento gracias a l
 ### Assistant
 Entiendo, adelante con el contexto del challenge/problema. Estoy listo para ayudarte en lo que necesites.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

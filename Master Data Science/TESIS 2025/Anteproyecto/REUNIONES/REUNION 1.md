@@ -92,3 +92,8 @@ Aplicar técnicas de aprendizaje débilmente supervisado, específicamente *Mult
 
 ---
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - Master Data Science]]
+- **Dominio**: Master Data Science

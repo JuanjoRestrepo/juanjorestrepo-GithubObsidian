@@ -1404,3 +1404,8 @@ Parece que tienes un documento bastante detallado sobre análisis multivariado. 
 ### Assistant
 He agregado la explicación sobre la interpretación de los resultados de la prueba Chi-cuadrado y la medida del coeficiente de contingencia. Si necesitas que lo amplíe o lo haga más claro, dime.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

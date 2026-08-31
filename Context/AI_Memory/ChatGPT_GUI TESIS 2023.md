@@ -57789,3 +57789,8 @@ class Application(tk.Frame):
         def show_order_details(order):
             # ... (se
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

@@ -524,3 +524,8 @@ Este es un **sweet spot para tu perfil** porque combina:
 Si quieres, el siguiente paso lógico es prepararte para esta vacante:  
 puedo simularte una **entrevista técnica real de AI Engineer (LLMs + backend + system design)** enfocada exactamente a este tipo de empresa.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

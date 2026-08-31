@@ -598,3 +598,8 @@ print(df_fixture_quarter)
 
 This should correctly update the `home` and `away` columns with the actual team names and determine the winners for each match.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

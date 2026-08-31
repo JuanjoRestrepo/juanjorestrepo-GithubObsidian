@@ -1317,3 +1317,8 @@ I would be available to start within 2 weeks of receiving an offer, allowing tim
 
 Si quieres, puedo hacer una versión más “storytelling” (un poco más atractiva para una empresa de travel), o una más estratégica alineada con “customer experience”.
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

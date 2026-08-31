@@ -504,3 +504,8 @@ Basado en tu workflow típico:
 - Batch effects no corregidos
 - Falta de general
 
+---
+
+## Contexto de Estudio y Enlaces Relacionados
+- **MOC Maestro**: [[MOC - AI Memory & Context]]
+- **Dominio**: AI Memory & Context Knowledge Base

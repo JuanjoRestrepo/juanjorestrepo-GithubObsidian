@@ -175,9 +175,15 @@ flowchart TD
   * [[3. Validating Descriptors]]: Validación y porcentaje de confiabilidad de descriptores.
   * [[4. Fine Tuning Descriptors]]: Ajuste fino de selectores y filtrado de atributos volátiles.
   * [[5. Object Repository]]: Repositorio centralizado de UI y librerías de componentes reutilizables.
+  * [[1. Extracting Data From PDF]]: Extracción digital y OCR desde documentos PDF.
+  * [[2. Extracting a Single Piece of Data From PDF]]: Segmentación y parsing de valores específicos.
+  * [[3. Extracting Data Using Anchor Base]]: Anclajes visuales y relativos para campos flotantes.
 * **Estándares Enterprise 2026**:
   * [[20. Open Each PDF in Microsoft Edge-Chrome-Etc]]: Automatización de visualizadores modernos de documentos en navegadores Web.
   * [[21. Structured vs Semi-structured vs Unstructured Documents]]: Taxonomía de extracción documental para Document Understanding.
+  * [[23. Make Selector Dynamic]]: Parametrización dinámica con wildcards (`*`, `?`) e inyección de variables runtime.
+  * [[24. Get Text and Self-Healing Selectors]]: Extracción resiliente de texto y selectores autoreparables con anclajes difusos.
+  * [[UiPath Troubleshooting - PDF Data Extraction in Chrome]]: Diagnóstico y resolución de incidencias en visores PDF de Chrome (UIA vs Active Accessibility).
 
 ---
 
@@ -187,8 +193,12 @@ flowchart TD
   * [[1. Choosing the Workflow Layout]]: Criterios para elegir Sequence, Flowchart o State Machine.
   * [[2. Organizando Proyectos en los Workflows]]: Principio de responsabilidad única (Single Responsibility Principle).
   * [[3. Librerías]]: Creación y consumo de paquetes NuGet reutilizables (`.nupkg`).
+  * [[4. Exception Handling]]: Modularización del aislamiento de fallos en flujos invocados.
+  * [[5. Version Control]]: Convenciones de versionado y branching model corporativo.
   * [[1. Introduction to Version Control Systems]]: Gestión de código fuente con Git en Studio.
   * [[2. Closer Look at Git]]: Ramas, commits, push y resolución de conflictos en equipos.
+  * [[2. Understanding the Business Scenario]]: Análisis de requerimientos funcionales y alcance operativo.
+  * [[3. Building the Workflow - Part One and Two]]: Construcción incremental y ensamble modular de flujos.
 * **Estándares Enterprise 2026**:
   * [[2. Using the REFramework Template]]: Desglose modular de la solución REFramework (`Framework/` folder).
   * [[12. Create Dispatcher Project]]: Estructuración desacoplada del proyecto Productor.
@@ -210,6 +220,7 @@ flowchart TD
   * [[Quiz]]: Validación de conocimientos sobre REFramework y State Machines.
 * **Estándares Enterprise 2026**:
   * [[10. Overview of REFramework]]: Análisis exhaustivo de los 4 estados principales (`Init`, `Get Transaction Data`, `Process Transaction`, `End Process`).
+  * [[22. UI Frameworks]]: Sinergia arquitectónica entre REFramework y Document Understanding Framework.
   * [[1. PDF Invoice Scraper Demo]]: Caso de estudio productivo: Extracción automatizada de facturas PDF multi-bot.
   * [[12. Create Dispatcher Project]]: Creación del bot Dispatcher que itera el directorio de facturas y publica en colas.
   * [[17. Running the Performer Bot in UiPath]]: Ejecución y orquestación del bot Performer consumiendo la cola en tiempo real.
@@ -244,13 +255,16 @@ flowchart TD
   * [[3. Storage Buckets]]: Almacenamiento seguro de archivos no estructurados en la nube.
   * [[4. Queues]]: Definición de colas, tipos de datos, prioridades y políticas de auto-reintento.
   * [[5. Transactions and Types of Processes]]: Estados de una transacción (`New`, `InProgress`, `Successful`, `Failed`, `Retried`, `Abandoned`).
-  * [[1. Introduction to RPA Testing]]: Introducción a UiPath Test Suite y Testing Automatizado.
+  * [[1.  Introduction to RPA Testing]]: Introducción a UiPath Test Suite y Testing Automatizado.
   * [[2. Creating Test Cases]]: Diseño de casos de prueba con estructura BDD Given-When-Then.
-* **Estándares Enterprise 2026**:
+  * [[1. Email Automation Overview]]: Integración y automatización de servidores de correo (IMAP/POP3/Outlook).
+* **Estándares Enterprise 2026 & Certificación**:
   * [[13. Creating a New Queue in UiPath Orchestrator]]: Creación de la cola `Scraped_Invoices_Queue` con retries automáticos.
   * [[14. Adding Queue Items in UiPath]]: Ingesta de ítems con `Add Queue Item` asignando `Reference` para trazabilidad única.
   * [[7. Running a Job in Orchestrator]]: Despacho manual y monitorización de jobs no atendidos.
   * [[8. Creating a Time Trigger in UiPath Orchestrator]]: Programación cronológica (Time Trigger) para la ejecución periódica del Dispatcher.
+  * [[Test Full]]: Banco de evaluación integral para certificación oficial UiPath (Associate & Advanced).
+  * [[Assets_UiPath]]: Repositorio de recursos multimedia y diagramas técnicos.
 
 ---
 
