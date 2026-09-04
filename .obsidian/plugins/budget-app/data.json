@@ -1,0 +1,13 @@
+{
+  "budgetFolder": "Finances/Budget",
+  "theme": "auto",
+  "palette": "vault-green",
+  "openOnStartup": false,
+  "acctColWidths": {},
+  "onboarded": true,
+  "privacyLock": true,
+  "exportFolder": "Exports",
+  "chartTrendRange": "6m",
+  "chartDebtRange": "5y",
+  "splitCompareRange": "3m"
+}
