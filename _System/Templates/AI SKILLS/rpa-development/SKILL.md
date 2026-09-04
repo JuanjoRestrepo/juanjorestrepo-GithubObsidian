@@ -149,8 +149,7 @@ Produce a **Solution Design Document (SDD)** before writing any workflow. It mus
   components; mock external dependencies where possible; a full E2E run against
   representative test data before every UAT handoff.
 
-→ See `references/uipath-standards.md` for the full REFramework anatomy, Config.xlsx schema,
-Workflow Analyzer ruleset, queue/transaction design, and custom C# activity guidance.
+→ See `references/uipath-reframework.md` for the comprehensive, production-grade guide to REFramework theory, finite state machines, coding anatomy, tabular/queue architectures, multi-tier retries, circuit breakers, and enterprise best practices. See `references/uipath-standards.md` for Config.xlsx schema, Workflow Analyzer ruleset, queue/transaction design, selector/Object Repository best practices, and custom C# activity guidance.
 
 ### Power Automate Cloud (default Power Automate choice)
 
@@ -524,7 +523,18 @@ just deliver the artifact.
   scoring, reversibility-calibrated review rigor, a pre-adoption checklist, and a tracker for
   which team/company-specific standards have been supplied and integrated elsewhere vs. still
   genuinely open
-- `references/uipath-standards.md` — REFramework anatomy, Config.xlsx schema, Workflow Analyzer
+- `references/uipath-reframework.md` — Comprehensive architectural theory, coding mechanics,
+  and enterprise standards for the Robotic Enterprise Framework (REFramework): Finite State Machine
+  (FSM) formalism, automata and ACID/idempotency guarantees, structural state anatomy (Init, Get
+  Transaction Data, Process, End Process), component-level XAML walkthrough (Main, InitAllSettings,
+  InitAllApplications, GetTransactionData, Process, SetTransactionStatus, RetryCurrentTransaction,
+  TakeScreenshot, CloseAllApplications, KillAllProcesses), architectural applications (Queue-driven
+  Dispatcher/Performer, Tabular/DataTable without queues, File/Directory batching, Long-Running Action
+  Center), exception taxonomy, three-tier retry model (Activity vs Framework vs Queue auto-retry) and
+  elimination of the double-retry anti-pattern, circuit breaker pattern (ConsecutiveSystemExceptions),
+  session hygiene/memory leak prevention for 24/7 robots, structured logging/observability, Workflow
+  Analyzer rules, and a 15-point production sign-off checklist
+- `references/uipath-standards.md` — Config.xlsx schema, Workflow Analyzer
   ruleset, Orchestrator queues/transactions design, selector/Object Repository best practices,
   custom C# activity packaging, Test Manager workflow, VB vs. C# expression-language trade-offs
   (verified performance/completeness/Studio Web implications), workflow design/layout standards

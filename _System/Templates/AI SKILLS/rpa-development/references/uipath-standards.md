@@ -224,6 +224,8 @@ in `references/azure-devops-cicd.md`:
 
 ## REFramework Anatomy
 
+> For the exhaustive, comprehensive deep-dive into REFramework theory (Finite State Machines, automata, ACID & idempotency), applications (Queue-driven Dispatcher/Performer, Tabular/DataTable, File batching, Action Center), component-level XAML coding anatomy, three-tier retries, circuit breakers, and production sign-off checklists, see [`uipath-reframework.md`](uipath-reframework.md).
+
 REFramework (Robotic Enterprise Framework) is the default state-machine skeleton for any
 unattended/production process. Its states:
 
