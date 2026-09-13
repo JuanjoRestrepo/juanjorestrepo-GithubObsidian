@@ -3,10 +3,9 @@
 ## Framing: This Is the Last Resort, Not a Default
 
 Before automating a Citrix-delivered application, confirm and document (in the SDD) that:
-
 1. No API exists for the underlying system.
 2. No direct database access is feasible.
-3. Native (non-virtualized) UI automation isn't possible because the app is _only_ available
+3. Native (non-virtualized) UI automation isn't possible because the app is *only* available
    through Citrix/virtual desktop.
 
 If Citrix automation is required, flag it explicitly as a **higher-maintenance, higher-risk**
@@ -52,7 +51,7 @@ just clicks the wrong thing).
   fast days (slow).
 - Use explicit wait-for-condition activities: `WaitForImage`, `Element Exists` polling with a
   timeout, or `CV Screen Scope`'s built-in synchronization — assert the expected screen state
-  _before_ acting on it, not just before or after a fixed pause.
+  *before* acting on it, not just before or after a fixed pause.
 - After every action that changes screen state (navigation, submit), validate the resulting state
   with an image/OCR/element check before proceeding to the next step — catch a stuck/failed
   navigation immediately rather than several steps downstream where the root cause is harder to

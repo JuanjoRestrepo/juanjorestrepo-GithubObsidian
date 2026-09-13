@@ -1,7 +1,7 @@
 # Domain-Driven Design (DDD)
 
-**Source:** Eric Evans, _Domain-Driven Design: Tackling Complexity in the Heart of Software_
-(2003); refined by Vaughn Vernon, _Implementing Domain-Driven Design_ (2013). DDD is
+**Source:** Eric Evans, *Domain-Driven Design: Tackling Complexity in the Heart of Software*
+(2003); refined by Vaughn Vernon, *Implementing Domain-Driven Design* (2013). DDD is
 language-agnostic by definition — it is a modeling discipline, not a framework. Examples below
 use TypeScript and Python; the same tactical patterns (entities, value objects, aggregates)
 are equally canonical in Java, C#, and any language with encapsulation and type systems.
@@ -65,14 +65,14 @@ the correct unit of decomposition; arbitrary technical splitting is not.
 Documents how bounded contexts relate to and integrate with each other. The canonical
 relationship patterns:
 
-| Pattern                         | Meaning                                                                           | When to use                                                                      |
-| ------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **Shared Kernel**               | Two contexts share a small, jointly-owned subset of the model                     | Tightly collaborating teams, small shared concept (e.g., `Money` value object)   |
-| **Customer/Supplier**           | Upstream context's team commits to serving downstream's needs                     | Clear internal dependency with negotiation power                                 |
-| **Conformist**                  | Downstream simply accepts upstream's model as-is, no negotiation                  | Integrating with a third-party or a team you have no influence over              |
+| Pattern | Meaning | When to use |
+|---|---|---|
+| **Shared Kernel** | Two contexts share a small, jointly-owned subset of the model | Tightly collaborating teams, small shared concept (e.g., `Money` value object) |
+| **Customer/Supplier** | Upstream context's team commits to serving downstream's needs | Clear internal dependency with negotiation power |
+| **Conformist** | Downstream simply accepts upstream's model as-is, no negotiation | Integrating with a third-party or a team you have no influence over |
 | **Anti-Corruption Layer (ACL)** | Downstream translates upstream's model into its own, protecting its domain purity | Integrating with legacy systems or external APIs whose model doesn't match yours |
-| **Open Host Service**           | Upstream publishes a well-defined protocol/API for many downstream consumers      | Public APIs, platform services used by many teams                                |
-| **Published Language**          | A shared, well-documented interchange format (e.g., a standard schema)            | Cross-organization integration, industry-standard data formats                   |
+| **Open Host Service** | Upstream publishes a well-defined protocol/API for many downstream consumers | Public APIs, platform services used by many teams |
+| **Published Language** | A shared, well-documented interchange format (e.g., a standard schema) | Cross-organization integration, industry-standard data formats |
 
 The Anti-Corruption Layer is the pattern used most often in production and deserves a concrete
 example — see `references/api-first-integration-nfrs.md` for the implementation pattern.
@@ -90,15 +90,15 @@ changes across the object's lifetime.
 ```typescript
 export class Customer {
   constructor(
-    public readonly id: CustomerId, // identity — never changes
-    private email: Email, // attribute — can change
-    private loyaltyTier: LoyaltyTier, // attribute — can change
+    public readonly id: CustomerId,     // identity — never changes
+    private email: Email,               // attribute — can change
+    private loyaltyTier: LoyaltyTier,   // attribute — can change
   ) {}
 
   changeEmail(newEmail: Email): void {
     // Business rule enforcement lives INSIDE the entity, not in a service that mutates it
-    if (this.loyaltyTier === 'SUSPENDED') {
-      throw new DomainError('Cannot change email on a suspended account');
+    if (this.loyaltyTier === "SUSPENDED") {
+      throw new DomainError("Cannot change email on a suspended account");
     }
     this.email = newEmail;
   }
@@ -139,14 +139,14 @@ export class Money {
     private readonly amount: number,
     private readonly currency: string,
   ) {
-    if (amount < 0) throw new DomainError('Money cannot be negative');
+    if (amount < 0) throw new DomainError("Money cannot be negative");
   }
 
   static of(amount: number, currency: string): Money {
     return new Money(amount, currency);
   }
 
-  static zero(currency = 'USD'): Money {
+  static zero(currency = "USD"): Money {
     return new Money(0, currency);
   }
 
@@ -163,8 +163,8 @@ export class Money {
 }
 
 // Usage — no setters, every operation returns a new value
-const price = Money.of(29.99, 'USD');
-const tax = Money.of(2.4, 'USD');
+const price = Money.of(29.99, "USD");
+const tax = Money.of(2.40, "USD");
 const total = price.add(tax); // price and tax are unchanged; total is a new Money
 ```
 
@@ -204,31 +204,28 @@ which enforces invariants across the whole cluster.
 export class Order {
   private lines: OrderLine[] = [];
 
-  private constructor(
-    public readonly id: OrderId,
-    private status: OrderStatus,
-  ) {}
+  private constructor(public readonly id: OrderId, private status: OrderStatus) {}
 
   static create(id: OrderId): Order {
-    return new Order(id, 'DRAFT');
+    return new Order(id, "DRAFT");
   }
 
   // ✅ External code calls THIS — never manipulates lines directly
   addLine(product: ProductId, quantity: number, unitPrice: Money): void {
-    if (this.status !== 'DRAFT') {
-      throw new DomainError('Cannot modify a submitted order');
+    if (this.status !== "DRAFT") {
+      throw new DomainError("Cannot modify a submitted order");
     }
     if (this.lines.length >= 100) {
-      throw new DomainError('Order cannot exceed 100 line items'); // invariant enforced HERE
+      throw new DomainError("Order cannot exceed 100 line items"); // invariant enforced HERE
     }
     this.lines.push(OrderLine.create(product, quantity, unitPrice));
   }
 
   submit(): void {
     if (this.lines.length === 0) {
-      throw new DomainError('Cannot submit an empty order'); // aggregate-level invariant
+      throw new DomainError("Cannot submit an empty order"); // aggregate-level invariant
     }
-    this.status = 'SUBMITTED';
+    this.status = "SUBMITTED";
   }
 
   // Read access is fine — mutation access is not
@@ -241,7 +238,7 @@ export class Order {
 // order.lines.push(new OrderLine(...));  // lines is private — this shouldn't even compile
 
 // ✅ CORRECT — always go through the root
-order.addLine(productId, 2, Money.of(19.99, 'USD'));
+order.addLine(productId, 2, Money.of(19.99, "USD"));
 ```
 
 **Aggregate design rule (Vernon):** keep aggregates small. A common mistake is designing one
@@ -274,7 +271,7 @@ export interface DomainEvent {
 
 export class OrderSubmitted implements DomainEvent {
   readonly occurredAt = new Date();
-  readonly eventName = 'OrderSubmitted';
+  readonly eventName = "OrderSubmitted";
   constructor(
     public readonly orderId: string,
     public readonly customerId: string,
@@ -286,13 +283,10 @@ export class Order {
   private domainEvents: DomainEvent[] = [];
 
   submit(): void {
-    if (this.lines.length === 0)
-      throw new DomainError('Cannot submit an empty order');
-    this.status = 'SUBMITTED';
+    if (this.lines.length === 0) throw new DomainError("Cannot submit an empty order");
+    this.status = "SUBMITTED";
     // Record the event — doesn't know or care who will react to it
-    this.domainEvents.push(
-      new OrderSubmitted(this.id, this.customerId, this.total),
-    );
+    this.domainEvents.push(new OrderSubmitted(this.id, this.customerId, this.total));
   }
 
   pullDomainEvents(): DomainEvent[] {
@@ -346,7 +340,7 @@ of forcing it awkwardly onto one entity.
 // A transfer between two accounts doesn't belong to either Account alone
 export class MoneyTransferService {
   transfer(from: Account, to: Account, amount: Money): void {
-    from.withdraw(amount); // each aggregate still enforces its own invariants
+    from.withdraw(amount);  // each aggregate still enforces its own invariants
     to.deposit(amount);
   }
 }
@@ -368,7 +362,6 @@ the discipline. It earns that cost when:
   ("everyone just knows how orders work") doesn't scale
 
 **Do not use it when:**
-
 - The domain is simple CRUD with minimal business rules — "create a blog post, list blog
   posts, delete a blog post" does not need entities, value objects, and aggregates; a Prisma
   model and a thin service function are sufficient and clearer

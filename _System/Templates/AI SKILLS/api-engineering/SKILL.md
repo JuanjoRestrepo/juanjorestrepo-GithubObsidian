@@ -33,9 +33,9 @@ unhandled failure mode can silently corrupt data or duplicate transactions.
    the highest-value content — a bot or integration that doesn't handle retries, idempotency,
    and rate limits correctly will eventually duplicate a transaction or silently drop data.
 3. **Cross-reference, don't duplicate**: `web-devops/references/security.md` already covers
-   JWT/OAuth/rate limiting from the angle of _authenticating users into your own application_.
-   This skill covers the same primitives from the angle of _your system calling — or being
-   called by — another system_. Point to the right one based on which direction the call flows.
+   JWT/OAuth/rate limiting from the angle of *authenticating users into your own application*.
+   This skill covers the same primitives from the angle of *your system calling — or being
+   called by — another system*. Point to the right one based on which direction the call flows.
 4. **Always state the failure mode being defended against** — a retry policy without idempotency
    is not safety, it's a duplicate-transaction generator. Never present resilience patterns in
    isolation from the failure they prevent.
@@ -69,10 +69,11 @@ unhandled failure mode can silently corrupt data or duplicate transactions.
 ## 1. Protocol Selection — REST, GraphQL, SOAP
 
 REST (Fielding, 2000) remains the default for the overwhelming majority of new APIs — simple
-mental model, cacheable, stateless, wide tooling support. GraphQL (Facebook/GraphQL Foundation, 2015) solves the specific problem of over-fetching/under-fetching when multiple heterogeneous
+mental model, cacheable, stateless, wide tooling support. GraphQL (Facebook/GraphQL Foundation,
+2015) solves the specific problem of over-fetching/under-fetching when multiple heterogeneous
 clients need different shapes of the same data. SOAP (W3C, 2003) persists in specific enterprise
 domains (banking via SWIFT/ISO 20022, healthcare via HL7, government/legacy systems) where
-formal contracts (WSDL) and built-in transactionality (WS-\* standards) are institutional
+formal contracts (WSDL) and built-in transactionality (WS-* standards) are institutional
 requirements — not a technology choice most new projects should make.
 
 → See `references/protocols.md` for the Richardson Maturity Model, GraphQL schema design,
@@ -115,13 +116,13 @@ for service-to-service credentials.
 This is the highest-value section for integration-heavy work. Every pattern here defends
 against a specific, named failure mode:
 
-| Pattern                             | Defends against                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------- |
-| Retry with backoff + jitter         | Transient failures (network blip, momentary overload)                           |
-| Circuit breaker                     | Cascading failure from hammering an already-failing dependency                  |
-| Idempotency key                     | Duplicate side effects (double charge, duplicate record) from a retried request |
-| Rate limiting (as a provider)       | Your own API being overwhelmed by one client starving others                    |
-| Rate limit handling (as a consumer) | Getting banned/throttled by a third-party API you depend on                     |
+| Pattern | Defends against |
+|---|---|
+| Retry with backoff + jitter | Transient failures (network blip, momentary overload) |
+| Circuit breaker | Cascading failure from hammering an already-failing dependency |
+| Idempotency key | Duplicate side effects (double charge, duplicate record) from a retried request |
+| Rate limiting (as a provider) | Your own API being overwhelmed by one client starving others |
+| Rate limit handling (as a consumer) | Getting banned/throttled by a third-party API you depend on |
 
 **The critical combination:** retries without idempotency keys are dangerous — a retried POST
 that already succeeded server-side, but whose response was lost in transit, will create a

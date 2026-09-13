@@ -40,13 +40,13 @@ main SKILL.md's Debugging/Performance/Governance sections, which apply unchanged
 Trigger -> Build -> Test -> Package -> Deploy
 ```
 
-| Stage   | What happens                                                                                                                                                                                 |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Trigger | Pipeline runs on push/PR to a configured branch                                                                                                                                              |
-| Build   | Install the target Python version and dependencies (`uv sync`, not raw `pip install -r requirements.txt`, to match project convention)                                                       |
-| Test    | `pytest` runs the full suite (unit + POM-driven UI tests), `ruff` and `mypy --strict` run as separate lint/type-check jobs, results published as JUnit XML for visibility in the pipeline UI |
-| Package | Build a versioned artifact (`python -m build`, the official PyPA build front-end, producing a wheel/sdist) or a Docker image, depending on the deployment target                             |
-| Deploy  | Copy/publish the artifact to the target server/VM/container registry and (re)start the scheduled task/service                                                                                |
+| Stage | What happens |
+|---|---|
+| Trigger | Pipeline runs on push/PR to a configured branch |
+| Build | Install the target Python version and dependencies (`uv sync`, not raw `pip install -r requirements.txt`, to match project convention) |
+| Test | `pytest` runs the full suite (unit + POM-driven UI tests), `ruff` and `mypy --strict` run as separate lint/type-check jobs, results published as JUnit XML for visibility in the pipeline UI |
+| Package | Build a versioned artifact (`python -m build`, the official PyPA build front-end, producing a wheel/sdist) or a Docker image, depending on the deployment target |
+| Deploy | Copy/publish the artifact to the target server/VM/container registry and (re)start the scheduled task/service |
 
 ### Example `azure-pipelines.yml`
 
@@ -57,10 +57,9 @@ trigger:
       - main
 
 pool:
-  vmImage:
-    'ubuntu-latest' # use 'windows-latest' only if the bot needs a Windows-only
-    # dependency (e.g. pywinauto); prefer Linux agents otherwise —
-    # faster to provision and cheaper on Microsoft-hosted pools
+  vmImage: 'ubuntu-latest'  # use 'windows-latest' only if the bot needs a Windows-only
+                             # dependency (e.g. pywinauto); prefer Linux agents otherwise —
+                             # faster to provision and cheaper on Microsoft-hosted pools
 
 variables:
   pythonVersion: '3.12'
@@ -112,7 +111,7 @@ stages:
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
     jobs:
       - deployment: DeployToServer
-        environment: 'rpa-production' # Azure DevOps Environment — enables approvals/gates
+        environment: 'rpa-production'   # Azure DevOps Environment — enables approvals/gates
         strategy:
           runOnce:
             deploy:
@@ -139,13 +138,13 @@ target — this is the supported way to require manual sign-off before a Product
 
 ## Validation / Testing Layer
 
-| Test type         | Purpose                                                               | Typical tool                                                                   |
-| ----------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Unit tests        | Validate individual functions/page-object methods in isolation        | `pytest` (preferred) or stdlib `unittest`                                      |
-| UI/POM tests      | Validate interaction with the target application through page objects | `pytest` + Selenium/Playwright, or `Robot Framework` + `rpaframework` keywords |
-| Data validation   | Verify input/intermediate/output data correctness                     | `pytest` with `pandas`/`Pandera`/`Great Expectations` assertions               |
-| Integration tests | Validate communication between modules/services/systems               | `pytest` against a Test-environment target, not mocks alone                    |
-| Regression tests  | Confirm a change didn't break existing behavior                       | Full `pytest` suite re-run in CI on every PR                                   |
+| Test type | Purpose | Typical tool |
+|---|---|---|
+| Unit tests | Validate individual functions/page-object methods in isolation | `pytest` (preferred) or stdlib `unittest` |
+| UI/POM tests | Validate interaction with the target application through page objects | `pytest` + Selenium/Playwright, or `Robot Framework` + `rpaframework` keywords |
+| Data validation | Verify input/intermediate/output data correctness | `pytest` with `pandas`/`Pandera`/`Great Expectations` assertions |
+| Integration tests | Validate communication between modules/services/systems | `pytest` against a Test-environment target, not mocks alone |
+| Regression tests | Confirm a change didn't break existing behavior | Full `pytest` suite re-run in CI on every PR |
 
 - Write tests alongside development, not after — CI enforces this indirectly by gating merges on
   a passing suite and a coverage threshold (`--cov-fail-under=80`, matching the ≥80% coverage
@@ -158,11 +157,11 @@ target — this is the supported way to require manual sign-off before a Product
 
 ## Deployment
 
-| Target            | When to choose it                                                                                                                   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| On-premise server | Data sensitivity/compliance requires on-prem; existing internal infra already hosts other bots                                      |
-| Azure VM          | Need managed scaling/availability without full containerization; simplest lift for a team already in Azure                          |
-| Docker container  | Need environment consistency across Dev/Test/Prod, or the target orchestrator (Kubernetes, Azure Container Apps) expects containers |
+| Target | When to choose it |
+|---|---|
+| On-premise server | Data sensitivity/compliance requires on-prem; existing internal infra already hosts other bots |
+| Azure VM | Need managed scaling/availability without full containerization; simplest lift for a team already in Azure |
+| Docker container | Need environment consistency across Dev/Test/Prod, or the target orchestrator (Kubernetes, Azure Container Apps) expects containers |
 
 - Artifact contents: application code (wheel/sdist or container image), pinned dependencies (from
   `uv.lock`, not a hand-edited `requirements.txt`), configuration (environment-specific, injected
@@ -179,16 +178,16 @@ target — this is the supported way to require manual sign-off before a Product
 
 ## Suggested Technology Stack Summary
 
-| Layer                 | Choice                                                           | Rationale                                                          |
-| --------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Language              | Python 3.12                                                      | Consistent with this project's broader Python standard             |
-| Dependency management | `uv` + `pyproject.toml`                                          | Fast, reproducible, single source of truth — no `requirements.txt` |
-| Web automation        | Playwright (default) / Selenium (legacy/Grid-standardized teams) | See `references/python-rpa.md` decision table                      |
-| Desktop automation    | `pywinauto`                                                      | Windows UI Automation/Win32 backends                               |
-| Testing               | `pytest` + `ruff` + `mypy --strict`                              | Matches the project-wide code-quality bar                          |
-| Reporting             | Allure (optional, for stakeholder-facing UAT reports)            | Readable beyond raw CI logs                                        |
-| Source control        | Azure Repos (Git)                                                | Centralized, policy-enforced, integrated with Pipelines            |
-| CI/CD                 | Azure Pipelines                                                  | Native integration with Azure Repos/Environments/Key Vault         |
-| Secrets               | Azure Key Vault                                                  | Centralized rotation, no secrets in code or pipeline YAML          |
-| Monitoring            | Application Insights                                             | Native Azure telemetry integration                                 |
-| Deployment target     | On-prem server / Azure VM / Docker                               | Selected per the table above, not by default                       |
+| Layer | Choice | Rationale |
+|---|---|---|
+| Language | Python 3.12 | Consistent with this project's broader Python standard |
+| Dependency management | `uv` + `pyproject.toml` | Fast, reproducible, single source of truth — no `requirements.txt` |
+| Web automation | Playwright (default) / Selenium (legacy/Grid-standardized teams) | See `references/python-rpa.md` decision table |
+| Desktop automation | `pywinauto` | Windows UI Automation/Win32 backends |
+| Testing | `pytest` + `ruff` + `mypy --strict` | Matches the project-wide code-quality bar |
+| Reporting | Allure (optional, for stakeholder-facing UAT reports) | Readable beyond raw CI logs |
+| Source control | Azure Repos (Git) | Centralized, policy-enforced, integrated with Pipelines |
+| CI/CD | Azure Pipelines | Native integration with Azure Repos/Environments/Key Vault |
+| Secrets | Azure Key Vault | Centralized rotation, no secrets in code or pipeline YAML |
+| Monitoring | Application Insights | Native Azure telemetry integration |
+| Deployment target | On-prem server / Azure VM / Docker | Selected per the table above, not by default |

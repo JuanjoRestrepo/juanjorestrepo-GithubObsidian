@@ -10,7 +10,6 @@ order (API → Database → UI → Citrix) before deciding to automate a UI at a
 ## Query Standards
 
 **Do:**
-
 ```sql
 SELECT
     CustomerID,
@@ -22,7 +21,6 @@ WHERE IsActive = 1
 ```
 
 **Avoid:**
-
 ```sql
 SELECT * FROM Customers WHERE IsActive = 1
 ```
@@ -42,7 +40,7 @@ SELECT * FROM Customers WHERE IsActive = 1
 - Use for any non-trivial or reused logic — keeps business rules versioned alongside the schema,
   testable independently of the bot, and reusable by other consumers (reporting, other bots).
 - Every stored procedure: explicit parameter types (no implicit conversions relied upon), `SET
-NOCOUNT ON` to avoid unnecessary row-count messages over the wire, and a header comment (purpose,
+  NOCOUNT ON` to avoid unnecessary row-count messages over the wire, and a header comment (purpose,
   parameters, last-modified).
 - Call from UiPath via `Execute Non Query`/`Execute Query` (Database activities) with parameters
   passed as typed arguments, never interpolated into the command text; from Python via

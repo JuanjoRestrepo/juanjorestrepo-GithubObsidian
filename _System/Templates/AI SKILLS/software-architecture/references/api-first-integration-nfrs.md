@@ -1,7 +1,7 @@
 # API-First Design, Integration Patterns & Non-Functional Requirements
 
 **Sources:** OpenAPI Initiative (Linux Foundation) for API-first tooling standards; Gregor
-Hohpe & Bobby Woolf, _Enterprise Integration Patterns_ (2003) for integration patterns; ISO/IEC
+Hohpe & Bobby Woolf, *Enterprise Integration Patterns* (2003) for integration patterns; ISO/IEC
 25010 (Systems and Software Quality Requirements and Evaluation — SQuaRE) for the formal NFR
 taxonomy used by enterprise architecture review boards. All concepts are language and
 framework agnostic; examples use TypeScript/Python and OpenAPI YAML, which is itself
@@ -48,20 +48,20 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/PlaceOrderRequest'
+              $ref: "#/components/schemas/PlaceOrderRequest"
       responses:
-        '201':
+        "201":
           description: Order placed successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/OrderResponse'
-        '422':
+                $ref: "#/components/schemas/OrderResponse"
+        "422":
           description: Validation error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ValidationErrorResponse'
+                $ref: "#/components/schemas/ValidationErrorResponse"
 components:
   schemas:
     PlaceOrderRequest:
@@ -109,12 +109,10 @@ npx @openapitools/openapi-generator-cli generate \
 ```typescript
 // Frontend now has compile-time-checked API calls — a contract mismatch is a TypeScript error,
 // caught in the IDE, not discovered at runtime in production
-import type { paths } from '@/types/api';
+import type { paths } from "@/types/api";
 
-type PlaceOrderRequest =
-  paths['/orders']['post']['requestBody']['content']['application/json'];
-type OrderResponse =
-  paths['/orders']['post']['responses']['201']['content']['application/json'];
+type PlaceOrderRequest = paths["/orders"]["post"]["requestBody"]["content"]["application/json"];
+type OrderResponse = paths["/orders"]["post"]["responses"]["201"]["content"]["application/json"];
 ```
 
 ### Contract Testing
@@ -137,7 +135,7 @@ uv run schemathesis run openapi.yaml --base-url http://localhost:8000
 
 ## Integration Patterns
 
-Drawn from Hohpe & Woolf's _Enterprise Integration Patterns_ — the canonical catalog, still the
+Drawn from Hohpe & Woolf's *Enterprise Integration Patterns* — the canonical catalog, still the
 reference vocabulary used across the industry regardless of specific messaging technology.
 
 ### Anti-Corruption Layer (ACL)
@@ -150,9 +148,9 @@ preventing the external system's quirks and inconsistencies from leaking into yo
 // External legacy system's response — inconsistent naming, mixed units, nullable everything
 interface LegacyInventoryResponse {
   prod_id: string;
-  qty_avail: string; // string, not number — legacy system quirk
+  qty_avail: string;        // string, not number — legacy system quirk
   whs_loc: string | null;
-  last_upd_ts: number; // unix timestamp, not ISO string
+  last_upd_ts: number;      // unix timestamp, not ISO string
 }
 
 // The ACL — the ONLY place that knows about the legacy system's shape
@@ -165,7 +163,7 @@ export class LegacyInventoryAdapter implements InventoryPort {
     return {
       productId: raw.prod_id,
       quantityAvailable: parseInt(raw.qty_avail, 10),
-      warehouseLocation: raw.whs_loc ?? 'UNKNOWN',
+      warehouseLocation: raw.whs_loc ?? "UNKNOWN",
       lastUpdated: new Date(raw.last_upd_ts * 1000),
     };
   }
@@ -195,13 +193,13 @@ action to undo it if a later step fails.
 export class OrderSagaCompensation {
   async onStockReservationFailed(event: StockReservationFailed): Promise<void> {
     // Compensating action — undo the order creation
-    await this.orderService.cancel(event.orderId, 'Inventory unavailable');
+    await this.orderService.cancel(event.orderId, "Inventory unavailable");
   }
 
   async onPaymentFailed(event: PaymentFailed): Promise<void> {
     // Compensating action — undo the stock reservation AND the order
     await this.inventoryService.releaseReservation(event.orderId);
-    await this.orderService.cancel(event.orderId, 'Payment failed');
+    await this.orderService.cancel(event.orderId, "Payment failed");
   }
 }
 ```
@@ -218,17 +216,13 @@ compensation retry) must be idempotent to avoid duplicate side effects — e.g.,
 a customer.
 
 ```typescript
-router.post('/payments', async (req, res) => {
-  const idempotencyKey = req.headers['idempotency-key'] as string;
+router.post("/payments", async (req, res) => {
+  const idempotencyKey = req.headers["idempotency-key"] as string;
   if (!idempotencyKey) {
-    return res
-      .status(400)
-      .json({ error: 'Idempotency-Key header is required' });
+    return res.status(400).json({ error: "Idempotency-Key header is required" });
   }
 
-  const existing = await db.idempotencyKeys.findUnique({
-    where: { key: idempotencyKey },
-  });
+  const existing = await db.idempotencyKeys.findUnique({ where: { key: idempotencyKey } });
   if (existing) {
     return res.status(existing.statusCode).json(existing.responseBody); // return cached result
   }
@@ -252,14 +246,14 @@ most directly shaped by architectural decisions.
 
 ### Scalability
 
-| Technique                                    | What it addresses                                             |
-| -------------------------------------------- | ------------------------------------------------------------- |
-| Horizontal scaling (more instances)          | Handling increased request volume                             |
-| Caching (Redis, CDN, HTTP cache headers)     | Reducing redundant computation/DB load                        |
-| Database read replicas                       | Read-heavy workload scaling without write contention          |
-| CQRS (see `references/cqrs-event-driven.md`) | Read/write workloads with different scaling profiles          |
-| Async processing / queues                    | Decoupling slow operations from the request/response cycle    |
-| Database sharding                            | Write throughput beyond a single database instance's capacity |
+| Technique | What it addresses |
+|---|---|
+| Horizontal scaling (more instances) | Handling increased request volume |
+| Caching (Redis, CDN, HTTP cache headers) | Reducing redundant computation/DB load |
+| Database read replicas | Read-heavy workload scaling without write contention |
+| CQRS (see `references/cqrs-event-driven.md`) | Read/write workloads with different scaling profiles |
+| Async processing / queues | Decoupling slow operations from the request/response cycle |
+| Database sharding | Write throughput beyond a single database instance's capacity |
 
 **Measure before optimizing.** Load test with realistic traffic patterns (k6, Locust,
 Artillery) before introducing scaling complexity — premature horizontal scaling or sharding
@@ -272,19 +266,12 @@ different (an unindexed query, not a fundamental architecture limit).
 failing fast instead of piling up slow/hanging requests:
 
 ```typescript
-import CircuitBreaker from 'opossum';
+import CircuitBreaker from "opossum";
 
-const options = {
-  timeout: 3000,
-  errorThresholdPercentage: 50,
-  resetTimeout: 30000,
-};
+const options = { timeout: 3000, errorThresholdPercentage: 50, resetTimeout: 30000 };
 const breaker = new CircuitBreaker(callInventoryService, options);
 
-breaker.fallback(() => ({
-  available: false,
-  reason: 'Inventory service unavailable',
-}));
+breaker.fallback(() => ({ available: false, reason: "Inventory service unavailable" }));
 
 const result = await breaker.fire(productId);
 ```
@@ -293,10 +280,7 @@ const result = await breaker.fire(productId);
 overload), retry with increasing delay rather than hammering a struggling service:
 
 ```typescript
-async function retryWithBackoff<T>(
-  fn: () => Promise<T>,
-  maxRetries = 3,
-): Promise<T> {
+async function retryWithBackoff<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
   for (let attempt = 0; attempt < maxRetries; attempt++) {
     try {
       return await fn();
@@ -306,7 +290,7 @@ async function retryWithBackoff<T>(
       await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
-  throw new Error('Unreachable');
+  throw new Error("Unreachable");
 }
 ```
 
@@ -354,7 +338,6 @@ Use this when formally reviewing a proposed or existing architecture — for a n
 a major refactor proposal, or an architecture decision record (ADR) review.
 
 **Problem Fit**
-
 - [ ] The chosen patterns solve a problem this system actually has — not a problem a similar,
       larger company had
 - [ ] Simpler alternatives were explicitly considered and rejected with stated reasoning
@@ -362,7 +345,6 @@ a major refactor proposal, or an architecture decision record (ADR) review.
       systems, event-driven debugging, etc.)
 
 **Domain & Boundaries**
-
 - [ ] Bounded contexts are identified and documented, even if the system remains a monolith
 - [ ] Module/service boundaries align with team ownership (Conway's Law) — no shared ownership
       of a single module by multiple teams without a clear coordination process
@@ -370,14 +352,12 @@ a major refactor proposal, or an architecture decision record (ADR) review.
       conversations
 
 **Scalability**
-
 - [ ] Expected load (current and 12-24 month projection) is documented and the architecture is
       sized against it — not against an arbitrary "web scale" assumption
 - [ ] Bottlenecks have been load-tested, not just theorized
 - [ ] Caching strategy is explicit — what's cached, invalidation strategy, staleness tolerance
 
 **Reliability**
-
 - [ ] Every synchronous inter-service call has a defined timeout, retry policy, and fallback
       behavior
 - [ ] Single points of failure are identified and either accepted explicitly or mitigated
@@ -385,14 +365,12 @@ a major refactor proposal, or an architecture decision record (ADR) review.
       `references/security.md` Section 10 for backup implementation)
 
 **Security**
-
 - [ ] Trust boundaries are diagrammed; validation happens at every boundary crossing, not just
       the perimeter
 - [ ] Zero Trust applied to internal service-to-service communication
 - [ ] See `web-devops` skill's `references/security.md` for the full implementation checklist
 
 **Maintainability**
-
 - [ ] A new engineer can understand the system's major components within a reasonable
       onboarding period — architecture complexity is proportional to team size and domain
       complexity, not maximized for its own sake
@@ -401,7 +379,6 @@ a major refactor proposal, or an architecture decision record (ADR) review.
 - [ ] Technical debt from deliberate shortcuts is tracked, not silently accumulated
 
 **Cost**
-
 - [ ] Infrastructure cost is proportional to actual load, not provisioned for a hypothetical
       future scale that may never materialize
 - [ ] Operational cost (on-call burden, number of services to monitor, deployment complexity)

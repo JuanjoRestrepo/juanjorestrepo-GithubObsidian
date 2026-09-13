@@ -17,13 +17,13 @@ execute inside a single `Assign` activity.
 
 The benefits are concrete, not aesthetic:
 
-| Dimension        | Loop approach                                  | LINQ approach                                                   |
-| ---------------- | ---------------------------------------------- | --------------------------------------------------------------- |
-| Code location    | Multiple activities (For Each + If + Assign)   | Single `Assign` expression                                      |
-| Readability      | Intent spread across multiple activities       | Intent visible in one expression                                |
-| Performance      | O(n) with overhead per activity invocation     | O(n) with no activity-invocation overhead; JIT-compiled on .NET |
-| DataTable result | Requires manual row-by-row `Add Row`           | `CopyToDataTable()` reconstructs in one call                    |
-| Error surface    | Logic errors silent across multiple activities | Type errors surface at compile/validate time                    |
+| Dimension | Loop approach | LINQ approach |
+|---|---|---|
+| Code location | Multiple activities (For Each + If + Assign) | Single `Assign` expression |
+| Readability | Intent spread across multiple activities | Intent visible in one expression |
+| Performance | O(n) with overhead per activity invocation | O(n) with no activity-invocation overhead; JIT-compiled on .NET |
+| DataTable result | Requires manual row-by-row `Add Row` | `CopyToDataTable()` reconstructs in one call |
+| Error surface | Logic errors silent across multiple activities | Type errors surface at compile/validate time |
 
 LINQ is not always the right tool: for operations that involve UI interaction per row, that
 need side effects (logging, queue enqueue) per item, or that exceed 3-4 chained operators in
@@ -35,11 +35,11 @@ transformation; use loops for data-driven action.
 LINQ in UiPath requires the following namespaces imported at the project level
 (Project > Settings > Imports in Studio):
 
-| Namespace                    | Required for                                                       |
-| ---------------------------- | ------------------------------------------------------------------ |
-| `System.Linq`                | All LINQ operators (`Where`, `Select`, `GroupBy`, `OrderBy`, etc.) |
-| `System.Data`                | `DataTable`, `DataRow`, `DataColumn`, `DBNull`                     |
-| `System.Collections.Generic` | `List(Of T)`, `IEnumerable(Of T)`, `Dictionary(Of K, V)`           |
+| Namespace | Required for |
+|---|---|
+| `System.Linq` | All LINQ operators (`Where`, `Select`, `GroupBy`, `OrderBy`, etc.) |
+| `System.Data` | `DataTable`, `DataRow`, `DataColumn`, `DBNull` |
+| `System.Collections.Generic` | `List(Of T)`, `IEnumerable(Of T)`, `Dictionary(Of K, V)` |
 
 `System.Data.DataSetExtensions` (which provides `AsEnumerable()` and `Field(Of T)()` on
 DataTable and DataRow) is included automatically via `System.Data` in UiPath's Windows
@@ -433,7 +433,7 @@ Next
 ### Pattern 14: Join Two DataTables
 
 LINQ joins are the declarative replacement for the manual nested-loop join, which is
-extremely slow for large tables (O(n\*m)) because UiPath activity invocation per row
+extremely slow for large tables (O(n*m)) because UiPath activity invocation per row
 adds overhead that compounds with table size.
 
 ```vb
@@ -624,7 +624,6 @@ for-each over groups), use `Invoke Code`.
 ### Invoke Code Activity (Multi-Statement, Complex Logic)
 
 Use `Invoke Code` when:
-
 - The LINQ result requires further manipulation before the final assignment
 - You need intermediate variables (e.g., building a summary DataTable from GroupBy results)
 - You are constructing anonymous types (`New With { ... }`) that cannot be declared as
@@ -656,30 +655,30 @@ Next
 
 ## Operator Quick-Reference Table
 
-| Operator                          | Category    | Returns                     | UiPath Assign? | Notes                                               |
-| --------------------------------- | ----------- | --------------------------- | -------------- | --------------------------------------------------- |
-| `Where`                           | Filtering   | `IEnumerable`               | Yes (deferred) | Most common filter                                  |
-| `Select`                          | Projection  | `IEnumerable`               | Yes (deferred) | Column extraction, transformation                   |
-| `OrderBy` / `ThenBy`              | Sorting     | `IEnumerable`               | Yes (deferred) | Always chain with `CopyToDataTable()` or `ToList()` |
-| `GroupBy`                         | Grouping    | `IEnumerable(Of IGrouping)` | Invoke Code    | Use in Assign only for simple string projections    |
-| `Join`                            | Joining     | `IEnumerable`               | Invoke Code    | Multi-line; use Invoke Code                         |
-| `Distinct`                        | Set         | `IEnumerable`               | Yes            | Requires `DataRowComparer.Default` for DataRows     |
-| `Union` / `Intersect` / `Except`  | Set         | `IEnumerable`               | Yes            | Require `DataRowComparer.Default` for DataRows      |
-| `Concat`                          | Combining   | `IEnumerable`               | Yes            | No deduplication                                    |
-| `Take` / `Skip`                   | Pagination  | `IEnumerable`               | Yes            | Always chain with terminal operator                 |
-| `First`                           | Element     | Single item                 | Yes            | Throws if empty                                     |
-| `FirstOrDefault`                  | Element     | Single item or Nothing      | Yes            | Returns Nothing if empty                            |
-| `Single`                          | Element     | Single item                 | Yes            | Throws if zero or >1 match                          |
-| `Any`                             | Quantifier  | Boolean                     | Yes            | Immediate                                           |
-| `All`                             | Quantifier  | Boolean                     | Yes            | Immediate                                           |
-| `Count`                           | Aggregation | Integer                     | Yes            | Immediate                                           |
-| `Sum` / `Average` / `Max` / `Min` | Aggregation | Numeric                     | Yes            | Immediate                                           |
-| `ToList`                          | Terminal    | `List(Of T)`                | Yes            | Materializes                                        |
-| `ToArray`                         | Terminal    | `T()`                       | Yes            | Materializes                                        |
-| `CopyToDataTable`                 | Terminal    | `DataTable`                 | Yes            | DataRow sequences only                              |
-| `AsEnumerable`                    | Entry point | `IEnumerable(Of DataRow)`   | Yes            | Required for DataTable                              |
-| `Cast(Of T)`                      | Conversion  | `IEnumerable(Of T)`         | Yes            | For non-generic collections                         |
-| `SelectMany`                      | Flattening  | `IEnumerable`               | Yes            | Flatten nested collections                          |
+| Operator | Category | Returns | UiPath Assign? | Notes |
+|---|---|---|---|---|
+| `Where` | Filtering | `IEnumerable` | Yes (deferred) | Most common filter |
+| `Select` | Projection | `IEnumerable` | Yes (deferred) | Column extraction, transformation |
+| `OrderBy` / `ThenBy` | Sorting | `IEnumerable` | Yes (deferred) | Always chain with `CopyToDataTable()` or `ToList()` |
+| `GroupBy` | Grouping | `IEnumerable(Of IGrouping)` | Invoke Code | Use in Assign only for simple string projections |
+| `Join` | Joining | `IEnumerable` | Invoke Code | Multi-line; use Invoke Code |
+| `Distinct` | Set | `IEnumerable` | Yes | Requires `DataRowComparer.Default` for DataRows |
+| `Union` / `Intersect` / `Except` | Set | `IEnumerable` | Yes | Require `DataRowComparer.Default` for DataRows |
+| `Concat` | Combining | `IEnumerable` | Yes | No deduplication |
+| `Take` / `Skip` | Pagination | `IEnumerable` | Yes | Always chain with terminal operator |
+| `First` | Element | Single item | Yes | Throws if empty |
+| `FirstOrDefault` | Element | Single item or Nothing | Yes | Returns Nothing if empty |
+| `Single` | Element | Single item | Yes | Throws if zero or >1 match |
+| `Any` | Quantifier | Boolean | Yes | Immediate |
+| `All` | Quantifier | Boolean | Yes | Immediate |
+| `Count` | Aggregation | Integer | Yes | Immediate |
+| `Sum` / `Average` / `Max` / `Min` | Aggregation | Numeric | Yes | Immediate |
+| `ToList` | Terminal | `List(Of T)` | Yes | Materializes |
+| `ToArray` | Terminal | `T()` | Yes | Materializes |
+| `CopyToDataTable` | Terminal | `DataTable` | Yes | DataRow sequences only |
+| `AsEnumerable` | Entry point | `IEnumerable(Of DataRow)` | Yes | Required for DataTable |
+| `Cast(Of T)` | Conversion | `IEnumerable(Of T)` | Yes | For non-generic collections |
+| `SelectMany` | Flattening | `IEnumerable` | Yes | Flatten nested collections |
 
 ---
 
@@ -752,7 +751,6 @@ Cause: String comparison with leading/trailing spaces, mixed casing, or the wron
 (UiPath DataRow column access by name is case-sensitive by default).
 
 Fix:
-
 - Always `.Trim()` scraped or user-input strings before comparison.
 - Use `StringComparison.OrdinalIgnoreCase` for case-insensitive matching.
 - Verify column names exactly as they appear in the DataTable (check with `dt.Columns(0).ColumnName` in a Log Message during development).

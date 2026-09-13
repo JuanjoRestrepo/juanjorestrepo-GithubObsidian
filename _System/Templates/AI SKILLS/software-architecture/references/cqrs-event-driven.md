@@ -3,7 +3,7 @@
 **Sources:** Greg Young popularized CQRS (Command Query Responsibility Segregation, building on
 Bertrand Meyer's Command-Query Separation principle, 1988); Event Sourcing is documented
 extensively by Martin Fowler and Greg Young; Event-Driven Architecture draws on decades of
-enterprise messaging patterns (Gregor Hohpe & Bobby Woolf, _Enterprise Integration Patterns_,
+enterprise messaging patterns (Gregor Hohpe & Bobby Woolf, *Enterprise Integration Patterns*,
 2003). All are language-agnostic — implemented natively in Java (Axon Framework), .NET
 (MediatR, EventStoreDB), and every other major ecosystem. Examples below use TypeScript and
 Python.
@@ -62,7 +62,7 @@ export interface PlaceOrderCommand {
 
 export class PlaceOrderCommandHandler {
   constructor(
-    private readonly orderRepo: OrderRepository, // rich domain model
+    private readonly orderRepo: OrderRepository,  // rich domain model
     private readonly eventBus: EventBus,
   ) {}
 
@@ -79,9 +79,9 @@ export class PlaceOrderCommandHandler {
 // ============================================
 export interface OrderListItemDTO {
   orderId: string;
-  customerName: string; // denormalized — joined at query time or pre-computed
+  customerName: string;   // denormalized — joined at query time or pre-computed
   itemCount: number;
-  total: string; // pre-formatted for display — never done on the write side
+  total: string;           // pre-formatted for display — never done on the write side
   placedAt: string;
 }
 
@@ -90,8 +90,7 @@ export class GetCustomerOrdersQueryHandler {
 
   // Direct SQL/query — bypasses the domain model entirely; this is intentional
   async handle(customerId: string): Promise<OrderListItemDTO[]> {
-    return this.db.query<OrderListItemDTO>(
-      `
+    return this.db.query<OrderListItemDTO>(`
       SELECT
         o.id as "orderId",
         c.name as "customerName",
@@ -104,9 +103,7 @@ export class GetCustomerOrdersQueryHandler {
       WHERE o.customer_id = $1
       GROUP BY o.id, c.name, o.total, o.placed_at
       ORDER BY o.placed_at DESC
-    `,
-      [customerId],
-    );
+    `, [customerId]);
   }
 }
 ```
@@ -163,7 +160,7 @@ export class OrderPlacedProjector {
 
   async on(event: OrderPlaced): Promise<void> {
     // Build the exact shape the UI needs — pre-joined, pre-computed
-    await this.readDb.upsert('order_summaries', {
+    await this.readDb.upsert("order_summaries", {
       orderId: event.orderId,
       customerName: await this.lookupCustomerName(event.customerId),
       total: event.total.toDisplayString(),
@@ -173,7 +170,7 @@ export class OrderPlacedProjector {
 }
 ```
 
-**The cost of the full form:** the read model is only _eventually_ consistent with the write
+**The cost of the full form:** the read model is only *eventually* consistent with the write
 model — there is a window (usually milliseconds, but not zero) where a just-placed order
 doesn't yet appear in the read model. Every team introducing this must explicitly decide how
 the UI handles that window (optimistic UI updates, polling, or accepting the lag).
@@ -209,13 +206,13 @@ independently.
 
 ### Message Broker Comparison
 
-| Broker                      | Model                                            | Best for                                                                                        |
-| --------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| **Kafka**                   | Distributed log, consumer groups, replay-capable | High-throughput event streaming, event sourcing, multiple consumers needing independent offsets |
-| **RabbitMQ**                | Traditional message queue, routing via exchanges | Task queues, RPC-style messaging, complex routing rules                                         |
-| **AWS SQS + SNS**           | Managed queue (SQS) + pub/sub fan-out (SNS)      | AWS-native systems avoiding self-hosted broker operations                                       |
-| **AWS EventBridge**         | Managed event bus with content-based routing     | Serverless architectures, SaaS integrations, schema registry built-in                           |
-| **Redis Streams / Pub/Sub** | Lightweight, in-memory (Streams add persistence) | Low-latency, smaller-scale systems already using Redis                                          |
+| Broker | Model | Best for |
+|---|---|---|
+| **Kafka** | Distributed log, consumer groups, replay-capable | High-throughput event streaming, event sourcing, multiple consumers needing independent offsets |
+| **RabbitMQ** | Traditional message queue, routing via exchanges | Task queues, RPC-style messaging, complex routing rules |
+| **AWS SQS + SNS** | Managed queue (SQS) + pub/sub fan-out (SNS) | AWS-native systems avoiding self-hosted broker operations |
+| **AWS EventBridge** | Managed event bus with content-based routing | Serverless architectures, SaaS integrations, schema registry built-in |
+| **Redis Streams / Pub/Sub** | Lightweight, in-memory (Streams add persistence) | Low-latency, smaller-scale systems already using Redis |
 
 ### Event Schema Design
 
@@ -225,13 +222,13 @@ happen next** (that's a command, a different message type entirely).
 ```typescript
 // ✅ CORRECT — an event, describing a fact
 interface OrderPlaced {
-  eventType: 'OrderPlaced';
-  eventVersion: 1; // always version your event schemas
-  occurredAt: string; // ISO 8601
+  eventType: "OrderPlaced";
+  eventVersion: 1;              // always version your event schemas
+  occurredAt: string;            // ISO 8601
   orderId: string;
   customerId: string;
   items: { productId: string; quantity: number }[];
-  totalCents: number; // use integers for money — never floats
+  totalCents: number;            // use integers for money — never floats
 }
 
 // ❌ WRONG — this is a command disguised as an event; it tells consumers what to DO
@@ -266,17 +263,11 @@ effects.
 export class ReserveInventoryOnOrderPlaced {
   async handle(event: OrderPlaced): Promise<void> {
     // Idempotency check — has this event already been processed?
-    const alreadyProcessed = await this.db.exists(
-      'processed_events',
-      event.eventId,
-    );
+    const alreadyProcessed = await this.db.exists("processed_events", event.eventId);
     if (alreadyProcessed) return; // safe no-op on redelivery
 
     await this.inventoryService.reserve(event.items);
-    await this.db.insert('processed_events', {
-      eventId: event.eventId,
-      processedAt: new Date(),
-    });
+    await this.db.insert("processed_events", { eventId: event.eventId, processedAt: new Date() });
   }
 }
 ```
@@ -293,23 +284,19 @@ the primary source of truth.
 // Instead of: orders table with a `status` column that gets overwritten
 // Store: an append-only event log
 type OrderEvent =
-  | { type: 'OrderCreated'; orderId: string; customerId: string }
-  | { type: 'ItemAdded'; orderId: string; productId: string; quantity: number }
-  | { type: 'OrderSubmitted'; orderId: string }
-  | { type: 'OrderCancelled'; orderId: string; reason: string };
+  | { type: "OrderCreated"; orderId: string; customerId: string }
+  | { type: "ItemAdded"; orderId: string; productId: string; quantity: number }
+  | { type: "OrderSubmitted"; orderId: string }
+  | { type: "OrderCancelled"; orderId: string; reason: string };
 
 // Current state is REBUILT by folding over the event history
 function reconstructOrder(events: OrderEvent[]): Order {
   return events.reduce((order, event) => {
     switch (event.type) {
-      case 'OrderCreated':
-        return Order.empty(event.orderId, event.customerId);
-      case 'ItemAdded':
-        return order.withItemAdded(event.productId, event.quantity);
-      case 'OrderSubmitted':
-        return order.withStatus('SUBMITTED');
-      case 'OrderCancelled':
-        return order.withStatus('CANCELLED');
+      case "OrderCreated": return Order.empty(event.orderId, event.customerId);
+      case "ItemAdded": return order.withItemAdded(event.productId, event.quantity);
+      case "OrderSubmitted": return order.withStatus("SUBMITTED");
+      case "OrderCancelled": return order.withStatus("CANCELLED");
     }
   }, Order.uninitialized());
 }
@@ -330,7 +317,6 @@ understanding the full fold logic, not just reading a row.
 ## When NOT to Use CQRS / Event-Driven / Event Sourcing (Over-Engineering Check)
 
 **CQRS** earns its cost when:
-
 - Read and write workloads have measurably different scaling needs (e.g., 1000x more reads
   than writes, or reads need complex denormalized aggregation that would be slow against the
   normalized write schema)
@@ -338,21 +324,18 @@ understanding the full fold logic, not just reading a row.
   reports, search — very different from the entity used to enforce business rules)
 
 **Do not use CQRS when:**
-
 - The application is small-to-medium CRUD where the same model serves reads and writes fine
 - "We might need to scale reads separately someday" — without a measured current bottleneck,
   this is speculative complexity; the simple form (same DB, different query functions) already
   gives 90% of the benefit with none of the eventual-consistency cost
 
 **Event-Driven Architecture** earns its cost when:
-
 - Multiple independent services/teams need to react to the same state change without being
   coupled to the publisher's release cycle or uptime
 - The system genuinely has fire-and-forget side effects that don't need to block the primary
   operation (sending a confirmation email should not fail the checkout flow)
 
 **Do not use EDA when:**
-
 - A direct function call or synchronous API call would work fine and the operation needs an
   immediate, consistent response (e.g., checking inventory availability during checkout —
   the customer needs to know NOW, not eventually)
@@ -361,13 +344,11 @@ understanding the full fold logic, not just reading a row.
   problem that an interface/dependency injection already solves within a single process
 
 **Event Sourcing** earns its cost when:
-
 - Regulatory or business requirements demand a complete, tamper-evident audit trail
 - The domain genuinely benefits from historical replay (financial ledgers, inventory
   reconciliation, understanding exactly how a state was reached)
 
 **Do not use Event Sourcing when:**
-
 - You only want "an audit log" — a simple `AuditLog` table with before/after snapshots on
   each write achieves this without rebuilding your entire persistence model around it
 - The team has no prior experience with it — it is the highest-learning-curve pattern in this

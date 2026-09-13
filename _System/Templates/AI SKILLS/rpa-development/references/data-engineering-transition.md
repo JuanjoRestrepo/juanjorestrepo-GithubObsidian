@@ -12,17 +12,17 @@ RPA and data engineering are both, structurally, "move data reliably from A to B
 without a human watching it run." The mental models transfer directly even though the tools
 differ:
 
-| RPA concept                                                   | Data engineering equivalent                                                                    |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Queue + Transaction (Orchestrator, Dispatcher/Performer)      | Pipeline task/DAG run + partition/batch                                                        |
-| REFramework Init -> Get Transaction -> Process -> Set Status  | Extract -> Transform -> Load (ETL) / Extract -> Load -> Transform (ELT) stage sequence         |
-| Config.xlsx / Orchestrator Assets (never hardcoded)           | Pipeline parameters, environment variables, Airflow Variables/Connections                      |
-| Business Exception vs. System Exception                       | Data quality failure (bad row, schema drift) vs. infrastructure failure (source down, network) |
-| Idempotency (safe to re-run a transaction after crash)        | Idempotent pipeline runs (safe to re-run a DAG/task without duplicating rows)                  |
-| Selector fragility when the target UI changes                 | Schema drift when an upstream source changes its structure                                     |
-| Orchestrator dashboards / queue item age monitoring           | Pipeline observability: DAG run status, data freshness/SLA monitoring                          |
-| Git + Azure Pipelines CI/CD for bot code                      | Git + CI/CD for pipeline code (dbt, Airflow DAGs, Python transforms) — identical discipline    |
-| SQL Server direct integration (already a core RPA skill here) | The relational/warehouse layer data engineers write against constantly                         |
+| RPA concept | Data engineering equivalent |
+|---|---|
+| Queue + Transaction (Orchestrator, Dispatcher/Performer) | Pipeline task/DAG run + partition/batch |
+| REFramework Init -> Get Transaction -> Process -> Set Status | Extract -> Transform -> Load (ETL) / Extract -> Load -> Transform (ELT) stage sequence |
+| Config.xlsx / Orchestrator Assets (never hardcoded) | Pipeline parameters, environment variables, Airflow Variables/Connections |
+| Business Exception vs. System Exception | Data quality failure (bad row, schema drift) vs. infrastructure failure (source down, network) |
+| Idempotency (safe to re-run a transaction after crash) | Idempotent pipeline runs (safe to re-run a DAG/task without duplicating rows) |
+| Selector fragility when the target UI changes | Schema drift when an upstream source changes its structure |
+| Orchestrator dashboards / queue item age monitoring | Pipeline observability: DAG run status, data freshness/SLA monitoring |
+| Git + Azure Pipelines CI/CD for bot code | Git + CI/CD for pipeline code (dbt, Airflow DAGs, Python transforms) — identical discipline |
+| SQL Server direct integration (already a core RPA skill here) | The relational/warehouse layer data engineers write against constantly |
 
 The exception-handling discipline, the "never hardcode config/credentials" discipline, the
 idempotency discipline, and the CI/CD discipline in this skill's Cross-Cutting Best Practices
@@ -52,16 +52,16 @@ trick.
 
 ## The Real Gaps to Close
 
-| Gap                                  | What it is                                                                                                                                                                                              | Why RPA doesn't cover it                                                                                                                                                                                         |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Orchestration at scale**           | Apache Airflow (DAGs, operators, sensors, scheduling, backfills) or Azure Data Factory (pipelines, triggers, Integration Runtimes)                                                                      | Orchestrator/Control Room orchestrate _bots_; Airflow/ADF orchestrate _arbitrary data tasks_ across many more source/sink types, with dependency graphs and backfill semantics that queue-based RPA doesn't need |
-| **Bulk/distributed data processing** | `pandas` for small-to-medium data; **polars** or **Apache Spark** once data exceeds roughly 1M rows or single-machine memory                                                                            | RPA processes one transaction at a time; data engineering processes millions of rows per run and needs vectorized/distributed compute, not per-row loops                                                         |
-| **Transformation-layer tooling**     | **dbt** (data build tool) — SQL-based, version-controlled, testable transformation layer that runs inside the warehouse                                                                                 | RPA has no equivalent; this is the modern standard way transformation logic is written, tested, and documented in a warehouse                                                                                    |
-| **Data modeling**                    | Dimensional modeling (star schema, fact/dimension tables — the Kimball approach) and the **medallion architecture** (bronze/raw -> silver/cleaned -> gold/aggregated layers, popularized by Databricks) | RPA doesn't require thinking about how data is _shaped_ for downstream analytics consumption; this is a new design skill, not a new tool                                                                         |
-| **Data quality frameworks**          | **Great Expectations** or **Pandera** — schema/statistical validation of dataframes as an explicit pipeline step                                                                                        | RPA's "business exception" concept is close, but formalized, declarative data quality assertions are a distinct skill worth deliberate practice                                                                  |
-| **Change Data Capture (CDC)**        | Detecting and propagating only _changed_ rows from a source (SQL Server 2022 natively supports CDC and Change Tracking) instead of full reloads                                                         | RPA typically processes discrete transactions/items, not incremental table deltas — CDC is a genuinely new concept                                                                                               |
-| **Cloud data platforms**             | Azure Synapse Analytics, Databricks, Snowflake, or BigQuery — the actual compute/storage layer data runs on                                                                                             | RPA's infrastructure knowledge (Orchestrator, robot machines) doesn't transfer to warehouse/lakehouse platform administration                                                                                    |
-| **Batch vs. streaming**              | Recognizing when a problem needs streaming (Kafka, Event Hubs, Spark Structured Streaming) vs. scheduled batch                                                                                          | RPA is essentially always batch/event-triggered at the transaction level; large-scale streaming is a new mental model                                                                                            |
+| Gap | What it is | Why RPA doesn't cover it |
+|---|---|---|
+| **Orchestration at scale** | Apache Airflow (DAGs, operators, sensors, scheduling, backfills) or Azure Data Factory (pipelines, triggers, Integration Runtimes) | Orchestrator/Control Room orchestrate *bots*; Airflow/ADF orchestrate *arbitrary data tasks* across many more source/sink types, with dependency graphs and backfill semantics that queue-based RPA doesn't need |
+| **Bulk/distributed data processing** | `pandas` for small-to-medium data; **polars** or **Apache Spark** once data exceeds roughly 1M rows or single-machine memory | RPA processes one transaction at a time; data engineering processes millions of rows per run and needs vectorized/distributed compute, not per-row loops |
+| **Transformation-layer tooling** | **dbt** (data build tool) — SQL-based, version-controlled, testable transformation layer that runs inside the warehouse | RPA has no equivalent; this is the modern standard way transformation logic is written, tested, and documented in a warehouse |
+| **Data modeling** | Dimensional modeling (star schema, fact/dimension tables — the Kimball approach) and the **medallion architecture** (bronze/raw -> silver/cleaned -> gold/aggregated layers, popularized by Databricks) | RPA doesn't require thinking about how data is *shaped* for downstream analytics consumption; this is a new design skill, not a new tool |
+| **Data quality frameworks** | **Great Expectations** or **Pandera** — schema/statistical validation of dataframes as an explicit pipeline step | RPA's "business exception" concept is close, but formalized, declarative data quality assertions are a distinct skill worth deliberate practice |
+| **Change Data Capture (CDC)** | Detecting and propagating only *changed* rows from a source (SQL Server 2022 natively supports CDC and Change Tracking) instead of full reloads | RPA typically processes discrete transactions/items, not incremental table deltas — CDC is a genuinely new concept |
+| **Cloud data platforms** | Azure Synapse Analytics, Databricks, Snowflake, or BigQuery — the actual compute/storage layer data runs on | RPA's infrastructure knowledge (Orchestrator, robot machines) doesn't transfer to warehouse/lakehouse platform administration |
+| **Batch vs. streaming** | Recognizing when a problem needs streaming (Kafka, Event Hubs, Spark Structured Streaming) vs. scheduled batch | RPA is essentially always batch/event-triggered at the transaction level; large-scale streaming is a new mental model |
 
 ## Learning Sequence (Building on This Project's Existing Stack)
 

@@ -67,13 +67,13 @@ Robotlog Source Events + Job/Queue/Machine Source Events
 
 Problems this created:
 
-| Problem                                                                     | Impact                                                                                                  |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Batching pipeline introduced up to 30 minutes of latency                    | Unusable for Maestro real-time decisions                                                                |
-| Real-time pipeline delivered faster data but at higher cost                 | Not economically sustainable at scale                                                                   |
-| Separate ingestion and storage paths for historical vs. real-time Robotlogs | Data duplication, two schemas to maintain, inconsistent query results                                   |
-| Multiple Azure Function-based ingestion components                          | Operational complexity: separate deployment, monitoring, scaling, and failure domains for each function |
-| No unified delivery guarantee model                                         | Maestro required at-least-once; the prior pipelines had inconsistent guarantees                         |
+| Problem | Impact |
+|---|---|
+| Batching pipeline introduced up to 30 minutes of latency | Unusable for Maestro real-time decisions |
+| Real-time pipeline delivered faster data but at higher cost | Not economically sustainable at scale |
+| Separate ingestion and storage paths for historical vs. real-time Robotlogs | Data duplication, two schemas to maintain, inconsistent query results |
+| Multiple Azure Function-based ingestion components | Operational complexity: separate deployment, monitoring, scaling, and failure domains for each function |
+| No unified delivery guarantee model | Maestro required at-least-once; the prior pipelines had inconsistent guarantees |
 
 ### 1.3 Why Spark Structured Streaming on Databricks
 
@@ -96,20 +96,20 @@ The new architecture consolidates previously separate components into a single u
 
 **Event sources:**
 
-| Source category                     | Examples                                                                            |
-| ----------------------------------- | ----------------------------------------------------------------------------------- |
-| **Robotlog Source Events**          | Bot execution logs, activity-level messages, custom `Log Message` output            |
-| **Maestro Source Events**           | Orchestration flow events, trigger activations, cross-process coordination          |
+| Source category | Examples |
+|---|---|
+| **Robotlog Source Events** | Bot execution logs, activity-level messages, custom `Log Message` output |
+| **Maestro Source Events** | Orchestration flow events, trigger activations, cross-process coordination |
 | **Job/Queue/Machine Source Events** | Job started/completed/faulted, queue item lifecycle, machine heartbeat/availability |
 
 **Processing: Spark Structured Streaming jobs** running on Azure Databricks, performing four
 sequential transformation stages (executed by the optimizer as a single fused DAG):
 
-| Stage                     | Purpose                                                                                                            |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Filtering**             | Drop events not required for downstream storage (health-check noise, internal system events)                       |
-| **Flattening**            | Normalize nested JSON payloads to flat columnar form                                                               |
-| **Parsing**               | Extract typed values from raw string fields (timestamps, numeric IDs, enum codes)                                  |
+| Stage | Purpose |
+|---|---|
+| **Filtering** | Drop events not required for downstream storage (health-check noise, internal system events) |
+| **Flattening** | Normalize nested JSON payloads to flat columnar form |
+| **Parsing** | Extract typed values from raw string fields (timestamps, numeric IDs, enum codes) |
 | **Joining and Enriching** | Join with reference data (process definitions, machine metadata, user/role data) to produce self-contained records |
 
 **Orchestration:** Databricks Lakeflow Jobs coordinates job scheduling, dependency management,
@@ -117,10 +117,10 @@ and retry behavior across all streaming jobs.
 
 **Output: Data warehouse — three logical table groups:**
 
-| Table group              | Source                         |
-| ------------------------ | ------------------------------ |
-| Single Robotlogs table   | Robotlog events                |
-| Maestro tables           | Maestro events                 |
+| Table group | Source |
+|---|---|
+| Single Robotlogs table | Robotlog events |
+| Maestro tables | Maestro events |
 | Job/Queue/Machine tables | Job, queue, and machine events |
 
 The output tables are separated by source-event semantics rather than collapsed into a single
@@ -129,13 +129,13 @@ the table whose schema matches their question.
 
 ### 1.5 Measured Performance Characteristics
 
-| Metric                    | Value                  |
-| ------------------------- | ---------------------- |
-| Median end-to-end latency | ~27 seconds            |
-| 95th-percentile latency   | ~51 seconds            |
-| 99th-percentile latency   | ~72 seconds            |
-| Throughput (load test)    | ~40,000 events/second  |
-| Throughput scaling        | Linear with core count |
+| Metric | Value |
+|---|---|
+| Median end-to-end latency | ~27 seconds |
+| 95th-percentile latency | ~51 seconds |
+| 99th-percentile latency | ~72 seconds |
+| Throughput (load test) | ~40,000 events/second |
+| Throughput scaling | Linear with core count |
 
 Latency is measured end-to-end: event generation in the UiPath platform to event being
 queryable in the data warehouse. The dominant contributors are ingestion queue dwell time,
@@ -211,14 +211,14 @@ the debugging cost savings are significant.
 
 **DataFrame API over RDD**
 
-| Dimension      | RDD API                                  | DataFrame API                                                               |
-| -------------- | ---------------------------------------- | --------------------------------------------------------------------------- |
-| Abstraction    | Specify how to compute, task by task     | Specify what to compute; Spark determines how                               |
-| Optimizer      | None                                     | Catalyst optimizer + Tungsten execution engine                              |
-| Schema         | Schema-free; errors surface at runtime   | Schema-enforced; errors surface at plan time                                |
-| Expressiveness | Manual map/flatMap/reduceByKey chains    | SQL-equivalent: `select`, `filter`, `groupBy`, `join`                       |
-| Debugging      | Trace individual transformation closures | `df.explain()` shows full physical plan                                     |
-| Performance    | Manual partitioning and join strategy    | Adaptive Query Execution handles partition sizing, join strategy at runtime |
+| Dimension | RDD API | DataFrame API |
+|---|---|---|
+| Abstraction | Specify how to compute, task by task | Specify what to compute; Spark determines how |
+| Optimizer | None | Catalyst optimizer + Tungsten execution engine |
+| Schema | Schema-free; errors surface at runtime | Schema-enforced; errors surface at plan time |
+| Expressiveness | Manual map/flatMap/reduceByKey chains | SQL-equivalent: `select`, `filter`, `groupBy`, `join` |
+| Debugging | Trace individual transformation closures | `df.explain()` shows full physical plan |
+| Performance | Manual partitioning and join strategy | Adaptive Query Execution handles partition sizing, join strategy at runtime |
 
 Use the DataFrame API for all new Spark development. RDD-level code is warranted only for
 custom stateful operations the structured API cannot express — rare in event processing.
@@ -227,13 +227,13 @@ custom stateful operations the structured API cannot express — rare in event p
 
 **Monitoring a Structured Streaming job**
 
-| Metric                   | Healthy signal                      | Alert condition                                                   |
-| ------------------------ | ----------------------------------- | ----------------------------------------------------------------- |
-| `processedRowsPerSecond` | Stable, matches expected throughput | Sharp drop: source backlog or executor loss                       |
-| `inputRowsPerSecond`     | Tracks source event rate            | Spike with flat processedRows: backpressure                       |
-| Micro-batch duration     | Below trigger interval              | Consistently exceeds trigger interval: under-provisioned          |
-| `numInputRows` per batch | Non-zero during active hours        | Extended zero: source connectivity issue                          |
-| Failed/retried tasks     | Near zero                           | Sustained failures: OOM, executor eviction, or source read errors |
+| Metric | Healthy signal | Alert condition |
+|---|---|---|
+| `processedRowsPerSecond` | Stable, matches expected throughput | Sharp drop: source backlog or executor loss |
+| `inputRowsPerSecond` | Tracks source event rate | Spike with flat processedRows: backpressure |
+| Micro-batch duration | Below trigger interval | Consistently exceeds trigger interval: under-provisioned |
+| `numInputRows` per batch | Non-zero during active hours | Extended zero: source connectivity issue |
+| Failed/retried tasks | Near zero | Sustained failures: OOM, executor eviction, or source read errors |
 
 In Databricks, the Spark UI (accessible from the cluster's running jobs panel) provides all
 of these plus shuffle read/write bytes, GC time, and per-stage timeline views. Databricks
@@ -309,7 +309,6 @@ The connector exposes two activities:
 
 The activity retrieves the input and output schema from the selected serving endpoint,
 auto-generating the request form in Maestro's Properties panel. Use this activity when:
-
 - The serving endpoint is a standard Databricks-supported model type.
 - You want Maestro to guide the request structure via the UI.
 
@@ -317,7 +316,6 @@ auto-generating the request form in Maestro's Properties panel. Use this activit
 
 The activity accepts the complete JSON payload manually and does not retrieve the endpoint
 schema. Use this when:
-
 - The auto-generated schema approach is unavailable for your model type.
 - You need full control over the JSON payload (non-standard request shapes, extra headers).
 - You are integrating with a custom or non-standard serving endpoint.
@@ -375,14 +373,14 @@ The full integration flow in Maestro:
 Access the agent's reply in the Maestro Expression editor:
 
 ```javascript
-result.response.messages[0].content;
+result.response.messages[0].content
 ```
 
 If the content is a JSON-encoded string (the agent was prompted to return structured JSON),
 parse it explicitly:
 
 ```javascript
-js: JSON.parse(result.response.messages[0].content);
+js:JSON.parse(result.response.messages[0].content)
 ```
 
 Then assign individual fields from the parsed object to typed process variables.
@@ -391,10 +389,10 @@ Then assign individual fields from the parsed object to typed process variables.
 
 The agent's behavior at inference time is determined by two prompt layers:
 
-| Layer             | Location                                                       | Responsibility                                                                         |
-| ----------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **System prompt** | Defined in the Databricks agent configuration, not in Maestro  | Detailed instructions, output schema definition, domain knowledge, few-shot examples   |
-| **User prompt**   | Composed in Maestro at runtime, passed via the `content` field | Brief and specific; provides the runtime variables the agent needs to perform the task |
+| Layer | Location | Responsibility |
+|---|---|---|
+| **System prompt** | Defined in the Databricks agent configuration, not in Maestro | Detailed instructions, output schema definition, domain knowledge, few-shot examples |
+| **User prompt** | Composed in Maestro at runtime, passed via the `content` field | Brief and specific; provides the runtime variables the agent needs to perform the task |
 
 Keep the user prompt minimal: its role is to supply the runtime values, not to re-explain
 the task. Example (using C# string concatenation in Studio expressions to interpolate a
@@ -408,7 +406,7 @@ process variable):
 Expected response:
 
 ```json
-{ "Order_Quantity": 100 }
+{"Order_Quantity": 100}
 ```
 
 **Type handling.** Pay strict attention to types: a response that looks like JSON may be a
@@ -464,16 +462,16 @@ spatial metadata.
 
 In the UiPath+Databricks integration context, this function occupies a specific position:
 
-| Dimension              | UiPath Document Understanding (DU)                              | Databricks `ai_parse_document`                                                 |
-| ---------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Primary use**        | Per-document extraction within a running bot at automation time | Batch/pipeline-scale parsing of document corpora at data-platform time         |
-| **Invocation**         | UiPath activity inside a REFramework Performer                  | SQL function inside a Lakeflow Pipeline, SQL editor, or notebook               |
-| **Output**             | Structured field values assigned to workflow variables          | `VARIANT`-typed document object stored in a Delta table                        |
-| **Scale**              | One document per transaction; throughput = robot count          | Millions of documents in parallel; throughput = cluster core count             |
-| **Confidence routing** | Human-in-the-loop via Action Center on low-confidence fields    | Confidence score per element; low-confidence items flagged in Delta for review |
-| **Cost model**         | UiPath Document Understanding API calls per page                | `AI_FUNCTIONS` DBU consumption per document                                    |
-| **Governance**         | UiPath Orchestrator assets and Insights                         | Unity Catalog lineage, audit logs, and permissions                             |
-| **Best for**           | Real-time single-document extraction in an automated process    | Backfill, bulk ingestion, analytics, and RAG over document corpora             |
+| Dimension | UiPath Document Understanding (DU) | Databricks `ai_parse_document` |
+|---|---|---|
+| **Primary use** | Per-document extraction within a running bot at automation time | Batch/pipeline-scale parsing of document corpora at data-platform time |
+| **Invocation** | UiPath activity inside a REFramework Performer | SQL function inside a Lakeflow Pipeline, SQL editor, or notebook |
+| **Output** | Structured field values assigned to workflow variables | `VARIANT`-typed document object stored in a Delta table |
+| **Scale** | One document per transaction; throughput = robot count | Millions of documents in parallel; throughput = cluster core count |
+| **Confidence routing** | Human-in-the-loop via Action Center on low-confidence fields | Confidence score per element; low-confidence items flagged in Delta for review |
+| **Cost model** | UiPath Document Understanding API calls per page | `AI_FUNCTIONS` DBU consumption per document |
+| **Governance** | UiPath Orchestrator assets and Insights | Unity Catalog lineage, audit logs, and permissions |
+| **Best for** | Real-time single-document extraction in an automated process | Backfill, bulk ingestion, analytics, and RAG over document corpora |
 
 These are complementary, not competing: a process can use UiPath DU for real-time per-
 transaction extraction during bot execution and then land the same documents in a UC Volume
@@ -509,13 +507,13 @@ ai_parse_document(
 
 **Arguments:**
 
-| Parameter                 | Type     | Required | Description                                                                             |
-| ------------------------- | -------- | -------- | --------------------------------------------------------------------------------------- |
-| `content`                 | `BINARY` | Yes      | Document as byte array                                                                  |
-| `version`                 | String   | No       | Output schema version. Specify `'2.0'` explicitly to pin against breaking changes       |
-| `imageOutputPath`         | String   | No       | UC Volume path to save rendered page images (for multimodal RAG)                        |
-| `descriptionElementTypes` | String   | No       | `'*'` (all, default), `'figure'` (figures only), or `''` (none, reduces cost)           |
-| `pageRange`               | String   | No       | Comma-separated pages/ranges, 1-indexed. E.g. `'1,3,5-10'`. Required if doc > 500 pages |
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `content` | `BINARY` | Yes | Document as byte array |
+| `version` | String | No | Output schema version. Specify `'2.0'` explicitly to pin against breaking changes |
+| `imageOutputPath` | String | No | UC Volume path to save rendered page images (for multimodal RAG) |
+| `descriptionElementTypes` | String | No | `'*'` (all, default), `'figure'` (figures only), or `''` (none, reduces cost) |
+| `pageRange` | String | No | Comma-separated pages/ranges, 1-indexed. E.g. `'1,3,5-10'`. Required if doc > 500 pages |
 
 **Output schema (version 2.0) — `VARIANT` type:**
 
@@ -543,18 +541,18 @@ ai_parse_document(
 
 **Element types returned in `elements[].type`:**
 
-| Type             | Meaning                                                                    |
-| ---------------- | -------------------------------------------------------------------------- |
-| `text`           | Text paragraph or general body text                                        |
-| `table`          | Table; `content` is HTML with merged/nested cells preserved                |
-| `figure`         | Image or diagram; `content` may be NULL; `description` contains AI caption |
-| `title`          | Document title                                                             |
-| `caption`        | Caption for a figure or table                                              |
-| `section_header` | Heading or subheading                                                      |
-| `page_header`    | Page-level header                                                          |
-| `page_footer`    | Page-level footer                                                          |
-| `page_number`    | Page number marker                                                         |
-| `footnote`       | Footnote reference or text                                                 |
+| Type | Meaning |
+|---|---|
+| `text` | Text paragraph or general body text |
+| `table` | Table; `content` is HTML with merged/nested cells preserved |
+| `figure` | Image or diagram; `content` may be NULL; `description` contains AI caption |
+| `title` | Document title |
+| `caption` | Caption for a figure or table |
+| `section_header` | Heading or subheading |
+| `page_header` | Page-level header |
+| `page_footer` | Page-level footer |
+| `page_number` | Page number marker |
+| `footnote` | Footnote reference or text |
 
 **Schema versioning contract:** minor version upgrades are backward-compatible (new fields
 only); major version upgrades may include breaking changes. Always pin `version` explicitly in
@@ -730,7 +728,6 @@ function accepts the `VARIANT` output of the previous step, enabling a complete 
 intelligence workflow in a single chained SQL query.
 
 **Shared requirements for all AI Functions:**
-
 - Not available on Pro or Classic SQL warehouses — Serverless SQL warehouse or Serverless
   compute is required for notebooks and Databricks Workflows
 - Databricks Runtime 17.3+ minimum; DBR 18.2+ recommended for best performance and latest
@@ -910,14 +907,14 @@ previously be a separate service integration.
 
 **Integration surface with the broader Agent Bricks platform:**
 
-| Capability             | Role in the document pipeline                                                                                                                             |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`ai_query`**         | Pass parsed content to any model endpoint (GPT-4o, Claude, etc.) via Mosaic AI Gateway for complex reasoning tasks not covered by task-specific functions |
-| **AI Search**          | Vector-index the `ai_prep_search` chunks for multimodal RAG (text and figures); Maestro Databricks Agent then retrieves by semantic similarity            |
-| **Declarative Agents** | Optimize extraction/classification/summarization with natural language instructions for better throughput and lower cost than prompt-only approaches      |
-| **Supervisor Agent**   | Coordinate multiple specialized document-analysis agents for multi-step extraction workflows                                                              |
-| **AI/BI Dashboards**   | Query the extracted and classified Delta tables directly for analytics, without moving data out of the Lakehouse                                          |
-| **Lakeflow Pipelines** | Orchestrate the full pipeline incrementally — only new documents processed on each run                                                                    |
+| Capability | Role in the document pipeline |
+|---|---|
+| **`ai_query`** | Pass parsed content to any model endpoint (GPT-4o, Claude, etc.) via Mosaic AI Gateway for complex reasoning tasks not covered by task-specific functions |
+| **AI Search** | Vector-index the `ai_prep_search` chunks for multimodal RAG (text and figures); Maestro Databricks Agent then retrieves by semantic similarity |
+| **Declarative Agents** | Optimize extraction/classification/summarization with natural language instructions for better throughput and lower cost than prompt-only approaches |
+| **Supervisor Agent** | Coordinate multiple specialized document-analysis agents for multi-step extraction workflows |
+| **AI/BI Dashboards** | Query the extracted and classified Delta tables directly for analytics, without moving data out of the Lakehouse |
+| **Lakeflow Pipelines** | Orchestrate the full pipeline incrementally — only new documents processed on each run |
 
 ### 3.6 Architecture Pattern: UiPath + Databricks Document Pipeline
 
@@ -948,7 +945,6 @@ The full end-to-end pattern combining UiPath and Databricks for document process
 ```
 
 In this architecture:
-
 - UiPath handles the **capture and real-time extraction** layer — the bot's immediate
   decision-making needs per document.
 - Databricks handles the **corpus-scale understanding** layer — retrospective analytics,
@@ -962,16 +958,16 @@ For the OCR engine decision (Tesseract, Azure Computer Vision, Google Cloud Visi
 Screen/Document OCR — fully covered in `references/regex-in-rpa.md`), `ai_parse_document`
 occupies a different tier:
 
-| Consideration          | Traditional OCR engines                         | `ai_parse_document`                                                      |
-| ---------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-| **Output granularity** | Raw text string (with layout loss)              | Structured elements with type, bounding box, confidence, AI descriptions |
-| **Table handling**     | Text extraction from cells (error-prone)        | HTML representation with merged/nested cells preserved                   |
-| **Figure handling**    | Skipped or raw pixel extraction                 | AI-generated natural language description per figure                     |
-| **Integration point**  | UiPath activity within a bot workflow           | SQL function inside a Databricks pipeline                                |
-| **Scale**              | Per-document at bot execution time              | Millions of documents in parallel via Spark                              |
-| **Governance**         | UiPath Orchestrator                             | Unity Catalog lineage and audit                                          |
-| **Cost**               | Per API call (Azure/Google/UiPath cloud)        | `AI_FUNCTIONS` DBU (verify current pricing at databricks.com)            |
-| **When to use**        | Bot needs extracted text immediately to proceed | Documents need to be parsed at scale for storage, analytics, or RAG      |
+| Consideration | Traditional OCR engines | `ai_parse_document` |
+|---|---|---|
+| **Output granularity** | Raw text string (with layout loss) | Structured elements with type, bounding box, confidence, AI descriptions |
+| **Table handling** | Text extraction from cells (error-prone) | HTML representation with merged/nested cells preserved |
+| **Figure handling** | Skipped or raw pixel extraction | AI-generated natural language description per figure |
+| **Integration point** | UiPath activity within a bot workflow | SQL function inside a Databricks pipeline |
+| **Scale** | Per-document at bot execution time | Millions of documents in parallel via Spark |
+| **Governance** | UiPath Orchestrator | Unity Catalog lineage and audit |
+| **Cost** | Per API call (Azure/Google/UiPath cloud) | `AI_FUNCTIONS` DBU (verify current pricing at databricks.com) |
+| **When to use** | Bot needs extracted text immediately to proceed | Documents need to be parsed at scale for storage, analytics, or RAG |
 
 The key differentiator: traditional OCR extracts text; `ai_parse_document` understands
 document structure. Tables, merged cells, nested lists, figure captions, page headers, and
@@ -1006,6 +1002,7 @@ Databricks does not store the document content passed to `ai_parse_document`, bu
 metadata run details (runtime version, execution context). For documents containing PII or
 regulated data, verify the applicable data processing terms at databricks.com/trust.
 
+
 ---
 
 ## Part 4 — Relevance to the RPA-to-Data-Engineering Transition
@@ -1013,15 +1010,15 @@ regulated data, verify the applicable data processing terms at databricks.com/tr
 The event ingestion pipeline (Part 1) is the real-world embodiment of the skills bridge
 in `data-engineering-transition.md`:
 
-| RPA concept                                    | Equivalent in the Databricks pipeline                                              |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Queue item (Orchestrator)                      | Event Hub / Kafka message consumed by the Structured Streaming job                 |
-| Transaction processing (REFramework Performer) | Micro-batch trigger processing a bounded set of events                             |
-| BusinessException → item marked as failed      | Downstream routing: failed parse → `_raw` preserved, item flagged for reprocessing |
-| Config.xlsx / Orchestrator Asset               | Spark job configuration parameters, `maxOffsetsPerTrigger`, cluster policy         |
-| Dispatcher/Performer separation                | Producer (event source) / Consumer (Streaming job) separation                      |
-| Retry mechanism (queue auto-retry)             | Kafka/Event Hub offset commitment strategy + WAL-based replay                      |
-| Workflow Analyzer rule                         | Schema enforcement at parse time (`from_json` with PERMISSIVE mode)                |
+| RPA concept | Equivalent in the Databricks pipeline |
+|---|---|
+| Queue item (Orchestrator) | Event Hub / Kafka message consumed by the Structured Streaming job |
+| Transaction processing (REFramework Performer) | Micro-batch trigger processing a bounded set of events |
+| BusinessException → item marked as failed | Downstream routing: failed parse → `_raw` preserved, item flagged for reprocessing |
+| Config.xlsx / Orchestrator Asset | Spark job configuration parameters, `maxOffsetsPerTrigger`, cluster policy |
+| Dispatcher/Performer separation | Producer (event source) / Consumer (Streaming job) separation |
+| Retry mechanism (queue auto-retry) | Kafka/Event Hub offset commitment strategy + WAL-based replay |
+| Workflow Analyzer rule | Schema enforcement at parse time (`from_json` with PERMISSIVE mode) |
 
 **Practical next step for DE transition exposure:**
 

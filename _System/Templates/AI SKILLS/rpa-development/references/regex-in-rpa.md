@@ -20,7 +20,6 @@ string-chasing sequence with a single, explicit, testable pattern — applied we
 simpler and more reliable than the alternative.
 
 The two main RPA uses:
-
 1. **Extraction**: pull a specific piece of text out of a larger string (an invoice number from
    a scraped page, an amount from an email body, a reference code from a status message).
 2. **Validation**: confirm that a field's content matches an expected format before typing it
@@ -29,35 +28,35 @@ The two main RPA uses:
 
 ## Regex Fundamentals: Cheat Sheet for RPA Work
 
-| Construct          | Meaning                                                      | Example                            |
-| ------------------ | ------------------------------------------------------------ | ---------------------------------- |
-| `.`                | Any single character (except newline)                        | `A.C` matches `ABC`, `A1C`         |
-| `\d`               | Digit `[0-9]`                                                | `\d{4}` matches `2026`             |
-| `\D`               | Non-digit                                                    |                                    |
-| `\w`               | Word character `[A-Za-z0-9_]`                                |                                    |
-| `\W`               | Non-word character                                           |                                    |
-| `\s`               | Whitespace (space, tab, newline)                             |                                    |
-| `\S`               | Non-whitespace                                               |                                    |
-| `^`                | Start of string (or line in multiline mode)                  |                                    |
-| `$`                | End of string (or line in multiline mode)                    |                                    |
-| `[abc]`            | Character class — any of a, b, c                             |                                    |
-| `[^abc]`           | Negated class — anything except a, b, c                      |                                    |
-| `[a-z]`            | Range                                                        | `[A-Za-z]` matches any letter      |
-| `{n}`              | Exactly n repetitions                                        | `\d{4}`                            |
-| `{n,m}`            | Between n and m repetitions                                  | `\d{2,4}`                          |
-| `*`                | 0 or more (greedy)                                           |                                    |
-| `+`                | 1 or more (greedy)                                           |                                    |
-| `?`                | 0 or 1 (also makes quantifier lazy when appended to another) |                                    |
-| `*?` `+?` `{n,m}?` | Lazy (non-greedy) — match as little as possible              |                                    |
-| `(...)`            | Capturing group — value accessible by index                  |                                    |
-| `(?:...)`          | Non-capturing group — grouping without capture overhead      |                                    |
-| `(?<name>...)`     | Named capturing group — value accessible by name             |                                    |
-| `\|`               | Alternation (OR)                                             | `cat\|dog`                         |
-| `(?=...)`          | Lookahead — match if followed by                             | `\d+(?= USD)`                      |
-| `(?!...)`          | Negative lookahead                                           |                                    |
-| `(?<=...)`         | Lookbehind — match if preceded by                            | `(?<=Invoice #)\d+`                |
-| `(?<!...)`         | Negative lookbehind                                          |                                    |
-| `\b`               | Word boundary                                                | `\bTotal\b` won't match `SubTotal` |
+| Construct | Meaning | Example |
+|---|---|---|
+| `.` | Any single character (except newline) | `A.C` matches `ABC`, `A1C` |
+| `\d` | Digit `[0-9]` | `\d{4}` matches `2026` |
+| `\D` | Non-digit | |
+| `\w` | Word character `[A-Za-z0-9_]` | |
+| `\W` | Non-word character | |
+| `\s` | Whitespace (space, tab, newline) | |
+| `\S` | Non-whitespace | |
+| `^` | Start of string (or line in multiline mode) | |
+| `$` | End of string (or line in multiline mode) | |
+| `[abc]` | Character class — any of a, b, c | |
+| `[^abc]` | Negated class — anything except a, b, c | |
+| `[a-z]` | Range | `[A-Za-z]` matches any letter |
+| `{n}` | Exactly n repetitions | `\d{4}` |
+| `{n,m}` | Between n and m repetitions | `\d{2,4}` |
+| `*` | 0 or more (greedy) | |
+| `+` | 1 or more (greedy) | |
+| `?` | 0 or 1 (also makes quantifier lazy when appended to another) | |
+| `*?` `+?` `{n,m}?` | Lazy (non-greedy) — match as little as possible | |
+| `(...)` | Capturing group — value accessible by index | |
+| `(?:...)` | Non-capturing group — grouping without capture overhead | |
+| `(?<name>...)` | Named capturing group — value accessible by name | |
+| `\|` | Alternation (OR) | `cat\|dog` |
+| `(?=...)` | Lookahead — match if followed by | `\d+(?= USD)` |
+| `(?!...)` | Negative lookahead | |
+| `(?<=...)` | Lookbehind — match if preceded by | `(?<=Invoice #)\d+` |
+| `(?<!...)` | Negative lookbehind | |
+| `\b` | Word boundary | `\bTotal\b` won't match `SubTotal` |
 
 **Greedy vs. lazy** is the single most common source of regex bugs in RPA text extraction:
 a greedy `.*` expands as far as possible, often consuming more than intended. Use `.*?` (lazy)
@@ -133,12 +132,12 @@ any regex that extracts more than one piece of data.
 
 ### `RegexOptions` flags worth knowing
 
-| Flag             | VB constant               | Use for                                                                                   |
-| ---------------- | ------------------------- | ----------------------------------------------------------------------------------------- |
-| Case-insensitive | `RegexOptions.IgnoreCase` | User-facing text where case varies (`Total` vs `TOTAL`)                                   |
-| Multiline        | `RegexOptions.Multiline`  | `^`/`$` match start/end of each line, not just the whole string                           |
-| Singleline       | `RegexOptions.Singleline` | `.` matches newline — required when extracted text spans multiple lines                   |
-| Compiled         | `RegexOptions.Compiled`   | Pre-compiles the pattern; worth it when the same pattern runs hundreds of times in a loop |
+| Flag | VB constant | Use for |
+|---|---|---|
+| Case-insensitive | `RegexOptions.IgnoreCase` | User-facing text where case varies (`Total` vs `TOTAL`) |
+| Multiline | `RegexOptions.Multiline` | `^`/`$` match start/end of each line, not just the whole string |
+| Singleline | `RegexOptions.Singleline` | `.` matches newline — required when extracted text spans multiple lines |
+| Compiled | `RegexOptions.Compiled` | Pre-compiles the pattern; worth it when the same pattern runs hundreds of times in a loop |
 
 ### UiPath Selector Context: Regex-Like Wildcards
 
@@ -365,12 +364,12 @@ End If
 OCR output introduces character substitution errors that a pattern designed for clean text will
 reject even though the underlying data is valid. Design OCR-targeting patterns defensively:
 
-| Common OCR substitution  | Defensive pattern                                    |
-| ------------------------ | ---------------------------------------------------- |
-| `0` read as `O` or `D`   | `[0O]` for expected digit zero; `[0-9O]` if mixed    |
-| `1` read as `l` or `I`   | `[1lI]` where a `1` is expected                      |
-| `,` read as `.`          | `[\.,]` for decimal/thousands separator              |
-| `5` read as `S`          | `[5S]` in numeric contexts                           |
+| Common OCR substitution | Defensive pattern |
+|---|---|
+| `0` read as `O` or `D` | `[0O]` for expected digit zero; `[0-9O]` if mixed |
+| `1` read as `l` or `I` | `[1lI]` where a `1` is expected |
+| `,` read as `.` | `[\.,]` for decimal/thousands separator |
+| `5` read as `S` | `[5S]` in numeric contexts |
 | Spaces inserted mid-word | `\s*` between every character in short fixed strings |
 
 For critical reference numbers read by OCR, consider a two-step approach: extract a candidate
@@ -389,14 +388,14 @@ cause rather than patching around it.
 
 The following table reflects this team's internal documentation, with extended guidance added.
 
-| OCR Engine                              | Cost                          | Primary use case                                                       | API key source                                   | Endpoint                                     |
-| --------------------------------------- | ----------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------- |
-| **Tesseract OCR**                       | Free                          | Practice and learning; offline baseline testing                        | N/A                                              | N/A                                          |
-| **Microsoft OCR**                       | Free                          | Practice and learning; simple, clean screen text                       | N/A                                              | N/A                                          |
-| **Microsoft Azure Computer Vision OCR** | Paid                          | Scraping full bodies of text from documents or images                  | Azure portal → Computer Vision resource          | Resource-specific endpoint from Azure portal |
-| **Google Cloud Vision OCR**             | Paid                          | Scraping portions of text; handwriting; multi-language content         | Google Cloud Console → Cloud Vision API          | N/A (regional endpoint auto-selected)        |
-| **UiPath Screen OCR**                   | Paid (Document Understanding) | Optimized for on-screen content (UI elements, web pages, desktop apps) | UiPath Automation Cloud — Document Understanding | `https://ocr.uipath.com/`                    |
-| **UiPath Document OCR**                 | Paid (Document Understanding) | Optimized for scanned documents and PDFs                               | UiPath Automation Cloud — Document Understanding | See docs.uipath.com/document-understanding   |
+| OCR Engine | Cost | Primary use case | API key source | Endpoint |
+|---|---|---|---|---|
+| **Tesseract OCR** | Free | Practice and learning; offline baseline testing | N/A | N/A |
+| **Microsoft OCR** | Free | Practice and learning; simple, clean screen text | N/A | N/A |
+| **Microsoft Azure Computer Vision OCR** | Paid | Scraping full bodies of text from documents or images | Azure portal → Computer Vision resource | Resource-specific endpoint from Azure portal |
+| **Google Cloud Vision OCR** | Paid | Scraping portions of text; handwriting; multi-language content | Google Cloud Console → Cloud Vision API | N/A (regional endpoint auto-selected) |
+| **UiPath Screen OCR** | Paid (Document Understanding) | Optimized for on-screen content (UI elements, web pages, desktop apps) | UiPath Automation Cloud — Document Understanding | `https://ocr.uipath.com/` |
+| **UiPath Document OCR** | Paid (Document Understanding) | Optimized for scanned documents and PDFs | UiPath Automation Cloud — Document Understanding | See docs.uipath.com/document-understanding |
 
 ### Decision Guide: Which Engine for Which Context
 
@@ -548,10 +547,10 @@ Next
 PAD exposes regex as dedicated actions in the `Text` action group — a significant advantage over
 Cloud flows for regex-heavy text processing:
 
-| PAD Action                                              | Purpose                                                                  |
-| ------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `Parse text with regular expression`                    | Extracts the first match (and all named/numbered groups) from input text |
-| `Parse text with regular expression` (Find All Matches) | Returns a list of all matches                                            |
+| PAD Action | Purpose |
+|---|---|
+| `Parse text with regular expression` | Extracts the first match (and all named/numbered groups) from input text |
+| `Parse text with regular expression` (Find All Matches) | Returns a list of all matches |
 
 Both actions accept a pattern string and a `%TextToSearch%` variable. The match result is stored
 in a variable; named groups are accessible via the Groups collection. The pattern syntax is .NET
@@ -589,7 +588,6 @@ Regex patterns fail in three distinct ways in practice:
    trailing anchors.
 
 **Recommended debugging workflow for any new RPA pattern:**
-
 1. Write the pattern in a dedicated tool (regex101.com targets .NET or Python flavors and shows
    match logic step-by-step; or a Python `re` REPL for Python-targeted patterns) against at
    least five real samples from the target system, including one OCR/scraped sample with its
@@ -611,7 +609,7 @@ Regex patterns fail in three distinct ways in practice:
   pattern string to `Regex.IsMatch`/`re.match` on every iteration.
 - **Avoid catastrophic backtracking** (the most serious regex performance failure): patterns
   with nested quantifiers like `(.+)+` can enter exponential runtime on certain inputs —
-  specifically on strings that _almost_ match but don't. For any pattern that runs against
+  specifically on strings that *almost* match but don't. For any pattern that runs against
   untrusted or variable-length input, review for nested quantifiers and prefer atomic groups or
   possessive quantifiers (available in the `regex` Python module but not in the standard `re`
   module) where backtracking performance is a concern.
@@ -627,7 +625,7 @@ Regex patterns fail in three distinct ways in practice:
 - This team's internal OCR engine selection table, provided directly by the user — the source
   for the "Engine Reference Table" above; the extended decision criteria, pre-processing
   guidance, confidence scoring, and ensemble pattern are general best-practice additions.
-- Friedl, _Mastering Regular Expressions_ (3rd ed., O'Reilly) — the standard comprehensive
+- Friedl, *Mastering Regular Expressions* (3rd ed., O'Reilly) — the standard comprehensive
   reference for regex theory, NFA/DFA engine behavior, greedy/lazy quantifiers, backtracking.
 - Python documentation: `re` module (docs.python.org/3/library/re.html).
 - Microsoft documentation: `System.Text.RegularExpressions` namespace, `RegexOptions` enum

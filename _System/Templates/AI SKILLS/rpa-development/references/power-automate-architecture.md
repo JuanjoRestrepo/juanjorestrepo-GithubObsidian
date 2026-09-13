@@ -4,8 +4,8 @@
 > practitioner sources, July 2026. This file is the structural/architectural companion to
 > `references/power-automate-cloud.md` (which covers triggers, naming, governance, and the
 > Scope-based Try/Catch/Finally error-handling pattern) and `references/power-automate-desktop.md`.
-> Read this file when the question is _how should this flow be shaped_, not just _which action do
-> I use_ — architecture layering, control-flow construct selection, concurrency, and modular
+> Read this file when the question is *how should this flow be shaped*, not just *which action do
+> I use* — architecture layering, control-flow construct selection, concurrency, and modular
 > decomposition via child flows.
 
 ## Why Architecture Matters Even in a "Low-Code" Tool
@@ -21,7 +21,7 @@ concretely rather than by analogy:
   taxonomy of workflow control-flow structures: Sequence, Parallel Split, Synchronization,
   Exclusive Choice, Simple Merge, Multi-Choice, Structured Loop, and others. Every Power Automate
   control construct is an implementation of one of these patterns; naming the pattern you need
-  _before_ picking the action prevents the common mistake of reaching for nested Conditions when
+  *before* picking the action prevents the common mistake of reaching for nested Conditions when
   the actual requirement is a Multi-Choice (Switch) or a Parallel Split (parallel branches).
 - **Enterprise Integration Patterns** (Hohpe & Woolf) — the standard industry vocabulary for
   integration architecture: Content-Based Router, Splitter, Aggregator, Scatter-Gather. A cloud
@@ -34,13 +34,13 @@ concretely rather than by analogy:
 Adapt the same layered separation this skill already applies to RPA solution design (Process /
 Business / Integration / Application) to a Power Automate solution:
 
-| Layer                    | Power Automate implementation                                                                      | Responsibility                                                                                          |
-| ------------------------ | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Trigger layer**        | The trigger action, trigger conditions, trigger concurrency control                                | Decide _when_ the flow runs and how many instances run in parallel — nothing else                       |
-| **Orchestration layer**  | The parent flow's top-level Scopes and Switch/Condition structure                                  | Sequence the process, dispatch to the right branch or child flow, own overall error handling            |
-| **Business logic layer** | Child flows, or well-named Scopes within the parent for logic too small to warrant a separate flow | Encapsulate one discrete unit of business logic each — validation, calculation, decision                |
-| **Integration layer**    | Connector actions (SharePoint, Dataverse, HTTP, SQL)                                               | Talk to external systems; nowhere else in the flow should reference a connector-specific shape directly |
-| **Data/state layer**     | Variables, Compose actions, trigger/action outputs referenced via expressions                      | Hold state deliberately (see State Management below) — not implicitly through scattered variable writes |
+| Layer | Power Automate implementation | Responsibility |
+|---|---|---|
+| **Trigger layer** | The trigger action, trigger conditions, trigger concurrency control | Decide *when* the flow runs and how many instances run in parallel — nothing else |
+| **Orchestration layer** | The parent flow's top-level Scopes and Switch/Condition structure | Sequence the process, dispatch to the right branch or child flow, own overall error handling |
+| **Business logic layer** | Child flows, or well-named Scopes within the parent for logic too small to warrant a separate flow | Encapsulate one discrete unit of business logic each — validation, calculation, decision |
+| **Integration layer** | Connector actions (SharePoint, Dataverse, HTTP, SQL) | Talk to external systems; nowhere else in the flow should reference a connector-specific shape directly |
+| **Data/state layer** | Variables, Compose actions, trigger/action outputs referenced via expressions | Hold state deliberately (see State Management below) — not implicitly through scattered variable writes |
 
 A flow that mixes all five concerns into one undifferentiated action list is the Power Automate
 equivalent of a single 2,000-line function — the fix is the same discipline this skill already
@@ -49,15 +49,15 @@ and give each layer a clear boundary.
 
 ## Control-Flow Constructs: What Each One Is For
 
-| Construct             | Workflow pattern                        | Use for                                                                                                                                                                                                       | Avoid for                                                                                                                                                          |
-| --------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Condition**         | Exclusive Choice (binary)               | A single yes/no branch                                                                                                                                                                                        | More than one mutually exclusive branch — nesting Conditions for a 3+-way decision is the single most common Power Automate structural anti-pattern                |
-| **Switch**            | Multi-Choice / Exclusive Choice (n-ary) | Any decision with 3+ mutually exclusive branches (status codes, record types, routing keys)                                                                                                                   | Binary decisions — a Condition is clearer for a true/false split                                                                                                   |
-| **Apply to each**     | Structured Loop                         | Iterating a known array to act on every item                                                                                                                                                                  | Iterating just to search for one item (use `filter array` or `first()` instead) or to transform data (use `select`/data operations instead — see State Management) |
-| **Do Until**          | Structured Loop (post-test)             | Polling for an external condition to become true (a job completing, a status changing)                                                                                                                        | A fixed number of iterations over known data — that's an Apply to each over a generated range, not a Do Until                                                      |
-| **Scope**             | Sequence + grouping                     | Grouping related actions for shared error handling (`references/power-automate-cloud.md`'s Try/Catch/Finally pattern) and for readability                                                                     | —                                                                                                                                                                  |
-| **Parallel branches** | Parallel Split + Synchronization        | Genuinely independent work that can run concurrently and must all complete before continuing (Scatter-Gather)                                                                                                 | Work with a dependency between branches — that's Sequence, not Parallel Split                                                                                      |
-| **Terminate**         | Explicit termination                    | Force a specific run status (Succeeded/Failed/Cancelled) with a custom message, e.g. after a Catch scope handles a failure and you want the run to be flagged Failed in run history rather than showing green | Using it as a routine "exit early" inside normal logic — prefer restructuring branches so Terminate is the exception path, not a substitute for correct branching  |
+| Construct | Workflow pattern | Use for | Avoid for |
+|---|---|---|---|
+| **Condition** | Exclusive Choice (binary) | A single yes/no branch | More than one mutually exclusive branch — nesting Conditions for a 3+-way decision is the single most common Power Automate structural anti-pattern |
+| **Switch** | Multi-Choice / Exclusive Choice (n-ary) | Any decision with 3+ mutually exclusive branches (status codes, record types, routing keys) | Binary decisions — a Condition is clearer for a true/false split |
+| **Apply to each** | Structured Loop | Iterating a known array to act on every item | Iterating just to search for one item (use `filter array` or `first()` instead) or to transform data (use `select`/data operations instead — see State Management) |
+| **Do Until** | Structured Loop (post-test) | Polling for an external condition to become true (a job completing, a status changing) | A fixed number of iterations over known data — that's an Apply to each over a generated range, not a Do Until |
+| **Scope** | Sequence + grouping | Grouping related actions for shared error handling (`references/power-automate-cloud.md`'s Try/Catch/Finally pattern) and for readability | — |
+| **Parallel branches** | Parallel Split + Synchronization | Genuinely independent work that can run concurrently and must all complete before continuing (Scatter-Gather) | Work with a dependency between branches — that's Sequence, not Parallel Split |
+| **Terminate** | Explicit termination | Force a specific run status (Succeeded/Failed/Cancelled) with a custom message, e.g. after a Catch scope handles a failure and you want the run to be flagged Failed in run history rather than showing green | Using it as a routine "exit early" inside normal logic — prefer restructuring branches so Terminate is the exception path, not a substitute for correct branching |
 
 ### Concurrency — Apply to Each and Trigger Level (official limits, verified July 2026)
 
@@ -73,7 +73,7 @@ Two independent concurrency settings exist; know which one you're touching:
   Check the target connector's rate limits before maximizing parallelism — 50 concurrent calls
   against a connector with a 100-calls-per-minute limit throttles the flow rather than speeding
   it up.
-- **Trigger concurrency control**: off by default (unlimited parallel flow _runs_). When enabled,
+- **Trigger concurrency control**: off by default (unlimited parallel flow *runs*). When enabled,
   default degree of parallelism is **25**, range **1–100**, plus a configurable "maximum waiting
   runs" queue depth. Set to 1 to serialize an entire flow (only one run executes at a time,
   others queue) — the correct fix when multiple near-simultaneous triggers could race on the same
@@ -119,7 +119,7 @@ general Single Responsibility principle at the flow level.
 
 - **Mechanics** (verify against docs.microsoft.com/power-automate for any version-sensitive
   detail): a child flow is a cloud flow built with a manual/Instant trigger and a `Respond to a
-PowerApp or flow` (or premium `Response`) action returning outputs; the parent calls it via the
+  PowerApp or flow` (or premium `Response`) action returning outputs; the parent calls it via the
   `Run a Child Flow` action, passing inputs and receiving outputs synchronously — the parent waits
   for the child to complete. For fire-and-forget (parent doesn't wait), trigger the child via an
   HTTP request trigger instead.
@@ -176,7 +176,7 @@ PowerApp or flow` (or premium `Response`) action returning outputs; the parent c
   `FailWhenLimitsReached` behavior, since Microsoft's own docs describe the mechanism without
   always stating every default/limit value in one place
 - workflowpatterns.com (van der Aalst et al.) — Workflow Patterns taxonomy
-- Hohpe & Woolf, _Enterprise Integration Patterns_ — Content-Based Router, Aggregator,
+- Hohpe & Woolf, *Enterprise Integration Patterns* — Content-Based Router, Aggregator,
   Scatter-Gather pattern vocabulary
 
 Numeric limits and action-level mechanics are current as of this refresh and the part most likely

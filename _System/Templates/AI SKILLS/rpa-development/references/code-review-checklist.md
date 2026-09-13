@@ -5,7 +5,6 @@ bot, C# activity, or SQL integration — before merge/promotion. Score each item
 require a justification comment for any Fail that's being accepted rather than fixed.
 
 ## Reliability
-
 - [ ] All external calls (UI, API, DB, file) are wrapped with appropriate exception handling
 - [ ] Business exceptions and system exceptions are classified separately, never caught together
 - [ ] Retry strategy exists for system exceptions and is config-driven (not hardcoded counts)
@@ -16,7 +15,6 @@ require a justification comment for any Fail that's being accepted rather than f
       exception — with structured fields (transaction key), not bare strings like `"Processing..."`
 
 ## Maintainability
-
 - [ ] Naming conventions followed (PascalCase workflows / camelCase variables / `in_`/`out_`/`io_`
       argument prefixes in UiPath; `%inX%`/`%outX%` in PAD; PEP8 + type hints in Python)
 - [ ] Single Responsibility respected — no workflow/function/flow that "does everything"
@@ -26,7 +24,6 @@ require a justification comment for any Fail that's being accepted rather than f
       documented (Studio tooltip / XML doc comment / docstring)
 
 ## Performance
-
 - [ ] UI interaction is used only where API/DB access genuinely isn't available (priority order
       respected: API → DB → UI → Citrix)
 - [ ] Selectors are as specific and minimal as possible (no unnecessarily broad UI-tree scans)
@@ -37,7 +34,6 @@ require a justification comment for any Fail that's being accepted rather than f
       wait-for-condition used instead
 
 ## Security
-
 - [ ] No hardcoded credentials, API keys, connection strings, or secrets anywhere in the artifact
 - [ ] Credentials sourced from Orchestrator Assets / Key Vault / Credential Manager / environment
       secret — never from a config spreadsheet cell or committed file
@@ -48,7 +44,6 @@ require a justification comment for any Fail that's being accepted rather than f
       needs, not a shared admin account)
 
 ## Deployment
-
 - [ ] Source-controlled in Git, including `.xaml`/PAD exports/`.sql` scripts — nothing lives only
       on a developer's machine
 - [ ] Conventional Commit messages used; PR reviewed before merge to a publish-triggering branch

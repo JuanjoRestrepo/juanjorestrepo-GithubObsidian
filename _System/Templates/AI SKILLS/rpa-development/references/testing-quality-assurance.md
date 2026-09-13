@@ -6,25 +6,25 @@
 > `references/documentation-templates.md`, the pre-go-live checklist in
 > `references/governance-security.md`) are cross-referenced here, not duplicated. This file
 > supplies what those don't: the underlying testing theory and systematic techniques that let you
-> reason about test _coverage_ — how do you know you've found every failure mode, not just the
+> reason about test *coverage* — how do you know you've found every failure mode, not just the
 > ones you happened to think of — plus the Power Automate testing mechanics this skill was
 > previously missing, refreshed against official documentation, July 2026.
 
 ## Testing Philosophy: Why "Test Everything I Thought Of" Is Not Enough
 
 The instinct to test "every possible failure" by brainstorming harder eventually runs out of
-ideas — brainstorming finds the failures you can imagine, not the ones the _structure_ of the
+ideas — brainstorming finds the failures you can imagine, not the ones the *structure* of the
 input space contains. The professional answer, grounded in established software testing theory
-(ISTQB Foundation syllabus; Myers, _The Art of Software Testing_; ISO/IEC/IEEE 29119), is to
+(ISTQB Foundation syllabus; Myers, *The Art of Software Testing*; ISO/IEC/IEEE 29119), is to
 replace unstructured brainstorming with **systematic test design techniques** that generate cases
 from the shape of the problem, plus a **systematic risk analysis technique** that generates
 failure modes from the shape of the process. Used together, they produce a defensibly complete
 test set rather than an anecdotal one:
 
 1. **Test design techniques** (below) systematically derive test cases from what the process
-   _processes_ — every input variable's boundaries, every combination of business rules, every
+   *processes* — every input variable's boundaries, every combination of business rules, every
    state the process can be in.
-2. **FMEA** (below) systematically derives failure modes from what the process _does_ — every
+2. **FMEA** (below) systematically derives failure modes from what the process *does* — every
    step, every external dependency, every point where something could go wrong, ranked by how bad
    it would be and how likely it is.
 
@@ -104,7 +104,7 @@ alone. Apply it during Solution Design (Stage 2), before test cases are written:
      cosmetic delay = 1)?
    - **Occurrence** (1-10): how likely is it to happen (a flaky third-party API = high, a
      well-tested internal system = low)?
-   - **Detection** (1-10): how likely is the _current_ design to catch it before it causes harm
+   - **Detection** (1-10): how likely is the *current* design to catch it before it causes harm
      (no monitoring = 10/undetectable, a validation check + alert = 1/highly detectable)?
 4. **Risk Priority Number (RPN)** = Severity x Occurrence x Detection. Sort by RPN descending —
    this is your test-effort and error-handling-design priority order, not a gut-feel guess. A
@@ -121,18 +121,18 @@ structured, reviewable artifact that a second person can audit for gaps.
 
 ## Test Types Taxonomy (what to run, and when)
 
-| Test type                 | Question it answers                                                                                                                 | Applies to                                                                                                      |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Unit**                  | Does this one function/workflow/page-object method work in isolation?                                                               | Every reusable component (UiPath sub-workflow, Python function, PAD subflow)                                    |
-| **Integration**           | Do two components work correctly together (bot + queue, flow + connector, Python module + database)?                                | Every boundary between components                                                                               |
-| **System / End-to-End**   | Does the full process work against a representative environment, covering every exception path in the PDD, not just the happy path? | Every full process before UAT                                                                                   |
-| **User Acceptance (UAT)** | Does the business agree this meets the PDD's acceptance criteria?                                                                   | Business sign-off gate, not a developer self-check                                                              |
-| **Regression**            | Did a change break something that previously worked?                                                                                | Every change, automated in CI where possible                                                                    |
-| **Performance/Load**      | Does the process meet its expected runtime/throughput at expected (and peak) volume?                                                | Any process with a volume/SLA requirement in the PDD                                                            |
-| **Security**              | Can the process be made to leak credentials/data, or be abused (injection, privilege escalation)?                                   | Every process touching credentials, PII, or external input                                                      |
-| **Resilience / Chaos**    | Does the process fail safely when a dependency is unavailable or slow?                                                              | Any process with an external dependency (see Resilience Testing below)                                          |
-| **Data Quality**          | Is the data the process reads/writes correct, complete, and consistent?                                                             | Every process reading/writing a shared data store                                                               |
-| **Disaster Recovery**     | Can the process recover cleanly from a mid-run crash without duplicating or losing work?                                            | Every unattended/production process (this is the idempotency requirement, verified by test rather than assumed) |
+| Test type | Question it answers | Applies to |
+|---|---|---|
+| **Unit** | Does this one function/workflow/page-object method work in isolation? | Every reusable component (UiPath sub-workflow, Python function, PAD subflow) |
+| **Integration** | Do two components work correctly together (bot + queue, flow + connector, Python module + database)? | Every boundary between components |
+| **System / End-to-End** | Does the full process work against a representative environment, covering every exception path in the PDD, not just the happy path? | Every full process before UAT |
+| **User Acceptance (UAT)** | Does the business agree this meets the PDD's acceptance criteria? | Business sign-off gate, not a developer self-check |
+| **Regression** | Did a change break something that previously worked? | Every change, automated in CI where possible |
+| **Performance/Load** | Does the process meet its expected runtime/throughput at expected (and peak) volume? | Any process with a volume/SLA requirement in the PDD |
+| **Security** | Can the process be made to leak credentials/data, or be abused (injection, privilege escalation)? | Every process touching credentials, PII, or external input |
+| **Resilience / Chaos** | Does the process fail safely when a dependency is unavailable or slow? | Any process with an external dependency (see Resilience Testing below) |
+| **Data Quality** | Is the data the process reads/writes correct, complete, and consistent? | Every process reading/writing a shared data store |
+| **Disaster Recovery** | Can the process recover cleanly from a mid-run crash without duplicating or losing work? | Every unattended/production process (this is the idempotency requirement, verified by test rather than assumed) |
 
 ## Resilience Testing (a deliberately underused category worth calling out)
 
@@ -183,7 +183,6 @@ payload, or (for UiPath/PAD) temporarily rename a UI element the selector depend
 the flows this testing approach applies to.
 
 ### Power Automate Desktop (native Testing module — confirm current state against docs.microsoft.com,
-
 this shipped recently and is still evolving)
 
 Power Automate for desktop now has a dedicated **Testing** module (requires PAD 2.54+ and a
@@ -193,7 +192,7 @@ premium license) distinct from the Cloud-flow testing tools above:
   **Given/When/Then** (behavior-driven-development style, the same structure this skill's Python
   testing already implicitly follows via `pytest` naming conventions).
 - The **`Test a desktop flow`** action runs the target flow (or, via **`Test a subflow of a
-desktop flow`**, a specific local subflow — global subflows aren't supported for subflow-level
+  desktop flow`**, a specific local subflow — global subflows aren't supported for subflow-level
   testing) and exposes its output variables for validation; the test run blocks until the flow
   under test completes.
 - The **`Assert`** action validates actual output against expected output within the test case.
@@ -230,7 +229,6 @@ about production-only failure modes), and takes precedence over generic practice
 overlap.
 
 ### Before Testing
-
 - Develop detailed test plans covering scenarios the bot might encounter in production, including
   exception-handling scenarios specifically.
 - Communicate the testing schedule and potential impact to stakeholders, share the test plan, and
@@ -252,7 +250,6 @@ overlap.
 - Confirm backup and recovery plans exist where feasible, and document recovery procedures.
 
 ### During Testing
-
 - **Do not run the full process end-to-end blindly.** Step through the workflow in UiPath Studio
   activity by activity, verifying each step as you go.
 - Eliminate or skip steps that would write, update, or delete data/objects unless that action is
@@ -265,7 +262,6 @@ overlap.
   or bug found for later resolution, rather than fixing silently mid-test without a record.
 
 ### After Testing
-
 - Review asset usage logs to confirm only appropriate test-environment assets were actually used;
   remove or correct anything that isn't suitable for its environment.
 - Revoke the tester's and the bot's access/permissions from the test environment once testing
@@ -338,7 +334,7 @@ behavior no test environment fully replicates.
 - learn.microsoft.com/power-automate/desktop-flows/test-desktop-flows and
   power-platform/release-plan (2025 wave 1) — native PAD Testing module, Assert/Test actions,
   Given/When/Then test case structure, subflow test support
-- ISTQB Foundation Level syllabus; Myers, _The Art of Software Testing_; ISO/IEC/IEEE 29119 —
+- ISTQB Foundation Level syllabus; Myers, *The Art of Software Testing*; ISO/IEC/IEEE 29119 —
   equivalence partitioning, boundary value analysis, decision table testing, state transition
   testing (standard, stable body of knowledge, not expected to change)
 - FMEA methodology (SAE J1739 / AIAG-VDA FMEA handbook lineage, adapted to software/process risk) —

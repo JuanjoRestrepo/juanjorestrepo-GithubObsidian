@@ -32,7 +32,7 @@ Main Flow
 - Each subflow does one job, is independently testable (Run subflow in isolation from the
   Designer), and is named for what it does, not "Subflow1".
 - Extract anything used by more than one flow into a shared subflow, and where the same logic is
-  needed across _multiple projects_, promote it into a **UI flow/Action library** shared via a
+  needed across *multiple projects*, promote it into a **UI flow/Action library** shared via a
   common location rather than copy-pasted.
 
 ## Variables & Naming (per official Microsoft Learn coding guidelines)

@@ -28,12 +28,12 @@
 
 ## Credential Management Patterns
 
-| Pattern                                  | When                                                                                                                                 |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| UiPath Orchestrator **Credential Asset** | Default for UiPath bots — Studio's `Get Credential`/`Get Secret` pulls at runtime, never stored in Config.xlsx                       |
-| CyberArk / Azure Key Vault integration   | Enterprise setups — Orchestrator's credential store is itself backed by the vault; rotate secrets centrally without redeploying bots |
-| Environment variables via CI/CD secrets  | Python bots — injected at deploy time (GitHub Actions secrets, Control Room vault), never committed                                  |
-| Windows Credential Manager               | Local/attended automation fallback only — not for unattended production at scale                                                     |
+| Pattern | When |
+|---|---|
+| UiPath Orchestrator **Credential Asset** | Default for UiPath bots — Studio's `Get Credential`/`Get Secret` pulls at runtime, never stored in Config.xlsx |
+| CyberArk / Azure Key Vault integration | Enterprise setups — Orchestrator's credential store is itself backed by the vault; rotate secrets centrally without redeploying bots |
+| Environment variables via CI/CD secrets | Python bots — injected at deploy time (GitHub Actions secrets, Control Room vault), never committed |
+| Windows Credential Manager | Local/attended automation fallback only — not for unattended production at scale |
 
 **Never acceptable, in any language/platform:** credentials in Config.xlsx cell values, `.env`
 files committed to Git, credentials in workflow XAML properties, credentials in plaintext log

@@ -12,16 +12,16 @@
 
 ## `rpaframework` (Robocorp) Module Map
 
-| Module                                           | Use for                                                                         |
-| ------------------------------------------------ | ------------------------------------------------------------------------------- |
-| `RPA.Excel.Application` / `RPA.Excel.Files`      | Excel via COM (Application) or openpyxl-backed (Files, no Excel install needed) |
-| `RPA.Browser.Selenium`                           | Web automation — wraps Selenium with retry/logging built in                     |
-| `RPA.Desktop`                                    | Windows desktop automation (wraps pywinauto-like control)                       |
-| `RPA.Email.ImapSmtp` / `RPA.Outlook.Application` | Email read/send                                                                 |
-| `RPA.PDF`                                        | PDF text/table extraction and generation                                        |
-| `RPA.Cloud.AWS` / `.Azure` / `.Google`           | Cloud storage/service integration                                               |
-| `RPA.Robocorp.WorkItems`                         | Control Room work item queue — the Python equivalent of Orchestrator queues     |
-| `RPA.HTTP`                                       | REST calls — always prefer this over UI automation when an API exists           |
+| Module | Use for |
+|---|---|
+| `RPA.Excel.Application` / `RPA.Excel.Files` | Excel via COM (Application) or openpyxl-backed (Files, no Excel install needed) |
+| `RPA.Browser.Selenium` | Web automation — wraps Selenium with retry/logging built in |
+| `RPA.Desktop` | Windows desktop automation (wraps pywinauto-like control) |
+| `RPA.Email.ImapSmtp` / `RPA.Outlook.Application` | Email read/send |
+| `RPA.PDF` | PDF text/table extraction and generation |
+| `RPA.Cloud.AWS` / `.Azure` / `.Google` | Cloud storage/service integration |
+| `RPA.Robocorp.WorkItems` | Control Room work item queue — the Python equivalent of Orchestrator queues |
+| `RPA.HTTP` | REST calls — always prefer this over UI automation when an API exists |
 
 Install via `uv add rpaframework` (project-scoped), never a global install.
 
@@ -99,12 +99,12 @@ docstrings, `mypy --strict`, `ruff`, ≥80% test coverage on business logic, no 
 
 ## pywinauto vs. Selenium vs. Playwright
 
-| Target                               | Tool                                   | Notes                                                                                                               |
-| ------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Windows desktop app (Win32)          | `pywinauto` (`win32` backend)          | Older MFC/legacy apps                                                                                               |
-| Windows desktop app (modern/WPF/UWP) | `pywinauto` (`uia` backend)            | Slower but more reliable element identification                                                                     |
-| Web application                      | `Playwright` (preferred) or `Selenium` | Playwright: better auto-waiting, network interception, faster; use Selenium only for legacy Grid infra requirements |
-| Any target with an API/DB available  | Neither — call the API/DB directly     | UI automation is the fallback, not the default                                                                      |
+| Target | Tool | Notes |
+|---|---|---|
+| Windows desktop app (Win32) | `pywinauto` (`win32` backend) | Older MFC/legacy apps |
+| Windows desktop app (modern/WPF/UWP) | `pywinauto` (`uia` backend) | Slower but more reliable element identification |
+| Web application | `Playwright` (preferred) or `Selenium` | Playwright: better auto-waiting, network interception, faster; use Selenium only for legacy Grid infra requirements |
+| Any target with an API/DB available | Neither — call the API/DB directly | UI automation is the fallback, not the default |
 
 ## Packaging & CI/CD for Python Bots
 

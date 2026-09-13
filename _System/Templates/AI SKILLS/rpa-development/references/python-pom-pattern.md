@@ -58,13 +58,13 @@ a lockfile format, export it from `uv` rather than hand-maintaining a separate f
 
 ## Layer Responsibilities
 
-| Layer                                                             | Responsibility                                                                                                    | Must NOT contain                                             |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| `pages/`                                                          | Locators for one screen + methods that perform actions on that screen (`login(user, pwd)`, `get_error_message()`) | Assertions, business rules, direct references to other pages |
-| `components/`                                                     | Locators/actions for a UI region reused across multiple pages (a data table, a modal dialog)                      | Page-specific logic                                          |
-| `data/`                                                           | Configuration values, reference/test data                                                                         | Credentials, secrets                                         |
-| `utils/`                                                          | Cross-cutting helpers: logging, custom exception classes, retry/wait decorators                                   | Business logic                                               |
-| `tests/` (or the Producer/Consumer `main.py` for unattended runs) | Orchestrates pages/components to execute a business flow; makes assertions/decisions                              | Raw selectors                                                |
+| Layer | Responsibility | Must NOT contain |
+|---|---|---|
+| `pages/` | Locators for one screen + methods that perform actions on that screen (`login(user, pwd)`, `get_error_message()`) | Assertions, business rules, direct references to other pages |
+| `components/` | Locators/actions for a UI region reused across multiple pages (a data table, a modal dialog) | Page-specific logic |
+| `data/` | Configuration values, reference/test data | Credentials, secrets |
+| `utils/` | Cross-cutting helpers: logging, custom exception classes, retry/wait decorators | Business logic |
+| `tests/` (or the Producer/Consumer `main.py` for unattended runs) | Orchestrates pages/components to execute a business flow; makes assertions/decisions | Raw selectors |
 
 ## Base Page Pattern
 

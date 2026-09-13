@@ -1,7 +1,7 @@
 # API Gateway & Integration Patterns
 
 **Sources:** AWS API Gateway documentation; Azure API Management documentation; Kong Gateway
-documentation; Gregor Hohpe & Bobby Woolf, _Enterprise Integration Patterns_ (2003) — the
+documentation; Gregor Hohpe & Bobby Woolf, *Enterprise Integration Patterns* (2003) — the
 canonical reference for messaging/integration patterns, still the standard vocabulary used
 across the industry; W3C WebSub (formerly PubSubHubbub) for webhook standardization patterns.
 
@@ -42,13 +42,13 @@ themselves.
 
 ### Product Comparison
 
-| Product                  | Best for                                    | Notes                                                              |
-| ------------------------ | ------------------------------------------- | ------------------------------------------------------------------ |
-| **AWS API Gateway**      | AWS-native architectures                    | Tight Lambda integration; usage-based pricing                      |
-| **Azure API Management** | Azure-native, enterprise API programs       | Strong developer portal, policy XML for transforms                 |
-| **Kong Gateway**         | Cloud-agnostic, self-hosted or Kong Konnect | Plugin ecosystem; open-source core                                 |
-| **Cloudflare**           | Edge-first, DDoS/WAF-integrated             | Runs at the edge, closest to the client globally                   |
-| **NGINX (as gateway)**   | Simple routing/rate-limiting needs          | Lower-level; more configuration required for full gateway features |
+| Product | Best for | Notes |
+|---|---|---|
+| **AWS API Gateway** | AWS-native architectures | Tight Lambda integration; usage-based pricing |
+| **Azure API Management** | Azure-native, enterprise API programs | Strong developer portal, policy XML for transforms |
+| **Kong Gateway** | Cloud-agnostic, self-hosted or Kong Konnect | Plugin ecosystem; open-source core |
+| **Cloudflare** | Edge-first, DDoS/WAF-integrated | Runs at the edge, closest to the client globally |
+| **NGINX (as gateway)** | Simple routing/rate-limiting needs | Lower-level; more configuration required for full gateway features |
 
 ### When NOT to Introduce an API Gateway
 
@@ -57,7 +57,7 @@ themselves.
   auth/rate-limiting directly in that service or its reverse proxy
 - **Early-stage projects still discovering their service boundaries** — introducing a gateway
   before you know how many services you'll actually have (see `software-architecture/
-microservices-monolith.md` on preferring a modular monolith initially) adds infrastructure
+  microservices-monolith.md` on preferring a modular monolith initially) adds infrastructure
   ahead of the need it serves
 - **When a simpler reverse proxy (NGINX, Caddy) already meets the actual requirement** — full
   API Gateway products add capability (usage plans, developer portals, complex transforms)
@@ -149,7 +149,7 @@ com.example.payment.failed
 Never trust an incoming webhook payload without verifying it came from the claimed sender.
 
 ```typescript
-import crypto from 'crypto';
+import crypto from "crypto";
 
 function verifyWebhookSignature(
   rawBody: string, // MUST be raw bytes — parse after verification, not before
@@ -171,8 +171,8 @@ function verifyWebhookSignature(
 // Express — critical: use express.raw() BEFORE express.json() for webhook routes
 // The signature is computed over the raw body bytes — parsing to JSON first corrupts the check
 app.post(
-  '/webhooks/partner',
-  express.raw({ type: 'application/json' }),
+  "/webhooks/partner",
+  express.raw({ type: "application/json" }),
   (req, res) => {
     const signature = req.headers['x-partner-signature'] as string;
     const rawBody = req.body.toString('utf8');
@@ -405,13 +405,12 @@ async function pollForChanges() {
     lastCheckedAt = new Date();
     await savePollTimestamp(lastCheckedAt);
 
-    await sleep(POLL_INTERVAL_MS); // never poll in a tight loop — always a deliberate interval
+    await sleep(POLL_INTERVAL_MS);  // never poll in a tight loop — always a deliberate interval
   }
 }
 ```
 
 **Polling with adaptive backoff** — reduce load on the source system when nothing is changing:
-
 ```typescript
 let currentInterval = MIN_INTERVAL_MS;
 
@@ -419,9 +418,9 @@ async function adaptivePoll() {
   const changes = await fetchChangesSince(lastCheckedAt);
 
   if (changes.length === 0) {
-    currentInterval = Math.min(currentInterval * 1.5, MAX_INTERVAL_MS); // back off when idle
+    currentInterval = Math.min(currentInterval * 1.5, MAX_INTERVAL_MS);  // back off when idle
   } else {
-    currentInterval = MIN_INTERVAL_MS; // reset to fast polling when activity is detected
+    currentInterval = MIN_INTERVAL_MS;  // reset to fast polling when activity is detected
   }
 
   await sleep(currentInterval);
@@ -446,17 +445,17 @@ but the client can maintain an open connection:
 
 ```typescript
 // Server-Sent Events — one-directional server → client stream over plain HTTP
-app.get('/events', (req, res) => {
-  res.setHeader('Content-Type', 'text/event-stream');
-  res.setHeader('Cache-Control', 'no-cache');
-  res.setHeader('Connection', 'keep-alive');
+app.get("/events", (req, res) => {
+  res.setHeader("Content-Type", "text/event-stream");
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Connection", "keep-alive");
 
   const listener = (event: DomainEvent) => {
     res.write(`data: ${JSON.stringify(event)}\n\n`);
   };
-  eventEmitter.on('order.updated', listener);
+  eventEmitter.on("order.updated", listener);
 
-  req.on('close', () => eventEmitter.off('order.updated', listener));
+  req.on("close", () => eventEmitter.off("order.updated", listener));
 });
 ```
 

@@ -24,15 +24,15 @@ actually says:
   waste taxonomy to software) opens with **Eliminate Waste** as the first principle, not "adopt
   new technology." The Lean waste categories, adapted to RPA/automation work:
 
-  | Lean waste category | RPA/automation manifestation                                                                                    |
-  | ------------------- | --------------------------------------------------------------------------------------------------------------- |
-  | Partially done work | Bots/flows built to 80% and left in Dev, never reaching Production value                                        |
-  | Extra processes     | Manual approval steps, redundant logging, or config layers that duplicate a control already enforced elsewhere  |
-  | Extra features      | Building configurability or exception handling for scenarios the PDD never actually enumerated ("just in case") |
-  | Task switching      | A developer maintaining five unrelated bots with no batching of similar work                                    |
-  | Waiting             | A queue-driven process that could trigger on an event but polls on a schedule instead                           |
-  | Motion              | Unnecessary handoffs between people/systems that could be a single automated step                               |
-  | Defects             | Rework caused by inadequate testing (see `references/testing-quality-assurance.md`)                             |
+  | Lean waste category | RPA/automation manifestation |
+  |---|---|
+  | Partially done work | Bots/flows built to 80% and left in Dev, never reaching Production value |
+  | Extra processes | Manual approval steps, redundant logging, or config layers that duplicate a control already enforced elsewhere |
+  | Extra features | Building configurability or exception handling for scenarios the PDD never actually enumerated ("just in case") |
+  | Task switching | A developer maintaining five unrelated bots with no batching of similar work |
+  | Waiting | A queue-driven process that could trigger on an event but polls on a schedule instead |
+  | Motion | Unnecessary handoffs between people/systems that could be a single automated step |
+  | Defects | Rework caused by inadequate testing (see `references/testing-quality-assurance.md`) |
 
   The practical instruction this produces: **before adding anything to make a process better,
   check whether removing something achieves the same result.** A process simplified from 12 steps
@@ -52,7 +52,7 @@ actually says:
 
 None of this argues against using capable modern tools where they're the right fit (this skill
 already recommends Playwright over Selenium for new projects, Polars over Pandas past ~1M rows,
-Databricks Asset Bundles over hand-rolled deployment scripts) — the point is that the _justification_
+Databricks Asset Bundles over hand-rolled deployment scripts) — the point is that the *justification*
 for a tool or technique is always "this measurably solves a real problem better," never "this is
 newer" on its own.
 
@@ -111,11 +111,11 @@ framework rather than whoever argued most persuasively in a meeting — the **IC
 (Impact, Confidence, Ease; a simpler relative of the RICE framework used broadly in product
 management) works well at RPA-team scale:
 
-| Factor         | Question                                                       | Score 1-10                 |
-| -------------- | -------------------------------------------------------------- | -------------------------- |
-| **Impact**     | If this works, how much time/error/cost does it actually save? | Higher = more impact       |
-| **Confidence** | How sure are we this will actually produce that impact?        | Higher = more certain      |
-| **Ease**       | How much effort/risk to implement?                             | Higher = easier/lower-risk |
+| Factor | Question | Score 1-10 |
+|---|---|---|
+| **Impact** | If this works, how much time/error/cost does it actually save? | Higher = more impact |
+| **Confidence** | How sure are we this will actually produce that impact? | Higher = more certain |
+| **Ease** | How much effort/risk to implement? | Higher = easier/lower-risk |
 
 Multiply (or average) the three scores to rank candidate improvements. This produces two concrete
 benefits beyond just ranking: it makes low-effort, high-impact "quick wins" visible (these should
@@ -166,8 +166,8 @@ innovative, efficient, or simple does not exempt it from:
   process's documentation and inventory entry; an undocumented "clever" change is a governance gap
   the moment its author is unavailable to explain it.
 
-The correct framing: pragmatic innovation determines _what_ to build or change and _how simply_ to
-build it; existing governance determines _how_ that change safely reaches Production. Both apply
+The correct framing: pragmatic innovation determines *what* to build or change and *how simply* to
+build it; existing governance determines *how* that change safely reaches Production. Both apply
 together, not one instead of the other.
 
 ## A Working Checklist Before Adopting Any "Improvement"
@@ -214,8 +214,8 @@ in this file rather than replacing them.
 
 ## Sources Consulted (established, stable academic/industry frameworks)
 
-- Imai, _Kaizen: The Key to Japan's Competitive Success_ — continuous incremental improvement
-- Poppendieck & Poppendieck, _Lean Software Development: An Agile Toolkit_ — waste elimination
+- Imai, *Kaizen: The Key to Japan's Competitive Success* — continuous incremental improvement
+- Poppendieck & Poppendieck, *Lean Software Development: An Agile Toolkit* — waste elimination
   applied to software/knowledge work
 - Deming/Shewhart PDCA cycle; ISO 9001 process approach — the plan-do-check-act improvement loop
 - Kelly Johnson (Lockheed Skunk Works) — KISS principle; Beck/Jeffries, Extreme Programming — YAGNI

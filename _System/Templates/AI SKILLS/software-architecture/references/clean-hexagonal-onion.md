@@ -50,12 +50,12 @@ business rules without also understanding the ORM's API surface.
 
 Four concentric layers, each with a specific responsibility:
 
-| Layer                    | Contains                                                                                 | Depends on                            |
-| ------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------- |
-| **Entities**             | Enterprise-wide business rules and data structures                                       | Nothing                               |
-| **Use Cases**            | Application-specific business rules, orchestrates entities                               | Entities only                         |
-| **Interface Adapters**   | Controllers, presenters, gateways — converts data between use cases and external formats | Use Cases, Entities                   |
-| **Frameworks & Drivers** | Web framework, database, UI, external services                                           | Everything (it's the outermost layer) |
+| Layer | Contains | Depends on |
+|---|---|---|
+| **Entities** | Enterprise-wide business rules and data structures | Nothing |
+| **Use Cases** | Application-specific business rules, orchestrates entities | Entities only |
+| **Interface Adapters** | Controllers, presenters, gateways — converts data between use cases and external formats | Use Cases, Entities |
+| **Frameworks & Drivers** | Web framework, database, UI, external services | Everything (it's the outermost layer) |
 
 ### TypeScript Implementation
 
@@ -74,9 +74,9 @@ export class Order {
 
   static create(customerId: string, items: OrderItem[]): Order {
     if (items.length === 0) {
-      throw new DomainError('Order must have at least one item');
+      throw new DomainError("Order must have at least one item");
     }
-    return new Order(crypto.randomUUID(), customerId, items, 'PENDING');
+    return new Order(crypto.randomUUID(), customerId, items, "PENDING");
   }
 
   get total(): Money {
@@ -87,10 +87,10 @@ export class Order {
   }
 
   confirm(): void {
-    if (this.status !== 'PENDING') {
+    if (this.status !== "PENDING") {
       throw new DomainError(`Cannot confirm order in status ${this.status}`);
     }
-    this.status = 'CONFIRMED';
+    this.status = "CONFIRMED";
   }
 }
 
@@ -109,25 +109,22 @@ export interface PaymentGateway {
 
 export class PlaceOrderUseCase {
   constructor(
-    private readonly orderRepo: OrderRepository, // interface — not a concrete DB class
+    private readonly orderRepo: OrderRepository,   // interface — not a concrete DB class
     private readonly paymentGateway: PaymentGateway, // interface — not Stripe SDK directly
   ) {}
 
   async execute(input: PlaceOrderInput): Promise<PlaceOrderOutput> {
     const order = Order.create(input.customerId, input.items);
 
-    const payment = await this.paymentGateway.charge(
-      order.total,
-      input.customerId,
-    );
+    const payment = await this.paymentGateway.charge(order.total, input.customerId);
     if (!payment.success) {
-      throw new ApplicationError('Payment failed', payment.reason);
+      throw new ApplicationError("Payment failed", payment.reason);
     }
 
     order.confirm();
     await this.orderRepo.save(order);
 
-    return { orderId: order.id, status: 'CONFIRMED' };
+    return { orderId: order.id, status: "CONFIRMED" };
   }
 }
 
@@ -135,9 +132,9 @@ export class PlaceOrderUseCase {
 // LAYER 3: Interface Adapters (adapters/repositories/prisma-order-repository.ts)
 // Implements the interfaces defined by the use case layer — depends INWARD
 // ============================================
-import { PrismaClient } from '@prisma/client';
-import type { OrderRepository } from '@/application/use-cases/place-order';
-import { Order } from '@/domain/entities/order';
+import { PrismaClient } from "@prisma/client";
+import type { OrderRepository } from "@/application/use-cases/place-order";
+import { Order } from "@/domain/entities/order";
 
 export class PrismaOrderRepository implements OrderRepository {
   constructor(private readonly prisma: PrismaClient) {}
@@ -146,12 +143,8 @@ export class PrismaOrderRepository implements OrderRepository {
     // Map domain entity → Prisma model — this translation lives HERE, not in the domain
     await this.prisma.order.upsert({
       where: { id: order.id },
-      create: {
-        /* ... */
-      },
-      update: {
-        /* ... */
-      },
+      create: { /* ... */ },
+      update: { /* ... */ },
     });
   }
 
@@ -169,14 +162,14 @@ export class PrismaOrderRepository implements OrderRepository {
 // LAYER 4: Frameworks & Drivers (adapters/http/order-controller.ts)
 // The outermost layer — wires everything together
 // ============================================
-import { Router } from 'express';
-import { PlaceOrderUseCase } from '@/application/use-cases/place-order';
-import { PrismaOrderRepository } from '@/adapters/repositories/prisma-order-repository';
-import { StripePaymentGateway } from '@/adapters/payments/stripe-gateway';
+import { Router } from "express";
+import { PlaceOrderUseCase } from "@/application/use-cases/place-order";
+import { PrismaOrderRepository } from "@/adapters/repositories/prisma-order-repository";
+import { StripePaymentGateway } from "@/adapters/payments/stripe-gateway";
 
 const router = Router();
 
-router.post('/orders', async (req, res) => {
+router.post("/orders", async (req, res) => {
   // Dependency injection happens at the outermost layer — the "composition root"
   const useCase = new PlaceOrderUseCase(
     new PrismaOrderRepository(prisma),
@@ -187,10 +180,8 @@ router.post('/orders', async (req, res) => {
     const result = await useCase.execute(req.body);
     res.status(201).json(result);
   } catch (err) {
-    if (err instanceof DomainError)
-      return res.status(400).json({ error: err.message });
-    if (err instanceof ApplicationError)
-      return res.status(422).json({ error: err.message });
+    if (err instanceof DomainError) return res.status(400).json({ error: err.message });
+    if (err instanceof ApplicationError) return res.status(422).json({ error: err.message });
     throw err; // let the global error handler catch unexpected errors
   }
 });
@@ -376,7 +367,7 @@ export class PlaceOrderUseCase implements PlaceOrderPort {
   ) {}
   async execute(input: PlaceOrderInput): Promise<PlaceOrderOutput> {
     // ...
-    await this.notifier.notify(input.customerId, 'Order confirmed');
+    await this.notifier.notify(input.customerId, "Order confirmed");
     // ...
   }
 }
@@ -384,28 +375,20 @@ export class PlaceOrderUseCase implements PlaceOrderPort {
 // Two different driven adapters implementing the same port —
 // swap freely without touching the core
 class EmailNotifier implements NotifyCustomerPort {
-  async notify(customerId: string, message: string) {
-    /* SendGrid, SES, etc. */
-  }
+  async notify(customerId: string, message: string) { /* SendGrid, SES, etc. */ }
 }
 class SlackNotifier implements NotifyCustomerPort {
-  async notify(customerId: string, message: string) {
-    /* Slack webhook */
-  }
+  async notify(customerId: string, message: string) { /* Slack webhook */ }
 }
 
 // Two different driving adapters calling the same core through the same port
 class HttpOrderController {
   constructor(private readonly placeOrder: PlaceOrderPort) {}
-  async handle(req: Request) {
-    return this.placeOrder.execute(req.body);
-  }
+  async handle(req: Request) { return this.placeOrder.execute(req.body); }
 }
 class CliPlaceOrderCommand {
   constructor(private readonly placeOrder: PlaceOrderPort) {}
-  async run(args: string[]) {
-    return this.placeOrder.execute(parseArgs(args));
-  }
+  async run(args: string[]) { return this.placeOrder.execute(parseArgs(args)); }
 }
 ```
 
@@ -462,7 +445,6 @@ writing the first feature. It earns that cost when:
 - The team is large enough that clear boundaries prevent accidental coupling
 
 **Do not use it when:**
-
 - Building a CRUD app with thin logic that's basically "validate → save to DB" — the extra
   layers add ceremony without adding testability that matters
 - A solo developer or small team prototyping an MVP where speed matters more than long-term

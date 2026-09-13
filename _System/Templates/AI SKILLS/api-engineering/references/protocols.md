@@ -61,7 +61,6 @@ side effect but is idempotent because deleting an already-deleted resource still
 "resource is gone."
 
 **Common REST anti-patterns:**
-
 ```
 ❌ GET /deleteUser/123          — GET must never cause a side effect
 ❌ POST /users/123/update       — verb in the URL; the HTTP method already conveys this

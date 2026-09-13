@@ -43,15 +43,15 @@
 
 ## Exception Matrix Template
 
-| Error message / symptom     | Classification | Root cause             | Bot behavior                            | Escalation                           |
-| --------------------------- | -------------- | ---------------------- | --------------------------------------- | ------------------------------------ |
-| e.g. "Invoice ID not found" | Business       | Source data incomplete | Log, skip item, flag in report          | Daily digest to AP team              |
-| e.g. "Login timeout"        | System         | Target app slow/down   | Retry x3 (Config-driven), then escalate | Immediate email/Teams to CoE on-call |
+| Error message / symptom | Classification | Root cause | Bot behavior | Escalation |
+|---|---|---|---|---|
+| e.g. "Invoice ID not found" | Business | Source data incomplete | Log, skip item, flag in report | Daily digest to AP team |
+| e.g. "Login timeout" | System | Target app slow/down | Retry x3 (Config-driven), then escalate | Immediate email/Teams to CoE on-call |
 
 ## Test Case Document Template
 
 | Test ID | Scenario (linked to PDD exception #) | Input | Expected Outcome | Exception path covered? | Pass/Fail |
-| ------- | ------------------------------------ | ----- | ---------------- | ----------------------- | --------- |
+|---|---|---|---|---|---|
 
 Cover, at minimum: happy path, every enumerated business exception, at least one simulated system
 exception (target app unavailable / network timeout), empty queue, and a malformed/edge-case input

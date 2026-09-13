@@ -34,26 +34,26 @@ testing, deployment, debugging, performance optimization, and governance.
 4. **Produce artifacts in the right format**: workflows/code, PDD/SDD sections, test cases,
    exception matrices, or a combination — see [Output Format Guide](#output-format-guide).
 5. **Justify design decisions** — especially state machine vs. sequence, queue vs. in-memory
-   looping, and attended vs. unattended. Say _why_, not just _what_.
+   looping, and attended vs. unattended. Say *why*, not just *what*.
 
 ### Quick Platform Decision Guide
 
-| Situation                                                                                        | Recommended approach                                                                                           |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| Enterprise, Windows apps, legacy/mainframe (green-screen), citizen dev + CoE                     | **UiPath** (Studio + Orchestrator)                                                                             |
-| Microsoft 365/Dynamics-connected system, event/API-driven process, approvals                     | **Power Automate Cloud** (default Power Automate choice — see note below)                                      |
-| Desktop-only legacy app with no connector/API path                                               | **Power Automate Desktop** (PAD), typically invoked _from_ a Cloud flow                                        |
-| Need custom logic UiPath can't express cleanly, reusable libraries, performance-critical parsing | **C# custom activities** inside UiPath, or invoke **Python** via `Invoke Python Method` / external process     |
-| Full code-first automation, CI/CD-native, no per-bot licensing, data-heavy processing            | **Python** — `rpaframework` (Robocorp) + `pywinauto`/`Selenium`/`pyautogui`                                    |
-| Bulk data read/write against a relational source, reporting, staging tables                      | **SQL Server** direct integration (parameterized queries/stored procs) — often replaces UI automation entirely |
-| Target application is delivered via Citrix/virtual desktop                                       | Apply the **integration priority order** below — Citrix automation is the _last_ resort, not the default       |
-| Process needs discovery/quantification before anything is built                                  | **Process/Task Mining** (UiPath Process Mining, Task Capture) first                                            |
+| Situation | Recommended approach |
+|---|---|
+| Enterprise, Windows apps, legacy/mainframe (green-screen), citizen dev + CoE | **UiPath** (Studio + Orchestrator) |
+| Microsoft 365/Dynamics-connected system, event/API-driven process, approvals | **Power Automate Cloud** (default Power Automate choice — see note below) |
+| Desktop-only legacy app with no connector/API path | **Power Automate Desktop** (PAD), typically invoked *from* a Cloud flow |
+| Need custom logic UiPath can't express cleanly, reusable libraries, performance-critical parsing | **C# custom activities** inside UiPath, or invoke **Python** via `Invoke Python Method` / external process |
+| Full code-first automation, CI/CD-native, no per-bot licensing, data-heavy processing | **Python** — `rpaframework` (Robocorp) + `pywinauto`/`Selenium`/`pyautogui` |
+| Bulk data read/write against a relational source, reporting, staging tables | **SQL Server** direct integration (parameterized queries/stored procs) — often replaces UI automation entirely |
+| Target application is delivered via Citrix/virtual desktop | Apply the **integration priority order** below — Citrix automation is the *last* resort, not the default |
+| Process needs discovery/quantification before anything is built | **Process/Task Mining** (UiPath Process Mining, Task Capture) first |
 
 **On Power Automate specifically**: default to **Cloud flows** — they call connectors/APIs
 directly and sit at the top of the integration priority order below, the same position API access
 occupies for every other platform in this skill. Reach for **Desktop flows** only for the specific
 leg of a process that has no connector/API path (a legacy thick-client app, for example), and
-prefer calling that Desktop flow _from_ a Cloud flow (`Run a flow built with Power Automate for
+prefer calling that Desktop flow *from* a Cloud flow (`Run a flow built with Power Automate for
 desktop`) over building a Desktop-only flow. See `references/power-automate-cloud.md` first for
 any new Power Automate work; go to `references/power-automate-desktop.md` only for the UI-automation
 leg.
@@ -77,7 +77,6 @@ multiple robots will process the same queue concurrently.
 Never start building without this. A senior RPA developer qualifies the process first.
 
 **Automatability checklist** (all should be true, or flag risk):
-
 - Rule-based, deterministic — no subjective judgment calls
 - Structured or semi-structured digital input (not handwriting, not ambiguous free text without an
   LLM/AI Center step)
@@ -86,7 +85,6 @@ Never start building without this. A senior RPA developer qualifies the process 
 - Access to a **non-production/test environment** with representative test data
 
 **Discovery outputs:**
-
 - **Process Definition Document (PDD)** — business-level: as-is process, in/out scope, exception
   scenarios (business exceptions enumerated by the business, not guessed), volumes, SLAs,
   applications touched, credentials/access needed
@@ -101,7 +99,6 @@ Never start building without this. A senior RPA developer qualifies the process 
 ## Lifecycle Stage 2 — Solution Design
 
 Produce a **Solution Design Document (SDD)** before writing any workflow. It must define:
-
 - **Architecture**: attended vs. unattended vs. hybrid; framework (REFramework / linear / hybrid
   state machine); trigger (scheduled, queue-driven, event-driven via Orchestrator webhook/email)
 - **Data flow diagram**: source system → bot → target system, with every credential/config touch
@@ -189,7 +186,7 @@ management under concurrency, child-flow decomposition mechanics, and orchestrat
 
 - Use only for the specific leg of a process that has no connector/API path — a legacy thick-client
   app, a system with no exposed API, or an organization-specific desktop tool. Prefer calling this
-  Desktop flow _from_ a Cloud flow (`Run a flow built with Power Automate for desktop`, targeting a
+  Desktop flow *from* a Cloud flow (`Run a flow built with Power Automate for desktop`, targeting a
   machine group) over building a Desktop-only flow for an otherwise connector-reachable process.
 - **Never build one gigantic monolithic flow.** Structure every automation the same way as a
   REFramework process conceptually: `Main Flow` orchestrates discrete, named subflows —
@@ -254,11 +251,11 @@ automation against a database front-end.
 - **Work item / queue abstraction**: Robocorp Control Room work items, or a custom queue (DB table
   / Azure Queue) — never an in-memory list for anything that must survive a crash and resume.
 - Type hints + docstrings + `mypy --strict` + `ruff` on all automation code — same standard as any
-  other production Python (see cross-cutting practices below); RPA code is _not_ exempt because
+  other production Python (see cross-cutting practices below); RPA code is *not* exempt because
   it's "just a script."
 - **UI automation**: `pywinauto` (Win32/UIA backends) for desktop; `Selenium`/`Playwright` for web
   — prefer API/DB access over UI automation wherever the target system exposes one (UI automation
-  is the _last resort_, not the default, even in an "RPA" project).
+  is the *last resort*, not the default, even in an "RPA" project).
 - **Page Object Model (POM)**: for any web/desktop UI automation with more than one screen or more
   than one script reusing a screen, structure the codebase around POM — one class per screen/UI
   region holding locators and actions, business logic never touches a raw selector directly. This
@@ -341,7 +338,6 @@ Azure Repos → Azure Pipelines → Deploy pipeline, including a corrected, work
 ## Cross-Cutting Best Practices
 
 ### Continuous Improvement and Pragmatic Innovation
-
 - Improvement means measurably better, not newest/most expensive/most technically impressive —
   the simplest design that correctly and reliably solves the actual, present problem beats a more
   sophisticated one built for a hypothetical future requirement (KISS, YAGNI).
@@ -367,7 +363,6 @@ the reversibility/"two-way door" calibration model, and a working pre-adoption c
 where team/company-specific standards belong once supplied.
 
 ### Exception Handling (the single most-checked thing in an RPA code review)
-
 - Every process-level `Try Catch` distinguishes **Business Exception** (`BusinessRuleException` in
   UiPath / a custom `BusinessException` class in Python) from **System Exception** — never a bare
   `catch (Exception)` that swallows both the same way.
@@ -381,7 +376,6 @@ where team/company-specific standards belong once supplied.
   individual activity being wrapped.
 
 ### Security
-
 - No hardcoded credentials, API keys, or connection strings — ever, in any language. Orchestrator
   Credential Store / Assets, Azure Key Vault, or environment-injected secrets in CI/CD only.
 - Principle of least privilege for the bot's service account — scoped to exactly what the process
@@ -392,7 +386,6 @@ where team/company-specific standards belong once supplied.
   sensitive data exposure before being stored or emailed.
 
 ### Documentation & Governance
-
 - Every bot has: PDD, SDD, a versioned README/runbook (what it does, how to restart it, who to
   contact), and an exception matrix mapping error message → cause → resolution.
 - Change control: any workflow change goes through the same PR/code-review process as application
@@ -404,7 +397,6 @@ where team/company-specific standards belong once supplied.
 patterns, and full pre-go-live checklist.
 
 ### Code Quality (applies to both UiPath workflows and Python/C# code)
-
 - Single Responsibility per workflow/function; no workflow/file that "does everything."
 - Reusable components live in a shared library, versioned and consumed via package reference —
   never copy-pasted between projects.
@@ -412,22 +404,19 @@ patterns, and full pre-go-live checklist.
   Roslyn analyzers (C#) — zero warnings policy, same as any other production codebase.
 
 ### Git & Source Control
-
 - **Everything** is source-controlled, including `.xaml` (Studio has native Git integration with
   XAML-aware diffing) and PAD flow exports — no automation artifact lives outside version control.
 - **Branch strategy**: `main` (production-released) / `develop` (integration) /
   `feature/<short-description>` / `release/<version>` / `hotfix/<short-description>` — feature
   branches merge to `develop` via PR, `release/*` branches stabilize before merging to `main`, and
   `main` is what CI publishes to Production Orchestrator/Control Room.
-- **Commit messages**: Conventional Commits, describing _what changed and why_ — `"Added invoice
-validation workflow"`, `"Fixed queue retry logic"`, never `"changes"`, `"fix"`, `"update"`.
+- **Commit messages**: Conventional Commits, describing *what changed and why* — `"Added invoice
+  validation workflow"`, `"Fixed queue retry logic"`, never `"changes"`, `"fix"`, `"update"`.
 - PR review required before merge to any branch that triggers a Production or UAT publish — no
   direct commits to `main`.
 
 ### Debugging Methodology
-
 A senior developer follows a fixed sequence, not guesswork:
-
 1. **Reproduce** the issue reliably (same input, same environment) before touching anything.
 2. **Analyze logs** — the structured logs from the Cross-Cutting Exception Handling standard are
    what make this possible; if logs are insufficient to diagnose, that itself is a defect to fix.
@@ -437,13 +426,11 @@ A senior developer follows a fixed sequence, not guesswork:
 4. **Determine root cause** — not just the symptom; a selector failure is a symptom, an
    application UI update is often the root cause.
 5. **Implement a permanent fix**, not a workaround. A `Delay` added to "fix" a timing issue without
-   understanding _why_ the timing changed is technical debt, not a fix — document the real cause
+   understanding *why* the timing changed is technical debt, not a fix — document the real cause
    even if the immediate patch is small.
 
 ### Performance Optimization Mindset
-
 Before optimizing anything, ask in this order:
-
 - Can this UI interaction be replaced by an API or direct database call? (Highest-impact change,
   almost always.)
 - Can this loop be reduced or vectorized (e.g., bulk SQL operation instead of row-by-row UI entry)?
@@ -455,7 +442,6 @@ Before optimizing anything, ask in this order:
   of being capped by a single sequential run?
 
 ### Regular Expressions Across Platforms
-
 Regular expressions are a cross-cutting tool throughout every platform in this skill — used for
 input validation before `Type Into` and similar UI write activities, cleaning and extracting
 values from `Get Text`/scraping/OCR output, normalizing data between systems, and processing
@@ -490,26 +476,26 @@ an external participant, bridging RPA orchestration with ML inference at the pla
 
 ## Output Format Guide
 
-| Task                                      | Primary Output                                                                                                                                                        |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Process discovery                         | PDD sections: as-is process, exceptions, volumes, complexity score                                                                                                    |
-| Solution design                           | SDD sections: architecture diagram (described), exception taxonomy, NFRs                                                                                              |
-| UiPath workflow                           | `.xaml`-equivalent pseudocode/structure description + Config.xlsx schema                                                                                              |
-| Python bot                                | Package skeleton (`pyproject.toml`, `src/` layout) + Producer/Consumer code                                                                                           |
-| C# custom activity                        | `.cs` file with XML doc comments + NuGet packaging notes                                                                                                              |
-| Power Automate Cloud flow                 | Trigger type + connector chain + Scope-based error handling design                                                                                                    |
-| Power Automate architecture/design review | Layered structure + control-flow construct choice + named orchestration pattern (see `references/power-automate-architecture.md`)                                     |
-| Power Automate Desktop flow               | Main flow + subflow breakdown, variable naming, error-branch design                                                                                                   |
-| SQL Server integration                    | Parameterized query/stored proc + transaction boundaries                                                                                                              |
-| Exception handling review                 | Exception matrix (error → business/system → handling → escalation)                                                                                                    |
-| Test plan                                 | Test case table: scenario, input, expected outcome, exception path covered                                                                                            |
-| Failure mode / coverage analysis          | FMEA table (failure mode, Severity/Occurrence/Detection, RPN) plus equivalence-class/boundary/decision-table coverage — see `references/testing-quality-assurance.md` |
-| Debugging/RCA                             | 5-step root-cause writeup: symptom → layer isolated → root cause → permanent fix                                                                                      |
-| Governance/CoE review                     | Checklist scored Pass/Fail + prioritized remediation                                                                                                                  |
-| Python + POM structure                    | `references/python-pom-pattern.md` project layout + base-page/page-object code                                                                                        |
-| Azure DevOps CI/CD pipeline               | `references/azure-devops-cicd.md` branching model + `azure-pipelines.yml`                                                                                             |
-| Code review                               | `references/code-review-checklist.md` checklist scored against the diff                                                                                               |
-| Environment/tooling setup                 | `references/tooling-environment-setup.md` install/config walkthrough                                                                                                  |
+| Task | Primary Output |
+|---|---|
+| Process discovery | PDD sections: as-is process, exceptions, volumes, complexity score |
+| Solution design | SDD sections: architecture diagram (described), exception taxonomy, NFRs |
+| UiPath workflow | `.xaml`-equivalent pseudocode/structure description + Config.xlsx schema |
+| Python bot | Package skeleton (`pyproject.toml`, `src/` layout) + Producer/Consumer code |
+| C# custom activity | `.cs` file with XML doc comments + NuGet packaging notes |
+| Power Automate Cloud flow | Trigger type + connector chain + Scope-based error handling design |
+| Power Automate architecture/design review | Layered structure + control-flow construct choice + named orchestration pattern (see `references/power-automate-architecture.md`) |
+| Power Automate Desktop flow | Main flow + subflow breakdown, variable naming, error-branch design |
+| SQL Server integration | Parameterized query/stored proc + transaction boundaries |
+| Exception handling review | Exception matrix (error → business/system → handling → escalation) |
+| Test plan | Test case table: scenario, input, expected outcome, exception path covered |
+| Failure mode / coverage analysis | FMEA table (failure mode, Severity/Occurrence/Detection, RPN) plus equivalence-class/boundary/decision-table coverage — see `references/testing-quality-assurance.md` |
+| Debugging/RCA | 5-step root-cause writeup: symptom → layer isolated → root cause → permanent fix |
+| Governance/CoE review | Checklist scored Pass/Fail + prioritized remediation |
+| Python + POM structure | `references/python-pom-pattern.md` project layout + base-page/page-object code |
+| Azure DevOps CI/CD pipeline | `references/azure-devops-cicd.md` branching model + `azure-pipelines.yml` |
+| Code review | `references/code-review-checklist.md` checklist scored against the diff |
+| Environment/tooling setup | `references/tooling-environment-setup.md` install/config walkthrough |
 
 Always justify the architectural choice (framework, attended/unattended, queue vs. polling) — not
 just deliver the artifact.
@@ -612,6 +598,41 @@ just deliver the artifact.
 - `references/data-engineering-transition.md` — RPA-to-data-engineering skill mapping, the real
   gaps to close (Airflow/ADF, polars/Spark, dbt, dimensional modeling, data quality tooling, CDC),
   an ordered learning sequence, and a practice project combining existing and new skills
+- `references/reframework-guide.md` — REFramework (Robotic Enterprise Framework) deep
+  reference: four-state architecture (Init/GetTransaction/ProcessTransaction/EndProcess) and
+  all seven transitions, Config.xlsx schema (Settings/Constants/Assets sheets, standard keys,
+  environment override via Orchestrator Asset), BusinessRuleException vs. SystemException
+  taxonomy and the decision rule, transaction data source variants (Queue-based canonical,
+  DataRow/tabular non-queue, single-transaction linear), System Exception retry mechanics
+  (MaxRetryNumber, MaxConsecutiveSystemExceptions, circuit breaker), invoice processing
+  Dispatcher/Performer pattern with LINQ and Regex integration examples, 2026 modernization
+  considerations (untyped Config dictionary, Maestro alignment), official resource index
+- `references/date-handling.md` — RPA date parsing, formatting, and conversion: the case
+  against DateTime.Parse() (locale-dependent, causes silent data corruption), ParseExact and
+  TryParseExact with multi-format candidate arrays, format code reference table, regional
+  disambiguation strategy (dd/MM vs MM/dd ambiguity, BusinessRuleException routing), JDE/JD
+  Edwards Julian date CYYDDD specification (Oracle-sourced, C=century indicator, CYYDDD
+  examples verified), JDE→DateTime and DateTime→JDE conversion in VB.NET (Assign expression
+  and Invoke Code variants, null/zero sentinel handling, 5-digit legacy form), astronomical
+  Julian Day Number (JDN) conversion, modern banking Julian format (YYYYDDD), date arithmetic
+  (AddDays/AddMonths/DayOfYear/quarter/FY start/age), business day calculation, regex-based
+  date extraction from scraped text, normalize→validate→format→type complete sequence, common
+  system date format table (SAP, JDE, Autoline, Salesforce, SharePoint, SQL Server)
+- `references/autoline-dms.md` — Autoline/Keyloop DMS automation reference: platform
+  overview (Keyloop Autoline, formerly CDK; Drive vs. Rev8 variants; MDI vs. tabbed UI),
+  integration priority order (Keyloop API first), Keyloop REST API catalogue (full repair
+  order endpoint list, parts catalogue, order parts, service history, booking — DMS variant
+  availability table), UI automation required scenarios, window and application management
+  (MDI child window selectors, focus/activation patterns), selector strategy (stable
+  attributes → Anchor Base → CV → hotkeys), anchor base pattern for Autoline field labelling,
+  Computer Vision guidance (Citrix-hosted Autoline, CV anchors, training considerations),
+  error handling taxonomy (field validation, record lock, session timeout, popup dialogs,
+  slow screen load), timing optimization (eliminating static Delay, dynamic wait pattern,
+  server round-trips, batch operations, multi-user contention), data handling (date field
+  entry, VIN/part number validation with regex, amount/currency field cleaning), Type Into
+  mechanics (hardware vs. SimulateType, Tab-to-commit pattern), Excel/DataTable handling of
+  Autoline exports (date normalization, LINQ deduplication), common scenario matrix (API
+  vs. UI automation), OAuth token pattern for Keyloop REST API integration
 - `references/uipath-databricks-integration.md` — four-part UiPath+Databricks integration
   reference: (1) Real-time event ingestion pipeline — the previous dual-pipeline problem
   (30-min latency, duplicated storage, high cost), unified Spark Structured Streaming

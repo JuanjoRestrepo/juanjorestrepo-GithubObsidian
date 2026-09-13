@@ -57,7 +57,7 @@ the task is a common avoidable mistake.
   Desktop for anything Citrix/legacy/custom-activity-heavy. **Compatibility constraint (verified
   official)**: a project is only editable in Studio Web if it's a cross-platform "process" project
   using **VB** for expressions — any Windows project (regardless of language) and any
-  cross-platform project using C# can be _saved_ to the cloud but not opened/edited in Studio Web.
+  cross-platform project using C# can be *saved* to the cloud but not opened/edited in Studio Web.
   **Flowchart workflows cannot be opened in Studio Web at all**, regardless of language. If Studio
   Web interoperability is a requirement, this constrains both the language and the workflow-type
   choice made in Studio Desktop up front — decide before starting the project, not after.
@@ -81,7 +81,7 @@ the task is a common avoidable mistake.
 Every Studio project sets an **expression language** at creation — VB or C# — governing every
 `Assign`, `If`/`Switch` condition, and `Invoke Code` activity in the project. This is a distinct
 decision from building external custom activities in C# (covered below); it governs the language
-used _inside_ ordinary workflow expressions throughout the project, and it cannot be changed
+used *inside* ordinary workflow expressions throughout the project, and it cannot be changed
 after the fact without rework.
 
 - **Default recommendation for this skill: VB**, for three official, documented reasons — not
@@ -103,11 +103,11 @@ after the fact without rework.
   kickoff, not a default.
 - **Do not mix languages across a library and its consumers casually**: default argument values
   defined in a library project using language-specific expressions are not accessible from a
-  project in the _other_ language once that library is installed — a VB library consumed by a C#
+  project in the *other* language once that library is installed — a VB library consumed by a C#
   project (or vice versa) can silently lose default argument behavior. Standardize on one
   language per shared-library ecosystem, and document the choice in the library's README.
-- **Where this is configured**: per-project at creation, or as a Studio-wide default via _Use C#
-  Language_ in Studio Settings (Studio Pro profile only — Studio and StudioX profiles always use
+- **Where this is configured**: per-project at creation, or as a Studio-wide default via *Use C#
+  Language* in Studio Settings (Studio Pro profile only — Studio and StudioX profiles always use
   VB, which is itself a signal of where UiPath's own defaults sit).
 
 **LINQ in expressions:** VB.NET expression syntax is the default language for all LINQ queries
@@ -142,7 +142,7 @@ themselves is a frequent, avoidable source of unmaintainable projects:
   `GetInvoiceData.xaml`, `ValidateCustomerRecord.xaml` — never `Process1.xaml` or a name that only
   makes sense with tribal knowledge of the project's history.
 - **Annotations**: use Studio's native annotation feature (right-click an activity or workflow →
-  Add Annotation, or the docked-annotation Studio setting) to document _why_ a non-obvious design
+  Add Annotation, or the docked-annotation Studio setting) to document *why* a non-obvious design
   choice was made directly on the workflow — this travels with the `.xaml` in source control,
   unlike an external design doc that drifts out of sync with the implementation. **Every workflow
   file should carry a top-level annotation covering, at minimum**: a description of what the
@@ -182,7 +182,6 @@ from libraries, among others) that are simply unavailable in Windows-Legacy proj
 existing Windows-Legacy project as a migration candidate, not a permanent steady state.
 
 **Converting an existing project to Windows compatibility:**
-
 - If the **"Convert to Windows"** link is visible in Studio: enable "Create a new project" (do not
   convert in place), give the new project a name distinct from the Windows-Legacy original, choose
   the target location, convert, then open and fully test the Main workflow before publishing the
@@ -259,18 +258,18 @@ Log Message activities are the primary source of truth for diagnosing a run, in 
 development and in Orchestrator/Elasticsearch in production. UiPath's Log Message activity
 supports five levels — use them by their actual defined purpose, not interchangeably:
 
-| Level     | Purpose                                                                                                                                                                                    |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Trace** | Development/debugging detail — verbose enough that it would clutter production logs; strip or leave disabled once a workflow reaches production.                                           |
-| **Info**  | Normal progress information — entering/exiting a workflow, a value being processed, a transaction starting. The default level for routine "the bot is working" visibility.                 |
-| **Warn**  | Data that needs to stand out from routine Info noise without being an outright failure — an unusual-but-handled condition worth a human noticing on review.                                |
-| **Error** | An error occurred and the robot is attempting to recover and continue with the next item — this is the level for handled System Exceptions in the REFramework sense.                       |
+| Level | Purpose |
+|---|---|
+| **Trace** | Development/debugging detail — verbose enough that it would clutter production logs; strip or leave disabled once a workflow reaches production. |
+| **Info** | Normal progress information — entering/exiting a workflow, a value being processed, a transaction starting. The default level for routine "the bot is working" visibility. |
+| **Warn** | Data that needs to stand out from routine Info noise without being an outright failure — an unusual-but-handled condition worth a human noticing on review. |
+| **Error** | An error occurred and the robot is attempting to recover and continue with the next item — this is the level for handled System Exceptions in the REFramework sense. |
 | **Fatal** | The robot cannot or should not recover — something has gone critically wrong and the workflow must stop. Reserve this for genuinely unrecoverable states, not routine business exceptions. |
 
 **Log at two structural points, at minimum, on every subtask/subprocess ("checkpoints")**: once
 on entry and once on exit — this is what makes it possible to tell, from the logs alone, whether a
 given subprocess completed successfully without having to reproduce the run. Log at every decision
-point (`If`/`Switch` branch taken) as well — this is what lets you reconstruct _which path_ a
+point (`If`/`Switch` branch taken) as well — this is what lets you reconstruct *which path* a
 specific run took after the fact, not just that it finished.
 
 ## Exception Handling (UiPath-specific mechanics)
@@ -298,7 +297,7 @@ this skill:
 - **Settings** — key/value pairs, everything above
 - **Constants** — paths, file extensions, static thresholds
 - **Assets** — Orchestrator Asset names the bot will fetch at runtime (never store the asset
-  _value_ here — only the _name_)
+  *value* here — only the *name*)
 - **Queues** — queue names per environment (Dev/Test/Prod use different queue names to avoid
   cross-environment contamination)
 
@@ -323,7 +322,6 @@ validation. Per official documentation:
   rules location configured in Studio settings.
 
 Non-negotiable rules to keep enabled regardless of ruleset customization:
-
 - No hardcoded credentials/secrets in any activity property
 - No `Message Box` in unattended workflows (blocks execution indefinitely)
 - No empty `Catch` blocks
@@ -334,15 +332,14 @@ Non-negotiable rules to keep enabled regardless of ruleset customization:
 - Log Message coverage at decision points (custom rule many CoEs add via the SDK)
 
 **CLI tooling for CI/CD — two generations, know which one a pipeline is using:**
-
 - **Legacy `uipcli`** (`uipcli.exe` / `dotnet uipcli.dll`, .NET-based): `uipcli package analyze
-<project.json>` runs Workflow Analyzer against a governance file and fails the build on
+  <project.json>` runs Workflow Analyzer against a governance file and fails the build on
   Error/Warning violations (`--treatWarningsAsErrors`, `--stopOnRuleViolation`,
   `--ignoredRules`); `uipcli package pack`/`deploy` handle packaging and Orchestrator deployment;
   `uipcli test run` executes Test Manager test sets. This remains fully supported for existing
   pipelines and is what most current production CI/CD setups use.
 - **New `uip` CLI** (TypeScript-based, broader platform surface, introduced 2025/2026): `uip rpa
-analyze` (with governance policies), `uip rpa pack`, `uip solution pack`, plus commands for the
+  analyze` (with governance policies), `uip rpa pack`, `uip solution pack`, plus commands for the
   newer platform surface (`uip agent pack`, `uip flow init`, `uip maestro init`). This is the
   direction UiPath is consolidating tooling toward — for a new pipeline being built today, check
   docs.uipath.com/uipath-cli for whether `uip` is the currently recommended entry point before

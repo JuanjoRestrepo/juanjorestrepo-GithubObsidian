@@ -28,12 +28,12 @@ flow when the same process could be a Cloud flow with one Desktop-flow call embe
 
 ## Flow Types — Choosing the Right One
 
-| Trigger style                                                                | Flow type                 | Use for                                                                                        |
-| ---------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------- |
-| An event happens in a connected system (new item, new email, record updated) | **Automated cloud flow**  | The majority of business-process automation — event-driven, no manual start                    |
-| A person starts it on demand (button, Power Apps, Teams)                     | **Instant cloud flow**    | User-initiated actions — approval requests, manual data pushes, ad hoc reports                 |
-| Time-based (daily, hourly, cron-like recurrence)                             | **Scheduled cloud flow**  | Batch jobs, nightly syncs, report generation, orchestrating a Desktop-flow leg overnight       |
-| Long-running, milestone-driven business process                              | **Business process flow** | Guiding data-readiness through stages (e.g., a sales methodology) rather than pure integration |
+| Trigger style | Flow type | Use for |
+|---|---|---|
+| An event happens in a connected system (new item, new email, record updated) | **Automated cloud flow** | The majority of business-process automation — event-driven, no manual start |
+| A person starts it on demand (button, Power Apps, Teams) | **Instant cloud flow** | User-initiated actions — approval requests, manual data pushes, ad hoc reports |
+| Time-based (daily, hourly, cron-like recurrence) | **Scheduled cloud flow** | Batch jobs, nightly syncs, report generation, orchestrating a Desktop-flow leg overnight |
+| Long-running, milestone-driven business process | **Business process flow** | Guiding data-readiness through stages (e.g., a sales methodology) rather than pure integration |
 
 Prefer Automated over Scheduled when a real trigger exists — polling on a schedule for something
 that has an event-based trigger available wastes API calls and adds latency versus an
@@ -145,8 +145,8 @@ Cloud flows have no native `try`/`catch` keyword, but the **Scope** action combi
 4. Inside `Catch`, log the failure (to Dataverse, Application Insights, or a SIEM — see
    Monitoring below) and send a clear failure notification — never let a Catch scope be empty.
 
-**Important limitation to design around**: `Configure run after` only inspects the _immediately
-preceding_ action/scope, not the whole upstream chain — this is precisely why the main logic must
+**Important limitation to design around**: `Configure run after` only inspects the *immediately
+preceding* action/scope, not the whole upstream chain — this is precisely why the main logic must
 be grouped inside one `Try` Scope rather than left as a flat sequence of individual actions each
 with their own run-after configuration; grouping is what lets a single `Catch` scope cover
 failures from any action inside `Try`.
