@@ -1,5 +1,5 @@
 ---
-name: rpa-development
+name: "rpa-development"
 description: >
   Expert-level RPA skill covering the full lifecycle from process discovery to hypercare, at
   senior/CoE-lead standard. Focus: UiPath (REFramework, Dispatcher/Performer, Orchestrator,
@@ -146,7 +146,8 @@ Produce a **Solution Design Document (SDD)** before writing any workflow. It mus
   components; mock external dependencies where possible; a full E2E run against
   representative test data before every UAT handoff.
 
-→ See `references/uipath-reframework.md` for the comprehensive, production-grade guide to REFramework theory, finite state machines, coding anatomy, tabular/queue architectures, multi-tier retries, circuit breakers, and enterprise best practices. See `references/uipath-standards.md` for Config.xlsx schema, Workflow Analyzer ruleset, queue/transaction design, selector/Object Repository best practices, and custom C# activity guidance.
+→ See `references/uipath-standards.md` for the full REFramework anatomy, Config.xlsx schema,
+Workflow Analyzer ruleset, queue/transaction design, and custom C# activity guidance.
 
 ### Power Automate Cloud (default Power Automate choice)
 
@@ -509,18 +510,7 @@ just deliver the artifact.
   scoring, reversibility-calibrated review rigor, a pre-adoption checklist, and a tracker for
   which team/company-specific standards have been supplied and integrated elsewhere vs. still
   genuinely open
-- `references/uipath-reframework.md` — Comprehensive architectural theory, coding mechanics,
-  and enterprise standards for the Robotic Enterprise Framework (REFramework): Finite State Machine
-  (FSM) formalism, automata and ACID/idempotency guarantees, structural state anatomy (Init, Get
-  Transaction Data, Process, End Process), component-level XAML walkthrough (Main, InitAllSettings,
-  InitAllApplications, GetTransactionData, Process, SetTransactionStatus, RetryCurrentTransaction,
-  TakeScreenshot, CloseAllApplications, KillAllProcesses), architectural applications (Queue-driven
-  Dispatcher/Performer, Tabular/DataTable without queues, File/Directory batching, Long-Running Action
-  Center), exception taxonomy, three-tier retry model (Activity vs Framework vs Queue auto-retry) and
-  elimination of the double-retry anti-pattern, circuit breaker pattern (ConsecutiveSystemExceptions),
-  session hygiene/memory leak prevention for 24/7 robots, structured logging/observability, Workflow
-  Analyzer rules, and a 15-point production sign-off checklist
-- `references/uipath-standards.md` — Config.xlsx schema, Workflow Analyzer
+- `references/uipath-standards.md` — REFramework anatomy, Config.xlsx schema, Workflow Analyzer
   ruleset, Orchestrator queues/transactions design, selector/Object Repository best practices,
   custom C# activity packaging, Test Manager workflow, VB vs. C# expression-language trade-offs
   (verified performance/completeness/Studio Web implications), workflow design/layout standards
@@ -633,6 +623,26 @@ just deliver the artifact.
   mechanics (hardware vs. SimulateType, Tab-to-commit pattern), Excel/DataTable handling of
   Autoline exports (date normalization, LINQ deduplication), common scenario matrix (API
   vs. UI automation), OAuth token pattern for Keyloop REST API integration
+- `references/azure-functions.md` — Azure Functions complete reference: serverless
+  positioning (FaaS vs PaaS vs IaaS, when to use vs Databricks/Logic Apps/Container Apps),
+  trigger catalogue (HTTP/Timer/Blob/Queue/Service Bus/Event Grid/Event Hubs/Cosmos DB) with
+  CRON format note (6-field Azure vs 5-field Linux), bindings support matrix, hosting plans
+  (Consumption/Flex Consumption/Premium/App Service — Flex Consumption is the current
+  recommended default), runtime retirement notices (v3 Linux Consumption retiring Sep 2026,
+  Linux Consumption plan retiring Sep 2028), Python v4 programming model (decorator-based,
+  no function.json), local development with Core Tools v4 and CLI v5 preview (func init/new/
+  start/run, Azurite, Durable Task Scheduler emulator), local.settings.json pattern, config
+  management (Key Vault references, managed identity, never plaintext secrets in App Settings),
+  auth levels (Anonymous/Function/Admin) and key hierarchy with x-functions-key header
+  standard, Entra ID Easy Auth and APIM as production security standards, Durable Functions
+  patterns (function chaining, fan-out/fan-in, async HTTP API with status polling), real-world
+  integration patterns (Power Automate regex workaround via HTTP trigger, UiPath bot → Service
+  Bus → Function async processing, Blob → Cosmos DB ETL), performance best practices
+  (connection reuse at module level, FUNCTIONS_WORKER_PROCESS_COUNT, async/await, run-from-
+  package, storage account isolation, idempotency), Azure DevOps CI/CD pipeline template
+  (ruff/mypy/pytest gates, AzureFunctionApp@2 deploy), Application Insights KQL queries,
+  anti-patterns table (infinite blob loop, monolithic functions, verbose logging, key in
+  query string, shared storage, test functions in prod)
 - `references/uipath-databricks-integration.md` — four-part UiPath+Databricks integration
   reference: (1) Real-time event ingestion pipeline — the previous dual-pipeline problem
   (30-min latency, duplicated storage, high cost), unified Spark Structured Streaming

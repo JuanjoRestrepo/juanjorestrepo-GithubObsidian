@@ -1,6 +1,6 @@
 # WebSockets — Full-Duplex Real-Time Communication
 
-**Sources:** IETF RFC 6455 (_The WebSocket Protocol_, December 2011 — Fette & Melnikov,
+**Sources:** IETF RFC 6455 (*The WebSocket Protocol*, December 2011 — Fette & Melnikov,
 Google/Isode); RFC 7692 (permessage-deflate compression extension, 2015); RFC 8441 (WebSocket
 over HTTP/2 bootstrapping, 2018); RFC 9220 (WebSocket over HTTP/3, 2022); OWASP WebSocket
 Security Cheat Sheet (2024 edition); OWASP Web Security Testing Guide (WSTG-CLNT-10, 2025
@@ -35,7 +35,6 @@ WebSocket (full-duplex — both directions simultaneously):
 ```
 
 **Protocol extensions (beyond core RFC 6455):**
-
 - RFC 7692 (2015) — `permessage-deflate` compression, reducing message size significantly for
   text-heavy workloads (JSON, HTML). Server negotiates via `Sec-WebSocket-Extensions` header.
 - RFC 8441 (2018) — WebSocket bootstrapping over HTTP/2 (`CONNECT` with `protocol: websocket`),
@@ -99,20 +98,20 @@ pnpm add -D @types/ws
 
 ```typescript
 // server/websocket.ts
-import { WebSocket, WebSocketServer } from 'ws';
-import http from 'http';
+import { WebSocket, WebSocketServer } from "ws";
+import http from "http";
 
-const server = http.createServer(app); // share with Express
+const server = http.createServer(app);  // share with Express
 const wss = new WebSocketServer({
   server,
-  maxPayload: 1024 * 1024, // 1MB — always set; default is 100MB (DoS risk)
+  maxPayload: 1024 * 1024,  // 1MB — always set; default is 100MB (DoS risk)
 });
 
-wss.on('connection', (ws: WebSocket, req: http.IncomingMessage) => {
+wss.on("connection", (ws: WebSocket, req: http.IncomingMessage) => {
   // Validate origin during handshake
   const origin = req.headers.origin;
   if (!isAllowedOrigin(origin)) {
-    ws.close(1008, 'Origin not allowed');
+    ws.close(1008, "Origin not allowed");
     return;
   }
 
@@ -120,34 +119,29 @@ wss.on('connection', (ws: WebSocket, req: http.IncomingMessage) => {
   const token = extractTokenFromHandshake(req);
   const user = verifyToken(token);
   if (!user) {
-    ws.close(1008, 'Unauthorized');
+    ws.close(1008, "Unauthorized");
     return;
   }
 
   // Heartbeat tracking
   (ws as any).isAlive = true;
-  ws.on('pong', () => {
-    (ws as any).isAlive = true;
-  });
+  ws.on("pong", () => { (ws as any).isAlive = true; });
 
-  ws.on('message', (data: Buffer, isBinary: boolean) => {
+  ws.on("message", (data: Buffer, isBinary: boolean) => {
     // ALWAYS validate incoming messages — treat as untrusted input (OWASP)
-    const text = isBinary ? data : data.toString('utf8');
+    const text = isBinary ? data : data.toString("utf8");
     const parsed = safeParseJson(text);
-    if (!parsed) {
-      ws.close(1007, 'Invalid message');
-      return;
-    }
+    if (!parsed) { ws.close(1007, "Invalid message"); return; }
 
     handleMessage(ws, user, parsed);
   });
 
-  ws.on('close', (code: number, reason: Buffer) => {
+  ws.on("close", (code: number, reason: Buffer) => {
     console.log(`Connection closed: ${code} — ${reason.toString()}`);
   });
 
-  ws.on('error', (err: Error) => {
-    console.error('WebSocket error:', err);
+  ws.on("error", (err: Error) => {
+    console.error("WebSocket error:", err);
     // Do NOT re-throw — errors on individual connections must not crash the server
   });
 });
@@ -156,7 +150,7 @@ wss.on('connection', (ws: WebSocket, req: http.IncomingMessage) => {
 const heartbeat = setInterval(() => {
   wss.clients.forEach((ws) => {
     if (!(ws as any).isAlive) {
-      ws.terminate(); // terminate, don't close — assumes the connection is already dead
+      ws.terminate();  // terminate, don't close — assumes the connection is already dead
       return;
     }
     (ws as any).isAlive = false;
@@ -164,7 +158,7 @@ const heartbeat = setInterval(() => {
   });
 }, 30_000);
 
-wss.on('close', () => clearInterval(heartbeat));
+wss.on("close", () => clearInterval(heartbeat));
 ```
 
 ```typescript
@@ -176,27 +170,24 @@ class ReconnectingWebSocket {
 
   connect(): void {
     this.ws = new WebSocket(
-      `wss://api.example.com/ws/chat?token=${getToken()}`, // token in URL query for browser clients
+      `wss://api.example.com/ws/chat?token=${getToken()}`,  // token in URL query for browser clients
     );
 
-    this.ws.addEventListener('open', () => {
-      this.reconnectAttempts = 0; // reset on successful connection
+    this.ws.addEventListener("open", () => {
+      this.reconnectAttempts = 0;  // reset on successful connection
     });
 
-    this.ws.addEventListener('message', (event) => {
+    this.ws.addEventListener("message", (event) => {
       const data = JSON.parse(event.data as string);
       this.handleMessage(data);
     });
 
-    this.ws.addEventListener('close', (event) => {
+    this.ws.addEventListener("close", (event) => {
       if (!event.wasClean && this.reconnectAttempts < this.maxAttempts) {
         // Exponential backoff reconnect — same algorithm as HTTP retries
         const delay = Math.min(1000 * 2 ** this.reconnectAttempts, 30_000);
         const jittered = delay * (0.75 + Math.random() * 0.5);
-        setTimeout(() => {
-          this.reconnectAttempts++;
-          this.connect();
-        }, jittered);
+        setTimeout(() => { this.reconnectAttempts++; this.connect(); }, jittered);
       }
     });
   }
@@ -219,48 +210,45 @@ service (not browser-facing).
 
 ```typescript
 // server — socket.io with auth middleware
-import { Server } from 'socket.io';
-import { createServer } from 'http';
+import { Server } from "socket.io";
+import { createServer } from "http";
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: { origin: process.env.ALLOWED_ORIGINS?.split(','), credentials: true },
-  maxHttpBufferSize: 1e6, // 1MB — equivalent to ws maxPayload
+  cors: { origin: process.env.ALLOWED_ORIGINS?.split(","), credentials: true },
+  maxHttpBufferSize: 1e6,  // 1MB — equivalent to ws maxPayload
 });
 
 // Authentication middleware — runs on every new connection attempt
 io.use((socket, next) => {
   const token = socket.handshake.auth.token as string | undefined;
-  if (!token) return next(new Error('Missing authentication token'));
+  if (!token) return next(new Error("Missing authentication token"));
   const user = verifyToken(token);
-  if (!user) return next(new Error('Invalid token'));
+  if (!user) return next(new Error("Invalid token"));
   socket.data.user = user;
   next();
 });
 
-io.on('connection', (socket) => {
+io.on("connection", (socket) => {
   const user = socket.data.user as AuthenticatedUser;
 
   // Join user-specific and role-specific rooms
   socket.join(`user:${user.id}`);
   socket.join(`role:${user.role}`);
 
-  socket.on('message:send', async (payload: MessagePayload, ack) => {
+  socket.on("message:send", async (payload: MessagePayload, ack) => {
     // Authorization check per action — connection ≠ authorization for all actions
     if (!canSendMessage(user, payload.roomId)) {
-      return ack({ error: 'Forbidden' });
+      return ack({ error: "Forbidden" });
     }
     const message = await messageService.create(user.id, payload);
-    io.to(`room:${payload.roomId}`).emit('message:new', message);
-    ack({ messageId: message.id }); // acknowledgement to sender
+    io.to(`room:${payload.roomId}`).emit("message:new", message);
+    ack({ messageId: message.id });  // acknowledgement to sender
   });
 });
 
 // Targeted server-to-client push (from anywhere in your codebase):
-io.to(`user:${userId}`).emit('notification', {
-  type: 'order_shipped',
-  orderId,
-});
+io.to(`user:${userId}`).emit("notification", { type: "order_shipped", orderId });
 ```
 
 ### Python — WebSockets Library (ASGI)
@@ -305,26 +293,25 @@ the connection opens — making header-based auth impossible from browser client
 ### Recommended Approaches
 
 **Option 1 — Token in URL query parameter (most common for browser clients):**
-
 ```typescript
 // Client
 const ws = new WebSocket(`wss://api.example.com/ws?token=${accessToken}`);
 
 // Server — extract and validate during handshake, before accepting
-wss.on('headers', (headers, req) => {
-  const url = new URL(req.url!, 'http://placeholder');
-  const token = url.searchParams.get('token');
+wss.on("headers", (headers, req) => {
+  const url = new URL(req.url!, "http://placeholder");
+  const token = url.searchParams.get("token");
   // Token validation happens in the verifyClient callback below
 });
 
 const wss = new WebSocketServer({
   server,
   verifyClient: ({ req }) => {
-    const url = new URL(req.url!, 'http://placeholder');
-    const token = url.searchParams.get('token');
-    const user = verifyToken(token ?? '');
-    if (!user) return false; // reject with 401
-    (req as any).user = user; // attach user to request for later use
+    const url = new URL(req.url!, "http://placeholder");
+    const token = url.searchParams.get("token");
+    const user = verifyToken(token ?? "");
+    if (!user) return false;  // reject with 401
+    (req as any).user = user;  // attach user to request for later use
     return true;
   },
 });
@@ -336,13 +323,12 @@ generated via a dedicated endpoint the client calls before connecting; rotating 
 configuring your web server/proxy to not log query strings.
 
 **Option 2 — Cookie (for browser clients in same-origin setups):**
-
 ```typescript
 // Browser automatically sends cookies on WebSocket connections to the same origin
 // Server extracts the session cookie during handshake
 const wss = new WebSocketServer({
   verifyClient: ({ req }) => {
-    const sessionId = parseCookies(req.headers.cookie ?? '')['session_id'];
+    const sessionId = parseCookies(req.headers.cookie ?? "")["session_id"];
     const user = validateSession(sessionId);
     return !!user;
   },
@@ -350,26 +336,25 @@ const wss = new WebSocketServer({
 ```
 
 **Option 3 — First-message auth (for non-browser clients / internal services):**
-
 ```typescript
 // Server accepts the connection, then expects authentication as the first message
 // within a timeout — close if auth doesn't arrive in time
-wss.on('connection', (ws) => {
+wss.on("connection", (ws) => {
   const authTimeout = setTimeout(() => {
-    ws.close(1008, 'Authentication timeout');
-  }, 5_000); // 5 seconds to send credentials
+    ws.close(1008, "Authentication timeout");
+  }, 5_000);  // 5 seconds to send credentials
 
-  ws.once('message', (data) => {
+  ws.once("message", (data) => {
     clearTimeout(authTimeout);
     const msg = JSON.parse(data.toString());
-    if (msg.type !== 'auth' || !verifyToken(msg.token)) {
-      ws.close(1008, 'Unauthorized');
+    if (msg.type !== "auth" || !verifyToken(msg.token)) {
+      ws.close(1008, "Unauthorized");
       return;
     }
     (ws as any).user = decodeToken(msg.token);
-    ws.send(JSON.stringify({ type: 'auth_ok' }));
+    ws.send(JSON.stringify({ type: "auth_ok" }));
     // Set up normal message handler now
-    ws.on('message', handleAuthenticatedMessage);
+    ws.on("message", handleAuthenticatedMessage);
   });
 });
 ```
@@ -380,19 +365,19 @@ A WebSocket connection being authenticated does NOT authorize every action the c
 might request through it. Authorization must be re-checked per action:
 
 ```typescript
-ws.on('message', (data) => {
+ws.on("message", (data) => {
   const msg = JSON.parse(data.toString());
 
   switch (msg.action) {
-    case 'chat:send':
+    case "chat:send":
       if (!canSendToRoom(user, msg.roomId)) {
-        ws.send(JSON.stringify({ error: 'Forbidden', action: msg.action }));
+        ws.send(JSON.stringify({ error: "Forbidden", action: msg.action }));
         return;
       }
       break;
-    case 'admin:kick':
-      if (user.role !== 'admin') {
-        ws.send(JSON.stringify({ error: 'Admin only', action: msg.action }));
+    case "admin:kick":
+      if (user.role !== "admin") {
+        ws.send(JSON.stringify({ error: "Admin only", action: msg.action }));
         return;
       }
       break;
@@ -412,7 +397,7 @@ save you — WebSocket connections bypass these. Validate the `Origin` header **
 handshake** as the primary defense.
 
 ```typescript
-const ALLOWED_ORIGINS = new Set(process.env.ALLOWED_ORIGINS!.split(','));
+const ALLOWED_ORIGINS = new Set(process.env.ALLOWED_ORIGINS!.split(","));
 
 const wss = new WebSocketServer({
   verifyClient: ({ origin }) => {
@@ -434,19 +419,19 @@ explicitly calls this out.
 ### Input Validation — Every Message is Untrusted (OWASP A05:2025 — Injection)
 
 ```typescript
-ws.on('message', (data) => {
+ws.on("message", (data) => {
   let parsed: unknown;
   try {
     parsed = JSON.parse(data.toString());
   } catch {
-    ws.close(1007, 'Invalid data format'); // close code 1007 = invalid data
+    ws.close(1007, "Invalid data format");  // close code 1007 = invalid data
     return;
   }
 
   // Validate with Zod (TypeScript) or Pydantic (Python) — same discipline as HTTP
   const result = MessageSchema.safeParse(parsed);
   if (!result.success) {
-    ws.send(JSON.stringify({ error: 'Validation failed' }));
+    ws.send(JSON.stringify({ error: "Validation failed" }));
     return;
   }
 
@@ -458,22 +443,21 @@ ws.on('message', (data) => {
 
 ```typescript
 const wss = new WebSocketServer({
-  maxPayload: 1024 * 1024, // 1MB max message size — always set explicitly
+  maxPayload: 1024 * 1024,  // 1MB max message size — always set explicitly
 });
 
 // Message rate limiting — apply per connection, not just per IP
 const messageCount = new Map<WebSocket, number>();
 
-ws.on('message', () => {
+ws.on("message", () => {
   const count = (messageCount.get(ws) ?? 0) + 1;
   messageCount.set(ws, count);
-  if (count > 100) {
-    // 100 messages per minute
-    ws.close(1008, 'Rate limit exceeded');
+  if (count > 100) {  // 100 messages per minute
+    ws.close(1008, "Rate limit exceeded");
     return;
   }
 });
-setInterval(() => messageCount.clear(), 60_000); // reset counter each minute
+setInterval(() => messageCount.clear(), 60_000);  // reset counter each minute
 ```
 
 **CVE-2024-37890 (ws library, CVSS 7.5):** sending a WebSocket request with more headers
@@ -513,12 +497,12 @@ it must publish to a shared bus — not call wss.clients.forEach directly.
 **Solution 1 — Redis Pub/Sub (most common for Node.js):**
 
 ```typescript
-import { createClient } from 'redis';
+import { createClient } from "redis";
 
 const publisher = createClient({ url: process.env.REDIS_URL });
 const subscriber = createClient({ url: process.env.REDIS_URL });
 
-await subscriber.subscribe('ws:broadcast', (message) => {
+await subscriber.subscribe("ws:broadcast", (message) => {
   const payload = JSON.parse(message);
   // Deliver to clients connected to THIS instance
   wss.clients.forEach((client) => {
@@ -530,7 +514,7 @@ await subscriber.subscribe('ws:broadcast', (message) => {
 
 // To broadcast from anywhere:
 async function broadcastToAll(payload: unknown) {
-  await publisher.publish('ws:broadcast', JSON.stringify(payload));
+  await publisher.publish("ws:broadcast", JSON.stringify(payload));
 }
 
 // For targeted messages (to a specific user):
@@ -554,18 +538,18 @@ complexity that doesn't need to be rebuilt for most use cases.
 
 ## 7. WebSocket Close Codes (RFC 6455 Section 7.4)
 
-| Code | Name                  | Use when                                              |
-| ---- | --------------------- | ----------------------------------------------------- |
-| 1000 | Normal Closure        | Both sides finished normally                          |
-| 1001 | Going Away            | Server shutting down, or client navigating away       |
-| 1002 | Protocol Error        | Protocol violation detected                           |
-| 1003 | Unsupported Data      | Received unexpected data type                         |
-| 1007 | Invalid Frame Payload | UTF-8 decode failure in text frame                    |
-| 1008 | Policy Violation      | Auth failure, rate limit exceeded                     |
-| 1009 | Message Too Big       | Payload exceeds configured limit                      |
-| 1011 | Internal Error        | Unexpected server error                               |
-| 1012 | Service Restart       | Server restarting — client should reconnect           |
-| 1013 | Try Again Later       | Temporary overload — client should retry with backoff |
+| Code | Name | Use when |
+|---|---|---|
+| 1000 | Normal Closure | Both sides finished normally |
+| 1001 | Going Away | Server shutting down, or client navigating away |
+| 1002 | Protocol Error | Protocol violation detected |
+| 1003 | Unsupported Data | Received unexpected data type |
+| 1007 | Invalid Frame Payload | UTF-8 decode failure in text frame |
+| 1008 | Policy Violation | Auth failure, rate limit exceeded |
+| 1009 | Message Too Big | Payload exceeds configured limit |
+| 1011 | Internal Error | Unexpected server error |
+| 1012 | Service Restart | Server restarting — client should reconnect |
+| 1013 | Try Again Later | Temporary overload — client should retry with backoff |
 
 **Always use close codes meaningfully** — they help clients decide whether to reconnect
 immediately (1012), back off (1013), or not reconnect at all (1008 — auth failure).
