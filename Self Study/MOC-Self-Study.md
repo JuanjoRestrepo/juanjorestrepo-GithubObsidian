@@ -21,7 +21,7 @@ Infraestructura declarativa, contenedores, plataformas cloud y operación reprod
 
 - [[Docker/0.Introduccion|Docker: fundamentos, imágenes y contenedores]] · [[Docker/1. Imágenes y Contenedores|ciclo de vida de imágenes y contenedores]] · [[Docker/2.Ports y Volúmenes|puertos y persistencia]].
 - [[Terraform/1. Qué es Terraform|Terraform e infraestructura como código]] · [[Terraform/3. Hola Mundo|primer flujo de Terraform]] · [[Terraform/4. Comandos|comandos operativos]].
-- [[AWS/Introducción al Cómputo/1. Qué es el Cloud|AWS]] · [[0. Fundamentos de Cloud Computing y Responsabilidad Compartida|Fundamentos Cloud & Responsabilidad Compartida]] · [[1. Introducción a Azure|Azure Intro]] · [[3. Azure Functions|Azure Functions (Serverless)]] · [[Oracle/Oracle OCI Foundations Associate/1. Introduction to OCI|Oracle Cloud Infrastructure]].
+- [[AWS/Introducción al Cómputo/1. Qué es el Cloud|AWS]] · [[0. Fundamentos de Cloud Computing y Responsabilidad Compartida|Fundamentos Cloud & Responsabilidad Compartida]] · [[0.1. Tipos de Servicios Cloud - IaaS, PaaS y SaaS|Tipos de Servicios Cloud (IaaS, PaaS, SaaS)]] · [[1. Introducción a Azure|Azure Intro]] · [[3. Azure Functions|Azure Functions (Serverless)]] · [[Oracle/Oracle OCI Foundations Associate/1. Introduction to OCI|Oracle Cloud Infrastructure]].
 - Puente de orquestación: [[Pinguino Mario - Hacking/Docker/Kubernetes/1 - Despliegue de contenedores con Kubernetes|Kubernetes]] y [[Pinguino Mario - Hacking/Linux/Ansible/PlayBooks|Ansible Playbooks]].
 
 ## Development & Architecture
