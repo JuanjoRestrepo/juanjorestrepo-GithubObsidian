@@ -789,6 +789,197 @@ through execution budget instantly.
 
 ---
 
+
+### Pattern D: Event-Driven Image Analysis Pipeline (Blob → AI Vision → Cosmos DB)
+
+This pattern implements the architecture from the provided course material: an image uploaded
+to Blob Storage triggers a Function that calls Azure AI Vision, then writes the analysis
+result to Cosmos DB via an output binding. It also demonstrates the critical production
+corrections the course material identified.
+
+**Architecture:**
+```
+Azure Blob Storage (image-input)
+  --> [Blob Trigger / Event Grid Trigger]
+        Azure Function
+          --> Azure AI Vision REST API (HTTP POST, octet-stream)
+          --> Cosmos DB Output Binding (structured JSON document)
+```
+
+#### Blob Trigger Timing: Standard vs. Event Grid
+
+The course material identifies a critical production issue with standard `blobTrigger` on
+the Consumption plan:
+
+| Trigger type | Latency | Mechanism | When to use |
+|---|---|---|---|
+| Standard `blobTrigger` | Up to 10 minutes (low-traffic periods) | Log-polling on a schedule | Dev/test; small batch; latency-insensitive workloads |
+| `eventGridBlobTrigger` | <100 ms | Event Grid push notification on blob creation | Production; any latency-sensitive pipeline |
+
+The 10-minute delay occurs because the standard blob trigger polls the storage log on a
+schedule. During low-traffic or cold-start periods, the polling interval extends
+significantly. `eventGridBlobTrigger` receives a push notification from Event Grid
+the moment blob creation completes — sub-100ms delivery is guaranteed.
+
+To switch: change `blobTrigger` to `eventGridBlobTrigger` in the trigger type. The
+path and connection settings are identical. Requires enabling the Event Grid extension
+and creating a System Topic on the storage account in Azure Portal.
+
+#### Managed Identity: Cosmos DB Bindings (the `__accountEndpoint` Format)
+
+Connection strings for Cosmos DB bindings (`connection: 'CosmosDBConnection'`) can use
+managed identity instead of a key-bearing connection string. The format uses a
+double-underscore prefix convention — each individual setting shares the same prefix:
+
+```
+# App Settings (Azure Portal / local.settings.json Values)
+CosmosDBConnection__accountEndpoint = https://<account>.documents.azure.com:443/
+CosmosDBConnection__clientId        = <client-id>   # user-assigned identity only; omit for system-assigned
+```
+
+The same double-underscore pattern applies to all binding connections:
+
+| Service | Managed identity setting | Value |
+|---|---|---|
+| Cosmos DB | `<PREFIX>__accountEndpoint` | `https://<account>.documents.azure.com:443/` |
+| Blob Storage | `<PREFIX>__blobServiceUri` | `https://<account>.blob.core.windows.net` |
+| Blob Storage (with trigger) | `<PREFIX>__queueServiceUri` also required | `https://<account>.queue.core.windows.net` |
+| Service Bus | `<PREFIX>__fullyQualifiedNamespace` | `<namespace>.servicebus.windows.net` |
+
+Required RBAC roles on the Function App's managed identity:
+- Cosmos DB: `Cosmos DB Built-in Data Contributor` on the account
+- Storage: `Storage Blob Data Reader` (trigger) + `Storage Blob Data Owner` or `Storage Queue Data Contributor` (trigger poison-blob queue)
+
+#### Python Implementation (v2 model, Event Grid trigger, managed identity bindings)
+
+```python
+# function_app.py
+import json
+import os
+import httpx
+import azure.functions as func
+
+app = func.FunctionApp()
+
+@app.event_grid_blob_trigger(
+    arg_name="blob",
+    path="image-input/{name}",
+    connection="AzureWebJobsStorage"    # AzureWebJobsStorage__blobServiceUri for managed identity
+)
+@app.cosmos_db_output(
+    arg_name="output_doc",
+    database_name="AnalysisDB",
+    container_name="ImageAnalysis",
+    connection="CosmosDBConnection",    # CosmosDBConnection__accountEndpoint for managed identity
+    create_if_not_exists=False
+)
+def analyze_image(blob: func.InputStream, output_doc: func.Out[func.Document]) -> None:
+    import logging
+    log = logging.getLogger(__name__)
+    log.info("Analyzing blob: %s (%d bytes)", blob.name, blob.length)
+
+    endpoint = os.environ["VISION_API_ENDPOINT"]
+    api_key  = os.environ["VISION_API_KEY"]
+    url = f"{endpoint}/vision/v3.2/analyze?visualFeatures=Tags,Objects,Description"
+
+    # POST binary stream directly to Azure AI Vision
+    response = httpx.post(
+        url,
+        content=blob.read(),
+        headers={
+            "Ocp-Apim-Subscription-Key": api_key,
+            "Content-Type": "application/octet-stream"
+        },
+        timeout=30.0
+    )
+    response.raise_for_status()
+    analysis = response.json()
+
+    # Cosmos DB requires "id" as a string; requestId from Vision API is a UUID string
+    document = {
+        "id":                 analysis["requestId"],
+        "requestId":          analysis["requestId"],      # partition key
+        "blobName":           blob.name.split("/")[-1],
+        "processedTimestamp": func.utils.utcnow().isoformat(),
+        "analysis":           analysis
+    }
+
+    output_doc.set(func.Document.from_dict(document))
+    log.info("Stored analysis for requestId: %s", analysis["requestId"])
+```
+
+#### Node.js v4 Implementation (JavaScript, output binding return pattern)
+
+```javascript
+// src/functions/analyzeImage.js
+const { app, output } = require('@azure/functions');
+
+const cosmosOutput = output.cosmosDB({
+    databaseName:    'AnalysisDB',
+    containerName:   'ImageAnalysis',
+    connection:      'CosmosDBConnection',   // CosmosDBConnection__accountEndpoint for managed identity
+    createIfNotExists: false
+});
+
+app.storageBlob('analyzeImage', {
+    path:       'image-input/{name}',
+    connection: 'AzureWebJobsStorage',
+    return:     cosmosOutput,               // return value maps to Cosmos DB output binding
+    handler: async (blob, context) => {
+        const { default: fetch } = await import('node-fetch');
+
+        const url = `${process.env.VISION_API_ENDPOINT}/vision/v3.2/analyze` +
+                    `?visualFeatures=Tags,Objects,Description`;
+
+        const resp = await fetch(url, {
+            method:  'POST',
+            body:    blob,
+            headers: {
+                'Ocp-Apim-Subscription-Key': process.env.VISION_API_KEY,
+                'Content-Type':              'application/octet-stream'
+            }
+        });
+        if (!resp.ok) throw new Error(`Vision API error: ${resp.status}`);
+        const analysis = await resp.json();
+
+        context.log(`Analyzed ${context.triggerMetadata.name}: ${analysis.requestId}`);
+
+        return {
+            id:                 analysis.requestId,   // Cosmos DB primary key (must be string)
+            requestId:          analysis.requestId,   // partition key field
+            blobName:           context.triggerMetadata.name,
+            processedTimestamp: new Date().toISOString(),
+            analysis
+        };
+    }
+});
+```
+
+**Production correction vs. the course material example:** Replace `axios` (raw HTTP,
+no retry, no TypeScript types) with `node-fetch` or the native `fetch` (Node.js 18+) for
+simple calls, and with `@azure-rest/ai-vision-image-analysis` for typed Vision SDK access
+with built-in retry. The `@azure/cosmos` SDK should replace raw `CosmosDBConnection` string
+handling where programmatic Cosmos DB access is needed alongside the output binding.
+
+#### Azure AI Vision API Reference
+
+The Azure AI Vision (formerly Computer Vision) REST API accepts images as binary or by URL:
+
+| Parameter | Value |
+|---|---|
+| Endpoint format | `https://<resource>.cognitiveservices.azure.com/vision/v3.2/analyze` |
+| Auth header | `Ocp-Apim-Subscription-Key: <key>` (key-based) or `Authorization: Bearer <token>` (Entra ID) |
+| Binary content type | `application/octet-stream` |
+| URL content type | `application/json` with body `{"url": "https://..."}` |
+| `visualFeatures` param | Comma-separated: `Tags`, `Objects`, `Description`, `Categories`, `Color`, `Faces`, `Brands` |
+| Key acquisition | Azure Portal → AI Services resource → Keys and Endpoint |
+
+For production: use Entra ID authentication with `DefaultAzureCredential` and assign the
+`Cognitive Services User` role to the Function's managed identity on the AI Services resource,
+replacing the `Ocp-Apim-Subscription-Key` key-based pattern entirely.
+
+---
+
 ## 10. Performance and Reliability Best Practices
 
 All items below are sourced from `learn.microsoft.com/azure/azure-functions/functions-best-practices`

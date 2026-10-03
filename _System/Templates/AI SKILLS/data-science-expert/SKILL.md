@@ -1,14 +1,6 @@
 ---
-name: data-science-expert
-description: >
-  Full-spectrum data science, analytics, and engineering skill. Activate this skill whenever
-  the user mentions data, datasets, CSV/Excel files, databases, SQL, APIs, machine learning,
-  AI, deep learning, statistics, mathematics, calculus, EDA, feature engineering, ETL pipelines,
-  data cleaning, model evaluation, software development, or any project involving quantitative
-  analysis or data-driven decision making. This skill should trigger even for casual or
-  exploratory mentions of data topics — e.g., "I have a dataset", "can you help me build a model",
-  "let's explore this data", "I need a pipeline", "help me clean this", "run some stats on this".
-  When in doubt, use this skill.
+name: "data-science-expert"
+description: "Full-spectrum data science, analytics, and engineering skill. Activate this skill whenever the user mentions data, datasets, CSV/Excel files, databases, SQL, APIs, machine learning, AI, deep learning, statistics, mathematics, calculus, EDA, feature engineering, ETL pipelines, data cleaning, model evaluation, software development, or any project involving quantitative analysis or data-driven decision making. This skill should trigger even for casual or exploratory mentions of data topics — e.g., \"I have a dataset\", \"can you help me build a model\", \"let's explore this data\", \"I need a pipeline\", \"help me clean this\", \"run some stats on this\". When in doubt, use this skill.\n"
 ---
 
 # Data Science Expert Skill

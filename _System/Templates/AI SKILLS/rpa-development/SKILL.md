@@ -1,17 +1,6 @@
 ---
 name: "rpa-development"
-description: >
-  Expert-level RPA skill covering the full lifecycle from process discovery to hypercare, at
-  senior/CoE-lead standard. Focus: UiPath (REFramework, Dispatcher/Performer, Orchestrator,
-  selectors, custom C# activities), Power Automate Cloud and Desktop, Python (rpaframework/Robocorp,
-  pywinauto), Citrix automation, SQL Server, Git, and the standard enterprise toolchain (VS Code,
-  PyCharm, SSMS, Azure Storage Explorer, FileZilla, credential managers). Trigger on: RPA, bot,
-  robot, UiPath, Power Automate Cloud/Desktop/PAD, Orchestrator, REFramework, Dispatcher/Performer,
-  PDD/SDD, queues/transactions, selectors, Citrix, Robocorp, rpaframework, SQL Server queries,
-  debugging a bot, environment setup, or automating a manual process. Also trigger on vague
-  requests: "automate this process", "build a bot", "design a workflow", "review my automation",
-  "why is my bot failing". Covers planning, design, docs, coding standards, testing, deployment,
-  debugging, performance, and governance.
+description: "Expert-level RPA skill covering the full lifecycle from process discovery to hypercare, at senior/CoE-lead standard. Focus: UiPath (REFramework, Dispatcher/Performer, Orchestrator, selectors, custom C# activities), Power Automate Cloud and Desktop, Python (rpaframework/Robocorp, pywinauto), Citrix automation, SQL Server, Git, and the standard enterprise toolchain (VS Code, PyCharm, SSMS, Azure Storage Explorer, FileZilla, credential managers). Trigger on: RPA, bot, robot, UiPath, Power Automate Cloud/Desktop/PAD, Orchestrator, REFramework, Dispatcher/Performer, PDD/SDD, queues/transactions, selectors, Citrix, Robocorp, rpaframework, SQL Server queries, debugging a bot, environment setup, or automating a manual process. Also trigger on vague requests: \"automate this process\", \"build a bot\", \"design a workflow\", \"review my automation\", \"why is my bot failing\". Covers planning, design, docs, coding standards, testing, deployment, debugging, performance, and governance.\n"
 ---
 
 # RPA Development Skill
@@ -643,6 +632,83 @@ just deliver the artifact.
   (ruff/mypy/pytest gates, AzureFunctionApp@2 deploy), Application Insights KQL queries,
   anti-patterns table (infinite blob loop, monolithic functions, verbose logging, key in
   query string, shared storage, test functions in prod)
+- `references/azure-cosmosdb.md` — Azure Cosmos DB for NoSQL complete reference: data
+  model hierarchy (account/database/container/item), partition key design (high cardinality,
+  even distribution, query filter alignment — with decision table and synthetic key pattern),
+  Request Units and throughput modes (serverless vs provisioned auto-scale, when to switch),
+  Python SDK (singleton CosmosClient mandatory — sync vs async client selection by framework,
+  DefaultAzureCredential + Cosmos DB Built-in Data Contributor role, create/read/upsert/
+  replace/delete, patch operations for partial update, SQL query syntax with parameters,
+  in-partition vs cross-partition queries, projection, aggregation, pagination with by_page,
+  transactional batch, async pattern with module-level singleton), C# SDK v3 (DI singleton
+  with ConnectionMode.Direct — 1-5ms latency reduction, FeedIterator for queries, async
+  enumerable pattern, patch operations), indexing policy (include/exclude paths, write RU
+  optimization), consistency levels (Strong/Bounded Staleness/Session/Consistent Prefix/
+  Eventual — Session is default and correct for RPA workloads), Cosmos DB emulator via
+  Docker for local development and CI, best practices table
+- `references/azure-javascript-typescript.md` — Azure TypeScript and JavaScript SDK
+  development: TypeScript-first SDK design (@azure/ npm scope, strict tsconfig, module Node16),
+  DefaultAzureCredential in JavaScript (credential chain order, critical production caveat —
+  silent fallthrough risk on VMs where developer az login credentials shadow managed identity,
+  ManagedIdentityCredential explicitly in production), singleton client pattern (module-level
+  for Functions, shared across warm invocations), paging with for-await-of (PagedAsyncIterable-
+  Iterator), long running operations (LRO poller.pollUntilDone()), AbortController for
+  cancellation, RestError handling (404/429/403 patterns), Blob Storage TypeScript patterns
+  (upload buffer with metadata, chunked stream download), Service Bus TypeScript (send with
+  idempotency key, peekLock receive with completeMessage/deadLetterMessage, subscribe for
+  Functions), Key Vault secrets (parallel Promise.all fetch at startup), Cosmos DB TypeScript
+  (point read returning undefined on not-found, upsert, async generator query), Azure Functions
+  v4 TypeScript with module-level singleton clients, testing with Vitest (vi.mock for Azure
+  SDK modules, skipIf integration test pattern), Zod-based environment variable validation
+  (throws at startup on missing config)
+- `references/azure-containers.md` — Azure container options decision guide and platform
+  reference: the five container services (Container Apps, Functions, ACI, App Service, AKS)
+  with Microsoft's own positioning ("when unsure, use Container Apps"), 5-step decision
+  framework, decision matrix (autoscaling, scale-to-zero, persistent state, cost model,
+  Kubernetes expertise, Windows containers, Dapr, team size), ACA vs ACI vs AKS migration
+  path (40% utilization threshold for AKS cost crossover); Azure Container Apps deep
+  reference (Environment/App/Revision/Job concepts, KEDA scaling rules including Service
+  Bus queue-depth scaling, ACR integration with managed identity, never-use-mutable-tags
+  rule, secrets and Key Vault references, ingress types, Container Apps Jobs for scheduled
+  and event-driven batch work, Dapr built-in integration, health probes liveness/readiness/
+  startup, Azure DevOps CI/CD pipeline); Azure Container Instances reference (one-off
+  containers, IP instability, ACI limitations); AKS guidance (when concrete constraints
+  require it, AKS Automatic); security best practices (system vs user-assigned managed
+  identity, image scanning with Defender for Containers, VNet injection)
+- `references/azure-storage.md` — Azure Storage complete reference: four storage services
+  (Blob, Queue, Table, Azure Files) and ADLS Gen2 positioning, storage account SKUs (LRS/
+  ZRS/GRS/Premium), DefaultAzureCredential as the production auth standard (never keys),
+  RBAC role table (Storage Blob Data Contributor/Reader/Owner, Queue roles, Table roles),
+  local developer role assignment via CLI; Blob Storage Python SDK full reference (client
+  hierarchy BlobServiceClient/ContainerClient/BlobClient — singleton best practice, all
+  construction patterns from URL or parent), upload all patterns (file path, stream, bytes,
+  string, access tier at upload, large file max_concurrency), download all patterns (to file,
+  to bytes, to string, chunked for large blobs, async), list blobs (prefix filter, walk_blobs
+  virtual directory hierarchy), delete and soft-delete, blob access tiers (Hot/Cool/Cold/
+  Archive with cost model), metadata set/read, SAS tokens (when appropriate — not for app-
+  to-app); Queue Storage Python SDK (send/receive/peek/delete, visibility timeout and dequeue
+  count, poison message queue); Table Storage Python SDK (upsert/get/query/delete entities,
+  PartitionKey/RowKey pattern); ADLS Gen2 (hierarchical namespace, DataLakeServiceClient,
+  directory operations, POSIX ACL management, abfss:// protocol for Spark/Databricks); C#
+  SDK reference (BlobServiceClient, async patterns, DI singleton, list with GetBlobsAsync);
+  best practices (chunked download for large blobs, prefix on list, tier at upload, lifecycle
+  policies, disable shared key access, soft delete, versioning, diagnostic logging)
+- `references/azure-dev-practices.md` — C# and Python Azure development practices: shared
+  foundation (DefaultAzureCredential credential chain for all environments — local/Functions/
+  Container Apps/ACI/AKS — same code runs everywhere, never catch CredentialUnavailable to
+  fall back to connection string); Python project setup (uv + pyproject.toml, azure-identity/
+  azure-core plus per-service SDK packages, pydantic-settings for typed config with .env,
+  Key Vault SecretClient pattern at startup, prefer Key Vault references in App Settings over
+  SDK fetches for Functions/Container Apps); Application Insights and OpenTelemetry for Python
+  (configure_azure_monitor, structured logging via extra= kwargs, custom spans with tracer);
+  C# practices (Azure SDK NuGet packages, DI singleton registration pattern for all SDK
+  clients, appsettings.json + User Secrets, ILogger<T> with message templates not interpolated
+  strings); testing strategy (Python: unittest.mock MagicMock/AsyncMock for unit tests, pytest
+  with skip marker for integration tests against real Azure, fixture-based container lifecycle;
+  C#: Moq for Azure SDK client mocks); local development setup checklist (az login, role
+  assignment verification, credential smoke test, VS Code extensions, Azurite); retry and
+  error handling (SDK built-in retry — never wrap in your own loop, ResourceNotFoundError/
+  ClientAuthenticationError/HttpResponseError handling); key patterns summary table
 - `references/uipath-databricks-integration.md` — four-part UiPath+Databricks integration
   reference: (1) Real-time event ingestion pipeline — the previous dual-pipeline problem
   (30-min latency, duplicated storage, high cost), unified Spark Structured Streaming

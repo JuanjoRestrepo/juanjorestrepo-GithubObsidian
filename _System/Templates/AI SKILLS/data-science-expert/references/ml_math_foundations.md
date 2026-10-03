@@ -250,6 +250,130 @@ Use when: L1 is too aggressive (too many coefficients zeroed) but L2 cannot
 select variables. Especially useful with correlated features — Elastic Net tends
 to include or exclude correlated features together (Lasso arbitrarily selects one).
 
+### Dropout — Neural Network-Specific Regularization
+
+> **Reference**: Srivastava, N., et al. (2014). Dropout: A Simple Way to Prevent
+> Neural Networks from Overfitting. *JMLR*, 15(1), 1929–1958.
+
+Dropout randomly sets a fraction p of neuron activations to zero on each forward
+pass during training. Each neuron is kept with probability (1 − p), independently
+sampled per neuron per training step.
+
+```
+Training:   h' = h ⊙ m,   where mᵢ ~ Bernoulli(1 − p)
+            mᵢ = 1 (keep neuron i) with probability (1 − p)
+            mᵢ = 0 (zero neuron i) with probability p
+
+Inference:  h' = (1 − p) · h     (scale by keep probability — no mask applied)
+            OR: scale at training by 1/(1-p) (inverted dropout — PyTorch default)
+```
+
+**Why Dropout works**: it prevents neurons from co-adapting — no neuron can rely
+on the presence of specific other neurons, forcing the network to learn redundant
+representations. Equivalent to training an ensemble of 2^n sub-networks (one per
+possible mask) and averaging their predictions at inference.
+
+**Typical values**: p = 0.5 for fully connected hidden layers; p = 0.1–0.3 for
+convolutional and recurrent layers (which are already locally regularized). Do not
+apply dropout to the output layer.
+
+```python
+import torch
+import torch.nn as nn
+
+class RegularizedMLP(nn.Module):
+    """MLP with inverted dropout (PyTorch default: scales at training, not inference)."""
+    def __init__(self, in_features: int, hidden: int, out_features: int, p: float = 0.5) -> None:
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_features, hidden),
+            nn.ReLU(),
+            nn.Dropout(p=p),          # zeroes activations with probability p during training
+            nn.Linear(hidden, hidden),
+            nn.ReLU(),
+            nn.Dropout(p=p),
+            nn.Linear(hidden, out_features),
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.net(x)
+        # At inference: model.eval() automatically disables dropout
+        # At training:  model.train() re-enables dropout
+```
+
+### Early Stopping — Regularization via Training Duration
+
+Early stopping halts training when the validation loss stops improving for a
+specified number of epochs (patience). It prevents overfitting by treating the
+number of training iterations as an implicit regularization hyperparameter.
+
+```
+TRAINING AND VALIDATION LOSS CURVES OVER EPOCHS
+────────────────────────────────────────────────────────────────────────
+
+Loss
+  │
+  │\
+  │ \  ← training loss decreasing
+  │  \
+  │   \___
+  │       \___
+  │           \___________  ← training loss continues to decrease
+  │
+  │        . . . .
+  │      .          .
+  │    .              .   ← validation loss: decreases, plateaus, then rises
+  │  .                  .
+  │.                      .  ← overfitting zone
+  └─────────────────────────────────────────────────────── epochs
+                 ↑
+           STOP HERE  (validation loss at minimum = optimal model)
+           patience counter: stop after N epochs with no improvement
+
+Three phases visible in this curve:
+  [underfitting]  →  [good fit (optimal stopping point)]  →  [overfitting]
+```
+
+**Implementation rule**: save the model checkpoint at the epoch with the best
+validation metric. If validation loss does not improve for `patience` epochs,
+restore the best checkpoint and stop.
+
+```python
+import numpy as np
+
+class EarlyStopping:
+    """
+    Monitor validation loss and stop training when improvement stalls.
+
+    Args:
+        patience: Number of epochs to wait after last improvement before stopping.
+        min_delta: Minimum change in validation loss to qualify as improvement.
+        restore_best: Whether to restore best weights on stop.
+    """
+    def __init__(self, patience: int = 10, min_delta: float = 1e-4) -> None:
+        self.patience   = patience
+        self.min_delta  = min_delta
+        self.best_loss  = np.inf
+        self.counter    = 0
+        self.best_epoch = 0
+
+    def step(self, val_loss: float, epoch: int) -> bool:
+        """
+        Returns True if training should stop.
+        Call once per epoch after computing validation loss.
+        """
+        if val_loss < self.best_loss - self.min_delta:
+            self.best_loss  = val_loss
+            self.counter    = 0
+            self.best_epoch = epoch
+            return False     # continue training
+        else:
+            self.counter += 1
+            if self.counter >= self.patience:
+                return True  # stop training — restore checkpoint at best_epoch
+            return False
+```
+
 ---
 
 ## 5. Activation Functions {#activations}
@@ -514,7 +638,90 @@ precise reason feature scaling is required before PCA.
 
 ---
 
-## 12. Quick Reference — All Formulas {#quick-ref}
+## 12. Neural Network Hyperparameter Reference {#hyperparameters}
+
+> **Reference**: Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*,
+> Ch. 11 — Practical Methodology. MIT Press.
+> Bengio, Y. (2012). Practical Recommendations for Gradient-Based Training of Deep
+> Architectures. arXiv:1206.5533.
+
+### Hyperparameter Selection Guide
+
+| Hyperparameter | Typical Range | Guidance |
+|---|---|---|
+| **Learning rate (η)** | 1e-4 – 1e-2 | Most important hyperparameter. Start at 1e-3 (Adam) or 1e-2 (SGD). Use LR range test or warmup to find the optimal value. Too high → divergence; too low → slow convergence. |
+| **Batch size** | 32 – 512 | Larger batches → more stable gradients, faster wall-clock time, but may generalize less well. Increase LR proportionally when increasing batch size (linear scaling rule). |
+| **Number of layers** | 2 – 10 (MLP); 10 – 200+ (CNN/ResNet) | Deeper = more expressive but harder to train. Start shallow; add layers only when underfitting. Residual connections enable very deep networks. |
+| **Units per layer** | 64 – 2048 | Typically powers of 2 for GPU efficiency. Funnel architecture (decreasing size) is common. Match capacity to dataset size. |
+| **Activation function** | ReLU (default), GELU (Transformers), tanh (LSTM gates) | ReLU is the universal default for hidden layers. GELU for Transformer-based models. Sigmoid/tanh only in output layers or gates — not in hidden layers. |
+| **Optimizer** | Adam (default), SGD + momentum (vision), AdamW (Transformers) | Adam converges faster; SGD often generalizes slightly better with careful LR tuning. AdamW = Adam with decoupled weight decay — standard for LLMs. |
+| **L2 weight decay (λ)** | 1e-5 – 1e-2 | Applied to weights only (not biases). Equivalent to L2 regularization on parameters. Typical starting value: 1e-4. |
+| **Dropout rate (p)** | 0.1 – 0.5 | p = 0.5 for fully connected hidden layers (original paper default). p = 0.1 – 0.2 for convolutional layers. Do not apply to output layer. |
+| **Number of epochs** | Task-dependent | Use early stopping rather than a fixed epoch count. Typical ranges: 20–100 for small datasets; 5–30 for large datasets with many batches per epoch. |
+| **Early stopping patience** | 5 – 20 epochs | Stop after N epochs with no improvement on validation loss. Restore best checkpoint. Typical: patience = 10 for most tasks. |
+
+### Hyperparameter Tuning Strategy
+
+```
+RECOMMENDED TUNING ORDER (tune in this sequence, fixing earlier choices):
+──────────────────────────────────────────────────────────────────────────
+
+1. Learning rate          — most impactful; tune first
+2. Network architecture   — number of layers and units per layer
+3. Batch size             — scale LR with batch size
+4. Regularization         — weight decay, dropout — tune only if overfitting
+5. Optimizer              — switch from Adam to AdamW or SGD if needed
+6. Number of epochs       — set high; rely on early stopping
+
+TUNING METHODS (by computational budget):
+  Low budget:   Manual search guided by the table above
+  Medium:       Random search over log-uniform ranges (Bergstra & Bengio, 2012)
+                Consistently outperforms grid search for same compute budget
+  High:         Bayesian optimization (Optuna, Hyperopt) — models the
+                loss landscape to propose efficient next candidates
+  Very high:    Population-based training (PBT) — evolves a population of
+                models, inheriting weights from better-performing peers
+```
+
+```python
+import optuna
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import cross_val_score
+import numpy as np
+
+
+def objective(trial: optuna.Trial, X: np.ndarray, y: np.ndarray) -> float:
+    """
+    Optuna objective for MLP hyperparameter search.
+    Returns mean cross-validated AUC — Optuna maximizes this.
+    """
+    params = {
+        "hidden_layer_sizes": tuple(
+            trial.suggest_int(f"n_units_l{i}", 64, 512)
+            for i in range(trial.suggest_int("n_layers", 1, 4))
+        ),
+        "learning_rate_init": trial.suggest_float("lr", 1e-4, 1e-2, log=True),
+        "alpha":              trial.suggest_float("weight_decay", 1e-5, 1e-2, log=True),
+        "activation":         trial.suggest_categorical("activation", ["relu", "tanh"]),
+        "max_iter":           200,
+        "early_stopping":     True,
+        "validation_fraction": 0.15,
+        "n_iter_no_change":   10,   # early stopping patience
+    }
+    model = MLPClassifier(**params, random_state=42)
+    scores = cross_val_score(model, X, y, cv=5, scoring="roc_auc", n_jobs=-1)
+    return float(scores.mean())
+
+
+# Run Bayesian hyperparameter search
+# study = optuna.create_study(direction="maximize")
+# study.optimize(lambda t: objective(t, X_train, y_train), n_trials=100)
+# best_params = study.best_params
+```
+
+---
+
+## 13. Quick Reference — All Formulas {#quick-ref}
 
 | Equation | Formula | Notes |
 |---|---|---|
